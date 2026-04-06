@@ -94,6 +94,37 @@
   .card.insta {
     border-left: 4px solid #e1306c;
   }
+  .card-with-thumb {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .card-thumb {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f0f0f0;
+    display: block;
+  }
+  .card-thumb-fallback {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ccc;
+  }
+  .card-body { flex: 1; min-width: 0; }
+  @media(max-width:500px){
+    .card-with-thumb { flex-direction: column; }
+    .card-thumb { width: 100%; height: 180px; }
+  }
   .card.recommend {
     border-left: 4px solid #f39c12;
     background: #fffdf7;
@@ -396,102 +427,138 @@
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #1 — 최우선 추천</div>
-    <div class="card-title">
-      <span class="channel-badge">@mindbodygreen</span>여성 염증의 숨겨진 3가지 원인
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/658700665_18584740798001566_2999216289238665251_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHQJyxGsaBv6b6n5VvCzciiGU--xUMj7kZRC82myJ6yXS1x4no9N09jiyNcs4yLxig&_nc_ohc=Sm7flUk6KrsQ7kNvwFcI4Mp&_nc_gid=iOuknvYSVEfurvhWm63B6g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3w0Spu5lAfGnKxhnRpSAE47WQ51j-iUIPm4DZ_nzhWUA&oe=69D95FC8&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@mindbodygreen</span>여성 염증의 숨겨진 3가지 원인
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ 604 좋아요</span>
+          <span class="stat-chip blue">💬 18 댓글</span>
+          <span>📅 2026-04-04</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 여성에게 염증을 일으키는 요인 3가지 — 호르몬, 수면, 스트레스 — 음식과는 무관한 의외의 원인<br>
+          <strong>활용:</strong> "달리기가 여성 염증을 줄이는 3가지 이유" fastpace. 카드뉴스로 재편집 가능
+        </div>
+        <a class="url-link" href="https://www.instagram.com/p/DWt0hWOkXsz/" target="_blank">→ 원문 보기</a>
+      </div>
     </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ 604 좋아요</span>
-      <span class="stat-chip blue">💬 18 댓글</span>
-      <span>📅 2026-04-04</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 여성에게 염증을 일으키는 요인 3가지 — 호르몬, 수면, 스트레스 — 음식과는 무관한 의외의 원인<br>
-      <strong>활용:</strong> "달리기가 여성 염증을 줄이는 3가지 이유" fastpace. 카드뉴스로 재편집 가능. 데이터 기반 웰니스 인사이트
-    </div>
-    <a class="url-link" href="https://www.instagram.com/p/DWt0hWOkXsz/" target="_blank">→ 원문 보기</a>
   </div>
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #2</div>
-    <div class="card-title">
-      <span class="channel-badge">@happicker</span>불안 순삭! 워리스톤 트렌드
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/658857797_18053036948719561_3401714774071489895_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gHQ9QwkNbHzZdthuBrjtH7k3_Ca7QmNQmRMfQOPJHDLQGA4lJU6UHX_NG0gxsIhuo4&_nc_ohc=mLJUdByjH2EQ7kNvwH4PXEF&_nc_gid=RwV9y31d0Lk3aVmQnBPk0g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3BpaIEjuYNYArCpOxTqJDk5OMqCw1aoVmIFKUGFLZrwg&oe=69D97184&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@happicker</span>불안 순삭! 워리스톤 트렌드
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ 525 좋아요</span>
+          <span class="stat-chip blue">💬 2 댓글</span>
+          <span>📅 2026-04-06</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 엄지 홈을 문지르는 것만으로 부교감 신경 활성화, 스트레스 호르몬 수치 감소 — SNS 핫 아이템 워리스톤<br>
+          <strong>활용:</strong> "러닝이 최고의 워리스톤인 이유 — 달릴 때 스트레스가 사라지는 과학적 근거" 카드뉴스
+        </div>
+        <a class="url-link" href="https://www.instagram.com/p/DWxjjg7k1Bm/" target="_blank">→ 원문 보기</a>
+      </div>
     </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ 525 좋아요</span>
-      <span class="stat-chip blue">💬 2 댓글</span>
-      <span>📅 2026-04-06</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 엄지 홈을 문지르는 것만으로 부교감 신경 활성화, 스트레스 호르몬 수치 감소 — SNS 핫 아이템 워리스톤<br>
-      <strong>활용:</strong> "러닝이 최고의 워리스톤인 이유 — 달릴 때 스트레스가 사라지는 과학적 근거" 카드뉴스
-    </div>
-    <a class="url-link" href="https://www.instagram.com/p/DWxjjg7k1Bm/" target="_blank">→ 원문 보기</a>
   </div>
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #3</div>
-    <div class="card-title">
-      <span class="channel-badge">@bq.mag</span>더 레이스 서울 21K — 러너 리뷰 수집 (반응 폭발)
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/658602276_18089170751190822_4328994539825884642_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gGIwRWhWHFU1RtdkGb0hVs7VYdQSIAablh54WuQ8UkdBsOy7NYnvwaTTkj39f1iUpw&_nc_ohc=RrfbG89Q5HgQ7kNvwEvP9J3&_nc_gid=TIzOrEb5RbdHotTqg_5PIg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0anDHhO0Y_OF_BcB82WCn0XEzaX3FUQtn-xPEhVLi1Dg&oe=69D94E1F&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@bq.mag</span>더 레이스 서울 21K — 러너 리뷰 수집 (반응 폭발)
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ 862 좋아요</span>
+          <span class="stat-chip blue">💬 251 댓글</span>
+          <span>📅 2026-04-05</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 더레이스 서울 21K 당일 러너 한 줄 리뷰 수집 — 댓글 251개로 역대급 반응<br>
+          <strong>활용:</strong> 대회 참여 트렌드 확인. "2026년 봄 러닝 대회 열기" 트렌드 카드뉴스 참고 소재
+        </div>
+        <a class="url-link" href="https://www.instagram.com/p/DWu9pU0iR8c/" target="_blank">→ 원문 보기</a>
+      </div>
     </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ 862 좋아요</span>
-      <span class="stat-chip blue">💬 251 댓글</span>
-      <span>📅 2026-04-05</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 더레이스 서울 21K 당일 러너 한 줄 리뷰 수집 — 댓글 251개로 역대급 반응<br>
-      <strong>활용:</strong> 대회 참여 트렌드 확인. "2026년 봄 러닝 대회 열기" 트렌드 카드뉴스 참고 소재
-    </div>
-    <a class="url-link" href="https://www.instagram.com/p/DWu9pU0iR8c/" target="_blank">→ 원문 보기</a>
   </div>
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #4</div>
-    <div class="card-title">
-      <span class="channel-badge">@mindbodygreen</span>80세의 나를 위해 운동하는 이유
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/658969143_18585033307001566_5534367110187653715_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gGkAJopvlB0n8SHMC1BqnJH6IKi99Fxsh4TppcGF5VWuJlz9mPdJrWm4KVWwjCGiS8&_nc_ohc=RjaMREJqkrIQ7kNvwEUTj5k&_nc_gid=hzlq_r7PPn3F714tavYGXA&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3fXm4dWjCF_ZTsqeaJna3647kuI3A4lHEtVrj-jC5WPw&oe=69D972BD&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@mindbodygreen</span>80세의 나를 위해 운동하는 이유
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ 462 좋아요</span>
+          <span class="stat-chip blue">💬 177 댓글</span>
+          <span>📅 2026-04-05</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 80세 내 미래 자아를 위해 오늘 운동하는 이유 — 댓글 177개로 높은 참여도<br>
+          <strong>활용:</strong> "지금 달리는 이유 — 10년 후 당신의 몸을 위해" 동기부여 카드뉴스
+        </div>
+        <a class="url-link" href="https://www.instagram.com/p/DWw6zq0EZVl/" target="_blank">→ 원문 보기</a>
+      </div>
     </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ 462 좋아요</span>
-      <span class="stat-chip blue">💬 177 댓글</span>
-      <span>📅 2026-04-05</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 80세 내 미래 자아를 위해 오늘 운동하는 이유 — 댓글 177개로 높은 참여도<br>
-      <strong>활용:</strong> "지금 달리는 이유 — 10년 후 당신의 몸을 위해" 동기부여 카드뉴스
-    </div>
-    <a class="url-link" href="https://www.instagram.com/p/DWw6zq0EZVl/" target="_blank">→ 원문 보기</a>
   </div>
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #5</div>
-    <div class="card-title">
-      <span class="channel-badge">@happicker</span>나의 소울을 위한 데일리 힐링티 시간대별 큐레이션
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/658859360_18053017850719561_1205141256933738976_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-sjc6-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gF8XoG5NLlsqEq55Tz3kKJe7NGIEJHBRz9eBB3JPWSUyJWfhfAiNXvFjibYnA_KYuE&_nc_ohc=sW3SOo0cpQcQ7kNvwFbwIHJ&_nc_gid=bsjyD2TxygDHrWxFg0ZTSQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3JPjniHidJh0KflhqHCH6mWPIRFPRJF3KxHlFMM4Nveg&oe=69D94212&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@happicker</span>나의 소울을 위한 데일리 힐링티 시간대별 큐레이션
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ 383 좋아요</span>
+          <span class="stat-chip blue">💬 2 댓글</span>
+          <span>📅 2026-04-05</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 아침·오후·저녁 시간대별 힐링티 추천 — 체내 순환·기분 전환·회복 효과<br>
+          <strong>활용:</strong> "러닝 전·중·후 마셔야 할 음료 타임라인" pacenote. 카드뉴스로 재편집
+        </div>
+        <a class="url-link" href="https://www.instagram.com/p/DWxF5rRE6Pe/" target="_blank">→ 원문 보기</a>
+      </div>
     </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ 383 좋아요</span>
-      <span class="stat-chip blue">💬 2 댓글</span>
-      <span>📅 2026-04-05</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 아침·오후·저녁 시간대별 힐링티 추천 — 체내 순환·기분 전환·회복 효과<br>
-      <strong>활용:</strong> "러닝 전·중·후 마셔야 할 음료 타임라인" pacenote. 카드뉴스로 재편집
-    </div>
-    <a class="url-link" href="https://www.instagram.com/p/DWxF5rRE6Pe/" target="_blank">→ 원문 보기</a>
   </div>
 
   <div class="card insta">
     <div class="card-rank">📱 인스타 #6</div>
-    <div class="card-title">
-      <span class="channel-badge">@buildin_mag</span>궤도가 말하는 운이 좋아지는 습관 — 약한 연결의 힘
-    </div>
-    <div class="card-meta">
-      <span class="stat-chip red">❤️ -</span>
-      <span class="stat-chip blue">💬 2 댓글</span>
-      <span>📅 2026-04-04</span>
-    </div>
-    <div class="reason">
-      <strong>내용:</strong> 멀고 느슨한 관계(약한 연결)에서 행운이 온다 — 모든 인연에 작은 친절을 건네는 것이 습관<br>
-      <strong>활용:</strong> "러닝 크루가 내 인생을 바꾸는 이유" 라이프스타일 카드뉴스 소재
+    <div class="card-with-thumb">
+      <img class="card-thumb" src="https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/657286915_17948845767129860_8334402467734315800_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2gH8kJ3FuUxa_oYSZOzeH8aS_fktg8fKLe6MLdEKvHzGjqoYRWb1EUye8hczkcDtuwM&_nc_ohc=pgRYRXFdM8EQ7kNvwFKRdLg&_nc_gid=0iVAFl8rTdtzEshlwIJQ8w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3_yvFX3CKxitriaBDpGYx5WVWdCvxpI1eLejdh-dPY_A&oe=69D94C63&_nc_sid=10d13b" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+      <div class="card-thumb-fallback" style="display:none;">📷</div>
+      <div class="card-body">
+        <div class="card-title">
+          <span class="channel-badge">@buildin_mag</span>궤도가 말하는 운이 좋아지는 습관 — 약한 연결의 힘
+        </div>
+        <div class="card-meta">
+          <span class="stat-chip red">❤️ -</span>
+          <span class="stat-chip blue">💬 2 댓글</span>
+          <span>📅 2026-04-04</span>
+        </div>
+        <div class="reason">
+          <strong>내용:</strong> 멀고 느슨한 관계(약한 연결)에서 행운이 온다 — 모든 인연에 작은 친절을 건네는 것이 습관<br>
+          <strong>활용:</strong> "러닝 크루가 내 인생을 바꾸는 이유" 라이프스타일 카드뉴스 소재
+        </div>
+      </div>
     </div>
   </div>
 
