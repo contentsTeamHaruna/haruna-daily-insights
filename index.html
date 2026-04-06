@@ -3,303 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>íë£¨ë ë°ëí¬ë¦¼ ë°ì¼ë¦¬ ì¸ì¬ì´í¸ â ìì¹´ì´ë¸</title>
+<title>하루나 바디크림 데일리 인사이트 — 아카이브</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #f8f6f3;
-    color: #2d2a26;
-    line-height: 1.75;
-    font-size: 15px;
-  }
-
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 24px 80px;
-  }
-
-  /* Header */
-  .header {
-    text-align: center;
-    padding: 48px 0 40px;
-    border-bottom: 1px solid #e8e4df;
-    margin-bottom: 48px;
-  }
+  body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f6f3; color: #2d2a26; line-height: 1.75; font-size: 15px; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+  .header { text-align: center; padding: 48px 0 40px; border-bottom: 1px solid #e8e4df; margin-bottom: 48px; }
   .header-emoji { font-size: 56px; margin-bottom: 16px; }
-  .header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a1815;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
-  }
-  .header .subtitle {
-    font-size: 15px;
-    color: #8a8580;
-    font-weight: 400;
-    margin-bottom: 16px;
-  }
-  .header .brand {
-    display: inline-block;
-    padding: 4px 14px;
-    background: #f0ebe4;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #6b6560;
-    font-weight: 500;
-  }
-
-  /* Stats */
-  .stats-bar {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-bottom: 48px;
-    padding: 20px 0;
-    border-bottom: 1px solid #e8e4df;
-  }
-  .stat-item {
-    text-align: center;
-  }
-  .stat-number {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a1815;
-  }
-  .stat-label {
-    font-size: 12px;
-    color: #8a8580;
-    font-weight: 500;
-    margin-top: 2px;
-  }
-
-  /* Month Group */
-  .month-group {
-    margin-bottom: 40px;
-  }
-  .month-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #8a8580;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-    padding-left: 4px;
-  }
-
-  /* Report Card */
-  .report-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: #fff;
-    border-radius: 14px;
-    padding: 20px 24px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-    border: 1px solid #eae6e1;
-  }
-  .report-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    border-color: #d4cfc8;
-  }
-  .report-card:active {
-    transform: translateY(0);
-  }
-
-  .card-date {
-    flex-shrink: 0;
-    width: 56px;
-    height: 56px;
-    background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d8 100%);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .card-date .day {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1815;
-    line-height: 1.1;
-  }
-  .card-date .dow {
-    font-size: 10px;
-    font-weight: 600;
-    color: #8a8580;
-    text-transform: uppercase;
-  }
-
-  .card-content {
-    flex: 1;
-    min-width: 0;
-  }
-  .card-title {
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a1815;
-    margin-bottom: 4px;
-  }
-  .card-meta {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .card-tag {
-    font-size: 12px;
-    color: #8a8580;
-    background: #f5f2ee;
-    padding: 2px 10px;
-    border-radius: 10px;
-    white-space: nowrap;
-  }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1815; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .header .subtitle { font-size: 15px; color: #8a8580; font-weight: 400; margin-bottom: 16px; }
+  .header .brand { display: inline-block; padding: 4px 14px; background: #f0ebe4; border-radius: 20px; font-size: 12px; color: #6b6560; font-weight: 500; }
+  .stats-bar { display: flex; justify-content: center; gap: 32px; margin-bottom: 48px; padding: 20px 0; border-bottom: 1px solid #e8e4df; }
+  .stat-item { text-align: center; }
+  .stat-number { font-size: 28px; font-weight: 700; color: #1a1815; }
+  .stat-label { font-size: 12px; color: #8a8580; font-weight: 500; margin-top: 2px; }
+  .month-group { margin-bottom: 40px; }
+  .month-title { font-size: 14px; font-weight: 600; color: #8a8580; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-left: 4px; }
+  .report-card { display: flex; align-items: center; gap: 20px; background: #fff; border-radius: 14px; padding: 20px 24px; margin-bottom: 10px; text-decoration: none; color: inherit; transition: all 0.2s ease; border: 1px solid #eae6e1; }
+  .report-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); border-color: #d4cfc8; }
+  .card-date { flex-shrink: 0; width: 56px; height: 56px; background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d8 100%); border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .card-date .day { font-size: 22px; font-weight: 700; color: #1a1815; line-height: 1.1; }
+  .card-date .dow { font-size: 10px; font-weight: 600; color: #8a8580; text-transform: uppercase; }
+  .card-content { flex: 1; min-width: 0; }
+  .card-title { font-size: 15px; font-weight: 600; color: #1a1815; margin-bottom: 4px; }
+  .card-meta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .card-tag { font-size: 12px; color: #8a8580; background: #f5f2ee; padding: 2px 10px; border-radius: 10px; white-space: nowrap; }
   .card-tag.weather { background: #e8f0fe; color: #4a6fa5; }
   .card-tag.season { background: #e8f5e8; color: #5a8a5a; }
-
-  .card-arrow {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #c4bfb8;
-    transition: color 0.2s;
-  }
+  .card-arrow { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; color: #c4bfb8; transition: color 0.2s; }
   .report-card:hover .card-arrow { color: #8a8580; }
-
-  /* Empty State */
-  .empty-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: #b0aaa4;
-  }
-  .empty-state .emoji { font-size: 40px; margin-bottom: 12px; }
-  .empty-state p { font-size: 14px; }
-
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding-top: 40px;
-    border-top: 1px solid #e8e4df;
-    margin-top: 48px;
-  }
-  .footer p {
-    font-size: 12px;
-    color: #b0aaa4;
-  }
-
-  /* Today highlight */
-  .report-card.today {
-    border-color: #c9b896;
-    background: linear-gradient(135deg, #fffdf8 0%, #fff 100%);
-  }
-  .report-card.today .card-date {
-    background: linear-gradient(135deg, #e8dcc8 0%, #d4c4a8 100%);
-  }
-  .today-badge {
-    font-size: 10px;
-    font-weight: 700;
-    color: #fff;
-    background: #b8a070;
-    padding: 1px 8px;
-    border-radius: 8px;
-    margin-left: 8px;
-    vertical-align: middle;
-  }
-
-  @media (max-width: 600px) {
-    .container { padding: 24px 16px 60px; }
-    .header { padding: 32px 0 28px; }
-    .header h1 { font-size: 22px; }
-    .stats-bar { gap: 20px; }
-    .stat-number { font-size: 22px; }
-    .report-card { padding: 16px 18px; gap: 14px; }
-    .card-date { width: 48px; height: 48px; }
-    .card-date .day { font-size: 18px; }
-  }
+  .footer { text-align: center; padding-top: 40px; border-top: 1px solid #e8e4df; margin-top: 48px; }
+  .footer p { font-size: 12px; color: #b0aaa4; }
+  .report-card.today { border-color: #c9b896; background: linear-gradient(135deg, #fffdf8 0%, #fff 100%); }
+  .report-card.today .card-date { background: linear-gradient(135deg, #e8dcc8 0%, #d4c4a8 100%); }
+  .today-badge { font-size: 10px; font-weight: 700; color: #fff; background: #b8a070; padding: 1px 8px; border-radius: 8px; margin-left: 8px; vertical-align: middle; }
+  @media (max-width: 600px) { .container { padding: 24px 16px 60px; } .header h1 { font-size: 22px; } .report-card { padding: 16px 18px; gap: 14px; } .card-date { width: 48px; height: 48px; } }
 </style>
 </head>
 <body>
-
 <div class="container">
-
   <div class="header">
-    <div class="header-emoji">ð</div>
-    <h1>ë°ì¼ë¦¬ ì¸ì¬ì´í¸ ìì¹´ì´ë¸</h1>
-    <div class="subtitle">íë£¨ë ë°ëí¬ë¦¼ â ë§¤ì¼ì ìì¥ ì¸ì¬ì´í¸ë¥¼ íëì</div>
+    <div class="header-emoji">📊</div>
+    <h1>데일리 인사이트 아카이브</h1>
+    <div class="subtitle">하루나 바디크림 — 매일의 시장 인사이트를 한눈에</div>
     <span class="brand">haruna bodycare</span>
   </div>
-
   <div class="stats-bar" id="statsBar">
-    <div class="stat-item">
-      <div class="stat-number" id="totalCount">-</div>
-      <div class="stat-label">ì´ ë¦¬í¬í¸</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number" id="latestDate">-</div>
-      <div class="stat-label">ìµì  ë¦¬í¬í¸</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number" id="streakCount">-</div>
-      <div class="stat-label">ì°ì ë°íì¼</div>
-    </div>
+    <div class="stat-item"><div class="stat-number" id="totalCount">-</div><div class="stat-label">총 리포트</div></div>
+    <div class="stat-item"><div class="stat-number" id="latestDate">-</div><div class="stat-label">최신 리포트</div></div>
+    <div class="stat-item"><div class="stat-number" id="streakCount">-</div><div class="stat-label">연속 발행일</div></div>
   </div>
-
   <div id="reportList"></div>
-
-  <div class="footer">
-    <p>ìë ìì± ë¦¬í¬í¸ â ë§¤ì¼ ì¤ì  ìë°ì´í¸</p>
-  </div>
-
+  <div class="footer"><p>자동 생성 리포트 — 매일 오전 업데이트</p></div>
 </div>
-
 <script>
 (function() {
-  // ======================================================
-  // ë¦¬í¬í¸ ëª©ë¡: ì ë¦¬í¬í¸ê° ìì±ë  ëë§ë¤ ì¬ê¸°ì ì¶ê°ë©ëë¤.
-  // ======================================================
   const reports = [
     {
       date: '2026-04-06',
       file: 'haruna_daily_insights_20260406.html',
-      weather: 'íë¦¬ê³  ë¹',
-      season: 'ë´ íì ê¸°',
-      highlights: ['ì¤í¤ëí¼ì¼ì´ì í¸ë ë', 'PDRN ë°ëí¬ë¦¼ ë¶ì', 'ê¸°í ì ìí ë·°í°']
+      weather: '흐리고 비',
+      season: '봄 환절기',
+      highlights: ['스키니피케이션 트렌드', 'PDRN 바디크림 부상', '기후 적응형 뷰티']
     }
-    // ì ë¦¬í¬í¸ í­ëª©ì ì´ ë°°ì´ì ì¶ê°ë©ëë¤
-    // {
-    //   date: '2026-04-07',
-    //   file: 'haruna_daily_insights_20260407.html',
-    //   weather: 'ë§ì',
-    //   season: 'ë´',
-    //   highlights: ['í¤ìë1', 'í¤ìë2']
-    // }
   ];
-
-  const DOW_KR = ['ì¼', 'ì', 'í', 'ì', 'ëª©', 'ê¸', 'í '];
-  const MONTH_KR = ['1ì', '2ì', '3ì', '4ì', '5ì', '6ì', '7ì', '8ì', '9ì', '10ì', '11ì', '12ì'];
-
+  const DOW_KR = ['일', '월', '화', '수', '목', '금', '토'];
+  const MONTH_KR = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
   const todayStr = new Date().toISOString().slice(0, 10);
-
-  // Stats
   document.getElementById('totalCount').textContent = reports.length;
   if (reports.length > 0) {
     const latest = new Date(reports[0].date);
-    document.getElementById('latestDate').textContent =
-      `${latest.getMonth()+1}/${latest.getDate()}`;
+    document.getElementById('latestDate').textContent = (latest.getMonth()+1)+'/'+latest.getDate();
   }
-
-  // Streak calculation
   let streak = 0;
   const sorted = [...reports].sort((a,b) => b.date.localeCompare(a.date));
   if (sorted.length > 0) {
@@ -307,88 +83,34 @@
     for (let i = 1; i < sorted.length; i++) {
       const prev = new Date(sorted[i-1].date);
       const curr = new Date(sorted[i].date);
-      const diff = (prev - curr) / (1000 * 60 * 60 * 24);
-      if (diff === 1) streak++;
+      if ((prev - curr) / (1000 * 60 * 60 * 24) === 1) streak++;
       else break;
     }
   }
   document.getElementById('streakCount').textContent = streak;
-
-  // Group by month
   const grouped = {};
   reports.forEach(r => {
     const d = new Date(r.date);
-    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+    const key = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
     if (!grouped[key]) grouped[key] = [];
     grouped[key].push(r);
   });
-
   const listEl = document.getElementById('reportList');
-
-  // Sort months descending
   const monthKeys = Object.keys(grouped).sort().reverse();
-
-  if (monthKeys.length === 0) {
-    listEl.innerHTML = `
-      <div class="empty-state">
-        <div class="emoji">ð­</div>
-        <p>ìì§ ë¦¬í¬í¸ê° ììµëë¤.<br>ë§¤ì¼ ìì¹¨ ìëì¼ë¡ ìì±ë©ëë¤.</p>
-      </div>`;
-    return;
-  }
-
+  if (monthKeys.length === 0) { listEl.innerHTML = '<div class="empty-state"><div class="emoji">📭</div><p>아직 리포트가 없습니다.</p></div>'; return; }
   monthKeys.forEach(key => {
     const [y, m] = key.split('-');
-    const monthGroup = document.createElement('div');
-    monthGroup.className = 'month-group';
-
-    const title = document.createElement('div');
-    title.className = 'month-title';
-    title.textContent = `${y}ë ${MONTH_KR[parseInt(m)-1]}`;
-    monthGroup.appendChild(title);
-
-    // Sort dates descending within month
-    const items = grouped[key].sort((a,b) => b.date.localeCompare(a.date));
-
-    items.forEach(r => {
-      const d = new Date(r.date);
-      const isToday = r.date === todayStr;
-
-      const card = document.createElement('a');
-      card.className = 'report-card' + (isToday ? ' today' : '');
-      card.href = r.file;
-
-      card.innerHTML = `
-        <div class="card-date">
-          <div class="day">${d.getDate()}</div>
-          <div class="dow">${DOW_KR[d.getDay()]}</div>
-        </div>
-        <div class="card-content">
-          <div class="card-title">
-            ë°ì¼ë¦¬ ì¸ì¬ì´í¸ â ${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}
-            ${isToday ? '<span class="today-badge">TODAY</span>' : ''}
-          </div>
-          <div class="card-meta">
-            ${r.weather ? `<span class="card-tag weather">${r.weather}</span>` : ''}
-            ${r.season ? `<span class="card-tag season">${r.season}</span>` : ''}
-            ${(r.highlights || []).slice(0,2).map(h => `<span class="card-tag">${h}</span>`).join('')}
-          </div>
-        </div>
-        <div class="card-arrow">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-      `;
-
-      monthGroup.appendChild(card);
+    const mg = document.createElement('div'); mg.className = 'month-group';
+    const t = document.createElement('div'); t.className = 'month-title'; t.textContent = y+'년 '+MONTH_KR[parseInt(m)-1]; mg.appendChild(t);
+    grouped[key].sort((a,b) => b.date.localeCompare(a.date)).forEach(r => {
+      const d = new Date(r.date), isToday = r.date === todayStr;
+      const card = document.createElement('a'); card.className = 'report-card'+(isToday?' today':''); card.href = r.file;
+      card.innerHTML = '<div class="card-date"><div class="day">'+d.getDate()+'</div><div class="dow">'+DOW_KR[d.getDay()]+'</div></div><div class="card-content"><div class="card-title">데일리 인사이트 — '+d.getFullYear()+'.'+String(d.getMonth()+1).padStart(2,'0')+'.'+String(d.getDate()).padStart(2,'0')+(isToday?' <span class="today-badge">TODAY</span>':'')+'</div><div class="card-meta">'+(r.weather?'<span class="card-tag weather">'+r.weather+'</span>':'')+(r.season?'<span class="card-tag season">'+r.season+'</span>':'')+(r.highlights||[]).slice(0,2).map(h=>'<span class="card-tag">'+h+'</span>').join('')+'</div></div><div class="card-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>';
+      mg.appendChild(card);
     });
-
-    listEl.appendChild(monthGroup);
+    listEl.appendChild(mg);
   });
 })();
 </script>
-
 </body>
 </html>
-
