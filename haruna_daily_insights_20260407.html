@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>하루나 바디크림 데일리 인사이트 — 2026.04.07</title>
+<title>하루나 데일리 인사이트 — 2026.04.07</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
 
@@ -174,6 +174,48 @@
     line-height: 1.7;
   }
 
+  /* Dedup note */
+  .dedup-note {
+    background: #f5f0e8;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #6b5540;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  /* Continuing Trend */
+  .continuing-trend {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+  }
+  .continuing-trend ul {
+    list-style: none;
+    padding: 0;
+  }
+  .continuing-trend ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .continuing-trend ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+
   /* Source Cards */
   .source-card {
     background: #fff;
@@ -247,10 +289,45 @@
     margin-right: 8px;
   }
 
+  /* Sub-ranking in source card */
+  .sub-ranking {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sub-ranking h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1815;
+    margin-bottom: 8px;
+    margin-top: 14px;
+  }
+  .sub-ranking ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .sub-ranking ol li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .sub-ranking ol li::before {
+    content: none;
+  }
+
   /* Table */
   .table-wrap {
     overflow-x: auto;
     margin-bottom: 8px;
+  }
+  .table-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 20px 0 10px;
+  }
+  .table-label:first-child {
+    margin-top: 0;
   }
   table {
     width: 100%;
@@ -323,8 +400,8 @@
   }
   .idea-card .category.weather { background: #5b9bd5; }
   .idea-card .category.season { background: #85cdca; }
+  .idea-card .category.trend { background: #85cdca; }
   .idea-card .category.ingredient { background: #d4a5d0; }
-  .idea-card .category.trend { background: #e8a87c; }
   .idea-card .idea-title {
     font-size: 15px;
     font-weight: 700;
@@ -367,6 +444,10 @@
     background: #e8a87c;
     color: #fff;
   }
+  .hashtag.keyword {
+    background: #e8f0fe;
+    color: #1a3a5c;
+  }
 
   /* Tomorrow */
   .tomorrow-card {
@@ -398,6 +479,17 @@
     font-size: 13px;
     color: #6b6560;
     line-height: 1.7;
+  }
+
+  /* No-change note */
+  .no-change-note {
+    background: #f5f0e8;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #6b5540;
+    line-height: 1.7;
+    margin-top: 16px;
   }
 
   /* Sources */
@@ -447,7 +539,7 @@
   <!-- Header -->
   <div class="header">
     <div class="header-emoji">🧴</div>
-    <h1>하루나 바디크림 데일리 인사이트</h1>
+    <h1>하루나 데일리 인사이트</h1>
     <div class="date">2026년 4월 7일 (화)</div>
     <div class="brand">@haruna_kr | 실키 머쉬룸 바디크림</div>
   </div>
@@ -477,35 +569,51 @@
       <div class="label">시즌 & 날씨 키워드</div>
       <span class="keyword-tag">봄 바디크림</span>
       <span class="keyword-tag">환절기 보습</span>
-      <span class="keyword-tag">가벼운 바디로션</span>
-      <span class="keyword-tag">봄 건조</span>
-      <span class="keyword-tag">일교차 케어</span>
+      <span class="keyword-tag">봄 세럼 추천</span>
+      <span class="keyword-tag">저자극 폼클렌징</span>
+      <span class="keyword-tag">환절기</span>
       <span class="keyword-tag">보습력</span>
+      <span class="keyword-tag">건조한 날씨</span>
+      <span class="keyword-tag">일교차 케어</span>
     </div>
     <div class="sogu-point">
-      💡 오늘의 소구 포인트 — "밤사이 기온 1℃까지 떨어진 봄 새벽, 건조해진 피부에 깊은 보습이 필요한 아침 — 환절기 일교차 11도, 피부 장벽이 흔들리는 시기"
+      💡 오늘의 소구 포인트 — "밤사이 기온 1℃까지 떨어진 봄 새벽 — 일교차 11도에 피부 장벽이 흔들리는 시기, 세안부터 보습까지 토탈 케어가 필요한 아침"
     </div>
   </div>
 
   <!-- TOP 3 -->
   <div class="section">
-    <div class="section-title">오늘의 핵심 인사이트 TOP 3</div>
+    <div class="section-title">🆕 오늘의 핵심 인사이트 (TOP 3)</div>
+    <div class="dedup-note">
+      📋 전일(4/6) 리포트 TOP 3 — ①스키니피케이션 ②더마 브랜드 강세 속 성분 차별화 ③기후 적응형 뷰티 → 오늘은 새로운 인사이트로 교체
+    </div>
     <div class="insight-cards">
       <div class="insight-card">
         <div class="number">INSIGHT 01</div>
-        <div class="title">환절기 '투 스텝 바디케어' 트렌드 부상</div>
-        <div class="desc">2026년 바디케어가 부위별·피부 타입별 세분화된 멀티 스텝 루틴으로 진화. 더마 로션 + 트러블 미스트 등 역할 분담 체계가 새로운 공식으로 자리잡는 중</div>
+        <div class="title">PDRN 세럼 시장 폭발 — 화해 세럼 2위 '아누아 PDRN 캡슐 100 세럼'</div>
+        <div class="desc">PDRN이 바디크림뿐 아니라 세럼 카테고리에서도 상위권 진입. 하루나의 PDRN 성분을 세럼 확장 라인에 적용할 강력한 시장 근거</div>
       </div>
       <div class="insight-card">
         <div class="number">INSIGHT 02</div>
-        <div class="title">비동물성 PDRN·흰목이버섯 등 '차세대 비건 보습 성분' 급부상</div>
-        <div class="desc">연어 유래 PDRN 대신 식물 유래 비건 PDRN이 주목받고, 흰목이버섯이 히알루론산의 대안으로 급부상. 하루나의 핵심 원료와 정확히 맞물리는 시장 흐름</div>
+        <div class="title">'식자재 원료 클렌저' 부상 — 녹두·다시마·쌀 기반 폼클렌징이 화해 TOP 5 석권</div>
+        <div class="desc">비플레인 녹두(1위), 션리 다시마(2위), 에스네이처 쌀(4위) 등 식자재 원료 클렌저가 강세. 하루나의 식자재 USP와 정확히 맞물리는 시장 기회</div>
       </div>
       <div class="insight-card">
         <div class="number">INSIGHT 03</div>
-        <div class="title">봄 환절기 '가벼운데 확실한 보습' 수요 폭발</div>
-        <div class="desc">겨울 고보습 제형에서 봄 산뜻 제형으로 전환하는 소비자 니즈가 커지며, 끈적임 없이 보습력 있는 크림·로션 검색량 급증</div>
+        <div class="title">엑소좀·마이크로바이옴 등 '바이오 성분' 세럼 급부상</div>
+        <div class="desc">라보레브 마이크로바이옴 세럼(화해 4위), 엑소좀 기반 제품 등 차세대 바이오 성분이 2026년 세럼 시장 핵심 키워드로 등장</div>
       </div>
+    </div>
+  </div>
+
+  <!-- 지속 트렌드 -->
+  <div class="section">
+    <div class="section-title">📌 지속 트렌드 (전일 대비)</div>
+    <div class="continuing-trend">
+      <ul>
+        <li><strong>스키니피케이션</strong>: 계속 강세 — 오늘 세럼·클렌징 데이터에서도 페이셜 성분의 바디 확장 트렌드 확인</li>
+        <li><strong>더마 브랜드 강세</strong>: 바디크림뿐 아니라 세럼(토리든 1위)·클렌징(토리든 3위)에서도 더마 브랜드가 상위권 독점</li>
+      </ul>
     </div>
   </div>
 
@@ -516,85 +624,93 @@
     <div class="source-card">
       <h3><span class="num">1</span> 인스타그램</h3>
       <ul>
-        <li>#바디크림추천, #바디케어, #클린뷰티 해시태그 활발</li>
-        <li>셀럽 바디로션 공유 콘텐츠 인기: 아이유, 신시아, 트와이스 나연 등 사용 제품 공유 트렌드 지속</li>
-        <li>'향수 대신 바디로션' 콘텐츠가 봄 시즌 인기 — 체리블라썸, 피치, 라벤더, 화이트 머스크 향 선호</li>
-        <li>봄 웜톤 뷰티템 추천 콘텐츠에서 바디케어 제품 동반 소개 증가</li>
+        <li><strong>바디크림:</strong> 셀럽 바디로션 공유 트렌드 지속. '향수 대신 바디로션' 봄 시즌 콘텐츠 인기</li>
+        <li><strong>세럼:</strong> #세럼추천, #데일리세럼 해시태그 성장. PDRN 세럼·히알루론산 세럼 비교 콘텐츠 활발</li>
+        <li><strong>클렌징:</strong> #약산성클렌징폼, #순한클렌징 해시태그 증가. 환절기 저자극 세안 관련 콘텐츠 증가세</li>
       </ul>
-      <div class="haruna-point">봄 감성 + 바디크림 향기 경험 릴스 제작. 실키 머쉬룸의 은은한 향을 '봄에 어울리는 향'으로 포지셔닝</div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">2</span> 네이버 블로그/카페</h3>
       <ul>
-        <li>환절기 속건조 관리, 샤워 직후 보습 루틴 등 시즌 콘텐츠 활발</li>
-        <li>전문가 추천: 샤워 직후 워터리 로션 → 오일 덧바르기 이중 레이어링 보습법</li>
-        <li>주요 추천 제품: 피지오겔, 닥터지, 일리윤 세라마이드 아토 집중 크림</li>
-        <li>'봄 장사 본격 시작' — 상반기 스킨케어 라인업 확장 경쟁 심화</li>
+        <li><strong>바디크림:</strong> 환절기 속건조 관리, 이중 레이어링 보습법 콘텐츠 활발</li>
+        <li><strong>세럼:</strong> 봄 환절기 세럼 추천 글에서 '진정+보습' 듀얼 기능 세럼 인기. PDRN 세럼 리뷰 증가</li>
+        <li><strong>클렌징:</strong> 약산성 폼클렌징 비교 리뷰 다수. '세안 후 당김 없는' 제품 선호</li>
       </ul>
-      <div class="haruna-point">식자재 원료의 안전성 + 봄 환절기 보습 지속력 데이터를 블로그 콘텐츠로 활용</div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">3</span> 올리브영</h3>
       <ul>
-        <li>더마비 데일리 모이스처 바디로션 대용량(860ml) 전략으로 시장 공략</li>
-        <li>낫포유 바디 트러블 클리어 미스트 7년 연속 1위 — 트러블+바디 결합 트렌드</li>
-        <li>올영픽: 라로슈포제 시카플라스트, 에스트라 아토베리어365 등 더마 브랜드 강세</li>
-        <li>히든 퍼퓸 스프레이 바디로션(5초 뿌리는 바디로션) 등 새로운 제형 출시</li>
+        <li><strong>바디크림:</strong> 더마비 대용량(860ml) 전략, 낫포유 트러블 미스트 7년 연속 1위</li>
+        <li><strong>세럼:</strong> 토리든 다이브인 히알루론산 세럼 베스트셀러. 아이소이 로즈PDRN 잡티세럼 올영픽 선정, 한정 기획세트 출시</li>
+        <li><strong>클렌징:</strong> 비플레인 녹두 약산성 클렌징폼 4월 프로모션 진행. 라곰 셀럽 마이크로 폼 클렌저 인기</li>
       </ul>
-      <div class="haruna-point">'스킨케어급 성분의 바디크림' 포지셔닝. 대용량 더마 브랜드와 차별화되는 프리미엄 성분 전략</div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">4</span> 화해</h3>
-      <ul>
-        <li>바디크림 TOP: 1위 아토팜 판테놀(48,000원), 2위 라로슈포제 시카플라스트(40,000원), 3위 아토팜 MLE(61,000원)</li>
-        <li>4위 그린핑거 판테딘, 5위 바이오더마 아토덤 — 상위권 더마·민감성 브랜드 독점</li>
-        <li>바디케어 '투 스텝 설계' 트렌드: 수분 장벽(더마 로션) + 트러블 관리(미스트) 역할 분담</li>
-      </ul>
-      <div class="haruna-point">화해 상위권이 더마 브랜드로 독점되는 가운데, '비건 식자재 원료+PDRN' 차별화 포인트로 틈새 진입</div>
+      <div class="sub-ranking">
+        <h4>세럼 TOP 5 (2026.04 기준)</h4>
+        <ol>
+          <li>토리든 다이브인 히알루론산 세럼 100ml (28,000원)</li>
+          <li>아누아 PDRN 캡슐 100 세럼 50ml (24,500원)</li>
+          <li>웰라쥬 리얼 히알루로닉 블루100 앰플 (32,400원)</li>
+          <li>라보레브 마이크로바이옴 EGF 세럼 (27,000원)</li>
+          <li>라셀틱스 펩타톡스 앰플 (47,600원)</li>
+        </ol>
+        <h4>클렌징폼 TOP 5 (2026.04 기준)</h4>
+        <ol>
+          <li>비플레인 녹두 약산성 클렌징폼 200ml (17,900원)</li>
+          <li>션리 다시마 앰플 클렌징폼 120ml (17,900원)</li>
+          <li>토리든 다이브인 히알루론산 클렌징폼 (18,900원)</li>
+          <li>에스네이처 아쿠아 라이스 약산성 클렌징폼 (19,500원)</li>
+          <li>메디힐 더마 크림 팩 클렌저 마데카소사이드 (32,900원)</li>
+        </ol>
+        <h4>바디크림 TOP 3</h4>
+        <ol>
+          <li>아토팜 판테놀</li>
+          <li>라로슈포제 시카플라스트</li>
+          <li>아토팜 MLE</li>
+        </ol>
+        <p style="font-size: 12px; color: #8a8580; margin-top: 6px;">— 전일과 동일</p>
+      </div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">5</span> 더쿠</h3>
       <ul>
-        <li>'바디로션 덕후 15년' 사용자의 몸 피부 관리 노하우 공유 게시물 인기</li>
-        <li>향 좋은 바디 제품 공유 스레드 활발 — 소비자 간 향기 경험 공유 문화</li>
-        <li>보습력 + 적당한 가격대의 바디로션 추천 요청 다수 — 가성비 니즈 지속</li>
+        <li><strong>클렌징:</strong> 민감성 건성 피부 클렌징폼 추천 스레드 활발. 약산성 제품 선호도 높음</li>
+        <li><strong>세럼:</strong> 여드름 케어 뷰티유튜버의 찐템 공유에서 살리실산·나이아신아마이드 세럼 언급</li>
+        <li><strong>바디크림:</strong> 향 좋은 바디 제품 공유, 가성비 니즈 지속</li>
       </ul>
-      <div class="haruna-point">커뮤니티에서는 '진짜 써본 사람의 후기'가 핵심. 시딩을 통한 실사용 후기 확보 전략 필요</div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">6</span> 글로우픽</h3>
       <ul>
-        <li>바디로션 급상승 랭킹에서 더마·민감성 브랜드 강세: 세타필, 일리윤, 제로이드, 아토팜, 에스트라</li>
-        <li>소비자 선택 기준: '자극 없이 확실하게 보습되는' 검증된 제품 선호</li>
-        <li>부위별 제형 세분화: 팔꿈치·무릎에는 밤, 등·가슴에는 로션/젤</li>
+        <li><strong>바디:</strong> 더마·민감성 브랜드 강세 지속 (세타필, 일리윤, 에스트라 상위)</li>
+        <li><strong>세럼:</strong> 올리브영 에센스/세럼 추천 TOP 20에서 토리든·아이소이 양강 구도</li>
+        <li><strong>클렌징:</strong> 올리브영 클렌징폼 추천에서 비플레인, 라곰, 이니스프리 상위</li>
       </ul>
-      <div class="haruna-point">비건·저자극·식자재 원료 USP를 리뷰 마케팅에 활용. 글로우픽 리뷰 확보 전략 수립</div>
     </div>
 
     <div class="source-card">
       <h3><span class="num">7</span> 디시인사이드</h3>
       <ul>
-        <li>화장품 갤러리에서 피부 타입별(지성, 여드름, 민감성) 보습제 추천 논의 활발</li>
-        <li>민감성 피부가 피하면 좋은 성분 가이드 게시물 인기 — 성분 의식 소비 트렌드</li>
-        <li>시카 성분 제품 계절별 사용 논의: 닥터자르트 시카페어 등</li>
+        <li><strong>세럼:</strong> 피부 타입별 세럼 추천 논의 활발. 레티놀 vs PDRN 효과 비교 토론</li>
+        <li><strong>클렌징:</strong> 아침 세안용 순한 폼클렌징 추천 요청 다수</li>
+        <li><strong>바디크림:</strong> 성분 의식 소비 트렌드 지속. 시카 성분 계절별 사용 논의</li>
       </ul>
-      <div class="haruna-point">성분 기반 정보형 콘텐츠(흰목이버섯 보습 메커니즘 등)가 디시 사용자층에서 신뢰 확보에 효과적</div>
     </div>
 
     <div class="source-card">
-      <h3><span class="num">8</span> 레딧 r/SkincareAddiction</h3>
+      <h3><span class="num">8</span> 레딧 r/SkincareAddiction 등</h3>
       <ul>
-        <li>K-뷰티 바디케어 글로벌 확산: 'Bodycare-ification' 트렌드 — 몸도 얼굴처럼 스킨케어</li>
-        <li>봄 스킨케어 리셋: 겨울 두꺼운 보습제 → 봄 가벼운 크림 전환 루틴 인기</li>
-        <li>전문가 키워드: hydration, barrier repair, gentle resurfacing</li>
-        <li>차세대 펩타이드, 마이크로바이옴 과학 등 성분 혁신 트렌드</li>
+        <li><strong>클렌징:</strong> The Ordinary Glucoside Foaming Cleanser(8성분 미니멀), CeraVe Cream-to-Foam(더블 클렌징 원스텝) 인기</li>
+        <li><strong>세럼:</strong> 엑소좀 기반 세럼, 마이크로니들링 세럼 등 고기능 성분 트렌드</li>
+        <li><strong>바디:</strong> Bodycare-ification 트렌드 지속. K-뷰티 바디케어 글로벌 확산</li>
       </ul>
-      <div class="haruna-point">글로벌 시장에서도 '클린 성분 + 검증된 보습력'이 핵심. 영문 성분 소개 자료 준비 권장</div>
     </div>
   </div>
 
@@ -604,17 +720,17 @@
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>성분</th><th>트렌드 방향</th><th>하루나 연관성</th></tr>
+          <tr><th>성분</th><th>트렌드 상태</th><th>하루나 연관성</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>흰목이버섯</strong></td><td>히알루론산 대안, 차세대 비건 보습 원료 대표주자</td><td><span class="star">★★★</span> 핵심 원료</td></tr>
-          <tr><td><strong>비동물성 PDRN</strong></td><td>식물 유래 비건 PDRN 전환 가속, 검색량 급증</td><td><span class="star">★★★</span> 핵심 성분</td></tr>
-          <tr><td><strong>피토뮤신</strong></td><td>달팽이 뮤신의 비건 대안, 참마·오크라 추출</td><td><span class="star">★★</span> 식자재 컨셉 유사</td></tr>
-          <tr><td><strong>세라마이드</strong></td><td>환절기 피부 장벽 강화 1순위, 더마 브랜드 주력</td><td><span class="star">★★</span> 경쟁 모니터링</td></tr>
-          <tr><td><strong>판테놀</strong></td><td>화해 1위 아토팜 핵심 성분, 진정+보습</td><td><span class="star">★★</span> 경쟁 모니터링</td></tr>
-          <tr><td><strong>NAD+</strong></td><td>세포 에너지 관리, 웰에이징 트렌드</td><td><span class="star">★</span> 모니터링</td></tr>
-          <tr><td><strong>선인장 추출물</strong></td><td>기후 탄력적 식물, 지속가능성</td><td><span class="star">★</span> 모니터링</td></tr>
-          <tr><td><strong>엑토인</strong></td><td>항스트레스 분자, 민감성 피부 대응</td><td><span class="star">★</span> 모니터링</td></tr>
+          <tr><td><strong>PDRN</strong></td><td>세럼 카테고리 2위(아누아), 10위(메디힐) — 세럼 시장 핵심 성분으로 부상</td><td><span class="star">⭐</span> 세럼 확장 라인 핵심 근거</td></tr>
+          <tr><td><strong>녹두·다시마·쌀</strong></td><td>클렌징폼 TOP 4 중 3개가 식자재 원료 기반</td><td><span class="star">⭐</span> 하루나 식자재 USP → 클렌징 확장 근거</td></tr>
+          <tr><td><strong>저분자 히알루론산</strong></td><td>세럼 1위(토리든), 클렌징 3위(토리든) — 크로스 카테고리 지배</td><td>경쟁 성분 — 흰목이버섯과 비교 소구</td></tr>
+          <tr><td><strong>마이크로바이옴/EGF</strong></td><td>세럼 4위(라보레브) — 차세대 바이오 성분</td><td>모니터링</td></tr>
+          <tr><td><strong>엑소좀</strong></td><td>2026 고기능 미니멀리즘 핵심 성분으로 부상</td><td>모니터링</td></tr>
+          <tr><td><strong>살리실산</strong></td><td>클렌징 트러블 케어 1위(주미소) — 트러블 타겟 클렌저 강세</td><td>클렌징 라인 성분 참고</td></tr>
+          <tr><td><strong>흰목이버섯</strong></td><td>📌 지속 — 비건 보습 원료 대안 지위 유지</td><td><span class="star">⭐</span> 하루나 핵심 원료</td></tr>
+          <tr><td><strong>비동물성 PDRN</strong></td><td>📌 지속 — 식물 유래 전환 가속</td><td><span class="star">⭐</span> 하루나 비건 포지셔닝</td></tr>
         </tbody>
       </table>
     </div>
@@ -624,33 +740,54 @@
   <div class="section">
     <div class="section-title">💬 소비자 고민/니즈</div>
     <ul class="needs-list">
-      <li><strong>1. 환절기 일교차에 따른 피부 건조·당김</strong><span>낮 12도, 밤 1도의 극심한 일교차에 피부 장벽이 약해지는 고민. 아침·저녁 다른 보습 루틴 필요</span></li>
-      <li><strong>2. 겨울→봄 제형 전환 타이밍</strong><span>두꺼운 바디크림에서 가벼운 로션으로 언제 전환해야 하는지 고민. '가벼운데 보습력 있는' 제품 탐색</span></li>
-      <li><strong>3. 봄 환절기 속건조 현상</strong><span>겉은 번들거려도 속은 바짝 마른 상태. 수분 장벽 강화 제품 수요 급증</span></li>
-      <li><strong>4. 향 좋은 바디크림 탐색</strong><span>'향수 대신 바디로션' 트렌드로 향기 경험 중시 소비자 증가. 체리블라썸, 피치, 라벤더 인기</span></li>
-      <li><strong>5. 부위별 맞춤 바디케어</strong><span>팔꿈치·무릎(리치한 밤) vs 등·가슴(산뜻한 로션) 세분화 니즈</span></li>
-      <li><strong>6. 성분 안전성·비건 인증</strong><span>클린뷰티 의식 소비 지속. 파라벤·합성향 프리 요구. 성분 투명성 중시</span></li>
+      <li><strong>1. 환절기 토탈 케어 루틴 고민</strong><span>세안(클렌징) → 세럼 → 보습(크림)까지 환절기에 맞는 전체 루틴을 한 번에 알고 싶은 니즈. 하루나가 3개 라인업으로 원스톱 제안 가능</span></li>
+      <li><strong>2. 약산성 세안 니즈 폭발</strong><span>환절기 민감해진 피부에 '세안 후 당김 없는' 약산성 폼클렌징 수요 급증</span></li>
+      <li><strong>3. PDRN 세럼 선택 고민</strong><span>PDRN 세럼 종류가 다양해지면서 어떤 제품이 좋은지 비교 니즈 증가</span></li>
+      <li><strong>4. 식자재 원료 신뢰도 상승</strong><span>녹두, 다시마, 쌀 등 '먹어도 되는 원료'로 만든 클렌저에 대한 소비자 호감도 높음</span></li>
+      <li><strong>5. 세럼+크림 레이어링</strong><span>세럼으로 활성 성분 흡수 후 크림으로 잠그는 루틴 관심 증가</span></li>
+      <li><strong>6. 향 좋은 바디크림 탐색</strong><span>📌 지속 — '향수 대신 바디로션' 트렌드</span></li>
     </ul>
   </div>
 
   <!-- 경쟁 제품 -->
   <div class="section">
-    <div class="section-title">🏷️ 경쟁 제품 동향</div>
+    <div class="section-title">🏷️ 경쟁 제품 동향 (바디크림 / 세럼 / 클렌징)</div>
+
+    <div class="table-label">세럼</div>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>브랜드/제품</th><th>동향</th><th>시사점</th></tr>
+          <tr><th>제품</th><th>브랜드</th><th>특징</th><th>가격대</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>아토팜 판테놀 크림</strong></td><td>화해 바디크림 1위</td><td>진정+보습 조합 강세</td></tr>
-          <tr><td><strong>라로슈포제 시카플라스트</strong></td><td>화해 2위, 올영픽 추천</td><td>프리미엄 더마 리더</td></tr>
-          <tr><td><strong>아토팜 MLE 크림</strong></td><td>화해 3위, 61,000원대</td><td>고가 더마 수용 가능</td></tr>
-          <tr><td><strong>더마비 데일리 모이스처</strong></td><td>올리브영 대용량(860ml)</td><td>가성비 더마 전략</td></tr>
-          <tr><td><strong>낫포유 트러블 미스트</strong></td><td>7년 연속 1위</td><td>트러블+바디 결합</td></tr>
-          <tr><td><strong>히든 퍼퓸 스프레이 바디로션</strong></td><td>5초 뿌리는 새 제형</td><td>편의성 혁신 트렌드</td></tr>
-          <tr><td><strong>일리윤 세라마이드 아토</strong></td><td>양대 플랫폼 TOP</td><td>세라마이드+중가 전략</td></tr>
+          <tr><td><strong>다이브인 히알루론산 세럼</strong></td><td>토리든</td><td>화해 1위, 올리브영 베스트</td><td>28,000원</td></tr>
+          <tr><td><strong>PDRN 캡슐 100 세럼</strong></td><td>아누아</td><td>화해 2위, PDRN 세럼 대표주자</td><td>24,500원</td></tr>
+          <tr><td><strong>마이크로바이옴 EGF 세럼</strong></td><td>라보레브</td><td>화해 4위, 차세대 바이오 성분</td><td>27,000원</td></tr>
+          <tr><td><strong>로즈PDRN 잡티세럼</strong></td><td>아이소이</td><td>올영픽 선정, 12년 연속 에센스 1위</td><td>—</td></tr>
+          <tr><td><strong>레티놀 시카 흔적 앰플</strong></td><td>이니스프리</td><td>화해 6위, 레티놀+시카 조합</td><td>16,500원</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="table-label">클렌징폼</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>제품</th><th>브랜드</th><th>특징</th><th>가격대</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>녹두 약산성 클렌징폼</strong></td><td>비플레인</td><td>화해 1위, 식자재 원료</td><td>17,900원</td></tr>
+          <tr><td><strong>다시마 앰플 클렌징폼</strong></td><td>션리</td><td>화해 2위, 식자재 원료</td><td>17,900원</td></tr>
+          <tr><td><strong>다이브인 히알루론산 클렌징폼</strong></td><td>토리든</td><td>화해 3위, 크로스 카테고리</td><td>18,900원</td></tr>
+          <tr><td><strong>아쿠아 라이스 약산성 클렌징폼</strong></td><td>에스네이처</td><td>화해 4위, 쌀 원료</td><td>19,500원</td></tr>
+          <tr><td><strong>퓨어 소이빈 클렌징폼</strong></td><td>마녀공장</td><td>화해 8위, 대두 원료</td><td>10,600원</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-label">바디크림</div>
+    <div class="no-change-note">
+      📌 전일과 순위 변동 없음 — 아토팜 판테놀(1위), 라로슈포제 시카플라스트(2위), 아토팜 MLE(3위) 유지
     </div>
   </div>
 
@@ -659,33 +796,33 @@
     <div class="section-title">💡 콘텐츠 아이디어 제안</div>
 
     <div class="idea-card">
-      <span class="category weather">🌡️ 오늘 날씨 활용</span>
-      <div class="idea-title">"일교차 11도, 피부 장벽이 위험합니다"</div>
-      <div class="idea-desc">오늘 서울 1℃→12℃ 일교차 데이터를 활용한 환절기 바디케어 교육 콘텐츠. 흰목이버섯의 보습 장벽 강화 효과를 자연스럽게 연결. 릴스 또는 카드뉴스 형태</div>
+      <span class="category weather">🌡️ 날씨/시즌 연계</span>
+      <div class="idea-title">"일교차 11도, 아침 세안부터 달라져야 합니다"</div>
+      <div class="idea-desc">오늘 1℃→12℃ 일교차 데이터 활용. 아침 저자극 세안(폼클렌징) → 진정 세럼 → 보습 크림 3단계 환절기 루틴 제안. 하루나 3개 라인업 토탈 케어 포지셔닝</div>
     </div>
 
     <div class="idea-card">
       <span class="category trend">📊 트렌드 연계</span>
-      <div class="idea-title">"얼굴만 스킨케어? 이제 바디도 스킨케어하는 시대"</div>
-      <div class="idea-desc">글로벌 'Bodycare-ification' 트렌드 소개. 하루나 실키 머쉬룸 바디크림이 얼굴 스킨케어급 성분(흰목이버섯, PDRN, 화이트 토마토)을 바디에 담았다는 포지셔닝</div>
+      <div class="idea-title">"녹두·다시마·쌀... 식탁 위 재료가 세안제가 되는 이유"</div>
+      <div class="idea-desc">화해 클렌징 TOP 5 중 3개가 식자재 원료라는 데이터 활용. 하루나의 식자재 기반 클렌저 확장 당위성을 소비자에게 자연스럽게 교육</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category trend">📊 트렌드 연계</span>
+      <div class="idea-title">"PDRN, 바디크림 다음은 세럼이다"</div>
+      <div class="idea-desc">화해 세럼 2위에 PDRN 세럼(아누아) 진입. 하루나 PDRN 성분이 세럼에서도 주목받는 트렌드 연결</div>
     </div>
 
     <div class="idea-card">
       <span class="category ingredient">🧪 성분 교육</span>
-      <div class="idea-title">"히알루론산은 잊어, 흰목이버섯의 시대"</div>
-      <div class="idea-desc">2026년 차세대 비건 보습 성분으로 주목받는 흰목이버섯 트렌드를 하루나 핵심 원료와 직접 연결하는 성분 교육 콘텐츠</div>
-    </div>
-
-    <div class="idea-card">
-      <span class="category season">🌸 시즌 연계</span>
-      <div class="idea-title">"봄에는 바디크림도 갈아입어야 해요"</div>
-      <div class="idea-desc">겨울→봄 제형 전환 가이드. 두꺼운 바디버터 대신 가벼우면서 보습력 있는 크림으로 전환 + 실키 머쉬룸 바디크림의 가벼운 텍스처 강조</div>
+      <div class="idea-title">"하루나가 만들면 세럼도 다릅니다 — 흰목이버섯 세럼 프리뷰"</div>
+      <div class="idea-desc">세럼 확장 라인 티저 콘텐츠. 흰목이버섯의 히알루론산 대비 분자 크기 이점을 세럼 제형에 적용한 스토리</div>
     </div>
 
     <div class="idea-card">
       <span class="category ingredient">🧪 성분 교육</span>
-      <div class="idea-title">"성분표 읽어줄게: 식탁 위 재료가 피부에 닿을 때"</div>
-      <div class="idea-desc">흰목이버섯, 화이트 토마토 등 식자재 기반 원료의 스토리텔링. 클린뷰티·비건 소비 트렌드와 연결</div>
+      <div class="idea-title">"순한 세안의 정답 — 식자재 폼클렌징이 뜨는 이유"</div>
+      <div class="idea-desc">녹두·다시마가 피부에 좋은 과학적 이유 + 하루나 폼클렌징 개발 방향 암시</div>
     </div>
   </div>
 
@@ -694,68 +831,76 @@
     <div class="section-title"># 해시태그/키워드 트렌드</div>
     <div class="hashtag-section">
       <h4>📈 급상승 해시태그</h4>
+      <span class="hashtag trending">#PDRN세럼</span>
+      <span class="hashtag trending">#세럼추천</span>
+      <span class="hashtag trending">#봄세럼</span>
+      <span class="hashtag trending">#환절기세럼</span>
+      <span class="hashtag trending">#약산성클렌징폼</span>
+      <span class="hashtag trending">#순한폼클렌징</span>
+      <span class="hashtag trending">#저자극세안</span>
+      <span class="hashtag trending">#식자재클렌저</span>
       <span class="hashtag trending">#바디케어루틴</span>
-      <span class="hashtag trending">#바디스킨케어</span>
       <span class="hashtag trending">#환절기바디크림</span>
       <span class="hashtag trending">#봄바디크림</span>
       <span class="hashtag trending">#클린뷰티</span>
-      <span class="hashtag trending">#비건바디크림</span>
+      <span class="hashtag trending">#비건스킨케어</span>
       <span class="hashtag trending">#식물성보습</span>
-      <span class="hashtag trending">#향좋은바디로션</span>
-      <span class="hashtag trending">#퍼퓸바디로션</span>
-      <span class="hashtag trending">#피부장벽</span>
     </div>
     <div class="hashtag-section">
       <h4>🧴 하루나 추천 해시태그</h4>
+      <span class="hashtag haruna">#하루나스킨케어</span>
+      <span class="hashtag haruna">#실키머쉬룸</span>
       <span class="hashtag haruna">#흰목이버섯바디크림</span>
       <span class="hashtag haruna">#식자재스킨케어</span>
-      <span class="hashtag haruna">#실키머쉬룸</span>
-      <span class="hashtag haruna">#봄환절기바디크림</span>
       <span class="hashtag haruna">#비건PDRN</span>
+      <span class="hashtag haruna">#봄환절기루틴</span>
       <span class="hashtag haruna">#일교차보습</span>
+      <span class="hashtag haruna">#하루나세럼</span>
+      <span class="hashtag haruna">#하루나클렌저</span>
     </div>
     <div class="hashtag-section">
       <h4>🔍 주목할 검색 키워드</h4>
-      <span class="hashtag trending">환절기 바디크림 추천 2026</span>
-      <span class="hashtag trending">봄 가벼운 바디로션</span>
-      <span class="hashtag trending">비건 PDRN 바디크림</span>
-      <span class="hashtag trending">흰목이버섯 보습</span>
-      <span class="hashtag trending">끈적임 없는 보습 바디크림</span>
-      <span class="hashtag trending">바디케어 루틴 순서</span>
+      <span class="hashtag keyword">PDRN 세럼 추천 2026</span>
+      <span class="hashtag keyword">약산성 폼클렌징 추천</span>
+      <span class="hashtag keyword">녹두 클렌징폼</span>
+      <span class="hashtag keyword">환절기 스킨케어 루틴 순서</span>
+      <span class="hashtag keyword">흰목이버섯 세럼</span>
     </div>
   </div>
 
   <!-- 내일 예보 -->
   <div class="tomorrow-card">
     <h2>📅 내일 예보 기반 콘텐츠 준비 제안</h2>
+    <p style="font-size: 14px; color: #6b5540; margin-bottom: 16px; font-weight: 500;">내일(4/8) 예보: 대체로 맑다가 오후부터 차차 흐려짐 — 주중 기온 상승세 예상</p>
     <div class="tomorrow-item">
-      <strong>1. 맑은 날 자외선 주의보 + 바디 보습</strong>
-      <p>4/8 맑다가 오후 흐려짐 예보 — 4월 맑은 날 자외선 지수 상승에 대비한 '선케어 후 보습' 콘텐츠 준비. 자외선 노출 후 진정+보습 메시지와 화이트 토마토 항산화 성분 연결</p>
+      <strong>1. "맑은 날 자외선 + 환절기 = 세럼이 답"</strong>
+      <p>4월 자외선 지수 상승 시기, 자외선 손상 후 진정·재생 세럼의 중요성 콘텐츠. 화이트토마토 항산화 + PDRN 재생 성분 연결</p>
     </div>
     <div class="tomorrow-item">
-      <strong>2. 기온 올라가면 바디크림 텍스처도 바꿔야 할까?</strong>
-      <p>주간 기온 상승세 예상 — Q&A형 콘텐츠로 계절 전환기 바디크림 선택 가이드 제작. 실키 머쉬룸 바디크림의 사계절 사용 가능한 텍스처 강조</p>
+      <strong>2. "기온 올라가면 클렌징도 바꿔야 할까?"</strong>
+      <p>주간 기온 상승에 따른 피지 분비 증가 → 겨울용 밀크 클렌저에서 봄용 폼클렌저로 전환 가이드</p>
     </div>
   </div>
 
   <!-- Sources -->
   <div class="sources">
     <h3>Sources</h3>
-    <a href="https://www.korea247.kr/south-korea/seoul/weather-seoul/" target="_blank">Korea247 서울 실시간 날씨</a>
-    <a href="https://www.accuweather.com/ko/kr/seoul/226081/april-weather/226081" target="_blank">AccuWeather 서울 4월</a>
-    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4411" target="_blank">화해 바디크림/젤 TOP 100</a>
-    <a href="https://business.hwahae.co.kr/insight/beauty-trend-2026-sustainable-ingredients/" target="_blank">화해 2026 지속가능한 성분 5가지</a>
-    <a href="https://www.whowhatwear.com/beauty/skin/skincare-trends-2026" target="_blank">Who What Wear 2026 Skincare Trends</a>
-    <a href="https://www.i-boss.co.kr/ab-74668-5051" target="_blank">아이보스 PDRN 트렌드 분석</a>
-    <a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=534224" target="_blank">2026 뷰티 트렌드 안심·비건</a>
-    <a href="https://www.cosinkorea.com/news/article.html?no=56872" target="_blank">비건 PDRN 특허 출원</a>
+    <a href="https://www.korea247.kr/south-korea/seoul/weather-seoul/" target="_blank">Korea247 서울 날씨</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4411" target="_blank">화해 바디크림/젤 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 세럼 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징폼 랭킹</a>
+    <a href="https://business.hwahae.co.kr/insight/trendreport-2026-summary/" target="_blank">화해 2026 트렌드 리포트</a>
+    <a href="https://business.hwahae.co.kr/insight/beauty-trend-2026-sustainable-ingredients/" target="_blank">화해 2026 지속가능 성분</a>
     <a href="https://www.oliveyoung.co.kr/store/main/getBestList.do" target="_blank">올리브영 랭킹</a>
-    <a href="https://www.glowpick.com/beauty/ranking?id=86" target="_blank">글로우픽 바디 랭킹</a>
-    <a href="https://theqoo.net/beauty/2787180111" target="_blank">더쿠 바디 제품 공유</a>
-    <a href="https://www.cosmopolitan.co.kr/article/1888918" target="_blank">코스모폴리탄 환절기 바디케어</a>
-    <a href="https://www.meconomynews.com/news/articleView.html?idxno=129477" target="_blank">봄 스킨케어 라인업 경쟁</a>
-    <a href="https://www.today.com/shop/best-beauty-products-spring-2026-rcna261399" target="_blank">TODAY Spring Beauty 2026</a>
-    <a href="https://www.mommabears.us/post/2026/spring-skincare-reset/" target="_blank">Spring Skincare Reset 2026</a>
+    <a href="https://www.ibabynews.com/news/articleView.html?idxno=140442" target="_blank">아이베이비뉴스</a>
+    <a href="https://cosinkorea.com/mobile/article.html?no=56007" target="_blank">코신코리아</a>
+    <a href="https://www.glowpick.com/stores/21?cate1Id=19&cate2Id=96&cate3Ids=286" target="_blank">글로우픽 세럼 랭킹</a>
+    <a href="https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112" target="_blank">글로우픽 클렌징폼 랭킹</a>
+    <a href="https://www.redrecs.com/best-facial-cleanser" target="_blank">RedRecs Best Facial Cleanser</a>
+    <a href="https://beebythesea.com/blog/2025/11/27/best-foaming-face-wash-picks-for-a-fresh-2026-routine/" target="_blank">BeeByTheSea Foaming Face Wash 2026</a>
+    <a href="https://theqoo.net/beauty/3306962233" target="_blank">더쿠 뷰티</a>
+    <a href="https://www.whowhatwear.com/beauty/skin/skincare-trends-2026" target="_blank">WhoWhatWear Skincare Trends 2026</a>
+    <a href="https://www.accuweather.com/ko/kr/seoul/226081/april-weather/226081" target="_blank">AccuWeather 서울 4월</a>
   </div>
 
   <div class="footer">
