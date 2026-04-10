@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>everypace 일일 소재 리포트 — 2026년 04월 11일</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      min-height: 100vh;
+    }
+    .header {
+      background: #4a9a6a;
+      color: #fff;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .header p {
+      margin-top: 8px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 16px 60px;
+    }
+    .section {
+      margin-bottom: 36px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #4a9a6a;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .card-rank {
+      font-size: 12px;
+      font-weight: 700;
+      color: #4a9a6a;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .card-rank.hot {
+      color: #e05a1e;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card-meta {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .reason {
+      font-size: 14px;
+      color: #444;
+      background: #f4f9f6;
+      border-left: 3px solid #4a9a6a;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .url-link {
+      font-size: 13px;
+      color: #4a9a6a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .url-link:hover { text-decoration: underline; }
+    /* 인스타 카드 */
+    .card-with-thumb {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .card-thumb {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .card-thumb-fallback {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    .card-body { flex: 1; min-width: 0; }
+    .channel-badge {
+      display: inline-block;
+      background: #e8f4ee;
+      color: #4a9a6a;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 2px 7px;
+      margin-right: 8px;
+    }
+    /* 하이라이트 박스 */
+    .highlight-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .highlight-pick {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .highlight-pick:last-of-type { margin-bottom: 0; }
+    .pick-num {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      background: #4a9a6a;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .pick-content { flex: 1; }
+    .pick-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+    .pick-plan {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+    .badge-hot {
+      display: inline-block;
+      background: #fff0eb;
+      color: #e05a1e;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-left: 6px;
+    }
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 10px 0 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📋 everypace 일일 소재 리포트 — 2026년 04월 11일</h1>
+  <p>런갤 + 인스타그램 웰니스 채널 스캔 결과 · 어제(2026-04-10) 기준</p>
+</div>
+
+<div class="container">
+
+  <!-- 섹션 1: 런갤 TOP 소재 -->
+  <div class="section">
+    <div class="section-title">🏃 런갤 TOP 소재</div>
+
+    <!-- 종합 TOP -->
+    <div class="card">
+      <div class="card-rank hot">🔥 종합 TOP #1 — 조회·댓글 동시 만족</div>
+      <div class="card-title">여성, 중장년층 러너들의 메이저 대회 참여 기회가 줄고 있다</div>
+      <div class="card-meta">👁 조회 1,351 / 💬 댓글 13 / 📅 2026-04-10</div>
+      <div class="reason">사회적 이슈 + 정보성. 메이저 마라톤 래플 구조가 사실상 기록 보유 엘리트 남성에게 유리하다는 공감형 논쟁. "마라톤 참가권, 누구를 위한 것인가?" 형태의 pacenote 카드뉴스 소재로 최적.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1003026" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank hot">🔥 종합 TOP #2 — 조회·댓글 동시 만족</div>
+      <div class="card-title">아 푸마 내구성 미치겠네…</div>
+      <div class="card-meta">👁 조회 1,116 / 💬 댓글 24 / 📅 2026-04-10</div>
+      <div class="reason">러닝 용품 브랜드 내구성 이슈. 댓글 반응도 높아 공감 확산. "러닝화 언제 바꿔야 할까?" 또는 "러닝화 브랜드별 내구성 비교" fastpace 카드뉴스 소재로 재편집 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1002944" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 조회수 TOP5 -->
+    <div class="card">
+      <div class="card-rank">📈 조회수 TOP #1</div>
+      <div class="card-title">키움런 쌉혜자 ㄷㄷ</div>
+      <div class="card-meta">👁 조회 1,524 / 💬 댓글 8 / 📅 2026-04-10</div>
+      <div class="reason">러닝 이벤트 혜자 정보로 커뮤니티 관심 집중. "국내 무료·혜자 러닝 이벤트 모음" 콘텐츠 방향으로 활용 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1002912" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 TOP #2</div>
+      <div class="card-title">제마 기록 미보유자 당첨확률 ㅋㅋㅋㅋㅋㅋ</div>
+      <div class="card-meta">👁 조회 1,366 / 💬 댓글 13 / 📅 2026-04-10</div>
+      <div class="reason">제주마라톤 래플 당첨 확률 논쟁. 대회 참가권 경쟁 심화 트렌드 반영. "마라톤 대회 신청, 이제는 운이 필요하다" 콘텐츠 소재.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1002956" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 TOP #3</div>
+      <div class="card-title">내일 우리나라 육상 국대선수들이 출전하는 대회가 열림.jpg</div>
+      <div class="card-meta">👁 조회 1,319 / 💬 댓글 2 / 📅 2026-04-10</div>
+      <div class="reason">국내 육상 국가대표 대회 정보. 러닝 커뮤니티 높은 관심. 국내 육상 엘리트 선수 소개 또는 대회 소식 공유 콘텐츠.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1003029" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 TOP #4 / 💬 댓글 TOP #2</div>
+      <div class="card-title">임바형님 양천마라톤 오네?</div>
+      <div class="card-meta">👁 조회 1,007 / 💬 댓글 17 / 📅 2026-04-10</div>
+      <div class="reason">유명 러너 참여 화제. 러닝 인플루언서·커뮤니티 동향 파악용. 직접 소재보다 트렌드 파악 참고용.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1002861" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 TOP #5 / 💬 댓글 TOP #1</div>
+      <div class="card-title">마라톤사진 안 찍히는법없나요</div>
+      <div class="card-meta">👁 조회 986 / 💬 댓글 34 / 📅 2026-04-10</div>
+      <div class="reason">공감형 인기 게시물. 댓글 34개로 활발한 반응. "마라톤 사진 잘 나오는 법 / 레이스 포토 팁" 가벼운 공감형 카드뉴스 소재.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1002932" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 TOP #3</div>
+      <div class="card-title">러닝중에 러닝 크루한테 갇히면 어케 해야하나요</div>
+      <div class="card-meta">👁 조회 800 / 💬 댓글 16 / 📅 2026-04-10</div>
+      <div class="reason">러닝 크루 매너 공감형 논쟁. "러닝 크루 에티켓 5가지" 또는 "크루런 vs 솔로런 장단점" 카드뉴스 소재 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1003056" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 TOP #5</div>
+      <div class="card-title">10K 전문 러너인데 댓글로 한소리 들었다</div>
+      <div class="card-meta">👁 조회 633 / 💬 댓글 9 / 📅 2026-04-10</div>
+      <div class="reason">거리별 전문화 논쟁. "10K 러너는 진짜 러너가 아닌가?" 공감·논쟁형 콘텐츠 소재. 다양한 러닝 스타일 존중 메시지로 재편집 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1003027" target="_blank">→ 원문 보기</a>
+    </div>
+  </div>
+
+  <!-- 섹션 2: 인스타그램 TOP 소재 -->
+  <div class="section">
+    <div class="section-title">📱 인스타그램 TOP 소재</div>
+
+    <!-- 인스타 #1 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #1 — runnersworldmag (러닝)</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb"
+          src="https://scontent-hou1-1.cdninstagram.com/v/t51.82787-15/670475838_18583599313035057_886799840119073258_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gGDt3uxIWNdqovjE3zFPkJI6TFoYjHLCfwBfE5uzLFL4N0qZgv6TMl020edu-lf0sg&_nc_ohc=qW76x9w7Jc8Q7kNvwEawOOz&_nc_gid=El9DLv4_RMWcVAnRndQT6g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2hfDZ-BEkmMmEifTHN-3phIYJJ-9mf2mbBELcMXKN2HQ&oe=69DF6F5C&_nc_sid=10d13b"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@runnersworldmag</span>Courtney Dauwalter의 영양 전략에서 일반 러너가 배울 점</div>
+          <div class="card-meta">❤️ 667 / 💬 12 / 📅 2026-04-09</div>
+          <div class="reason">세계 최고 울트라마라토너의 레이스 영양 전략 소개. "평범한 러너도 따라할 수 있는 장거리 연료 보충법" 형태로 fastpace 카드뉴스 최적 소재. 데이터·전략 기반 정보성 높음.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DW6sfGQmcTA/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #2 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #2 — nedratawwab (멘탈헬스) <span class="badge-hot">HOT 8.6K</span></div>
+      <div class="card-with-thumb">
+        <img class="card-thumb"
+          src="https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/670295181_18547726372071463_8259667271979742928_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFn_F9IQVt8polfRV7-GSz4oOhXDS5bl8s8wKO5UHxhabq3TPRAZXF7p5RfeqtQgQ0&_nc_ohc=giR-FRS6RhkQ7kNvwFk7Xrq&_nc_gid=8tqs1_BcdMvWOJe9oZbtWQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3hPnd47hHCQ4HMiS3vnicqBnJFa1sLxJr3bZStIdTBtpA&oe=69DF6045&_nc_sid=10d13b"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@nedratawwab</span>"더 이상 과기능하지 않으면 노력 없는 사람에게는 포기처럼 보인다"</div>
+          <div class="card-meta">❤️ 8,631 / 💬 162 / 📅 2026-04-09</div>
+          <div class="reason">관계에서의 경계 설정 메시지. 폭발적 반응(8.6K 좋아요). 러닝 크루 또는 훈련 파트너십 맥락에서 "내 페이스를 지키는 것이 이기심이 아닌 이유" 형태로 재해석 가능한 pacenote 소재.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DW6yHskDliR/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #3 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #3 — womenshealthmag (피트니스)</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb"
+          src="https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/669712359_18581620735005611_1731147854849181796_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2gETAvW7MF-Ssf6KiMg5PmVc5shYFux0YMuUyDKp__3HMPk-VIKWBs_CDeHhPW1VUW4&_nc_ohc=bSNg5AXT9-4Q7kNvwGfCJh6&_nc_gid=5S8rsUQQZ2b_5QH3keHt9g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0wog7AZs24wHldmk8MaFD6cg3CBfGH8Bec3-bdIyOSxg&oe=69DF5A4A&_nc_sid=10d13b"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@womenshealthmag</span>"달리면 무릎 망가진다는 건 오해다" — 전문가들이 반박</div>
+          <div class="card-meta">❤️ N/A / 💬 0 / 📅 2026-04-10</div>
+          <div class="reason">러닝과 관절건강 관련 미신 타파. "러닝이 무릎에 나쁘다는 건 사실일까?" fastpace 형태의 연구 기반 정보성 카드뉴스. 러닝 입문자 대상 장벽 낮추기 메시지.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DW87nh4EjC5/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #4 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #4 — headspace (멘탈헬스) <span class="badge-hot">HOT 5.6K</span></div>
+      <div class="card-with-thumb">
+        <img class="card-thumb"
+          src="https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/662345480_18579910423057927_3141343591845738213_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEqy9jFck5szFO7HvO4tZ7En_SYt9BtKMA9BKnV1e4PWqUrdKsoMzcJS3YUBLlg&_nc_ohc=xjX_lPKcM1MQ7kNvwGBs0EC&_nc_gid=h7pOyN44HF-OPD0-kHmTiw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1Q2ybVSzGLHdy-PsBbucDUmc7pSpB91qD9NoqkS5BLlg&oe=69DF54E5&_nc_sid=10d13b"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@headspace</span>"현재 순간에 감사할 것들이 너무 많다 — 찾으려 한다면"</div>
+          <div class="card-meta">❤️ 5,566 / 💬 66 / 📅 2026-04-08</div>
+          <div class="reason">마음챙김·현재 집중 메시지. 5.6K 좋아요로 강한 공감 반응. "달리면서 머리가 맑아지는 이유" 또는 "마음챙김 러닝이란?" 형태로 pacenote 재해석 가능.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DW4E37vDag2/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #5 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #5 — runnersworldmag (러닝)</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb"
+          src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/669697017_18583741492035057_8034592851537588331_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gE2_-ZUpd9AdWiYq2r9DCrHBLz7BJsQ5CFzfMZTzfG_whAuNHQ3aIVGUBn-XHNj78g&_nc_ohc=Cf_Gq2oP6bMQ7kNvwF5LRhI&_nc_gid=KwfNzJS9E-09PZIHSR35JQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0fslAvglw_SoZk_tRjaJVxaeH00cINuAJWkGB8zFH_hA&oe=69DF6DB4&_nc_sid=10d13b"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@runnersworldmag</span>스피드 훈련 후 매번 완전히 탈진한다면 — 너무 세게 밀어붙이는 신호</div>
+          <div class="card-meta">❤️ 270 / 💬 1 / 📅 2026-04-10</div>
+          <div class="reason">과훈련 vs 적정 강도 판단 가이드. "내가 너무 세게 달리고 있다는 5가지 신호" pacenote 형태 카드뉴스. 부상 예방 + 훈련 효율 관심 러너 타겟.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DW8ouBXmQXh/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 3: 오늘의 추천 소재 -->
+  <div class="section">
+    <div class="section-title">💡 오늘의 추천 소재</div>
+    <div class="highlight-box">
+      <div class="highlight-pick">
+        <div class="pick-num">1</div>
+        <div class="pick-content">
+          <div class="pick-title">여성·중장년 러너의 메이저 대회 기회 불평등 (런갤 #1)</div>
+          <div class="pick-plan">사회적 공감 이슈 + 높은 조회/댓글 → <strong>pacenote.</strong> "마라톤 참가권은 누구의 것인가 — 래플 시대의 러닝 접근성" 6장 카드뉴스. 여성·중장년 러너 공감대 형성에 최적.</div>
+        </div>
+      </div>
+      <div class="highlight-pick">
+        <div class="pick-num">2</div>
+        <div class="pick-content">
+          <div class="pick-title">Courtney Dauwalter 영양 전략 (인스타 #1)</div>
+          <div class="pick-plan">연구·데이터 기반 정보성 + 글로벌 화제성 → <strong>fastpace.</strong> "세계 최강 울트라러너가 레이스 중 먹는 것들 — 일반 러너가 따라할 수 있는 영양 전략 4가지" 카드뉴스.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 4: 신규 채널 제안 -->
+  <div class="section">
+    <div class="section-title">📌 신규 채널 제안</div>
+    <div class="highlight-box">
+      <div class="highlight-pick">
+        <div class="pick-num">1</div>
+        <div class="pick-content">
+          <div class="pick-title">@marathon.nutritionist (러닝영양)</div>
+          <div class="pick-plan">마라톤 전문 영양사 Kristy Baumann. 68K 팔로워. 연료 보충·레이스 영양·언더퓨얼링 예방 콘텐츠 전문. everypace fastpace 시리즈와 시너지 높음. <a class="url-link" href="https://www.instagram.com/marathon.nutritionist/" target="_blank">→ 채널 보기</a></div>
+        </div>
+      </div>
+      <div class="highlight-pick">
+        <div class="pick-num">2</div>
+        <div class="pick-content">
+          <div class="pick-title">@runningchannel (러닝)</div>
+          <div class="pick-plan">160K 팔로워. 러닝 팁·뉴스·동기부여 콘텐츠 전문. 영어권 러닝 트렌드와 글로벌 레이스 소식 수집에 유용. 다양한 거리·레벨 러너 대상 콘텐츠 풍부. <a class="url-link" href="https://www.instagram.com/runningchannel/" target="_blank">→ 채널 보기</a></div>
+        </div>
+      </div>
+      <p style="margin-top:14px; font-size:13px; color:#999;">채널 추가를 원하면 "추가해줘"라고 답해주세요.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Generated by everypace automation · sofit · 2026-04-11
+</footer>
+
+</body>
+</html>
