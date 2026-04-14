@@ -133,6 +133,92 @@
 <tr><td>ad08</td><td>₩96,309</td><td>1.46%</td><td>1건</td><td>₩96,309</td><td>11.5%</td><td>100.0%</td></tr>
 <tr><td>ad09</td><td>₩29,665</td><td>1.74%</td><td>0건</td><td>—</td><td>15.0%</td><td>0.0%</td></tr>
 </tbody></table></div>
+
+<!-- ===== 콘텐츠 임팩트 분석 섹션 (자동 삽입) ===== -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3"></script>
+
+<div class="section-header"><h2>6. 콘텐츠 임팩트 분석 — 자사몰 방문자 x 인스타 포스팅</h2></div>
+
+<div style="display:flex; gap:12px; flex-wrap:wrap; margin:16px 0;">
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">일평균 방문자</div>
+    <div style="font-size:22px; font-weight:700; color:#5a7abf;">157명</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">최고 방문일</div>
+    <div style="font-size:22px; font-weight:700; color:#e07050;">268명</div>
+    <div style="font-size:11px; color:#b0aaa4;">2026-04-12</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">최저 방문</div>
+    <div style="font-size:22px; font-weight:700; color:#8a8580;">59명</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">인스타 포스팅</div>
+    <div style="font-size:22px; font-weight:700; color:#c13584;">0건</div>
+  </div>
+</div>
+
+<p style="font-size:13px; color:#8a8580; margin:8px 0 16px;">
+  세로 점선은 인스타그램 포스팅 시점입니다. <span style="color:rgba(255,99,132,0.9);">■</span> 릴스 &nbsp;
+  <span style="color:rgba(54,162,235,0.9);">■</span> 이미지 &nbsp;
+  <span style="color:rgba(75,192,192,0.9);">■</span> 캐러셀
+</p>
+
+<div style="background:#fff; border-radius:14px; padding:24px; margin:16px 0; border:1px solid #eae6e1;">
+  <canvas id="visitorChart" height="280"></canvas>
+</div>
+
+<script>
+const ctx = document.getElementById('visitorChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["2026-03-15", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14"],
+    datasets: [
+      {
+        label: '총 방문자',
+        data: [245, 183, 178, 154, 131, 152, 97, 92, 107, 98, 74, 128, 85, 70, 80, 59, 109, 105, 173, 149, 175, 253, 230, 240, 264, 246, 218, 180, 268, 242, 88],
+        borderColor: '#5a7abf',
+        backgroundColor: 'rgba(90,122,191,0.1)',
+        fill: true,
+        tension: 0.3,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        pointBackgroundColor: '#5a7abf',
+      },
+      {
+        label: '신규 방문자',
+        data: [208, 138, 142, 116, 108, 128, 76, 74, 79, 71, 48, 90, 58, 55, 65, 41, 82, 81, 147, 125, 146, 223, 201, 217, 240, 222, 198, 167, 261, 203, 78],
+        borderColor: '#e07050',
+        borderDash: [5, 5],
+        fill: false,
+        tension: 0.3,
+        borderWidth: 1.5,
+        pointRadius: 2,
+        pointBackgroundColor: '#e07050',
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxRotation: 45, font: { size: 10 } } },
+      y: { beginAtZero: true, grid: { color: '#f0ebe4' } }
+    },
+    plugins: {
+      annotation: {
+        annotations: {  }
+      },
+      legend: { display: true, position: 'top' }
+    }
+  }
+});
+</script>
+<!-- ===== /콘텐츠 임팩트 분석 섹션 ===== -->
+
 <hr>
 
 <div class="section-header"><h2>4. 경쟁사 메타 광고 라이브러리 분석</h2></div>
