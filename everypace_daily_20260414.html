@@ -213,28 +213,17 @@
     </div>
   </div>
 
-  <!-- Section 4: 신규 채널 제안 -->
+  <!-- Section 4: 신규 채널 제안 누적 관리 -->
   <div class="section">
-    <div class="section-title">📌 신규 채널 제안</div>
-    <div class="highlight-box">
+    <div class="section-title">📌 신규 채널 제안 관리</div>
+    <p style="font-size:13px;color:#888;margin-bottom:16px;">매일 2개씩 자동 추가 · ✅ 추가 / ❌ 드랍으로 결정 · 결정은 브라우저에 저장되어 다음에 와도 유지됩니다</p>
 
-      <div class="highlight-pick">
-        <div class="pick-num">1</div>
-        <div class="pick-content">
-          <div class="pick-title">@runstreet (러닝/라이프스타일)</div>
-          <div class="pick-plan">뉴욕 기반 도시 러닝 커뮤니티 채널. 스트리트 러닝 문화, 러닝화 리뷰, 도심 코스 가이드를 세련된 비주얼로 전달. 국내 MZ 러너 타깃에게 어필할 해외 트렌드 소스. <a class="url-link" href="https://www.instagram.com/runstreet/" target="_blank">→ 채널 보기</a></div>
-        </div>
-      </div>
+    <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" id="cs-subtabs"></div>
+    <div id="cs-cards"></div>
 
-      <div class="highlight-pick">
-        <div class="pick-num">2</div>
-        <div class="pick-content">
-          <div class="pick-title">@jayshetty (라이프스타일/멘탈헬스)</div>
-          <div class="pick-plan">전 힌두 수도승 출신 베스트셀러 작가·팟캐스터(3천만 팔로워). '달리기=움직이는 명상' 관점과 자기돌봄 콘텐츠가 everypace 러너 독자에게 적합. 오늘 소재처럼 멘탈×러닝 연결 기획에 유용. <a class="url-link" href="https://www.instagram.com/jayshetty/" target="_blank">→ 채널 보기</a></div>
-        </div>
-      </div>
-
-      <p style="margin-top:14px; font-size:13px; color:#999;">채널 추가를 원하면 "추가해줘"라고 답해주세요.</p>
+    <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:14px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+      <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;"></span>
+      <button onclick="openCSModal()" style="background:#4a9a6a;color:#fff;padding:7px 18px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;">적용 명령어 보기</button>
     </div>
   </div>
 
@@ -243,5 +232,101 @@
   </div>
 
 </div>
+
+<!-- 모달 -->
+<div id="cs-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;padding:28px;max-width:500px;width:90%;">
+    <h3 style="font-size:16px;font-weight:700;margin-bottom:6px;">🛠 channels.json 적용 명령어</h3>
+    <p style="font-size:13px;color:#666;margin-bottom:14px;line-height:1.6;">터미널에서 실행하거나, Claude에게 "이 명령어 실행해줘"라고 전달하세요.</p>
+    <div id="cs-cmd-block" style="background:#1a1a1a;color:#7ec89a;font-family:'SF Mono','Fira Code',monospace;font-size:12px;padding:14px 16px;border-radius:8px;margin-bottom:14px;white-space:pre-wrap;word-break:break-all;line-height:1.8;"></div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;">
+      <button onclick="copyCSCmd()" style="background:#4a9a6a;color:#fff;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">📋 복사</button>
+      <button onclick="document.getElementById('cs-modal').style.display='none'" style="background:#f0f0f0;color:#666;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">닫기</button>
+    </div>
+  </div>
+</div>
+<div id="cs-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:500;opacity:0;transition:opacity 0.2s;pointer-events:none;z-index:300;"></div>
+
+<script>
+// ── 누적 채널 제안 목록 (매일 자동 업데이트됨) ──────────────
+const CHANNEL_SUGGESTIONS = [
+  { username:'hubermanlab', category:'웰니스/과학', reason:'스탠퍼드 신경과학자 Andrew Huberman. 수면·스트레스·운동 퍼포먼스를 데이터로 설명. fastpace. 시리즈 소재 금광. 팔로워 5.7M.', url:'https://www.instagram.com/hubermanlab/', suggested_date:'2026-04-14' },
+  { username:'mattdavella', category:'라이프스타일/습관', reason:'미니멀리즘·습관 형성·의도적 삶 설계 전문. 달리기를 루틴으로 만드는 기획 소재로 활용 가능. everypace 톤과 잘 맞는 담백한 비주얼. 팔로워 1.4M.', url:'https://www.instagram.com/mattdavella/', suggested_date:'2026-04-14' }
+];
+
+const CS_KEY = 'ep_channel_decisions';
+let csTab = 'pending';
+
+function loadCS(){ try{ return JSON.parse(localStorage.getItem(CS_KEY)||'{}'); }catch{ return {}; } }
+function saveCS(d){ localStorage.setItem(CS_KEY, JSON.stringify(d)); }
+
+function renderCS(){
+  const d = loadCS();
+  const g = {pending:[], added:[], dropped:[]};
+  CHANNEL_SUGGESTIONS.forEach(s=>{ const st=d[s.username]||'pending'; g[st].push({...s,status:st}); });
+
+  document.getElementById('cs-subtabs').innerHTML = [
+    ['pending',`🟡 대기중 (${g.pending.length})`],
+    ['added',  `✅ 추가됨 (${g.added.length})`],
+    ['dropped',`❌ 드랍됨 (${g.dropped.length})`]
+  ].map(([k,label])=>
+    `<span onclick="setCSTab('${k}')" style="padding:6px 16px;border-radius:14px;border:1.5px solid ${csTab===k?'#4a9a6a':'#e0e0e0'};background:${csTab===k?'#4a9a6a':'#fff'};color:${csTab===k?'#fff':'#888'};font-size:12px;font-weight:600;cursor:pointer;">${label}</span>`
+  ).join('');
+
+  const items = g[csTab];
+  const el = document.getElementById('cs-cards');
+  const msg = {pending:'🎉 대기 중인 제안이 없습니다.', added:'아직 추가된 채널이 없습니다.', dropped:'드랍된 채널이 없습니다.'};
+  el.innerHTML = items.length ? items.map(buildCSCard).join('') : `<div style="text-align:center;padding:28px;color:#b0b0b0;font-size:14px;">${msg[csTab]}</div>`;
+
+  const decided = g.added.length + g.dropped.length;
+  const bar = document.getElementById('cs-apply-bar');
+  bar.style.display = decided > 0 ? 'flex' : 'none';
+  if(decided > 0) document.getElementById('cs-apply-info').innerHTML = `결정된 항목 <strong>${decided}개</strong> — Claude에게 "채널 제안 적용해줘"라고 하거나 명령어를 복사하세요.`;
+}
+
+function buildCSCard(s){
+  const a=s.status==='added', dr=s.status==='dropped';
+  return `<div style="background:#fff;border-radius:10px;border:1.5px solid ${a?'#a8d8b8':dr?'#e0e0e0':'#ebebeb'};padding:16px 18px;margin-bottom:10px;${dr?'opacity:0.55;':''}">
+    <div style="font-size:15px;font-weight:700;margin-bottom:4px;"><a href="${s.url}" target="_blank" style="color:#4a9a6a;text-decoration:none;">@${s.username}</a></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+      <span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">${s.category}</span>
+      <span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f0f0;color:#888;">📅 ${s.suggested_date}</span>
+      ${a?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">✅ 추가됨</span>':dr?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#f5f5f5;color:#aaa;">❌ 드랍됨</span>':'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#fff3e0;color:#d07000;">🟡 대기중</span>'}
+    </div>
+    <div style="font-size:13px;color:#555;background:${dr?'#f8f8f8':'#f0f7f3'};border-left:3px solid ${dr?'#ccc':'#4a9a6a'};padding:8px 12px;border-radius:0 6px 6px 0;margin-bottom:12px;line-height:1.6;">${s.reason}</div>
+    <div style="display:flex;gap:8px;">
+      <button onclick="decideCS('${s.username}','added')" style="background:${a?'#2e7d50':'#4a9a6a'};${a?'box-shadow:0 0 0 3px rgba(74,154,106,0.2);':''}color:#fff;padding:6px 16px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">✅ 추가</button>
+      <button onclick="decideCS('${s.username}','dropped')" style="${dr?'background:#fdecea;color:#c0392b;border-color:#f0a8a0;':'background:#f5f5f5;color:#888;border-color:#e0e0e0;'}padding:6px 16px;border-radius:8px;border:1.5px solid;font-size:13px;font-weight:600;cursor:pointer;">❌ 드랍</button>
+      ${s.status!=='pending'?`<button onclick="decideCS('${s.username}','pending')" style="background:#f5f5f5;color:#888;padding:6px 12px;border-radius:8px;border:none;font-size:12px;cursor:pointer;">↩ 되돌리기</button>`:''}
+    </div>
+  </div>`;
+}
+
+function setCSTab(t){ csTab=t; renderCS(); }
+
+function decideCS(u, s){
+  const d=loadCS(); const cur=d[u]||'pending';
+  if(cur===s) delete d[u]; else d[u]=s;
+  saveCS(d); renderCS();
+  toast(s==='pending'?'↩ 되돌렸습니다':s==='added'?'✅ 추가로 표시됨':'❌ 드랍으로 표시됨');
+}
+
+function openCSModal(){
+  const d=loadCS();
+  const toAdd=CHANNEL_SUGGESTIONS.filter(s=>d[s.username]==='added');
+  const toDrop=CHANNEL_SUGGESTIONS.filter(s=>d[s.username]==='dropped');
+  let cmds=[];
+  if(toAdd.length){ cmds.push('# ✅ 추가할 채널'); toAdd.forEach(s=>cmds.push(`python3 scan_channels.py --add ${s.username} "${s.category.split('/')[0]}"`)); }
+  if(toDrop.length){ cmds.push('\n# ❌ 드랍할 채널'); toDrop.forEach(s=>cmds.push(`python3 scan_channels.py --remove ${s.username}`)); }
+  document.getElementById('cs-cmd-block').textContent=cmds.join('\n');
+  document.getElementById('cs-modal').style.display='flex';
+}
+
+function copyCSCmd(){ navigator.clipboard.writeText(document.getElementById('cs-cmd-block').textContent).then(()=>toast('📋 복사됨!')); }
+document.getElementById('cs-modal').addEventListener('click',e=>{ if(e.target.id==='cs-modal') e.target.style.display='none'; });
+function toast(msg){ const t=document.getElementById('cs-toast'); t.textContent=msg; t.style.opacity=1; setTimeout(()=>t.style.opacity=0,2200); }
+
+renderCS();
+</script>
 </body>
 </html>
