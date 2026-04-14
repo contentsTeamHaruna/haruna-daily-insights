@@ -22,6 +22,7 @@
   .tab.active[data-tab="haruna"] { border-color: #b8a070; background: #b8a070; color: #fff; }
   .tab.active[data-tab="everypace"] { border-color: #4a9a6a; background: #4a9a6a; color: #fff; }
   .tab.active[data-tab="meta-ads"] { border-color: #5a7abf; background: #5a7abf; color: #fff; }
+  .tab.active[data-tab="content-impact"] { border-color: #e07050; background: #e07050; color: #fff; }
   .tab .tab-emoji { font-size: 16px; }
   .tab .tab-count { font-size: 11px; opacity: 0.8; margin-left: 2px; }
 
@@ -74,11 +75,64 @@
   [data-section="everypace"] .today-badge { background: #4a9a6a; }
   [data-section="meta-ads"] .today-badge { background: #5a7abf; }
 
+  /* Content Impact theme */
+  [data-section="content-impact"] .card-date { background: linear-gradient(135deg, #fde8e0 0%, #f8d0c0 100%); }
+  [data-section="content-impact"] .report-card.today { border-color: #e09070; background: linear-gradient(135deg, #fdf5f0 0%, #fff 100%); }
+  [data-section="content-impact"] .report-card.today .card-date { background: linear-gradient(135deg, #f0c0a0 0%, #e09070 100%); }
+  [data-section="content-impact"] .today-badge { background: #e07050; }
+
   .empty-state { text-align: center; padding: 60px 20px; color: #b0aaa4; }
   .empty-state .emoji { font-size: 40px; margin-bottom: 12px; }
   .empty-state p { font-size: 14px; }
   .footer { text-align: center; padding-top: 40px; border-top: 1px solid #e8e4df; margin-top: 48px; }
   .footer p { font-size: 12px; color: #b0aaa4; }
+
+  /* Channel Suggestions Panel */
+  .cs-subtabs { display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap; }
+  .cs-subtab { padding: 6px 16px; border-radius: 16px; border: 1.5px solid #e0d8e8; background: #fff; font-size: 12px; font-weight: 600; cursor: pointer; color: #9a80b0; transition: all 0.15s; }
+  .cs-subtab.active { border-color: #a06abf; background: #a06abf; color: #fff; }
+  .cs-card { background: #fff; border-radius: 12px; border: 1.5px solid #eae6f0; padding: 18px 20px; margin-bottom: 10px; transition: box-shadow 0.15s; }
+  .cs-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.07); }
+  .cs-card.s-added { border-color: #b0d8b8; background: #f8fdf9; }
+  .cs-card.s-dropped { border-color: #e0e0e0; opacity: 0.6; }
+  .cs-username { font-size: 15px; font-weight: 700; color: #1a1815; margin-bottom: 4px; }
+  .cs-username a { color: #a06abf; text-decoration: none; }
+  .cs-username a:hover { text-decoration: underline; }
+  .cs-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .cs-tag { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 8px; }
+  .cs-tag-cat { background: #f0e8f8; color: #7a40a0; }
+  .cs-tag-date { background: #f0f0f0; color: #888; }
+  .cs-tag-pending { background: #fff3e0; color: #d07000; }
+  .cs-tag-added { background: #e8f5ee; color: #2e7d50; }
+  .cs-tag-dropped { background: #f5f5f5; color: #aaa; }
+  .cs-reason { font-size: 13px; color: #5a5550; background: #f8f5fc; border-left: 3px solid #c090e0; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 12px; line-height: 1.6; }
+  .cs-card.s-dropped .cs-reason { border-left-color: #ccc; }
+  .cs-actions { display: flex; gap: 8px; }
+  .cs-btn { padding: 6px 16px; border-radius: 8px; border: none; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .cs-btn-add { background: #4a9a6a; color: #fff; }
+  .cs-btn-add:hover { background: #3a8a5a; }
+  .cs-btn-add.on { background: #2e7d50; box-shadow: 0 0 0 3px rgba(74,154,106,0.2); }
+  .cs-btn-drop { background: #f5f2ee; color: #8a8580; border: 1.5px solid #e0dbd5; }
+  .cs-btn-drop:hover { background: #fdecea; color: #c0392b; border-color: #f0a8a0; }
+  .cs-btn-drop.on { background: #fdecea; color: #c0392b; border-color: #f0a8a0; }
+  .cs-btn-undo { background: #f5f2ee; color: #8a8580; font-size: 12px; }
+  .cs-apply-bar { margin-top: 20px; padding: 16px 20px; background: #f8f5fc; border-radius: 12px; border: 1.5px solid #e0d0f0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .cs-apply-info { font-size: 13px; color: #6a5a7a; }
+  .cs-apply-info strong { color: #1a1815; }
+  .cs-btn-apply { background: #a06abf; color: #fff; padding: 8px 20px; border-radius: 8px; border: none; font-size: 13px; font-weight: 700; cursor: pointer; }
+  .cs-btn-apply:hover { background: #8a58a8; }
+  .cs-btn-apply:disabled { background: #d0c0e0; cursor: default; }
+  .cs-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 200; align-items: center; justify-content: center; }
+  .cs-modal.open { display: flex; }
+  .cs-modal-box { background: #fff; border-radius: 16px; padding: 28px; max-width: 500px; width: 90%; }
+  .cs-modal-box h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .cs-modal-box p { font-size: 13px; color: #6a6560; margin-bottom: 14px; line-height: 1.6; }
+  .cs-cmd { background: #1a1815; color: #90d0a8; font-family: 'SF Mono', monospace; font-size: 12px; padding: 14px 16px; border-radius: 8px; margin-bottom: 14px; white-space: pre-wrap; word-break: break-all; line-height: 1.8; }
+  .cs-modal-btns { display: flex; gap: 8px; justify-content: flex-end; }
+  .cs-modal-copy { background: #4a9a6a; color: #fff; padding: 8px 18px; border-radius: 8px; border: none; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .cs-modal-close { background: #f5f2ee; color: #6a6560; padding: 8px 18px; border-radius: 8px; border: none; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .cs-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1a1815; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 300; }
+  .cs-toast.show { opacity: 1; }
 
   @media (max-width: 600px) {
     .container { padding: 24px 16px 60px; }
@@ -107,10 +161,7 @@
   <div class="stats-bar" id="statsBar"></div>
   <div id="panels"></div>
 
-  <div class="footer">
-    <p>자동 생성 리포트 — 매일 오전 업데이트</p>
-    <p style="margin-top:10px;"><a href="channel_suggestions.html" style="color:#4a9a6a;text-decoration:none;font-size:13px;font-weight:600;">📌 인스타그램 신규 채널 제안 관리 →</a></p>
-  </div>
+  <div class="footer"><p>자동 생성 리포트 — 매일 오전 업데이트</p></div>
 </div>
 
 <script>
@@ -160,6 +211,14 @@
         { date:'2026-04-07', file:'everypace_daily_20260407.html', highlights:['신발 정사이즈 오해','몽촌토성 런코스','수면과 염증 연결'] },
         { date:'2026-04-06', file:'everypace_daily_20260406.html', highlights:['이온음료 순위','런린이 탈출 선언','여성 염증 해법'] },
         // { date:'2026-04-06', file:'everypace_daily_20260406.html', highlights:['러닝 트렌드','마라톤 시즌'] }
+      ]
+    },
+    'content-impact': {
+      name: '콘텐츠 임팩트',
+      emoji: '📊',
+      color: '#e07050',
+      reports: [
+        { date:'2026-04-14', file:'content_impact_20260414.html', highlights:['카페24 방문자 30일 추이','인스타 포스팅 효과 분석'] }
       ]
     }
   };
@@ -234,6 +293,7 @@
       panel.appendChild(mg);
     });
   }
+
 })();
 </script>
 </body>
