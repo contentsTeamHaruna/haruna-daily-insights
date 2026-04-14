@@ -224,7 +224,7 @@
 
     <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:14px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
       <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;"></span>
-      <button onclick="openCSModal()" style="background:#4a9a6a;color:#fff;padding:7px 18px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;">적용 명령어 보기</button>
+      <button id="cs-update-btn" onclick="updateChannels()" style="background:#4a9a6a;color:#fff;padding:7px 20px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;">채널 목록 업데이트</button>
     </div>
   </div>
 
@@ -343,6 +343,72 @@ function openCSModal(){
 function copyCSCmd(){ navigator.clipboard.writeText(document.getElementById('cs-cmd-block').textContent).then(()=>toast('📋 복사됨!')); }
 document.getElementById('cs-modal').addEventListener('click',e=>{ if(e.target.id==='cs-modal') e.target.style.display='none'; });
 function toast(msg){ const t=document.getElementById('cs-toast'); t.textContent=msg; t.style.opacity=1; setTimeout(()=>t.style.opacity=0,2200); }
+
+async function updateChannels(){
+  const d = loadCS();
+  const toAdd  = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='added');
+  const toDrop = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='dropped');
+  if(!toAdd.length && !toDrop.length){ toast('선택된 채널이 없습니다.'); return; }
+
+  let pat = localStorage.getItem('ep_github_pat');
+  if(!pat){
+    pat = prompt('GitHub Personal Access Token을 입력하세요.\n(repo 쓰기 권한 필요 — 한 번만 입력하면 저장됩니다)');
+    if(!pat) return;
+    localStorage.setItem('ep_github_pat', pat);
+  }
+
+  const btn = document.getElementById('cs-update-btn');
+  btn.disabled = true; btn.textContent = '업데이트 중…';
+
+  try {
+    const REPO = 'contentsTeamHaruna/haruna-daily-insights';
+    const FILE = 'channel_updates.json';
+    const API  = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
+    const AUTH = { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' };
+
+    // 기존 파일 읽기 (SHA 확보)
+    let sha = null;
+    let existing = { pending_additions:[], pending_removals:[] };
+    try {
+      const r = await fetch(API, { headers: AUTH });
+      if(r.ok){ const j=await r.json(); sha=j.sha; existing=JSON.parse(atob(j.content.replace(/\n/g,''))); }
+    } catch(e){}
+
+    // 기존 pending과 병합 (중복 제거 + 모순 해소)
+    const addMap = {};
+    existing.pending_additions.forEach(a => addMap[a.username] = a.category);
+    toAdd.forEach(s => { addMap[s.username] = s.category.split('/')[0]; });
+    const dropSet = new Set(existing.pending_removals);
+    toDrop.forEach(s => dropSet.add(s.username));
+    toAdd.forEach(s  => dropSet.delete(s.username));  // 추가 결정은 드랍에서 제거
+    toDrop.forEach(s => delete addMap[s.username]);    // 드랍 결정은 추가에서 제거
+
+    const payload = {
+      pending_additions: Object.entries(addMap).map(([u,c])=>({username:u, category:c})),
+      pending_removals:  [...dropSet],
+      updated: new Date().toISOString().slice(0,10)
+    };
+
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+    const body = { message:`채널 업데이트 요청 ${payload.updated}`, content:encoded };
+    if(sha) body.sha = sha;
+
+    const res = await fetch(API, { method:'PUT', headers:{...AUTH,'Content-Type':'application/json'}, body:JSON.stringify(body) });
+
+    if(res.ok){
+      toast('✅ 업데이트 요청 완료! 내일 스캔 시 자동 적용됩니다.');
+    } else {
+      const err = await res.json().catch(()=>({}));
+      if((err.message||'').toLowerCase().includes('bad credentials')){
+        localStorage.removeItem('ep_github_pat');
+        toast('❌ PAT 오류. 다시 시도하면 재입력 가능합니다.');
+      } else {
+        toast('❌ 실패: ' + (err.message || res.status));
+      }
+    }
+  } catch(e){ toast('❌ 오류: ' + e.message); }
+  finally { btn.disabled=false; btn.textContent='채널 목록 업데이트'; }
+}
 
 renderCS();
 
