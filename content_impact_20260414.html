@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>콘텐츠 임팩트 분석 — 2026-04-14</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Noto Sans KR',-apple-system,sans-serif; background:#f8f6f3; color:#2d2a26; line-height:1.8; font-size:15px; }
+  .container { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  .header { text-align:center; padding:40px 0 32px; border-bottom:2px solid #e07050; margin-bottom:32px; }
+  .header h1 { font-size:24px; font-weight:700; color:#1a1815; margin-bottom:4px; }
+  .header .date { font-size:14px; color:#8a8580; }
+  .back-link { display:inline-block; margin-bottom:20px; color:#e07050; text-decoration:none; font-size:14px; font-weight:500; }
+  .back-link:hover { text-decoration:underline; }
+  .section-header { background:linear-gradient(135deg,#fde8e0,#f8d0c0); padding:14px 20px; border-radius:10px; margin:32px 0 16px; }
+  .section-header h2 { font-size:17px; font-weight:700; color:#8a3a20; }
+  .chart-wrap { background:#fff; border-radius:14px; padding:24px; margin:16px 0; border:1px solid #eae6e1; }
+  .legend-wrap { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin:16px 0; font-size:13px; }
+  .legend-item { display:flex; align-items:center; gap:6px; }
+  .legend-dot { width:12px; height:12px; border-radius:3px; }
+  h3 { font-size:16px; font-weight:700; color:#5a3a2a; margin:24px 0 12px; padding-left:12px; border-left:3px solid #e07050; }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:12px 0 20px; }
+  thead th { background:#fde8e0; color:#8a3a20; font-weight:600; padding:10px 12px; text-align:left; border-bottom:2px solid #e8c0b0; }
+  tbody td { padding:8px 12px; border-bottom:1px solid #f0ebe4; }
+  tbody tr:hover { background:#fdf8f5; }
+  .footer { text-align:center; padding-top:32px; border-top:1px solid #e8e4df; margin-top:40px; font-size:12px; color:#b0aaa4; }
+  @media (max-width:600px) {
+    .container { padding:20px 14px 60px; }
+    table { font-size:12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">&larr; 대시보드로 돌아가기</a>
+  <div class="header">
+    <div style="font-size:48px; margin-bottom:8px;">📊</div>
+    <h1>콘텐츠 임팩트 분석</h1>
+    <div class="date">2026-04-14</div>
+  </div>
+
+  <div class="section-header"><h2>1. 자사몰 방문자 x 인스타 포스팅</h2></div>
+  <p style="font-size:13px; color:#8a8580; margin:8px 0 16px;">
+    세로 점선은 인스타그램 포스팅 시점입니다. <span style="color:rgba(255,99,132,0.9);">■</span> 릴스 &nbsp;
+    <span style="color:rgba(54,162,235,0.9);">■</span> 이미지 &nbsp;
+    <span style="color:rgba(75,192,192,0.9);">■</span> 캐러셀
+  </p>
+  <div class="chart-wrap">
+    <canvas id="visitorChart" height="300"></canvas>
+  </div>
+
+  <div class="section-header"><h2>2. 인스타그램 포스팅 상세</h2></div>
+  <table>
+    <thead><tr><th>날짜</th><th>유형</th><th>캡션</th><th>좋아요</th><th>댓글</th></tr></thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <p>자동 생성 — Cafe24 Analytics API + Instagram Graph API | sofit automation</p>
+  </div>
+</div>
+
+<script>
+const ctx = document.getElementById('visitorChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["2026-03-15", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14"],
+    datasets: [
+      {
+        label: '총 방문자',
+        data: [245, 183, 178, 154, 131, 152, 97, 92, 107, 98, 74, 128, 85, 70, 80, 59, 109, 105, 173, 149, 175, 253, 230, 240, 264, 246, 218, 180, 268, 242, 88],
+        borderColor: '#e07050',
+        backgroundColor: 'rgba(224,112,80,0.1)',
+        fill: true,
+        tension: 0.3,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        pointBackgroundColor: '#e07050',
+      },
+      {
+        label: '신규 방문자',
+        data: [208, 138, 142, 116, 108, 128, 76, 74, 79, 71, 48, 90, 58, 55, 65, 41, 82, 81, 147, 125, 146, 223, 201, 217, 240, 222, 198, 167, 261, 203, 78],
+        borderColor: '#5a9abf',
+        borderDash: [5, 5],
+        fill: false,
+        tension: 0.3,
+        borderWidth: 1.5,
+        pointRadius: 2,
+        pointBackgroundColor: '#5a9abf',
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false } },
+      y: { beginAtZero: true, grid: { color: '#f0ebe4' } }
+    },
+    plugins: {
+      annotation: {
+        annotations: {  }
+      },
+      legend: { display: true, position: 'top' }
+    }
+  }
+});
+</script>
+</body>
+</html>
