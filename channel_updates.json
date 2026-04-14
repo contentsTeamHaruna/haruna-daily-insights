@@ -1,21 +1,6 @@
 {
-  "pending_additions": [
-    {
-      "username": "drmarkhyman",
-      "category": "기능의학"
-    },
-    {
-      "username": "hubermanlab",
-      "category": "웰니스"
-    }
-  ],
-  "pending_removals": [
-    "runninglife_korea",
-    "runners_now",
-    "marathon.nutritionist",
-    "runningchannel",
-    "strengthrunning",
-    "mattdavella"
-  ],
-  "updated": "2026-04-14"
+  "pending_additions": [],
+  "pending_removals": [],
+  "updated": "2026-04-15",
+  "applied": true
 }
