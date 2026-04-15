@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>everypace 일일 소재 리포트 — 2026년 04월 16일</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Pretendard', -apple-system, sans-serif; background: #f7f7f7; color: #222; line-height: 1.6; }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; }
+
+  /* Header */
+  .header { background: linear-gradient(135deg, #2d7a4f 0%, #4a9a6a 100%); color: #fff; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+  .header h1 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+  .header p { font-size: 13px; opacity: 0.85; }
+
+  /* Section */
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-title { font-size: 17px; font-weight: 700; color: #222; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid #f0f0f0; }
+
+  /* Card */
+  .card { border: 1.5px solid #ebebeb; border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; transition: border-color 0.15s; }
+  .card:hover { border-color: #4a9a6a; }
+  .card-rank { font-size: 12px; font-weight: 700; color: #4a9a6a; margin-bottom: 8px; }
+  .card-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+  .card-meta { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .reason { font-size: 13px; color: #444; background: #f0f7f3; border-left: 3px solid #4a9a6a; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 10px; line-height: 1.6; }
+  .url-link { font-size: 12px; color: #4a9a6a; text-decoration: none; font-weight: 600; }
+  .url-link:hover { text-decoration: underline; }
+
+  /* Top badge */
+  .top-badge { display: inline-block; background: linear-gradient(135deg, #ff6b35, #f7c59f); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-left: 8px; }
+
+  /* Instagram card */
+  .card-with-thumb { display: flex; gap: 16px; align-items: flex-start; }
+  .card-thumb { flex-shrink: 0; width: 100px; height: 100px; border-radius: 8px; object-fit: cover; }
+  .card-thumb-fallback { flex-shrink: 0; width: 100px; height: 100px; border-radius: 8px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+  .card-body { flex: 1; min-width: 0; }
+  .channel-badge { display: inline-block; background: #e8f5ee; color: #2e7d50; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-right: 6px; }
+
+  /* Recommend box */
+  .recommend-box { background: linear-gradient(135deg, #e8f5ee 0%, #d4ead4 100%); border: 1.5px solid #b8d8c8; border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+  .recommend-box h3 { font-size: 15px; font-weight: 700; color: #2d7a4f; margin-bottom: 8px; }
+  .recommend-box p { font-size: 13px; color: #444; line-height: 1.7; }
+
+  /* Footer */
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding-top: 20px; }
+
+  /* Apply bar */
+  #cs-apply-bar { display: none; }
+
+  /* Toast */
+  #cs-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 300; }
+
+  /* Modal */
+  #cs-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 200; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 헤더 -->
+  <div class="header">
+    <h1>📋 everypace 일일 소재 리포트 — 2026년 04월 16일</h1>
+    <p>런갤 어제(04/15) 게시물 892개 분석 · 인스타그램 26개 채널 스캔 · 최근 3일</p>
+  </div>
+
+  <!-- 섹션 1: 런갤 -->
+  <div class="section">
+    <div class="section-title">🏃 런갤 TOP 소재</div>
+
+    <!-- 종합 TOP -->
+    <div style="font-size:12px;font-weight:700;color:#ff6b35;margin-bottom:10px;">🔥 종합 TOP — 조회수·댓글수 동시 만족</div>
+
+    <div class="card" style="border-color:#f0c080;">
+      <div class="card-rank">🔥 종합 #1</div>
+      <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
+      <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
+      <div class="reason">직장 내 러너 존재에 대한 공감·호기심 폭발 스레드. "직장인 러너의 세계" 카드뉴스로 재구성 시 광범위한 공감대 형성 가능. 러닝이 일상·커리어와 교차하는 소재.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card" style="border-color:#f0c080;">
+      <div class="card-rank">🔥 종합 #2</div>
+      <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
+      <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
+      <div class="reason">세계 6대 메이저 마라톤(WMM)에 대한 환상을 깨는 솔직한 글. 정보성 + 논쟁성 모두 높음. "메이저 마라톤 현실 체크 가이드" 카드뉴스 적합 — 로망 vs 현실 대비 구성 효과적.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div style="font-size:12px;font-weight:700;color:#4a9a6a;margin:16px 0 10px;">📈 조회수 TOP5</div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 #1</div>
+      <div class="card-title">러닝크루박사가 살살 돌리는 사람 <span class="top-badge">조회 1,307</span></div>
+      <div class="card-meta">👁 조회 1,307 / 💬 댓글 6</div>
+      <div class="reason">러닝 크루 내 '살살 돌리는(페이스 조절해주는 척하는)' 행동에 대한 논쟁. 러닝 크루 문화의 명암을 조명하는 카드뉴스로 활용 가능 — "러닝 크루에서 꼭 피해야 할 행동" 기획.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007508" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 #2</div>
+      <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
+      <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
+      <div class="reason">→ 종합 TOP 참조</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 #3</div>
+      <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
+      <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
+      <div class="reason">→ 종합 TOP 참조</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 #4</div>
+      <div class="card-title">아식스 ← 얘네는 한국인의 냄비근성을 아주 정확히 알고 있는듯</div>
+      <div class="card-meta">👁 조회 845 / 💬 댓글 8</div>
+      <div class="reason">아식스의 한국 시장 한정판 전략 분석 + 소비자 심리 논쟁. 브랜드 마케팅 이면을 파헤치는 "러닝화 브랜드가 당신을 유혹하는 법" 카드뉴스 기획 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007489" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">📈 조회수 #5</div>
+      <div class="card-title">40언더가 ㄹㅇ 괴물기록인 이유가</div>
+      <div class="card-meta">👁 조회 834 / 💬 댓글 7</div>
+      <div class="reason">10km 40분 언더가 왜 특별한 기록인지 통계·데이터로 설명하는 글. "10km 40분의 진짜 의미" 카드뉴스 — 데이터 기반 정보 + 동기부여 형식 적합.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007036" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div style="font-size:12px;font-weight:700;color:#5a8fd0;margin:16px 0 10px;">💬 댓글수 TOP5</div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 #1</div>
+      <div class="card-title">오늘은 열적응훈련(?) 한번 해봤습니다 <span class="top-badge" style="background:linear-gradient(135deg,#5a8fd0,#8ab8e8);">댓글 44</span></div>
+      <div class="card-meta">👁 조회 561 / 💬 댓글 44</div>
+      <div class="reason">봄→여름 전환기 열적응 훈련 실전 후기. 더운 날씨 러닝 준비법으로 4~5월에 딱 맞는 시의성 높은 소재 — "여름 달리기 전 꼭 해야 할 열적응 훈련" 기획 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007057" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 #2</div>
+      <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
+      <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
+      <div class="reason">→ 종합 TOP 참조</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 #3</div>
+      <div class="card-title">텐케이 포미닛 질문받는다</div>
+      <div class="card-meta">👁 조회 572 / 💬 댓글 31</div>
+      <div class="reason">10km 4분대(서브40) 러너의 훈련법 Q&A 스레드. 목표 설정·훈련 계획 정보 풍부 — "서브40 달성한 사람들의 공통점" 정보형 카드뉴스 기획 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007093" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 #4</div>
+      <div class="card-title">좀 안아프며 뛰고픈 run</div>
+      <div class="card-meta">👁 조회 538 / 💬 댓글 30</div>
+      <div class="reason">부상 없이 달리고 싶은 러너들의 공감 스레드. 부상 예방법·회복법 정보 수요 입증 — "달리기 부상 없이 오래 뛰는 5가지 원칙" 카드뉴스와 연결 가능.</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007471" target="_blank">→ 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-rank">💬 댓글 #5</div>
+      <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
+      <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
+      <div class="reason">→ 종합 TOP 참조</div>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+    </div>
+  </div>
+
+  <!-- 섹션 2: 인스타그램 -->
+  <div class="section">
+    <div class="section-title">📱 인스타그램 TOP 소재</div>
+    <p style="font-size:12px;color:#aaa;margin-bottom:16px;">스캔 채널 26개 · 최근 3일 기준</p>
+
+    <!-- 인스타 #1 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #1 <span class="top-badge">좋아요 30.6K</span></div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/670139813_18577507036033109_5163231426202941570_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFagd_LnItTkyFN1YgYW6d828wwj8FkUzrBAGTCLKF1kWmdKq4d81WJgZee1QNj4S0&_nc_ohc=zl6uA9eXaWMQ7kNvwEDn1Qa&_nc_gid=n7mk2RhU-ADC9mVk6amSWg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0xU7RCfZjNeEls6-e4sKw1znojt8FINwRXuGNCY_I1Cg&oe=69E5EFA8&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>마트 속 가짜 블루베리의 진실</div>
+          <div class="card-meta">❤️ 30,662 / 💬 1,314 / 📅 2026-04-14 / 기능의학</div>
+          <div class="reason">"9가지 인공 성분으로 만든 모조 블루베리"를 고발하는 고바이럴 포스트. 가공식품 라벨 읽는 법 + 러너 영양 선택 연결 소재. fastpace. 시리즈로 "마트에서 속기 쉬운 건강식품 TOP" 기획 가능.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXG6MgGFOHo/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #2 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #2 <span class="top-badge">댓글 4,473</span></div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent.cdninstagram.com/v/t51.82787-15/670769589_18577693843033109_777199961049783276_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gEKbEBD4zJgAdMsRy4Ut9AjMRfdQl6529JS1WAqN7XAA4PD1zJnKurXQ2tnPGHcJyY&_nc_ohc=njfKFko6I4AQ7kNvwF3Y_I6&_nc_gid=dAQgQj-7SyED7zRc0VQw7w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af157FakKunnZb2AeWKpwiuYWd29NIQNvp6SHXJUu4sKVg&oe=69E5E0B8&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>만성 염증 5단계 해결 가이드</div>
+          <div class="card-meta">❤️ 7,211 / 💬 4,473 / 📅 2026-04-15 / 기능의학</div>
+          <div class="reason">만성 염증의 원인·5단계 해결법을 명료하게 정리. 러너에게 직결되는 주제(회복, 부상, 컨디션). "달릴수록 쌓이는 염증, 이렇게 해결하세요" fastpace. 카드뉴스로 직접 활용 가능.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXJflaCGXM4/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #3 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #3</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/671225152_18548601328071463_3227540659216965062_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGDmyPk1ihbGVMQwrdG_xg4LamvY8biJuyqTMSrOmJXOd7LJpJHesst9PRduKBCWiI&_nc_ohc=fnA9LXCt1iEQ7kNvwGBif0x&_nc_gid=xV3_I1TR_2LrlQlGQM6oxQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3FD9QJWmbaq7efqOePBDKF-NACEeiwa1tVUw_bQ3twuw&oe=69E5E249&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@nedratawwab</span>힘든 순간에 절대 하면 안 되는 말</div>
+          <div class="card-meta">❤️ 6,778 / 💬 67 / 📅 2026-04-14 / 멘탈헬스</div>
+          <div class="reason">선의의 위로가 오히려 상처가 되는 경우를 정리한 공감형 포스트. "슬럼프에 빠진 러너에게 하면 안 되는 말 vs 해야 하는 말" pacenote. 시리즈 기획 가능.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXHa-G2jYLZ/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #4 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #4</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent.cdninstagram.com/v/t51.82787-15/670652631_18577630480033109_3534188098689951417_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFZkm9rCFyg_2ht9KjPs55GstSXZfyilvd52hLphOFs2Fczo7XOqC6UEG8X9rAj4hU&_nc_ohc=NhbdGNWKw5QQ7kNvwHwR5Uf&_nc_gid=vpGuNsulYV6mKfh2aEuazw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af30aIE2ne_OiKl0GrkeN8-GkW0v26tYN4SlP_SeGwl2Dg&oe=69E6012C&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>열심히 하는데 왜 지치지? — 교감신경 나선</div>
+          <div class="card-meta">❤️ 1,698 / 💬 60 / 📅 2026-04-14 / 기능의학</div>
+          <div class="reason">스트레스와 미토콘드리아 기능 저하가 서로를 악화시키는 '교감신경 나선' 개념. 과훈련·번아웃 러너에게 직결 — "더 열심히 뛰는데 더 지치는 이유" fastpace. 기획 소재.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXHnvFzgOtJ/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 인스타 #5 -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #5</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent.cdninstagram.com/v/t51.82787-15/670918860_18577849852033109_4797006633946183113_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGIkYNOXfkr_e_zZ9vRCea0FZ6P59qyrOgOQaS_d9PkdSPpciEWMVyWo2onq_xcWrk&_nc_ohc=mkAmM1YuFA4Q7kNvwFetUQa&_nc_gid=nSK8x_4PhHMUY1a9m4aV3g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3pplrkOhvfp8s6nnPdkJsD5B1pIH8fWjjmkgkqzErxMA&oe=69E5E8CE&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>최고 퍼포먼스는 진정에서 나온다</div>
+          <div class="card-meta">❤️ 747 / 💬 58 / 📅 2026-04-15 / 기능의학</div>
+          <div class="reason">올림픽 선수·네이비씰의 공통점 — 투쟁·도주 반응 직전의 집중 상태 유지. 러너의 레이스 멘탈 관리와 연결 — "대회 당일 멘탈 컨트롤 가이드" 기획 가능.</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXKdnJojyNx/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 3: 오늘의 추천 소재 -->
+  <div class="section">
+    <div class="section-title">💡 오늘의 추천 소재</div>
+
+    <div class="recommend-box">
+      <h3>🥇 1순위 — 마트 속 가짜 블루베리의 진실</h3>
+      <p>
+        @drmarkhyman의 30K 좋아요 가공식품 폭로 포스트를 소재로, <strong>"러너가 마트에서 속기 쉬운 가짜 건강식품 5가지"</strong> fastpace. 카드뉴스 기획 제안.<br><br>
+        기획 방향: ① 가공 블루베리 사례 → ② 에너지바·그래놀라·비타민워터 등 러너가 자주 선택하는 식품의 성분 함정 → ③ 진짜 vs 가짜 구분법 슬라이드. 가공식품 경각심 + 러너 영양 선택 직결, 바이럴성 높음.
+      </p>
+    </div>
+
+    <div class="recommend-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e4eaff 100%);border-color:#c0caee;">
+      <h3>🥈 2순위 — 메이저 마라톤, 환상 vs 현실</h3>
+      <p>
+        런갤 904 조회/27 댓글 포스트를 소재로, <strong>"WMM 6개 마라톤 도전 전에 알아야 할 현실 5가지"</strong> pacenote. 카드뉴스 기획 제안.<br><br>
+        기획 방향: 도쿄·보스턴·런던·베를린·시카고·뉴욕의 실제 참가 경험담(추첨 경쟁, 비용, 코스 난이도, 분위기)과 로망의 간극. 국내 러너들의 WMM 열망과 현실을 동시에 자극하는 소재.
+      </p>
+    </div>
+  </div>
+
+  <!-- 섹션 4: 신규 채널 제안 누적 관리 -->
+  <div class="section">
+    <div class="section-title">📌 신규 채널 제안 관리</div>
+    <p style="font-size:13px;color:#888;margin-bottom:4px;">매일 2개씩 자동 추가 · 결정은 브라우저에 저장돼 다음에 와도 유지됩니다</p>
+    <p style="font-size:12px;color:#aaa;margin-bottom:16px;">✅ <b>추가</b> 클릭 → 대기중에서 사라지고 '추가됨' 탭으로 이동 → <b>채널 목록 업데이트</b>로 channel_updates.json에 반영하면 다음날부터 스캔에 포함됩니다</p>
+    <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" id="cs-subtabs"></div>
+    <div id="cs-cards"></div>
+    <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:16px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;">
+      <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;display:block;margin-bottom:12px;"></span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:200px;">
+          <label style="display:block;font-size:11px;font-weight:600;color:#888;margin-bottom:4px;">GitHub PAT</label>
+          <input id="cs-pat-input" type="password" placeholder="ghp_xxxxxxxxxx"
+            style="width:100%;border:1.5px solid #ddd;border-radius:8px;padding:7px 10px;font-size:13px;font-family:'SF Mono',monospace;outline:none;"
+            onfocus="this.style.borderColor='#4a9a6a'" onblur="this.style.borderColor='#ddd';savePAT(this.value)">
+          <div style="font-size:11px;color:#aaa;margin-top:3px;">브라우저 localStorage에만 저장됩니다.</div>
+        </div>
+        <button id="cs-update-btn" onclick="updateChannels()" style="background:#4a9a6a;color:#fff;padding:8px 20px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;align-self:flex-end;margin-bottom:20px;">채널 목록 업데이트</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 -->
+  <div id="cs-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;align-items:center;justify-content:center;">
+    <div style="background:#fff;border-radius:16px;padding:28px;max-width:500px;width:90%;">
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:6px;">🛠 channels.json 적용 명령어</h3>
+      <p style="font-size:13px;color:#666;margin-bottom:14px;line-height:1.6;">터미널에서 실행하거나, Claude에게 "이 명령어 실행해줘"라고 전달하세요.</p>
+      <div id="cs-cmd-block" style="background:#1a1a1a;color:#7ec89a;font-family:'SF Mono','Fira Code',monospace;font-size:12px;padding:14px 16px;border-radius:8px;margin-bottom:14px;white-space:pre-wrap;word-break:break-all;line-height:1.8;"></div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;">
+        <button onclick="copyCSCmd()" style="background:#4a9a6a;color:#fff;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">📋 복사</button>
+        <button onclick="document.getElementById('cs-modal').style.display='none'" style="background:#f0f0f0;color:#666;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">닫기</button>
+      </div>
+    </div>
+  </div>
+  <div id="cs-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:500;opacity:0;transition:opacity 0.2s;pointer-events:none;z-index:300;"></div>
+
+  <script>
+  // ── 누적 채널 제안 목록 (channel_suggestions.json 전체) ──
+  const CHANNEL_SUGGESTIONS = [
+    { username:'runninglife_korea', category:'러닝', reason:'러닝 전문 매거진 RIFE, 팔로워 67K. 국내 러닝 정보·트레이닝 팁 심층 커버 — 현재 등록된 @cr8tour와 시너지 높음.', url:'https://www.instagram.com/runninglife_korea/', suggested_date:'2026-04-10' },
+    { username:'runners_now', category:'러닝', reason:'러너스나우 한국 마라톤 정보 전문 채널. 국내 대회 일정·훈련 정보 특화 — everypace 독자의 실제 니즈와 직결되는 소재 공급처.', url:'https://www.instagram.com/runners_now/', suggested_date:'2026-04-10' },
+    { username:'marathon.nutritionist', category:'러닝/영양', reason:'마라톤 전문 영양사 Kristy Baumann. 68K 팔로워. 연료 보충·레이스 영양·언더퓨얼링 예방 콘텐츠 전문. fastpace. 시리즈와 시너지 높음.', url:'https://www.instagram.com/marathon.nutritionist/', suggested_date:'2026-04-11' },
+    { username:'runningchannel', category:'러닝', reason:'160K 팔로워. 러닝 팁·뉴스·동기부여 콘텐츠 전문. 영어권 러닝 트렌드와 글로벌 레이스 소식 수집에 유용. 다양한 거리·레벨 러너 대상 콘텐츠 풍부.', url:'https://www.instagram.com/runningchannel/', suggested_date:'2026-04-11' },
+    { username:'strengthrunning', category:'러닝 코칭', reason:'Jason Fitzgerald의 러닝 코칭 계정 — 부상 예방, 훈련 계획, 스마트 러닝 팁 중심. 런갤 기록 향상법·부상 예방 주제와 직결. 실용적 러닝 정보 커버 가능.', url:'https://www.instagram.com/strengthrunning/', suggested_date:'2026-04-13' },
+    { username:'drmarkhyman', category:'기능의학/영양', reason:'기능의학 전문가 Mark Hyman MD — 음식·영양·노화 방지 관련 데이터 기반 콘텐츠. fastpace. 시리즈와 시너지 높음.', url:'https://www.instagram.com/drmarkhyman/', suggested_date:'2026-04-13' },
+    { username:'hubermanlab', category:'웰니스/과학', reason:'스탠퍼드 신경과학자 Andrew Huberman. 수면·스트레스·운동 퍼포먼스를 데이터로 설명. fastpace. 시리즈 소재 금광. 팔로워 5.7M.', url:'https://www.instagram.com/hubermanlab/', suggested_date:'2026-04-14' },
+    { username:'mattdavella', category:'라이프스타일/습관', reason:'미니멀리즘·습관 형성·의도적 삶 설계 전문. 달리기를 루틴으로 만드는 기획 소재로 활용 가능. everypace 톤과 잘 맞는 담백한 비주얼. 팔로워 1.4M.', url:'https://www.instagram.com/mattdavella/', suggested_date:'2026-04-14' },
+    { username:'jayshetty', category:'자기계발', reason:'19M 팔로워. 습관·마인드셋·인생 철학 콘텐츠. 러닝과 자기계발 연결 소재 풍부.', url:'https://www.instagram.com/jayshetty/', suggested_date:'2026-04-15' },
+    { username:'thesleepdoctor', category:'수면건강', reason:'수면 전문가 Michael Breus. 수면이 운동 퍼포먼스·회복에 미치는 영향 소재 풍부.', url:'https://www.instagram.com/thesleepdoctor/', suggested_date:'2026-04-15' },
+    { username:'dr.gabriellelyon', category:'근육건강/영양', reason:'근육 중심 의학(Muscle-Centric Medicine) 전문가 Gabrielle Lyon MD. 근력·단백질·체성분 중심 콘텐츠. 러너의 근력 훈련과 단백질 중요성 소재로 직결. 580K 팔로워.', url:'https://www.instagram.com/dr.gabriellelyon/', suggested_date:'2026-04-16' },
+    { username:'drgundry', category:'장건강/영양', reason:'장 건강·렉틴·가공식품 경각심 전문가 Steven Gundry MD. @drmarkhyman과 시너지 높은 보완 채널. 가공식품·식재료 선택 소재 추가 발굴 가능. 2M 팔로워.', url:'https://www.instagram.com/drgundry/', suggested_date:'2026-04-16' }
+  ];
+
+  const CS_KEY = 'ep_channel_decisions';
+  let csTab = 'pending';
+
+  function loadCS(){ try{ return JSON.parse(localStorage.getItem(CS_KEY)||'{}'); }catch{ return {}; } }
+  function saveCS(d){ localStorage.setItem(CS_KEY, JSON.stringify(d)); }
+  function savePAT(v){ if(v.trim()) localStorage.setItem('ep_github_pat', v.trim()); }
+
+  function renderCS(){
+    const d = loadCS();
+    const g = {pending:[], added:[], dropped:[]};
+    CHANNEL_SUGGESTIONS.forEach(s=>{ const st=d[s.username]||'pending'; g[st].push({...s,status:st}); });
+
+    document.getElementById('cs-subtabs').innerHTML = [
+      ['pending',`🟡 대기중 (${g.pending.length})`],
+      ['added',  `✅ 추가됨 (${g.added.length})`],
+      ['dropped',`❌ 드랍됨 (${g.dropped.length})`]
+    ].map(([k,label])=>
+      `<span onclick="setCSTab('${k}')" style="padding:6px 16px;border-radius:14px;border:1.5px solid ${csTab===k?'#4a9a6a':'#e0e0e0'};background:${csTab===k?'#4a9a6a':'#fff'};color:${csTab===k?'#fff':'#888'};font-size:12px;font-weight:600;cursor:pointer;">${label}</span>`
+    ).join('');
+
+    const items = g[csTab];
+    const el = document.getElementById('cs-cards');
+    const msg = {pending:'🎉 대기 중인 제안이 없습니다.', added:'아직 추가된 채널이 없습니다.', dropped:'드랍된 채널이 없습니다.'};
+    el.innerHTML = items.length ? items.map(buildCSCard).join('') : `<div style="text-align:center;padding:28px;color:#b0b0b0;font-size:14px;">${msg[csTab]}</div>`;
+
+    const decided = g.added.length + g.dropped.length;
+    const bar = document.getElementById('cs-apply-bar');
+    bar.style.display = decided > 0 ? 'flex' : 'none';
+    if(decided > 0){
+      document.getElementById('cs-apply-info').innerHTML = `결정된 항목 <strong>${decided}개</strong> — PAT 입력 후 아래 버튼으로 channel_updates.json에 반영하세요.`;
+      const savedPat = localStorage.getItem('ep_github_pat') || '';
+      const patInput = document.getElementById('cs-pat-input');
+      if(patInput && !patInput.value) patInput.value = savedPat;
+    }
+  }
+
+  function buildCSCard(s){
+    const a=s.status==='added', dr=s.status==='dropped';
+    const addStyle = a
+      ? 'background:#4a9a6a;color:#fff;border:1.5px solid #4a9a6a;box-shadow:0 0 0 3px rgba(74,154,106,0.18);'
+      : 'background:transparent;color:#4a9a6a;border:1.5px solid #4a9a6a;';
+    const dropStyle = dr
+      ? 'background:#fdecea;color:#c0392b;border:1.5px solid #f0a8a0;'
+      : 'background:transparent;color:#888;border:1.5px solid #e0e0e0;';
+    return `<div style="background:#fff;border-radius:10px;border:1.5px solid ${a?'#a8d8b8':dr?'#e0e0e0':'#ebebeb'};padding:16px 18px;margin-bottom:10px;${dr?'opacity:0.55;':''}">
+      <div style="font-size:15px;font-weight:700;margin-bottom:4px;"><a href="${s.url}" target="_blank" style="color:#4a9a6a;text-decoration:none;">@${s.username}</a></div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+        <span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">${s.category}</span>
+        <span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f0f0;color:#888;">📅 ${s.suggested_date}</span>
+        ${a?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">✅ 추가됨</span>':dr?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#f5f5f5;color:#aaa;">❌ 드랍됨</span>':'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#fff3e0;color:#d07000;">🟡 대기중</span>'}
+      </div>
+      <div style="font-size:13px;color:#555;background:${dr?'#f8f8f8':'#f0f7f3'};border-left:3px solid ${dr?'#ccc':'#4a9a6a'};padding:8px 12px;border-radius:0 6px 6px 0;margin-bottom:12px;line-height:1.6;">${s.reason}</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="decideCS('${s.username}','added')" style="${addStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">✅ 추가</button>
+        <button onclick="decideCS('${s.username}','dropped')" style="${dropStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">❌ 드랍</button>
+        ${s.status!=='pending'?`<button onclick="decideCS('${s.username}','pending')" style="background:transparent;color:#aaa;border:1.5px solid #e0e0e0;padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer;">↩ 되돌리기</button>`:''}
+      </div>
+    </div>`;
+  }
+
+  function setCSTab(t){ csTab=t; renderCS(); }
+
+  function decideCS(u, s){
+    const d=loadCS(); const cur=d[u]||'pending';
+    if(cur===s) delete d[u]; else d[u]=s;
+    saveCS(d); renderCS();
+    toast(s==='pending'?'↩ 되돌렸습니다':s==='added'?'✅ 추가로 표시됨':'❌ 드랍으로 표시됨');
+  }
+
+  function copyCSCmd(){ navigator.clipboard.writeText(document.getElementById('cs-cmd-block').textContent).then(()=>toast('📋 복사됨!')); }
+  document.getElementById('cs-modal').addEventListener('click',e=>{ if(e.target.id==='cs-modal') e.target.style.display='none'; });
+  function toast(msg){ const t=document.getElementById('cs-toast'); t.textContent=msg; t.style.opacity=1; setTimeout(()=>t.style.opacity=0,2200); }
+
+  async function updateChannels(){
+    const d = loadCS();
+    const toAdd  = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='added');
+    const toDrop = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='dropped');
+    if(!toAdd.length && !toDrop.length){ toast('선택된 채널이 없습니다.'); return; }
+
+    const patInput = document.getElementById('cs-pat-input');
+    const pat = patInput ? patInput.value.trim() : localStorage.getItem('ep_github_pat');
+    if(!pat){ toast('⚠️ PAT을 입력하세요'); patInput && patInput.focus(); return; }
+    localStorage.setItem('ep_github_pat', pat);
+
+    const btn = document.getElementById('cs-update-btn');
+    btn.disabled = true; btn.textContent = '업데이트 중…';
+
+    try {
+      const REPO = 'contentsTeamHaruna/haruna-daily-insights';
+      const FILE = 'channel_updates.json';
+      const API  = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
+      const AUTH = { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' };
+
+      let sha = null;
+      let existing = { pending_additions:[], pending_removals:[] };
+      try {
+        const r = await fetch(API, { headers: AUTH });
+        if(r.ok){ const j=await r.json(); sha=j.sha; existing=JSON.parse(atob(j.content.replace(/\n/g,''))); }
+      } catch(e){}
+
+      const addMap = {};
+      existing.pending_additions.forEach(a => addMap[a.username] = a.category);
+      toAdd.forEach(s => { addMap[s.username] = s.category.split('/')[0]; });
+      const dropSet = new Set(existing.pending_removals);
+      toDrop.forEach(s => dropSet.add(s.username));
+      toAdd.forEach(s  => dropSet.delete(s.username));
+      toDrop.forEach(s => delete addMap[s.username]);
+
+      const payload = {
+        pending_additions: Object.entries(addMap).map(([u,c])=>({username:u, category:c})),
+        pending_removals:  [...dropSet],
+        updated: new Date().toISOString().slice(0,10)
+      };
+
+      const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+      const body = { message:`채널 업데이트 요청 ${payload.updated}`, content:encoded };
+      if(sha) body.sha = sha;
+
+      const res = await fetch(API, { method:'PUT', headers:{...AUTH,'Content-Type':'application/json'}, body:JSON.stringify(body) });
+
+      if(res.ok){
+        toast('✅ 업데이트 요청 완료! 내일 스캔 시 자동 적용됩니다.');
+      } else {
+        const err = await res.json().catch(()=>({}));
+        if((err.message||'').toLowerCase().includes('bad credentials')){
+          localStorage.removeItem('ep_github_pat');
+          const pi = document.getElementById('cs-pat-input'); if(pi) pi.value = '';
+          toast('❌ PAT 오류. 다시 입력해주세요.');
+        } else {
+          toast('❌ 실패: ' + (err.message || res.status));
+        }
+      }
+    } catch(e){ toast('❌ 오류: ' + e.message); }
+    finally { btn.disabled=false; btn.textContent='채널 목록 업데이트'; }
+  }
+
+  renderCS();
+
+  // ── 현재 등록 채널 목록 ──
+  const CURRENT_CHANNELS = [
+    {username:'bq.mag', category:'매거진'},
+    {username:'newsourcemag', category:'매거진'},
+    {username:'odoc.mag', category:'매거진'},
+    {username:'ofs.mag', category:'매거진'},
+    {username:'053mag', category:'매거진'},
+    {username:'ai.favmag', category:'매거진'},
+    {username:'creatorhood.mag', category:'매거진'},
+    {username:'magazinebao', category:'매거진'},
+    {username:'cr8tour', category:'러닝'},
+    {username:'plateau.magazine', category:'웰니스매거진'},
+    {username:'buildin_mag', category:'웰니스매거진'},
+    {username:'happicker', category:'웰니스매거진'},
+    {username:'mindbodygreen', category:'웰니스매거진'},
+    {username:'runnersworldmag', category:'러닝'},
+    {username:'nikerunclub', category:'러닝'},
+    {username:'themarathonhandbook', category:'러닝'},
+    {username:'on_running', category:'러닝'},
+    {username:'womenshealthmag', category:'피트니스'},
+    {username:'menshealthmag', category:'피트니스'},
+    {username:'nutritionfacts', category:'영양'},
+    {username:'wellandgood', category:'영양'},
+    {username:'drjuliesmith', category:'멘탈헬스'},
+    {username:'headspace', category:'멘탈헬스'},
+    {username:'nedratawwab', category:'멘탈헬스'},
+    {username:'drmarkhyman', category:'기능의학'},
+    {username:'hubermanlab', category:'웰니스'}
+  ];
+
+  const catColors = {
+    '매거진':'#e8f0fe,#4a6fa5', '러닝':'#e8f5ee,#2e7d50', '웰니스매거진':'#f3e8fe,#7a40a0',
+    '피트니스':'#fff3e0,#d07000', '영양':'#fce4ec,#c0395a', '멘탈헬스':'#e3f2fd,#1565c0',
+    '기능의학':'#fbe9e7,#b84c00', '웰니스':'#e0f7f1,#00796b'
+  };
+
+  function toggleChannelList(){
+    const el = document.getElementById('channel-list-body');
+    const arrow = document.getElementById('channel-list-arrow');
+    const open = el.style.display !== 'none';
+    el.style.display = open ? 'none' : 'block';
+    arrow.textContent = open ? '▼' : '▲';
+  }
+
+  function renderChannelList(){
+    const grouped = {};
+    CURRENT_CHANNELS.forEach(c=>{ if(!grouped[c.category]) grouped[c.category]=[]; grouped[c.category].push(c); });
+    const rows = Object.entries(grouped).map(([cat, chs])=>{
+      const [bg, fg] = (catColors[cat]||'#f5f5f5,#666').split(',');
+      const chips = chs.map(c=>`<a href="https://www.instagram.com/${c.username}/" target="_blank" style="display:inline-block;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:4px 10px;font-size:12px;color:#333;text-decoration:none;margin:3px 3px 0 0;">@${c.username}</a>`).join('');
+      return `<div style="margin-bottom:12px;"><span style="font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:${bg};color:${fg};margin-bottom:6px;display:inline-block;">${cat} (${chs.length})</span><div>${chips}</div></div>`;
+    }).join('');
+    document.getElementById('channel-list-body').innerHTML = rows;
+  }
+  document.addEventListener('DOMContentLoaded', renderChannelList);
+  </script>
+
+  <!-- 현재 등록된 채널 목록 (토글) -->
+  <div class="section" style="margin-top:12px;">
+    <div onclick="toggleChannelList()" style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+      <div class="section-title" style="margin-bottom:0;">📋 현재 등록된 스캔 채널 목록 <span style="font-size:13px;font-weight:400;color:#aaa;">(26개)</span></div>
+      <span id="channel-list-arrow" style="color:#aaa;font-size:14px;">▼</span>
+    </div>
+    <div id="channel-list-body" style="display:none;margin-top:16px;"></div>
+  </div>
+
+  <div class="footer">Generated by everypace automation · sofit</div>
+</div>
+</body>
+</html>
