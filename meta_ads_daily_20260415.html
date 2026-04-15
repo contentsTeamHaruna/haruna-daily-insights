@@ -132,9 +132,347 @@
 <tr><td>ad08</td><td>₩96,309</td><td>1.46%</td><td>1건</td><td>₩96,309</td><td>11.5%</td><td>100.0%</td></tr>
 <tr><td>ad09</td><td>₩29,665</td><td>1.74%</td><td>0건</td><td>—</td><td>15.0%</td><td>0.0%</td></tr>
 </tbody></table></div>
-<div class="section-header"><h2>4. 경쟁사 메타 광고 라이브러리 분석</h2></div>
 
-<h3>4-1. 바디크림 (활성 광고 ~84개)</h3>
+<!-- ===== 콘텐츠 임팩트 분석 섹션 (자동 삽입) ===== -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3"></script>
+
+<div class="section-header"><h2>4. 콘텐츠 임팩트 분석 — 자사몰 방문자 x 인스타 포스팅</h2></div>
+
+<div style="display:flex; gap:12px; flex-wrap:wrap; margin:16px 0;">
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">일평균 방문자</div>
+    <div style="font-size:22px; font-weight:700; color:#5a7abf;">156명</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">최고 방문일</div>
+    <div style="font-size:22px; font-weight:700; color:#e07050;">268명</div>
+    <div style="font-size:11px; color:#b0aaa4;">2026-04-12</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">최저 방문</div>
+    <div style="font-size:22px; font-weight:700; color:#8a8580;">59명</div>
+  </div>
+  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">인스타 포스팅</div>
+    <div style="font-size:22px; font-weight:700; color:#c13584;">49건</div>
+  </div>
+</div>
+
+<p style="font-size:13px; color:#8a8580; margin:8px 0 16px;">
+  세로 점선은 인스타그램 포스팅 시점입니다. <span style="color:rgba(255,99,132,0.9);">■</span> 릴스 &nbsp;
+  <span style="color:rgba(54,162,235,0.9);">■</span> 이미지 &nbsp;
+  <span style="color:rgba(75,192,192,0.9);">■</span> 캐러셀
+</p>
+
+<div style="background:#fff; border-radius:14px; padding:24px; margin:16px 0; border:1px solid #eae6e1;">
+  <canvas id="visitorChart" height="280"></canvas>
+</div>
+
+<h3>인스타그램 포스팅 상세</h3>
+<table>
+  <thead><tr><th>날짜</th><th>유형</th><th>캡션</th><th>좋아요</th><th>댓글</th></tr></thead>
+  <tbody>
+    <tr><td>2026-04-11</td><td>릴스</td><td>저희 바디크림에 리셀이 붙었어요👀
+엄청 유명한 브랜드에</td><td>23</td><td>7</td></tr>
+    <tr><td>2026-04-09</td><td>릴스</td><td>제 1회 단상자 틀린글자찾기 경연대회??
+저 자신있습니</td><td>4</td><td>0</td></tr>
+    <tr><td>2026-04-03</td><td>릴스</td><td>저는 얼굴 당기는 거 싫어서 드랍이요.
+
+세안 하고 피</td><td>13</td><td>3</td></tr>
+    <tr><td>2026-03-31</td><td>릴스</td><td>⭐️A vs B 의 차이는 바로 샤워 직후와 건조 후의</td><td>10</td><td>1</td></tr>
+    <tr><td>2026-03-28</td><td>릴스</td><td>PDRN, 언제까지 얼굴에만 바르실 건가요?
+바디는 왜</td><td>28</td><td>7</td></tr>
+    <tr><td>2026-03-26</td><td>릴스</td><td>바디크림에 ‘엑소좀’ 넣은 브랜드 본 적 있으신 분? </td><td>17</td><td>0</td></tr>
+    <tr><td>2026-03-21</td><td>캐러셀</td><td>서로 다른 리듬, 서로 다른 결.
+하지만 결국 하나로 </td><td>13</td><td>2</td></tr>
+    <tr><td>2026-03-13</td><td>릴스</td><td>✨극건성 주목! 하루나 바디크림 무료 나눔 이벤트✨
+
+</td><td>34</td><td>25</td></tr>
+    <tr><td>2026-03-10</td><td>릴스</td><td>여러분, 저희 드디어 사고 쳤습니다!😭
+작은 브랜드라 </td><td>42</td><td>11</td></tr>
+    <tr><td>2026-02-21</td><td>릴스</td><td>많은 분이 궁금해하셨던 그 질문,
+드디어 제조사 연구원</td><td>16</td><td>0</td></tr>
+    <tr><td>2026-02-19</td><td>릴스</td><td>요즘 하루나 팀 단톡방에 재미있는 리뷰들이 올라옵니다.</td><td>15</td><td>0</td></tr>
+    <tr><td>2026-02-14</td><td>캐러셀</td><td>듬뿍 발라도 당기는 피부, ‘이것’ 때문입니다 🧴
+
+아</td><td>25</td><td>1</td></tr>
+    <tr><td>2026-02-13</td><td>이미지</td><td>자세히 볼수록
+더 솔직해야 하니까.
+
+확대해도 무너지지</td><td>26</td><td>4</td></tr>
+    <tr><td>2026-02-11</td><td>릴스</td><td>🥲피나고 가려운 ‘극건성’ 탈출! 꿀팁 3가지🩸
+
+자꾸</td><td>20</td><td>0</td></tr>
+    <tr><td>2026-01-30</td><td>릴스</td><td>화이트 토마토에서 찾은 깨끗한 해답
+피부에 닿는 건, </td><td>17</td><td>0</td></tr>
+    <tr><td>2026-01-29</td><td>릴스</td><td>히알루론산의 시대는 끝났습니다 🙅‍♀️💦
+
+그동안 바디</td><td>22</td><td>7</td></tr>
+    <tr><td>2026-01-25</td><td>릴스</td><td>메이크업으로 가리면 된다구요? NO! 
+
+본식 조명 아</td><td>4</td><td>0</td></tr>
+    <tr><td>2026-01-21</td><td>릴스</td><td>영상 속 제니처럼 매끈한 어깨라인
+단돈 2,000원 괄</td><td>6</td><td>4</td></tr>
+    <tr><td>2026-01-20</td><td>릴스</td><td>Tomato 🍅</td><td>22</td><td>1</td></tr>
+    <tr><td>2026-01-17</td><td>릴스</td><td>하루나 바디크림은 A일까요 B일까요? 🤔
+
+눈 가리고 </td><td>10</td><td>0</td></tr>
+    <tr><td>2026-01-16</td><td>릴스</td><td>우리 듀공...아니 우리 대표님이 요즘 이상하다...🫠</td><td>12</td><td>0</td></tr>
+    <tr><td>2026-01-15</td><td>릴스</td><td>A Day for Me.
+
+비워내는 것이 휴식이라 생각</td><td>18</td><td>0</td></tr>
+    <tr><td>2026-01-15</td><td>이미지</td><td>White Jelly Mushroom, for last</td><td>9</td><td>0</td></tr>
+    <tr><td>2026-01-15</td><td>이미지</td><td>화이트 토마토 추출물과
+화이트 젤리 머쉬룸, 그리고 엑</td><td>15</td><td>0</td></tr>
+    <tr><td>2026-01-15</td><td>릴스</td><td>하루나의 첫 걸음.
+
+하루나 실키 머쉬룸 바디크림이 출</td><td>18</td><td>3</td></tr>
+    <tr><td>2026-01-15</td><td>이미지</td><td>자연을 쌓아 올리고
+보습을 설계했습니다.
+
+피부에 바르</td><td>13</td><td>0</td></tr>
+    <tr><td>2026-01-15</td><td>이미지</td><td>피부는 기억합니다.
+오늘 하루, 얼마나 나를 아껴줬는지</td><td>10</td><td>0</td></tr>
+    <tr><td>2026-01-14</td><td>릴스</td><td>출시 코앞인데... 제품 전량 폐기 결정했습니다. 😭❌</td><td>12</td><td>0</td></tr>
+    <tr><td>2026-01-10</td><td>릴스</td><td>T vs F, 신상 바디크림 고를 때 내 모습은?🤣
+
+</td><td>8</td><td>0</td></tr>
+    <tr><td>2026-01-09</td><td>이미지</td><td>피부는 얼굴에서 끝나지 않으니까.
+
+실키한 제형으로 스</td><td>13</td><td>0</td></tr>
+    <tr><td>2026-01-08</td><td>릴스</td><td>”자연에서 찍은 느낌으로요?“ (동공지진…🙄)
+
+사무실</td><td>661</td><td>5</td></tr>
+    <tr><td>2026-01-08</td><td>이미지</td><td>좋은 식재료를 고르듯,
+오늘의 바디를 위한 White </td><td>10</td><td>0</td></tr>
+    <tr><td>2026-01-03</td><td>릴스</td><td>모든 PD들이 가장 무서워한다는 그 말..
+‘퀵하게’ </td><td>11</td><td>2</td></tr>
+    <tr><td>2025-12-31</td><td>릴스</td><td>새해에는 남들이 정해준 기준은 잠시 접어두세요. 
+
+좋</td><td>9</td><td>0</td></tr>
+    <tr><td>2025-12-31</td><td>이미지</td><td>수분을 머금는다는 건
+단순히 촉촉한 상태가 아니라,
+
+</td><td>8</td><td>0</td></tr>
+    <tr><td>2025-12-31</td><td>이미지</td><td>하루의 끝에 남는 감각,
+
+하루를 마무리하는 순간, 피</td><td>7</td><td>0</td></tr>
+    <tr><td>2025-12-31</td><td>이미지</td><td>흙은 말이 없지만,
+가장 오래 피부를 기억합니다.
+
+보</td><td>7</td><td>0</td></tr>
+    <tr><td>2025-12-30</td><td>릴스</td><td>팬톤컬러의 역습..?!
+
+모니터로 수백 번 확인한 팬톤</td><td>72</td><td>1</td></tr>
+    <tr><td>2025-12-29</td><td>릴스</td><td>🎖️ 해병대 출신 MD의 뷰티 생존기!
+”안 되면 되게</td><td>10</td><td>0</td></tr>
+    <tr><td>2025-12-27</td><td>릴스</td><td>임상 결과를 보고 회의실이 잠깐 조용해졌어요.
+
+자극도</td><td>21</td><td>0</td></tr>
+    <tr><td>2025-12-26</td><td>릴스</td><td>꿈에서도 홍보할 생각뿐인 마케터입니다🤫🙋🏻‍♀️
+
+“여</td><td>11</td><td>0</td></tr>
+    <tr><td>2025-12-24</td><td>릴스</td><td>메리 크리스마스! 🎄🎅🏻
+여러분의 오늘은 어떤 것들로 </td><td>12</td><td>0</td></tr>
+    <tr><td>2025-12-24</td><td>릴스</td><td>100년 만에 한 번 돌아온다는 ’쿼드러플 크리스마스‘</td><td>16</td><td>2</td></tr>
+    <tr><td>2025-12-19</td><td>릴스</td><td>하..화장품 브랜드 만들기 진짜로 쉽지가 않다구..!
+</td><td>9</td><td>2</td></tr>
+    <tr><td>2025-12-19</td><td>이미지</td><td>근사한 포스터처럼 기억될 하루.
+
+매일 반복되는 평범한</td><td>10</td><td>0</td></tr>
+    <tr><td>2025-12-19</td><td>이미지</td><td>A Day for Me, 하루나
+
+가장 나다워지는 시간</td><td>13</td><td>0</td></tr>
+    <tr><td>2025-12-19</td><td>이미지</td><td>Haruna Food Market.
+
+오늘 당신의 카트</td><td>11</td><td>0</td></tr>
+    <tr><td>2025-12-13</td><td>이미지</td><td>하루나는 끊임없이 흘러가는 시간 속에서 
+나를 잃어버리</td><td>12</td><td>0</td></tr>
+    <tr><td>2025-12-12</td><td>릴스</td><td>하루의 나는, 내가 담은 것들로 완성됩니다.
+
+좋은 음</td><td>15</td><td>0</td></tr>
+  </tbody>
+</table>
+
+<script>
+const ctx = document.getElementById('visitorChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    datasets: [
+      {
+        label: '총 방문자',
+        data: [183, 178, 154, 131, 152, 97, 92, 107, 98, 74, 128, 85, 70, 80, 59, 109, 105, 173, 149, 175, 253, 230, 240, 264, 246, 218, 180, 268, 242, 210, 71],
+        borderColor: '#5a7abf',
+        backgroundColor: 'rgba(90,122,191,0.1)',
+        fill: true,
+        tension: 0.3,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        pointBackgroundColor: '#5a7abf',
+      },
+      {
+        label: '신규 방문자',
+        data: [138, 142, 116, 108, 128, 76, 74, 79, 71, 48, 90, 58, 55, 65, 41, 82, 81, 147, 125, 146, 223, 201, 217, 240, 222, 198, 167, 261, 203, 186, 63],
+        borderColor: '#e07050',
+        borderDash: [5, 5],
+        fill: false,
+        tension: 0.3,
+        borderWidth: 1.5,
+        pointRadius: 2,
+        pointBackgroundColor: '#e07050',
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxRotation: 45, font: { size: 10 } } },
+      y: { beginAtZero: true, grid: { color: '#f0ebe4' } }
+    },
+    plugins: {
+      annotation: {
+        annotations: { 
+        'post0': {
+          type: 'line',
+          xMin: '2026-04-11',
+          xMax: '2026-04-11',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V 저희 바디크림에 리셀이 붙었',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post1': {
+          type: 'line',
+          xMin: '2026-04-09',
+          xMax: '2026-04-09',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V 제 1회 단상자 틀린글자찾기',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post2': {
+          type: 'line',
+          xMin: '2026-04-03',
+          xMax: '2026-04-03',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V 저는 얼굴 당기는 거 싫어서',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post3': {
+          type: 'line',
+          xMin: '2026-03-31',
+          xMax: '2026-03-31',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V ⭐️A vs B 의 차이는 ',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post4': {
+          type: 'line',
+          xMin: '2026-03-28',
+          xMax: '2026-03-28',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V PDRN, 언제까지 얼굴에만',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post5': {
+          type: 'line',
+          xMin: '2026-03-26',
+          xMax: '2026-03-26',
+          borderColor: 'rgba(255, 99, 132, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'V 바디크림에 ‘엑소좀’ 넣은 ',
+            position: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        },
+        'post6': {
+          type: 'line',
+          xMin: '2026-03-21',
+          xMax: '2026-03-21',
+          borderColor: 'rgba(75, 192, 192, 0.7)',
+          borderWidth: 2,
+          borderDash: [4, 4],
+          label: {
+            display: true,
+            content: 'C 서로 다른 리듬, 서로 다른',
+            position: 'start',
+            backgroundColor: 'rgba(75, 192, 192, 0.7)',
+            color: '#fff',
+            font: { size: 10 },
+            padding: 3,
+            borderRadius: 3,
+          }
+        } }
+      },
+      legend: { display: true, position: 'top' }
+    }
+  }
+});
+</script>
+<!-- ===== /콘텐츠 임팩트 분석 섹션 ===== -->
+
+<div class="section-header"><h2>5. 경쟁사 메타 광고 라이브러리 분석</h2></div>
+
+<h3>5-1. 바디크림 (활성 광고 ~84개)</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>광고주</th><th>게재시작</th><th>카피핵심</th><th>USP</th><th>랜딩도메인</th><th>광고링크</th></tr></thead>
 <tbody>
@@ -170,7 +508,7 @@
 <li><strong>5위: 인플루언서/셀럽 추천</strong> (4회)</li>
 </ul>
 
-<h3>4-2. 세럼 (활성 광고 ~3,200개)</h3>
+<h3>5-2. 세럼 (활성 광고 ~3,200개)</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>광고주</th><th>게재시작</th><th>특이사항</th><th>광고링크</th></tr></thead>
 <tbody>
@@ -191,7 +529,7 @@
 <li><strong>4위: 수분/보습</strong> — 히디프, 피부좋은언니</li>
 </ul>
 
-<h3>4-3. 폼클렌징 (활성 광고 ~150개)</h3>
+<h3>5-3. 폼클렌징 (활성 광고 ~150개)</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>광고주</th><th>게재시작</th><th>특이사항</th><th>랜딩도메인</th><th>광고링크</th></tr></thead>
 <tbody>
@@ -221,7 +559,7 @@
 <li><strong>5위: 항균/클린</strong> (2회)</li>
 </ul>
 
-<div class="section-header"><h2>5. 액션 제언 (활성 광고 한정)</h2></div>
+<div class="section-header"><h2>6. 액션 제언 (활성 광고 한정)</h2></div>
 
 <h3>[하루나] 구매전환 캠페인</h3>
 <ul>
