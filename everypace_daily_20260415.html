@@ -212,9 +212,18 @@
     <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" id="cs-subtabs"></div>
     <div id="cs-cards"></div>
 
-    <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:14px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
-      <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;"></span>
-      <button id="cs-update-btn" onclick="updateChannels()" style="background:#4a9a6a;color:#fff;padding:7px 20px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;">채널 목록 업데이트</button>
+    <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:16px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;">
+      <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;display:block;margin-bottom:12px;"></span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:200px;">
+          <label style="display:block;font-size:11px;font-weight:600;color:#888;margin-bottom:4px;">GitHub PAT</label>
+          <input id="cs-pat-input" type="password" placeholder="ghp_xxxxxxxxxx"
+            style="width:100%;border:1.5px solid #ddd;border-radius:8px;padding:7px 10px;font-size:13px;font-family:'SF Mono',monospace;outline:none;"
+            onfocus="this.style.borderColor='#4a9a6a'" onblur="this.style.borderColor='#ddd';savePAT(this.value)">
+          <div style="font-size:11px;color:#aaa;margin-top:3px;">브라우저 localStorage에만 저장됩니다.</div>
+        </div>
+        <button id="cs-update-btn" onclick="updateChannels()" style="background:#4a9a6a;color:#fff;padding:8px 20px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;align-self:flex-end;margin-bottom:20px;">채널 목록 업데이트</button>
+      </div>
     </div>
   </div>
 
@@ -260,6 +269,7 @@ let csTab = 'pending';
 
 function loadCS(){ try{ return JSON.parse(localStorage.getItem(CS_KEY)||'{}'); }catch{ return {}; } }
 function saveCS(d){ localStorage.setItem(CS_KEY, JSON.stringify(d)); }
+function savePAT(v){ if(v.trim()) localStorage.setItem('ep_github_pat', v.trim()); }
 
 function renderCS(){
   const d = loadCS();
@@ -282,7 +292,13 @@ function renderCS(){
   const decided = g.added.length + g.dropped.length;
   const bar = document.getElementById('cs-apply-bar');
   bar.style.display = decided > 0 ? 'flex' : 'none';
-  if(decided > 0) document.getElementById('cs-apply-info').innerHTML = `결정된 항목 <strong>${decided}개</strong> — 아래 버튼으로 channel_updates.json에 반영하세요.`;
+  if(decided > 0){
+    document.getElementById('cs-apply-info').innerHTML = `결정된 항목 <strong>${decided}개</strong> — PAT 입력 후 아래 버튼으로 channel_updates.json에 반영하세요.`;
+    // 저장된 PAT 자동 복원
+    const savedPat = localStorage.getItem('ep_github_pat') || '';
+    const patInput = document.getElementById('cs-pat-input');
+    if(patInput && !patInput.value) patInput.value = savedPat;
+  }
 }
 
 function buildCSCard(s){
@@ -328,12 +344,10 @@ async function updateChannels(){
   const toDrop = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='dropped');
   if(!toAdd.length && !toDrop.length){ toast('선택된 채널이 없습니다.'); return; }
 
-  let pat = localStorage.getItem('ep_github_pat');
-  if(!pat){
-    pat = prompt('GitHub Personal Access Token을 입력하세요.\n(repo 쓰기 권한 필요 — 한 번만 입력하면 저장됩니다)');
-    if(!pat) return;
-    localStorage.setItem('ep_github_pat', pat);
-  }
+  const patInput = document.getElementById('cs-pat-input');
+  const pat = patInput ? patInput.value.trim() : localStorage.getItem('ep_github_pat');
+  if(!pat){ toast('⚠️ PAT을 입력하세요'); patInput && patInput.focus(); return; }
+  localStorage.setItem('ep_github_pat', pat);
 
   const btn = document.getElementById('cs-update-btn');
   btn.disabled = true; btn.textContent = '업데이트 중…';
@@ -377,7 +391,8 @@ async function updateChannels(){
       const err = await res.json().catch(()=>({}));
       if((err.message||'').toLowerCase().includes('bad credentials')){
         localStorage.removeItem('ep_github_pat');
-        toast('❌ PAT 오류. 다시 시도하면 재입력 가능합니다.');
+        const pi = document.getElementById('cs-pat-input'); if(pi) pi.value = '';
+        toast('❌ PAT 오류. 다시 입력해주세요.');
       } else {
         toast('❌ 실패: ' + (err.message || res.status));
       }
