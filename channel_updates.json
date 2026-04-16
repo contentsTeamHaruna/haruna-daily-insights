@@ -1,6 +1,31 @@
 {
-  "pending_additions": [],
-  "pending_removals": [],
-  "updated": "2026-04-15",
-  "applied": true
+  "pending_additions": [
+    {
+      "username": "drmarkhyman",
+      "category": "기능의학"
+    },
+    {
+      "username": "hubermanlab",
+      "category": "웰니스"
+    },
+    {
+      "username": "jayshetty",
+      "category": "자기계발"
+    },
+    {
+      "username": "thesleepdoctor",
+      "category": "수면건강"
+    }
+  ],
+  "pending_removals": [
+    "runninglife_korea",
+    "runners_now",
+    "marathon.nutritionist",
+    "runningchannel",
+    "strengthrunning",
+    "mattdavella",
+    "dr.gabriellelyon",
+    "drgundry"
+  ],
+  "updated": "2026-04-16"
 }
