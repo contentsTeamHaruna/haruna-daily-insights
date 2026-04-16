@@ -242,11 +242,16 @@ function loadDecisions() {
 }
 function saveDecisions(d) { localStorage.setItem(STORAGE_KEY, JSON.stringify(d)); }
 
+// 이미 채널 목록에 있는 채널은 자동으로 'added'로 처리
+const CURRENT_CHANNEL_SET = new Set(CURRENT_CHANNELS.map(c => c.username));
+
 function getStatus(username) {
+  if (CURRENT_CHANNEL_SET.has(username)) return 'added';
   const d = loadDecisions();
   return d[username] || 'pending';
 }
 function setStatus(username, status) {
+  if (CURRENT_CHANNEL_SET.has(username)) return; // 이미 스캔 중인 채널은 변경 불가
   const d = loadDecisions();
   if (status === 'pending') delete d[username];
   else d[username] = status;
@@ -291,12 +296,18 @@ function renderSection(tab, items) {
 }
 
 function buildCard(s) {
-  const statusLabel = s.status === 'added' ? '✅ 추가됨' : s.status === 'dropped' ? '❌ 드랍됨' : '🟡 대기중';
-  const statusBadge = `badge-status-${s.status}`;
+  const isScanning = CURRENT_CHANNEL_SET.has(s.username);
+  const statusLabel = isScanning ? '📡 스캔 중' : s.status === 'added' ? '✅ 추가됨' : s.status === 'dropped' ? '❌ 드랍됨' : '🟡 대기중';
+  const statusBadge = isScanning ? 'badge-status-added' : `badge-status-${s.status}`;
   const addActive = s.status === 'added' ? 'active' : '';
   const dropActive = s.status === 'dropped' ? 'active' : '';
+  const actionsHtml = isScanning
+    ? `<span style="font-size:12px;color:#4a9a6a;font-weight:600;">📡 이미 스캔 채널에 포함되어 있습니다</span>`
+    : `<button class="btn btn-add ${addActive}" onclick="decide('${s.username}', 'added')">✅ 추가</button>
+       <button class="btn btn-drop ${dropActive}" onclick="decide('${s.username}', 'dropped')">❌ 드랍</button>
+       ${s.status !== 'pending' ? `<button class="btn btn-undo" onclick="decide('${s.username}', 'pending')">↩ 되돌리기</button>` : ''}`;
   return `
-<div class="card status-${s.status}" id="card-${s.username}">
+<div class="card status-${s.status}" id="card-${s.username}" style="${isScanning ? 'opacity:0.7;' : ''}">
   <div class="card-header">
     <div class="card-left">
       <div class="card-username"><a href="${s.url}" target="_blank">@${s.username}</a></div>
@@ -308,11 +319,7 @@ function buildCard(s) {
     </div>
   </div>
   <div class="card-reason">${s.reason}</div>
-  <div class="card-actions">
-    <button class="btn btn-add ${addActive}" onclick="decide('${s.username}', 'added')">✅ 추가</button>
-    <button class="btn btn-drop ${dropActive}" onclick="decide('${s.username}', 'dropped')">❌ 드랍</button>
-    ${s.status !== 'pending' ? `<button class="btn btn-undo" onclick="decide('${s.username}', 'pending')">↩ 되돌리기</button>` : ''}
-  </div>
+  <div class="card-actions">${actionsHtml}</div>
 </div>`;
 }
 
