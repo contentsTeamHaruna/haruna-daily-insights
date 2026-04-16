@@ -344,24 +344,7 @@ function switchTab(tab, updateActive = true) {
 }
 
 const GITHUB_REPO = 'contentsTeamHaruna/haruna-daily-insights';
-const UPDATES_FILE = 'channel_updates.json';
-
-function openApplyModal() {
-  const decisions = loadDecisions();
-  const toAdd = SUGGESTIONS.filter(s => decisions[s.username] === 'added');
-  const toDrop = SUGGESTIONS.filter(s => decisions[s.username] === 'dropped');
-
-  let html = '';
-  if (toAdd.length) {
-    html += `<div>✅ <span class="add-list">추가: ${toAdd.map(s => '@' + s.username).join(', ')}</span></div>`;
-  }
-  if (toDrop.length) {
-    html += `<div>❌ <span class="drop-list">드랍: ${toDrop.map(s => '@' + s.username).join(', ')}</span></div>`;
-  }
-  document.getElementById('summaryBox').innerHTML = html;
-
-  // 구버전 호환용 (미사용)
-}
+const CHANNELS_FILE = 'channels.json';
 
 async function directSubmit() {
   let pat = localStorage.getItem('ep_github_pat') || '';
@@ -371,43 +354,49 @@ async function directSubmit() {
     localStorage.setItem('ep_github_pat', pat);
   }
 
+  const decisions = loadDecisions();
+  const toAdd = SUGGESTIONS.filter(s => decisions[s.username] === 'added');
+  const toDrop = new Set(SUGGESTIONS.filter(s => decisions[s.username] === 'dropped').map(s => s.username));
+
+  if (!toAdd.length && !toDrop.size) { showToast('결정된 항목이 없습니다.'); return; }
+
   const btn = document.getElementById('applyBtn');
   btn.disabled = true;
-  btn.textContent = '전송 중...';
-
-  const decisions = loadDecisions();
-  const toAdd = SUGGESTIONS.filter(s => decisions[s.username] === 'added')
-    .map(s => ({ username: s.username, category: s.category.split('/')[0] }));
-  const toDrop = SUGGESTIONS.filter(s => decisions[s.username] === 'dropped')
-    .map(s => s.username);
+  btn.textContent = '적용 중...';
 
   const today = new Date().toISOString().slice(0, 10);
-  const newContent = JSON.stringify({
-    pending_additions: toAdd,
-    pending_removals: toDrop,
-    updated: today,
-    applied: false
-  }, null, 2);
-
-  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${UPDATES_FILE}`;
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${CHANNELS_FILE}`;
   const headers = { 'Authorization': `token ${pat}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' };
 
   try {
-    // 현재 SHA 가져오기
+    // 최신 channels.json 읽기
     const getRes = await fetch(apiUrl, { headers });
     const getData = await getRes.json();
-    const sha = getData.sha || '';
+    if (!getData.sha) throw new Error(getData.message || 'channels.json 읽기 실패');
+    const sha = getData.sha;
+    const chData = JSON.parse(atob(getData.content.replace(/\n/g, '')));
 
-    // PUT으로 업데이트
-    const body = { message: `채널 업데이트 요청 ${today}`, content: btoa(unescape(encodeURIComponent(newContent))) };
-    if (sha) body.sha = sha;
+    // 추가/제거 적용
+    const existing = new Set(chData.channels.map(c => c.username));
+    toAdd.forEach(s => {
+      if (!existing.has(s.username)) {
+        chData.channels.push({ username: s.username, category: s.category.split('/')[0], active: true });
+      }
+    });
+    chData.channels = chData.channels.filter(c => !toDrop.has(c.username));
+    chData.updated = today;
 
-    const putRes = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    // channels.json 즉시 업데이트
+    const newContent = JSON.stringify(chData, null, 2);
+    const putBody = { message: `채널 업데이트 ${today}`, content: btoa(unescape(encodeURIComponent(newContent))), sha };
+    const putRes = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(putBody) });
     const putData = await putRes.json();
 
     if (putData.content) {
-      showToast('✅ GitHub에 저장됐습니다! 내일 아침 자동 반영됩니다.');
-      // localStorage 결정 초기화
+      const addedNames = toAdd.map(s => '@' + s.username).join(', ');
+      const dropNames = [...toDrop].map(u => '@' + u).join(', ');
+      const msg = [addedNames && `✅ 추가: ${addedNames}`, dropNames && `❌ 제거: ${dropNames}`].filter(Boolean).join(' / ');
+      showToast(`${msg} — 즉시 반영됐습니다!`);
       localStorage.removeItem(STORAGE_KEY);
       renderAll();
     } else {
