@@ -125,28 +125,11 @@
 
   <div class="apply-bar">
     <div class="apply-info">결정된 항목: <strong id="decidedCount">0</strong>개 · 내일 스캔 시 자동 반영됩니다.</div>
-    <button class="btn-apply" id="applyBtn" onclick="openApplyModal()" disabled>📤 GitHub에 적용 요청</button>
+    <button class="btn-apply" id="applyBtn" onclick="directSubmit()" disabled>📤 채널 목록 업데이트</button>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
-
-<div class="apply-modal" id="applyModal">
-  <div class="modal-box">
-    <h3>📤 GitHub에 채널 업데이트 요청</h3>
-    <p>아래 내용을 <code>channel_updates.json</code>에 저장합니다. 내일 아침 자동화 실행 시 <code>channels.json</code>에 반영됩니다.</p>
-    <div class="summary-box" id="summaryBox"></div>
-    <div class="pat-row">
-      <label>GitHub Personal Access Token</label>
-      <input class="pat-input" type="password" id="patInput" placeholder="ghp_xxxxxxxxxx" />
-      <div class="pat-hint">입력한 PAT은 브라우저 localStorage에만 저장됩니다.</div>
-    </div>
-    <div class="modal-actions">
-      <button class="btn-confirm" id="confirmBtn" onclick="submitToGitHub()">✅ 적용 요청</button>
-      <button class="btn-close" onclick="closeApplyModal()">취소</button>
-    </div>
-  </div>
-</div>
 
 <script>
 // ── 데이터: 매일 자동 업데이트 ─────────────────────────────────
@@ -377,22 +360,18 @@ function openApplyModal() {
   }
   document.getElementById('summaryBox').innerHTML = html;
 
-  // PAT 복원
-  const savedPat = localStorage.getItem('ep_github_pat') || '';
-  document.getElementById('patInput').value = savedPat;
-  document.getElementById('applyModal').classList.add('open');
+  // 구버전 호환용 (미사용)
 }
 
-function closeApplyModal() {
-  document.getElementById('applyModal').classList.remove('open');
-}
+async function directSubmit() {
+  let pat = localStorage.getItem('ep_github_pat') || '';
+  if (!pat) {
+    pat = prompt('GitHub PAT을 입력하세요 (최초 1회만 필요):', '') || '';
+    if (!pat) { showToast('⚠️ PAT이 필요합니다'); return; }
+    localStorage.setItem('ep_github_pat', pat);
+  }
 
-async function submitToGitHub() {
-  const pat = document.getElementById('patInput').value.trim();
-  if (!pat) { showToast('⚠️ PAT을 입력하세요'); return; }
-  localStorage.setItem('ep_github_pat', pat);
-
-  const btn = document.getElementById('confirmBtn');
+  const btn = document.getElementById('applyBtn');
   btn.disabled = true;
   btn.textContent = '전송 중...';
 
@@ -428,18 +407,22 @@ async function submitToGitHub() {
 
     if (putData.content) {
       showToast('✅ GitHub에 저장됐습니다! 내일 아침 자동 반영됩니다.');
-      closeApplyModal();
       // localStorage 결정 초기화
       localStorage.removeItem(STORAGE_KEY);
       renderAll();
     } else {
-      showToast('❌ 오류: ' + (putData.message || '알 수 없는 오류'));
+      if ((putData.message || '').toLowerCase().includes('bad credentials')) {
+        localStorage.removeItem('ep_github_pat');
+        showToast('❌ PAT 오류 — 다시 클릭하면 재입력할 수 있습니다.');
+      } else {
+        showToast('❌ 오류: ' + (putData.message || '알 수 없는 오류'));
+      }
     }
   } catch (e) {
     showToast('❌ 네트워크 오류: ' + e.message);
   } finally {
     btn.disabled = false;
-    btn.textContent = '✅ 적용 요청';
+    btn.textContent = '📤 채널 목록 업데이트';
   }
 }
 
@@ -449,11 +432,6 @@ function showToast(msg) {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2200);
 }
-
-// Close modal on backdrop click
-document.getElementById('applyModal').addEventListener('click', e => {
-  if (e.target === e.currentTarget) closeApplyModal();
-});
 
 // Init
 renderAll();
