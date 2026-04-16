@@ -1,0 +1,184 @@
+{
+  "description": "everypace 매거진 채널 크롤링 대상 인스타그램 채널 목록",
+  "updated": "2026-04-15",
+  "channels": [
+    {
+      "username": "bq.mag",
+      "category": "매거진",
+      "note": "라이프스타일 매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "newsourcemag",
+      "category": "매거진",
+      "note": "뉴스 매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "odoc.mag",
+      "category": "매거진",
+      "note": "매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "ofs.mag",
+      "category": "매거진",
+      "note": "매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "053mag",
+      "category": "매거진",
+      "note": "로컬 매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "ai.favmag",
+      "category": "매거진",
+      "note": "AI 매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "creatorhood.mag",
+      "category": "매거진",
+      "note": "크리에이터 매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "magazinebao",
+      "category": "매거진",
+      "note": "매거진",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "cr8tour",
+      "category": "러닝",
+      "note": "러닝 정보 채널",
+      "added": "2026-03-31",
+      "active": true
+    },
+    {
+      "username": "plateau.magazine",
+      "category": "웰니스매거진",
+      "note": "감각적 푸드&라이프스타일 큐레이션 (79K)",
+      "added": "2026-04-02",
+      "active": true
+    },
+    {
+      "username": "buildin_mag",
+      "category": "웰니스매거진",
+      "note": "건강을 위한 매일의 선택 (2.7K)",
+      "added": "2026-04-02",
+      "active": true
+    },
+    {
+      "username": "happicker",
+      "category": "웰니스매거진",
+      "note": "일상의 행복을 위한 공간 매거진 (155K)",
+      "added": "2026-04-02",
+      "active": true
+    },
+    {
+      "username": "mindbodygreen",
+      "category": "웰니스매거진",
+      "note": "글로벌 웰니스 미디어 (영문)",
+      "added": "2026-04-02",
+      "active": true
+    },
+    {
+      "username": "runnersworldmag",
+      "category": "러닝",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "nikerunclub",
+      "category": "러닝",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "themarathonhandbook",
+      "category": "러닝",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "on_running",
+      "category": "러닝",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "womenshealthmag",
+      "category": "피트니스",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "menshealthmag",
+      "category": "피트니스",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "nutritionfacts",
+      "category": "영양",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "wellandgood",
+      "category": "영양",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "drjuliesmith",
+      "category": "멘탈헬스",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "headspace",
+      "category": "멘탈헬스",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "nedratawwab",
+      "category": "멘탈헬스",
+      "note": "",
+      "added": "2026-04-08",
+      "active": true
+    },
+    {
+      "username": "drmarkhyman",
+      "category": "기능의학",
+      "active": true
+    },
+    {
+      "username": "hubermanlab",
+      "category": "웰니스",
+      "active": true
+    }
+  ]
+}
