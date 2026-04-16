@@ -343,10 +343,19 @@
   function saveCS(d){ localStorage.setItem(CS_KEY, JSON.stringify(d)); }
   function savePAT(v){ if(v.trim()) localStorage.setItem('ep_github_pat', v.trim()); }
 
+  // 이미 스캔 중인 채널 Set (자동 'added' 처리용)
+  const SCANNING_SET = new Set((typeof CURRENT_CHANNELS !== 'undefined' ? CURRENT_CHANNELS : []).map(c => c.username));
+
+  function getCSStatus(username) {
+    if (SCANNING_SET.has(username)) return 'added';
+    const d = loadCS();
+    return d[username] || 'pending';
+  }
+
   function renderCS(){
     const d = loadCS();
     const g = {pending:[], added:[], dropped:[]};
-    CHANNEL_SUGGESTIONS.forEach(s=>{ const st=d[s.username]||'pending'; g[st].push({...s,status:st}); });
+    CHANNEL_SUGGESTIONS.forEach(s=>{ const st=getCSStatus(s.username); g[st].push({...s,status:st}); });
 
     document.getElementById('cs-subtabs').innerHTML = [
       ['pending',`🟡 대기중 (${g.pending.length})`],
@@ -373,6 +382,7 @@
   }
 
   function buildCSCard(s){
+    const isScanning = SCANNING_SET.has(s.username);
     const a=s.status==='added', dr=s.status==='dropped';
     const addStyle = a
       ? 'background:#4a9a6a;color:#fff;border:1.5px solid #4a9a6a;box-shadow:0 0 0 3px rgba(74,154,106,0.18);'
@@ -380,25 +390,32 @@
     const dropStyle = dr
       ? 'background:#fdecea;color:#c0392b;border:1.5px solid #f0a8a0;'
       : 'background:transparent;color:#888;border:1.5px solid #e0e0e0;';
-    return `<div style="background:#fff;border-radius:10px;border:1.5px solid ${a?'#a8d8b8':dr?'#e0e0e0':'#ebebeb'};padding:16px 18px;margin-bottom:10px;${dr?'opacity:0.55;':''}">
+    const statusBadge = isScanning
+      ? '<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e0f0ff;color:#1565c0;">📡 스캔 중</span>'
+      : a ? '<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">✅ 추가됨</span>'
+        : dr ? '<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#f5f5f5;color:#aaa;">❌ 드랍됨</span>'
+          : '<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#fff3e0;color:#d07000;">🟡 대기중</span>';
+    const actionBtns = isScanning
+      ? `<span style="font-size:12px;color:#1565c0;font-weight:600;">📡 이미 스캔 채널에 포함되어 있습니다</span>`
+      : `<button onclick="decideCS('${s.username}','added')" style="${addStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">✅ 추가</button>
+         <button onclick="decideCS('${s.username}','dropped')" style="${dropStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">❌ 드랍</button>
+         ${s.status!=='pending'?`<button onclick="decideCS('${s.username}','pending')" style="background:transparent;color:#aaa;border:1.5px solid #e0e0e0;padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer;">↩ 되돌리기</button>`:''}`;
+    return `<div style="background:#fff;border-radius:10px;border:1.5px solid ${a||isScanning?'#a8d8b8':dr?'#e0e0e0':'#ebebeb'};padding:16px 18px;margin-bottom:10px;${dr?'opacity:0.55;':isScanning?'opacity:0.75;':''}">
       <div style="font-size:15px;font-weight:700;margin-bottom:4px;"><a href="${s.url}" target="_blank" style="color:#4a9a6a;text-decoration:none;">@${s.username}</a></div>
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
         <span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">${s.category}</span>
         <span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f0f0;color:#888;">📅 ${s.suggested_date}</span>
-        ${a?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">✅ 추가됨</span>':dr?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#f5f5f5;color:#aaa;">❌ 드랍됨</span>':'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#fff3e0;color:#d07000;">🟡 대기중</span>'}
+        ${statusBadge}
       </div>
       <div style="font-size:13px;color:#555;background:${dr?'#f8f8f8':'#f0f7f3'};border-left:3px solid ${dr?'#ccc':'#4a9a6a'};padding:8px 12px;border-radius:0 6px 6px 0;margin-bottom:12px;line-height:1.6;">${s.reason}</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button onclick="decideCS('${s.username}','added')" style="${addStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">✅ 추가</button>
-        <button onclick="decideCS('${s.username}','dropped')" style="${dropStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">❌ 드랍</button>
-        ${s.status!=='pending'?`<button onclick="decideCS('${s.username}','pending')" style="background:transparent;color:#aaa;border:1.5px solid #e0e0e0;padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer;">↩ 되돌리기</button>`:''}
-      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">${actionBtns}</div>
     </div>`;
   }
 
   function setCSTab(t){ csTab=t; renderCS(); }
 
   function decideCS(u, s){
+    if(SCANNING_SET.has(u)) return; // 이미 스캔 중인 채널은 변경 불가
     const d=loadCS(); const cur=d[u]||'pending';
     if(cur===s) delete d[u]; else d[u]=s;
     saveCS(d); renderCS();
