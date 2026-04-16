@@ -30,6 +30,10 @@
   .reason { font-size: 13px; color: #444; background: #f0f7f3; border-left: 3px solid #4a9a6a; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 10px; line-height: 1.6; }
   .url-link { font-size: 12px; color: #4a9a6a; text-decoration: none; font-weight: 600; }
   .url-link:hover { text-decoration: underline; }
+  .btn-produced { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; border: 1.5px solid #e0e0e0; background: transparent; color: #aaa; cursor: pointer; margin-left: 8px; }
+  .btn-produced:hover { border-color: #f0a8a0; color: #c0392b; }
+  .card.produced { opacity: 0.45; position: relative; }
+  .card.produced::after { content: '✅ 제작 완료'; position: absolute; top: 12px; right: 14px; font-size: 11px; font-weight: 700; color: #4a9a6a; background: #e8f5ee; padding: 2px 8px; border-radius: 6px; }
 
   /* Top badge */
   .top-badge { display: inline-block; background: linear-gradient(135deg, #ff6b35, #f7c59f); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-left: 8px; }
@@ -80,7 +84,7 @@
       <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
       <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
       <div class="reason">직장 내 러너 존재에 대한 공감·호기심 폭발 스레드. "직장인 러너의 세계" 카드뉴스로 재구성 시 광범위한 공감대 형성 가능. 러닝이 일상·커리어와 교차하는 소재.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028')">제작 완료</button>
     </div>
 
     <div class="card" style="border-color:#f0c080;">
@@ -88,7 +92,7 @@
       <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
       <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
       <div class="reason">세계 6대 메이저 마라톤(WMM)에 대한 환상을 깨는 솔직한 글. 정보성 + 논쟁성 모두 높음. "메이저 마라톤 현실 체크 가이드" 카드뉴스 적합 — 로망 vs 현실 대비 구성 효과적.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059')">제작 완료</button>
     </div>
 
     <div style="font-size:12px;font-weight:700;color:#4a9a6a;margin:16px 0 10px;">📈 조회수 TOP5</div>
@@ -98,7 +102,7 @@
       <div class="card-title">러닝크루박사가 살살 돌리는 사람 <span class="top-badge">조회 1,307</span></div>
       <div class="card-meta">👁 조회 1,307 / 💬 댓글 6</div>
       <div class="reason">러닝 크루 내 '살살 돌리는(페이스 조절해주는 척하는)' 행동에 대한 논쟁. 러닝 크루 문화의 명암을 조명하는 카드뉴스로 활용 가능 — "러닝 크루에서 꼭 피해야 할 행동" 기획.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007508" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007508" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007508')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -106,7 +110,7 @@
       <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
       <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
       <div class="reason">→ 종합 TOP 참조</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -114,7 +118,7 @@
       <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
       <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
       <div class="reason">→ 종합 TOP 참조</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -122,7 +126,7 @@
       <div class="card-title">아식스 ← 얘네는 한국인의 냄비근성을 아주 정확히 알고 있는듯</div>
       <div class="card-meta">👁 조회 845 / 💬 댓글 8</div>
       <div class="reason">아식스의 한국 시장 한정판 전략 분석 + 소비자 심리 논쟁. 브랜드 마케팅 이면을 파헤치는 "러닝화 브랜드가 당신을 유혹하는 법" 카드뉴스 기획 가능.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007489" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007489" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007489')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -130,7 +134,7 @@
       <div class="card-title">40언더가 ㄹㅇ 괴물기록인 이유가</div>
       <div class="card-meta">👁 조회 834 / 💬 댓글 7</div>
       <div class="reason">10km 40분 언더가 왜 특별한 기록인지 통계·데이터로 설명하는 글. "10km 40분의 진짜 의미" 카드뉴스 — 데이터 기반 정보 + 동기부여 형식 적합.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007036" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007036" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007036')">제작 완료</button>
     </div>
 
     <div style="font-size:12px;font-weight:700;color:#5a8fd0;margin:16px 0 10px;">💬 댓글수 TOP5</div>
@@ -140,7 +144,7 @@
       <div class="card-title">오늘은 열적응훈련(?) 한번 해봤습니다 <span class="top-badge" style="background:linear-gradient(135deg,#5a8fd0,#8ab8e8);">댓글 44</span></div>
       <div class="card-meta">👁 조회 561 / 💬 댓글 44</div>
       <div class="reason">봄→여름 전환기 열적응 훈련 실전 후기. 더운 날씨 러닝 준비법으로 4~5월에 딱 맞는 시의성 높은 소재 — "여름 달리기 전 꼭 해야 할 열적응 훈련" 기획 가능.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007057" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007057" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007057')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -148,7 +152,7 @@
       <div class="card-title">우리 부서에 10K 39분 뛰는 사람 있는데</div>
       <div class="card-meta">👁 조회 989 / 💬 댓글 34</div>
       <div class="reason">→ 종합 TOP 참조</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007028')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -156,7 +160,7 @@
       <div class="card-title">텐케이 포미닛 질문받는다</div>
       <div class="card-meta">👁 조회 572 / 💬 댓글 31</div>
       <div class="reason">10km 4분대(서브40) 러너의 훈련법 Q&A 스레드. 목표 설정·훈련 계획 정보 풍부 — "서브40 달성한 사람들의 공통점" 정보형 카드뉴스 기획 가능.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007093" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007093" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007093')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -164,7 +168,7 @@
       <div class="card-title">좀 안아프며 뛰고픈 run</div>
       <div class="card-meta">👁 조회 538 / 💬 댓글 30</div>
       <div class="reason">부상 없이 달리고 싶은 러너들의 공감 스레드. 부상 예방법·회복법 정보 수요 입증 — "달리기 부상 없이 오래 뛰는 5가지 원칙" 카드뉴스와 연결 가능.</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007471" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007471" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007471')">제작 완료</button>
     </div>
 
     <div class="card">
@@ -172,7 +176,7 @@
       <div class="card-title">메이저 마라톤에 너무 환상 갖지 마십시오...</div>
       <div class="card-meta">👁 조회 904 / 💬 댓글 27</div>
       <div class="reason">→ 종합 TOP 참조</div>
-      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a>
+      <a class="url-link" href="https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://gall.dcinside.com/mgallery/board/view/?id=running&no=1007059')">제작 완료</button>
     </div>
   </div>
 
@@ -192,7 +196,7 @@
           <div class="card-title"><span class="channel-badge">@drmarkhyman</span>마트 속 가짜 블루베리의 진실</div>
           <div class="card-meta">❤️ 30,662 / 💬 1,314 / 📅 2026-04-14 / 기능의학</div>
           <div class="reason">"9가지 인공 성분으로 만든 모조 블루베리"를 고발하는 고바이럴 포스트. 가공식품 라벨 읽는 법 + 러너 영양 선택 연결 소재. fastpace. 시리즈로 "마트에서 속기 쉬운 건강식품 TOP" 기획 가능.</div>
-          <a class="url-link" href="https://www.instagram.com/p/DXG6MgGFOHo/" target="_blank">→ 원문 보기</a>
+          <a class="url-link" href="https://www.instagram.com/p/DXG6MgGFOHo/" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://www.instagram.com/p/DXG6MgGFOHo/')">제작 완료</button>
         </div>
       </div>
     </div>
@@ -208,7 +212,7 @@
           <div class="card-title"><span class="channel-badge">@drmarkhyman</span>만성 염증 5단계 해결 가이드</div>
           <div class="card-meta">❤️ 7,211 / 💬 4,473 / 📅 2026-04-15 / 기능의학</div>
           <div class="reason">만성 염증의 원인·5단계 해결법을 명료하게 정리. 러너에게 직결되는 주제(회복, 부상, 컨디션). "달릴수록 쌓이는 염증, 이렇게 해결하세요" fastpace. 카드뉴스로 직접 활용 가능.</div>
-          <a class="url-link" href="https://www.instagram.com/p/DXJflaCGXM4/" target="_blank">→ 원문 보기</a>
+          <a class="url-link" href="https://www.instagram.com/p/DXJflaCGXM4/" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://www.instagram.com/p/DXJflaCGXM4/')">제작 완료</button>
         </div>
       </div>
     </div>
@@ -224,7 +228,7 @@
           <div class="card-title"><span class="channel-badge">@nedratawwab</span>힘든 순간에 절대 하면 안 되는 말</div>
           <div class="card-meta">❤️ 6,778 / 💬 67 / 📅 2026-04-14 / 멘탈헬스</div>
           <div class="reason">선의의 위로가 오히려 상처가 되는 경우를 정리한 공감형 포스트. "슬럼프에 빠진 러너에게 하면 안 되는 말 vs 해야 하는 말" pacenote. 시리즈 기획 가능.</div>
-          <a class="url-link" href="https://www.instagram.com/p/DXHa-G2jYLZ/" target="_blank">→ 원문 보기</a>
+          <a class="url-link" href="https://www.instagram.com/p/DXHa-G2jYLZ/" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://www.instagram.com/p/DXHa-G2jYLZ/')">제작 완료</button>
         </div>
       </div>
     </div>
@@ -240,7 +244,7 @@
           <div class="card-title"><span class="channel-badge">@drmarkhyman</span>열심히 하는데 왜 지치지? — 교감신경 나선</div>
           <div class="card-meta">❤️ 1,698 / 💬 60 / 📅 2026-04-14 / 기능의학</div>
           <div class="reason">스트레스와 미토콘드리아 기능 저하가 서로를 악화시키는 '교감신경 나선' 개념. 과훈련·번아웃 러너에게 직결 — "더 열심히 뛰는데 더 지치는 이유" fastpace. 기획 소재.</div>
-          <a class="url-link" href="https://www.instagram.com/p/DXHnvFzgOtJ/" target="_blank">→ 원문 보기</a>
+          <a class="url-link" href="https://www.instagram.com/p/DXHnvFzgOtJ/" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://www.instagram.com/p/DXHnvFzgOtJ/')">제작 완료</button>
         </div>
       </div>
     </div>
@@ -256,7 +260,7 @@
           <div class="card-title"><span class="channel-badge">@drmarkhyman</span>최고 퍼포먼스는 진정에서 나온다</div>
           <div class="card-meta">❤️ 747 / 💬 58 / 📅 2026-04-15 / 기능의학</div>
           <div class="reason">올림픽 선수·네이비씰의 공통점 — 투쟁·도주 반응 직전의 집중 상태 유지. 러너의 레이스 멘탈 관리와 연결 — "대회 당일 멘탈 컨트롤 가이드" 기획 가능.</div>
-          <a class="url-link" href="https://www.instagram.com/p/DXKdnJojyNx/" target="_blank">→ 원문 보기</a>
+          <a class="url-link" href="https://www.instagram.com/p/DXKdnJojyNx/" target="_blank">→ 원문 보기</a><button class="btn-produced" onclick="markProduced(this, 'https://www.instagram.com/p/DXKdnJojyNx/')">제작 완료</button>
         </div>
       </div>
     </div>
@@ -550,6 +554,71 @@
   }
   document.addEventListener('DOMContentLoaded', renderChannelList);
   </script>
+
+<script>
+// ── 제작 완료 추적 ──
+const PRODUCED_KEY = 'ep_produced_posts';
+// produced_posts.json의 produced 배열 URL 목록 (서버 측 기록)
+const PRODUCED_URLS_SERVER = [
+  'https://www.instagram.com/p/DXG6MgGFOHo/'
+];
+
+function loadProduced() {
+  try { return new Set(JSON.parse(localStorage.getItem(PRODUCED_KEY) || '[]')); } catch { return new Set(); }
+}
+function saveProduced(s) { localStorage.setItem(PRODUCED_KEY, JSON.stringify([...s])); }
+
+function applyProducedState() {
+  const local = loadProduced();
+  const allProduced = new Set([...PRODUCED_URLS_SERVER, ...local]);
+  document.querySelectorAll('.card').forEach(card => {
+    const link = card.querySelector('a.url-link');
+    if (!link) return;
+    const url = link.getAttribute('href');
+    if (allProduced.has(url)) {
+      card.classList.add('produced');
+      const btn = card.querySelector('.btn-produced');
+      if (btn) { btn.textContent = '✅ 제작됨'; btn.style.color = '#4a9a6a'; btn.style.borderColor = '#4a9a6a'; btn.disabled = true; }
+    }
+  });
+}
+
+async function markProduced(btn, url) {
+  const s = loadProduced();
+  s.add(url);
+  saveProduced(s);
+  // 카드에 즉시 반영
+  const card = btn.closest('.card');
+  card.classList.add('produced');
+  btn.textContent = '✅ 제작됨';
+  btn.style.color = '#4a9a6a';
+  btn.style.borderColor = '#4a9a6a';
+  btn.disabled = true;
+
+  // GitHub produced_posts.json에도 저장
+  const pat = localStorage.getItem('ep_github_pat');
+  if (!pat) return;
+  try {
+    const API = 'https://api.github.com/repos/contentsTeamHaruna/haruna-daily-insights/contents/produced_posts.json';
+    const headers = { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' };
+    const getRes = await fetch(API, { headers });
+    const getData = await getRes.json();
+    const existing = JSON.parse(atob(getData.content.replace(/\n/g, '')));
+    const alreadyIn = existing.produced.some(p => p.url === url);
+    if (!alreadyIn) {
+      const titleEl = card.querySelector('.card-title');
+      const title = titleEl ? titleEl.textContent.trim() : '';
+      existing.produced.push({ url, title, date_produced: new Date().toISOString().slice(0, 10) });
+      existing.updated = new Date().toISOString().slice(0, 10);
+      const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(existing, null, 2))));
+      await fetch(API, { method: 'PUT', headers: { ...headers, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `제작 완료 기록: ${title}`, content: encoded, sha: getData.sha }) });
+    }
+  } catch(e) { /* GitHub 저장 실패 시 localStorage만 유지 */ }
+}
+
+document.addEventListener('DOMContentLoaded', applyProducedState);
+</script>
 
   <!-- 현재 등록된 채널 목록 (토글) -->
   <div class="section" style="margin-top:12px;">
