@@ -151,27 +151,37 @@
 <tr><td>ad09</td><td>₩29,665</td><td>1.74%</td><td>0건</td><td>—</td><td>15.0%</td><td>0.0%</td></tr>
 </tbody></table></div>
 
+
+
+<!-- ===== 경쟁사 메타 광고 라이브러리 분석 ===== -->
+
 <!-- ===== 콘텐츠 임팩트 분석 섹션 (자동 삽입) ===== -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3"></script>
 
-<div class="section-header"><h2>4. 콘텐츠 임팩트 분석 — 자사몰 방문자 x 인스타 포스팅</h2></div>
+<div class="section-header"><h2>4. 콘텐츠 임팩트 분석 — 자사몰 방문자 x 광고 캠페인 x 인스타 포스팅</h2></div>
 
 <div style="display:flex; gap:12px; flex-wrap:wrap; margin:16px 0;">
-  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+  <div style="flex:1; min-width:120px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
     <div style="font-size:12px; color:#8a8580;">일평균 방문자</div>
     <div style="font-size:22px; font-weight:700; color:#5a7abf;">158명</div>
   </div>
-  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+  <div style="flex:1; min-width:120px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
     <div style="font-size:12px; color:#8a8580;">최고 방문일</div>
     <div style="font-size:22px; font-weight:700; color:#e07050;">268명</div>
     <div style="font-size:11px; color:#b0aaa4;">2026-04-12</div>
   </div>
-  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
-    <div style="font-size:12px; color:#8a8580;">최저 방문</div>
-    <div style="font-size:22px; font-weight:700; color:#8a8580;">59명</div>
+  <div style="flex:1; min-width:120px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">일평균 광고비</div>
+    <div style="font-size:22px; font-weight:700; color:#ff9800;">₩11.0만</div>
+    <div style="font-size:11px; color:#b0aaa4;">7일 데이터</div>
   </div>
-  <div style="flex:1; min-width:140px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+  <div style="flex:1; min-width:120px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
+    <div style="font-size:12px; color:#8a8580;">광고 구매 합계</div>
+    <div style="font-size:22px; font-weight:700; color:#4caf50;">51건</div>
+    <div style="font-size:11px; color:#b0aaa4;">7일간</div>
+  </div>
+  <div style="flex:1; min-width:120px; background:#fff; border-radius:10px; padding:16px; text-align:center; border:1px solid #eae6e1;">
     <div style="font-size:12px; color:#8a8580;">인스타 포스팅</div>
     <div style="font-size:22px; font-weight:700; color:#c13584;">49건</div>
   </div>
@@ -180,11 +190,13 @@
 <p style="font-size:13px; color:#8a8580; margin:8px 0 16px;">
   세로 점선은 인스타그램 포스팅 시점입니다. <span style="color:rgba(255,99,132,0.9);">■</span> 릴스 &nbsp;
   <span style="color:rgba(54,162,235,0.9);">■</span> 이미지 &nbsp;
-  <span style="color:rgba(75,192,192,0.9);">■</span> 캐러셀
+  <span style="color:rgba(75,192,192,0.9);">■</span> 캐러셀 &nbsp;|&nbsp;
+  <span style="color:#ff9800;">■</span> 광고비(만원) &nbsp;
+  <span style="color:#4caf50;">●</span> 광고 구매
 </p>
 
 <div style="background:#fff; border-radius:14px; padding:24px; margin:16px 0; border:1px solid #eae6e1;">
-  <canvas id="visitorChart" height="280"></canvas>
+  <canvas id="visitorChart" height="320"></canvas>
 </div>
 
 <h3>인스타그램 포스팅 상세</h3>
@@ -330,6 +342,7 @@ new Chart(ctx, {
         borderWidth: 2.5,
         pointRadius: 3,
         pointBackgroundColor: '#5a7abf',
+        yAxisID: 'y',
       },
       {
         label: '신규 방문자',
@@ -341,6 +354,34 @@ new Chart(ctx, {
         borderWidth: 1.5,
         pointRadius: 2,
         pointBackgroundColor: '#e07050',
+        yAxisID: 'y',
+      },
+      {
+        label: '광고비(만원)',
+        data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 11.0, 10.0, 9.5, null, 7.4, 11.6, 11.0, 16.2, null],
+        type: 'bar',
+        borderColor: '#ff9800',
+        backgroundColor: 'rgba(255,152,0,0.25)',
+        borderWidth: 1,
+        barPercentage: 0.6,
+        yAxisID: 'y1',
+        order: 2,
+        spanGaps: false,
+      },
+      {
+        label: '광고 구매(건)',
+        data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9, 15, 3, null, 0, 9, 6, 9, null],
+        borderColor: '#4caf50',
+        backgroundColor: '#4caf50',
+        fill: false,
+        tension: 0.3,
+        borderWidth: 2,
+        pointRadius: 5,
+        pointStyle: 'rectRot',
+        pointBackgroundColor: '#4caf50',
+        yAxisID: 'y2',
+        order: 1,
+        spanGaps: false,
       }
     ]
   },
@@ -349,7 +390,24 @@ new Chart(ctx, {
     interaction: { mode: 'index', intersect: false },
     scales: {
       x: { grid: { display: false }, ticks: { maxRotation: 45, font: { size: 10 } } },
-      y: { beginAtZero: true, grid: { color: '#f0ebe4' } }
+      y: {
+        type: 'linear', position: 'left', beginAtZero: true,
+        grid: { color: '#f0ebe4' },
+        title: { display: true, text: '방문자 수', font: { size: 11 } },
+      },
+      y1: {
+        type: 'linear', position: 'right', beginAtZero: true,
+        grid: { drawOnChartArea: false },
+        title: { display: true, text: '광고비(만원)', color: '#ff9800', font: { size: 11 } },
+        ticks: { color: '#ff9800' },
+      },
+      y2: {
+        type: 'linear', position: 'right', beginAtZero: true,
+        grid: { drawOnChartArea: false },
+        title: { display: true, text: '구매(건)', color: '#4caf50', font: { size: 11 } },
+        ticks: { color: '#4caf50', stepSize: 1 },
+        offset: true,
+      }
     },
     plugins: {
       annotation: {
@@ -481,14 +539,25 @@ new Chart(ctx, {
           }
         } }
       },
-      legend: { display: true, position: 'top' }
+      legend: { display: true, position: 'top' },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            var label = context.dataset.label || '';
+            var value = context.parsed.y;
+            if (value === null || value === undefined) return null;
+            if (label.includes('광고비')) return label + ': ₩' + value + '만';
+            if (label.includes('구매')) return label + ': ' + value + '건';
+            return label + ': ' + value + '명';
+          }
+        }
+      }
     }
   }
 });
 </script>
 <!-- ===== /콘텐츠 임팩트 분석 섹션 ===== -->
 
-<!-- ===== 경쟁사 메타 광고 라이브러리 분석 ===== -->
 <div class="section-header"><h2>5. 경쟁사 메타 광고 라이브러리 분석</h2></div>
 
 <h3>5-1. 바디크림 (활성 광고 ~93개)</h3>
