@@ -501,17 +501,18 @@
 
     <div class="section">
       <h2>팀 동기화 <span id="syncBadge" class="sync-badge busy">연결 중…</span></h2>
-      <div id="syncInfo" style="font-size:11px;color:var(--muted);margin-bottom:8px;">모든 프로필·기기에서 자동으로 실시간 동기화됩니다.</div>
+      <div id="syncInfo" style="font-size:11px;color:var(--muted);margin-bottom:8px;">수정은 로컬에만 쌓여요. 완료되면 <b>💾 저장</b>을 눌러 팀과 공유하세요.</div>
       <div class="row">
-        <button class="ghost-btn" id="syncNowBtn">🔄 지금 가져오기</button>
+        <button class="ghost-btn" id="saveBtn">💾 저장</button>
+        <button class="ghost-btn" id="syncNowBtn">🔄 가져오기</button>
       </div>
     </div>
 
     <div class="section">
       <h2>버전 기록</h2>
-      <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">변경사항은 자동으로 기록돼요. 중요한 순간엔 스냅샷으로 이름을 붙여두세요.</div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">중요한 순간엔 이름 붙여 저장해두면 나중에 찾기 편해요.</div>
       <div class="row">
-        <button class="ghost-btn" id="snapshotBtn">📌 스냅샷 저장</button>
+        <button class="ghost-btn" id="snapshotBtn">📌 이름 붙여 저장</button>
         <button class="ghost-btn" id="historyBtn">📜 기록 보기</button>
       </div>
     </div>
@@ -521,9 +522,9 @@
       <div class="tip">
         · 셀에 마우스를 올리면 <code>현재/예정 전환</code>, <code>삭제</code> 버튼이 떠요<br/>
         · 셀을 끌어서 다른 셀과 위치를 바꿀 수 있어요<br/>
-        · 작업 내용은 자동으로 브라우저에 저장됩니다<br/>
-        · 새 게시물은 항상 그리드 <b>맨 위</b>에 추가돼요<br/>
-        · <b>팀 동기화</b>를 연결하면 다른 기기·프로필에서도 같이 봐요
+        · 로컬 변경은 자동으로 브라우저에 저장됩니다<br/>
+        · 팀 공유는 <b>💾 저장</b>을 눌렀을 때만 됩니다 (자동 푸시 없음)<br/>
+        · 다른 팀원 변경이 궁금할 땐 <b>🔄 가져오기</b>로 수동 확인
       </div>
     </div>
   </div>
@@ -942,18 +943,21 @@
    */
   const SYNC_WORKER = "https://haruna-grid-sync.contents-e27.workers.dev";
   const SYNC_LAST_UPDATED_KEY = "haruna_grid_sync_lastUpdated_v1";
-  const SYNC_POLL_MS = 10000; // 10초마다 변경 확인
+  const SYNC_LAST_PUSHED_KEY = "haruna_grid_sync_lastPushed_v1";
 
-  let syncPushTimer = null;
-  let syncPollTimer = null;
   let syncBusy = false;
+  let cloudLastSeenUpdated = 0; // 마지막으로 확인한 클라우드 updated 타임스탬프
 
   const syncBadge = document.getElementById("syncBadge");
   const syncInfo = document.getElementById("syncInfo");
   const syncNowBtn = document.getElementById("syncNowBtn");
+  const saveBtn = document.getElementById("saveBtn");
 
   function getLocalLastUpdated() { return parseInt(localStorage.getItem(SYNC_LAST_UPDATED_KEY) || "0", 10); }
   function setLocalLastUpdated(t) { localStorage.setItem(SYNC_LAST_UPDATED_KEY, String(t)); }
+  function getLastPushed() { return parseInt(localStorage.getItem(SYNC_LAST_PUSHED_KEY) || "0", 10); }
+  function setLastPushed(t) { localStorage.setItem(SYNC_LAST_PUSHED_KEY, String(t)); }
+  function isDirty() { return getLocalLastUpdated() > getLastPushed(); }
 
   function setBadge(cls, text, info) {
     syncBadge.className = "sync-badge " + cls;
@@ -983,31 +987,53 @@
   }
 
   async function cloudPullOnLoad() {
-    setBadge("busy", "동기화 중...", "클라우드에서 최신 상태 가져오는 중");
+    setBadge("busy", "불러오는 중...", "팀의 최신 버전 확인 중");
     try {
       const payload = await cloudGet();
       if (!payload || !payload.state || (payload.updated || 0) === 0) {
-        await pushNow("Initial upload");
+        cloudLastSeenUpdated = 0;
+        setBadge("busy", "저장 안됨", "클라우드에 아직 팀 버전이 없어요. 💾 저장으로 공유해보세요.");
         return;
       }
       const cloudUpdated = payload.updated || 0;
+      cloudLastSeenUpdated = cloudUpdated;
       const localUpdated = getLocalLastUpdated();
-      if (cloudUpdated > localUpdated) {
+      const dirty = isDirty();
+
+      if (!dirty && cloudUpdated > localUpdated) {
+        // 로컬 변경 없고 클라우드가 최신 → 바로 덮어쓰기
         state = payload.state;
         saveState({ skipPush: true, updated: cloudUpdated });
+        setLastPushed(cloudUpdated); // 방금 불러온 값이므로 clean
         render();
-        setBadge("ok", "동기화됨", `다른 기기의 변경 불러옴 · ${fmtTime(cloudUpdated)}`);
-      } else if (cloudUpdated < localUpdated) {
-        await pushNow();
+        setBadge("ok", "동기화됨", `팀 최신 버전 로드 · ${fmtTime(cloudUpdated)}`);
+      } else if (dirty && cloudUpdated > localUpdated) {
+        // 위험: 로컬 수정 + 클라우드도 앞섬 → 사용자에게 물어봄
+        const ok = confirm(
+          `⚠️ 저장 안 한 수정이 있는데 팀에 더 새로운 버전이 있어요.\n\n` +
+          `클라우드 버전: ${fmtTime(cloudUpdated)}\n` +
+          `내 로컬 수정: ${fmtTime(localUpdated)}\n\n` +
+          `"확인" → 클라우드 버전 불러오기 (내 수정 버림)\n` +
+          `"취소" → 내 수정 유지 (공유 전까지 팀 버전 못 봄)`
+        );
+        if (ok) {
+          state = payload.state;
+          saveState({ skipPush: true, updated: cloudUpdated });
+          setLastPushed(cloudUpdated);
+          render();
+          setBadge("ok", "동기화됨", `팀 최신 버전 로드 · ${fmtTime(cloudUpdated)}`);
+        } else {
+          setBadge("busy", "저장 안됨", `내 수정 유지 중 · 💾 저장하면 팀과 공유`);
+        }
+      } else if (dirty) {
+        setBadge("busy", "저장 안됨", "로컬 수정이 있어요. 💾 저장을 눌러 공유하세요.");
       } else {
-        setBadge("ok", "동기화됨", `최신 상태 · ${fmtTime(cloudUpdated)}`);
+        setLastPushed(cloudUpdated); // 깨끗한 상태 (로컬=클라우드)
+        setBadge("ok", "최신 상태", `동기화됨 · ${fmtTime(cloudUpdated)}`);
       }
-      startPolling();
     } catch (e) {
       console.warn("[sync] pull failed", e);
-      setBadge("err", "오프라인", "네트워크 오류 — 로컬에서 작업 가능. 자동 재시도 중.");
-      // 30초 뒤 재시도
-      setTimeout(() => cloudPullOnLoad(), 30000);
+      setBadge("err", "오프라인", "네트워크 오류 — 로컬에서 작업 가능.");
     }
   }
 
@@ -1025,7 +1051,9 @@
       };
       await cloudPut(payload, title);
       setLocalLastUpdated(now);
-      setBadge("ok", "동기화됨", `방금 저장됨 · ${fmtTime(now)}`);
+      setLastPushed(now);
+      cloudLastSeenUpdated = now;
+      setBadge("ok", "동기화됨", `방금 저장됨 · ${fmtTime(now)}${title ? ` · "${title}"` : ""}`);
       return true;
     } catch (e) {
       console.warn("[sync] push failed", e);
@@ -1034,45 +1062,6 @@
     } finally {
       syncBusy = false;
     }
-  }
-
-  function schedulePush() {
-    clearTimeout(syncPushTimer);
-    setBadge("busy", "변경됨", "곧 저장 중...");
-    syncPushTimer = setTimeout(() => pushNow(), 2500);
-  }
-
-  async function pollRemote() {
-    if (syncBusy) return;
-    try {
-      const payload = await cloudGet();
-      const cloudUpdated = payload?.updated || 0;
-      const localUpdated = getLocalLastUpdated();
-      if (cloudUpdated > localUpdated && payload?.state) {
-        state = payload.state;
-        saveState({ skipPush: true, updated: cloudUpdated });
-        render();
-        setBadge("ok", "동기화됨", `다른 기기의 변경 반영 · ${fmtTime(cloudUpdated)}`);
-      }
-    } catch (e) {
-      // Silent — don't spam badge on transient failures
-      console.warn("[sync] poll failed", e);
-    }
-  }
-
-  function startPolling() {
-    if (syncPollTimer) return;
-    syncPollTimer = setInterval(pollRemote, SYNC_POLL_MS);
-    // Pause polling when tab hidden
-    document.addEventListener("visibilitychange", () => {
-      if (document.hidden) {
-        clearInterval(syncPollTimer);
-        syncPollTimer = null;
-      } else {
-        pollRemote();
-        if (!syncPollTimer) syncPollTimer = setInterval(pollRemote, SYNC_POLL_MS);
-      }
-    });
   }
 
   function fmtTime(ts) {
@@ -1096,23 +1085,17 @@
     modalRoot.innerHTML = "";
   }
 
-  syncNowBtn.addEventListener("click", async () => {
-    setBadge("busy", "확인 중...");
-    try {
-      const payload = await cloudGet();
-      const cloudUpdated = payload?.updated || 0;
-      const localUpdated = getLocalLastUpdated();
-      if (cloudUpdated > localUpdated && payload?.state) {
-        state = payload.state;
-        saveState({ skipPush: true, updated: cloudUpdated });
-        render();
-        setBadge("ok", "동기화됨", `불러옴 · ${fmtTime(cloudUpdated)}`);
-      } else {
-        setBadge("ok", "최신 상태", `이미 최신 · ${fmtTime(localUpdated)}`);
-      }
-    } catch (e) {
-      setBadge("err", "실패", e.message);
+  saveBtn.addEventListener("click", async () => {
+    if (!isDirty()) {
+      if (!confirm("변경사항이 없어요. 그래도 현재 상태를 팀에 다시 저장할까요?")) return;
     }
+    const ok = await pushNow();
+    if (!ok) alert("❌ 저장 실패했어요. 네트워크 상태 확인해주세요.");
+  });
+
+  syncNowBtn.addEventListener("click", async () => {
+    // 수동 pull. dirty 보호 로직은 cloudPullOnLoad와 동일하게.
+    await cloudPullOnLoad();
   });
 
   /* ---------- Snapshot / History ---------- */
@@ -1196,7 +1179,7 @@
     }[c]));
   }
 
-  /* ---------- Hook saveState to trigger push + timestamp ---------- */
+  /* ---------- Hook saveState to mark dirty + update badge ---------- */
   const _origSaveState = saveState;
   saveState = function(opts = {}) {
     if (typeof opts.updated === "number") {
@@ -1205,8 +1188,20 @@
       setLocalLastUpdated(Date.now());
     }
     _origSaveState();
-    if (!opts.skipPush) schedulePush();
+    // 자동 push 없음. 로컬 수정만 표시.
+    if (!opts.skipPush && isDirty()) {
+      setBadge("busy", "저장 안됨", "수정사항이 쌓이고 있어요. 💾 저장을 눌러 팀과 공유하세요.");
+    }
   };
+
+  /* ---------- Before-unload guard: warn if unsaved ---------- */
+  window.addEventListener("beforeunload", (e) => {
+    if (isDirty()) {
+      e.preventDefault();
+      e.returnValue = "";
+      return "";
+    }
+  });
 
   /* ---------- Init ---------- */
   render();
