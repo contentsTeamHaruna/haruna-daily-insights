@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 <title>인스타그램 그리드 무드 체크 — @haruna_kr</title>
 <style>
   :root {
@@ -960,6 +963,13 @@
   function getLastPushed() { return parseInt(localStorage.getItem(SYNC_LAST_PUSHED_KEY) || "0", 10); }
   function setLastPushed(t) { localStorage.setItem(SYNC_LAST_PUSHED_KEY, String(t)); }
   function isDirty() { return getLocalLastUpdated() > getLastPushed(); }
+
+  // 마이그레이션: 이전 자동 저장 버전에서 남은 로컬 상태는 "이미 푸시됨"으로 간주
+  // → 새 버전에서 처음 열 때 팀 클라우드가 source of truth가 됨
+  if (getLocalLastUpdated() > 0 && getLastPushed() === 0) {
+    setLastPushed(getLocalLastUpdated());
+    console.log("[sync] migrated: lastPushed initialized to lastUpdated");
+  }
 
   function setBadge(cls, text, info) {
     syncBadge.className = "sync-badge " + cls;
