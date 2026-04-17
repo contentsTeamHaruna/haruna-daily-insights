@@ -523,8 +523,8 @@
         · 셀에 마우스를 올리면 <code>현재/예정 전환</code>, <code>삭제</code> 버튼이 떠요<br/>
         · 셀을 끌어서 다른 셀과 위치를 바꿀 수 있어요<br/>
         · 로컬 변경은 자동으로 브라우저에 저장됩니다<br/>
-        · 팀 공유는 <b>💾 저장</b>을 눌렀을 때만 됩니다 (자동 푸시 없음)<br/>
-        · 다른 팀원 변경이 궁금할 땐 <b>🔄 가져오기</b>로 수동 확인
+        · 팀 공유는 <b>💾 저장</b>을 눌렀을 때만 (내 WIP가 팀에 튕기지 않음)<br/>
+        · 팀원이 저장하면 10초 내 내 화면에 자동 반영 (내가 편집 중이면 덮어쓰지 않고 알림만)
       </div>
     </div>
   </div>
@@ -944,8 +944,10 @@
   const SYNC_WORKER = "https://haruna-grid-sync.contents-e27.workers.dev";
   const SYNC_LAST_UPDATED_KEY = "haruna_grid_sync_lastUpdated_v1";
   const SYNC_LAST_PUSHED_KEY = "haruna_grid_sync_lastPushed_v1";
+  const SYNC_POLL_MS = 10000; // 10초마다 팀 변경 체크
 
   let syncBusy = false;
+  let syncPollTimer = null;
   let cloudLastSeenUpdated = 0; // 마지막으로 확인한 클라우드 updated 타임스탬프
 
   const syncBadge = document.getElementById("syncBadge");
@@ -1031,10 +1033,51 @@
         setLastPushed(cloudUpdated); // 깨끗한 상태 (로컬=클라우드)
         setBadge("ok", "최신 상태", `동기화됨 · ${fmtTime(cloudUpdated)}`);
       }
+      startPolling();
     } catch (e) {
       console.warn("[sync] pull failed", e);
       setBadge("err", "오프라인", "네트워크 오류 — 로컬에서 작업 가능.");
     }
+  }
+
+  /* 팀원이 💾 저장한 걸 내 화면에 자동 반영 (내가 편집 중이면 덮어쓰지 않고 알림만) */
+  async function pollRemote() {
+    if (syncBusy || document.hidden) return;
+    try {
+      const payload = await cloudGet();
+      const cloudUpdated = payload?.updated || 0;
+      if (cloudUpdated <= cloudLastSeenUpdated) return; // 새 변경 없음
+      cloudLastSeenUpdated = cloudUpdated;
+      const localUpdated = getLocalLastUpdated();
+      if (!payload?.state) return;
+      if (!isDirty() && cloudUpdated > localUpdated) {
+        // 깨끗한 상태 → 자동으로 팀 최신 반영
+        state = payload.state;
+        saveState({ skipPush: true, updated: cloudUpdated });
+        setLastPushed(cloudUpdated);
+        render();
+        setBadge("ok", "동기화됨", `팀원의 새 저장 반영 · ${fmtTime(cloudUpdated)}`);
+      } else if (isDirty() && cloudUpdated > localUpdated) {
+        // 내 WIP 보호 — 알림만
+        setBadge("busy", "팀 새 저장 있음", `방금 누가 저장했어요. 💾 먼저 저장하거나 🔄 가져오기`);
+      }
+    } catch (e) {
+      console.warn("[sync] poll failed", e);
+    }
+  }
+
+  function startPolling() {
+    if (syncPollTimer) return;
+    syncPollTimer = setInterval(pollRemote, SYNC_POLL_MS);
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        clearInterval(syncPollTimer);
+        syncPollTimer = null;
+      } else {
+        pollRemote();
+        if (!syncPollTimer) syncPollTimer = setInterval(pollRemote, SYNC_POLL_MS);
+      }
+    });
   }
 
   async function pushNow(title) {
