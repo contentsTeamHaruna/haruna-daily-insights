@@ -403,7 +403,7 @@
       </div>
       <div class="row" style="margin-top:8px;">
         <button class="ghost-btn danger" id="clearPlannedBtn">예정만 비우기</button>
-        <button class="ghost-btn danger" id="clearAllBtn">전체 초기화</button>
+        <button class="ghost-btn danger" id="clearAllBtn">기본 상태로 되돌리기</button>
       </div>
       <input type="file" id="importFile" accept="application/json" />
     </div>
@@ -702,9 +702,17 @@
     saveState(); render();
   });
   document.getElementById("clearAllBtn").addEventListener("click", () => {
-    if (!confirm("전체 그리드를 초기화할까요? 되돌릴 수 없어요.")) return;
-    state.items = [];
+    if (!confirm("그리드를 기본 상태로 되돌릴까요?\n\n· 추가하신 예정 게시물 → 모두 삭제\n· @haruna_kr 현재 게시물 12장 → 다시 시드")) return;
+    state.items = INITIAL_POSTS.map(p => ({
+      id: crypto.randomUUID(),
+      src: p.src,
+      type: 'current',
+      post: p.post,
+      alt: p.alt,
+      cached: false,
+    }));
     saveState(); render();
+    cacheAllUncached();
   });
 
   document.getElementById("reseedBtn").addEventListener("click", () => {
