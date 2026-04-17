@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>인스타그램 그리드 무드 체크 — @haruna_kr</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --panel: #ffffff;
+    --border: #dbdbdb;
+    --text: #262626;
+    --muted: #8e8e8e;
+    --accent: #0095f6;
+    --planned: #ffb300;
+    --danger: #ed4956;
+    --gap: 2px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+                 "Noto Sans KR", Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ---------- Layout ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    min-height: 100vh;
+  }
+  .main {
+    padding: 24px 16px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    padding: 24px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; height: auto; border-left: none; border-top: 1px solid var(--border); }
+  }
+
+  /* ---------- Phone frame ---------- */
+  .phone {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
+  }
+  .phone-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 8px;
+    border-bottom: 1px solid #efefef;
+  }
+  .phone-header .username {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .2px;
+  }
+  .phone-header .meta {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid #efefef;
+  }
+  .tab {
+    text-align: center;
+    padding: 10px 0;
+    color: var(--muted);
+  }
+  .tab.active {
+    color: var(--text);
+    border-top: 1px solid var(--text);
+    margin-top: -1px;
+  }
+
+  /* ---------- Grid ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    background: #efefef;
+    padding: var(--gap);
+  }
+  .cell {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background: #f4f4f4;
+    overflow: hidden;
+    user-select: none;
+    cursor: grab;
+  }
+  .cell:active { cursor: grabbing; }
+  .cell img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+  .cell.empty {
+    background:
+      repeating-linear-gradient(45deg,
+        #f4f4f4, #f4f4f4 8px,
+        #ececec 8px, #ececec 16px);
+    cursor: default;
+  }
+  .cell.empty::after {
+    content: "비어있음";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 11px;
+  }
+
+  /* planned overlay */
+  .cell.planned::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 0 3px var(--planned);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .cell .badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: var(--planned);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    z-index: 3;
+    letter-spacing: .3px;
+  }
+  .cell.current .badge { display: none; }
+
+  /* hover controls */
+  .controls {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    z-index: 4;
+  }
+  .cell:hover .controls,
+  .cell.touch-show .controls { display: flex; }
+
+  .controls .btn {
+    background: rgba(255,255,255,.95);
+    color: #262626;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .controls .btn.danger {
+    background: var(--danger);
+    color: #fff;
+  }
+
+  /* drag states */
+  .cell.dragging { opacity: .35; }
+  .cell.drag-over {
+    outline: 2px dashed var(--accent);
+    outline-offset: -2px;
+  }
+
+  /* ---------- Sidebar ---------- */
+  h1 {
+    font-size: 17px;
+    margin: 0 0 4px;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .section {
+    margin-bottom: 22px;
+  }
+  .section h2 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    margin: 0 0 8px;
+  }
+
+  .dropzone {
+    border: 1.5px dashed var(--border);
+    border-radius: 8px;
+    padding: 20px 12px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+  }
+  .dropzone:hover, .dropzone.hover {
+    background: #f0f8ff;
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .dropzone strong { color: var(--text); display: block; margin-bottom: 4px; }
+
+  .seg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .seg button {
+    padding: 8px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--text);
+  }
+  .seg button.active {
+    background: var(--text);
+    color: #fff;
+  }
+
+  .row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .ghost-btn {
+    flex: 1;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .ghost-btn:hover { background: #f5f5f5; }
+  .ghost-btn.danger { color: var(--danger); border-color: #f0c0c5; }
+  .ghost-btn.danger:hover { background: #fff0f1; }
+
+  .legend {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .legend .dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .stats .stat {
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+  }
+  .stats .num {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .stats .lbl {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .tip {
+    background: #fffbe6;
+    border: 1px solid #ffe58f;
+    color: #614c00;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .tip code {
+    background: #fff3bf;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+  }
+
+  input[type="file"] { display: none; }
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <!-- Main grid (phone preview) -->
+  <div class="main">
+    <div class="phone" id="phone">
+      <div class="phone-header">
+        <div>
+          <div class="username">haruna_kr</div>
+          <div class="meta">게시물 <span id="postCount">0</span></div>
+        </div>
+        <div class="meta">무드 미리보기</div>
+      </div>
+      <div class="tabs">
+        <div class="tab active">▦</div>
+        <div class="tab">▷</div>
+        <div class="tab">⟳</div>
+        <div class="tab">◉</div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+
+  <!-- Sidebar controls -->
+  <div class="sidebar">
+    <h1>인스타 그리드 무드 체크</h1>
+    <div class="sub">@haruna_kr · 새 게시물은 위에 쌓이며 기존 그리드가 한 칸씩 밀려요.</div>
+
+    <div class="section">
+      <h2>이미지 추가</h2>
+      <label class="dropzone" id="dropzone">
+        <strong>+ 이미지를 끌어다 놓거나 클릭</strong>
+        여러 장 한꺼번에 업로드 가능
+        <input type="file" id="fileInput" accept="image/*" multiple />
+      </label>
+
+      <div style="margin-top:10px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">새 이미지 기본 분류</div>
+        <div class="seg" id="modeSeg">
+          <button data-mode="planned" class="active">예정 게시물</button>
+          <button data-mode="current">현재 게시물</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>현황</h2>
+      <div class="stats">
+        <div class="stat"><div class="num" id="cntCurrent">0</div><div class="lbl">현재</div></div>
+        <div class="stat"><div class="num" id="cntPlanned">0</div><div class="lbl">예정</div></div>
+        <div class="stat"><div class="num" id="cntTotal">0</div><div class="lbl">전체</div></div>
+      </div>
+      <div class="legend">
+        <span><span class="dot" style="background:#f4f4f4;border:1px solid var(--border);"></span>현재</span>
+        <span><span class="dot" style="background:var(--planned);"></span>예정</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>관리</h2>
+      <div class="row">
+        <button class="ghost-btn" id="exportBtn">JSON 내보내기</button>
+        <button class="ghost-btn" id="importBtn">JSON 가져오기</button>
+      </div>
+      <div class="row" style="margin-top:8px;">
+        <button class="ghost-btn" id="reseedBtn">현재 게시물 다시 시드</button>
+        <button class="ghost-btn" id="cacheBtn">이미지 영구 캐시</button>
+      </div>
+      <div class="row" style="margin-top:8px;">
+        <button class="ghost-btn danger" id="clearPlannedBtn">예정만 비우기</button>
+        <button class="ghost-btn danger" id="clearAllBtn">전체 초기화</button>
+      </div>
+      <input type="file" id="importFile" accept="application/json" />
+    </div>
+
+    <div class="section">
+      <h2>도움말</h2>
+      <div class="tip">
+        · 셀에 마우스를 올리면 <code>현재/예정 전환</code>, <code>삭제</code> 버튼이 떠요<br/>
+        · 셀을 끌어서 다른 셀과 위치를 바꿀 수 있어요<br/>
+        · 작업 내용은 자동으로 브라우저에 저장됩니다<br/>
+        · 새 게시물은 항상 그리드 <b>맨 위</b>에 추가돼요
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const STORAGE_KEY = "haruna_grid_v2";
+  const GRID_ROWS = 5; // 표시할 행 수 (3 * 5 = 15셀)
+  const COLS = 3;
+
+  // @haruna_kr 프로필에서 추출한 현재 게시물 12장 (최신 → 오래된 순).
+  // src는 인스타 CDN URL (만료될 수 있음 → 첫 로드 때 dataURL로 캐싱).
+  const INITIAL_POSTS = [{"post":"https://www.instagram.com/sj.uju/p/DXJq_1fk6XH/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670474755_18571517965037620_1895457881730120178_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=Mzg3NTgxNzk0NTA3MTU3MzExMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHg5NjAuc2RyLkMzIn0%3D&_nc_ohc=tPO_h4Gjc30Q7kNvwE91bzd&_nc_oc=AdqdEK_7u86yF-OTMmzYCfa-OZA1XflpTPtDDueY5oSTt4sHam5xCsc7fOkx3Otzsa8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af0k_B0tA3__7AqvthjFRR2VoG5BIwXB2jcQBOU07En19w&oe=69E6A3EA","alt":"haruna 실키 머쉬룸 바디크림 박스"},{"post":"https://www.instagram.com/haruna_kr/p/DWIrfWYATqy/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655362214_17870838336578005_7845836951730249706_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg1NzUyNDE1MjcxMzk1MzM2OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzMjB4MTc2MC5zZHIuQzMifQ%3D%3D&_nc_ohc=6M_vgy9ec2gQ7kNvwEzxEgC&_nc_oc=Adr2_R7txPSsanHftcI-RWwgkVHYazkxy7PIjh223fwf6GCDrb482DxJxH9TIGzmHrU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2YTV_QUsBgPH66esfsZK0Ykm49Ya7CeEq0i93v6GcE7g&oe=69E6B3DE","alt":"HCA*HAP 화합 — moveurbody (검정 배경)"},{"post":"https://www.instagram.com/haruna_kr/p/DUuF1pzAZDI/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/631892688_17864764560578005_1320116302434442154_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzgzMjAyMjk1MDYzMTAxMTQ3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=Ve-9N5f8otUQ7kNvwG8I9Ri&_nc_oc=AdpXDGbA6Nda7lHiKFpU-RGLTs38XJfSAbE1qFmr4vug4xy6XEVaeyV1bbalm-nwQFY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af0b3IdoeP57PwJIuvpl0jYUU-TEyov-ONhMr1njVvhwFQ&oe=69E6861C","alt":"Recipe #01. 아무리 발라도 당기는 피부"},{"post":"https://www.instagram.com/haruna_kr/p/DUso2HdgTvV/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/629978967_17864666742578005_2572820926562175822_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzgzMTYxNzAyMzcwODgzODg2OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=F0PZJb29HukQ7kNvwE6sTvE&_nc_oc=Adpuf9hginoBLgEz0gCXM69XTwku7jV636ooXgMAWShJuxPMl6XCeZnTWSsFBxJ4Sh4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2nykZGRaD06POg6__y3HC8ZY3ajHIy0opFeaV2g1r-aw&oe=69E68A16","alt":"haruna 돋보기 (모델)"},{"post":"https://www.instagram.com/haruna_kr/reel/DUHat7IAd-A/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/625143766_1451916809781012_6517074408678657539_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=MzgyMTE0MDMxMzkxODAwNTEyMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg4NTIuc2RyLkMzIn0%3D&_nc_ohc=KdZRuxy4fQsQ7kNvwFZfUb4&_nc_oc=AdqmVJkOP0W9-qY5EGdHtp3bMhkq-3zHtddWpOYmHtEgj4B9fGCo0mkxNsYLnOOsvQE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af0u5rIZtJZNSlJabpK4bnnTfx1X-TwG1u_F9izTRP009Q&oe=69E6B473","alt":"화이트 토마토 단면"},{"post":"https://www.instagram.com/haruna_kr/reel/DTurqRJgVL4/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/619508472_1231771622352016_6027787477491198786_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=MzgxNDE3Nzk1NTA2MDQ3MDUyMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=ClOBN4XUa_IQ7kNvwHhhWyD&_nc_oc=Adrw2sMJLNdx12JBQK2VKr5S6D-hlTiRrazRb2Y3ngo25h4XD6WxHYe-P2svZfkTrYM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2oOUb5nm5HWz7qroNM5NkyOXRgBun16Edh5Wvj5IZXYA&oe=69E693FE","alt":"Tomato 🍅 (haruna 노란 용기)"},{"post":"https://www.instagram.com/haruna_kr/reel/DThxqVKAUEo/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/617518070_4111519352471901_3464159226616564886_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=MzgxMDU0NTE3Mjk0NTY0OTk2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=mV0bkA2qH_AQ7kNvwHkYET-&_nc_oc=Adpcl_mURXmSI9phbrpiC7Gb3BCDpIdxvNdBnpsaNg6wnZSQ0ySO90XrOp597nF7gq0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af216aiC-1GAYkX_2mn_AfB6sZJskmox0uNTp62nNEGxRA&oe=69E6B54F","alt":"A Day for Me. (하늘과 손)"},{"post":"https://www.instagram.com/haruna_kr/p/DThpO4RgQ5r/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/614794821_17860436304578005_4425371725814883837_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzgxMDUwODEwMjEzNDk5MjQ5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNTB4MTY4OC5zZHIuQzMifQ%3D%3D&_nc_ohc=FpXqyULUHowQ7kNvwEY_I0E&_nc_oc=AdpMBSy9OEZsMjU-itS8lHjA-7NKAX5jKTEd36nFRe276oCYTa2ml8Li8liPLWdUank&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2RnuIebwTinHWmC7qNWv7C2sy6BcP40vGLcq0zYbM6vw&oe=69E699CB","alt":"White Jelly Mushroom (흰 머쉬룸)"},{"post":"https://www.instagram.com/haruna_kr/p/DThoB43gQrq/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/617046562_17860434534578005_6517052876113079103_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzgxMDUwMjgxMTM3MjgxNzEzMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNTB4MTY4OC5zZHIuQzMifQ%3D%3D&_nc_ohc=6X86wG3yI5QQ7kNvwH5jjsi&_nc_oc=AdqTfQ5qCO4iVKXMSvrO1HNJBtU164VhQuHIi1Olf_stvFlbNpKuIK32DWKPOaUwgb8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af1ztI09Ib5iWCMXFFoAYHLW7jy6CnnVYjvWcwGB9qEdDw&oe=69E6B2EC","alt":"White Jelly Mushroom + Estoin (페이지)"},{"post":"https://www.instagram.com/haruna_kr/reel/DThSHQNAY45/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/616402850_17860442115578005_4331241950309167017_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=MzgxMDQwNjQyMzAwMzc2MjIzMzE3ODYwNDQyMTA5NTc4MDA1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHgxMjgwLnNkci5DMyJ9&_nc_ohc=XKTCtqU2rFsQ7kNvwFywMPj&_nc_oc=Adp2BpWberDcQQfEwPAmo4qlDU-KpnFX3qAh2eKvIGveoYsb8WF6Rc3y-iWs64OPYBg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2jxr5oOjbL9QKHgkmwHtiHMYzewKOTXCQwm7_Dt8Zrjw&oe=69E68290","alt":"haruna 박스 클로즈업 (검정 배경)"},{"post":"https://www.instagram.com/haruna_kr/p/DTg3BsxgUOd/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/613588170_17860398222578005_2925470793781819925_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzgxMDI4NzI5NDEwODIyMjM2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=x4DzWhzACDAQ7kNvwHYY8W5&_nc_oc=Adorp6reFTHwyDEhpOTo_4stwPfyxjuLxVp1xdEbUrZ_OZ2Ky2JxMRho6Rloh98aeY0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af2alGxM750yCE4t99tm8bhs4YorxrrBcyLO-GixGexW8g&oe=69E6A696","alt":"haruna 토마토 + 동그란 용기"},{"post":"https://www.instagram.com/haruna_kr/p/DTg20q6AepV/","src":"https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/613098083_17860398162578005_3279497776944310478_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzgxMDI4NjM5ODc1MDE5MDE2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=c4e8jFI4gGAQ7kNvwF6zlT2&_nc_oc=Ado0F-gOka0BYGR017vPf5yLXZWrelxBDjr8JHfHHDuC6Duc-WUdMX9Tm11VW2YX3WA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gZuMxMoyqhCyBYpOEX-pXA&_nc_ss=7a32e&oh=00_Af1PrC5dyQ99azP9Ezfbf9zOdif6b0QNkGYkQHUd29GUhQ&oe=69E6B62D","alt":"haruna 등 라인 (모델)"}];
+
+  /** state: { items: [{id, src, type:'current'|'planned', post?, alt?, cached?}], defaultMode } */
+  let state = loadState();
+  if (!state) {
+    state = { items: [], defaultMode: "planned" };
+  }
+  // 첫 실행 → 현재 게시물 자동 시드
+  if (!state.seeded) {
+    state.seeded = true;
+    INITIAL_POSTS.forEach(p => {
+      state.items.push({
+        id: crypto.randomUUID(),
+        src: p.src,
+        type: 'current',
+        post: p.post,
+        alt: p.alt,
+        cached: false,
+      });
+    });
+  }
+
+  const gridEl = document.getElementById("grid");
+  const fileInput = document.getElementById("fileInput");
+  const dropzone = document.getElementById("dropzone");
+  const modeSeg = document.getElementById("modeSeg");
+  const postCountEl = document.getElementById("postCount");
+  const cntCurrent = document.getElementById("cntCurrent");
+  const cntPlanned = document.getElementById("cntPlanned");
+  const cntTotal = document.getElementById("cntTotal");
+
+  /* ---------- Storage ---------- */
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+      alert("저장 공간이 부족합니다. 이미지를 줄이거나 일부를 삭제해 주세요.");
+    }
+  }
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch { return null; }
+  }
+
+  /* ---------- Render ---------- */
+  function render() {
+    gridEl.innerHTML = "";
+    const totalCells = Math.max(GRID_ROWS * COLS, Math.ceil(state.items.length / COLS) * COLS);
+
+    for (let i = 0; i < totalCells; i++) {
+      const item = state.items[i];
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      cell.dataset.index = i;
+
+      if (!item) {
+        cell.classList.add("empty");
+      } else {
+        cell.classList.add(item.type);
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.alt = "";
+        cell.appendChild(img);
+
+        const badge = document.createElement("div");
+        badge.className = "badge";
+        badge.textContent = "예정";
+        cell.appendChild(badge);
+
+        const ctrls = document.createElement("div");
+        ctrls.className = "controls";
+        const toggleBtn = document.createElement("button");
+        toggleBtn.className = "btn";
+        toggleBtn.textContent = item.type === "planned" ? "현재로 전환" : "예정으로 전환";
+        toggleBtn.onclick = (e) => { e.stopPropagation(); toggleType(i); };
+        const delBtn = document.createElement("button");
+        delBtn.className = "btn danger";
+        delBtn.textContent = "삭제";
+        delBtn.onclick = (e) => { e.stopPropagation(); removeItem(i); };
+        ctrls.appendChild(toggleBtn);
+        ctrls.appendChild(delBtn);
+        cell.appendChild(ctrls);
+
+        // drag handlers (only for cells with item)
+        cell.draggable = true;
+        cell.addEventListener("dragstart", onDragStart);
+        cell.addEventListener("dragend", onDragEnd);
+      }
+
+      // every cell can be a drop target (allows dropping into empty)
+      cell.addEventListener("dragover", onDragOver);
+      cell.addEventListener("dragleave", onDragLeave);
+      cell.addEventListener("drop", onDrop);
+
+      gridEl.appendChild(cell);
+    }
+
+    // stats
+    const cur = state.items.filter(x => x.type === "current").length;
+    const plan = state.items.filter(x => x.type === "planned").length;
+    cntCurrent.textContent = cur;
+    cntPlanned.textContent = plan;
+    cntTotal.textContent = state.items.length;
+    postCountEl.textContent = cur + plan;
+  }
+
+  /* ---------- Mutations ---------- */
+  function addImageFromFile(file, insertAt) {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        // resize to ~1080 max dim for storage efficiency
+        const img = new Image();
+        img.onload = () => {
+          const max = 1080;
+          let w = img.width, h = img.height;
+          if (Math.max(w, h) > max) {
+            const r = max / Math.max(w, h);
+            w = Math.round(w * r);
+            h = Math.round(h * r);
+          }
+          const canvas = document.createElement("canvas");
+          canvas.width = w; canvas.height = h;
+          canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+          const src = canvas.toDataURL("image/jpeg", 0.85);
+          const item = {
+            id: crypto.randomUUID(),
+            src,
+            type: state.defaultMode,
+            cached: true, // 로컬 파일은 이미 dataURL이라 캐싱 불필요
+          };
+          if (typeof insertAt === "number") {
+            const at = Math.max(0, Math.min(insertAt, state.items.length));
+            state.items.splice(at, 0, item);
+          } else {
+            state.items.unshift(item);
+          }
+          resolve();
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  async function addFiles(fileList, insertAt) {
+    const files = Array.from(fileList).filter(f => f.type.startsWith("image/"));
+    for (let i = 0; i < files.length; i++) {
+      const at = typeof insertAt === "number" ? insertAt + i : undefined;
+      await addImageFromFile(files[i], at);
+    }
+    saveState(); render();
+  }
+
+  function toggleType(index) {
+    const item = state.items[index];
+    if (!item) return;
+    item.type = item.type === "planned" ? "current" : "planned";
+    saveState(); render();
+  }
+
+  function removeItem(index) {
+    state.items.splice(index, 1);
+    saveState(); render();
+  }
+
+  function moveItem(from, to) {
+    if (from === to) return;
+    if (from < 0 || from >= state.items.length) return;
+    const [it] = state.items.splice(from, 1);
+    // clamp 'to' to current length (after removal)
+    if (to > state.items.length) to = state.items.length;
+    state.items.splice(to, 0, it);
+    saveState(); render();
+  }
+
+  /* ---------- Drag & Drop ---------- */
+  let dragFrom = null;
+  function onDragStart(e) {
+    dragFrom = parseInt(this.dataset.index, 10);
+    this.classList.add("dragging");
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", String(dragFrom));
+  }
+  function onDragEnd() {
+    this.classList.remove("dragging");
+    document.querySelectorAll(".cell.drag-over").forEach(el => el.classList.remove("drag-over"));
+  }
+  function onDragOver(e) {
+    const isFile = e.dataTransfer.types.includes("Files");
+    if (dragFrom === null && !isFile) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = isFile ? "copy" : "move";
+    this.classList.add("drag-over");
+  }
+  function onDragLeave() {
+    this.classList.remove("drag-over");
+  }
+  function onDrop(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    this.classList.remove("drag-over");
+
+    const targetIdx = parseInt(this.dataset.index, 10);
+
+    // 외부 파일 드롭 → 정확히 이 셀 위치에 삽입
+    if (e.dataTransfer.files && e.dataTransfer.files.length) {
+      const at = Math.min(targetIdx, state.items.length);
+      addFiles(e.dataTransfer.files, at);
+      dragFrom = null;
+      return;
+    }
+
+    // 내부 드래그 (셀 순서 바꾸기)
+    if (dragFrom === null) return;
+    moveItem(dragFrom, Math.min(targetIdx, state.items.length - 1 < 0 ? 0 : state.items.length));
+    dragFrom = null;
+  }
+
+  /* ---------- File dropzone (external files) ---------- */
+  ["dragenter", "dragover"].forEach(ev =>
+    dropzone.addEventListener(ev, (e) => {
+      e.preventDefault();
+      dropzone.classList.add("hover");
+    })
+  );
+  ["dragleave", "drop"].forEach(ev =>
+    dropzone.addEventListener(ev, (e) => {
+      e.preventDefault();
+      dropzone.classList.remove("hover");
+    })
+  );
+  dropzone.addEventListener("drop", (e) => {
+    if (e.dataTransfer.files && e.dataTransfer.files.length) {
+      addFiles(e.dataTransfer.files);
+    }
+  });
+  dropzone.addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", (e) => {
+    if (e.target.files.length) addFiles(e.target.files);
+    fileInput.value = "";
+  });
+
+  // Allow dropping files directly onto the grid too
+  gridEl.addEventListener("dragover", (e) => {
+    if (e.dataTransfer.types.includes("Files")) e.preventDefault();
+  });
+  gridEl.addEventListener("drop", (e) => {
+    if (e.dataTransfer.files && e.dataTransfer.files.length) {
+      e.preventDefault();
+      addFiles(e.dataTransfer.files);
+    }
+  });
+
+  /* ---------- Mode selector ---------- */
+  modeSeg.querySelectorAll("button").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.mode === state.defaultMode);
+    btn.addEventListener("click", () => {
+      state.defaultMode = btn.dataset.mode;
+      modeSeg.querySelectorAll("button").forEach(b => b.classList.toggle("active", b === btn));
+      saveState();
+    });
+  });
+
+  /* ---------- Manage buttons ---------- */
+  document.getElementById("clearPlannedBtn").addEventListener("click", () => {
+    if (!confirm("예정 게시물을 모두 삭제할까요?")) return;
+    state.items = state.items.filter(x => x.type !== "planned");
+    saveState(); render();
+  });
+  document.getElementById("clearAllBtn").addEventListener("click", () => {
+    if (!confirm("전체 그리드를 초기화할까요? 되돌릴 수 없어요.")) return;
+    state.items = [];
+    saveState(); render();
+  });
+
+  document.getElementById("reseedBtn").addEventListener("click", () => {
+    if (!confirm("@haruna_kr의 현재 게시물 12장을 다시 시드할까요?\n(예정 게시물은 유지되고, 현재 게시물만 갈아끼웁니다.)")) return;
+    // 예정만 남기고 시드를 새로 추가 (예정이 위에 오도록)
+    const planned = state.items.filter(x => x.type === "planned");
+    const fresh = INITIAL_POSTS.map(p => ({
+      id: crypto.randomUUID(),
+      src: p.src,
+      type: 'current',
+      post: p.post,
+      alt: p.alt,
+      cached: false,
+    }));
+    state.items = [...planned, ...fresh];
+    saveState(); render();
+    cacheAllUncached();
+  });
+
+  document.getElementById("cacheBtn").addEventListener("click", async () => {
+    const before = state.items.filter(x => !x.cached).length;
+    if (before === 0) { alert("이미 모두 캐싱되어 있습니다."); return; }
+    const ok = await cacheAllUncached(true);
+    alert(`캐싱 완료: ${ok}/${before}장 (실패는 외부 URL 그대로 사용됩니다)`);
+  });
+
+  document.getElementById("exportBtn").addEventListener("click", () => {
+    const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `haruna_grid_${new Date().toISOString().slice(0,10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  const importFile = document.getElementById("importFile");
+  document.getElementById("importBtn").addEventListener("click", () => importFile.click());
+  importFile.addEventListener("change", (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const obj = JSON.parse(ev.target.result);
+        if (!obj || !Array.isArray(obj.items)) throw new Error("형식 오류");
+        if (!confirm(`${obj.items.length}개 항목을 가져올까요? 현재 그리드는 대체됩니다.`)) return;
+        state = { defaultMode: obj.defaultMode || "planned", items: obj.items };
+        saveState(); render();
+      } catch (err) {
+        alert("가져오기 실패: " + err.message);
+      }
+    };
+    reader.readAsText(f);
+    importFile.value = "";
+  });
+
+  /* ---------- Remote image caching ----------
+   * 인스타 CDN URL은 expiry 토큰이 있어 며칠~수주 후 만료됨.
+   * anonymous img → canvas → toDataURL 로 변환해 localStorage에 영구 저장.
+   * file:// 로 열면 cross-origin canvas tainted로 toDataURL 실패할 수 있음.
+   * 그 경우 외부 URL 그대로 src로 사용 (이미지는 만료 전까지 보임).
+   */
+  function cacheRemoteImage(item) {
+    return new Promise((resolve) => {
+      if (item.cached || !item.src || item.src.startsWith("data:")) {
+        resolve(false); return;
+      }
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      img.referrerPolicy = "no-referrer";
+      const timer = setTimeout(() => resolve(false), 15000);
+      img.onload = () => {
+        clearTimeout(timer);
+        try {
+          const max = 720; // 캐시 크기 절약
+          let w = img.naturalWidth, h = img.naturalHeight;
+          if (Math.max(w, h) > max) {
+            const r = max / Math.max(w, h);
+            w = Math.round(w * r); h = Math.round(h * r);
+          }
+          const canvas = document.createElement("canvas");
+          canvas.width = w; canvas.height = h;
+          canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+          const dataUrl = canvas.toDataURL("image/jpeg", 0.82);
+          item.src = dataUrl;
+          item.cached = true;
+          resolve(true);
+        } catch (e) {
+          // tainted canvas (CORS 헤더 부재)
+          resolve(false);
+        }
+      };
+      img.onerror = () => { clearTimeout(timer); resolve(false); };
+      img.src = item.src;
+    });
+  }
+
+  async function cacheAllUncached(verbose = false) {
+    const targets = state.items.filter(x => !x.cached && x.src && !x.src.startsWith("data:"));
+    let okCount = 0;
+    for (const it of targets) {
+      const ok = await cacheRemoteImage(it);
+      if (ok) okCount++;
+    }
+    if (okCount > 0) { saveState(); render(); }
+    if (verbose) console.log(`[cache] ${okCount}/${targets.length} cached`);
+    return okCount;
+  }
+
+  /* ---------- Init ---------- */
+  render();
+  // 백그라운드에서 인스타 CDN 이미지를 dataURL로 캐싱 시도 (영구 보존)
+  setTimeout(() => cacheAllUncached(), 800);
+})();
+</script>
+</body>
+</html>
