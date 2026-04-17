@@ -964,11 +964,14 @@
   function setLastPushed(t) { localStorage.setItem(SYNC_LAST_PUSHED_KEY, String(t)); }
   function isDirty() { return getLocalLastUpdated() > getLastPushed(); }
 
-  // 마이그레이션: 이전 자동 저장 버전에서 남은 로컬 상태는 "이미 푸시됨"으로 간주
-  // → 새 버전에서 처음 열 때 팀 클라우드가 source of truth가 됨
-  if (getLocalLastUpdated() > 0 && getLastPushed() === 0) {
-    setLastPushed(getLocalLastUpdated());
-    console.log("[sync] migrated: lastPushed initialized to lastUpdated");
+  // v3 마이그레이션 (프로필당 1회): 옛날 자동저장 시절 타임스탬프가 남아서
+  // "내 로컬이 더 최신"이라고 오판하는 문제 방지 → 로컬 타임스탬프 리셋해서 클라우드를 강제 source of truth로
+  const SYNC_MIGRATION_KEY = "haruna_grid_sync_migrated_v3";
+  if (!localStorage.getItem(SYNC_MIGRATION_KEY)) {
+    localStorage.removeItem(SYNC_LAST_UPDATED_KEY);
+    localStorage.removeItem(SYNC_LAST_PUSHED_KEY);
+    localStorage.setItem(SYNC_MIGRATION_KEY, "1");
+    console.log("[sync] v3 migration: local timestamps reset, cloud is source of truth");
   }
 
   function setBadge(cls, text, info) {
