@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>everypace 일일 소재 리포트 — 2026년 04월 19일</title>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Pretendard', -apple-system, sans-serif; background: #f7f7f7; color: #1a1a1a; line-height: 1.6; }
+  .container { max-width: 800px; margin: 0 auto; padding: 24px 16px 60px; }
+  .header { background: linear-gradient(135deg, #2d6a4a 0%, #4a9a6a 100%); color: #fff; padding: 28px 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(74,154,106,0.3); }
+  .header h1 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+  .header .subtitle { font-size: 13px; opacity: 0.85; }
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .section-title { font-size: 17px; font-weight: 800; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ''; flex: 1; height: 1.5px; background: #f0f0f0; }
+  .card { background: #fff; border-radius: 10px; border: 1.5px solid #ebebeb; padding: 16px 18px; margin-bottom: 12px; transition: border-color 0.15s; }
+  .card:hover { border-color: #c8e8d4; }
+  .card-rank { font-size: 11px; font-weight: 700; color: #4a9a6a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .card-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
+  .card-meta { font-size: 12px; color: #888; margin-bottom: 8px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .reason { font-size: 13px; color: #444; background: #f0f7f3; border-left: 3px solid #4a9a6a; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 10px; line-height: 1.6; }
+  .url-link { font-size: 12px; color: #4a9a6a; text-decoration: none; font-weight: 600; }
+  .url-link:hover { text-decoration: underline; }
+  .channel-badge { display: inline-block; background: #e8f5ee; color: #2e7d50; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-right: 6px; }
+  /* 인스타 카드 썸네일 */
+  .card-with-thumb { display: flex; gap: 16px; align-items: flex-start; }
+  .card-thumb { flex-shrink: 0; width: 100px; height: 100px; border-radius: 8px; object-fit: cover; background: #f0f0f0; }
+  .card-thumb-fallback { flex-shrink: 0; width: 100px; height: 100px; border-radius: 8px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+  .card-body { flex: 1; min-width: 0; }
+  /* 알림 배너 */
+  .alert { background: #fff8e1; border: 1.5px solid #ffe082; border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; font-size: 13px; color: #7a5800; }
+  /* 추천 소재 */
+  .highlight-card { background: linear-gradient(135deg, #f0f7f3, #e8f5ee); border: 2px solid #a8d8b8; border-radius: 12px; padding: 20px; margin-bottom: 14px; }
+  .highlight-card .hl-label { font-size: 11px; font-weight: 800; color: #2e7d50; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+  .highlight-card .hl-title { font-size: 16px; font-weight: 800; color: #1a1a1a; margin-bottom: 8px; }
+  .highlight-card .hl-desc { font-size: 13px; color: #444; line-height: 1.7; }
+  /* 채널 목록 */
+  .footer { text-align: center; padding: 24px 0 0; color: #bbb; font-size: 12px; }
+  /* 런갤 없음 */
+  .empty-state { text-align: center; padding: 32px; color: #b0b0b0; font-size: 14px; }
+  .empty-state .icon { font-size: 36px; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 헤더 -->
+  <div class="header">
+    <h1>📋 everypace 일일 소재 리포트</h1>
+    <div class="subtitle">2026년 04월 19일 · 자동 생성</div>
+  </div>
+
+  <!-- 섹션 1: 런갤 -->
+  <div class="section">
+    <div class="section-title">🏃 런갤 TOP 소재</div>
+    <div class="alert">⚠️ 오늘 DCInside 런갤 크롤링이 네트워크 타임아웃으로 실패했습니다. 수동 확인이 필요합니다.<br><a href="https://gall.dcinside.com/mgallery/board/lists?id=running" target="_blank" style="color:#7a5800;font-weight:600;">→ 런갤 직접 보기</a></div>
+    <div class="empty-state">
+      <div class="icon">🌐</div>
+      <div>런갤 데이터를 불러오지 못했습니다.</div>
+      <div style="font-size:12px;margin-top:6px;">내일 자동 재시도됩니다.</div>
+    </div>
+  </div>
+
+  <!-- 섹션 2: 인스타그램 -->
+  <div class="section">
+    <div class="section-title">📱 인스타그램 TOP 소재</div>
+    <div style="font-size:13px;color:#888;margin-bottom:16px;">29개 채널 · 109개 게시물 수집 · 최근 3일 기준</div>
+
+    <!-- #1 drmarkhyman gut-brain -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #1</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/670628142_18578328910033109_120139400489188290_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFxKb3IueCX9vQMImA0cr13OdrfAiatSZFQ9SNFsRuMJnRRADsiVx6zSB1Qn9eYwNQ&_nc_ohc=If0n2iLC3K0Q7kNvwFMY2OL&_nc_gid=c82z-i8XxAo9t7IXBWg6qg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af2O2fxE9iYA3hr0x7q6xwg9wUMUKdIhRO18FKwhF2bX_g&oe=69E9CBF6&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>장-뇌 연결(Gut-Brain Axis)과 정신건강</div>
+          <div class="card-meta">❤️ 8,207 좋아요 / 💬 525 댓글 / 📅 2026-04-17 / 기능의학</div>
+          <div class="reason">장 마이크로바이옴 구성이 우울증·불안·인지 저하 비율과 직접 연결된다는 랜드마크 임상 연구 소개. 전체 식품 식단으로 전환한 참여자의 정신건강 지표가 유의미하게 개선. → <strong>fastpace. "장이 보내는 뇌 신호" 카드뉴스</strong> 기획 최적 소재</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXPoQQhD-QP/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- #2 drmarkhyman sugar -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #2</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-atl3-2.cdninstagram.com/v/t51.82787-15/673844797_18578153830033109_8005853279233086693_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEaQb0iwynFO82J2vPrUEdLmEsceCqoCcPIWWr_JoL_Yfn-ngr0TavW3cFmos65EXM&_nc_ohc=4ZbgcZxzRK8Q7kNvwHC3yWr&_nc_gid=d8jdmlzWF7NR-KL8UlvR7g&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1Zs6dUF-Y1PUaRIIreRu55EmdkrRSLVMyv6JsPe_yTdA&oe=69E9E9BE&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drmarkhyman</span>설탕과 뇌 염증 — 기억력·집중력 저하의 숨은 원인</div>
+          <div class="card-meta">❤️ 3,804 좋아요 / 💬 962 댓글 / 📅 2026-04-17 / 기능의학</div>
+          <div class="reason">정제 설탕 섭취 → 염증 연쇄반응 → 뇌까지 도달 → 기억력 저하·집중력 흐림·인지 저하 위험 증가. 댓글 962개로 높은 논쟁성. → <strong>fastpace. "러너가 설탕을 줄여야 하는 진짜 이유"</strong> 기획 적합</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXNkQk5D-1o/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- #3 drwillcole -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #3</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://instagram.fric1-1.fna.fbcdn.net/v/t51.71878-15/670414615_1626604681888633_4837620492107688231_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=instagram.fric1-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gExgy5vgvLp_aB5VawjIthjn1Vi9tN0WvwChiqzO7m-MKKopU5VNnklclx_V4i_Yck&_nc_ohc=3cgJxBV95HUQ7kNvwGSorjX&_nc_gid=H97qEXOnpD8o9TWCQjzQTg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1FOTeVLNarYC80jHGqGQmH6qwepurjPfaZrETBCQgPeg&oe=69E9F944&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@drwillcole</span>의료 가스라이팅 — "다 머릿속에 있는 것"의 진실</div>
+          <div class="card-meta">❤️ 2,154 좋아요 / 💬 1,274 댓글 / 📅 2026-04-16 / 기능의학</div>
+          <div class="reason">만성 라임병·곰팡이 독성·자가면역 등 "미스터리 질환"이 지속적으로 무시받는 의료 가스라이팅 고발. 댓글 1,274개 공감 폭발. → <strong>pacenote. "내 증상이 무시당했다면 읽어보세요"</strong> 논쟁형 기획</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXNIxirgtlb/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- #4 nedratawwab -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #4</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-lax3-2.cdninstagram.com/v/t51.82787-15/671776643_18549009058071463_5811138250883152974_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEH_kKAi-xQv7YkkPfvT3lvTOqN1P06KJ8dhMM3LrxdqzZtuXL0xj5a8p7ULTIjk0g&_nc_ohc=M_PkolMoamsQ7kNvwE7bo46&_nc_gid=g3v0lFHXInDTbwiVdbRxVw&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af28lpLM__7OwkbtjXneOLEEWra73WwqVh2yrNhb6iCkOw&oe=69E9F053&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@nedratawwab</span>형제/자매 관계도 가꿔야 한다</div>
+          <div class="card-meta">❤️ 8,091 좋아요 / 💬 89 댓글 / 📅 2026-04-16 / 멘탈헬스</div>
+          <div class="reason">가족이라는 이유만으로 건강한 관계가 보장되지 않는다. 형제·자매 관계에도 노력·관심·돌봄이 필요하다는 공감형 메시지. → <strong>pacenote. "나쁜 가족 관계에서 벗어나는 법"</strong> 공감형 기획</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXMwD-HDuwn/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- #5 runnersworldmag -->
+    <div class="card insta">
+      <div class="card-rank">📱 인스타 #5</div>
+      <div class="card-with-thumb">
+        <img class="card-thumb" src="https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/670586620_18585448531035057_2364923417066265115_n.jpg?stp=dst-jpg_e15_fr_s1080x1080_tt6&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gGZS40AWATb43pO8TE_NrFL7e2jNG0umLa4q7I6q73SMQX0xcflwzmm_hofdd6OtG4&_nc_ohc=INW1f-lXOv4Q7kNvwGzwD0Y&_nc_gid=EZkoByz-tmlTAnaI7Ut5fg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0B3x9R5xtyflI3fIKNkPqzKwbqamLIApzeKogZXjhHnw&oe=69E9F232&_nc_sid=10d13b"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" alt="썸네일">
+        <div class="card-thumb-fallback" style="display:none;">📷</div>
+        <div class="card-body">
+          <div class="card-title"><span class="channel-badge">@runnersworldmag</span>보스턴 마라톤의 잊혀진 언덕</div>
+          <div class="card-meta">❤️ 431 좋아요 / 💬 7 댓글 / 📅 2026-04-18 / 러닝</div>
+          <div class="reason">하트브레이크힐 외에 보스턴 코스에서 실제로 러너들을 지치게 만드는 '잊혀진 언덕' 소개. → <strong>pacenote. "보스턴 마라톤 코스 파악 가이드"</strong> 또는 러닝 기획 소재로 활용 가능</div>
+          <a class="url-link" href="https://www.instagram.com/p/DXRtQmYHwVN/" target="_blank">→ 원문 보기</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 섹션 3: 오늘의 추천 -->
+  <div class="section">
+    <div class="section-title">💡 오늘의 추천 소재</div>
+    <div class="highlight-card">
+      <div class="hl-label">🥇 1순위 추천</div>
+      <div class="hl-title">장-뇌 연결 과학 — "장이 보내는 뇌 신호"</div>
+      <div class="hl-desc">
+        <strong>소재:</strong> @drmarkhyman 장-뇌 연결(Gut-Brain Axis) 게시물<br>
+        <strong>기획 방향:</strong> fastpace. 시리즈 — "장 건강이 곧 뇌 건강이다" 데이터 기반 7슬라이드 카드뉴스. 우울·불안·집중력 저하가 장 문제에서 비롯될 수 있다는 반전 메시지로 오프닝 구성. 음식·생활 습관 개선 팁 3가지로 마무리.
+      </div>
+    </div>
+    <div class="highlight-card" style="background: linear-gradient(135deg, #fef9f0, #fdf3e3); border-color: #f5d58a;">
+      <div class="hl-label" style="color:#8a6500;">🥈 2순위 추천</div>
+      <div class="hl-title">설탕과 뇌 염증 — "러너가 설탕을 줄여야 하는 진짜 이유"</div>
+      <div class="hl-desc">
+        <strong>소재:</strong> @drmarkhyman 정제 설탕 → 뇌 염증 연쇄 작용 게시물<br>
+        <strong>기획 방향:</strong> fastpace. 시리즈 — 에너지 보충용 단 음식에 의존하는 러너에게 경각심. 레이스 전·중·후 대체 연료 전략 제안으로 실용성 확보.
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 4: 신규 채널 제안 -->
+  <div class="section">
+    <div class="section-title">📌 신규 채널 제안 관리</div>
+    <p style="font-size:13px;color:#888;margin-bottom:4px;">매일 2개씩 자동 추가 · 결정은 브라우저에 저장돼 다음에 와도 유지됩니다</p>
+    <p style="font-size:12px;color:#aaa;margin-bottom:16px;">✅ <b>추가</b> 클릭 → 대기중에서 사라지고 '추가됨' 탭으로 이동 → <b>채널 목록 업데이트</b>로 channel_updates.json에 반영하면 다음날부터 스캔에 포함됩니다</p>
+    <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" id="cs-subtabs"></div>
+    <div id="cs-cards"></div>
+    <div id="cs-apply-bar" style="display:none;margin-top:16px;padding:16px 18px;background:#f0f7f3;border-radius:10px;border:1.5px solid #c8e8d4;">
+      <span id="cs-apply-info" style="font-size:13px;color:#3a7a5a;display:block;margin-bottom:12px;"></span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:200px;">
+          <label style="display:block;font-size:11px;font-weight:600;color:#888;margin-bottom:4px;">GitHub PAT</label>
+          <input id="cs-pat-input" type="password" placeholder="ghp_xxxxxxxxxx"
+            style="width:100%;border:1.5px solid #ddd;border-radius:8px;padding:7px 10px;font-size:13px;font-family:'SF Mono',monospace;outline:none;"
+            onfocus="this.style.borderColor='#4a9a6a'" onblur="this.style.borderColor='#ddd';savePAT(this.value)">
+          <div style="font-size:11px;color:#aaa;margin-top:3px;">브라우저 localStorage에만 저장됩니다.</div>
+        </div>
+        <button id="cs-update-btn" onclick="updateChannels()" style="background:#4a9a6a;color:#fff;padding:8px 20px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;align-self:flex-end;margin-bottom:20px;">채널 목록 업데이트</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cs-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;align-items:center;justify-content:center;">
+    <div style="background:#fff;border-radius:16px;padding:28px;max-width:500px;width:90%;">
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:6px;">🛠 channels.json 적용 명령어</h3>
+      <p style="font-size:13px;color:#666;margin-bottom:14px;line-height:1.6;">터미널에서 실행하거나, Claude에게 "이 명령어 실행해줘"라고 전달하세요.</p>
+      <div id="cs-cmd-block" style="background:#1a1a1a;color:#7ec89a;font-family:'SF Mono','Fira Code',monospace;font-size:12px;padding:14px 16px;border-radius:8px;margin-bottom:14px;white-space:pre-wrap;word-break:break-all;line-height:1.8;"></div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;">
+        <button onclick="copyCSCmd()" style="background:#4a9a6a;color:#fff;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">📋 복사</button>
+        <button onclick="document.getElementById('cs-modal').style.display='none'" style="background:#f0f0f0;color:#666;padding:8px 18px;border-radius:8px;border:none;font-size:13px;font-weight:600;cursor:pointer;">닫기</button>
+      </div>
+    </div>
+  </div>
+  <div id="cs-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:500;opacity:0;transition:opacity 0.2s;pointer-events:none;z-index:300;"></div>
+
+  <!-- 채널 목록 (토글) -->
+  <div class="section" style="margin-top:12px;">
+    <div onclick="toggleChannelList()" style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+      <div class="section-title" style="margin-bottom:0;">📋 현재 등록된 스캔 채널 목록 <span style="font-size:13px;font-weight:400;color:#aaa;">(29개)</span></div>
+      <span id="channel-list-arrow" style="color:#aaa;font-size:14px;">▼</span>
+    </div>
+    <div id="channel-list-body" style="display:none;margin-top:16px;"></div>
+  </div>
+
+  <div class="footer">Generated by everypace automation · sofit</div>
+</div>
+
+<script>
+// ── 누적 채널 제안 목록 ──
+const CHANNEL_SUGGESTIONS = [
+  {
+    "username": "runninglife_korea",
+    "category": "러닝",
+    "reason": "러닝 전문 매거진 RIFE, 팔로워 67K. 국내 러닝 정보·트레이닝 팁 심층 커버 — 현재 등록된 @cr8tour와 시너지 높음.",
+    "url": "https://www.instagram.com/runninglife_korea/",
+    "suggested_date": "2026-04-10",
+    "status": "pending"
+  },
+  {
+    "username": "runners_now",
+    "category": "러닝",
+    "reason": "러너스나우 한국 마라톤 정보 전문 채널. 국내 대회 일정·훈련 정보 특화 — everypace 독자의 실제 니즈와 직결되는 소재 공급처.",
+    "url": "https://www.instagram.com/runners_now/",
+    "suggested_date": "2026-04-10",
+    "status": "pending"
+  },
+  {
+    "username": "marathon.nutritionist",
+    "category": "러닝/영양",
+    "reason": "마라톤 전문 영양사 Kristy Baumann. 68K 팔로워. 연료 보충·레이스 영양·언더퓨얼링 예방 콘텐츠 전문. fastpace. 시리즈와 시너지 높음.",
+    "url": "https://www.instagram.com/marathon.nutritionist/",
+    "suggested_date": "2026-04-11",
+    "status": "pending"
+  },
+  {
+    "username": "runningchannel",
+    "category": "러닝",
+    "reason": "160K 팔로워. 러닝 팁·뉴스·동기부여 콘텐츠 전문. 영어권 러닝 트렌드와 글로벌 레이스 소식 수집에 유용. 다양한 거리·레벨 러너 대상 콘텐츠 풍부.",
+    "url": "https://www.instagram.com/runningchannel/",
+    "suggested_date": "2026-04-11",
+    "status": "pending"
+  },
+  {
+    "username": "strengthrunning",
+    "category": "러닝 코칭",
+    "reason": "Jason Fitzgerald의 러닝 코칭 계정 — 부상 예방, 훈련 계획, 스마트 러닝 팁 중심. 런갤 '기록 향상법·부상 예방' 주제와 직결. 실용적 러닝 정보 커버 가능.",
+    "url": "https://www.instagram.com/strengthrunning/",
+    "suggested_date": "2026-04-13",
+    "status": "pending"
+  },
+  {
+    "username": "drmarkhyman",
+    "category": "기능의학/영양",
+    "reason": "기능의학 전문가 Mark Hyman MD — 음식·영양·노화 방지 관련 데이터 기반 콘텐츠. '러너들에게 최악의 음료' 같은 영양 소재를 꾸준히 발굴 가능. nutritionfacts보다 SNS 친화적 포맷.",
+    "url": "https://www.instagram.com/drmarkhyman/",
+    "suggested_date": "2026-04-13",
+    "status": "added"
+  },
+  {
+    "username": "hubermanlab",
+    "category": "웰니스/과학",
+    "reason": "스탠퍼드 신경과학자 Andrew Huberman. 수면·스트레스·운동 퍼포먼스를 데이터로 설명. fastpace. 시리즈 소재 금광. 팔로워 5.7M.",
+    "url": "https://www.instagram.com/hubermanlab/",
+    "suggested_date": "2026-04-14",
+    "status": "added"
+  },
+  {
+    "username": "mattdavella",
+    "category": "라이프스타일/습관",
+    "reason": "미니멀리즘·습관 형성·의도적 삶 설계 전문. 달리기를 루틴으로 만드는 기획 소재로 활용 가능. everypace 톤과 잘 맞는 담백한 비주얼. 팔로워 1.4M.",
+    "url": "https://www.instagram.com/mattdavella/",
+    "suggested_date": "2026-04-14",
+    "status": "pending"
+  },
+  {
+    "username": "jayshetty",
+    "category": "자기계발",
+    "reason": "19M 팔로워. 습관·마인드셋·인생 철학 콘텐츠. 러닝과 자기계발 연결 소재 풍부",
+    "url": "https://www.instagram.com/jayshetty/",
+    "suggested_date": "2026-04-15",
+    "status": "pending"
+  },
+  {
+    "username": "thesleepdoctor",
+    "category": "수면건강",
+    "reason": "수면 전문가 Michael Breus. 수면이 운동 퍼포먼스·회복에 미치는 영향 소재 풍부",
+    "url": "https://www.instagram.com/thesleepdoctor/",
+    "suggested_date": "2026-04-15",
+    "status": "pending"
+  },
+  {
+    "username": "dr.gabriellelyon",
+    "category": "근육건강/영양",
+    "reason": "근육 중심 의학(Muscle-Centric Medicine) 전문가 Gabrielle Lyon MD. 근력·단백질·체성분 중심 콘텐츠. 러너의 근력 훈련과 단백질 중요성 소재로 직결. 580K 팔로워.",
+    "url": "https://www.instagram.com/dr.gabriellelyon/",
+    "suggested_date": "2026-04-16",
+    "status": "pending"
+  },
+  {
+    "username": "drgundry",
+    "category": "장건강/영양",
+    "reason": "장 건강·렉틴·가공식품 경각심 전문가 Steven Gundry MD. @drmarkhyman과 시너지 높은 보완 채널. 가공식품·식재료 선택 소재 추가 발굴 가능. 2M 팔로워.",
+    "url": "https://www.instagram.com/drgundry/",
+    "suggested_date": "2026-04-16",
+    "status": "pending"
+  },
+  {
+    "username": "drwillcole",
+    "category": "기능의학/호르몬건강",
+    "reason": "Dr. Will Cole — 기능의학·호르몬 건강·인슐린 저항성 전문. @drmarkhyman 보완 채널로 염증·장건강·호르몬 균형 소재 추가 발굴 가능. 740K 팔로워.",
+    "url": "https://www.instagram.com/drwillcole/",
+    "suggested_date": "2026-04-17",
+    "status": "pending"
+  },
+  {
+    "username": "davidsinclairharvard",
+    "category": "장수/노화과학",
+    "reason": "하버드 노화 연구자 David Sinclair — NMN·시르투인·텔로미어 등 longevity 과학 콘텐츠. fastpace. 시리즈 고급 소재 발굴 가능. 러너의 노화 방지·퍼포먼스 유지 관심과 직결.",
+    "url": "https://www.instagram.com/davidsinclairharvard/",
+    "suggested_date": "2026-04-17",
+    "status": "pending"
+  },
+  {
+    "username": "melrobbins",
+    "category": "자기계발/습관",
+    "reason": "75M+ 팔로워. '5 Second Rule' 등 과학 기반 습관·마인드셋 콘텐츠 전문. 러닝을 루틴으로 만드는 자기계발 기획 소재로 직결. @drmarkhyman이 직접 콜라보 언급한 채널.",
+    "url": "https://www.instagram.com/melrobbins/",
+    "suggested_date": "2026-04-18",
+    "status": "pending"
+  },
+  {
+    "username": "drjoshaxe",
+    "category": "기능의학/영양",
+    "reason": "기능의학 전문가 Dr. Josh Axe — 음식이 약(Food is Medicine) 철학, 장 건강·염증 관리·슈퍼푸드 콘텐츠. @drmarkhyman/@drgundry 보완 채널로 영양 소재 추가 발굴 가능. 2.5M 팔로워.",
+    "url": "https://www.instagram.com/drjoshaxe/",
+    "suggested_date": "2026-04-18",
+    "status": "pending"
+  },
+  {
+    "username": "yung_pueblo",
+    "category": "마인드풀니스",
+    "reason": "NYT 베스트셀러 작가 Diego Perez. 3M 팔로워. 내면 성장·관계 치유·마음챙김 시 형식 콘텐츠 전문. @nedratawwab와 시너지 — 감성적 웰니스 소재 발굴 가능.",
+    "url": "https://www.instagram.com/yung_pueblo/",
+    "suggested_date": "2026-04-19",
+    "status": "pending"
+  },
+  {
+    "username": "drcaseyskitchen",
+    "category": "대사건강",
+    "reason": "Dr. Casey Means — 대사 건강·인슐린·에너지 최적화 전문. 2026년 미국 보건부 장관 후보. 'Good Energy' 저자. @drmarkhyman 보완 채널로 혈당·식습관 소재 추가 발굴 가능.",
+    "url": "https://www.instagram.com/drcaseyskitchen/",
+    "suggested_date": "2026-04-19",
+    "status": "pending"
+  }
+];
+
+// ── 현재 등록 채널 목록 ──
+const CURRENT_CHANNELS = [
+  {
+    "username": "bq.mag",
+    "category": "매거진"
+  },
+  {
+    "username": "newsourcemag",
+    "category": "매거진"
+  },
+  {
+    "username": "odoc.mag",
+    "category": "매거진"
+  },
+  {
+    "username": "ofs.mag",
+    "category": "매거진"
+  },
+  {
+    "username": "053mag",
+    "category": "매거진"
+  },
+  {
+    "username": "ai.favmag",
+    "category": "매거진"
+  },
+  {
+    "username": "creatorhood.mag",
+    "category": "매거진"
+  },
+  {
+    "username": "magazinebao",
+    "category": "매거진"
+  },
+  {
+    "username": "cr8tour",
+    "category": "러닝"
+  },
+  {
+    "username": "plateau.magazine",
+    "category": "웰니스매거진"
+  },
+  {
+    "username": "buildin_mag",
+    "category": "웰니스매거진"
+  },
+  {
+    "username": "happicker",
+    "category": "웰니스매거진"
+  },
+  {
+    "username": "mindbodygreen",
+    "category": "웰니스매거진"
+  },
+  {
+    "username": "runnersworldmag",
+    "category": "러닝"
+  },
+  {
+    "username": "nikerunclub",
+    "category": "러닝"
+  },
+  {
+    "username": "themarathonhandbook",
+    "category": "러닝"
+  },
+  {
+    "username": "on_running",
+    "category": "러닝"
+  },
+  {
+    "username": "womenshealthmag",
+    "category": "피트니스"
+  },
+  {
+    "username": "menshealthmag",
+    "category": "피트니스"
+  },
+  {
+    "username": "nutritionfacts",
+    "category": "영양"
+  },
+  {
+    "username": "wellandgood",
+    "category": "영양"
+  },
+  {
+    "username": "drjuliesmith",
+    "category": "멘탈헬스"
+  },
+  {
+    "username": "headspace",
+    "category": "멘탈헬스"
+  },
+  {
+    "username": "nedratawwab",
+    "category": "멘탈헬스"
+  },
+  {
+    "username": "drmarkhyman",
+    "category": "기능의학"
+  },
+  {
+    "username": "hubermanlab",
+    "category": "웰니스"
+  },
+  {
+    "username": "jayshetty",
+    "category": "자기계발"
+  },
+  {
+    "username": "thesleepdoctor",
+    "category": "수면건강"
+  },
+  {
+    "username": "drwillcole",
+    "category": "기능의학"
+  }
+];
+
+const CS_KEY = 'ep_channel_decisions';
+let csTab = 'pending';
+
+function loadCS(){ try{ return JSON.parse(localStorage.getItem(CS_KEY)||'{}'); }catch{ return {}; } }
+function saveCS(d){ localStorage.setItem(CS_KEY, JSON.stringify(d)); }
+function savePAT(v){ if(v.trim()) localStorage.setItem('ep_github_pat', v.trim()); }
+
+function renderCS(){
+  const d = loadCS();
+  const g = {pending:[], added:[], dropped:[]};
+  CHANNEL_SUGGESTIONS.forEach(s=>{ const st=d[s.username]||'pending'; g[st].push({...s,status:st}); });
+
+  document.getElementById('cs-subtabs').innerHTML = [
+    ['pending',`🟡 대기중 (${g.pending.length})`],
+    ['added',  `✅ 추가됨 (${g.added.length})`],
+    ['dropped',`❌ 드랍됨 (${g.dropped.length})`]
+  ].map(([k,label])=>
+    `<span onclick="setCSTab('${k}')" style="padding:6px 16px;border-radius:14px;border:1.5px solid ${csTab===k?'#4a9a6a':'#e0e0e0'};background:${csTab===k?'#4a9a6a':'#fff'};color:${csTab===k?'#fff':'#888'};font-size:12px;font-weight:600;cursor:pointer;">${label}</span>`
+  ).join('');
+
+  const items = g[csTab];
+  const el = document.getElementById('cs-cards');
+  const msg = {pending:'🎉 대기 중인 제안이 없습니다.', added:'아직 추가된 채널이 없습니다.', dropped:'드랍된 채널이 없습니다.'};
+  el.innerHTML = items.length ? items.map(buildCSCard).join('') : `<div style="text-align:center;padding:28px;color:#b0b0b0;font-size:14px;">${msg[csTab]}</div>`;
+
+  const decided = g.added.length + g.dropped.length;
+  const bar = document.getElementById('cs-apply-bar');
+  bar.style.display = decided > 0 ? 'flex' : 'none';
+  if(decided > 0){
+    document.getElementById('cs-apply-info').innerHTML = `결정된 항목 <strong>${decided}개</strong> — PAT 입력 후 아래 버튼으로 channel_updates.json에 반영하세요.`;
+    const savedPat = localStorage.getItem('ep_github_pat') || '';
+    const patInput = document.getElementById('cs-pat-input');
+    if(patInput && !patInput.value) patInput.value = savedPat;
+  }
+}
+
+function buildCSCard(s){
+  const a=s.status==='added', dr=s.status==='dropped';
+  const addStyle = a
+    ? 'background:#4a9a6a;color:#fff;border:1.5px solid #4a9a6a;box-shadow:0 0 0 3px rgba(74,154,106,0.18);'
+    : 'background:transparent;color:#4a9a6a;border:1.5px solid #4a9a6a;';
+  const dropStyle = dr
+    ? 'background:#fdecea;color:#c0392b;border:1.5px solid #f0a8a0;'
+    : 'background:transparent;color:#888;border:1.5px solid #e0e0e0;';
+  return `<div style="background:#fff;border-radius:10px;border:1.5px solid ${a?'#a8d8b8':dr?'#e0e0e0':'#ebebeb'};padding:16px 18px;margin-bottom:10px;${dr?'opacity:0.55;':''}">
+    <div style="font-size:15px;font-weight:700;margin-bottom:4px;"><a href="${s.url}" target="_blank" style="color:#4a9a6a;text-decoration:none;">@${s.username}</a></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+      <span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">${s.category}</span>
+      <span style="font-size:11px;padding:2px 8px;border-radius:8px;background:#f0f0f0;color:#888;">📅 ${s.suggested_date}</span>
+      ${a?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#e8f5ee;color:#2e7d50;">✅ 추가됨</span>':dr?'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#f5f5f5;color:#aaa;">❌ 드랍됨</span>':'<span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:8px;background:#fff3e0;color:#d07000;">🟡 대기중</span>'}
+    </div>
+    <div style="font-size:13px;color:#555;background:${dr?'#f8f8f8':'#f0f7f3'};border-left:3px solid ${dr?'#ccc':'#4a9a6a'};padding:8px 12px;border-radius:0 6px 6px 0;margin-bottom:12px;line-height:1.6;">${s.reason}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button onclick="decideCS('${s.username}','added')" style="${addStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">✅ 추가</button>
+      <button onclick="decideCS('${s.username}','dropped')" style="${dropStyle}padding:6px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">❌ 드랍</button>
+      ${s.status!=='pending'?`<button onclick="decideCS('${s.username}','pending')" style="background:transparent;color:#aaa;border:1.5px solid #e0e0e0;padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer;">↩ 되돌리기</button>`:''}
+    </div>
+  </div>`;
+}
+
+function setCSTab(t){ csTab=t; renderCS(); }
+
+function decideCS(u, s){
+  const d=loadCS(); const cur=d[u]||'pending';
+  if(cur===s) delete d[u]; else d[u]=s;
+  saveCS(d); renderCS();
+  toast(s==='pending'?'↩ 되돌렸습니다':s==='added'?'✅ 추가로 표시됨':'❌ 드랍으로 표시됨');
+}
+
+function copyCSCmd(){ navigator.clipboard.writeText(document.getElementById('cs-cmd-block').textContent).then(()=>toast('📋 복사됨!')); }
+document.getElementById('cs-modal').addEventListener('click',e=>{ if(e.target.id==='cs-modal') e.target.style.display='none'; });
+function toast(msg){ const t=document.getElementById('cs-toast'); t.textContent=msg; t.style.opacity=1; setTimeout(()=>t.style.opacity=0,2200); }
+
+async function updateChannels(){
+  const d = loadCS();
+  const toAdd  = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='added');
+  const toDrop = CHANNEL_SUGGESTIONS.filter(s => d[s.username]==='dropped');
+  if(!toAdd.length && !toDrop.length){ toast('선택된 채널이 없습니다.'); return; }
+
+  const patInput = document.getElementById('cs-pat-input');
+  const pat = patInput ? patInput.value.trim() : localStorage.getItem('ep_github_pat');
+  if(!pat){ toast('⚠️ PAT을 입력하세요'); patInput && patInput.focus(); return; }
+  localStorage.setItem('ep_github_pat', pat);
+
+  const btn = document.getElementById('cs-update-btn');
+  btn.disabled = true; btn.textContent = '업데이트 중…';
+
+  try {
+    const REPO = 'contentsTeamHaruna/haruna-daily-insights';
+    const FILE = 'channel_updates.json';
+    const API  = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
+    const AUTH = { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' };
+
+    let sha = null;
+    let existing = { pending_additions:[], pending_removals:[] };
+    try {
+      const r = await fetch(API, { headers: AUTH });
+      if(r.ok){ const j=await r.json(); sha=j.sha; existing=JSON.parse(atob(j.content.replace(/\n/g,''))); }
+    } catch(e){}
+
+    const addMap = {};
+    existing.pending_additions.forEach(a => addMap[a.username] = a.category);
+    toAdd.forEach(s => { addMap[s.username] = s.category.split('/')[0]; });
+    const dropSet = new Set(existing.pending_removals);
+    toDrop.forEach(s => dropSet.add(s.username));
+    toAdd.forEach(s  => dropSet.delete(s.username));
+    toDrop.forEach(s => delete addMap[s.username]);
+
+    const payload = {
+      pending_additions: Object.entries(addMap).map(([u,c])=>({username:u, category:c})),
+      pending_removals:  [...dropSet],
+      updated: new Date().toISOString().slice(0,10)
+    };
+
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+    const body = { message:`채널 업데이트 요청 ${payload.updated}`, content:encoded };
+    if(sha) body.sha = sha;
+
+    const res = await fetch(API, { method:'PUT', headers:{...AUTH,'Content-Type':'application/json'}, body:JSON.stringify(body) });
+
+    if(res.ok){
+      toast('✅ 업데이트 요청 완료! 내일 스캔 시 자동 적용됩니다.');
+    } else {
+      const err = await res.json().catch(()=>({}));
+      if((err.message||'').toLowerCase().includes('bad credentials')){
+        localStorage.removeItem('ep_github_pat');
+        const pi = document.getElementById('cs-pat-input'); if(pi) pi.value = '';
+        toast('❌ PAT 오류. 다시 입력해주세요.');
+      } else {
+        toast('❌ 실패: ' + (err.message || res.status));
+      }
+    }
+  } catch(e){ toast('❌ 오류: ' + e.message); }
+  finally { btn.disabled=false; btn.textContent='채널 목록 업데이트'; }
+}
+
+renderCS();
+
+// 채널 목록 렌더링
+const catColors = {
+  '매거진':'#e8f0fe,#4a6fa5', '러닝':'#e8f5ee,#2e7d50', '웰니스매거진':'#f3e8fe,#7a40a0',
+  '피트니스':'#fff3e0,#d07000', '영양':'#fce4ec,#c0395a', '멘탈헬스':'#e3f2fd,#1565c0',
+  '기능의학':'#fbe9e7,#b84c00', '웰니스':'#e0f7f1,#00796b', '자기계발':'#f3e5f5,#7b1fa2',
+  '수면건강':'#e8eaf6,#3949ab'
+};
+
+function toggleChannelList(){
+  const el = document.getElementById('channel-list-body');
+  const arrow = document.getElementById('channel-list-arrow');
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  arrow.textContent = open ? '▼' : '▲';
+}
+
+function renderChannelList(){
+  const grouped = {};
+  CURRENT_CHANNELS.forEach(c=>{ if(!grouped[c.category]) grouped[c.category]=[]; grouped[c.category].push(c); });
+  const rows = Object.entries(grouped).map(([cat, chs])=>{
+    const [bg, fg] = (catColors[cat]||'#f5f5f5,#666').split(',');
+    const chips = chs.map(c=>`<a href="https://www.instagram.com/${c.username}/" target="_blank" style="display:inline-block;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:4px 10px;font-size:12px;color:#333;text-decoration:none;margin:3px 3px 0 0;">@${c.username}</a>`).join('');
+    return `<div style="margin-bottom:12px;"><span style="font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;background:${bg};color:${fg};margin-bottom:6px;display:inline-block;">${cat} (${chs.length})</span><div>${chips}</div></div>`;
+  }).join('');
+  document.getElementById('channel-list-body').innerHTML = rows;
+}
+document.addEventListener('DOMContentLoaded', renderChannelList);
+</script>
+</body>
+</html>
