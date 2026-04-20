@@ -1,36 +1,6 @@
 {
-  "pending_additions": [
-    {
-      "username": "drmarkhyman",
-      "category": "기능의학"
-    },
-    {
-      "username": "hubermanlab",
-      "category": "웰니스"
-    },
-    {
-      "username": "jayshetty",
-      "category": "자기계발"
-    }
-  ],
-  "pending_removals": [
-    "runninglife_korea",
-    "runners_now",
-    "marathon.nutritionist",
-    "runningchannel",
-    "strengthrunning",
-    "mattdavella",
-    "thesleepdoctor",
-    "dr.gabriellelyon",
-    "drgundry",
-    "drwillcole",
-    "davidsinclairharvard",
-    "melrobbins",
-    "drjoshaxe",
-    "yung_pueblo",
-    "drcaseyskitchen",
-    "the.holistic.psychologist",
-    "deepakchopra"
-  ],
-  "updated": "2026-04-20"
+  "pending_additions": [],
+  "pending_removals": [],
+  "updated": "2026-04-21",
+  "applied": true
 }
