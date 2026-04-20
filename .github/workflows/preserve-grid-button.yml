@@ -1,0 +1,49 @@
+name: Preserve grid mood check button
+
+# 매일 돌아가는 자동화가 index.html을 재생성하면서
+# 그리드 체크 진입 버튼을 지워버리는 걸 자동 복구합니다.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+  workflow_dispatch:
+
+concurrency:
+  group: preserve-grid-button
+  cancel-in-progress: false
+
+jobs:
+  heal:
+    if: "!contains(github.event.head_commit.message, '[skip-heal]')"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check & inject button
+        id: inject
+        run: |
+          set -e
+          if grep -q "grid_mood_check.html" index.html; then
+            echo "button already present, skipping"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "button missing, injecting..."
+          python3 inject_button.py
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit & push
+        if: steps.inject.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "chore: restore grid mood check button [skip-heal]"
+          git push
