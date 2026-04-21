@@ -39,11 +39,33 @@ jobs:
           python3 inject_button.py
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      - name: Commit & push
+      - name: Commit & push (retry on race)
         if: steps.inject.outputs.changed == 'true'
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html
           git commit -m "chore: restore grid mood check button [skip-heal]"
-          git push
+
+          # 다른 Deploy 커밋이 동시에 들어오는 경쟁 상태 대비: 최대 5회 재시도
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            echo "push rejected on attempt $i, resetting to origin and re-injecting..."
+            git fetch origin main
+            # 원격의 최신에 맞춰 재설정 후 다시 주입
+            git reset --hard origin/main
+            if grep -q "grid_mood_check.html" index.html; then
+              echo "button already present on latest main, done"
+              exit 0
+            fi
+            python3 inject_button.py
+            git add index.html
+            git commit -m "chore: restore grid mood check button [skip-heal]"
+            sleep 2
+          done
+          echo "push failed after 5 retries"
+          exit 1
