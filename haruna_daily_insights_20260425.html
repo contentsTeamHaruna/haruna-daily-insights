@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 데일리 인사이트 — 2026.04.25</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f8f6f3;
+    color: #2d2a26;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e8e4df;
+    margin-bottom: 40px;
+  }
+  .header-emoji { font-size: 48px; margin-bottom: 12px; }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    color: #8a8580;
+    font-weight: 400;
+  }
+  .header .brand {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    background: #f0ebe4;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6b6560;
+    font-weight: 500;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+    letter-spacing: -0.3px;
+  }
+  .section-title .emoji { margin-right: 8px; }
+
+  .subsection-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 20px 0 12px;
+    padding-left: 12px;
+    border-left: 3px solid #e8a87c;
+  }
+
+  .weather-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e5fc 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .weather-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-bottom: 16px;
+  }
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .weather-item {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
+  .weather-item .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .weather-item .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 4px;
+  }
+  .weather-keywords {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .weather-keywords .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .keyword-tag {
+    display: inline-block;
+    background: #1a3a5c;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 3px 4px 3px 0;
+    font-weight: 400;
+  }
+  .sogu-point {
+    background: rgba(255,255,255,0.9);
+    border-left: 3px solid #3a7bd5;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3a5c;
+    line-height: 1.6;
+  }
+
+  .insight-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .insight-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid;
+  }
+  .insight-card:nth-child(1) { border-left-color: #e8a87c; }
+  .insight-card:nth-child(2) { border-left-color: #85cdca; }
+  .insight-card:nth-child(3) { border-left-color: #d4a5d0; }
+  .insight-card .number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .insight-card .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .insight-card .desc {
+    font-size: 14px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .source-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .source-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .source-card h3 .num {
+    background: #2d2a26;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .source-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .source-card ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .source-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+  .haruna-point {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #8a6d3b;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .haruna-point::before {
+    content: '하루나 적용';
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 13px;
+  }
+  th {
+    background: #2d2a26;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.6;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fdfcfa; }
+  .star { color: #e8a87c; font-weight: 700; }
+
+  .needs-list {
+    list-style: none;
+    padding: 0;
+  }
+  .needs-list li {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .needs-list li strong {
+    display: block;
+    font-size: 15px;
+    color: #1a1815;
+    margin-bottom: 4px;
+  }
+  .needs-list li span {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.6;
+  }
+
+  .dev-intro {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+
+  .continuing-trend {
+    background: #f8f6f3;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.7;
+    border-left: 3px solid #d4cfc8;
+  }
+
+  .idea-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .idea-card .category {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .idea-card .category.weather { background: #5b9bd5; }
+  .idea-card .category.serum { background: #d4a5d0; }
+  .idea-card .category.bodycream { background: #85cdca; }
+  .idea-card .category.timing { background: #e8a87c; }
+  .idea-card .category.cleansing { background: #8bb5a2; }
+  .idea-card .category.trend { background: #c4a0e8; }
+  .idea-card .idea-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .idea-card .idea-desc {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .hashtag-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+  }
+  .hashtag-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .hashtag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px 4px 4px 0;
+    font-weight: 500;
+  }
+  .hashtag.new { background: #fef3e8; color: #c47a30; border: 1px solid #f0d4a8; }
+  .hashtag.rising { background: #e8f5e9; color: #388e3c; border: 1px solid #c8e6c9; }
+  .hashtag.stable { background: #f0ebe4; color: #6b6560; border: 1px solid #e0d8cf; }
+  .hashtag.hot { background: #fce4ec; color: #c62828; border: 1px solid #f8bbd0; }
+
+  .tomorrow-card {
+    background: linear-gradient(135deg, #f0f4e8 0%, #e4ecd8 100%);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+  .tomorrow-card h3 { font-size: 16px; font-weight: 600; color: #3d5a1e; margin-bottom: 14px; }
+  .tomorrow-card p { font-size: 14px; color: #4a5a3a; line-height: 1.7; margin-bottom: 10px; }
+
+  .sources-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sources-section h3 { font-size: 14px; font-weight: 600; color: #8a8580; margin-bottom: 12px; }
+  .sources-section a {
+    display: block;
+    font-size: 12px;
+    color: #3a7bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    line-height: 1.5;
+  }
+  .sources-section a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-emoji">🧴</div>
+    <h1>하루나 데일리 인사이트</h1>
+    <div class="date">2026.04.25 (토)</div>
+    <div class="brand">@haruna_kr 콘텐츠 전략 리서치</div>
+  </div>
+
+  <!-- Weather Card -->
+  <div class="weather-card">
+    <h2>☀️ 오늘의 날씨 컨텍스트</h2>
+    <div class="weather-grid">
+      <div class="weather-item">
+        <div class="label">기온</div>
+        <div class="value">최저 10℃ / 최고 25℃ (일교차 15℃)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">습도</div>
+        <div class="value">20~40% (건조 지속)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">날씨</div>
+        <div class="value">맑음 ☀️ / 미세먼지 좋음~보통</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">주간 전망</div>
+        <div class="value">4/28(화) 비 예보, 17~24℃</div>
+      </div>
+    </div>
+    <div class="weather-keywords">
+      <div class="label">시즌 키워드</div>
+      <span class="keyword-tag">봄 환절기</span>
+      <span class="keyword-tag">가벼운 바디로션</span>
+      <span class="keyword-tag">봄 세럼 추천</span>
+      <span class="keyword-tag">환절기 클렌징</span>
+      <span class="keyword-tag">저자극 폼클렌징</span>
+    </div>
+    <div class="weather-keywords">
+      <div class="label">날씨 기반 키워드</div>
+      <span class="keyword-tag">건조 피부</span>
+      <span class="keyword-tag">보습 지속력</span>
+      <span class="keyword-tag">수분 장벽</span>
+      <span class="keyword-tag">가벼운 텍스처</span>
+      <span class="keyword-tag">올영데이 D-Day</span>
+    </div>
+    <div class="sogu-point">
+      💡 <strong>오늘의 소구 포인트:</strong> "올영데이 첫날, 건조한 봄 공기 속에서 PDRN 세럼 반값 세일 시작. 하지만 진짜 다음 세대 성분은 NAD+ — 글로우픽 세럼 4위에 NAD+ 앰플이 올라온 지금, 세포 에너지 시대가 열리고 있습니다"
+    </div>
+  </div>
+
+  <!-- Consumer Needs -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">🗣️</span>소비자 고민/니즈</div>
+    <ul class="needs-list">
+      <li>
+        <strong>🆕 "올영데이 시작됐는데, PDRN 세럼 어떤 걸로 사야 해?"</strong>
+        <span>올영데이 D-Day(4/25~27). 아누아 PDRN 48%, 메디큐브 PDRN 47% 할인 시작. 구매 후기·개봉기 게시글 폭발, 비교 토론 활발</span>
+      </li>
+      <li>
+        <strong>🆕 "텍스처가 좋아야 꾸준히 쓴다 — 감각이 성분만큼 중요해?"</strong>
+        <span>BeautyMatter 2026 K-뷰티 전망에서 "After Feel(사용감)"이 구매 결정 핵심 요인으로 부상. 발림성·흡수력·마무리감까지 평가하는 시대</span>
+      </li>
+      <li>
+        <strong>📌 "약산성은 기본, 이제 세정력+보습감+성분까지 본다"</strong>
+        <span>디시 화장품 갤러리 pH별 폼클렌징 추천 게시글 인기. 비플레인 녹두·토리든 HA·마몽드 리피드밸런스 등 GOAT급 추천</span>
+      </li>
+      <li>
+        <strong>📌 "봄인데 아직도 두꺼운 바디크림 쓰면 안 돼?"</strong>
+        <span>겨울→봄 전환기 바디 루틴 변경 논의. 밤(Balm)→로션 전환, 바디오일+로션 레이어링 기법 공유</span>
+      </li>
+      <li>
+        <strong>📌 "환절기에 선크림이 피부를 더 자극하는 것 같아"</strong>
+        <span>더쿠에서 환절기 피부 장벽 약화 시 선크림 자극 논의. 선세럼/립세럼 하이브리드 제품 관심 부상</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Dev Insight -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">🔬</span>개발 방향 인사이트</div>
+    <div class="dev-intro">
+      오늘의 핵심 시장 신호: <strong>더후 NAD+ 앰플이 글로우픽 세럼 4위에 진입</strong>하며 NAD+ 성분의 소비자 검증이 시작됐습니다. 동시에 <strong>글로우픽 세럼 TOP 5가 전면 재편</strong>되며 재생 성분 다극화 시대가 개막했습니다.
+    </div>
+
+    <div class="subsection-title">📡 오늘의 추가 시장 신호</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>#</th><th>시장 신호</th><th>근거</th><th>하루나 시사점</th></tr>
+        <tr><td>㊹</td><td>🆕 <strong>더후 NAD 파워 앰플, 글로우픽 세럼 4위 진입</strong></td><td>글로우픽 2026.04</td><td><span class="star">⭐⭐⭐⭐⭐</span> NAD+ 성분 시장 검증 시작. 더후는 고가(10만원대) → 합리적 가격대 NAD+ 블루오션</td></tr>
+        <tr><td>㊺</td><td>🆕 <strong>미쟌 비건 펩타이드 세럼, 글로우픽 2위 — 비건+기능성 조합 부상</strong></td><td>글로우픽 2026.04</td><td><span class="star">⭐⭐⭐⭐</span> 비건+펩타이드 조합 상위권. 하루나 비건 컨셉+기능성 전략 방향 일치</td></tr>
+        <tr><td>㊻</td><td>🆕 <strong>더페이스샵 PDRN 히알루로닉 7 세럼, 글로우픽 3위</strong></td><td>글로우픽 2026.04</td><td><span class="star">⭐⭐⭐</span> 글로우픽에서도 PDRN 확산. 양 플랫폼 PDRN 대중화 진행</td></tr>
+        <tr><td>㊼</td><td>🆕 <strong>"After Feel(사용감)" K-뷰티 구매 결정 핵심 요인</strong></td><td>BeautyMatter 2026</td><td><span class="star">⭐⭐⭐⭐</span> 실키 머쉬룸 '실키 텍스처' USP가 글로벌 트렌드와 정면 부합</td></tr>
+      </table>
+    </div>
+
+    <div class="subsection-title">성분 트렌드 부합도</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>하루나 성분</th><th>시장 온도</th><th>근거</th></tr>
+        <tr><td>NAD+</td><td>🔥🔥🔥🔥🔥 최고조</td><td>더후 NAD 앰플 글로우픽 4위 진입. 프리미엄→매스 확산 임박</td></tr>
+        <tr><td>나이아신아마이드</td><td>🔥🔥🔥🔥🔥 정점</td><td>올영 검색량 +65% YoY, 기능성 성분 대명사</td></tr>
+        <tr><td>EGCG(녹차)</td><td>🔥🔥🔥 상승</td><td>환절기 항산화·진정 수요. 브링그린 티트리+그린티 라인 인기</td></tr>
+        <tr><td>히알루론산(8~11종)</td><td>🔥🔥🔥🔥 안정적</td><td>토리든 화해 1위 유지, 보습 기본 성분</td></tr>
+        <tr><td>아데노신</td><td>🔥🔥🔥 안정적</td><td>Skin Longevity 글로벌 키워드 부상</td></tr>
+        <tr><td>비건 포뮬러</td><td>🔥🔥🔥🔥 상승</td><td>미쟌 비건 펩타이드 글로우픽 2위</td></tr>
+      </table>
+    </div>
+
+    <div class="dev-intro" style="margin-top: 16px;">
+      <strong>경쟁 포지셔닝 요약:</strong> 올영데이 PDRN 반값 세일로 PDRN 경험자 폭발 예상. 동시에 글로우픽에서 NAD+·펩타이드·EGF 다양한 재생 성분이 상위권에 포진 → <strong>PDRN 일극체제 → 재생 성분 다극화</strong>. 하루나 NAD+ 세럼은 "PDRN 다음 세대" 포지셔닝으로 4/28 이후 교육형 콘텐츠 집중 배포 추천.
+    </div>
+  </div>
+
+  <!-- TOP 3 Insights -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">🆕</span>오늘의 핵심 인사이트 (TOP 3)</div>
+    <div class="insight-cards">
+      <div class="insight-card">
+        <div class="number">TOP 1</div>
+        <div class="title">NAD+ 성분, 글로우픽 세럼 4위 진입 — 하루나 NAD+ 전략의 시장 검증이 시작됐다</div>
+        <div class="desc">더후 비첩 자생력 NAD 파워 앰플이 글로우픽 4위에 진입. 현재는 더후(고가 프리미엄)만 상위권이므로, 합리적 가격대 NAD+ 세럼이 진입할 블루오션 윈도우가 열린 상태. 하루나 세럼 5월 출시 타이밍과 정확히 맞물림</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">TOP 2</div>
+        <div class="title">글로우픽 세럼 TOP 5 대격변 — PDRN·NAD+·EGF·펩타이드, '재생 성분 다극화' 시대 개막</div>
+        <div class="desc">전일 TOP 3(프로바이오시카·뉴로마이드·나이아신아마이드)에서 Ton28·미쟌 비건펩타이드·더페이스샵 PDRN·더후 NAD+·더마팩토리 EGF로 완전 재편. 다양한 재생 성분이 동시 부상하며 하루나의 NAD++EGCG+HA 다층 접근이 시장 흐름과 부합</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">TOP 3</div>
+        <div class="title">"After Feel(사용감)" K-뷰티 구매 결정 핵심 요인으로 공식화 — 텍스처가 재구매를 결정</div>
+        <div class="desc">BeautyMatter가 2026 K-뷰티 7대 트렌드로 "Sensory Textures — After Feel" 선정. 성분만으로는 부족하고, 촉각 경험이 재구매율을 결정하는 시대. 하루나 실키 머쉬룸의 '실키 텍스처' USP가 글로벌 메가트렌드와 정면으로 맞닿는 순간</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Continuing Trends -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">📌</span>지속 트렌드 (전일 대비)</div>
+    <div class="continuing-trend">
+      <strong>PDRN 대중화 — 올영데이 대세일 시작:</strong> 올영데이 첫날. 아누아 PDRN 48% 할인 구매 시작. 더페이스샵 PDRN 글로우픽 3위 진입으로 화해+글로우픽 양 플랫폼 PDRN 확산 확인. 대중화 완료 단계
+    </div>
+    <div class="continuing-trend">
+      <strong>팩클렌저 카테고리 확산:</strong> 메디힐 더마 크림 팩 클렌저가 화해 클렌징폼 5위 진입. 풀리·휩드·오브베이스 등 다양한 브랜드 확대. 카테고리 공식화 가속
+    </div>
+    <div class="continuing-trend">
+      <strong>성분 뷰티 심화:</strong> PDRN +695%, 나이아신아마이드 +65%, 펩타이드 +72% 검색량 증가 지속. 성분 지명 구매 시대
+    </div>
+  </div>
+
+  <!-- Source Details -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">📋</span>소스별 주요 발견</div>
+
+    <div class="source-card">
+      <h3><span class="num">1</span> 크리에이터 콘텐츠 흐름</h3>
+      <div class="subsection-title">🧴 바디크림 크리에이터</div>
+      <ul>
+        <li>"After Feel" 트렌드에 맞춰 가벼운 텍스처+빠른 흡수가 봄 바디크림 핵심 기준</li>
+        <li>에스트라 아토베리어365, 일리윤 세라마이드(몬치치 에디션 ~35% 할인) 등 장벽 보습 제품 리뷰 활발</li>
+        <li>바디오일+로션 레이어링 기법이 레딧/유튜브에서 인기</li>
+      </ul>
+      <div class="haruna-point">실키 텍스처 ASMR 릴스로 발림성·흡수력·마무리감 3단계 시연 콘텐츠 제작 적기</div>
+
+      <div class="subsection-title">🧪 세럼 크리에이터</div>
+      <ul>
+        <li>올영데이 PDRN 세럼 비교(아누아 vs 메디큐브 vs 토리든) 콘텐츠 폭발</li>
+        <li>닥터지 레드블레미쉬 10-시카 엑소좀 캡슐 신제품 리뷰 시작</li>
+        <li>선세럼/립세럼 등 자외선차단+스킨케어 하이브리드 신카테고리 관심</li>
+        <li>바쿠치올(레티놀 저자극 대안), 펩타이드(+72% 검색량) 부상</li>
+      </ul>
+      <div class="haruna-point">"PDRN 다 써봤다면, 5월에 나올 NAD+ 세럼을 기다려야 하는 이유" 티저 콘텐츠로 사전 기대감 형성</div>
+
+      <div class="subsection-title">🧼 폼클렌징 크리에이터</div>
+      <ul>
+        <li>팩클렌저(풀리/휩드/오브베이스) 체험기 릴스 급증</li>
+        <li>pH별 폼클렌징 추천(약산성: 마몽드, 중성: 에스추라, 약알칼리: 라로슈포제) 체계화</li>
+        <li>식자재 클렌징(녹두·다시마·쌀) 성분 기반 제품 리뷰 활발</li>
+      </ul>
+      <div class="haruna-point">식자재 기반 팩형 폼클렌저로 진입 시 트렌드와 USP 동시 적중</div>
+
+      <div class="subsection-title">🎯 3개 트랙 교차 분석</div>
+      <ul>
+        <li><strong>공통 USP:</strong> "텍스처(사용감)+성분 신뢰도" — After Feel 트렌드와 성분 뷰티가 동시에 핵심</li>
+        <li><strong>공통 니즈:</strong> "환절기 건조+민감 피부" — 습도 20~40% 건조 지속으로 수분 장벽 보호 일관</li>
+        <li><strong>광고 vs 내돈내산:</strong> 올영데이 세일이라 광고 콘텐츠 급증. 내돈내산은 "이틀 후 판단" 신중한 톤</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">2</span> 네이버 블로그/카페</h3>
+      <ul>
+        <li><strong>바디크림:</strong> 겨울→봄 전환 루틴 변경 논의. 보습 레이어링(오일→로션→크림) 공유</li>
+        <li><strong>세럼:</strong> 선세럼/립세럼 하이브리드 관심 확대. 가벼운 세럼 제형 선호</li>
+        <li><strong>클렌징:</strong> 피부타입별 추천+성분 분석이 기본 콘텐츠 포맷으로 정착</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">3</span> 올리브영</h3>
+      <ul>
+        <li><strong>올영데이(4/25~27) 시작:</strong> 멤버십 최대 60% 할인, 쿠폰 자정·12시·18시 순차 오픈</li>
+        <li><strong>세럼 올영픽:</strong> 아이오페 레티놀 슈퍼 바운스(신규), 토리든 HA(리필기획), 아누아 PDRN(30+30mL)</li>
+        <li><strong>바디케어:</strong> 일리윤 몬치치 에디션 ~35% 할인, 에스네이처 더블기획</li>
+        <li><strong>트렌드:</strong> 2026 FULLMOON — 얼리 웰니스, 프로 셀프케어, AI 초개인화</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">4</span> 화해</h3>
+      <ul>
+        <li><strong>바디크림:</strong> TOP 5 안정적 — 시카플라스트·MLE·아토덤·일리윤 더마 장벽 라인</li>
+        <li><strong>세럼 변동:</strong> 🆕 벨라몬스터 HA(3위 상승), 🆕 에이컨시 레티놀 시카(4위 진입)</li>
+        <li><strong>폼클렌징:</strong> 🆕 메디힐 팩클렌저 5위 진입. 식자재(녹두·다시마·쌀) 3개 유지</li>
+      </ul>
+      <div class="haruna-point">세럼 순위 유동성 증가 → 하루나 세럼 출시 시 빠른 상위 진입 가능성</div>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">5</span> 더쿠</h3>
+      <ul>
+        <li>바디로션 덕후 15년차의 아기 피부 비법 공유. 향 지속력+보습력 기준 추천</li>
+        <li>환절기 선크림 자극 논쟁. 장벽 약화 시 자극 최소화 방법 논의</li>
+        <li>판테놀(레이어랩 나이오좀 5%) 기반 진정 세럼 관심</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">6</span> 글로우픽</h3>
+      <ul>
+        <li><strong>🆕 세럼 TOP 5 완전 재편:</strong> ①Ton28 ②미쟌 비건 펩타이드 ③더페이스샵 PDRN ④더후 NAD+ ⑤더마팩토리 EGF</li>
+        <li>전일(프로바이오시카·뉴로마이드·나이아신아마이드)과 완전히 다른 라인업</li>
+        <li>화해와의 양극화가 줄어들고, 양 플랫폼 모두 재생 성분 중심으로 수렴</li>
+      </ul>
+      <div class="haruna-point">NAD+(더후 4위) 소비자 검증 시작. 합리적 가격대로 시장 수요 흡수 가능</div>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">7</span> 디시인사이드</h3>
+      <ul>
+        <li>폼클렌징 GOAT 추천: 약산성(마몽드), 중성(에스추라), 약알칼리(라로슈포제) 구분</li>
+        <li>COSRX 나이아신 15, 토리든 HA, 더오디너리 나이아신+징크 등 가성비 세럼 추천</li>
+        <li>바세린이 극건조 피부 최후의 보루로 꾸준히 추천</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">8</span> 레딧</h3>
+      <ul>
+        <li>바디오일→로션 레이어링 기법 인기. 오트밀·세라마이드·HA 무향 제품 선호</li>
+        <li>펩타이드가 레티노이드보다 덜 자극적인 대안으로 부상</li>
+        <li>"Skin Longevity" 키워드가 "Anti-Aging" 대체 중</li>
+        <li>캡슐화·서방형(slow-release) 제형으로 자극 최소화 관심</li>
+      </ul>
+      <div class="haruna-point">글로벌 "예방적 접근+최소 자극" 트렌드. 비건/수딩 컨셉 글로벌 니즈와 부합</div>
+    </div>
+  </div>
+
+  <!-- Trend Ingredients -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">🧬</span>트렌드 성분/원료</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>성분</th><th>트렌드</th><th>주요 제품</th><th>하루나 연관도</th></tr>
+        <tr><td>NAD+</td><td>🆕🔥 글로우픽 4위 진입</td><td>더후 NAD 파워 앰플</td><td><span class="star">⭐⭐⭐⭐⭐</span></td></tr>
+        <tr><td>PDRN</td><td>📌 양 플랫폼 확산</td><td>아누아, 메디큐브, 더페이스샵</td><td><span class="star">⭐⭐⭐</span></td></tr>
+        <tr><td>펩타이드</td><td>🆕🔥 +72%, 글로우픽 2위</td><td>미쟌 비건 펩타이드</td><td><span class="star">⭐⭐⭐</span></td></tr>
+        <tr><td>EGF</td><td>🔥 글로우픽 5위</td><td>더마팩토리 EGF 앰플</td><td><span class="star">⭐⭐⭐</span></td></tr>
+        <tr><td>나이아신아마이드</td><td>📌 올영 +65% YoY</td><td>원씽, COSRX, 더오디너리</td><td><span class="star">⭐⭐⭐⭐⭐</span></td></tr>
+        <tr><td>바쿠치올</td><td>🆕 레티놀 저자극 대안</td><td>다수 신제품 적용</td><td><span class="star">⭐⭐</span></td></tr>
+        <tr><td>엑소좀</td><td>🔥 출시 5.8배 증가</td><td>B-RX 엑소좀 PDRN 크림</td><td><span class="star">⭐⭐⭐</span></td></tr>
+        <tr><td>녹두/다시마/쌀</td><td>📌 클렌징 TOP 4 중 3개</td><td>비플레인, 션리, 에스네이처</td><td><span class="star">⭐⭐⭐⭐⭐</span></td></tr>
+        <tr><td>히알루론산</td><td>📌 화해 1위 안정적</td><td>토리든, 벨라몬스터</td><td><span class="star">⭐⭐⭐⭐</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Competitor Products -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">🏷️</span>경쟁 제품 동향</div>
+
+    <div class="subsection-title">바디크림</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>제품</th><th>브랜드</th><th>특징</th></tr>
+        <tr><td>시카플라스트 밤 B5+</td><td>라로슈포제</td><td>화해 1위, 재생·진정</td></tr>
+        <tr><td>MLE 크림</td><td>아토팜</td><td>화해 2위, 장벽 구조 모방</td></tr>
+        <tr><td>세라마이드 아토로션 몬치치</td><td>일리윤</td><td>올영데이 ~35% 할인</td></tr>
+        <tr><td>롬브르 단 로 보디로션</td><td>딥티크</td><td>프리미엄 향+글리세린 보습</td></tr>
+      </table>
+    </div>
+
+    <div class="subsection-title">세럼</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>제품</th><th>브랜드</th><th>특징</th></tr>
+        <tr><td>다이브인 HA 세럼</td><td>토리든</td><td>화해 1위, 올영 어워즈 1위</td></tr>
+        <tr><td>PDRN 캡슐 100</td><td>아누아</td><td>화해 2위, 올영데이 48% 할인</td></tr>
+        <tr><td>리얼 히알루로닉 블루100</td><td>벨라몬스터</td><td>🆕 화해 3위 상승</td></tr>
+        <tr><td>레티놀 시카 흔적 앰플</td><td>에이컨시</td><td>🆕 화해 4위 진입</td></tr>
+        <tr><td>비건 펩타이드 세럼</td><td>미쟌</td><td>🆕 글로우픽 2위</td></tr>
+        <tr><td>PDRN 히알루로닉 7</td><td>더페이스샵</td><td>🆕 글로우픽 3위</td></tr>
+        <tr><td>NAD 파워 앰플</td><td>더후</td><td>🆕 글로우픽 4위, NAD+</td></tr>
+        <tr><td>EGF 앰플</td><td>더마팩토리</td><td>🆕 글로우픽 5위</td></tr>
+      </table>
+    </div>
+
+    <div class="subsection-title">클렌징</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>제품</th><th>브랜드</th><th>특징</th></tr>
+        <tr><td>녹두 약산성 클렌징폼</td><td>비플레인</td><td>화해 1위, 식자재(녹두)</td></tr>
+        <tr><td>다시마 앰플 클렌징폼</td><td>션리</td><td>화해 2위, 식자재(다시마)</td></tr>
+        <tr><td>다이브인 HA 클렌징폼</td><td>토리든</td><td>화해 3위</td></tr>
+        <tr><td>아쿠아 라이스 클렌징폼</td><td>에스네이처</td><td>화해 4위, 식자재(쌀)</td></tr>
+        <tr><td>더마 크림 팩 클렌저</td><td>메디힐</td><td>🆕 화해 5위, 팩클렌저</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Content Ideas -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">💡</span>콘텐츠 아이디어 제안</div>
+
+    <div class="idea-card">
+      <span class="category serum">세럼·날씨</span>
+      <div class="idea-title">1. "건조한 봄 공기 속, NAD+가 세포에 에너지를 채우는 법"</div>
+      <div class="idea-desc">습도 20~40% 건조 지속+올영데이 PDRN 세일을 배경으로, "PDRN이 세포를 재생시킨다면, NAD+는 세포에 에너지를 충전한다"는 차별화 교육 콘텐츠. 더후 NAD+ 글로우픽 4위 데이터를 근거로 활용</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category bodycream">바디크림</span>
+      <div class="idea-title">2. "바르는 순간이 다르다 — 실키 텍스처 ASMR 릴스"</div>
+      <div class="idea-desc">BeautyMatter "After Feel" 트렌드에 맞춰 발림성·흡수력·마무리감을 ASMR 포맷으로 촬영. "매일 바르고 싶은 텍스처가 진짜 좋은 바디크림" 메시지</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category cleansing">클렌징</span>
+      <div class="idea-title">3. "식자재 클렌징폼 시대 — 녹두·다시마·쌀이 화해 TOP 4를 석권한 이유"</div>
+      <div class="idea-desc">화해 클렌징폼 랭킹에서 식자재 기반 3개 유지 데이터 활용. "식탁 위 재료가 세안제가 되는 시대" → 하루나 식자재 기반 폼클렌징 티저</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category trend">트렌드</span>
+      <div class="idea-title">4. "글로우픽 세럼 TOP 5가 하룻밤에 바뀌었다 — 재생 성분 다극화 시대"</div>
+      <div class="idea-desc">전일 vs 오늘 글로우픽 세럼 랭킹 비교 인포그래픽. PDRN·NAD+·EGF·펩타이드 동시 부상 → 단일 성분 시대 종료 메시지</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category weather">바디크림·날씨</span>
+      <div class="idea-title">5. "봄 건조 지수 MAX — 바디오일+로션 레이어링 기법"</div>
+      <div class="idea-desc">레딧/더쿠에서 화제인 레이어링 기법을 하루나 실키 머쉬룸과 연결. 흰목이버섯 다당류 수분 보호 원리와 시너지</div>
+    </div>
+  </div>
+
+  <!-- Hashtags -->
+  <div class="section">
+    <div class="section-title"><span class="emoji">#️⃣</span>해시태그/키워드 트렌드</div>
+
+    <div class="hashtag-section">
+      <h4>🆕 신규</h4>
+      <span class="hashtag new">#AfterFeel</span>
+      <span class="hashtag new">#NAD세럼</span>
+      <span class="hashtag new">#비건펩타이드</span>
+      <span class="hashtag new">#SkinLongevity</span>
+    </div>
+
+    <div class="hashtag-section">
+      <h4>📈 상승</h4>
+      <span class="hashtag rising">#올영데이</span>
+      <span class="hashtag rising">#PDRN세럼</span>
+      <span class="hashtag rising">#팩클렌저</span>
+      <span class="hashtag rising">#재생성분</span>
+    </div>
+
+    <div class="hashtag-section">
+      <h4>📌 안정적</h4>
+      <span class="hashtag stable">#환절기바디크림</span>
+      <span class="hashtag stable">#봄바디케어</span>
+      <span class="hashtag stable">#비건뷰티</span>
+      <span class="hashtag stable">#약산성클렌징</span>
+      <span class="hashtag stable">#피부장벽</span>
+      <span class="hashtag stable">#내돈내산</span>
+      <span class="hashtag stable">#성분뷰티</span>
+    </div>
+  </div>
+
+  <!-- Tomorrow -->
+  <div class="tomorrow-card">
+    <h3>📅 내일 예보 기반 콘텐츠 준비 제안</h3>
+    <p><strong>올영데이 2일차 (4/26 일):</strong> 첫날 구매자들의 개봉기·첫인상 후기 쏟아질 예상. PDRN 세럼 후기 트래픽 최고조에 "PDRN 효과를 극대화하는 바디케어 루틴"으로 하루나 실키 머쉬룸 자연스럽게 연결</p>
+    <p><strong>4/28(화) 비 예보:</strong> 비 오는 날 실내 건조+습도 변화에 맞춘 "비 오는 날의 보습 루틴" 콘텐츠 준비. 수분 장벽 보호 앵글로 흰목이버섯 다당류 USP 소구</p>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources-section">
+    <h3>Sources</h3>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 — 에센스/앰플/세럼 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4411" target="_blank">화해 — 바디크림/젤 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 — 클렌징폼 랭킹</a>
+    <a href="https://glowpick.co.kr/ranking/category/2/3" target="_blank">글로우픽 — 에센스/세럼 랭킹</a>
+    <a href="https://m.oliveyoung.co.kr/m/mtn?menu=ranking" target="_blank">올리브영 — 랭킹</a>
+    <a href="https://beautymatter.com/articles/2026-k-beauty-forecast-top-7-data-backed-trends" target="_blank">BeautyMatter — 2026 K-Beauty Forecast</a>
+    <a href="https://business.hwahae.co.kr/insight/trendreport-2026/" target="_blank">화해 — 2026 뷰티 트렌드 리포트</a>
+    <a href="https://corp.oliveyoung.com/ko/trend/insight-studio/8" target="_blank">올리브영 — 2026 FULLMOON 트렌드</a>
+    <a href="https://www.newspim.com/news/view/20260424000886" target="_blank">뉴스핌 — 내일 날씨 서울 25도</a>
+    <a href="https://www.harpersbazaar.co.kr/article/1900628" target="_blank">하퍼스 바자 — 환절기 보습과 향</a>
+    <a href="https://www.news1.kr/industry/general-industry/5949658" target="_blank">뉴스1 — 이미인 기후 적응형 뷰티</a>
+    <a href="https://www.seoul.co.kr/news/economy/2026/04/03/20260403500108" target="_blank">서울신문 — B-RX 엑소좀 PDRN 크림</a>
+    <a href="https://theqoo.net/beauty/1404763709" target="_blank">더쿠 — 바디로션 덕후 15년</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1524913" target="_blank">디시인사이드 — 클렌징폼 GOAT</a>
+    <a href="https://luvpp.com/올리브영-4월-세일-모르면-손해-2026-올영데이-공략법/" target="_blank">올리브영 4월 올영데이 공략법</a>
+  </div>
+
+</div>
+</body>
+</html>
