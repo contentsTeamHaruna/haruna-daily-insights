@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 데일리 인사이트 — 2026.04.28</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f8f6f3;
+    color: #2d2a26;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e8e4df;
+    margin-bottom: 40px;
+  }
+  .header-emoji { font-size: 48px; margin-bottom: 12px; }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    color: #8a8580;
+    font-weight: 400;
+  }
+  .header .brand {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    background: #f0ebe4;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6b6560;
+    font-weight: 500;
+  }
+
+  /* Part Header */
+  .part-header {
+    background: #2d2a26;
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin: 56px 0 28px;
+    text-align: left;
+  }
+  .part-header .part-tag {
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .part-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+  .part-header .part-sub {
+    font-size: 13px;
+    color: #c8c4be;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* Section / Subsections */
+  .section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+    letter-spacing: -0.3px;
+  }
+
+  .category-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 28px 0 14px;
+    padding: 10px 14px;
+    background: #f0ebe4;
+    border-radius: 8px;
+  }
+
+  /* Weather/Context Card */
+  .weather-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e5fc 100%);
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin-bottom: 32px;
+  }
+  .weather-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-bottom: 14px;
+  }
+  .weather-card ul { list-style: none; }
+  .weather-card ul li {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #1a3a5c;
+    line-height: 1.6;
+  }
+  .weather-card ul li strong { color: #0d2540; }
+  .sogu-point {
+    background: rgba(255,255,255,0.95);
+    border-left: 3px solid #3a7bd5;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3a5c;
+    line-height: 1.6;
+  }
+
+  /* Pain Point Card */
+  .pain-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 4px solid #e8a87c;
+  }
+  .pain-card .pain-num {
+    display: inline-block;
+    background: #2d2a26;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .pain-card .new-badge {
+    display: inline-block;
+    background: #d4655e;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+  .pain-card .cont-badge {
+    display: inline-block;
+    background: #5a9b6f;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+  .pain-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .pain-card .takeaway {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 10px;
+    font-size: 13.5px;
+    color: #5d3a14;
+    line-height: 1.65;
+  }
+  .pain-card .takeaway strong { color: #3e2a0c; }
+  .pain-card .takeaway-label {
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Quote Box */
+  .quote-list { list-style: none; padding: 0; margin: 12px 0; }
+  .quote-list li {
+    background: #f5f2ec;
+    border-left: 3px solid #b4ada4;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px 12px 32px;
+    margin-bottom: 8px;
+    font-size: 13.5px;
+    color: #4a4540;
+    line-height: 1.65;
+    font-style: italic;
+    position: relative;
+  }
+  .quote-list li::before {
+    content: '\201C';
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 30px;
+    color: #c8c2b8;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  /* Evidence Links Box */
+  .evidence-links {
+    background: #f5f2ee;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 12.5px;
+  }
+  .evidence-links .evidence-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b6560;
+    background: #fff;
+    padding: 2px 9px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .evidence-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .evidence-links ul li {
+    padding: 4px 0 4px 14px;
+    position: relative;
+    color: #5a5550;
+    line-height: 1.55;
+  }
+  .evidence-links ul li::before {
+    content: '🔗';
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+    top: 5px;
+  }
+  .evidence-links ul li a {
+    color: #2d6cb8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .evidence-links ul li a:hover { text-decoration: underline; }
+
+  /* Market/Gap info */
+  .info-block {
+    font-size: 13.5px;
+    color: #4a4540;
+    line-height: 1.7;
+    padding: 6px 0;
+  }
+  .info-block strong { color: #2d2a26; }
+  .info-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b6560;
+    margin-right: 6px;
+  }
+
+  /* Review Comparison Table */
+  .review-table-wrap {
+    background: #fff;
+    border-radius: 14px;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .review-meta {
+    font-size: 12.5px;
+    color: #6b6560;
+    padding: 10px 14px 4px;
+    line-height: 1.5;
+  }
+  .review-meta strong { color: #1a1815; }
+  table.review-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  table.review-table th {
+    background: #f0ebe4;
+    color: #2d2a26;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12.5px;
+    width: 26%;
+    vertical-align: top;
+  }
+  table.review-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.65;
+    vertical-align: top;
+  }
+  table.review-table tr:last-child th,
+  table.review-table tr:last-child td { border-bottom: none; }
+
+  .copy-source-box {
+    background: #fdf8f0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-left: 3px solid #e8a87c;
+  }
+  .copy-source-box .label {
+    display: inline-block;
+    background: #c47a30;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .copy-source-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .copy-source-box ul li {
+    font-size: 13.5px;
+    color: #5d3a14;
+    padding: 4px 0;
+    line-height: 1.6;
+  }
+  .copy-source-box ul li::before {
+    content: '↳ ';
+    color: #c47a30;
+    font-weight: 700;
+  }
+
+  /* Content Case Card */
+  .case-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-top: 3px solid #85cdca;
+  }
+  .case-card .case-tag {
+    display: inline-block;
+    background: #85cdca;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+  }
+  .case-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .case-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .case-card table th {
+    background: #f0ebe4;
+    color: #2d2a26;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    width: 26%;
+    vertical-align: top;
+  }
+  .case-card table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.65;
+    vertical-align: top;
+  }
+  .case-card table tr:last-child td,
+  .case-card table tr:last-child th { border-bottom: none; }
+
+  /* Cross analysis */
+  .cross-analysis {
+    background: #fff;
+    border-left: 4px solid #d4a5d0;
+    border-radius: 0 12px 12px 0;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .cross-analysis h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 10px;
+  }
+  .cross-analysis ol { padding-left: 22px; }
+  .cross-analysis ol li {
+    font-size: 14px;
+    color: #4a4540;
+    padding: 4px 0;
+    line-height: 1.7;
+  }
+
+  /* Matching Table (Part 4) */
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 8px;
+  }
+  table.matching-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 13px;
+  }
+  table.matching-table th {
+    background: #2d2a26;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  table.matching-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  table.matching-table tr:last-child td { border-bottom: none; }
+  table.matching-table tr:hover td { background: #fdfcfa; }
+  .copy-cell { color: #c47a30; font-weight: 600; }
+
+  /* Copy pool */
+  .copy-pool {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .copy-pool h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 12px 0 8px;
+    padding-left: 10px;
+    border-left: 3px solid #e8a87c;
+  }
+  .copy-pool h4:first-child { margin-top: 0; }
+  .copy-pool ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 12px;
+  }
+  .copy-pool ul li {
+    font-size: 13.5px;
+    color: #4a4540;
+    padding: 4px 12px;
+    line-height: 1.6;
+    background: #fdf8f0;
+    border-radius: 6px;
+    margin: 4px 6px 4px 0;
+    display: inline-block;
+  }
+
+  /* Recipe list */
+  .recipe-list {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    counter-reset: recipe;
+    list-style: none;
+  }
+  .recipe-list li {
+    padding: 12px 0 12px 44px;
+    border-bottom: 1px solid #f0ebe4;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.65;
+    position: relative;
+    counter-increment: recipe;
+  }
+  .recipe-list li:last-child { border-bottom: none; }
+  .recipe-list li::before {
+    content: counter(recipe);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    background: #e8a87c;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .recipe-list li strong { color: #1a1815; }
+
+  /* Part 5: Dev product fit */
+  .product-fit-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 4px solid #b8a070;
+  }
+  .product-fit-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .product-fit-card .product-launch {
+    display: inline-block;
+    background: #f0ebe4;
+    color: #6b6560;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+  .product-concept {
+    background: #fdf8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+  .product-concept strong { color: #2d2a26; }
+  .matching-pain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .matching-pain-table th {
+    background: #f5f2ee;
+    color: #4a4540;
+    font-weight: 600;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #e8e4df;
+    font-size: 12px;
+  }
+  .matching-pain-table td {
+    padding: 8px 10px;
+    border: 1px solid #e8e4df;
+    color: #4a4540;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  .matching-pain-table td.match-cell { text-align: center; white-space: nowrap; width: 60px; }
+
+  .priority-block {
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .priority-block.red { background: #fbeae8; border-left: 3px solid #d4655e; }
+  .priority-block.yellow { background: #fbf5e6; border-left: 3px solid #c4a050; }
+  .priority-block.green { background: #e8f3eb; border-left: 3px solid #5a9b6f; }
+  .priority-block .priority-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  .priority-block.red .priority-label { color: #b34a45; }
+  .priority-block.yellow .priority-label { color: #94782e; }
+  .priority-block.green .priority-label { color: #3f7551; }
+  .priority-block ol, .priority-block ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+  .priority-block ol li, .priority-block ul li {
+    padding: 3px 0;
+    color: #4a4540;
+  }
+  .priority-block strong { color: #2d2a26; }
+
+  .key-action-box {
+    background: linear-gradient(135deg, #fdf6e8 0%, #f8eccd 100%);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 18px 0 28px;
+    border-left: 5px solid #c47a30;
+  }
+  .key-action-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5e3a0e;
+    margin-bottom: 14px;
+  }
+  .key-action-box .action-phase {
+    font-size: 13px;
+    font-weight: 700;
+    color: #5e3a0e;
+    margin: 12px 0 6px;
+  }
+  .key-action-box .action-item {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #4a3318;
+  }
+  .key-action-box .action-item strong { color: #2d2a26; }
+
+  /* Trend Flow Tracking */
+  .flow-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-top: 3px solid #85a8c5;
+  }
+  .flow-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 12px;
+  }
+  .flow-card .flow-detail {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+    padding: 4px 0;
+  }
+  .flow-card .flow-detail strong { color: #2d2a26; }
+  .flow-haruna {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #5a4625;
+    line-height: 1.6;
+  }
+  .flow-haruna::before {
+    content: '하루나 시사';
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .monitor-box {
+    background: #f5f2ee;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 14px;
+    font-size: 13px;
+  }
+  .monitor-box h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d2a26;
+    margin-bottom: 8px;
+  }
+  .monitor-box ul { list-style: none; padding: 0; }
+  .monitor-box ul li {
+    padding: 4px 0 4px 14px;
+    position: relative;
+    color: #5a5550;
+    line-height: 1.6;
+  }
+  .monitor-box ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #8a8580;
+  }
+
+  /* Market Event */
+  .event-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid #85cdca;
+  }
+  .event-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 10px;
+  }
+  .event-card ul { list-style: none; padding: 0; }
+  .event-card ul li {
+    padding: 5px 0 5px 14px;
+    position: relative;
+    font-size: 13.5px;
+    color: #4a4540;
+    line-height: 1.65;
+  }
+  .event-card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #85cdca;
+    font-weight: 700;
+  }
+
+  /* Tomorrow Card */
+  .tomorrow-card {
+    background: linear-gradient(135deg, #f0f4e8 0%, #e4ecd8 100%);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 32px;
+  }
+  .tomorrow-card h3 { font-size: 16px; font-weight: 700; color: #3d5a1e; margin-bottom: 12px; }
+  .tomorrow-card h4 { font-size: 14px; font-weight: 700; color: #3d5a1e; margin: 14px 0 8px; }
+  .tomorrow-card ol { padding-left: 22px; }
+  .tomorrow-card ol li {
+    font-size: 14px;
+    color: #4a5a3a;
+    line-height: 1.7;
+    padding: 5px 0;
+  }
+  .tomorrow-card ol li strong { color: #2c4413; }
+
+  /* Sources */
+  .sources-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sources-section h3 { font-size: 14px; font-weight: 600; color: #8a8580; margin-bottom: 12px; }
+  .sources-section a {
+    display: block;
+    font-size: 12px;
+    color: #3a7bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    line-height: 1.5;
+  }
+  .sources-section a:hover { text-decoration: underline; }
+
+  /* Blockquote note */
+  .note-block {
+    background: #f5f2ec;
+    border-left: 3px solid #b4ada4;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 13.5px;
+    color: #4a4540;
+    font-style: italic;
+    line-height: 1.65;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-emoji">🧴</div>
+    <h1>하루나 데일리 인사이트</h1>
+    <div class="date">2026.04.28 (화)</div>
+    <div class="brand">@haruna_kr 콘텐츠 전략 리서치</div>
+  </div>
+
+  <!-- Today's Market Context -->
+  <div class="weather-card">
+    <h2>🌤️ 오늘의 시장 컨텍스트 (압축)</h2>
+    <ul>
+      <li><strong>날씨</strong>: 서울 9~19℃, 습도 60~65%, 흐리고 아침까지 비 → 오후 구름 많음. 봄 환절기 본격, 이번 주 낮 기온 19~26℃로 초여름 전환 시작</li>
+      <li><strong>소비 이벤트</strong>: 올영데이 종료 후 '사용 후기 축적기'. 구매한 제품의 실사용 리뷰가 커뮤니티에 올라오는 주간</li>
+    </ul>
+    <div class="sogu-point">
+      💡 "비 온 뒤 습도가 오르면 끈적임 민감도가 급상승 — 바디크림·세럼 모두 '산뜻한 흡수'가 검색 키워드 1순위로 올라오는 시기"
+    </div>
+  </div>
+
+  <!-- ========== Part 1 ========== -->
+  <div class="part-header">
+    <span class="part-tag">PART 1</span>
+    <h2>🗣️ Voice of Customer — 카테고리별 진짜 페인포인트</h2>
+    <div class="part-sub">모든 페인포인트는 실제 소비자 인용문 기반. 추측만으로 작성된 항목 없음.</div>
+  </div>
+
+  <!-- 바디크림/바디로션 -->
+  <div class="category-title">🧴 바디크림/바디로션 — Top 3 페인포인트</div>
+
+  <!-- Pain 1 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #1</span><span class="new-badge">🆕 NEW</span>
+    <h4>"끈적임 혐오로 바디로션 자체를 포기하는 소비자층 존재"</h4>
+    <ul class="quote-list">
+      <li>"끈적이는거 싫어해서 바디로션도 안바르는데 계속 건조"</li>
+      <li>"세타필 일리윤 건성용 같이 쓰거든 오늘부터 습해서 너무 끈적거리고 미치겠음"</li>
+      <li>"과도한 유분감의 고보습 바디로션을 바르면 끈적임과 텁텁함"</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://lostmindlab.com/article/review/4/145" target="_blank">끈적이는거 싫어해서 바디로션도 안바르는데 (lostmindlab)</a> — 끈적임 혐오 → 사용 포기 → 건조 악순환 직접 인용 출처</li>
+        <li><a href="https://theqoo.net/theqdeal/3745534027" target="_blank">여름에도 바디로션 꼭 쓰는 덬들 뭐 써? (더쿠)</a> — 환절기 끈적임 급상승 불만 출처</li>
+        <li><a href="https://unpa.me/community/lotion/111901138" target="_blank">끈적임 없는 고보습 바디로션 추천 (언파)</a> — 고보습=끈적임 딜레마 인용 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 피지오겔 DMT(무향·산뜻), 일리윤 세라마이드(가벼운 제형), 액티브 야누스 풀 바디토닉(산뜻한 대안)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: "끈적임 0인데 보습도 충분한" 제품은 소비자 인식 속에 거의 없음. 끈적임이 싫어서 아예 바르지 않는 '비사용층'까지 존재 — 이 층은 시장 밖에 있어 경쟁이 없는 블루오션</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      흰목이버섯 다당류의 가벼운 보습막 = "바디로션을 포기한 사람도 바를 수 있는 텍스처". <strong>"끈적임이 싫어서 안 바르셨죠? 이건 다릅니다"</strong> 카피로 비사용층 직접 공략
+    </div>
+  </div>
+
+  <!-- Pain 2 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #2</span><span class="cont-badge">📌 지속</span>
+    <h4>"새벽 야간 가려움 — 보습 지속력 8시간의 벽"</h4>
+    <ul class="quote-list">
+      <li>"새벽에 자꾸 다리쪽 건조해서 뒤지게 가려워서 벅벅 긁다 깸"</li>
+      <li>"발라도 건조해서 자꾸 다시 바르게 됨"</li>
+      <li>"흡수 쫩쫩 잘됨. 미끈거리는거 안남음 손에도 안남음 행.복." (만족 대비군)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1516401" target="_blank">건성피부 바디로션 추천좀 (디시 화장품갤)</a> — "새벽에 가려워서 긁다 깸" 야간 건조 직접 인용 출처</li>
+        <li><a href="https://theqoo.net/beauty/3061694793" target="_blank">소소한 겨울 바디로션 리뷰 더마비/일리윤 (더쿠)</a> — "발라도 건조해서 다시 바르게 됨" + 일리윤 만족 워딩 비교 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 세타필 모이스춰라이징(야간용 추천 多), 일리윤 아토 세라마이드(보습 지속력 우수 평가), 닥터케라 우레아크림(각질+보습)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: 8시간 보습 지속을 '임상 데이터'로 증명한 바디크림이 거의 없음. 대부분 "느낌상 오래 가는 것 같다" 수준</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      PDRN + 흰목이버섯 다당류 조합으로 <strong>"8시간 보습 지속 임상 테스트 완료"</strong> 같은 정량적 USP 제시 가능 시 결정적 차별점
+    </div>
+  </div>
+
+  <!-- Pain 3 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #3</span><span class="new-badge">🆕 NEW</span>
+    <h4>"모공각화증(닭살) 고민 — 바디로션만으로는 해결 안 됨"</h4>
+    <ul class="quote-list">
+      <li>"울글불긋 우둘투둘... 정말 스트레스"</li>
+      <li>"우레아 효과 → 각질 싹 사라짐" / "피부가 완전 매끈해졌어"</li>
+      <li>"오돌토돌한, 손톱으로 긁으면 뭐가 나오는 그 느낌이 많이 줄어들었어" (전일 인용, 지속 관찰)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://unpa.me/community/question/80454151" target="_blank">모공각화증 피부 바디로션 추천 (언파)</a> — "울글불긋 우둘투둘 스트레스" 직접 인용 출처</li>
+        <li><a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1501274" target="_blank">닭살피부 인생 n년차 매끈해진 루틴 (디시)</a> — 우레아 크림+바디로션 조합으로 개선 성공 사례</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 닥터케라 우레아크림 9%(각질 용해), 일리윤 세라마이드(꾸준히 바르면 개선), CeraVe SA 크림(살리실산)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: 우레아/SA 제품은 각질 제거력은 좋지만 <strong>"자극적"이라는 하위 페인</strong>이 있음. 순한 식자재 기반으로 모공각화증까지 케어하는 제품은 공백</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      화이트 토마토 + 흰목이버섯 조합의 <strong>"순한 각질 케어 + 보습"</strong> 이중 효과. "닭살 고민인데 자극이 무서운 분" 타겟 콘텐츠 가능
+    </div>
+  </div>
+
+  <!-- 세럼 -->
+  <div class="category-title">🧪 세럼 — Top 3 페인포인트</div>
+
+  <!-- Serum Pain 1 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #1</span><span class="new-badge">🆕 NEW</span>
+    <h4>"모공 세럼의 자극감 — 효과는 보이는데 매일 쓰기엔 따가움"</h4>
+    <ul class="quote-list">
+      <li>"화끈거림 &amp; 따가움이 일시적이지만, 누군가에겐 정말 자극 요소"</li>
+      <li>"팩을 얹자마자 상큼한 향이 진하게 나고 5분도 안 돼서 따갑고 자극이 느껴짐"</li>
+      <li>"발효 성분이 안 맞으신다면 추천드리고 싶지 않은"</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://unpa.me/reviews/375255" target="_blank">넘버즈인 3번 보들보들 결 세럼 후기 (언파)</a> — "화끈거림, 따갑다" 자극 워딩 출처</li>
+        <li><a href="https://unpa.me/review/detail/7d778c99-40ed-475e-a9c5-d781aa9e4ab0" target="_blank">넘버즈인 3번 결세럼팩 파워리뷰 (언파)</a> — "5분 만에 따갑고 자극" 발효 성분 불적합 인용 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 넘버즈인 3번(팅글포어콤플렉스, 일시적 화끈거림 감수 → 결 개선), 메디힐 마데카소사이드(진정 중심, 자극 최소화)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: "모공 효과는 확실하면서도 매일 사용해도 자극 없는" 세럼이 시장에 부족. 효과적인 것은 자극적이고, 순한 것은 효과가 약한 구조</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      키위케일바나나 세럼의 EGCG(녹차)+LHA/PHA 조합이 넘버즈인 대비 <strong>"순한 모공 케어"</strong> 포지셔닝 가능. "매일 써도 안 따가운 모공 세럼"
+    </div>
+  </div>
+
+  <!-- Serum Pain 2 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #2</span><span class="new-badge">🆕 NEW</span>
+    <h4>"브라이트닝 세럼 = 고함량이면 자극, 저함량이면 효과 없음"</h4>
+    <ul class="quote-list">
+      <li>"잡티에 효과" + "피부가 훨씬 광택있어보여" (구달 청귤 만족)</li>
+      <li>"살짝 점도있는 느낌이고 흡수는 빨리되는 편" (텍스처 만족)</li>
+      <li>코스알엑스 비타C 23% — 즉각 톤업이나 매일 사용 불가 수준의 고함량 자극 (커뮤니티 반복 언급)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://theqoo.net/beauty/4166572126" target="_blank">구달 청귤 비타C E TXA 세럼 체험단 후기 (더쿠)</a> — "점도있지만 흡수 빠름", "광택 남아 피부 좋아보임" 인용 출처</li>
+        <li><a href="https://theqoo.net/beauty/3258224813" target="_blank">미백 비타민 중독자의 구달 청귤 비타C 후기 (더쿠)</a> — "붉은 잡티 눈에 띄게 사라짐" 효과 인용 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 구달 청귤(TXA 5%+나이아신아마이드 5%, 중함량 균형), 코스알엑스 비타C 23%(고함량 즉효), 원씽 나이아신아마이드(저자극 기본기)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: "순한데 2주 만에 눈에 보이는 브라이트닝"이라는 포지션이 비어 있음. 구달은 TXA 중심이라 비타C 순수주의자에겐 아쉽고, 코스알엑스는 너무 자극적</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      ABC 세럼의 NAD+ + 식자재 기반 브라이트닝이 <strong>"매일 쓸 수 있는 저자극 광채 세럼"</strong> 포지션으로 구달과 코스알엑스 사이의 갭을 공략
+    </div>
+  </div>
+
+  <!-- Serum Pain 3 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #3</span><span class="cont-badge">📌 지속</span>
+    <h4>"화장 전에 밀리지 않는 흡수력"이 여전히 합격선</h4>
+    <ul class="quote-list">
+      <li>"다른 제품들이랑도 잘 어우러져서 화장이 뜨거나 그러지도 않아" (구달 청귤 만족)</li>
+      <li>"끈적임 없이 산뜻하게 마무리" (넘버즈인 3번 텍스처 만족)</li>
+      <li>"여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?" (전일 인용, 지속)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://theqoo.net/beauty/4166572126" target="_blank">구달 청귤 비타C 세럼 후기 (더쿠)</a> — "화장이 뜨거나 안함" 레이어링 호환성 워딩 출처</li>
+        <li><a href="https://unpa.me/reviews/348082" target="_blank">넘버즈인 3번 결 세럼 내돈내산 (언파)</a> — "끈적임 없이 산뜻" 텍스처 만족 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>해석</strong>: 세럼의 1차 합격선은 여전히 <strong>흡수력·레이어링 호환성</strong>. 이번 주 습도 상승(60%+)과 함께 "산뜻한 흡수"에 대한 민감도가 더 올라가는 시즌</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 시사</span>
+      키위케일바나나·ABC 모두 <strong>출시 전 "화장 위에 발라도 밀리지 않음" 텍스처 테스트</strong> 필수. 습한 봄~여름 시즌에 출시되므로 산뜻한 마무리감이 더욱 중요
+    </div>
+  </div>
+
+  <!-- 폼클렌징 -->
+  <div class="category-title">🧼 폼클렌징 — Top 3 페인포인트</div>
+
+  <!-- Foam Pain 1 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #1</span><span class="cont-badge">📌 지속</span>
+    <h4>"약산성은 순하지만 세정력 부족" — 영원한 딜레마 (새 인용 추가)</h4>
+    <ul class="quote-list">
+      <li>"약산성 쓰면 여드름 남, 세정력 강한 건 싫고 적당한 거 없을까"</li>
+      <li>"약산성 제품치고 퐁퐁 만들어지는 거품" (라운드랩 독도 만족 — 갭을 채우는 시도)</li>
+      <li>"단독으로만 화장을 지우기는 어려워 오일이나 밤으로 1차 세안 필요" (라운드랩 독도 한계)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1481151" target="_blank">디시 클렌징폼 추천 약산성 세정력 (디시 화장품갤)</a> — "약산성 쓰면 여드름, 세정력 강하면 싫다" 딜레마 직접 출처</li>
+        <li><a href="https://unpa.me/reviews/397942" target="_blank">라운드랩 1025 독도 클렌저 내돈내산 (언파)</a> — "순하고 보들보들 마무리감" 만족이나 메이크업 단독 제거 한계 출처</li>
+        <li><a href="https://www.glowpick.com/products/105588" target="_blank">라운드랩 1025 독도 클렌저 (글로우픽)</a> — 평점 4.01, 1000건 리뷰. "약산성치고 거품 좋다"는 평가와 "세정력 부족" 공존 확인</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장이 푸는 방식</strong>: 라운드랩 독도(약산성+거품 강화), 뉴트로지나 딥클린(약알칼리+BHA), 비플레인 녹두(순함 극대화)</div>
+    <div class="info-block"><strong>해결되지 않은 갭</strong>: "약산성이면서 1회 세안으로 끝나는" 제품이 여전히 공백. 약산성 진영은 "2차 세안 필요", 약알칼리 진영은 "자극 우려"</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      흰목이버섯 다당류 + 보조 식자재로 <strong>"약산성인데 한 번으로 끝나는"</strong> 포지션. 비플레인 녹두의 세정력 갭 + 라운드랩 독도의 1차 세안 한계를 동시 공략
+    </div>
+  </div>
+
+  <!-- Foam Pain 2 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #2</span><span class="new-badge">🆕 NEW</span>
+    <h4>"식자재 기반 클렌저에 대한 신뢰와 한계가 공존"</h4>
+    <ul class="quote-list">
+      <li>"쌀뜨물 성분이라 세정력이 나쁘지 않다" (에스네이처 쌀 클렌징)</li>
+      <li>"녹두를 으깨놓은듯한 부드러운 질감이 인상적" (비플레인 녹두)</li>
+      <li>"스크럽이 따로 필요없는 촉촉한 보습 클렌징폼" (SRB 쌀뜨물 효소세안제)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://glowpick.co.kr/product/161270" target="_blank">에스네이처 아쿠아 라이스 클렌징폼 (글로우픽)</a> — 평점 4.42, "쌀뜨물 세정력" 식자재 연상 인용 출처</li>
+        <li><a href="https://www.musinsa.com/review/80138892" target="_blank">에스네이처 클렌징폼 리뷰 (무신사)</a> — "쌀뜨물 성분이라 나쁘지 않다" 인용 출처</li>
+        <li><a href="https://unpa.me/reviews/168845" target="_blank">SRB 쌀뜨물 효소세안제 후기 (언파)</a> — "촉촉한 보습 클렌징" 식자재 기반 성공 사례</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>시장 분석</strong>: 쌀(에스네이처, SRB), 녹두(비플레인)가 식자재 클렌저 양대 진영. 소비자는 <strong>식자재 원료 = 순함·자연스러움</strong>으로 강하게 연상. 하지만 세정력 부족이라는 공통 한계</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 진입 포인트</span>
+      흰목이버섯은 쌀·녹두와 다른 <strong>"버섯"이라는 새로운 식자재 카테고리</strong>. "쌀뜨물 말고 버섯물" 같은 대비 카피 가능 — 신선한 포지셔닝 + 세정력 보완 차별화
+    </div>
+  </div>
+
+  <!-- Foam Pain 3 -->
+  <div class="pain-card">
+    <span class="pain-num">페인포인트 #3</span><span class="new-badge">🆕 NEW</span>
+    <h4>"거품의 질감이 사용 만족도의 핵심 변수"</h4>
+    <ul class="quote-list">
+      <li>"거품도 쫀쫀하고 자극없어서 아침저녁 사용하기 좋음" (에스네이처 쌀)</li>
+      <li>"적은 양으로도 몽글몽글한 거품이 생겨서" (라운드랩 독도)</li>
+      <li>"뽀드득하고 깔끔한 사용감" (비플레인 녹두 디시 후기)</li>
+    </ul>
+    <div class="evidence-links">
+      <span class="evidence-label">📍 직접 확인 가능 리뷰</span>
+      <ul>
+        <li><a href="https://glowpick.co.kr/product/161270" target="_blank">에스네이처 아쿠아 라이스 (글로우픽)</a> — "쫀쫀한 거품" 텍스처 만족 인용 출처</li>
+        <li><a href="https://unpa.me/reviews/397942" target="_blank">라운드랩 1025 독도 클렌저 (언파)</a> — "몽글몽글한 거품" 인용 출처</li>
+        <li><a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1450005" target="_blank">디시 폼클 30개 후기 (디시 화장품갤)</a> — "뽀드득 깔끔" 비플레인 녹두 인용 출처</li>
+      </ul>
+    </div>
+    <div class="info-block"><strong>해석</strong>: 클렌징폼 리뷰에서 가장 자주 등장하는 감각 워딩이 <strong>"쫀쫀한", "몽글몽글한", "풍성한" 거품</strong>. 성분보다 거품의 물리적 질감이 첫인상과 재구매를 결정</div>
+    <div class="takeaway">
+      <span class="takeaway-label">하루나 시사</span>
+      폼클렌징 개발 시 <strong>거품의 질감 → "쫀쫀하고 크리미한 거품"</strong>을 텍스처 개발 1순위로. 마케팅에서도 거품 클로즈업 비주얼이 첫 훅
+    </div>
+  </div>
+
+  <!-- ========== Part 2 ========== -->
+  <div class="part-header">
+    <span class="part-tag">PART 2</span>
+    <h2>🔍 리뷰 기반 경쟁 분석 — 오늘의 deep dive</h2>
+    <div class="part-sub">전일 다룬 제품: 라로슈포제 시카플라스트 B5+, 아토팜 MLE, 토리든 다이브인, 아누아 PDRN 캡슐, 비플레인 녹두. 오늘은 새로운 제품으로 deep dive.</div>
+  </div>
+
+  <!-- 에스트라 아토베리어365 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧴 바디크림: 에스트라 아토베리어365 바디로션</strong> (화해 상위권, 올영 어워즈 수상 브랜드)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td>"끈적임없이 보습이 오래 지속", "끈적임도 없고 향도 무향이라 듬뿍 쓰는데 부담 없음", "바르고 나면 확실히 촉촉하고 피부가 부드러워짐"</td></tr>
+      <tr><th>1~2점 핵심 불만</th><td>"처음에는 약간 뻑뻑하게 느낄수도 있다", <strong>"가격이 좀 나간다"</strong> (가격 진입장벽이 최대 불만)</td></tr>
+      <tr><th>재구매 트리거</th><td>"무향 + 끈적임 없음 + 보습 지속" 3박자. 민감/건조 피부 가족 공용 가능</td></tr>
+      <tr><th>하루나 시사</th><td><strong>벤치마크</strong>: 에스트라는 "약국 브랜드 신뢰감 + 무향 + 산뜻함"으로 성공. 하루나는 여기에 <strong>"식자재 스토리 + PDRN 재생"</strong>을 더한 상위 포지션 가능. 단, 가격이 에스트라 수준이면 진입 장벽 ↑</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>에스트라 5점 "듬뿍 써도 부담 없는" → 하루나 <strong>"마음껏 듬뿍, 끈적임은 제로"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 더마비 데일리 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧴 바디크림: 더마비 데일리 모이스쳐 바디로션</strong> (올리브영 상위권)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td>"가성비 좋은 데일리 바디로션", "향이 은은하게 좋음"</td></tr>
+      <tr><th>1~2점 핵심 불만</th><td><em>"발라도 건조해서 자꾸 다시 바르게 됨"</em>, <em>"바른 후 손에 미끈거리는거 남아서 싫음"</em></td></tr>
+      <tr><th>재구매 트리거</th><td>가격 합리성(대용량 가성비). 단, 보습 지속력 한계로 "더 좋은 제품 찾으면 갈아탐"</td></tr>
+      <tr><th>하루나 시사</th><td><strong>회피 포인트 명확</strong>: 더마비의 "미끈거림 + 보습 부족"은 흰목이버섯 다당류의 <strong>가벼운 보습막 + 장시간 지속</strong>으로 직접 해결 가능. "더마비 쓰다가 갈아타는 사용자"가 하루나의 잠재 고객</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>더마비 1점 "발라도 건조해서 다시 바름" → 하루나 <strong>"한 번 바르면 아침까지 촉촉한"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 넘버즈인 3번 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧪 세럼: 넘버즈인 3번 보들보들 결 세럼</strong> (올리브영 모공 세럼 대표, 리뷰 25,000건+)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td>"끈적임 없이 산뜻하게 마무리", "피부결이 좋아지는 것 같아", "남편도 잘 쓰고 만족"</td></tr>
+      <tr><th>1~2점 핵심 불만</th><td><em>"화끈거림 &amp; 따가움이 일시적이지만 자극 요소"</em>, <em>"발효 성분이 안 맞으면 추천 안 함"</em>, <em>"예민한 피부 기준 바를 때 따끔거림"</em></td></tr>
+      <tr><th>재구매 트리거</th><td>"보들보들한 피부결 변화" 체감. 단, 민감피부는 자극감으로 중도 포기</td></tr>
+      <tr><th>하루나 시사</th><td><strong>결정적 갭</strong>: 넘버즈인 3번의 <strong>"자극감"이 최대 약점</strong>. 모공 세럼 시장에서 "효과+순함"을 동시에 잡은 제품이 없음. 키위케일바나나 세럼이 <strong>"넘버즈인만큼 효과적인데 매일 써도 안 따가운"</strong> 포지션으로 진입하면 결정적 차별점</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>넘버즈인 5점 "보들보들한 결" → 하루나 <strong>"매일 써도 보들보들, 매일 써도 안 따가운"</strong></li>
+        <li>넘버즈인 1점 "화끈거림, 따가움" → 하루나 차별 카피 <strong>"순한 모공 세럼"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 구달 청귤 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧪 세럼: 구달 청귤 비타C E TXA 세럼</strong> (브라이트닝 대표)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td><em>"잡티에 효과"</em>, <em>"살짝 점도있는 느낌이고 흡수는 빨리되는 편"</em>, <em>"쫀쫀한 느낌과 약간 광택이 남아 피부가 훨씬 광택있어보여"</em></td></tr>
+      <tr><th>1~2점 핵심 불만</th><td>(TXA 5% + 나이아신아마이드 5% 중함량이라 심한 자극 보고는 적으나) "고함량 비타C 제품 대비 속효성 부족" 인식 존재</td></tr>
+      <tr><th>재구매 트리거</th><td>"2주 만에 잡티 옅어짐" 가시적 결과 + "화장 안 밀리는" 레이어링 호환</td></tr>
+      <tr><th>하루나 시사</th><td><strong>벤치마크 포인트</strong>: 구달은 <strong>TXA+나이아신아마이드 중함량 = 순함과 효과의 밸런스</strong>로 성공. ABC 세럼도 이와 유사한 "순함+효과 밸런스" 노선이 안전. NAD+가 TXA 대비 <strong>"세포 레벨 광채"</strong>라는 상위 스토리 가능</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>구달 5점 "쫀쫀한 느낌과 광택" → 하루나 <strong>"발랐을 때 광채, 속부터 차오르는 톤업"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 라운드랩 독도 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧼 폼클렌징: 라운드랩 1025 독도 클렌저</strong> (올리브영 어워즈, 글로우픽 평점 4.01)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td><em>"적은 양으로도 몽글몽글한 거품"</em>, <em>"순하고 편안한 사용감"</em>, <em>"수분은 그대로 남겨줌"</em></td></tr>
+      <tr><th>1~2점 핵심 불만</th><td><em>"단독으로 화장을 지우기 어렵다"</em>, <em>"오일이나 밤으로 1차 세안 필요"</em></td></tr>
+      <tr><th>재구매 트리거</th><td>"순함 + 거품 질감 + 아침 세안 최적"</td></tr>
+      <tr><th>하루나 시사</th><td><strong>명확한 갭</strong>: 라운드랩 독도도 비플레인 녹두와 동일하게 <strong>"2차 세안/1차 세안 필요"</strong> 한계. 약산성 클렌저의 구조적 한계가 재확인됨. 하루나가 <strong>"약산성+식자재인데 1회 세안 완결"</strong>을 구현하면 라운드랩·비플레인 모두의 갭을 공략</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>라운드랩 5점 "몽글몽글한 거품" → 하루나 <strong>"흰목이버섯의 크리미한 거품"</strong></li>
+        <li>라운드랩 1점 "1차 세안 필요" → 하루나 <strong>"이것 하나면 끝"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 에스네이처 아쿠아 라이스 -->
+  <div class="review-table-wrap">
+    <div class="review-meta"><strong>🧼 폼클렌징: 에스네이처 아쿠아 라이스 약산성 클렌징폼</strong> (글로우픽 4.42, 식자재 경쟁자)</div>
+    <table class="review-table">
+      <tr><th>5점 BEST 워딩</th><td><em>"거품도 쫀쫀하고 자극없어서 아침저녁 사용하기 좋음"</em>, <em>"쌀뜨물 성분이라 세정력이 나쁘지 않다"</em></td></tr>
+      <tr><th>1~2점 핵심 불만</th><td>"거품이 잘 안 남음", "세정력이 약함(저녁 세안 부족)", "가격 대비 성능 의문"</td></tr>
+      <tr><th>재구매 트리거</th><td>"쌀뜨물" 식자재 연상 → 순함·자연스러움 신뢰</td></tr>
+      <tr><th>하루나 시사</th><td><strong>직접 경쟁자</strong>: 에스네이처는 "쌀 = 식자재 클렌저"의 대표. 하루나는 "흰목이버섯 = 버섯 식자재 클렌저"로 <strong>같은 식자재 카테고리 내 신선한 포지션</strong>. "쌀뜨물 말고 버섯물" 같은 대비 카피 가능</td></tr>
+    </table>
+    <div class="copy-source-box">
+      <span class="label">카피 소스 추출</span>
+      <ul>
+        <li>에스네이처 "쌀뜨물 성분이라" → 하루나 <strong>"흰목이버섯 다당류로 거품부터 다른"</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========== Part 3 ========== -->
+  <div class="part-header">
+    <span class="part-tag">PART 3</span>
+    <h2>🎬 고인게이지먼트 콘텐츠 Deconstruction</h2>
+    <div class="part-sub">전일 사례: 올영 민감성 클렌징폼 비교 릴스, 아비브 내돈내산, 디시 클렌징 종결, 더쿠 오프온 바디로션 후기. 오늘은 콘텐츠 전략 프레임워크 + 새로운 사례 중심.</div>
+  </div>
+
+  <!-- Case 1 -->
+  <div class="case-card">
+    <span class="case-tag">사례 1</span>
+    <h4>"릴스로 발견, 캐러셀로 설득" 이원 전략 (Threads @solution.kim)</h4>
+    <table>
+      <tr><th>포맷</th><td>전략 프레임워크 텍스트 (Threads 포스트)</td></tr>
+      <tr><th>핵심 메시지</th><td>릴스 = 확산/발견 도구(비팔로워 대상, 24~48시간 피크) / 캐러셀 = 신뢰/전환 도구(팔로워 대상, 수일~수주 수명)</td></tr>
+      <tr><th>인게이지먼트</th><td>정량 데이터 미확보 (금요일 관찰 예정)</td></tr>
+      <tr><th>재활용 레시피</th><td>① 릴스는 "훅+임팩트"에 집중, 정보량 최소 ② 캐러셀은 "교육+설득"에 집중, 저장 유도 ③ 둘을 같은 주제로 쌍으로 제작</td></tr>
+      <tr><th>하루나 적용</th><td>릴스: "흰목이버섯 거품 클로즈업" → 캐러셀: "왜 흰목이버섯인가? 히알루론산 대비 15% 높은 보습" 교육 콘텐츠. 릴스→캐러셀 동선 설계</td></tr>
+    </table>
+  </div>
+
+  <!-- Case 2 -->
+  <div class="case-card">
+    <span class="case-tag">사례 2</span>
+    <h4>릴스 100만뷰 알고리즘 구조 분석 (아이보스 커뮤니티)</h4>
+    <table>
+      <tr><th>포맷</th><td>마케팅 커뮤니티 분석글</td></tr>
+      <tr><th>핵심 메시지</th><td>3단계 확산: 소수 테스트 → 반응 확인 → 폭발적 확산. 팔로워 수 무관, <strong>알고리즘 신뢰도가 핵심</strong>. 최소 1,000명 실활동 팔로워 필요</td></tr>
+      <tr><th>인게이지먼트</th><td>분석 기반 (실제 사례 아님)</td></tr>
+      <tr><th>재활용 레시피</th><td>① 초기 반응 설계(지인/팬 동원) 필수 ② 콘텐츠 품질보다 <strong>초기 인게이지먼트 속도</strong>가 알고리즘 트리거 ③ 릴스 이용 시간이 총 사용 시간의 절반 이상</td></tr>
+      <tr><th>하루나 적용</th><td>현재 383 팔로워 → <strong>1,000명 실팔로워 확보가 선결 과제</strong>. 출시 전 팔로워 빌딩(DM 자동응답 샘플 신청, 체험단 모집) → 출시 동시 릴스 초기 반응 설계</td></tr>
+    </table>
+  </div>
+
+  <!-- Case 3 -->
+  <div class="case-card">
+    <span class="case-tag">사례 3</span>
+    <h4>COSMEDIX 마이크로 인플루언서 캠페인 (글로벌 벤치마크)</h4>
+    <table>
+      <tr><th>포맷</th><td>마이크로 인플루언서 커뮤니티 프로그램</td></tr>
+      <tr><th>첫 3초 훅</th><td>리뷰+튜토리얼+사용 후기 조합의 릴스</td></tr>
+      <tr><th>본문 메시지</th><td>제품 시딩 → 자발적 UGC 생성 → 브랜드 리포스팅 선순환</td></tr>
+      <tr><th>인게이지먼트</th><td>527% ROI, 300만 임프레션, 3.4만 인게이지먼트</td></tr>
+      <tr><th>재활용 레시피</th><td>① 10K 미만 뷰티 마이크로 인플루언서 10~20명 시딩 ② 리뷰 릴스 자발 생성 유도 ③ UGC 리포스팅으로 콘텐츠 자산 축적</td></tr>
+      <tr><th>하루나 적용</th><td>키위케일바나나 세럼 출시 시 <strong>10K 미만 뷰티 인플루언서 15명 시딩</strong> → "3주 사용 변화" 릴스 생성 → 하루나 계정 리포스팅. 나노 인플루언서 평균 6.64% 인게이지먼트(WeArisma 벤치마크) 활용</td></tr>
+    </table>
+  </div>
+
+  <!-- Case 4 -->
+  <div class="case-card">
+    <span class="case-tag">사례 4</span>
+    <h4>뷰티 릴스 첫 3초 훅 공식 (원포인트 블로그 분석)</h4>
+    <table>
+      <tr><th>포맷</th><td>블로그 가이드 (뷰티 릴스 최적화)</td></tr>
+      <tr><th>핵심 메시지</th><td>첫 프레임 호기심 자극 → 명확한 가치 제시 → 강한 CTA 마무리. 뷰티 카테고리: 비포/애프터 + 사용법 시연 + 실제 후기가 높은 참여도</td></tr>
+      <tr><th>재활용 레시피</th><td>① 첫 3초: 비포/애프터 or 제품 클로즈업 ② 중간: USP 1가지만 집중 ③ 마무리: "댓글로 피부타입 알려주세요" CTA</td></tr>
+      <tr><th>하루나 적용</th><td>실키 머쉬룸 릴스: 첫 3초 "흰목이버섯 원물 → 크림으로 변하는 비주얼" → 중간 "옷에 안 묻는 보습" 시연 → CTA "끈적임 싫어서 바디로션 안 바르시는 분? 댓글로 🙋"</td></tr>
+    </table>
+  </div>
+
+  <!-- Cross Analysis -->
+  <div class="cross-analysis">
+    <h4>🧠 사례 교차 분석 — 공통 작동 원리</h4>
+    <ol>
+      <li><strong>릴스-캐러셀 이원 전략이 2026년 표준</strong>: 릴스로 발견 → 캐러셀로 교육/전환. 하나만 하면 절반만 작동</li>
+      <li><strong>초기 1,000명 실팔로워가 알고리즘 작동의 최소 조건</strong>: 콘텐츠 품질보다 초기 반응 속도가 더 중요</li>
+      <li><strong>나노/마이크로 인플루언서의 ROI가 메가 대비 3~4배</strong>: 예산 제한적인 초기 브랜드에 최적</li>
+      <li><strong>첫 3초 훅 = 비주얼 임팩트 + 구체적 약속</strong>: "이 릴스를 보면 OO을 알 수 있다"는 약속이 있어야 정지</li>
+      <li><strong>DM 기반 커뮤니케이션 강화</strong>: Z세대 63.5%가 DM 최다 사용 → DM 자동응답(샘플 신청, 할인코드) 전략 병행 필수</li>
+    </ol>
+  </div>
+
+  <!-- ========== Part 4 ========== -->
+  <div class="part-header">
+    <span class="part-tag">PART 4</span>
+    <h2>🎯 하루나 적용 인사이트 (오늘의 결론)</h2>
+  </div>
+
+  <div class="section-title">🔑 페인포인트 → USP 매칭표</div>
+  <div class="table-wrap">
+    <table class="matching-table">
+      <thead>
+        <tr>
+          <th>카테고리</th>
+          <th>핵심 페인포인트</th>
+          <th>하루나 USP 매칭</th>
+          <th>카피 후보</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>바디크림</td><td>끈적임 혐오 → 사용 포기</td><td>흰목이버섯 다당류 = 가벼운 보습막</td><td class="copy-cell">"끈적임 싫어서 안 바르셨죠? 이건 다릅니다"</td></tr>
+        <tr><td>바디크림</td><td>야간 8시간 보습 부족</td><td>PDRN + 다당류 장시간 보습</td><td class="copy-cell">"한 번 바르면 아침까지 촉촉한"</td></tr>
+        <tr><td>바디크림</td><td>모공각화증(닭살) 자극 우려</td><td>화이트토마토 + 순한 식자재</td><td class="copy-cell">"닭살 고민인데 자극이 무서운 분"</td></tr>
+        <tr><td>세럼</td><td>모공 세럼 자극감</td><td>EGCG+LHA/PHA 순한 조합</td><td class="copy-cell">"매일 써도 안 따가운 모공 세럼"</td></tr>
+        <tr><td>세럼</td><td>브라이트닝 자극 vs 효과</td><td>NAD+ 저자극 광채</td><td class="copy-cell">"매일 쓸 수 있는 광채 세럼"</td></tr>
+        <tr><td>세럼</td><td>화장 밀림 흡수력</td><td>워터리 베이스 산뜻 마무리</td><td class="copy-cell">"화장 위에 발라도 안 밀리는"</td></tr>
+        <tr><td>폼클렌징</td><td>약산성=세정력 부족</td><td>식자재 다당류 1회 세안 완결</td><td class="copy-cell">"약산성인데 이것 하나면 끝"</td></tr>
+        <tr><td>폼클렌징</td><td>식자재 클렌저 신선함 니즈</td><td>흰목이버섯 = 새 카테고리</td><td class="copy-cell">"쌀뜨물 말고 버섯물"</td></tr>
+        <tr><td>폼클렌징</td><td>거품 질감 중시</td><td>크리미한 다당류 거품</td><td class="copy-cell">"흰목이버섯의 크리미한 거품"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Copy Pool -->
+  <div class="section-title">📝 오늘 추출한 카피 소스 풀</div>
+  <div class="copy-pool">
+    <h4>바디크림</h4>
+    <ul>
+      <li>"끈적임 싫어서 안 바르셨죠? 이건 다릅니다"</li>
+      <li>"한 번 바르면 아침까지 촉촉한"</li>
+      <li>"마음껏 듬뿍, 끈적임은 제로"</li>
+      <li>"닭살 고민인데 자극이 무서운 분을 위한"</li>
+    </ul>
+    <h4>세럼</h4>
+    <ul>
+      <li>"매일 써도 안 따가운 모공 세럼"</li>
+      <li>"매일 쓸 수 있는 저자극 광채 세럼"</li>
+      <li>"보들보들한 결, 매일 써도 순한"</li>
+      <li>"속부터 차오르는 톤업"</li>
+    </ul>
+    <h4>폼클렌징</h4>
+    <ul>
+      <li>"약산성인데 이것 하나면 끝"</li>
+      <li>"쌀뜨물 말고 버섯물"</li>
+      <li>"흰목이버섯의 크리미한 거품"</li>
+      <li>"거품부터 다른 식자재 클렌저"</li>
+    </ul>
+  </div>
+
+  <!-- Content Recipe -->
+  <div class="section-title">🎬 콘텐츠 레시피 (재활용 가능)</div>
+  <ol class="recipe-list">
+    <li><strong>릴스-캐러셀 이원 전략</strong> — 릴스: 비주얼 임팩트 훅(흰목이버섯 원물→제품 변환) / 캐러셀: 성분 교육(히알루론산 대비 15% 높은 보습 등)</li>
+    <li><strong>나노 인플루언서 15명 시딩 릴스</strong> — "3주 사용 변화" 비포/애프터 + UGC 리포스팅</li>
+    <li><strong>DM 자동응답 전략</strong> — 릴스 CTA → DM으로 샘플 신청 / 할인코드 동선</li>
+    <li><strong>"비사용층 공략" 릴스</strong> — "끈적임 싫어서 바디로션 안 바르시는 분? 🙋" → 실키 머쉬룸 시연</li>
+    <li><strong>3축 비교 릴스 (폼클렌징)</strong> — "비플레인 녹두 vs 라운드랩 독도 vs 하루나" 거품/세정력/보습감 비교</li>
+  </ol>
+
+  <!-- ========== Part 5 ========== -->
+  <div class="part-header">
+    <span class="part-tag">PART 5</span>
+    <h2>🔬 개발 제품 × 시장 인사이트 정합도 분석</h2>
+    <div class="part-sub">우선순위 마킹: 🔴 즉시 결정 필요 / 🟡 검토 권장 / 🟢 강점</div>
+  </div>
+
+  <!-- Product 1: 키위케일바나나 세럼 -->
+  <div class="product-fit-card">
+    <h3>🧪 [제품 1] 키위케일바나나 세럼 (모공/진정)</h3>
+    <span class="product-launch">5월 말 출시</span>
+    <div class="product-concept">
+      <strong>메인 성분</strong>: EGCG(녹차) + 키위·케일 콤플렉스 + LHA/PHA + HA 8~11종 + NAD+<br>
+      <strong>포지션</strong>: 모공/진정 → 지성·복합성·트러블 피부<br>
+      <strong>직접 경쟁자</strong>: 넘버즈인 3번 보들보들 결 세럼 (올영 25,000건+ 리뷰)
+    </div>
+    <table class="matching-pain-table">
+      <thead>
+        <tr><th>오늘 페인포인트</th><th class="match-cell">매칭</th><th>분석</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>세럼 #1 "모공 세럼 자극감"</td><td class="match-cell">🟢</td><td>넘버즈인 3번의 <strong>최대 약점이 자극감</strong>. 키위케일바나나가 "순한 모공 세럼"을 증명하면 결정적 차별점. EGCG+LHA/PHA 조합이 팅글포어콤플렉스 대비 자극 낮을 수 있음</td></tr>
+        <tr><td>세럼 #3 "화장 밀림 흡수력"</td><td class="match-cell">🟡</td><td>HA 8~11종+다중 성분 조합이 무거워질 위험은 여전. <strong>출시 전 습도 60%+ 환경 텍스처 테스트</strong> 필수</td></tr>
+        <tr><td>바디크림 #3 "모공각화증"</td><td class="match-cell">(간접 🟢)</td><td>모공 케어 세럼 사용자 중 바디 모공각화증도 함께 고민하는 층이 많음. "페이스+바디 모공 세트" 마케팅 가능성</td></tr>
+      </tbody>
+    </table>
+    <div class="priority-block red">
+      <div class="priority-label">🔴 즉시 결정 필요</div>
+      <ul>
+        <li><strong>자극감 임상/체험 데이터 확보</strong>: 넘버즈인 3번 대비 "순한 모공 세럼" 포지셔닝의 핵심 근거. 최소 20명 이상의 민감피부 체험단 결과 필요</li>
+      </ul>
+    </div>
+    <div class="priority-block yellow">
+      <div class="priority-label">🟡 검토 권장</div>
+      <ul>
+        <li><strong>출시 시즌(5월 말)과 텍스처</strong>: 습도 상승기에 산뜻한 마무리감이 더욱 중요. 고습도 환경 텍스처 최종 점검</li>
+        <li><strong>"3주 사용 변화" 비주얼 자산</strong>: 출시 동시 릴스용 비포/애프터 이미지 사전 촬영 필요</li>
+      </ul>
+    </div>
+    <div class="priority-block green">
+      <div class="priority-label">🟢 강점</div>
+      <ul>
+        <li><strong>"순한 모공 세럼"이라는 포지션이 시장에 비어 있음</strong>: 넘버즈인이 자극, 메디힐이 진정 중심이라 "효과+순함" 동시 포지션은 명확한 갭</li>
+        <li><strong>피부타입 타겟이 명확</strong>: 지성·복합성·트러블 → 패키지·랜딩 첫 줄 명시 가능</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Product 2: ABC 세럼 -->
+  <div class="product-fit-card">
+    <h3>🧪 [제품 2] ABC 세럼 (광채/브라이트닝)</h3>
+    <span class="product-launch">5월 말 출시</span>
+    <div class="product-concept">
+      <strong>메인 성분</strong>: NAD+ + 비타민 복합 + 식자재 기반<br>
+      <strong>포지션</strong>: 광채/브라이트닝 → 건성·복합성 피부<br>
+      <strong>직접 경쟁자</strong>: 구달 청귤 비타C TXA, 코스알엑스 비타C 23%, 원씽 나이아신아마이드
+    </div>
+    <table class="matching-pain-table">
+      <thead>
+        <tr><th>오늘 페인포인트</th><th class="match-cell">매칭</th><th>분석</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>세럼 #2 "브라이트닝 자극 vs 효과"</td><td class="match-cell">🟢</td><td>구달(중함량 밸런스)과 코스알엑스(고함량 자극) 사이에 <strong>"매일 쓸 수 있는 저자극 광채"</strong> 갭이 존재. NAD+가 이 갭을 채울 수 있음</td></tr>
+        <tr><td>세럼 #3 "화장 밀림"</td><td class="match-cell">🟡</td><td>구달 청귤의 5점 워딩이 "흡수 빠름+광택" → ABC도 이 수준의 흡수력 필수</td></tr>
+      </tbody>
+    </table>
+    <div class="priority-block red">
+      <div class="priority-label">🔴 즉시 결정 필요</div>
+      <ul>
+        <li><strong>"2주 만에 눈에 보이는 변화" 입증</strong>: 구달 청귤이 "2주 만에 잡티 옅어짐"으로 성공. ABC 세럼도 <strong>정량적 효과 데이터</strong>(톤 변화 수치, 멜라닌 감소 등) 필요</li>
+      </ul>
+    </div>
+    <div class="priority-block yellow">
+      <div class="priority-label">🟡 검토 권장</div>
+      <ul>
+        <li><strong>NAD+ 인지도 교육</strong>: 소비자 대부분이 NAD+를 모름. "NAD+가 뭔데요?"에 대한 <strong>1분 안에 이해되는 교육 콘텐츠</strong> 사전 제작 필요</li>
+        <li><strong>구달 청귤과의 가격 경쟁력</strong>: 구달이 가성비 포지션을 선점. 프리미엄으로 갈 것인지 가성비 경쟁할 것인지 결정</li>
+      </ul>
+    </div>
+    <div class="priority-block green">
+      <div class="priority-label">🟢 강점</div>
+      <ul>
+        <li><strong>"매일 쓸 수 있는 광채"라는 포지션이 명확</strong>: 코스알엑스(매일 사용 불가), 구달(TXA 중심)과 차별화된 NAD+ 스토리</li>
+        <li><strong>식자재 기반 + 광채의 조합이 시장에 신선</strong>: 브라이트닝 세럼 중 "식자재 원료" 컨셉은 거의 없음</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Product 3: 폼클렌징 -->
+  <div class="product-fit-card">
+    <h3>🧼 [제품 3] 폼클렌징 (출시 준비 중)</h3>
+    <span class="product-launch">출시 준비 중</span>
+    <div class="product-concept">
+      <strong>메인 성분</strong>: 흰목이버섯 다당류 + 보조 식자재<br>
+      <strong>포지션</strong>: 데일리 약산성 식자재 클렌저<br>
+      <strong>직접 경쟁자</strong>: 비플레인 녹두, 에스네이처 쌀, 라운드랩 독도
+    </div>
+    <table class="matching-pain-table">
+      <thead>
+        <tr><th>오늘 페인포인트</th><th class="match-cell">매칭</th><th>분석</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>폼클 #1 "약산성=세정력 부족"</td><td class="match-cell">🔴</td><td>비플레인·라운드랩 모두 "2차 세안/1차 세안 필요"라는 동일 한계. <strong>1회 세안 완결이 핵심 차별점</strong>이 되려면 세정력 포뮬러 검증 필수</td></tr>
+        <tr><td>폼클 #2 "식자재 신뢰+한계"</td><td class="match-cell">🟢</td><td>쌀·녹두 양대 진영에 "버섯"이라는 새 카테고리 진입 → 신선함 확보</td></tr>
+        <tr><td>폼클 #3 "거품 질감"</td><td class="match-cell">🟡</td><td>소비자가 "쫀쫀한, 몽글몽글한, 크리미한" 거품을 최우선시. <strong>거품 질감 개발 테스트</strong> 결과 확인 필요</td></tr>
+      </tbody>
+    </table>
+    <div class="priority-block red">
+      <div class="priority-label">🔴 즉시 결정 필요</div>
+      <ul>
+        <li><strong>"1회 세안 완결" vs "데일리 순한 클렌저" 포지션 결정</strong>: 비플레인·라운드랩의 갭을 직접 공략하려면 세정력 강화 필수이나, 세정력을 올리면 순함이 희생될 수 있음. 어느 쪽에 무게를 둘 것인지 결정</li>
+        <li><strong>보조 식자재 결정</strong>: 녹두? 쌀? 다시마? 기존 식자재와 겹치지 않는 조합이 차별화의 핵심</li>
+      </ul>
+    </div>
+    <div class="priority-block yellow">
+      <div class="priority-label">🟡 검토 권장</div>
+      <ul>
+        <li><strong>거품 질감 테스트</strong>: "쫀쫀하고 크리미한 거품"이 사용 만족도 1순위. 흰목이버섯 다당류가 거품 질감에 어떤 영향을 미치는지 확인</li>
+        <li><strong>가격 포지셔닝</strong>: 비플레인 녹두 16,900원/200ml, 에스네이처 쌀 12,000원/150ml, 라운드랩 독도 12,000원/200ml 대비 합리적 책정 필요</li>
+      </ul>
+    </div>
+    <div class="priority-block green">
+      <div class="priority-label">🟢 강점</div>
+      <ul>
+        <li><strong>"버섯" 식자재 클렌저라는 카테고리 자체가 시장에 없음</strong>: 쌀/녹두 양대 진영에 새 축 형성 가능</li>
+        <li><strong>흰목이버섯 다당류의 보습 + 세정 이중 기능</strong>: 글로벌 tremella 시장 38억달러(2033년) 성장 전망, "차세대 식물성 히알루론산" 포지셔닝 활용 가능</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Key Action Box -->
+  <div class="key-action-box">
+    <h3>🎯 종합: 오늘 리포트가 개발팀에 주는 핵심 액션</h3>
+    <div class="action-phase">출시 4주 전 (지금~5월 초)</div>
+    <div class="action-item">1. 키위케일바나나 세럼 <strong>민감피부 자극감 체험단 20명 결과 확보</strong> → "넘버즈인보다 순한" 근거 마련</div>
+    <div class="action-item">2. ABC 세럼 <strong>"2주 변화" 비포/애프터 촬영</strong> 착수 → 출시 동시 릴스 자산</div>
+    <div class="action-phase">출시 동시 (5월 말)</div>
+    <div class="action-item">1. <strong>릴스-캐러셀 이원 콘텐츠 10세트</strong> 사전 제작 (릴스 5개 + 캐러셀 5개)</div>
+    <div class="action-item">2. <strong>나노 인플루언서 15명 시딩</strong> 실행 → "3주 변화" UGC 릴스 생성</div>
+    <div class="action-item">3. 폼클렌징은 <strong>포지션 결정(1회 세안 완결 vs 데일리 순한)</strong> 후 포뮬러 최종 확정</div>
+  </div>
+
+  <!-- 성분·시장 트렌드 흐름 -->
+  <div class="section-title">📈 성분·시장 트렌드 흐름 (가볍게 추적)</div>
+
+  <div class="flow-card">
+    <h4>흐름 1. PDRN — 식물 유래 비동물성 PDRN이 2026년 주류로</h4>
+    <div class="flow-detail">4/28 시그널: 연어 DNA 대신 장미/알로에/말차 등 식물 PDRN 부상</div>
+    <div class="flow-detail">아누아 PDRN 캡슐 세럼이 화해 2위(111,468건 리뷰)로 PDRN 대중화 견인</div>
+    <div class="flow-haruna">실키 머쉬룸 바디크림의 PDRN USP를 "비건 PDRN"으로 한 단계 업그레이드 가능</div>
+  </div>
+
+  <div class="flow-card">
+    <h4>흐름 2. 흰목이버섯(Tremella) — 글로벌 시장 급성장</h4>
+    <div class="flow-detail">글로벌 tremella 스킨케어 시장: 2024년 12억달러 → 2033년 38억달러 전망</div>
+    <div class="flow-detail">대봉엘에스가 In-Cosmetics Global 2026에서 Tremellan-MC Extract 출품</div>
+    <div class="flow-detail">TikTok에서 비포/애프터 콘텐츠로 바이럴 진행 중</div>
+    <div class="flow-haruna">"스네일뮤신의 비건 대안"으로 글로벌 포지셔닝 가능. 국내보다 해외에서 먼저 인지도 형성 중</div>
+  </div>
+
+  <div class="flow-card">
+    <h4>흐름 3. 비건·클린뷰티 — 소비자 선택의 기본 기준으로 정착</h4>
+    <div class="flow-detail">EWG 인증/클린 뷰티 라벨이 "프리미엄 옵션"에서 "기본 기대치"로 전환</div>
+    <div class="flow-detail">올리브영 2026 트렌드 키워드에 비건/클린 포함</div>
+    <div class="flow-haruna">비건 인증은 더 이상 차별점이 아니라 필수 요건. "비건+@"에서 @가 진짜 차별점 (= 식자재 스토리, PDRN, NAD+)</div>
+  </div>
+
+  <div class="monitor-box">
+    <h5>한 주 후 모니터링 포인트</h5>
+    <ul>
+      <li>올영데이 후 실사용 후기 폭발 예상 → PDRN·모공 세럼 리뷰 변화 추적</li>
+      <li>5월 초 초여름 전환기 → "가벼운 텍스처" 검색량 변화</li>
+    </ul>
+  </div>
+
+  <div class="monitor-box" style="margin-top: 12px;">
+    <h5>이번 주 빠진 시그널 (다음 주 보강 필요)</h5>
+    <ul>
+      <li>아토팜 MLE 1~2점 리뷰 deep dive (전일 데이터 부족했던 부분)</li>
+      <li>해외 r/AsianBeauty Tremella 관련 최신 스레드 확인</li>
+    </ul>
+  </div>
+
+  <!-- 오늘의 시장 이벤트 -->
+  <div class="event-card" style="margin-top: 28px;">
+    <h3>📅 오늘의 시장 이벤트 (보조)</h3>
+    <ul>
+      <li>올영데이 종료 후 "사용 후기 축적기" — 이번 주 커뮤니티 리뷰 급증 예상</li>
+      <li>서울 봄비 후 습도 상승 → 산뜻한 텍스처 검색량 상승 시기</li>
+      <li>K-뷰티 릴스 제작 플랫폼 '글로브' 700여 브랜드 확보 — 릴스 제작 수요 폭발 방증</li>
+    </ul>
+  </div>
+
+  <!-- 내일 준비 제안 -->
+  <div class="tomorrow-card">
+    <h3>📌 내일 준비 제안</h3>
+    <h4>데이터 보강 항목</h4>
+    <ol>
+      <li>넘버즈인 3번 vs 키위케일바나나 <strong>자극감 비교 데이터</strong> 심화 (화해 1~2점 리뷰 직접 분석)</li>
+      <li>에스트라 아토베리어365 <strong>1~2점 리뷰 확보</strong> (오늘 단점 데이터 부족)</li>
+      <li>코스알엑스 비타C 23% <strong>자극 리뷰 deep dive</strong> (ABC 세럼 포지셔닝 근거)</li>
+    </ol>
+    <h4>콘텐츠 사전 준비 항목</h4>
+    <ol>
+      <li>"끈적임 싫어서 바디로션 안 바르시는 분?" 릴스 스크립트 초안</li>
+      <li>NAD+ 교육 캐러셀 구성안 (1분 안에 이해되는 5장 슬라이드)</li>
+    </ol>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources-section">
+    <h3>📎 Sources</h3>
+    <a href="https://www.weather.go.kr/w/forecast/overall/short-term.do" target="_blank">기상청 날씨누리</a>
+    <a href="https://unpa.me/community/lotion/111901138" target="_blank">끈적임 없는 고보습 바디로션 (언파)</a>
+    <a href="https://theqoo.net/theqdeal/3745534027" target="_blank">여름에도 바디로션 꼭 쓰는 덬들 (더쿠)</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1516401" target="_blank">건성피부 바디로션 추천 (디시)</a>
+    <a href="https://unpa.me/community/question/80454151" target="_blank">모공각화증 바디로션 추천 (언파)</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1501274" target="_blank">닭살피부 매끈해진 루틴 (디시)</a>
+    <a href="https://theqoo.net/beauty/3061694793" target="_blank">소소한 바디로션 리뷰 (더쿠)</a>
+    <a href="https://unpa.me/reviews/375255" target="_blank">넘버즈인 3번 결 세럼 후기 (언파)</a>
+    <a href="https://unpa.me/review/detail/7d778c99-40ed-475e-a9c5-d781aa9e4ab0" target="_blank">넘버즈인 3번 결세럼팩 파워리뷰 (언파)</a>
+    <a href="https://theqoo.net/beauty/4166572126" target="_blank">구달 청귤 비타C TXA 세럼 후기 (더쿠)</a>
+    <a href="https://theqoo.net/beauty/3258224813" target="_blank">구달 청귤 비타C 미백 후기 (더쿠)</a>
+    <a href="https://unpa.me/reviews/397942" target="_blank">라운드랩 1025 독도 클렌저 (언파)</a>
+    <a href="https://www.glowpick.com/products/105588" target="_blank">라운드랩 독도 클렌저 (글로우픽)</a>
+    <a href="https://glowpick.co.kr/product/161270" target="_blank">에스네이처 아쿠아 라이스 (글로우픽)</a>
+    <a href="https://www.musinsa.com/review/80138892" target="_blank">에스네이처 클렌징폼 (무신사)</a>
+    <a href="https://unpa.me/reviews/168845" target="_blank">SRB 쌀뜨물 효소세안제 (언파)</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1481151" target="_blank">디시 클렌징폼 약산성 추천 (디시)</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1450005" target="_blank">디시 폼클 30개 후기 (디시)</a>
+    <a href="https://fashionmagazine.com/beauty-grooming/cordyceps-tremella-mushroom-skincare/" target="_blank">Tremella 스킨케어 (FASHION Magazine)</a>
+    <a href="https://vitalpour.com/blogs/vital-guides/tremella-mushroom-the-complete-guide-to-skin-health-and-beauty-benefits" target="_blank">Tremella 시장 분석 (Vital Pour)</a>
+    <a href="https://www.cosmorning.com/news/article.html?no=52640" target="_blank">대봉엘에스 In-Cosmetics 2026 (코스모닝)</a>
+    <a href="https://www.metroprivatelabel.com/ko/PDRN-%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4-%ED%93%A8%EC%B2%98-%EC%8A%A4%ED%82%A8-%EB%A6%AC%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%EC%85%98/" target="_blank">PDRN 스킨케어 2026 (Metro Private Label)</a>
+    <a href="https://www.threads.com/@solution.kim/post/DTIEXajkzLa/" target="_blank">2026 릴스 전략 (Threads @solution.kim)</a>
+    <a href="https://www.i-boss.co.kr/ab-2987-488187" target="_blank">릴스 100만뷰 TIP (아이보스)</a>
+    <a href="https://stackinfluence.com/blog/best-beauty-influencer-campaign-examples" target="_blank">뷰티 인플루언서 캠페인 (StackInfluence)</a>
+    <a href="https://www.wearisma.com/2026-beauty-influencer-marketing-benchmarks/" target="_blank">2026 뷰티 인플루언서 벤치마크 (WeArisma)</a>
+    <a href="https://gogumafarm.kr/%EB%A6%B4%EC%8A%A4-%EC%95%88-%ED%95%98%EB%A9%B4-%EB%85%B8%EC%B6%9C%EB%8F%84-%EC%97%86%EB%8B%A4-%EC%9D%B8%EC%8A%A4%ED%83%80-ui-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%EA%B0%80-%EB%B8%8C%EB%9E%9C%EB%93%9C/" target="_blank">릴스 필수화 (고구마팜)</a>
+    <a href="https://www.newstopkorea.com/news/articleView.html?idxno=29994" target="_blank">K-뷰티 릴스 글로브 (뉴스톱)</a>
+  </div>
+
+</div>
+</body>
+</html>
