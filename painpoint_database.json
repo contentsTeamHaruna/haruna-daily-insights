@@ -1,31 +1,65 @@
 {
+  "version": 2,
   "lastUpdated": "2026-04-28",
-  "totalQuotes": 54,
-  "totalSources": 46,
+  "totalQuotes": 53,
+  "totalSources": 45,
+  "totalLifeContext": 21,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
-      "painpoints": [
+      "topics": [
         {
-          "title": "\"옷에 달라붙는 끈적임\"이 가장 명확한 즉시 탈락 사유",
+          "topic_id": "stickiness",
+          "label": "끈적임 / 옷에 달라붙음",
+          "icon": "🧴",
+          "summary": "고보습=끈적임이라는 구조적 딜레마. 끈적임 때문에 바디로션 자체를 포기하는 비사용층까지 존재.",
+          "subtitles": [
+            {
+              "title": "\"옷에 달라붙는 끈적임\"이 가장 명확한 즉시 탈락 사유",
+              "report_date": "2026-04-27"
+            },
+            {
+              "title": "끈적임 혐오로 바디로션 자체를 포기하는 소비자층 존재",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "text": "유분있는, 잘안발리는, 리치한, 흡수안되는, 밀림있는",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "다른 크림보다는 무게감이 있어서 손등에 덜어서 펼친 다음 톡톡 얹어서 소량씩 레이어드",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "아침에 바르기엔 살짝 무거운 느낌",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
+            },
+            {
+              "text": "끈적이는거 싫어해서 바디로션도 안바르는데 계속 건조",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "세타필 일리윤 건성용 같이 쓰거든 오늘부터 습해서 너무 끈적거리고 미치겠음",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "과도한 유분감의 고보습 바디로션을 바르면 끈적임과 텁텁함",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -33,38 +67,93 @@
               "title": "더쿠 [오프온] 바디로션 후기 (4/26)",
               "url": "https://theqoo.net/beauty/4099764448",
               "description": "\"끈적함 없이 옷에 안 달라붙는다\" 인용 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "title": "라로슈포제 시카플라스트 B5+ (화해)",
               "url": "https://www.hwahae.co.kr/products/라로슈포제-시카플라스트-밤-B5PLUS/2010052",
               "description": "평점 4.47, 5,166건 리뷰. 1~2점 키워드 \"유분/잘안발림/밀림\" 직접 검색 가능",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "라로슈포제 시카플라스트 B5+ 무거움 후기 (언파)",
               "url": "https://unpa.me/products/164429",
               "description": "\"아침에 바르기엔 살짝 무거운 느낌\" 인용 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
+            },
+            {
+              "title": "끈적이는거 싫어해서 바디로션도 안바르는데 (lostmindlab)",
+              "url": "https://lostmindlab.com/article/review/4/145",
+              "description": "끈적임 혐오 → 사용 포기 → 건조 악순환 직접 인용 출처",
+              "report_date": "2026-04-28",
+              "life_context": true
+            },
+            {
+              "title": "여름에도 바디로션 꼭 쓰는 덬들 뭐 써? (더쿠)",
+              "url": "https://theqoo.net/theqdeal/3745534027",
+              "description": "환절기 끈적임 급상승 불만 출처",
+              "report_date": "2026-04-28",
+              "life_context": true
+            },
+            {
+              "title": "끈적임 없는 고보습 바디로션 추천 (언파)",
+              "url": "https://unpa.me/community/lotion/111901138",
+              "description": "고보습=끈적임 딜레마 인용 출처",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "\"가려움·오돌토돌 = 보습 부족 시그널\"이라는 인식이 정착됨",
+          "topic_id": "hydration_failure",
+          "label": "가려움·오돌토돌 / 보습 지속력 부족",
+          "icon": "💧",
+          "summary": "보습이 추상어 시대에서 '결과 행동 변화'(긁다 깸·다시 바르게 됨) 시대로 전환. 야간 8시간 보습이 새 합격선.",
+          "subtitles": [
+            {
+              "title": "\"가려움·오돌토돌 = 보습 부족 시그널\"이라는 인식이 정착됨",
+              "report_date": "2026-04-27"
+            },
+            {
+              "title": "새벽 야간 가려움 — 보습 지속력 8시간의 벽",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "오돌토돌한, 손톱으로 긁으면 뭐가 나오는 그 느낌이 많이 줄어들었어",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "text": "다음날 몸 긁는 일도 없어졌어",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "text": "보습 제대로 하면 모공이 쫀쫀하게 차오름 (보습 부족하면 모공이 커보임)",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "새벽에 자꾸 다리쪽 건조해서 뒤지게 가려워서 벅벅 긁다 깸",
+              "report_date": "2026-04-28",
+              "life_context": true
+            },
+            {
+              "text": "발라도 건조해서 자꾸 다시 바르게 됨",
+              "report_date": "2026-04-28",
+              "life_context": true
+            },
+            {
+              "text": "흡수 쫩쫩 잘됨. 미끈거리는거 안남음 손에도 안남음 행.복.",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -72,143 +161,65 @@
               "title": "더쿠 [오프온] 바디로션 후기",
               "url": "https://theqoo.net/beauty/4099764448",
               "description": "\"오돌토돌 줄었다\", \"다음날 안 긁는다\" 결과 행동 워딩 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "title": "디시 클렌징·보습·선크림 총정리",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521051",
               "description": "\"보습 제대로 하면 모공이 쫀쫀하게 차오름\" 인용 출처",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "\"향\"이 호불호의 핵심 변수 — 너무 강하면 멀미, 너무 약하면 매력 없음",
-          "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
-          "quotes": [
-            {
-              "text": "멀미 나지 않고 지금 계절에 잘 어울리는 좀 따뜻한 향",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
-            {
-              "text": "여름엔 좀 덥다고 느끼는 사람이 있을거 같",
-              "report_date": "2026-04-27"
-            }
-          ],
-          "sources": [
-            {
-              "title": "더쿠 [오프온] 바디로션 후기",
-              "url": "https://theqoo.net/beauty/4099764448",
-              "description": "\"멀미 안 나는 따뜻한 향\", \"여름엔 더울 수도\" 향 호불호 인용 출처",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "더쿠 향 좋은 바디로션 추천",
-              "url": "https://theqoo.net/square/2183713536",
-              "description": "향 지속력 중심 추천 흐름 (로라메르시에·딥티크·빅토리아시크릿)",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "더쿠 스타들이 향수보다 사랑하는 보디 크림",
-              "url": "https://theqoo.net/square/356744835",
-              "description": "프리미엄 향 바디크림 게시글",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "끈적임 혐오로 바디로션 자체를 포기하는 소비자층 존재",
-          "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
-          "quotes": [
-            {
-              "text": "끈적이는거 싫어해서 바디로션도 안바르는데 계속 건조",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "세타필 일리윤 건성용 같이 쓰거든 오늘부터 습해서 너무 끈적거리고 미치겠음",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "과도한 유분감의 고보습 바디로션을 바르면 끈적임과 텁텁함",
-              "report_date": "2026-04-28"
-            }
-          ],
-          "sources": [
-            {
-              "title": "끈적이는거 싫어해서 바디로션도 안바르는데 (lostmindlab)",
-              "url": "https://lostmindlab.com/article/review/4/145",
-              "description": "끈적임 혐오 → 사용 포기 → 건조 악순환 직접 인용 출처",
-              "report_date": "2026-04-28"
-            },
-            {
-              "title": "여름에도 바디로션 꼭 쓰는 덬들 뭐 써? (더쿠)",
-              "url": "https://theqoo.net/theqdeal/3745534027",
-              "description": "환절기 끈적임 급상승 불만 출처",
-              "report_date": "2026-04-28"
-            },
-            {
-              "title": "끈적임 없는 고보습 바디로션 추천 (언파)",
-              "url": "https://unpa.me/community/lotion/111901138",
-              "description": "고보습=끈적임 딜레마 인용 출처",
-              "report_date": "2026-04-28"
-            }
-          ]
-        },
-        {
-          "title": "새벽 야간 가려움 — 보습 지속력 8시간의 벽",
-          "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
-          "quotes": [
-            {
-              "text": "새벽에 자꾸 다리쪽 건조해서 뒤지게 가려워서 벅벅 긁다 깸",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "발라도 건조해서 자꾸 다시 바르게 됨",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "흡수 쫩쫩 잘됨. 미끈거리는거 안남음 손에도 안남음 행.복.",
-              "report_date": "2026-04-28"
-            }
-          ],
-          "sources": [
             {
               "title": "건성피부 바디로션 추천좀 (디시 화장품갤)",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1516401",
               "description": "\"새벽에 가려워서 긁다 깸\" 야간 건조 직접 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": true
             },
             {
               "title": "소소한 겨울 바디로션 리뷰 더마비/일리윤 (더쿠)",
               "url": "https://theqoo.net/beauty/3061694793",
               "description": "\"발라도 건조해서 다시 바르게 됨\" + 일리윤 만족 워딩 비교 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": true
             }
           ]
         },
         {
-          "title": "모공각화증(닭살) 고민 — 바디로션만으로는 해결 안 됨",
+          "topic_id": "keratosis",
+          "label": "모공각화증 / 닭살",
+          "icon": "🌾",
+          "summary": "바디로션 단독으로는 해결되지 않는 만성 고민. 우레아·SA는 효과적이지만 자극.",
+          "subtitles": [
+            {
+              "title": "모공각화증(닭살) 고민 — 바디로션만으로는 해결 안 됨",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-28",
           "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": true
             },
             {
               "text": "우레아 효과 → 각질 싹 사라짐",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "피부가 완전 매끈해졌어",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "오돌토돌한, 손톱으로 긁으면 뭐가 나오는 그 느낌이 많이 줄어들었어",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": true
             }
           ],
           "sources": [
@@ -216,37 +227,136 @@
               "title": "모공각화증 피부 바디로션 추천 (언파)",
               "url": "https://unpa.me/community/question/80454151",
               "description": "\"울글불긋 우둘투둘 스트레스\" 직접 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": true
             },
             {
               "title": "닭살피부 인생 n년차 매끈해진 루틴 (디시)",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1501274",
               "description": "우레아 크림+바디로션 조합으로 개선 성공 사례",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
+        },
+        {
+          "topic_id": "fragrance",
+          "label": "향 (호불호)",
+          "icon": "🌸",
+          "summary": "향-고집층 vs 무향-실용층의 양극화. 한 제품으로 두 층 모두 만족 불가.",
+          "subtitles": [
+            {
+              "title": "\"향\"이 호불호의 핵심 변수 — 너무 강하면 멀미, 너무 약하면 매력 없음",
+              "report_date": "2026-04-27"
+            }
+          ],
+          "first_seen": "2026-04-27",
+          "last_seen": "2026-04-27",
+          "quotes": [
+            {
+              "text": "멀미 나지 않고 지금 계절에 잘 어울리는 좀 따뜻한 향",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 좀 덥다고 느끼는 사람이 있을거 같",
+              "report_date": "2026-04-27",
+              "life_context": true
+            }
+          ],
+          "sources": [
+            {
+              "title": "더쿠 [오프온] 바디로션 후기",
+              "url": "https://theqoo.net/beauty/4099764448",
+              "description": "\"멀미 안 나는 따뜻한 향\", \"여름엔 더울 수도\" 향 호불호 인용 출처",
+              "report_date": "2026-04-27",
+              "life_context": true
+            },
+            {
+              "title": "더쿠 향 좋은 바디로션 추천",
+              "url": "https://theqoo.net/square/2183713536",
+              "description": "향 지속력 중심 추천 흐름 (로라메르시에·딥티크·빅토리아시크릿)",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "더쿠 스타들이 향수보다 사랑하는 보디 크림",
+              "url": "https://theqoo.net/square/356744835",
+              "description": "프리미엄 향 바디크림 게시글",
+              "report_date": "2026-04-27",
+              "life_context": false
+            }
+          ]
+        },
+        {
+          "topic_id": "texture_application",
+          "label": "제형·발림성 (무거움·뻑뻑함)",
+          "icon": "🤲",
+          "summary": "재생·고보습 약속하는 제품일수록 무거움. 가벼운 제형에 같은 효능을 담는 것이 차별 포인트.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
+        },
+        {
+          "topic_id": "misc",
+          "label": "기타",
+          "icon": "📌",
+          "summary": "토픽 자동 분류에 매칭되지 않은 페인포인트.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
         }
       ]
     },
     "serum": {
       "name": "🧪 세럼",
-      "painpoints": [
+      "topics": [
         {
-          "title": "\"화장 전에 발라도 안 밀리는 흡수력\"이 합격선",
+          "topic_id": "absorption_makeup",
+          "label": "흡수력 / 화장 밀림",
+          "icon": "💦",
+          "summary": "세럼의 1차 합격선은 효능이 아니라 흡수력+레이어링 호환성. 안 밀려야 효능 평가가 시작됨.",
+          "subtitles": [
+            {
+              "title": "\"화장 전에 발라도 안 밀리는 흡수력\"이 합격선",
+              "report_date": "2026-04-27"
+            },
+            {
+              "title": "\"화장 전에 밀리지 않는 흡수력\"이 여전히 합격선",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
             },
             {
               "text": "히알루론산 세럼 하면 끈적임을 걱정하게 되는데, 이 제품은 신기하게도 전혀 끈적임이 없다",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "챱챱 소리를 내면서 피부 속으로 쏙 스며드는 느낌",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": true
+            },
+            {
+              "text": "다른 제품들이랑도 잘 어우러져서 화장이 뜨거나 그러지도 않아",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "끈적임 없이 산뜻하게 마무리",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -254,42 +364,72 @@
               "title": "더쿠 \"지성 아침에 화장 전 사용할 세럼 추천해주라\"",
               "url": "https://theqoo.net/beauty/3712802211",
               "description": "\"무거울까봐, 기름지거나 끈적하지 않은\" 인용 출처 (지성·복합성 사용자의 직접 워딩)",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "토리든 다이브인 세럼 솔직 후기 (언파)",
               "url": "https://unpa.me/community/essence/113532838",
               "description": "\"챱챱 흡수\", \"끈적임 없는 워터리\" 5점 워딩 다수 확인 가능",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "토리든 다이브인 화해 페이지",
               "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174",
               "description": "평점 4.60, 리뷰 80,611건의 5점/1~2점 분포 확인",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "구달 청귤 비타C 세럼 후기 (더쿠)",
+              "url": "https://theqoo.net/beauty/4166572126",
+              "description": "\"화장이 뜨거나 안함\" 레이어링 호환성 워딩 출처",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "title": "넘버즈인 3번 결 세럼 내돈내산 (언파)",
+              "url": "https://unpa.me/reviews/348082",
+              "description": "\"끈적임 없이 산뜻\" 텍스처 만족 출처",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "무난함=재구매 죽음",
+          "topic_id": "efficacy_evidence",
+          "label": "효과 입증 / 무난함=재구매 죽음",
+          "icon": "📊",
+          "summary": "사용감만 좋으면 무난해도 갈아탐. '결정적 변화 워딩'이 없으면 재구매 안 일어남.",
+          "subtitles": [
+            {
+              "title": "무난함=재구매 죽음",
+              "report_date": "2026-04-27"
+            }
+          ],
           "first_seen": "2026-04-27",
           "last_seen": "2026-04-27",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "너무 무난해서 재구매는 안할듯",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "text": "이상한 제품 쓰고 돈 날리지 않기를 바라며 쓴다",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             }
           ],
           "sources": [
@@ -297,71 +437,65 @@
               "title": "더쿠 \"브링그린 징크테카 세럼 두달 써봤는데\"",
               "url": "https://theqoo.net/beauty/4064190739",
               "description": "\"효과 모르겠음\", \"무난해서 재구매 안할듯\" 무난함=이탈 직접 인용 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "디시 클렌징 제품 추천 종결",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521445",
               "description": "\"돈 날리지 않기를 바라며\" 신중한 구매자 워딩 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "같은 제품, 피부타입에 따라 평가 정반대",
-          "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
-          "quotes": [
+          "topic_id": "irritation_balance",
+          "label": "자극 vs 효과 밸런스",
+          "icon": "⚖️",
+          "summary": "효과적인 건 자극적, 순한 건 효과 약함. '매일 써도 안 따가운데 효과 보이는' 갭이 가장 큼.",
+          "subtitles": [
             {
-              "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
-              "report_date": "2026-04-27"
+              "title": "모공 세럼의 자극감 — 효과는 보이는데 매일 쓰기엔 따가움",
+              "report_date": "2026-04-28"
             },
             {
-              "text": "지성이라 괜찮게 잘 쓰는 중",
-              "report_date": "2026-04-27"
-            },
-            {
-              "text": "두번 레이어링 하거나, 수분감있는 다른 제품들과 함께 사용해주면 수분감, 보습감에 더욱 도움",
-              "report_date": "2026-04-27"
+              "title": "브라이트닝 세럼 = 고함량이면 자극, 저함량이면 효과 없음",
+              "report_date": "2026-04-28"
             }
           ],
-          "sources": [
-            {
-              "title": "더쿠 브링그린 징크테카 두달 후기",
-              "url": "https://theqoo.net/beauty/4064190739",
-              "description": "\"지성=괜찮음 / 건성=건조할 수도\" 정반대 평가 인용 출처",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "토리든 다이브인 세럼 후기 (언파)",
-              "url": "https://unpa.me/community/essence/125685303",
-              "description": "\"단독 사용 시 보습 부족\", 레이어링 권장 시그널 출처",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "토리든 다이브인 추가 후기 (언파)",
-              "url": "https://unpa.me/community/essence/113532838",
-              "description": "같은 제품에 다른 피부타입 평가 비교 가능",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "모공 세럼의 자극감 — 효과는 보이는데 매일 쓰기엔 따가움",
           "first_seen": "2026-04-28",
           "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "팩을 얹자마자 상큼한 향이 진하게 나고 5분도 안 돼서 따갑고 자극이 느껴짐",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "발효 성분이 안 맞으신다면 추천드리고 싶지 않은",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "잡티에 효과",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "피부가 훨씬 광택있어보여",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "살짝 점도있는 느낌이고 흡수는 빨리되는 편",
+              "report_date": "2026-04-28",
+              "life_context": true
             }
           ],
           "sources": [
@@ -369,99 +503,190 @@
               "title": "넘버즈인 3번 보들보들 결 세럼 후기 (언파)",
               "url": "https://unpa.me/reviews/375255",
               "description": "\"화끈거림, 따갑다\" 자극 워딩 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "넘버즈인 3번 결세럼팩 파워리뷰 (언파)",
               "url": "https://unpa.me/review/detail/7d778c99-40ed-475e-a9c5-d781aa9e4ab0",
               "description": "\"5분 만에 따갑고 자극\" 발효 성분 불적합 인용 출처",
-              "report_date": "2026-04-28"
-            }
-          ]
-        },
-        {
-          "title": "브라이트닝 세럼 = 고함량이면 자극, 저함량이면 효과 없음",
-          "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
-          "quotes": [
-            {
-              "text": "잡티에 효과",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
-            {
-              "text": "피부가 훨씬 광택있어보여",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "살짝 점도있는 느낌이고 흡수는 빨리되는 편",
-              "report_date": "2026-04-28"
-            }
-          ],
-          "sources": [
             {
               "title": "구달 청귤 비타C E TXA 세럼 체험단 후기 (더쿠)",
               "url": "https://theqoo.net/beauty/4166572126",
               "description": "\"점도있지만 흡수 빠름\", \"광택 남아 피부 좋아보임\" 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "미백 비타민 중독자의 구달 청귤 비타C 후기 (더쿠)",
               "url": "https://theqoo.net/beauty/3258224813",
               "description": "\"붉은 잡티 눈에 띄게 사라짐\" 효과 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "\"화장 전에 밀리지 않는 흡수력\"이 여전히 합격선",
-          "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
+          "topic_id": "skin_type_matching",
+          "label": "피부 타입 적합성 (지성·건성·복합성)",
+          "icon": "🎯",
+          "summary": "동일 제품에 정반대 평가 공존. 첫 질문이 '성분이 뭐야'가 아니라 '내 피부타입에 맞아?'.",
+          "subtitles": [
+            {
+              "title": "같은 제품, 피부타입에 따라 평가 정반대",
+              "report_date": "2026-04-27"
+            }
+          ],
+          "first_seen": "2026-04-27",
+          "last_seen": "2026-04-27",
           "quotes": [
             {
-              "text": "다른 제품들이랑도 잘 어우러져서 화장이 뜨거나 그러지도 않아",
-              "report_date": "2026-04-28"
+              "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
-              "text": "끈적임 없이 산뜻하게 마무리",
-              "report_date": "2026-04-28"
+              "text": "지성이라 괜찮게 잘 쓰는 중",
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
-              "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
-              "report_date": "2026-04-28"
+              "text": "두번 레이어링 하거나, 수분감있는 다른 제품들과 함께 사용해주면 수분감, 보습감에 더욱 도움",
+              "report_date": "2026-04-27",
+              "life_context": false
             }
           ],
           "sources": [
             {
-              "title": "구달 청귤 비타C 세럼 후기 (더쿠)",
-              "url": "https://theqoo.net/beauty/4166572126",
-              "description": "\"화장이 뜨거나 안함\" 레이어링 호환성 워딩 출처",
-              "report_date": "2026-04-28"
+              "title": "더쿠 브링그린 징크테카 두달 후기",
+              "url": "https://theqoo.net/beauty/4064190739",
+              "description": "\"지성=괜찮음 / 건성=건조할 수도\" 정반대 평가 인용 출처",
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
-              "title": "넘버즈인 3번 결 세럼 내돈내산 (언파)",
-              "url": "https://unpa.me/reviews/348082",
-              "description": "\"끈적임 없이 산뜻\" 텍스처 만족 출처",
-              "report_date": "2026-04-28"
+              "title": "토리든 다이브인 세럼 후기 (언파)",
+              "url": "https://unpa.me/community/essence/125685303",
+              "description": "\"단독 사용 시 보습 부족\", 레이어링 권장 시그널 출처",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "토리든 다이브인 추가 후기 (언파)",
+              "url": "https://unpa.me/community/essence/113532838",
+              "description": "같은 제품에 다른 피부타입 평가 비교 가능",
+              "report_date": "2026-04-27",
+              "life_context": false
             }
           ]
+        },
+        {
+          "topic_id": "pore_care",
+          "label": "모공 케어",
+          "icon": "🔬",
+          "summary": "효과는 검증됐으나 자극이 발목을 잡음. 순한 모공 세럼이라는 갭이 명확.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
+        },
+        {
+          "topic_id": "brightening",
+          "label": "브라이트닝 / 광채",
+          "icon": "✨",
+          "summary": "고함량=자극, 저함량=무효. 매일 쓸 수 있는 저자극 광채라는 포지션이 비어 있음.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
+        },
+        {
+          "topic_id": "misc",
+          "label": "기타",
+          "icon": "📌",
+          "summary": "토픽 자동 분류에 매칭되지 않은 페인포인트.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
         }
       ]
     },
     "cleansing": {
       "name": "🧼 폼클렌징",
-      "painpoints": [
+      "topics": [
         {
-          "title": "약산성 vs 약알칼리",
-          "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
-          "quotes": [
+          "topic_id": "cleansing_vs_mildness",
+          "label": "세정력 vs 순함 (약산성·약알칼리·1차세안)",
+          "icon": "⚖️",
+          "summary": "약산성=2차 세안 필요. '약산성인데 1회로 끝나는' 제품이 시장 공백.",
+          "subtitles": [
             {
-              "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
+              "title": "약산성 vs 약알칼리",
               "report_date": "2026-04-27"
             },
             {
-              "text": "약한 세안제로 코 등 피지있는곳 여러번 문지르면 더 자극됨",
+              "title": "세정력 vs 보습",
               "report_date": "2026-04-27"
+            },
+            {
+              "title": "\"약산성은 순하지만 세정력 부족\" — 영원한 딜레마",
+              "report_date": "2026-04-28"
+            }
+          ],
+          "first_seen": "2026-04-27",
+          "last_seen": "2026-04-28",
+          "quotes": [
+            {
+              "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "약한 세안제로 코 등 피지있는곳 여러번 문지르면 더 자극됨",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "촉촉함을 많이 담고 있는 클렌징 폼",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "중건성 피부 사용 시 피부가 당기거나 상처 부위에 자극이 가지 않음",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "2차 세안이 필요",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "보습 제대로 하면 모공이 쫀쫀하게 차오름",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "약산성 쓰면 여드름 남, 세정력 강한 건 싫고 적당한 거 없을까",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "약산성 제품치고 퐁퐁 만들어지는 거품",
+              "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "단독으로만 화장을 지우기는 어려워 오일이나 밤으로 1차 세안 필요",
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -469,145 +694,81 @@
               "title": "디시 클렌징·보습·선크림 총정리",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521051",
               "description": "\"약알칼리+빡센 보습\" / \"약한 세안제 여러번 문지르면 자극\" 고인 사용자의 직접 워딩 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "디시 클렌징폼 강력 추천 (4/22)",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1524913",
               "description": "뉴트로지나 등 약알칼리 추천글, pH 논의 흐름 확인",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "세정력 vs 보습",
-          "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
-          "quotes": [
-            {
-              "text": "촉촉함을 많이 담고 있는 클렌징 폼",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
-            {
-              "text": "중건성 피부 사용 시 피부가 당기거나 상처 부위에 자극이 가지 않음",
-              "report_date": "2026-04-27"
-            },
-            {
-              "text": "2차 세안이 필요",
-              "report_date": "2026-04-27"
-            },
-            {
-              "text": "보습 제대로 하면 모공이 쫀쫀하게 차오름",
-              "report_date": "2026-04-27"
-            }
-          ],
-          "sources": [
             {
               "title": "비플레인 녹두 약산성 클렌징폼 후기 (언파)",
               "url": "https://unpa.me/review/detail/82338663-af19-4d5b-b03c-ac30f6962c25",
               "description": "\"촉촉함 / 당김 없음\" 5점 워딩 + \"2차 세안 필요\" 한계 시그널 출처",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
             {
               "title": "비플레인 녹두 화해 페이지",
               "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200",
               "description": "평점 4.6, 리뷰 347,860건의 5점/1~2점 분포 직접 확인",
-              "report_date": "2026-04-27"
+              "report_date": "2026-04-27",
+              "life_context": false
             },
-            {
-              "title": "디시 클렌징·보습 총정리",
-              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521051",
-              "description": "\"보습 제대로 하면 모공이 쫀쫀\" 인용 출처",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "클렌징은 단계가 아니라 컨디션",
-          "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
-          "quotes": [
-            {
-              "text": "그날 컨디션에 따라 오마카세처럼 써야하기 때문",
-              "report_date": "2026-04-27"
-            }
-          ],
-          "sources": [
-            {
-              "title": "디시 클렌징·보습·선크림 총정리",
-              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521051",
-              "description": "\"오마카세처럼 써야 한다\" 컨디션별 다중 제품 사용 인용 출처",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "디시 클렌징 제품 추천 종결",
-              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521445",
-              "description": "4~6종 카테고리별 분리 추천글 출처",
-              "report_date": "2026-04-27"
-            },
-            {
-              "title": "디시 \"■ 세안에 관해 모든것\"",
-              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1470438",
-              "description": "세안 단계별 분리 사용 흐름 확인",
-              "report_date": "2026-04-27"
-            }
-          ]
-        },
-        {
-          "title": "\"약산성은 순하지만 세정력 부족\" — 영원한 딜레마",
-          "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
-          "quotes": [
-            {
-              "text": "약산성 쓰면 여드름 남, 세정력 강한 건 싫고 적당한 거 없을까",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "약산성 제품치고 퐁퐁 만들어지는 거품",
-              "report_date": "2026-04-28"
-            },
-            {
-              "text": "단독으로만 화장을 지우기는 어려워 오일이나 밤으로 1차 세안 필요",
-              "report_date": "2026-04-28"
-            }
-          ],
-          "sources": [
             {
               "title": "디시 클렌징폼 추천 약산성 세정력 (디시 화장품갤)",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1481151",
               "description": "\"약산성 쓰면 여드름, 세정력 강하면 싫다\" 딜레마 직접 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "라운드랩 1025 독도 클렌저 내돈내산 (언파)",
               "url": "https://unpa.me/reviews/397942",
               "description": "\"순하고 보들보들 마무리감\" 만족이나 메이크업 단독 제거 한계 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "라운드랩 1025 독도 클렌저 (글로우픽)",
               "url": "https://www.glowpick.com/products/105588",
               "description": "평점 4.01, 1000건 리뷰. \"약산성치고 거품 좋다\"는 평가와 \"세정력 부족\" 공존 확인",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "식자재 기반 클렌저에 대한 신뢰와 한계가 공존",
+          "topic_id": "food_ingredient",
+          "label": "식자재 기반 클렌저 (쌀·녹두·버섯)",
+          "icon": "🌾",
+          "summary": "쌀·녹두 양대 진영. 식자재=순함·자연스러움 연상 강함. '버섯'은 새 카테고리 진입 가능.",
+          "subtitles": [
+            {
+              "title": "식자재 기반 클렌저에 대한 신뢰와 한계가 공존",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-28",
           "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "녹두를 으깨놓은듯한 부드러운 질감이 인상적",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "스크럽이 따로 필요없는 촉촉한 보습 클렌징폼",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -615,38 +776,53 @@
               "title": "에스네이처 아쿠아 라이스 클렌징폼 (글로우픽)",
               "url": "https://glowpick.co.kr/product/161270",
               "description": "평점 4.42, \"쌀뜨물 세정력\" 식자재 연상 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "에스네이처 클렌징폼 리뷰 (무신사)",
               "url": "https://www.musinsa.com/review/80138892",
               "description": "\"쌀뜨물 성분이라 나쁘지 않다\" 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "SRB 쌀뜨물 효소세안제 후기 (언파)",
               "url": "https://unpa.me/reviews/168845",
               "description": "\"촉촉한 보습 클렌징\" 식자재 기반 성공 사례",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
         },
         {
-          "title": "거품의 질감이 사용 만족도의 핵심 변수",
+          "topic_id": "foam_quality",
+          "label": "거품 질감 (쫀쫀함·풍성함)",
+          "icon": "🫧",
+          "summary": "성분보다 거품의 물리적 질감이 첫인상·재구매 결정. 마케팅 첫 훅도 거품 클로즈업.",
+          "subtitles": [
+            {
+              "title": "거품의 질감이 사용 만족도의 핵심 변수",
+              "report_date": "2026-04-28"
+            }
+          ],
           "first_seen": "2026-04-28",
           "last_seen": "2026-04-28",
           "quotes": [
             {
               "text": "거품도 쫀쫀하고 자극없어서 아침저녁 사용하기 좋음",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "적은 양으로도 몽글몽글한 거품이 생겨서",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "text": "뽀드득하고 깔끔한 사용감",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ],
           "sources": [
@@ -654,21 +830,79 @@
               "title": "에스네이처 아쿠아 라이스 (글로우픽)",
               "url": "https://glowpick.co.kr/product/161270",
               "description": "\"쫀쫀한 거품\" 텍스처 만족 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "라운드랩 1025 독도 클렌저 (언파)",
               "url": "https://unpa.me/reviews/397942",
               "description": "\"몽글몽글한 거품\" 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             },
             {
               "title": "디시 폼클 30개 후기 (디시 화장품갤)",
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1450005",
               "description": "\"뽀드득 깔끔\" 비플레인 녹두 인용 출처",
-              "report_date": "2026-04-28"
+              "report_date": "2026-04-28",
+              "life_context": false
             }
           ]
+        },
+        {
+          "topic_id": "usage_scenario",
+          "label": "사용 시나리오 (컨디션별·다중제품)",
+          "icon": "📅",
+          "summary": "고인 사용자는 1제품 데일리가 아니라 컨디션별 다중 제품. 사용 시나리오 분리 마케팅이 더 와닿음.",
+          "subtitles": [
+            {
+              "title": "클렌징은 단계가 아니라 컨디션",
+              "report_date": "2026-04-27"
+            }
+          ],
+          "first_seen": "2026-04-27",
+          "last_seen": "2026-04-27",
+          "quotes": [
+            {
+              "text": "그날 컨디션에 따라 오마카세처럼 써야하기 때문",
+              "report_date": "2026-04-27",
+              "life_context": false
+            }
+          ],
+          "sources": [
+            {
+              "title": "디시 클렌징·보습·선크림 총정리",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521051",
+              "description": "\"오마카세처럼 써야 한다\" 컨디션별 다중 제품 사용 인용 출처",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "디시 클렌징 제품 추천 종결",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521445",
+              "description": "4~6종 카테고리별 분리 추천글 출처",
+              "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "디시 \"■ 세안에 관해 모든것\"",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1470438",
+              "description": "세안 단계별 분리 사용 흐름 확인",
+              "report_date": "2026-04-27",
+              "life_context": false
+            }
+          ]
+        },
+        {
+          "topic_id": "misc",
+          "label": "기타",
+          "icon": "📌",
+          "summary": "토픽 자동 분류에 매칭되지 않은 페인포인트.",
+          "subtitles": [],
+          "first_seen": "",
+          "last_seen": "",
+          "quotes": [],
+          "sources": []
         }
       ]
     }
