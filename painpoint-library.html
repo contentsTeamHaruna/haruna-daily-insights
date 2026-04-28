@@ -20,20 +20,27 @@
   .back-link:hover { border-color: #b8a070; color: #b8a070; }
 
   /* Stats Bar */
-  .stats-bar { display: flex; justify-content: center; gap: 36px; margin-bottom: 28px; padding: 22px 0; border-bottom: 1px solid #e8e4df; flex-wrap: wrap; }
+  .stats-bar { display: flex; justify-content: center; gap: 36px; margin-bottom: 24px; padding: 22px 0; border-bottom: 1px solid #e8e4df; flex-wrap: wrap; }
   .stat-item { text-align: center; }
   .stat-number { font-size: 26px; font-weight: 700; color: #1a1815; line-height: 1.1; }
+  .stat-number.life { color: #c97c5a; }
   .stat-label { font-size: 11px; color: #8a8580; font-weight: 500; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .stat-meta { font-size: 12px; color: #b8a070; margin-top: 2px; font-weight: 500; }
 
-  /* Search */
-  .search-wrap { margin-bottom: 24px; position: relative; }
+  /* Filter row */
+  .filter-row { display: flex; gap: 10px; margin-bottom: 22px; align-items: center; flex-wrap: wrap; }
+  .search-wrap { flex: 1; min-width: 240px; position: relative; }
   .search-input { width: 100%; padding: 12px 16px 12px 44px; border: 1px solid #e8e4df; border-radius: 12px; background: #fff; font-family: inherit; font-size: 14px; color: #2d2a26; transition: border-color 0.2s; }
   .search-input:focus { outline: none; border-color: #b8a070; }
   .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #b0aaa3; font-size: 16px; pointer-events: none; }
 
+  .life-toggle { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 2px solid #e8e4df; border-radius: 24px; background: #fff; font-size: 13px; font-weight: 600; color: #8a8580; cursor: pointer; transition: all 0.15s; user-select: none; }
+  .life-toggle:hover { border-color: #d4cfc8; }
+  .life-toggle.on { border-color: #c97c5a; background: #fdf2ec; color: #b65f3a; }
+  .life-toggle .pill-count { background: rgba(0,0,0,0.06); padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+  .life-toggle.on .pill-count { background: rgba(201,124,90,0.18); color: #b65f3a; }
+
   /* Tabs */
-  .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+  .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 26px; flex-wrap: wrap; }
   .tab { padding: 10px 22px; border-radius: 24px; font-size: 14px; font-weight: 600; cursor: pointer; border: 2px solid #e8e4df; background: #fff; color: #8a8580; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; font-family: inherit; }
   .tab:hover { border-color: #d4cfc8; }
   .tab.active { border-color: #b8a070; background: #b8a070; color: #fff; }
@@ -41,49 +48,66 @@
   .tab.active .tab-count { background: rgba(255,255,255,0.22); }
 
   /* Section panel */
-  .section-panel { display: none; }
-  .section-panel.active { display: block; }
   .section-title { font-size: 16px; font-weight: 700; color: #1a1815; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #d4cfc8; }
 
-  /* Painpoint card */
-  .pp-card { background: #fff; border-radius: 14px; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); border: 1px solid #eae6e1; overflow: hidden; transition: border-color 0.2s; }
+  /* Topic card (페인포인트 카드) */
+  .pp-card { background: #fff; border-radius: 14px; margin-bottom: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); border: 1px solid #eae6e1; overflow: hidden; transition: border-color 0.2s; }
   .pp-card:hover { border-color: #d4cfc8; }
-  .pp-card.open { border-color: #b8a070; }
+  .pp-card.open { border-color: #b8a070; box-shadow: 0 6px 16px rgba(184,160,112,0.12); }
   .pp-summary { padding: 18px 22px; cursor: pointer; display: flex; align-items: flex-start; gap: 14px; user-select: none; }
   .pp-summary:hover { background: #fdfbf7; }
-  .pp-icon { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #f5f0e8; color: #b8a070; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; transition: transform 0.2s; }
-  .pp-card.open .pp-icon { transform: rotate(90deg); background: #b8a070; color: #fff; }
+  .pp-icon-wrap { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .pp-cat-icon { font-size: 22px; line-height: 1; }
+  .pp-toggle-arrow { width: 22px; height: 22px; border-radius: 50%; background: #f5f0e8; color: #b8a070; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 11px; transition: transform 0.2s, background 0.2s; }
+  .pp-card.open .pp-toggle-arrow { transform: rotate(90deg); background: #b8a070; color: #fff; }
   .pp-info { flex: 1; min-width: 0; }
-  .pp-title { font-size: 15px; font-weight: 600; color: #1a1815; line-height: 1.45; margin-bottom: 6px; }
+  .pp-title { font-size: 16px; font-weight: 700; color: #1a1815; line-height: 1.4; margin-bottom: 6px; }
+  .pp-summary-text { font-size: 13px; color: #6b6560; line-height: 1.55; margin-bottom: 10px; }
   .pp-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-  .pp-badge { font-size: 11px; color: #8a8580; background: #f5f2ee; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+  .pp-badge { font-size: 11px; color: #8a8580; background: #f5f2ee; padding: 3px 10px; border-radius: 11px; font-weight: 500; }
   .pp-badge.quotes { color: #6b8a5a; background: #eef4e8; }
   .pp-badge.sources { color: #5a7abf; background: #e8eef8; }
   .pp-badge.dates { color: #b8a070; background: #f5f0e8; }
+  .pp-badge.life { color: #b65f3a; background: #fdf2ec; }
+  .pp-badge.subtitles { color: #8e6db8; background: #f3edf8; }
 
-  /* Painpoint detail */
-  .pp-detail { display: none; padding: 0 22px 20px 64px; border-top: 1px dashed #eae6e1; padding-top: 16px; margin-top: 6px; }
+  /* Detail (expanded) */
+  .pp-detail { display: none; padding: 0 24px 22px 24px; border-top: 1px dashed #eae6e1; padding-top: 18px; margin-top: 6px; }
   .pp-card.open .pp-detail { display: block; }
-  .detail-section { margin-bottom: 16px; }
+  .detail-section { margin-bottom: 18px; }
   .detail-section:last-child { margin-bottom: 0; }
-  .detail-label { font-size: 11px; color: #8a8580; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .quote-list { list-style: none; padding: 0; }
-  .quote-item { padding: 10px 14px; background: #fbf9f5; border-left: 3px solid #c9b896; border-radius: 0 8px 8px 0; margin-bottom: 6px; font-size: 14px; color: #4a443d; line-height: 1.6; font-style: italic; }
-  .quote-item .quote-date { display: block; font-style: normal; font-size: 11px; color: #8a8580; margin-top: 4px; font-weight: 500; }
+  .detail-label { font-size: 11px; color: #8a8580; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.6px; display: flex; align-items: center; gap: 6px; }
+  .detail-label .count { color: #b8a070; }
 
+  /* Subtitles section */
+  .subtitle-list { list-style: none; padding: 0; }
+  .subtitle-item { padding: 8px 12px; background: #faf8f3; border-radius: 8px; margin-bottom: 6px; font-size: 13px; color: #4a443d; line-height: 1.5; display: flex; gap: 8px; align-items: flex-start; }
+  .subtitle-item .sub-date { flex-shrink: 0; font-size: 10px; color: #b8a070; font-weight: 700; padding: 2px 7px; border-radius: 8px; background: #fff; border: 1px solid #ede5d6; white-space: nowrap; margin-top: 2px; }
+  .subtitle-item .sub-text { flex: 1; }
+
+  /* Quotes */
+  .quote-list { list-style: none; padding: 0; }
+  .quote-item { padding: 12px 14px 10px 14px; background: #fbf9f5; border-left: 3px solid #c9b896; border-radius: 0 8px 8px 0; margin-bottom: 8px; font-size: 14px; color: #4a443d; line-height: 1.6; font-style: italic; }
+  .quote-item.life { background: #fdf2ec; border-left-color: #c97c5a; }
+  .quote-meta { display: flex; gap: 6px; align-items: center; margin-top: 6px; font-style: normal; }
+  .quote-meta .quote-date { font-size: 11px; color: #8a8580; font-weight: 500; }
+  .quote-meta .quote-life-tag { font-size: 10px; color: #b65f3a; background: rgba(201,124,90,0.15); padding: 2px 8px; border-radius: 8px; font-weight: 600; }
+
+  /* Sources */
   .source-list { list-style: none; padding: 0; }
-  .source-item { padding: 10px 12px; background: #f8f6f3; border-radius: 8px; margin-bottom: 6px; font-size: 13px; line-height: 1.55; }
+  .source-item { padding: 10px 14px; background: #f8f6f3; border-radius: 8px; margin-bottom: 6px; font-size: 13px; line-height: 1.55; }
+  .source-item.life { background: #fdf6f1; border-left: 3px solid #c97c5a; padding-left: 11px; }
   .source-item a { color: #5a7abf; text-decoration: none; font-weight: 600; }
   .source-item a:hover { text-decoration: underline; }
   .source-item .source-desc { color: #6b6560; margin-left: 4px; }
-  .source-item .source-date { display: block; font-size: 11px; color: #8a8580; margin-top: 4px; font-weight: 500; }
+  .source-item .source-meta { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
+  .source-item .source-date { font-size: 11px; color: #8a8580; font-weight: 500; }
+  .source-item .source-life-tag { font-size: 10px; color: #b65f3a; background: rgba(201,124,90,0.15); padding: 2px 8px; border-radius: 8px; font-weight: 600; }
 
-  /* Empty state */
+  /* Empty / loading */
   .empty-state { text-align: center; padding: 60px 20px; color: #8a8580; }
   .empty-state .emoji { font-size: 48px; margin-bottom: 12px; opacity: 0.5; }
   .empty-state p { font-size: 14px; line-height: 1.6; }
-
-  /* Loading */
   .loading { text-align: center; padding: 60px 20px; color: #8a8580; font-size: 14px; }
 
   /* Footer */
@@ -92,9 +116,9 @@
   @media (max-width: 600px) {
     .container { padding: 24px 16px 60px; }
     .header h1 { font-size: 22px; }
-    .stats-bar { gap: 20px; }
+    .stats-bar { gap: 18px; }
     .stat-number { font-size: 22px; }
-    .pp-detail { padding-left: 22px; }
+    .pp-detail { padding-left: 18px; padding-right: 18px; }
     .tab { padding: 8px 16px; font-size: 13px; }
   }
 </style>
@@ -106,21 +130,23 @@
   <div class="header">
     <div class="header-emoji">📚</div>
     <h1>페인포인트 라이브러리</h1>
-    <div class="subtitle">데일리 리포트에서 누적된 소비자 인용문·출처 데이터베이스</div>
+    <div class="subtitle">매일 데일리 리포트에서 같은 페인포인트끼리 묶어 누적 — 일상생활 인용은 따로 강조</div>
     <div class="brand">하루나 콘텐츠팀</div>
   </div>
 
-  <div class="stats-bar" id="statsBar">
-    <div class="loading">로딩 중...</div>
-  </div>
+  <div class="stats-bar" id="statsBar"><div class="loading">로딩 중...</div></div>
 
-  <div class="search-wrap">
-    <span class="search-icon">🔍</span>
-    <input type="text" class="search-input" id="searchInput" placeholder="페인포인트 제목·인용문·출처에서 검색...">
+  <div class="filter-row">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="페인포인트·인용문·출처 검색...">
+    </div>
+    <div class="life-toggle" id="lifeToggle" title="일상생활 컨텍스트 인용·출처만 보기">
+      🌟 일상생활 인용만 <span class="pill-count" id="lifeCount">0</span>
+    </div>
   </div>
 
   <div class="tabs" id="tabs"></div>
-
   <div id="panels"></div>
 
   <div class="footer" id="footer"></div>
@@ -130,10 +156,10 @@
   let DB = null;
   let activeCategory = null;
   let searchTerm = '';
+  let lifeOnly = false;
 
   async function loadDB() {
     try {
-      // Cache-bust to ensure latest after deploy
       const res = await fetch('painpoint_database.json?t=' + Date.now());
       DB = await res.json();
       render();
@@ -152,13 +178,17 @@
 
   function renderStats() {
     const last = DB.lastUpdated || '—';
-    const totalPP = Object.values(DB.categories).reduce((sum, c) => sum + c.painpoints.length, 0);
+    const totalTopics = Object.values(DB.categories).reduce(
+      (sum, c) => sum + c.topics.filter(t => t.quotes.length || t.sources.length).length, 0
+    );
     document.getElementById('statsBar').innerHTML = `
-      <div class="stat-item"><div class="stat-number">${totalPP}</div><div class="stat-label">페인포인트</div></div>
+      <div class="stat-item"><div class="stat-number">${totalTopics}</div><div class="stat-label">활성 토픽</div></div>
       <div class="stat-item"><div class="stat-number">${DB.totalQuotes || 0}</div><div class="stat-label">인용문</div></div>
       <div class="stat-item"><div class="stat-number">${DB.totalSources || 0}</div><div class="stat-label">출처 링크</div></div>
+      <div class="stat-item"><div class="stat-number life">🌟 ${DB.totalLifeContext || 0}</div><div class="stat-label">일상생활 컨텍스트</div></div>
       <div class="stat-item"><div class="stat-number" style="font-size:14px;color:#b8a070;">${last}</div><div class="stat-label">최종 업데이트</div></div>
     `;
+    document.getElementById('lifeCount').textContent = DB.totalLifeContext || 0;
   }
 
   function renderTabs() {
@@ -167,8 +197,9 @@
     if (!activeCategory) activeCategory = keys[0];
     tabs.innerHTML = keys.map(k => {
       const cat = DB.categories[k];
+      const active = cat.topics.filter(t => t.quotes.length || t.sources.length).length;
       const cls = k === activeCategory ? 'tab active' : 'tab';
-      return `<button class="${cls}" data-key="${k}">${cat.name} <span class="tab-count">${cat.painpoints.length}</span></button>`;
+      return `<button class="${cls}" data-key="${k}">${cat.name} <span class="tab-count">${active}</span></button>`;
     }).join('');
     tabs.querySelectorAll('.tab').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -179,13 +210,19 @@
     });
   }
 
-  function matchesSearch(pp, term) {
+  function topicMatches(topic, term) {
     if (!term) return true;
     const t = term.toLowerCase();
-    if (pp.title.toLowerCase().includes(t)) return true;
-    if (pp.quotes.some(q => q.text.toLowerCase().includes(t))) return true;
-    if (pp.sources.some(s => (s.title || '').toLowerCase().includes(t) || (s.description || '').toLowerCase().includes(t))) return true;
+    if (topic.label.toLowerCase().includes(t)) return true;
+    if ((topic.summary || '').toLowerCase().includes(t)) return true;
+    if (topic.subtitles?.some(s => s.title.toLowerCase().includes(t))) return true;
+    if (topic.quotes?.some(q => q.text.toLowerCase().includes(t))) return true;
+    if (topic.sources?.some(s => (s.title || '').toLowerCase().includes(t) || (s.description || '').toLowerCase().includes(t))) return true;
     return false;
+  }
+
+  function topicHasLife(topic) {
+    return topic.quotes?.some(q => q.life_context) || topic.sources?.some(s => s.life_context);
   }
 
   function renderPanels() {
@@ -193,65 +230,89 @@
     const cat = DB.categories[activeCategory];
     if (!cat) { panels.innerHTML = ''; return; }
 
-    // Sort by total quotes+sources desc, then by last_seen desc
-    const sorted = [...cat.painpoints]
-      .filter(pp => matchesSearch(pp, searchTerm))
-      .sort((a, b) => {
-        const aSum = (a.quotes?.length || 0) + (a.sources?.length || 0);
-        const bSum = (b.quotes?.length || 0) + (b.sources?.length || 0);
-        if (bSum !== aSum) return bSum - aSum;
-        return (b.last_seen || '').localeCompare(a.last_seen || '');
-      });
+    let topics = cat.topics.filter(t => t.quotes.length || t.sources.length);
+    if (searchTerm) topics = topics.filter(t => topicMatches(t, searchTerm));
+    if (lifeOnly) topics = topics.filter(topicHasLife);
 
-    if (sorted.length === 0) {
-      panels.innerHTML = `<div class="empty-state"><div class="emoji">🌿</div><p>${searchTerm ? '검색 결과가 없습니다.' : '아직 누적된 페인포인트가 없습니다.\n매일 데일리 리포트에서 자동 수집됩니다.'}</p></div>`;
+    // Sort: more total content first, then more recent last_seen
+    topics.sort((a, b) => {
+      const aSum = (a.quotes.length || 0) + (a.sources.length || 0);
+      const bSum = (b.quotes.length || 0) + (b.sources.length || 0);
+      if (bSum !== aSum) return bSum - aSum;
+      return (b.last_seen || '').localeCompare(a.last_seen || '');
+    });
+
+    if (topics.length === 0) {
+      panels.innerHTML = `<div class="empty-state"><div class="emoji">🌿</div><p>${searchTerm || lifeOnly ? '필터 조건에 맞는 페인포인트가 없습니다.' : '아직 누적된 페인포인트가 없습니다.\n매일 데일리 리포트에서 자동 수집됩니다.'}</p></div>`;
       return;
     }
 
-    panels.innerHTML = `<div class="section-panel active">
-      <div class="section-title">${cat.name} — ${sorted.length}개 페인포인트</div>
-      ${sorted.map((pp, i) => renderCard(pp, i)).join('')}
-    </div>`;
-
+    panels.innerHTML = `
+      <div class="section-title">${cat.name} — ${topics.length}개 토픽</div>
+      ${topics.map(renderCard).join('')}
+    `;
     panels.querySelectorAll('.pp-summary').forEach(el => {
-      el.addEventListener('click', () => {
-        el.parentElement.classList.toggle('open');
-      });
+      el.addEventListener('click', () => el.parentElement.classList.toggle('open'));
     });
   }
 
-  function renderCard(pp, idx) {
-    const quotesCount = pp.quotes?.length || 0;
-    const sourcesCount = pp.sources?.length || 0;
-    const dateRange = pp.first_seen === pp.last_seen
-      ? pp.first_seen
-      : `${pp.first_seen} ~ ${pp.last_seen}`;
+  function renderCard(topic) {
+    let quotes = topic.quotes || [];
+    let sources = topic.sources || [];
+    if (lifeOnly) {
+      quotes = quotes.filter(q => q.life_context);
+      sources = sources.filter(s => s.life_context);
+    }
+    const lifeQuotes = (topic.quotes || []).filter(q => q.life_context).length;
+    const lifeSources = (topic.sources || []).filter(s => s.life_context).length;
+    const dateRange = topic.first_seen === topic.last_seen
+      ? topic.first_seen
+      : `${topic.first_seen} ~ ${topic.last_seen}`;
+
+    // Sort quotes/sources: life-context first, then by date desc
+    const sortedQuotes = [...quotes].sort((a, b) => (b.life_context - a.life_context) || (b.report_date || '').localeCompare(a.report_date || ''));
+    const sortedSources = [...sources].sort((a, b) => (b.life_context - a.life_context) || (b.report_date || '').localeCompare(a.report_date || ''));
+
     return `
       <div class="pp-card">
         <div class="pp-summary">
-          <div class="pp-icon">▸</div>
+          <div class="pp-icon-wrap">
+            <div class="pp-cat-icon">${topic.icon || '📌'}</div>
+            <div class="pp-toggle-arrow">▸</div>
+          </div>
           <div class="pp-info">
-            <div class="pp-title">${escapeHtml(pp.title)}</div>
+            <div class="pp-title">${escapeHtml(topic.label)}</div>
+            ${topic.summary ? `<div class="pp-summary-text">${escapeHtml(topic.summary)}</div>` : ''}
             <div class="pp-meta">
-              <span class="pp-badge quotes">💬 인용문 ${quotesCount}</span>
-              <span class="pp-badge sources">🔗 출처 ${sourcesCount}</span>
+              <span class="pp-badge subtitles">📝 ${topic.subtitles?.length || 0}일치</span>
+              <span class="pp-badge quotes">💬 인용 ${topic.quotes?.length || 0}</span>
+              <span class="pp-badge sources">🔗 출처 ${topic.sources?.length || 0}</span>
+              ${(lifeQuotes + lifeSources) > 0 ? `<span class="pp-badge life">🌟 일상 ${lifeQuotes + lifeSources}</span>` : ''}
               <span class="pp-badge dates">📅 ${dateRange}</span>
             </div>
           </div>
         </div>
         <div class="pp-detail">
-          ${quotesCount > 0 ? `
+          ${(topic.subtitles?.length || 0) > 0 ? `
           <div class="detail-section">
-            <div class="detail-label">💬 소비자 인용문 (${quotesCount})</div>
-            <ul class="quote-list">
-              ${pp.quotes.map(q => `<li class="quote-item">"${escapeHtml(q.text)}"<span class="quote-date">📅 ${q.report_date}</span></li>`).join('')}
+            <div class="detail-label">📝 일자별 표현 <span class="count">(${topic.subtitles.length})</span></div>
+            <ul class="subtitle-list">
+              ${topic.subtitles.slice().sort((a,b) => (b.report_date||'').localeCompare(a.report_date||''))
+                .map(s => `<li class="subtitle-item"><span class="sub-date">${s.report_date}</span><span class="sub-text">${escapeHtml(s.title)}</span></li>`).join('')}
             </ul>
           </div>` : ''}
-          ${sourcesCount > 0 ? `
+          ${sortedQuotes.length > 0 ? `
           <div class="detail-section">
-            <div class="detail-label">🔗 직접 확인 가능 출처 (${sourcesCount})</div>
+            <div class="detail-label">💬 소비자 인용문 <span class="count">(${sortedQuotes.length}${lifeQuotes ? `, 일상 ${lifeQuotes}` : ''})</span></div>
+            <ul class="quote-list">
+              ${sortedQuotes.map(q => `<li class="quote-item${q.life_context ? ' life' : ''}">"${escapeHtml(q.text)}"<div class="quote-meta"><span class="quote-date">📅 ${q.report_date}</span>${q.life_context ? '<span class="quote-life-tag">🌟 일상생활 컨텍스트</span>' : ''}</div></li>`).join('')}
+            </ul>
+          </div>` : ''}
+          ${sortedSources.length > 0 ? `
+          <div class="detail-section">
+            <div class="detail-label">🔗 직접 확인 가능 출처 <span class="count">(${sortedSources.length}${lifeSources ? `, 일상 ${lifeSources}` : ''})</span></div>
             <ul class="source-list">
-              ${pp.sources.map(s => `<li class="source-item"><a href="${s.url}" target="_blank" rel="noopener">${escapeHtml(s.title)}</a>${s.description ? `<span class="source-desc"> — ${escapeHtml(s.description)}</span>` : ''}<span class="source-date">📅 ${s.report_date}</span></li>`).join('')}
+              ${sortedSources.map(s => `<li class="source-item${s.life_context ? ' life' : ''}"><a href="${s.url}" target="_blank" rel="noopener">${escapeHtml(s.title)}</a>${s.description ? `<span class="source-desc"> — ${escapeHtml(s.description)}</span>` : ''}<div class="source-meta"><span class="source-date">📅 ${s.report_date}</span>${s.life_context ? '<span class="source-life-tag">🌟 일상생활</span>' : ''}</div></li>`).join('')}
             </ul>
           </div>` : ''}
         </div>
@@ -260,15 +321,20 @@
   }
 
   function renderFooter() {
-    document.getElementById('footer').textContent = `Database last updated: ${DB.lastUpdated || '—'} · 매일 데일리 리포트 생성 시 자동 갱신`;
+    document.getElementById('footer').textContent = `Database last updated: ${DB.lastUpdated || '—'} · 매일 데일리 리포트에서 토픽 단위로 자동 누적`;
   }
 
   function escapeHtml(str) {
     return String(str || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
-  document.getElementById('searchInput').addEventListener('input', (e) => {
+  document.getElementById('searchInput').addEventListener('input', e => {
     searchTerm = e.target.value.trim();
+    renderPanels();
+  });
+  document.getElementById('lifeToggle').addEventListener('click', () => {
+    lifeOnly = !lifeOnly;
+    document.getElementById('lifeToggle').classList.toggle('on', lifeOnly);
     renderPanels();
   });
 
