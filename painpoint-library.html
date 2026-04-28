@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 페인포인트 라이브러리</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f6f3; color: #2d2a26; line-height: 1.7; font-size: 15px; }
+  .container { max-width: 880px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* Header */
+  .header { text-align: center; padding: 40px 0 32px; border-bottom: 1px solid #e8e4df; margin-bottom: 32px; }
+  .header-emoji { font-size: 44px; margin-bottom: 10px; }
+  .header h1 { font-size: 26px; font-weight: 700; color: #1a1815; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .header .subtitle { font-size: 14px; color: #8a8580; font-weight: 400; margin-bottom: 14px; }
+  .header .brand { display: inline-block; padding: 4px 14px; background: #f0ebe4; border-radius: 20px; font-size: 12px; color: #6b6560; font-weight: 500; }
+  .back-link { display: inline-block; margin-bottom: 16px; padding: 6px 14px; background: #fff; border: 1px solid #e8e4df; border-radius: 20px; font-size: 12px; color: #6b6560; text-decoration: none; transition: all 0.2s; }
+  .back-link:hover { border-color: #b8a070; color: #b8a070; }
+
+  /* Stats Bar */
+  .stats-bar { display: flex; justify-content: center; gap: 36px; margin-bottom: 28px; padding: 22px 0; border-bottom: 1px solid #e8e4df; flex-wrap: wrap; }
+  .stat-item { text-align: center; }
+  .stat-number { font-size: 26px; font-weight: 700; color: #1a1815; line-height: 1.1; }
+  .stat-label { font-size: 11px; color: #8a8580; font-weight: 500; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-meta { font-size: 12px; color: #b8a070; margin-top: 2px; font-weight: 500; }
+
+  /* Search */
+  .search-wrap { margin-bottom: 24px; position: relative; }
+  .search-input { width: 100%; padding: 12px 16px 12px 44px; border: 1px solid #e8e4df; border-radius: 12px; background: #fff; font-family: inherit; font-size: 14px; color: #2d2a26; transition: border-color 0.2s; }
+  .search-input:focus { outline: none; border-color: #b8a070; }
+  .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #b0aaa3; font-size: 16px; pointer-events: none; }
+
+  /* Tabs */
+  .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+  .tab { padding: 10px 22px; border-radius: 24px; font-size: 14px; font-weight: 600; cursor: pointer; border: 2px solid #e8e4df; background: #fff; color: #8a8580; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; font-family: inherit; }
+  .tab:hover { border-color: #d4cfc8; }
+  .tab.active { border-color: #b8a070; background: #b8a070; color: #fff; }
+  .tab .tab-count { font-size: 11px; opacity: 0.85; padding: 2px 8px; border-radius: 10px; background: rgba(0,0,0,0.06); }
+  .tab.active .tab-count { background: rgba(255,255,255,0.22); }
+
+  /* Section panel */
+  .section-panel { display: none; }
+  .section-panel.active { display: block; }
+  .section-title { font-size: 16px; font-weight: 700; color: #1a1815; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #d4cfc8; }
+
+  /* Painpoint card */
+  .pp-card { background: #fff; border-radius: 14px; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); border: 1px solid #eae6e1; overflow: hidden; transition: border-color 0.2s; }
+  .pp-card:hover { border-color: #d4cfc8; }
+  .pp-card.open { border-color: #b8a070; }
+  .pp-summary { padding: 18px 22px; cursor: pointer; display: flex; align-items: flex-start; gap: 14px; user-select: none; }
+  .pp-summary:hover { background: #fdfbf7; }
+  .pp-icon { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #f5f0e8; color: #b8a070; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; transition: transform 0.2s; }
+  .pp-card.open .pp-icon { transform: rotate(90deg); background: #b8a070; color: #fff; }
+  .pp-info { flex: 1; min-width: 0; }
+  .pp-title { font-size: 15px; font-weight: 600; color: #1a1815; line-height: 1.45; margin-bottom: 6px; }
+  .pp-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .pp-badge { font-size: 11px; color: #8a8580; background: #f5f2ee; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+  .pp-badge.quotes { color: #6b8a5a; background: #eef4e8; }
+  .pp-badge.sources { color: #5a7abf; background: #e8eef8; }
+  .pp-badge.dates { color: #b8a070; background: #f5f0e8; }
+
+  /* Painpoint detail */
+  .pp-detail { display: none; padding: 0 22px 20px 64px; border-top: 1px dashed #eae6e1; padding-top: 16px; margin-top: 6px; }
+  .pp-card.open .pp-detail { display: block; }
+  .detail-section { margin-bottom: 16px; }
+  .detail-section:last-child { margin-bottom: 0; }
+  .detail-label { font-size: 11px; color: #8a8580; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .quote-list { list-style: none; padding: 0; }
+  .quote-item { padding: 10px 14px; background: #fbf9f5; border-left: 3px solid #c9b896; border-radius: 0 8px 8px 0; margin-bottom: 6px; font-size: 14px; color: #4a443d; line-height: 1.6; font-style: italic; }
+  .quote-item .quote-date { display: block; font-style: normal; font-size: 11px; color: #8a8580; margin-top: 4px; font-weight: 500; }
+
+  .source-list { list-style: none; padding: 0; }
+  .source-item { padding: 10px 12px; background: #f8f6f3; border-radius: 8px; margin-bottom: 6px; font-size: 13px; line-height: 1.55; }
+  .source-item a { color: #5a7abf; text-decoration: none; font-weight: 600; }
+  .source-item a:hover { text-decoration: underline; }
+  .source-item .source-desc { color: #6b6560; margin-left: 4px; }
+  .source-item .source-date { display: block; font-size: 11px; color: #8a8580; margin-top: 4px; font-weight: 500; }
+
+  /* Empty state */
+  .empty-state { text-align: center; padding: 60px 20px; color: #8a8580; }
+  .empty-state .emoji { font-size: 48px; margin-bottom: 12px; opacity: 0.5; }
+  .empty-state p { font-size: 14px; line-height: 1.6; }
+
+  /* Loading */
+  .loading { text-align: center; padding: 60px 20px; color: #8a8580; font-size: 14px; }
+
+  /* Footer */
+  .footer { text-align: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid #e8e4df; font-size: 12px; color: #b0aaa3; }
+
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 60px; }
+    .header h1 { font-size: 22px; }
+    .stats-bar { gap: 20px; }
+    .stat-number { font-size: 22px; }
+    .pp-detail { padding-left: 22px; }
+    .tab { padding: 8px 16px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">← 데일리 인사이트로 돌아가기</a>
+
+  <div class="header">
+    <div class="header-emoji">📚</div>
+    <h1>페인포인트 라이브러리</h1>
+    <div class="subtitle">데일리 리포트에서 누적된 소비자 인용문·출처 데이터베이스</div>
+    <div class="brand">하루나 콘텐츠팀</div>
+  </div>
+
+  <div class="stats-bar" id="statsBar">
+    <div class="loading">로딩 중...</div>
+  </div>
+
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" class="search-input" id="searchInput" placeholder="페인포인트 제목·인용문·출처에서 검색...">
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div id="panels"></div>
+
+  <div class="footer" id="footer"></div>
+</div>
+
+<script>
+  let DB = null;
+  let activeCategory = null;
+  let searchTerm = '';
+
+  async function loadDB() {
+    try {
+      // Cache-bust to ensure latest after deploy
+      const res = await fetch('painpoint_database.json?t=' + Date.now());
+      DB = await res.json();
+      render();
+    } catch (e) {
+      document.getElementById('statsBar').innerHTML = '<div style="color:#c66">데이터를 불러오지 못했습니다.</div>';
+    }
+  }
+
+  function render() {
+    if (!DB) return;
+    renderStats();
+    renderTabs();
+    renderPanels();
+    renderFooter();
+  }
+
+  function renderStats() {
+    const last = DB.lastUpdated || '—';
+    const totalPP = Object.values(DB.categories).reduce((sum, c) => sum + c.painpoints.length, 0);
+    document.getElementById('statsBar').innerHTML = `
+      <div class="stat-item"><div class="stat-number">${totalPP}</div><div class="stat-label">페인포인트</div></div>
+      <div class="stat-item"><div class="stat-number">${DB.totalQuotes || 0}</div><div class="stat-label">인용문</div></div>
+      <div class="stat-item"><div class="stat-number">${DB.totalSources || 0}</div><div class="stat-label">출처 링크</div></div>
+      <div class="stat-item"><div class="stat-number" style="font-size:14px;color:#b8a070;">${last}</div><div class="stat-label">최종 업데이트</div></div>
+    `;
+  }
+
+  function renderTabs() {
+    const tabs = document.getElementById('tabs');
+    const keys = Object.keys(DB.categories);
+    if (!activeCategory) activeCategory = keys[0];
+    tabs.innerHTML = keys.map(k => {
+      const cat = DB.categories[k];
+      const cls = k === activeCategory ? 'tab active' : 'tab';
+      return `<button class="${cls}" data-key="${k}">${cat.name} <span class="tab-count">${cat.painpoints.length}</span></button>`;
+    }).join('');
+    tabs.querySelectorAll('.tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.key;
+        renderTabs();
+        renderPanels();
+      });
+    });
+  }
+
+  function matchesSearch(pp, term) {
+    if (!term) return true;
+    const t = term.toLowerCase();
+    if (pp.title.toLowerCase().includes(t)) return true;
+    if (pp.quotes.some(q => q.text.toLowerCase().includes(t))) return true;
+    if (pp.sources.some(s => (s.title || '').toLowerCase().includes(t) || (s.description || '').toLowerCase().includes(t))) return true;
+    return false;
+  }
+
+  function renderPanels() {
+    const panels = document.getElementById('panels');
+    const cat = DB.categories[activeCategory];
+    if (!cat) { panels.innerHTML = ''; return; }
+
+    // Sort by total quotes+sources desc, then by last_seen desc
+    const sorted = [...cat.painpoints]
+      .filter(pp => matchesSearch(pp, searchTerm))
+      .sort((a, b) => {
+        const aSum = (a.quotes?.length || 0) + (a.sources?.length || 0);
+        const bSum = (b.quotes?.length || 0) + (b.sources?.length || 0);
+        if (bSum !== aSum) return bSum - aSum;
+        return (b.last_seen || '').localeCompare(a.last_seen || '');
+      });
+
+    if (sorted.length === 0) {
+      panels.innerHTML = `<div class="empty-state"><div class="emoji">🌿</div><p>${searchTerm ? '검색 결과가 없습니다.' : '아직 누적된 페인포인트가 없습니다.\n매일 데일리 리포트에서 자동 수집됩니다.'}</p></div>`;
+      return;
+    }
+
+    panels.innerHTML = `<div class="section-panel active">
+      <div class="section-title">${cat.name} — ${sorted.length}개 페인포인트</div>
+      ${sorted.map((pp, i) => renderCard(pp, i)).join('')}
+    </div>`;
+
+    panels.querySelectorAll('.pp-summary').forEach(el => {
+      el.addEventListener('click', () => {
+        el.parentElement.classList.toggle('open');
+      });
+    });
+  }
+
+  function renderCard(pp, idx) {
+    const quotesCount = pp.quotes?.length || 0;
+    const sourcesCount = pp.sources?.length || 0;
+    const dateRange = pp.first_seen === pp.last_seen
+      ? pp.first_seen
+      : `${pp.first_seen} ~ ${pp.last_seen}`;
+    return `
+      <div class="pp-card">
+        <div class="pp-summary">
+          <div class="pp-icon">▸</div>
+          <div class="pp-info">
+            <div class="pp-title">${escapeHtml(pp.title)}</div>
+            <div class="pp-meta">
+              <span class="pp-badge quotes">💬 인용문 ${quotesCount}</span>
+              <span class="pp-badge sources">🔗 출처 ${sourcesCount}</span>
+              <span class="pp-badge dates">📅 ${dateRange}</span>
+            </div>
+          </div>
+        </div>
+        <div class="pp-detail">
+          ${quotesCount > 0 ? `
+          <div class="detail-section">
+            <div class="detail-label">💬 소비자 인용문 (${quotesCount})</div>
+            <ul class="quote-list">
+              ${pp.quotes.map(q => `<li class="quote-item">"${escapeHtml(q.text)}"<span class="quote-date">📅 ${q.report_date}</span></li>`).join('')}
+            </ul>
+          </div>` : ''}
+          ${sourcesCount > 0 ? `
+          <div class="detail-section">
+            <div class="detail-label">🔗 직접 확인 가능 출처 (${sourcesCount})</div>
+            <ul class="source-list">
+              ${pp.sources.map(s => `<li class="source-item"><a href="${s.url}" target="_blank" rel="noopener">${escapeHtml(s.title)}</a>${s.description ? `<span class="source-desc"> — ${escapeHtml(s.description)}</span>` : ''}<span class="source-date">📅 ${s.report_date}</span></li>`).join('')}
+            </ul>
+          </div>` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderFooter() {
+    document.getElementById('footer').textContent = `Database last updated: ${DB.lastUpdated || '—'} · 매일 데일리 리포트 생성 시 자동 갱신`;
+  }
+
+  function escapeHtml(str) {
+    return String(str || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    searchTerm = e.target.value.trim();
+    renderPanels();
+  });
+
+  loadDB();
+</script>
+</body>
+</html>
