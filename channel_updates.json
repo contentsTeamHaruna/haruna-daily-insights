@@ -1,64 +1,6 @@
 {
-  "pending_additions": [
-    {
-      "username": "drmarkhyman",
-      "category": "기능의학"
-    },
-    {
-      "username": "hubermanlab",
-      "category": "웰니스"
-    },
-    {
-      "username": "jayshetty",
-      "category": "자기계발"
-    },
-    {
-      "username": "thesleepdoctor",
-      "category": "수면건강"
-    },
-    {
-      "username": "drwillcole",
-      "category": "기능의학"
-    },
-    {
-      "username": "nutritionstripped",
-      "category": "영양"
-    },
-    {
-      "username": "realfoodology",
-      "category": "영양"
-    }
-  ],
-  "pending_removals": [
-    "runninglife_korea",
-    "runners_now",
-    "marathon.nutritionist",
-    "runningchannel",
-    "strengthrunning",
-    "mattdavella",
-    "dr.gabriellelyon",
-    "drgundry",
-    "davidsinclairharvard",
-    "melrobbins",
-    "drjoshaxe",
-    "yung_pueblo",
-    "drcaseyskitchen",
-    "the.holistic.psychologist",
-    "deepakchopra",
-    "blackgirlinom",
-    "gretchen_rubin",
-    "drchatterjee",
-    "bryanjohnson",
-    "wimhofmethod",
-    "adrienelouise",
-    "thrive",
-    "drgersh",
-    "dr.rhondapatrick",
-    "davidperlmutter",
-    "dr.mindypelz",
-    "petermattiamd",
-    "wellnessmama",
-    "glennondoyle"
-  ],
-  "updated": "2026-04-28"
+  "pending_additions": [],
+  "pending_removals": [],
+  "updated": "2026-04-29",
+  "applied": true
 }
