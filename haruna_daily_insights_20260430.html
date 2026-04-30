@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 데일리 인사이트 — 2026.04.30</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f8f6f3;
+    color: #2d2a26;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e8e4df;
+    margin-bottom: 40px;
+  }
+  .header-emoji { font-size: 48px; margin-bottom: 12px; }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    color: #8a8580;
+    font-weight: 400;
+  }
+  .header .brand {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    background: #f0ebe4;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6b6560;
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+    letter-spacing: -0.3px;
+  }
+  .section-title .emoji { margin-right: 8px; }
+
+  /* Weather Card */
+  .weather-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e5fc 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .weather-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-bottom: 16px;
+  }
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .weather-item {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
+  .weather-item .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .weather-item .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 4px;
+  }
+  .weather-keywords {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .weather-keywords .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .keyword-tag {
+    display: inline-block;
+    background: #1a3a5c;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 3px 4px 3px 0;
+    font-weight: 400;
+  }
+  .sogu-point {
+    background: rgba(255,255,255,0.9);
+    border-left: 3px solid #3a7bd5;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3a5c;
+    line-height: 1.6;
+  }
+
+  /* TOP 3 Insight Cards */
+  .insight-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .insight-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid;
+  }
+  .insight-card:nth-child(1) { border-left-color: #e8a87c; }
+  .insight-card:nth-child(2) { border-left-color: #85cdca; }
+  .insight-card:nth-child(3) { border-left-color: #d4a5d0; }
+  .insight-card .number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .insight-card .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .insight-card .desc {
+    font-size: 14px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  /* Source / Painpoint Cards */
+  .source-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .source-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+  .source-card h3 .num {
+    background: #2d2a26;
+    color: #fff;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .source-card h3 .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 4px;
+    flex-shrink: 0;
+  }
+  .badge-persist { background: #e8a87c; color: #fff; }
+  .badge-new { background: #85cdca; color: #fff; }
+  .source-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .source-card ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .source-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+  .quote {
+    font-style: italic;
+    color: #6b6560;
+    background: #fafaf8;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .context-box {
+    background: #f8f6f3;
+    border-left: 3px solid #e8a87c;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+  .context-box strong { color: #1a1815; }
+  .review-links {
+    margin: 12px 0;
+    padding: 12px 16px;
+    background: #fafaf8;
+    border-radius: 8px;
+  }
+  .review-links .link-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .review-links a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    word-break: break-all;
+  }
+  .review-links a:hover { text-decoration: underline; }
+  .market-gap {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+  .market-gap strong { color: #1a1815; }
+  .haruna-point {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #8a6d3b;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .haruna-point::before {
+    content: '하루나 적용';
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  /* Category Sub-header */
+  .category-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 32px 0 16px;
+    padding: 12px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid #e8a87c;
+  }
+
+  /* Table */
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 13px;
+  }
+  th {
+    background: #2d2a26;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.6;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fdfcfa; }
+  .star { color: #e8a87c; font-weight: 700; }
+
+  /* Deep Dive Product Card */
+  .product-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .product-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0ebe4;
+  }
+  .copy-source {
+    background: #f8f0e5;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #6b5540;
+    line-height: 1.7;
+  }
+  .copy-source strong { color: #4a3520; }
+
+  /* Content Case Cards */
+  .case-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .case-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+  }
+
+  /* Idea Cards */
+  .idea-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .idea-card .category {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .idea-card .category.bodycream { background: #e8a87c; }
+  .idea-card .category.serum { background: #85cdca; }
+  .idea-card .category.foam { background: #d4a5d0; }
+  .idea-card .category.content { background: #5b9bd5; }
+  .idea-card .idea-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .idea-card .idea-desc {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  /* Priority Tags */
+  .priority-red {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .priority-yellow {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .priority-green {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+
+  /* Product Analysis Section */
+  .product-analysis {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .product-analysis h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 6px;
+  }
+  .product-analysis .subtitle {
+    font-size: 13px;
+    color: #8a8580;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0ebe4;
+  }
+  .product-analysis h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1815;
+    margin: 16px 0 10px;
+  }
+
+  /* Action list */
+  .action-list {
+    list-style: none;
+    padding: 0;
+  }
+  .action-list li {
+    padding: 8px 0 8px 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+
+  /* Cross Analysis Box */
+  .cross-analysis {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .cross-analysis ol {
+    padding-left: 20px;
+  }
+  .cross-analysis ol li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+
+  /* Trend Card */
+  .trend-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .trend-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 10px;
+  }
+  .trend-card p, .trend-card .desc {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  /* Tomorrow */
+  .tomorrow-card {
+    background: linear-gradient(135deg, #fdf8f0 0%, #f8f0e5 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .tomorrow-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b5540;
+    margin-bottom: 16px;
+  }
+  .tomorrow-item {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .tomorrow-item:last-child { margin-bottom: 0; }
+  .tomorrow-item strong {
+    display: block;
+    font-size: 14px;
+    color: #1a1815;
+    margin-bottom: 6px;
+  }
+  .tomorrow-item p {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.7;
+  }
+
+  /* Summary Action Box */
+  .summary-action {
+    background: linear-gradient(135deg, #2d2a26 0%, #3d3a36 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  .summary-action h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e8a87c;
+  }
+  .summary-action h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 16px 0 10px;
+    color: #e8a87c;
+  }
+  .summary-action ul {
+    list-style: none;
+    padding: 0;
+  }
+  .summary-action ul li {
+    padding: 6px 0 6px 16px;
+    position: relative;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+  }
+  .summary-action ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #e8a87c;
+    border-radius: 50%;
+  }
+
+  /* Sources */
+  .sources {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sources h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .sources a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    word-break: break-all;
+  }
+  .sources a:hover { text-decoration: underline; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding-top: 40px;
+    color: #bab5b0;
+    font-size: 12px;
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: #e8e4df;
+    margin: 32px 0;
+  }
+
+  /* Note/Blockquote */
+  .note {
+    background: #fafaf8;
+    border-left: 3px solid #d4cfc8;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 60px; }
+    .header h1 { font-size: 22px; }
+    .weather-grid { grid-template-columns: 1fr; }
+    table { font-size: 12px; }
+    th, td { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-emoji">🧴</div>
+    <h1>하루나 데일리 인사이트</h1>
+    <div class="date">2026년 4월 30일 (목)</div>
+    <div class="brand">@haruna_kr | 바디크림 · 세럼 · 폼클렌징</div>
+  </div>
+
+  <!-- Weather / Market Context -->
+  <div class="weather-card">
+    <h2>🌤️ 오늘의 시장 컨텍스트</h2>
+    <div class="weather-grid">
+      <div class="weather-item">
+        <div class="label">서울 기온</div>
+        <div class="value">최저 7℃ / 최고 23℃</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">습도</div>
+        <div class="value">52% (전일 80% 대비 급락)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">날씨</div>
+        <div class="value">맑다가 오후부터 흐려짐</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">소비 이벤트</div>
+        <div class="value">4월 마지막 날 / 5월 가정의달 개막</div>
+      </div>
+    </div>
+    <div class="weather-keywords">
+      <div class="label">핵심 키워드</div>
+      <span class="keyword-tag">건조+자외선 동시 노출</span>
+      <span class="keyword-tag">습도 급락</span>
+      <span class="keyword-tag">어머니 선물 바디세트</span>
+      <span class="keyword-tag">유분-보습 딜레마</span>
+      <span class="keyword-tag">올리브영 5월 세일</span>
+    </div>
+    <div class="sogu-point">
+      💡 "습도 80%→52% 급락으로 <strong>'어제까지 끈적였는데 오늘 갑자기 건조'</strong> 체감. 환절기 끝자락에서 <strong>유분-보습 딜레마</strong>가 극대화되는 날"
+    </div>
+  </div>
+
+  <!-- ==================== Part 1 ==================== -->
+  <div class="section">
+    <div class="section-title">🗣️ Part 1. Voice of Customer — 카테고리별 진짜 페인포인트</div>
+    <div class="note">모든 페인포인트는 <strong>실제 소비자 인용문 기반</strong>. 추측만으로 작성된 항목 없음.</div>
+
+    <!-- 바디크림/바디로션 -->
+    <div class="category-header">🧴 바디크림/바디로션 — Top 3 페인포인트</div>
+
+    <!-- Painpoint 1 -->
+    <div class="source-card">
+      <h3><span class="num">1</span> "유분 = 보습이라는 공식이 깨지는 순간 — 기름지면 끈적이고, 빼면 건조하고" <span class="badge badge-persist">지속</span></h3>
+      <ul>
+        <li><span class="quote">"유분기 있는 바디로션은 끈적끈적해서 싫더라구"</span></li>
+        <li><span class="quote">"유리아쥬 크림은 정말 바세린만큼 끈적여서 옷입기가 불편할 정도"</span></li>
+        <li><span class="quote">"일리윤 바디오일을 쓰는데 맨몸에 오일만 바르니까 건조함이 해결이 안되더라고"</span></li>
+        <li><span class="quote">"피지오겔은 기름덩어리임"</span> vs <span class="quote">"제로이드는 보습력이 개구대기"</span> — 유분↑이면 기름, 유분↓이면 보습 부족</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "옷입기가 불편할 정도" — 바디로션을 바른 직후 옷을 입어야 하는 현실적 순간에서 유분이 옷에 묻는 불쾌감이 사용 지속성을 결정함. 유분을 빼면 보습이 안 되고, 넣으면 옷에 묻는 <strong>제형 딜레마</strong>
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/3554128942" target="_blank">너무 찐득이지 않는 선에서 보습력 좋은 바디크림 로션 추천 (더쿠)</a>
+        <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1422594" target="_blank">피지오겔·세타필·제로이드 비교 후기 (디시 화장품갤)</a>
+        <a href="https://theqoo.net/review/711502608" target="_blank">유분기 없는 대용량 바디로션 추천 (더쿠)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 일리윤 세라마이드(유분 최소화+세라마이드 보습), 피지오겔 DMT(유분↑ 보습 확실하나 기름감 호불호), 더마비 프레쉬(산뜻 제형 but 보습 약함)<br>
+        <strong>해결되지 않은 갭</strong>: "유분 없이도 깊은 보습"을 달성한 바디 제품이 시장에 부재. 히알루론산 세럼은 페이셜에서만 성공, 바디에서는 아직 미개척
+      </div>
+      <div class="haruna-point">흰목이버섯 다당류 = 히알루론산 대비 5배 보수력 + 유분 대체. "기름 없이 촉촉한 바디크림"이라는 신 카테고리 메시지. "유분 대신 다당류, 끈적임 대신 촉촉함"</div>
+    </div>
+
+    <!-- Painpoint 2 -->
+    <div class="source-card">
+      <h3><span class="num">2</span> "세타필을 바르는 순간 후회함 — 더마 바디로션의 신뢰 균열" <span class="badge badge-new">NEW</span></h3>
+      <ul>
+        <li><span class="quote">"바르는 순간 후회함"</span> (세타필 사용 직후)</li>
+        <li><span class="quote">"겁나 끈적거림"</span>, <span class="quote">"너무 유분많아서 괴롭"</span></li>
+        <li><span class="quote">"세타필 쓰고 아토피올라오더라"</span>, <span class="quote">"등드름 난"</span></li>
+        <li>(반대 의견) <span class="quote">"번들거리거나 개기름 뜨지않음"</span>, <span class="quote">"위에 로션들 느낌의 딱 중간느낌"</span> — 같은 제품에 극단적 양분</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "등드름 난" — 더마 브랜드라는 신뢰로 구매했으나 오히려 트러블이 발생하는 배신감. 사용자는 "피부과 추천이라더니"라는 분노를 커뮤니티에 표출. 기존 더마 브랜드에 대한 <strong>신뢰 피로감</strong>이 부상
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/2498071581" target="_blank">세타필 바디로션 되게 끈적임 (더쿠)</a>
+        <a href="https://www.instiz.net/name/39529343" target="_blank">세타필 절대 쓰지마 (인스티즈, 댓글 200+)</a>
+        <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1422594" target="_blank">피지오겔·세타필·제로이드 비교 (디시)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 세타필(더마 신뢰+가성비), 에스트라 아토베리어(저자극 강조), 피지오겔(바이오미믹 기술)<br>
+        <strong>해결되지 않은 갭</strong>: 더마 브랜드들은 "성분은 안전, 제형은 불편"이라는 역설에 갇힘. 안전한 성분 ≠ 쾌적한 사용감
+      </div>
+      <div class="haruna-point">식자재 기반 = 더마 브랜드의 "성분 안전" + 식자재의 "감각적 즐거움" 동시 충족. "피부과 대신 식탁에서 온 안심 바디케어" 포지셔닝. 더마 브랜드 이탈 고객의 차선책</div>
+    </div>
+
+    <!-- Painpoint 3 -->
+    <div class="source-card">
+      <h3><span class="num">3</span> "바디로션 안 바르는 30대 — 나이 들면서 필수가 되지만 귀찮음은 여전" <span class="badge badge-persist">지속</span></h3>
+      <ul>
+        <li><span class="quote">"몸에 뭐 바르고 뿌리고 하는 감촉을 안좋아함"</span></li>
+        <li><span class="quote">"샤워하고 그냥 빨리 옷 입고 싶음"</span></li>
+        <li>(전환점) <span class="quote">"30대 넘어서...바디로션 안 바르면 안돼...진짜 필수"</span></li>
+        <li><span class="quote">"모공각화증있어서 고보습 바디로션 필요한데 많이 안 끈적이는 거 없을까??"</span></li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "샤워하고 그냥 빨리 옷 입고 싶음" — 30대에 접어들면서 건조·모공각화증으로 바디로션이 필수가 되지만, <strong>바르는 행위 자체의 시간·감촉 비용</strong>을 지불하기 싫은 모순. "필수인데 귀찮다"가 30대 비사용층의 핵심 심리
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://m.cafe.daum.net/subdued20club/ReHf/3791199" target="_blank">바디로션 못 바르는 사람들 있음 (다음카페)</a>
+        <a href="https://theqoo.net/beauty/3657862073" target="_blank">고보습 바디로션 쓰는 거 있는 덬들아 (더쿠)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 일리윤(가벼운 제형), 부케가르니(향으로 바르는 즐거움 제공), 피지오겔(무향·빠른 흡수)<br>
+        <strong>해결되지 않은 갭</strong>: "바르는 5초를 즐겁게" 만든 제품/콘텐츠가 여전히 부재. 모공각화증 전용 바디케어 카테고리 자체가 미성숙
+      </div>
+      <div class="haruna-point">흰목이버섯 다당류의 즉시 흡수 + 화이트토마토 결 케어 = "닭살 피부도 5초면 끝" 메시지. 30대 진입 고객의 첫 바디케어로 포지셔닝</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 세럼 -->
+    <div class="category-header">🧪 세럼 — Top 3 페인포인트</div>
+
+    <!-- Serum Painpoint 1 -->
+    <div class="source-card">
+      <h3><span class="num">1</span> "6,000원 세럼 vs 2만원 세럼 — 초가성비 전쟁에서 '효과 진짜 있어?'라는 의심" <span class="badge badge-new">NEW</span></h3>
+      <ul>
+        <li><span class="quote">"정가가 무려 6,000원! 세일가도 아니고 정가가 6천원"</span> (더마팩토리 나이아신아마이드)</li>
+        <li><span class="quote">"저녁에 듬뿍 바르고 아침에 일어나면 세상 피부가 고와질 수가"</span> (효과 만족)</li>
+        <li><span class="quote">"끈적임이라고는 존재하지도 않아"</span> (사용감 만족)</li>
+        <li>(회의) <span class="quote">"예전에 일리윤꺼 썼었는데 요샌 그닥 가성비 느낌이 아닌듯"</span> (가성비 기준 상향)</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "아침에 일어나면 세상 피부가 고와질 수가" — 저녁 루틴의 효과가 다음 날 아침 거울에서 확인되는 순간이 재구매 트리거. 다이소·올영 초저가 세럼 확대로 가격 기준이 완전히 리셋, "비싸면 효과 좋겠지"라는 상식이 무너지는 중
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://unpa.me/review/detail/e3f4583b-38f1-42b7-a2cc-4ae54289b59e" target="_blank">더마팩토리 나이아신아마이드 세럼 리뷰 (언파)</a>
+        <a href="https://m.dcinside.com/board/cosmetic/1479520" target="_blank">가성비 좋은 바디로션 추천 (디시)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 더마팩토리(6,000원 고농축), 다이소 성분에디터(3,000원 이하), 코스알엑스(1~2만원대 가성비), 토리든(만원대 안전지대)<br>
+        <strong>해결되지 않은 갭</strong>: 초가성비 세럼은 단일 성분(나이아신아마이드 only, 히알루론산 only)에 머무름. "복합 효능 + 초가성비"는 아직 미개척
+      </div>
+      <div class="haruna-point">키위케일바나나·ABC 세럼이 "식자재 복합 성분 + 합리적 가격"으로 포지셔닝하면 초가성비 단일 성분 세럼과 고가 프리미엄 세럼 사이의 미들 프리미엄 카테고리 창출 가능</div>
+    </div>
+
+    <!-- Serum Painpoint 2 -->
+    <div class="source-card">
+      <h3><span class="num">2</span> "진정 세럼인데 오히려 자극 — '병 주고 약 주면 안되잖아'" <span class="badge badge-new">NEW</span></h3>
+      <ul>
+        <li><span class="quote">"진정도 중요하지만 진정시키기 전에 아무 자극없는 게 진짜 중요하거든!!"</span></li>
+        <li><span class="quote">"수부지에 열감이 많은 피부라 학생때부터 쭉 여드름을 달고 살아왔어"</span></li>
+        <li><span class="quote">"하나 사라지면 하나 나는 여드름 총량의 법칙은 여전히 지켜지고 있는 중"</span></li>
+        <li>(해결 니즈) <span class="quote">"진정 효과 + 속건조 싹 잡아주는데 트러블 올라올 기미 보이면 얘가 바로 잠재워줍니다"</span> (다이소 파티온 앰플)</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "학생때부터 쭉 여드름을 달고 살아왔어" — 트러블이 일시적이 아닌 만성적 고민인 사용자에게 "진정"이라는 키워드는 <strong>희망과 배신이 반복되는 감정</strong>. 진정 제품에 자극이 있으면 신뢰가 완전히 무너짐
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/3662209775" target="_blank">파티온 노스카나인 트러블세럼 후기 (더쿠)</a>
+        <a href="https://unpa.me/community/unniepick/122908616" target="_blank">2026 다이소 신상 화장품 추천 (언파)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 파티온 노스카나인(저자극 진정), 코스알엑스 BHA(액티브 자극 감수), 메디힐 마데카소사이드(약한 진정)<br>
+        <strong>해결되지 않은 갭</strong>: "진정 + 0자극"을 동시에 증명한 세럼 부재. 진정 세럼의 "진정"이 마케팅 카피에 그치는 경우가 많음
+      </div>
+      <div class="haruna-point">키위케일바나나의 EGCG(녹차) + 바나나 추출물 = "식자재가 주는 진짜 진정" 메시지. 임상 자극 테스트 0% 데이터가 있으면 결정적 차별점. "병 안 주는 약, 식자재 진정 세럼"</div>
+    </div>
+
+    <!-- Serum Painpoint 3 -->
+    <div class="source-card">
+      <h3><span class="num">3</span> "수분 세럼 = 가장 안전한 선택이지만, 그것만으론 부족하다" <span class="badge badge-persist">지속</span></h3>
+      <ul>
+        <li><span class="quote">"물처럼 산뜻한 워터리 에센스 타입"</span>, <span class="quote">"전혀 끈적임이 없었어요"</span> (토리든)</li>
+        <li><span class="quote">"속당김이 확연히 줄어드는 것을 느낄 수 있었답니다"</span> (토리든 만족)</li>
+        <li><span class="quote">"트러블이나 흔적은 잘 진정되지 않는 것이 아쉬웠음"</span> (토리든 한계)</li>
+        <li><span class="quote">"메이크업을 할 때도 확실히 들뜸이 줄어들었어요"</span> (화장 호환성 장점)</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "메이크업 들뜸이 줄어들었어요" — 수분 세럼의 진짜 가치는 보습 자체보다 <strong>"화장이 잘 먹는 베이스"</strong> 기능. 사용자는 세럼을 독립 제품이 아니라 메이크업 루틴의 한 단계로 인식
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://unpa.me/community/essence/113532838" target="_blank">토리든 다이브인 세럼 후기 (언파)</a>
+        <a href="https://unpa.me/community/essence/125685303" target="_blank">토리든 다이브인 세럼 사용 후기 (언파)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 토리든 다이브인(안전한 수분), 이니스프리 그린티(수분+진정), 아이소이 불가리안 로즈(수분+안티에이징)<br>
+        <strong>해결되지 않은 갭</strong>: 수분 세럼의 "안전하지만 무력한" 포지션. 사용자는 수분 + α(모공/미백/진정)를 한 병에 원함
+      </div>
+      <div class="haruna-point">ABC 세럼이 "수분 세럼의 안전함 + 비타민 광채 효능" 듀얼 포지션으로 토리든 사용자의 업그레이드 경로를 제공. "토리든에서 졸업하면 ABC 세럼"</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 폼클렌징 -->
+    <div class="category-header">🧼 폼클렌징 — Top 3 페인포인트</div>
+
+    <!-- Foam Painpoint 1 -->
+    <div class="source-card">
+      <h3><span class="num">1</span> "거품 풍성 ≠ 세정력 — 센카는 거품 좋은데 땡기고, 비플레인은 순한데 거품 약하고" <span class="badge badge-new">NEW</span></h3>
+      <ul>
+        <li><span class="quote">"거품이 풍성하고 세정력이 좋다"</span> (센카 5점)</li>
+        <li><span class="quote">"세정력이 은근 아쉽고 땡김이 심하다"</span> (센카 1~2점, 같은 제품)</li>
+        <li><span class="quote">"거품이 조금 얇은 편이라서 포만감이 덜 느껴질 수 있다"</span> (비플레인 약점)</li>
+        <li>(해결자) <span class="quote">"약산성 단점을 다 보완한듯"</span> (해피바스, 어제 리포트 재인용)</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: 사용자는 세안할 때 "거품이 얼굴을 감싸는 느낌"을 중시하지만, 그것이 세정력과 동일시됨. 실제로 거품이 풍성해도 당기거나, 순해도 거품이 부실하면 <strong>"제대로 씻긴 느낌"</strong>이 안 남음
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.clien.net/service/board/use/8680069" target="_blank">센카 퍼펙트 휩 클렌징폼 후기 (클리앙)</a>
+        <a href="https://www.glowpick.com/products/124509" target="_blank">비플레인 녹두 약산성 클렌징폼 (글로우픽, 리뷰 1,195건)</a>
+        <a href="https://unpa.me/review/detail/82338663-af19-4d5b-b03c-ac30f6962c25" target="_blank">비플레인 녹두 클렌징폼 리뷰 (언파)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장이 푸는 방식</strong>: 센카(약알칼리 강세정+풍성 거품), 비플레인(약산성 저자극+얇은 거품), 해피바스(약산성+거품 보완 시도)<br>
+        <strong>해결되지 않은 갭</strong>: "풍성한 거품 + 약산성 + 당기지 않는 세정" 3박자를 동시에 달성한 제품이 없음
+      </div>
+      <div class="haruna-point">흰목이버섯 다당류의 젤리형 거품(밀도 높고 약산성 유지)이 기술적 차별점. "거품이 얼굴을 감싸는데 당기지 않는" 체험을 증명하면 카테고리 1위 가능</div>
+    </div>
+
+    <!-- Foam Painpoint 2 -->
+    <div class="source-card">
+      <h3><span class="num">2</span> "약산성 vs 약알칼리 — 양극화가 가속되면서 사용자가 혼란에 빠짐" <span class="badge badge-persist">지속</span></h3>
+      <ul>
+        <li><span class="quote">"약산성이고 뭐고 내가 알아듣나.. 그냥 쓴거지"</span> (약산성 포기 선언)</li>
+        <li><span class="quote">"약산성 폼클에서 조금 더 저자극인 클렌징 젤로 바뀌고 있음"</span> (시장 이동)</li>
+        <li><span class="quote">"클오 써도 2차로 꼭 약알칼리로 마무리하기"</span> (이중 세안 구조)</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "뭐 약산성이고 뭐고 내가 알아듣나" — 약산성 마케팅이 과포화되면서 오히려 사용자가 정보 피로감에 빠짐. "약산성이 좋다더라" → "안 맞더라" → "약알칼리 다시 써볼까" → "혼란" 사이클
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/square/2105710303" target="_blank">약산성 안맞는 덬들 가성비 알칼리 폼클 모음 (더쿠, 조회 92,000+)</a>
+        <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1449561" target="_blank">클렌징폼 GOAT (디시)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장 시그널 해석</strong>: 약산성 "교육" 단계를 지나 "경험 기반 선택" 단계로 진입. 사용자는 pH보다 사용감으로 판단
+      </div>
+      <div class="haruna-point">pH 마케팅 대신 "씻고 나서의 감각"에 집중. "약산성인데 개운한" 체험 메시지가 약산성 피로감을 돌파하는 키</div>
+    </div>
+
+    <!-- Foam Painpoint 3 -->
+    <div class="source-card">
+      <h3><span class="num">3</span> "클렌징이 피부를 바꾼다는 확신 — 한번 잘 만나면 충성도 폭발" <span class="badge badge-new">NEW</span></h3>
+      <ul>
+        <li><span class="quote">"거울볼 때 감탄함"</span> (폼클렌징 교체 후)</li>
+        <li><span class="quote">"생리때문에 피부 개난리나는 기간인데도 지금 피부컨디션 좋은 게 보여"</span></li>
+        <li><span class="quote">"원래 얼굴에 여드름 비롯해서 온갖 민감 트러블 + 하얗게 뜨는 각질로 씹건조 푸석푸석 피부"</span> → 클렌저 교체 후 개선</li>
+      </ul>
+      <div class="context-box">
+        🌟 <strong>일상생활 컨텍스트</strong>: "생리 기간인데도 피부 좋은 게 보여" — 호르몬 변화로 피부가 최악인 순간에도 컨디션이 유지된다는 것은 폼클렌징의 가장 강력한 재구매 트리거. "최악의 순간에도 괜찮다"가 충성 고객을 만듦
+      </div>
+      <div class="review-links">
+        <div class="link-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/1930244501" target="_blank">폼클렌징 영향이 이렇게 크나? (더쿠)</a>
+        <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1487725" target="_blank">피부 관리 루틴 효과 (디시)</a>
+      </div>
+      <div class="market-gap">
+        <strong>시장 시그널</strong>: 클렌징폼이 "기본 단계"에서 "피부 상태 결정 1순위"로 위상 변화. 한번 안착하면 2~3년 재구매하는 가장 높은 LTV 카테고리
+      </div>
+      <div class="haruna-point">출시 시 "3일 체험 키트" + 전후 비교 사진 릴스 시리즈. "3일이면 거울이 달라진다" 메시지의 임상 데이터 확보가 핵심</div>
+    </div>
+  </div>
+
+  <!-- ==================== Part 2 ==================== -->
+  <div class="section">
+    <div class="section-title">🔍 Part 2. 리뷰 기반 경쟁 분석 — 오늘의 Deep Dive</div>
+    <div class="note">전일 다룬 제품: 일리윤 세라마이드 아토, 비욘드 바디타민, 코스알엑스 비타민C 23, 해피바스 마이크로미셀라, 듀이트리 하이아미노. <strong>오늘은 새로운 제품으로 deep dive</strong>.</div>
+
+    <!-- 세타필 -->
+    <div class="product-card">
+      <h3>🧴 바디크림: 세타필 모이스춰라이징 로션 (글로우픽 평점 4.38, 리뷰 931건)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>항목</th><th>내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>5점 BEST 워딩</strong></td><td><span class="quote">"번들거리거나 개기름 뜨지않음"</span>, <span class="quote">"위에 로션들 느낌의 딱 중간느낌"</span>, <span class="quote">"극건성 피부에 여드름약과 함께 사용 시 효과적"</span>, <span class="quote">"필요한 정도의 적절한 유분과 보습력"</span></td></tr>
+            <tr><td><strong>1~2점 핵심 불만</strong></td><td><span class="quote">"바르는 순간 후회함"</span>, <span class="quote">"겁나 끈적거림"</span>, <span class="quote">"세타필 쓰고 아토피올라오더라"</span>, <span class="quote">"등드름 난"</span>, <span class="quote">"너무 유분많아서 괴롭"</span></td></tr>
+            <tr><td><strong>재구매 트리거</strong></td><td>"더마 브랜드 신뢰 + 가격 접근성 + 대용량" 3박자. 단, 피부 타입별 호불호가 극단적으로 양분됨</td></tr>
+            <tr><td><strong>하루나 시사</strong></td><td><strong>회피 포인트</strong>: 세타필의 "끈적임+트러블" 동시 발생은 하루나가 절대 겪어선 안 되는 리스크. <strong>차별화</strong>: 흰목이버섯 다당류 = 유분 의존도↓, 끈적임 원천 차단. "더마가 못 푼 사용감, 식자재가 풀다"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="copy-source">
+        <strong>카피 소스 추출</strong>:<br>
+        세타필 5점 "적절한 유분과 보습력" → 하루나 <strong>"유분 없이도 적절한 그 이상의 보습"</strong><br>
+        세타필 1점 "바르는 순간 후회함" → 하루나 <strong>"바르는 순간 기분 좋은 바디크림"</strong>
+      </div>
+    </div>
+
+    <!-- 토리든 -->
+    <div class="product-card">
+      <h3>🧪 세럼: 토리든 다이브인 저분자 히알루론산 세럼 (글로우픽 평점 4.5+, 수분 세럼 대표)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>항목</th><th>내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>5점 BEST 워딩</strong></td><td><span class="quote">"물처럼 산뜻한 워터리 에센스 타입"</span>, <span class="quote">"전혀 끈적임이 없었어요"</span>, <span class="quote">"챱챱 소리를 내면서 피부 속으로 쏙 스며드는 느낌"</span>, <span class="quote">"메이크업 할 때 확실히 들뜸이 줄어들었어요"</span>, <span class="quote">"다음 날 아침까지 피부가 한결 편안하고 잔주름 부각도 덜해"</span></td></tr>
+            <tr><td><strong>1~2점 핵심 불만</strong></td><td><span class="quote">"트러블이나 흔적은 잘 진정되지 않는 것이 아쉬웠음"</span> — 수분 채우기에 특화, 기능성(진정·미백·모공) 부재. "1달 써도 모공은 그대로"</td></tr>
+            <tr><td><strong>재구매 트리거</strong></td><td>"안전한 수분 + 화장 호환 + 합리적 가격" 3박자. 입문용으로 최적이나 "졸업"하는 사용자도 많음</td></tr>
+            <tr><td><strong>하루나 시사</strong></td><td><strong>벤치마크</strong>: 토리든의 "안전한 수분"은 시장 저변 확대에 성공. <strong>결정적 갭</strong>: 토리든 사용자가 "수분 + α"를 원할 때 갈 곳이 없음. 키위케일바나나(수분+모공+진정)와 ABC(수분+광채)가 <strong>토리든 졸업생의 업그레이드 선택지</strong>로 포지셔닝 가능</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="copy-source">
+        <strong>카피 소스 추출</strong>:<br>
+        토리든 5점 "챱챱 스며드는 느낌" → 하루나 <strong>"스며드는 건 기본, 모공까지 조여주는 건 키위케일바나나만"</strong><br>
+        토리든 1점 "진정 안 되는 게 아쉬움" → 하루나 <strong>"수분만으론 부족했던 당신에게, 식자재 진정 세럼"</strong>
+      </div>
+    </div>
+
+    <!-- 더마팩토리 -->
+    <div class="product-card">
+      <h3>🧪 세럼: 더마팩토리 나이아신아마이드 20% 세럼 (글로우픽 평점 4.42, 초가성비 미백)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>항목</th><th>내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>5점 BEST 워딩</strong></td><td><span class="quote">"정가가 무려 6,000원"</span>, <span class="quote">"저녁에 듬뿍 바르고 아침에 일어나면 세상 피부가 고와질 수가"</span>, <span class="quote">"끈적임이라고는 존재하지도 않아"</span>, <span class="quote">"피부결이 매끄러워짐"</span>, <span class="quote">"모공이 눈에 띄게 줄었어요"</span></td></tr>
+            <tr><td><strong>1~2점 핵심 불만</strong></td><td>"따가움", "건성 피부에서 당김감", "바른 쪽과 안 바른 쪽 색차이 심함", 용기 뚜껑 불편</td></tr>
+            <tr><td><strong>재구매 트리거</strong></td><td><strong>파괴적 가성비</strong> — 6,000원에 나이아신아마이드 200,000ppm. "이 가격에 이 효과면 실패해도 손해 안 봄"이라는 심리적 진입장벽 제거</td></tr>
+            <tr><td><strong>하루나 시사</strong></td><td><strong>시장 시그널</strong>: 초가성비 세럼이 중저가 세럼 시장을 잠식 중. ABC 세럼이 이 가격대와 직접 경쟁하면 불리. <strong>차별화</strong>: "6,000원이 못 주는 것 = 복합 효능 + 식자재 스토리 + 프리미엄 사용 경험". NAD+는 나이아신아마이드의 상위 성분이라는 교육 콘텐츠가 필요</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="copy-source">
+        <strong>카피 소스 추출</strong>:<br>
+        더마팩토리 가성비 "6,000원" → 하루나 <strong>"6,000원이 못 주는 복합 광채, NAD+가 줍니다"</strong><br>
+        더마팩토리 효과 "피부가 고워짐" → 하루나 <strong>"고와지는 건 시작, 차오르는 광채는 ABC만"</strong>
+      </div>
+    </div>
+
+    <!-- 비플레인 -->
+    <div class="product-card">
+      <h3>🧼 폼클렌징: 비플레인 녹두 약산성 클렌징폼 (글로우픽 평점 4.34, 리뷰 1,195건)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>항목</th><th>내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>5점 BEST 워딩</strong></td><td><span class="quote">"피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함"</span>, "물에 잘 풀리고 피부 탄력이 사라지지 않음", "녹두추출물 32%의 진정 효과", "민감 피부도 안심"</td></tr>
+            <tr><td><strong>1~2점 핵심 불만</strong></td><td><span class="quote">"거품이 조금 얇은 편이라서 포만감이 덜 느껴질 수 있다"</span>, "오일 메이크업 제거에는 별도 클렌징 워터 필요", "120ml 용량이 생각보다 작아 3~4주면 다 쓸 수 있음"</td></tr>
+            <tr><td><strong>재구매 트리거</strong></td><td>"녹두 = 순함의 보증" + 약산성 + 식자재 성분명 인지도. 대용량 160ml 출시로 용량 불만 일부 해소</td></tr>
+            <tr><td><strong>하루나 시사</strong></td><td><strong>직접 경쟁 벤치마크</strong>: 비플레인은 "식자재(녹두) + 약산성"으로 하루나 폼클렌징과 가장 유사한 포지션. 비플레인의 약점 <strong>"거품 밀도 부족"</strong>을 흰목이버섯 다당류의 젤리형 거품으로 정면 돌파 가능. "녹두 다음은 버섯"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="copy-source">
+        <strong>카피 소스 추출</strong>:<br>
+        비플레인 5점 "녹두 = 순함" → 하루나 <strong>"녹두보다 깊은 식자재, 흰목이버섯의 순함"</strong><br>
+        비플레인 1점 "거품 얇음" → 하루나 <strong>"거품이 쫀쫀하게 감싸는 식자재 클렌저"</strong>
+      </div>
+    </div>
+
+    <!-- 센카 -->
+    <div class="product-card">
+      <h3>🧼 폼클렌징: 센카 퍼펙트 휩 클렌징폼 (약알칼리 거품 대표, NEW 리뉴얼)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>항목</th><th>내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>5점 BEST 워딩</strong></td><td><span class="quote">"거품이 풍성하고 세정력이 좋다"</span>, "선크림 제거가 쉬움", "플로럴 향이 싱그러운 비누냄새", "NEW 퍼펙트 휩은 80% 더 조밀해진 거품"</td></tr>
+            <tr><td><strong>1~2점 핵심 불만</strong></td><td><span class="quote">"세정력이 은근 아쉽고 땡김이 심하다"</span>, "피부 자극이 상당함", "약알칼리라 민감 피부에 부적합"</td></tr>
+            <tr><td><strong>재구매 트리거</strong></td><td><strong>거품의 시각적·감각적 만족감</strong> — 모공 속 노폐물 세정 + 풍성한 거품의 "제대로 씻긴 느낌"이 핵심</td></tr>
+            <tr><td><strong>하루나 시사</strong></td><td><strong>회피 포인트</strong>: 센카의 약알칼리 + 강세정 = 땡김·자극 리스크. 하루나는 "센카급 거품 밀도 + 약산성 + 당기지 않음"이 목표. <strong>거품 비주얼 콘텐츠</strong>: 센카의 성공이 거품 비주얼의 힘을 증명. 하루나도 거품 클로즈업 릴스가 필수</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="copy-source">
+        <strong>카피 소스 추출</strong>:<br>
+        센카 5점 "거품 풍성" → 하루나 <strong>"이 거품이 약산성이라고? 식자재 거품의 놀라움"</strong><br>
+        센카 1점 "땡김이 심함" → 하루나 <strong>"거품은 센카급, 당김은 0"</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Part 3 ==================== -->
+  <div class="section">
+    <div class="section-title">🎬 Part 3. 고인게이지먼트 콘텐츠 Deconstruction</div>
+    <div class="note">전일 사례: Beauty Pie 원스텝 릴, INKEY List 성분교육, Jaxon Lane 나노시딩, 드브르베 5초 에피소드, 메디힐 볼륨시딩. <strong>오늘은 릴스 훅 공식 + 국내 신생 브랜드 전략</strong> 중심.</div>
+
+    <!-- Case 1 -->
+    <div class="case-card">
+      <h3>사례 1. 릴스 바이럴 공식 — "논쟁형 훅"으로 230만 뷰 달성</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th><th>내용</th></tr></thead>
+          <tbody>
+            <tr><td><strong>포맷</strong></td><td>인스타 릴스 15~30초, 논쟁 유발형</td></tr>
+            <tr><td><strong>첫 3초 훅</strong></td><td>기존 통념을 뒤집는 반직관적 주장 + 극단적 표현. <strong>정보보다 감정을 먼저 건드린다</strong></td></tr>
+            <tr><td><strong>인게이지먼트</strong></td><td>논쟁형 230만 뷰, 참여형 178만 뷰. 팔로워 수 무관하게 시청 유지율+댓글 밀도가 알고리즘 부스트</td></tr>
+            <tr><td><strong>재활용 레시피</strong></td><td>① 통념 뒤집기 ② 극단 카피("제발 이 바디크림 좀 써보세요") ③ 정답 유보(다음편 기대)</td></tr>
+            <tr><td><strong>하루나 적용</strong></td><td>"<strong>바디로션, 바르면 안 되는 이유</strong>" 낚시형 훅 → 본문: "끈적이는 바디로션이 문제. 식자재 바디크림은 다르다" → 댓글에서 논쟁 유도. 시리즈화 가능</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case-card">
+      <h3>사례 2. 나노 인플루언서 참여율 — 팔로워 1.5만 이하가 참여율 2.7% 기록</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th><th>내용</th></tr></thead>
+          <tbody>
+            <tr><td><strong>포맷</strong></td><td>인스타 릴스 + 틱톡 숏폼 (나노/마이크로 인플루언서 중심)</td></tr>
+            <tr><td><strong>첫 3초 훅</strong></td><td>개인 스토리텔링 기반 — "나도 이 피부 고민 있었는데" 공감 입장</td></tr>
+            <tr><td><strong>인게이지먼트</strong></td><td>나노 인플루언서 참여율 인스타 2.7% (메가 0.3%의 9배), 틱톡 평균 참여율 7.52% (인스타 1.87%의 4배)</td></tr>
+            <tr><td><strong>재활용 레시피</strong></td><td>① 진솔한 스토리 ② 약점 고백("나도 닭살 있었어") ③ 변화 과정 보여주기 ④ 팔로워와 직접 소통</td></tr>
+            <tr><td><strong>하루나 적용</strong></td><td>바디크림·세럼 전문 나노 크리에이터 15~20명 시딩. "<strong>내 닭살에 직접 써봤다</strong>" 시리즈. 포스팅 의무 없이 자발적 콘텐츠 트리거 = 식자재 원료의 독특함</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="case-card">
+      <h3>사례 3. 어바웃톤 — "무빙 팝업"으로 대학가 직접 접근, 올리브영 어워즈 3위</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th><th>내용</th></tr></thead>
+          <tbody>
+            <tr><td><strong>포맷</strong></td><td>오프라인 무빙 팝업 + SNS 연계</td></tr>
+            <tr><td><strong>첫 3초 훅</strong></td><td>제품 디자인 자체가 훅 — "기능성만큼이나 제품의 디자인을 고려한다"는 소비자 니즈</td></tr>
+            <tr><td><strong>인게이지먼트</strong></td><td>올리브영 어워즈 메이크업 베이스 부문 3위 달성</td></tr>
+            <tr><td><strong>하루나 적용</strong></td><td>"<strong>하루나 팜 투 스킨(Farm to Skin) 팝업</strong>" — 식자재 원료를 직접 만져보는 체험 부스. 흰목이버섯 실물 → 바디크림 제형 변환 과정 시연. 30대 여성 밀집 지역(성수·한남) 주말 팝업</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Case 4 -->
+    <div class="case-card">
+      <h3>사례 4. 오아드 — 케이팝 뮤비급 브랜드 필름 + 인플루언서 공구로 1020 장악</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th><th>내용</th></tr></thead>
+          <tbody>
+            <tr><td><strong>포맷</strong></td><td>브랜드 필름(고퀄리티 영상) + 인플루언서 공구/협업</td></tr>
+            <tr><td><strong>첫 3초 훅</strong></td><td>"웬만한 케이팝 뮤직비디오에 버금가는 퀄리티" — 스몰 브랜드가 대기업 레벨 비주얼을 제시하는 의외성</td></tr>
+            <tr><td><strong>재활용 레시피</strong></td><td>① 제품 영상 = 브랜드 영상 (분리하지 않음) ② 감성 퀄리티 투자 ③ 트렌드 빠른 대응(신제품)</td></tr>
+            <tr><td><strong>하루나 적용</strong></td><td>"<strong>식자재가 피부 위에서 녹는 순간</strong>" 브랜드 필름 — 흰목이버섯·키위·케일·바나나가 크림/세럼으로 변환되는 시네마틱 영상. 30초 숏버전 릴스 + 90초 풀버전 피드</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Case 5 -->
+    <div class="case-card">
+      <h3>사례 5. 스카이보틀 — 다이소 입점 + 이종 콜라보 즉시 품절</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>항목</th><th>내용</th></tr></thead>
+          <tbody>
+            <tr><td><strong>포맷</strong></td><td>다이소 입점(접근성) + 미식 브랜드/카페 콜라보(화제성)</td></tr>
+            <tr><td><strong>첫 3초 훅</strong></td><td>"이게 다이소에서 나온다고?" + "테디뵈르 하우스랑 콜라보?" — 의외성 x 접근성</td></tr>
+            <tr><td><strong>인게이지먼트</strong></td><td>콜라보 제품 출시 직후 즉시 품절</td></tr>
+            <tr><td><strong>하루나 적용</strong></td><td>"<strong>식자재 x 식자재 콜라보</strong>" — 유명 식재료 브랜드(ex. 로컬 버섯 농장, 유기농 키위 농장)와 한정판 바디크림 출시. "Farm to Skin" 스토리가 진정성 있게 전달됨</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Cross Analysis -->
+    <div class="cross-analysis">
+      <h3 style="font-size:16px; font-weight:700; color:#1a1815; margin-bottom:14px;">🧠 사례 교차 분석 — 공통 작동 원리</h3>
+      <ol>
+        <li><strong>"감정 → 정보" 순서가 바이럴의 핵심</strong>: 논쟁형·나노 인플루언서 모두 정보보다 감정(공감·분노·의외성)을 먼저 건드림. 하루나도 "식자재 성분 교육"보다 "끈적임 없는 순간의 쾌감"을 먼저 보여줘야 함</li>
+        <li><strong>나노/마이크로의 참여율이 메가를 압도</strong>: 15,000 이하 나노 → 참여율 2.7%, 틱톡 평균 7.52%. 하루나의 383 팔로워 현 상태에서도 릴스 바이럴 가능성 충분</li>
+        <li><strong>오프라인 체험 + 온라인 콘텐츠의 쌍방향</strong>: 어바웃톤(팝업→SNS) + 스카이보틀(다이소→품절→SNS). 하루나도 팝업/시딩 → 자발적 콘텐츠 구조 필요</li>
+        <li><strong>비주얼 퀄리티 = 브랜드 퀄리티</strong>: 오아드가 뮤비급 영상으로 소규모 한계 돌파. 하루나도 1개의 시네마틱 브랜드 필름이 100개의 일반 릴스보다 효과적</li>
+        <li><strong>이종 콜라보가 화제성의 지렛대</strong>: 스카이보틀의 카페/베이커리 콜라보. 하루나는 "식자재"라는 본업이 곧 콜라보 소재 — 농장·요리사·푸드 크리에이터와의 자연스러운 협업 가능</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ==================== Part 4 ==================== -->
+  <div class="section">
+    <div class="section-title">🎯 Part 4. 하루나 적용 인사이트 (오늘의 결론)</div>
+
+    <!-- USP 매칭표 -->
+    <h4 style="font-size:15px; font-weight:700; margin-bottom:14px; color:#1a1815;">🔑 페인포인트 → USP 매칭표</h4>
+    <div class="table-wrap" style="margin-bottom:24px;">
+      <table>
+        <thead>
+          <tr><th>카테고리</th><th>핵심 페인포인트</th><th>하루나 USP 매칭</th><th>카피 후보</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>바디크림</td><td>유분-보습 딜레마</td><td>다당류 = 유분 대체 보습</td><td>"유분 대신 다당류, 끈적임 대신 촉촉함"</td></tr>
+          <tr><td>바디크림</td><td>더마 브랜드 신뢰 균열</td><td>식자재 = 감각+안전 동시</td><td>"피부과 대신 식탁에서 온 안심"</td></tr>
+          <tr><td>바디크림</td><td>30대 필수인데 귀찮음</td><td>즉시 흡수 5초</td><td>"닭살 피부도 5초면 끝"</td></tr>
+          <tr><td>세럼</td><td>초가성비 vs 효과 의심</td><td>복합 식자재 미들 프리미엄</td><td>"6,000원이 못 주는 복합 광채"</td></tr>
+          <tr><td>세럼</td><td>진정 세럼의 자극 역설</td><td>EGCG+바나나 0자극 진정</td><td>"병 안 주는 약, 식자재 진정"</td></tr>
+          <tr><td>세럼</td><td>수분만으론 부족</td><td>수분+α(모공/광채)</td><td>"토리든 졸업생을 위한 세럼"</td></tr>
+          <tr><td>폼클렌징</td><td>거품 ≠ 세정력 딜레마</td><td>다당류 젤리 거품</td><td>"거품이 쫀쫀한 식자재 클렌저"</td></tr>
+          <tr><td>폼클렌징</td><td>약산성 정보 피로감</td><td>사용감 중심 메시지</td><td>"약산성인데 개운한"</td></tr>
+          <tr><td>폼클렌징</td><td>1개가 피부를 바꿈</td><td>3일 체험 키트 전략</td><td>"3일이면 거울이 달라진다"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 카피 소스 풀 -->
+    <h4 style="font-size:15px; font-weight:700; margin-bottom:14px; color:#1a1815;">📝 오늘 추출한 카피 소스 풀</h4>
+
+    <div class="idea-card">
+      <span class="category bodycream">🧴 바디크림</span>
+      <div class="idea-desc">
+        "유분 대신 다당류, 끈적임 대신 촉촉함"<br>
+        "피부과 대신 식탁에서 온 안심 바디케어"<br>
+        "바르는 순간 기분 좋은 바디크림"<br>
+        "닭살 피부도 5초면 끝"<br>
+        "유분 없이도 깊은 보습, 흰목이버섯의 비밀"
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category serum">🧪 세럼</span>
+      <div class="idea-desc">
+        "6,000원이 못 주는 복합 광채, NAD+가 줍니다"<br>
+        "병 안 주는 약, 식자재 진정 세럼"<br>
+        "토리든에서 졸업하면 ABC 세럼"<br>
+        "수분만으론 부족했던 당신에게, 식자재 진정 세럼"<br>
+        "스며드는 건 기본, 모공까지 조여주는 건 키위케일바나나만"
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category foam">🧼 폼클렌징</span>
+      <div class="idea-desc">
+        "거품이 쫀쫀하게 감싸는 식자재 클렌저"<br>
+        "거품은 센카급, 당김은 0"<br>
+        "약산성인데 개운한, 흰목이버섯 클렌저"<br>
+        "녹두보다 깊은 식자재, 흰목이버섯의 순함"<br>
+        "3일이면 거울이 달라진다"
+      </div>
+    </div>
+
+    <!-- 콘텐츠 레시피 -->
+    <h4 style="font-size:15px; font-weight:700; margin: 24px 0 14px; color:#1a1815;">🎬 콘텐츠 레시피 (재활용 가능)</h4>
+
+    <div class="idea-card">
+      <span class="category content">1 논쟁형 훅 릴스</span>
+      <div class="idea-desc">"바디로션, 바르면 안 되는 이유" 낚시형 훅 → 식자재 바디크림 반전. 댓글 논쟁 유도</div>
+    </div>
+    <div class="idea-card">
+      <span class="category content">2 나노 인플루언서 닭살 시리즈</span>
+      <div class="idea-desc">바디크림 전문 나노 크리에이터 15~20명에 "내 닭살에 직접 써봤다" 자발적 콘텐츠 유도</div>
+    </div>
+    <div class="idea-card">
+      <span class="category content">3 Farm to Skin 브랜드 필름</span>
+      <div class="idea-desc">흰목이버섯·키위·케일이 크림/세럼으로 변환되는 시네마틱 30초 영상</div>
+    </div>
+    <div class="idea-card">
+      <span class="category content">4 성수 팝업 "식자재 터치바"</span>
+      <div class="idea-desc">원료 실물 체험 → 제품 사용 → SNS 인증. 30대 여성 타겟</div>
+    </div>
+    <div class="idea-card">
+      <span class="category content">5 이종 콜라보 한정판</span>
+      <div class="idea-desc">로컬 유기농 농장 x 하루나 한정 바디크림. "식탁에서 피부까지" 스토리</div>
+    </div>
+  </div>
+
+  <!-- ==================== Part 5 ==================== -->
+  <div class="section">
+    <div class="section-title">🔬 Part 5. 개발 제품 x 시장 인사이트 정합도 분석</div>
+    <div class="note">오늘 도출한 페인포인트·카피 소스가 현재 개발 중인 하루나 제품과 어디서 만나고 어디서 빗나가는가.<br>우선순위 마킹: <span class="priority-red">즉시 결정</span> <span class="priority-yellow">검토 권장</span> <span class="priority-green">강점</span></div>
+
+    <!-- Product 1: 실키 머쉬룸 바디크림 -->
+    <div class="product-analysis">
+      <h3>🧴 [제품 1] 실키 머쉬룸 바디크림 (메인 라인)</h3>
+      <div class="subtitle">출시 완료/지속 | 흰목이버섯, 화이트 토마토, PDRN, 비건 | 30대 여성 타겟</div>
+
+      <h4>페인포인트 매칭도</h4>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>오늘 페인포인트</th><th>매칭</th><th>분석</th></tr></thead>
+          <tbody>
+            <tr><td>#1 유분-보습 딜레마</td><td><span class="priority-green">강점</span></td><td>흰목이버섯 다당류 = 유분 없는 보습의 정확한 해답. 이것을 명시적으로 USP화할 것</td></tr>
+            <tr><td>#2 더마 브랜드 신뢰 균열</td><td><span class="priority-green">강점</span></td><td>식자재 = 더마와 다른 신뢰 축. 세타필 이탈 고객의 대안으로 포지셔닝 가능</td></tr>
+            <tr><td>#3 30대 필수인데 귀찮음</td><td><span class="priority-red">즉시 결정</span></td><td>"5초 흡수" 메시지를 아직 마케팅에 충분히 반영하지 못함. 즉시 콘텐츠화 필요</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4><span class="priority-red">즉시 결정</span> 즉시 결정 필요 (마케팅 리뉴얼)</h4>
+      <ul class="action-list">
+        <li><strong>"유분 없이 촉촉한" 메시지 전면화</strong> — 세타필·피지오겔의 유분 딜레마를 정면 공략. "다당류 보습"이라는 기술 USP를 소비자 언어로 번역</li>
+        <li><strong>논쟁형 릴스 즉시 제작</strong> — "바디로션 끈적이면 버리세요" 훅으로 바이럴 시도. 비사용층 30대 타겟</li>
+        <li><strong>모공각화증(닭살) 전용 메시지 추가</strong> — 화이트토마토 결 케어를 "닭살 개선"으로 구체화</li>
+      </ul>
+
+      <h4><span class="priority-yellow">검토 권장</span> 검토 권장</h4>
+      <ul class="action-list">
+        <li>Farm to Skin 팝업 1회 시범: 성수·한남 주말 1일 팝업으로 브랜드 체험 기회 제공</li>
+        <li>세타필 이탈 고객 타겟팅: "더마 대신 식탁" 비교 카피 A/B 테스트</li>
+      </ul>
+
+      <h4><span class="priority-green">강점</span> 강점 (이미 잘 됨)</h4>
+      <ul class="action-list">
+        <li>유분 없는 보습 — 시장의 유분 딜레마에 대한 기술적 해답 보유</li>
+        <li>식자재 스토리 — 더마 브랜드 피로감의 대안으로서 차별적 신뢰 축</li>
+      </ul>
+    </div>
+
+    <!-- Product 2: 키위케일바나나 세럼 -->
+    <div class="product-analysis">
+      <h3>🧪 [제품 2] 키위케일바나나 세럼 (모공/진정)</h3>
+      <div class="subtitle">5월 말 출시 예정 | 키위, 케일, 바나나, EGCG, LHA/PHA | 모공 + 진정 통합 케어</div>
+
+      <h4>페인포인트 매칭도</h4>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>오늘 페인포인트</th><th>매칭</th><th>분석</th></tr></thead>
+          <tbody>
+            <tr><td>세럼 #1 초가성비 의심</td><td><span class="priority-yellow">검토 권장</span></td><td>더마팩토리 6,000원과 직접 가격 경쟁은 불리. "복합 효능"으로 미들 프리미엄 포지션 확보 필요</td></tr>
+            <tr><td>세럼 #2 진정의 자극 역설</td><td><span class="priority-red">즉시 결정</span></td><td>"병 안 주는 진정 세럼" 메시지가 결정적. 출시 전 자극 테스트 0% 데이터 확보 필수</td></tr>
+            <tr><td>세럼 #3 수분만으론 부족</td><td><span class="priority-green">강점</span></td><td>토리든 졸업생 업그레이드 경로로 정확히 매칭. "수분+모공+진정" 트리플</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4><span class="priority-red">즉시 결정</span> 즉시 결정 필요 (출시 4주 전)</h4>
+      <ul class="action-list">
+        <li><strong>자극 테스트 데이터 확보·공개 준비</strong> — "진정 세럼의 자극 역설"이 시장의 가장 큰 미충족 니즈. 패치 테스트 결과를 릴스 콘텐츠로 제작</li>
+        <li><strong>가격 포지셔닝 확정</strong> — 더마팩토리(6,000원)와 넘버즈인(15,000원) 사이의 미들 프리미엄</li>
+        <li><strong>"아침에도 OK" 메시지 1순위 유지</strong> — 어제 리포트와 동일하게 최우선 USP</li>
+      </ul>
+
+      <h4><span class="priority-yellow">검토 권장</span> 검토 권장</h4>
+      <ul class="action-list">
+        <li>토리든 비교 콘텐츠: "수분만으론 부족했던 당신에게" 업그레이드 메시지</li>
+        <li>파티온 대비 차별화: 식자재 진정 vs 화학적 진정의 비교 교육 콘텐츠</li>
+      </ul>
+
+      <h4><span class="priority-green">강점</span> 강점 (이미 잘 됨)</h4>
+      <ul class="action-list">
+        <li>EGCG + 바나나의 진정 조합 — "병 안 주는 약"의 기술적 근거</li>
+        <li>식자재 트리플(키위·케일·바나나) — 비주얼 임팩트 + 교육 콘텐츠 자산</li>
+      </ul>
+    </div>
+
+    <!-- Product 3: ABC 세럼 -->
+    <div class="product-analysis">
+      <h3>🧪 [제품 3] ABC 세럼 (광채/브라이트닝)</h3>
+      <div class="subtitle">5월 말 출시 예정 | 비타민A·B·C, NAD+, 식자재 기반 | 광채/브라이트닝, 매일 사용 가능한 저자극</div>
+
+      <h4>페인포인트 매칭도</h4>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>오늘 페인포인트</th><th>매칭</th><th>분석</th></tr></thead>
+          <tbody>
+            <tr><td>세럼 #1 초가성비 의심</td><td><span class="priority-red">즉시 결정</span></td><td>더마팩토리 6,000원의 충격파가 강함. NAD+의 "나이아신아마이드 상위 호환" 교육이 가격 프리미엄의 근거</td></tr>
+            <tr><td>세럼 #2 진정의 자극 역설</td><td><span class="priority-green">강점</span></td><td>ABC 세럼의 저자극 비타민 포뮬러가 코스알엑스 23의 자극 문제를 직접 해결</td></tr>
+            <tr><td>세럼 #3 수분만으론 부족</td><td><span class="priority-green">강점</span></td><td>토리든의 "수분만" 한계를 "수분+광채"로 확장</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4><span class="priority-red">즉시 결정</span> 즉시 결정 필요 (출시 4주 전)</h4>
+      <ul class="action-list">
+        <li><strong>"NAD+ = 나이아신아마이드의 진화" 교육 콘텐츠 시급</strong> — 더마팩토리 6,000원과의 가격 차이를 납득시키는 핵심 메시지. INKEY List형 30초 교육 릴스</li>
+        <li><strong>아침 사용 호환성 데이터</strong> — 코스알엑스 23의 "아침 밀림" 갭을 공략하는 결정적 USP. 화장 위 테스트 영상</li>
+        <li><strong>토리든 업그레이드 경로 마케팅</strong> — "수분 세럼에서 졸업" 메시지로 토리든 사용자 전환</li>
+      </ul>
+
+      <h4><span class="priority-yellow">검토 권장</span> 검토 권장</h4>
+      <ul class="action-list">
+        <li>더마팩토리 대비 비교 콘텐츠: "6,000원이 못 주는 것" 시리즈</li>
+        <li>2주 톤 변화 인플루언서 챌린지: 비포-애프터 콘텐츠 확보</li>
+      </ul>
+
+      <h4><span class="priority-green">강점</span> 강점 (이미 잘 됨)</h4>
+      <ul class="action-list">
+        <li>NAD+ = 차별적 성분 스토리 — 시장에서 NAD+ 세럼이 아직 희소</li>
+        <li>비타민 A+B+C 통합 — 코스알엑스(C만), 더마팩토리(B3만) 대비 복합 효능</li>
+      </ul>
+    </div>
+
+    <!-- Product 4: 폼클렌징 -->
+    <div class="product-analysis">
+      <h3>🧼 [제품 4] 폼클렌징 (출시 준비 중)</h3>
+      <div class="subtitle">출시 시점 미정 | 흰목이버섯 다당류 (예상) | 식자재 기반 약산성 클렌저</div>
+
+      <h4>페인포인트 매칭도</h4>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>오늘 페인포인트</th><th>매칭</th><th>분석</th></tr></thead>
+          <tbody>
+            <tr><td>폼클 #1 거품 ≠ 세정력</td><td><span class="priority-red">즉시 결정</span></td><td>흰목이버섯 다당류 거품의 밀도+약산성 양립 데이터 확보 필수. 센카급 거품+비플레인급 순함 동시 달성이 핵심</td></tr>
+            <tr><td>폼클 #2 약산성 피로감</td><td><span class="priority-yellow">검토 권장</span></td><td>pH 마케팅 대신 "씻고 나서의 감각" 체험 메시지로 전환</td></tr>
+            <tr><td>폼클 #3 1개가 피부를 바꿈</td><td><span class="priority-green">강점</span></td><td>출시 후 "3일 체험 키트" + 전후 비교 콘텐츠가 최고의 마케팅 자산</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4><span class="priority-red">즉시 결정</span> 즉시 결정 필요 (출시 기획 단계)</h4>
+      <ul class="action-list">
+        <li><strong>거품 밀도 임상 데이터 확보</strong> — "쫀쫀한 거품"이 핵심 USP. 비플레인(얇음) vs 센카(당김) 사이의 포지션을 정량적으로 증명</li>
+        <li><strong>"흰목이버섯 다당류" 단일 키워드 확정</strong> — 비플레인(녹두), 에스네이처(쌀), 듀이트리(아미노산)처럼 한 단어로 기억</li>
+        <li><strong>비플레인과의 차별화 전략</strong> — 가장 유사한 경쟁자. "녹두 다음은 버섯" 또는 "녹두보다 깊은 순함" 포지션</li>
+      </ul>
+
+      <h4><span class="priority-yellow">검토 권장</span> 검토 권장</h4>
+      <ul class="action-list">
+        <li>센카 거품 비주얼 벤치마크: 거품 클로즈업 릴스가 폼클렌징 마케팅의 핵심 자산</li>
+        <li>아침/저녁 통합 사용 가능성: 클렌징 젤 트렌드 대응</li>
+      </ul>
+
+      <h4><span class="priority-green">강점</span> 강점 (이미 잘 됨)</h4>
+      <ul class="action-list">
+        <li>흰목이버섯 = 새 식자재 카테고리 — 녹두·쌀 다음의 차별적 원료</li>
+        <li>라인업 통합 — 바디크림·세럼과의 USP 일관성(식자재 라인)</li>
+      </ul>
+    </div>
+
+    <!-- 종합 액션 -->
+    <div class="summary-action">
+      <h2>🎯 종합: 오늘 리포트가 개발팀에 주는 핵심 액션</h2>
+
+      <h4>1. 출시 4주 전 (키위케일바나나 + ABC 세럼)</h4>
+      <ul>
+        <li><span class="priority-red">즉시</span> <strong>자극 테스트 0% 데이터 확보·공개</strong> — "진정 세럼의 자극 역설"이 시장의 가장 큰 미충족 니즈. 이 데이터가 출시 성공의 열쇠</li>
+        <li><span class="priority-red">즉시</span> <strong>NAD+ 교육 콘텐츠 제작</strong> — 더마팩토리 6,000원 충격파에 대응하는 가격 프리미엄 근거</li>
+        <li><span class="priority-red">즉시</span> <strong>토리든 업그레이드 마케팅</strong> — 수분 세럼 시장의 "졸업생"을 하루나로 전환</li>
+      </ul>
+
+      <h4>2. 실키 머쉬룸 바디크림 (지속 마케팅)</h4>
+      <ul>
+        <li><span class="priority-red">즉시</span> <strong>"유분 없이 촉촉한" 메시지 리뉴얼</strong> — 세타필·피지오겔의 유분 딜레마를 직접 공략. 논쟁형 릴스로 바이럴 시도</li>
+        <li><span class="priority-yellow">검토</span> <strong>모공각화증(닭살) 타겟 메시지 추가</strong> — 30대 여성의 숨겨진 대형 페인포인트</li>
+      </ul>
+
+      <h4>3. 폼클렌징 출시 기획</h4>
+      <ul>
+        <li><span class="priority-red">즉시</span> <strong>거품 밀도 데이터 확보</strong> — "쫀쫀한 거품 + 약산성 + 당기지 않음" 3박자</li>
+        <li><span class="priority-red">즉시</span> <strong>비플레인과의 차별화 확정</strong> — 가장 유사한 경쟁자, 포지셔닝 명확화 필수</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== Trends ==================== -->
+  <div class="section">
+    <div class="section-title">📈 성분·시장 트렌드 흐름</div>
+
+    <div class="trend-card">
+      <h3>흐름 1. 초가성비 세럼 전쟁 가속 — 6,000원이 새 기준선</h3>
+      <div class="desc">
+        <strong>4/29</strong>: 더마팩토리 나이아신아마이드 20% (6,000원, 글로우픽 4.42)가 올리브영 입점 후 안정적 판매<br>
+        <strong>4/30</strong>: 다이소 성분에디터 시리즈(3,000원 이하)가 2026 신상으로 확대, 언파 커뮤니티에서 적극 추천
+      </div>
+      <div class="haruna-point">초가성비 단일 성분 세럼과 가격 경쟁 불가. "복합 효능 미들 프리미엄"이라는 별도 포지션 확보 필수</div>
+    </div>
+
+    <div class="trend-card">
+      <h3>흐름 2. 거품 밀도 = 클렌징 신뢰의 새 지표</h3>
+      <div class="desc">
+        <strong>4/29</strong>: 센카 NEW 퍼펙트 휩 리뉴얼 — "80% 더 조밀해진 거품" 강조<br>
+        <strong>4/30</strong>: 비플레인 대용량 160ml 출시 — 용량 약점 보완, 거품 밀도 약점은 미해결
+      </div>
+      <div class="haruna-point">폼클렌징 시장에서 거품 밀도가 "세정력의 시각적 증거"로 부상. 흰목이버섯 다당류의 젤리형 거품이 차별점</div>
+    </div>
+
+    <div class="trend-card">
+      <h3>흐름 3. 나노/마이크로 인플루언서의 ROI 역전</h3>
+      <div class="desc">
+        <strong>4/30</strong>: 나노 인플루언서 참여율 2.7% (메가 0.3%의 9배), 틱톡 평균 7.52%
+      </div>
+      <div class="haruna-point">383 팔로워의 초기 브랜드 = 오히려 유리. 논쟁형 릴스 + 나노 시딩으로 메가 브랜드 대비 효율적 도달 가능</div>
+    </div>
+  </div>
+
+  <!-- 모니터링 포인트 -->
+  <div class="section">
+    <div class="section-title">🔭 한 주 후 모니터링 포인트</div>
+    <div class="source-card">
+      <ul>
+        <li><strong>5월 가정의달 바디세트 검색량</strong> — 어머니 선물·가족 공용 키워드 추적</li>
+        <li><strong>더마팩토리 나이아신아마이드 올리브영 랭킹 변동</strong> — 초가성비 세럼 트렌드 방향</li>
+        <li><strong>센카 NEW 퍼펙트 휩 리뷰 누적</strong> — 거품 밀도 리뉴얼에 대한 소비자 반응</li>
+      </ul>
+    </div>
+    <div class="source-card" style="margin-top:8px;">
+      <h3 style="font-size:14px;">이번 주 빠진 시그널 (다음 주 보강 필요)</h3>
+      <ul>
+        <li>인스타그램 릴스 실제 뷰티 크리에이터 조회수 데이터 — 금요일 Chrome MCP로 정량 확보</li>
+        <li>화해/글로우픽 4월 월간 랭킹 공개 — 5월 첫째 주 발표 예상, 트렌드 방향 확인</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 오늘의 시장 이벤트 -->
+  <div class="section">
+    <div class="section-title">📅 오늘의 시장 이벤트</div>
+    <div class="source-card">
+      <ul>
+        <li><strong>센카 NEW 퍼펙트 휩 리뉴얼 출시</strong> — 20년 클렌징 기술 집약, 거품 밀도 80% 향상 강조</li>
+        <li><strong>비플레인 녹두 약산성 클렌징폼 대용량 160ml 출시</strong> — 기존 120ml 용량 불만 대응</li>
+        <li><strong>올리브영 5월 세일 사전 공지</strong> — 가정의달 마케팅 시작</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 내일 준비 제안 -->
+  <div class="tomorrow-card">
+    <h2>📌 내일 준비 제안</h2>
+    <div class="tomorrow-item">
+      <strong><span class="priority-red">즉시</span> 5월 첫날 가정의달 키워드 검색량 변동 모니터링</strong>
+      <p>"어머니 선물 바디세트", "가족 공용 스킨케어" 키워드 추적</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong><span class="priority-yellow">검토</span> 비욘드 바디타민 로션 1~2점 리뷰 추적 (어제 과제 이월)</strong>
+      <p>"착색미백" 효과 검증 사용자 워딩 확보</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong><span class="priority-yellow">검토</span> 글로우픽 4월 월간 랭킹 프리뷰</strong>
+      <p>발표 전 움직임 체크</p>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources">
+    <h3>Sources</h3>
+    <a href="https://theqoo.net/beauty/3554128942" target="_blank">더쿠 바디크림 보습 끈적임 추천</a>
+    <a href="https://theqoo.net/review/711502608" target="_blank">더쿠 유분기 없는 바디로션 추천</a>
+    <a href="https://theqoo.net/beauty/2498071581" target="_blank">더쿠 세타필 바디로션 끈적임</a>
+    <a href="https://www.instiz.net/name/39529343" target="_blank">인스티즈 세타필 절대 쓰지마</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1422594" target="_blank">디시 피지오겔·세타필·제로이드 비교</a>
+    <a href="https://m.dcinside.com/board/cosmetic/1479520" target="_blank">디시 바디로션 추천</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1487725" target="_blank">디시 피부 관리 루틴 효과</a>
+    <a href="https://m.cafe.daum.net/subdued20club/ReHf/3791199" target="_blank">다음카페 바디로션 못 바르는 사람들</a>
+    <a href="https://theqoo.net/beauty/3657862073" target="_blank">더쿠 고보습 바디로션 모공각화증</a>
+    <a href="https://theqoo.net/beauty/3662209775" target="_blank">더쿠 파티온 노스카나인 트러블세럼 후기</a>
+    <a href="https://theqoo.net/square/2105710303" target="_blank">더쿠 약산성 안맞는 덬들 알칼리 폼클</a>
+    <a href="https://theqoo.net/beauty/1930244501" target="_blank">더쿠 폼클렌징 영향이 이렇게 크나</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1449561" target="_blank">디시 클렌징폼 GOAT</a>
+    <a href="https://unpa.me/community/essence/113532838" target="_blank">언파 토리든 다이브인 세럼 후기</a>
+    <a href="https://unpa.me/community/essence/125685303" target="_blank">언파 토리든 다이브인 세럼 사용후기</a>
+    <a href="https://unpa.me/review/detail/e3f4583b-38f1-42b7-a2cc-4ae54289b59e" target="_blank">언파 더마팩토리 나이아신아마이드 리뷰</a>
+    <a href="https://unpa.me/community/unniepick/122908616" target="_blank">언파 2026 다이소 신상 화장품 추천</a>
+    <a href="https://www.glowpick.com/products/124509" target="_blank">글로우픽 비플레인 녹두 약산성 클렌징폼</a>
+    <a href="https://www.glowpick.com/products/97427" target="_blank">글로우픽 세타필 모이스춰라이징 로션</a>
+    <a href="https://www.glowpick.com/products/114977" target="_blank">글로우픽 토리든 다이브인 세럼</a>
+    <a href="https://www.clien.net/service/board/use/8680069" target="_blank">클리앙 센카 퍼펙트 휩 후기</a>
+    <a href="https://kstars.kr/news/67992" target="_blank">센카 NEW 퍼펙트 휩 출시 뉴스</a>
+    <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225217" target="_blank">올리브영 더마팩토리 나이아신아마이드</a>
+    <a href="https://blog.highoutputclub.com/reels-viral-hook-strategy-by-category/" target="_blank">릴스 바이럴 공식 7가지 (하이아웃풋클럽)</a>
+    <a href="https://www.careet.net/1807" target="_blank">큰손이 주목하는 뉴 힙 브랜드 19 (캐릿)</a>
+  </div>
+
+  <div class="footer">
+    Generated by Haruna Daily Insights Bot · 2026.04.30
+  </div>
+
+</div>
+
+</body>
+</html>
