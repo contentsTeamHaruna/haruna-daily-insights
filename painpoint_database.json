@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-04-29",
-  "totalQuotes": 82,
-  "totalSources": 67,
-  "totalLifeContext": 33,
+  "lastUpdated": "2026-04-30",
+  "totalQuotes": 117,
+  "totalSources": 83,
+  "totalLifeContext": 44,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -25,10 +25,14 @@
             {
               "title": "끈적임 + 트러블 + 향 — 동시에 다 만족시킬 수 없는 3중고",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "유분 = 보습이라는 공식이 깨지는 순간 — 기름지면 끈적이고, 빼면 건조하고",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -83,6 +87,31 @@
             {
               "text": "피지오겔 DMT는 끈적임 없고, 보습감이 좋아",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "text": "유분기 있는 바디로션은 끈적끈적해서 싫더라구",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "유리아쥬 크림은 정말 바세린만큼 끈적여서 옷입기가 불편할 정도",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "text": "일리윤 바디오일을 쓰는데 맨몸에 오일만 바르니까 건조함이 해결이 안되더라고",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "피지오겔은 기름덩어리임",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "제로이드는 보습력이 개구대기",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ],
@@ -142,6 +171,27 @@
               "description": "\"여름엔 답답함, 가슴 부위에 트러블도 올라옴\" 출처",
               "report_date": "2026-04-29",
               "life_context": true
+            },
+            {
+              "title": "너무 찐득이지 않는 선에서 보습력 좋은 바디크림 로션 추천 (더쿠)",
+              "url": "https://theqoo.net/beauty/3554128942",
+              "description": "\"바세린만큼 끈적여서 옷입기가 불편\" 유분 딜레마 직접 인용 출처",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "title": "피지오겔·세타필·제로이드 비교 후기 (디시 화장품갤)",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1422594",
+              "description": "\"기름덩어리\" vs \"보습력 개구대기\" 양극단 비교 직접 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "유분기 없는 대용량 바디로션 추천 (더쿠)",
+              "url": "https://theqoo.net/review/711502608",
+              "description": "\"유분기 있는 바디로션은 끈적끈적해서 싫다\" 비사용 직접 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
             }
           ]
         },
@@ -350,10 +400,18 @@
             {
               "title": "여름철 모공 피지 축적 — 바디로션이 모공을 막는 부작용",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "세타필을 바르는 순간 후회함 — 더마 바디로션의 신뢰 균열",
+              "report_date": "2026-04-30"
+            },
+            {
+              "title": "바디로션 안 바르는 30대 — 나이 들면서 필수가 되지만 귀찮음은 여전",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -388,6 +446,61 @@
             {
               "text": "가슴 부위에는 트러블도 올라오구요",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "text": "바르는 순간 후회함",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "겁나 끈적거림",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "너무 유분많아서 괴롭",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "세타필 쓰고 아토피올라오더라",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "등드름 난",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "번들거리거나 개기름 뜨지않음",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "위에 로션들 느낌의 딱 중간느낌",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "text": "몸에 뭐 바르고 뿌리고 하는 감촉을 안좋아함",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "샤워 ���고 그냥 빨리 옷 입고 싶음",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "text": "30대 넘어서...바디로션 안 바르면 안돼...진짜 필수",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "text": "모공각화증있어서 고보습 바디로션 필요한데 많이 안 끈적이는 거 없을까??",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ],
@@ -426,6 +539,41 @@
               "description": "\"가슴 부위 트러블 올라옴\" 직접 출처",
               "report_date": "2026-04-29",
               "life_context": true
+            },
+            {
+              "title": "세타필 바디로션 되게 끈적임 (더쿠)",
+              "url": "https://theqoo.net/beauty/2498071581",
+              "description": "\"바르는 순간 후회함\", \"되게 끈적임\" 사용 직후 후회 직접 인용 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "세타필 절대 쓰지마 (인스티즈)",
+              "url": "https://www.instiz.net/name/39529343",
+              "description": "\"겁나 끈적거림\", \"세타필 쓰고 아토피올라오더라\", \"등드름 난\" 트러블 직접 인용 출처 (댓글 200+)",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "피지오겔·세타필·제로이드 비교 (디시)",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1422594",
+              "description": "\"번들거리지 않음\" 반대 의견 포함 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "바디로션 못 바르는 사람들 있음 (다음카페)",
+              "url": "https://m.cafe.daum.net/subdued20club/ReHf/3791199",
+              "description": "\"몸에 뭐 바르는 감촉을 안좋아함\", \"빨리 옷 입고 싶음\" 비사용층 심리 직접 출처",
+              "report_date": "2026-04-30",
+              "life_context": true
+            },
+            {
+              "title": "고보습 바디로션 쓰는 거 있는 덬들아 (더쿠)",
+              "url": "https://theqoo.net/beauty/3657862073",
+              "description": "\"모공각화증인데 안 끈적이는 거 없을까\" 닭살+비끈적 동시 니즈 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
             }
           ]
         }
@@ -565,10 +713,14 @@
             {
               "title": "무난함=재구매 죽음",
               "report_date": "2026-04-27"
+            },
+            {
+              "title": "6,000원 세럼 vs 2만원 세럼 — 초가성비 전쟁에서 '효과 진짜 있어?'라는 의심",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -589,6 +741,26 @@
               "text": "이상한 제품 쓰고 돈 날리지 않기를 바라며 쓴다",
               "report_date": "2026-04-27",
               "life_context": false
+            },
+            {
+              "text": "정가가 무려 6,000원! 세일가도 아니고 정가가 6천원",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "저녁에 듬뿍 바르고 아침에 일어나면 세상 피부가 고와질 수가",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "끈적임이라고는 존재하지도 않아",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "예전에 일리윤꺼 썼었는데 요샌 그닥 가성비 느낌이 아닌듯",
+              "report_date": "2026-04-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -605,6 +777,20 @@
               "description": "\"돈 날리지 않기를 바라며\" 신중한 구매자 워딩 출처",
               "report_date": "2026-04-27",
               "life_context": false
+            },
+            {
+              "title": "더마팩토리 나이아신아마이드 세럼 리뷰 (언파)",
+              "url": "https://unpa.me/review/detail/e3f4583b-38f1-42b7-a2cc-4ae54289b59e",
+              "description": "\"정가 6,000원\", \"아침에 피부가 고와짐\", \"끈적임 없음\" 초가성비 직접 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "가성비 좋은 바디로션 추천 (디시)",
+              "url": "https://m.dcinside.com/board/cosmetic/1479520",
+              "description": "\"일리윤 가성비 느낌 아닌듯\" 가격 기준 상향 출처",
+              "report_date": "2026-04-30",
+              "life_context": true
             }
           ]
         },
@@ -625,10 +811,14 @@
             {
               "title": "\"모공 세럼 = 밤에만 쓰는 자극 케어\"라는 인식 고착화",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "진정 세럼인데 오히려 자극 — '병 주고 약 주면 안되잖아'",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
@@ -674,6 +864,26 @@
               "text": "오후에도 피부가 깔끔하고 기름종이 안 해줘도 될 정도",
               "report_date": "2026-04-29",
               "life_context": false
+            },
+            {
+              "text": "진정도 중요하지만 진정시키기 전에 아무 자극없는 게 진짜 중요하거든!!",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "수부지에 열감이 많은 피부라 학생때부터 쭉 여드름을 달고 살아왔어",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "하나 사라지면 하나 나는 여드름 총량의 법칙은 여전히 지켜지고 있는 중",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "진정 효과 + 속건조 싹 잡아주는데 트러블 올라올 기미 보이면 얘가 바로 잠재워줍니다",
+              "report_date": "2026-04-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -718,6 +928,20 @@
               "description": "\"무기 자차 쓰면 모공속에 피지 갇혀있는 게 느껴져\" 인용 출처",
               "report_date": "2026-04-29",
               "life_context": false
+            },
+            {
+              "title": "파티온 노스카나인 트러블세럼 후기 (더쿠)",
+              "url": "https://theqoo.net/beauty/3662209775",
+              "description": "\"진정시키기 전에 자극없는 게 중요\", \"병 주고 약 주면 안돼\" 직접 인용 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "2026 다이소 신상 화장품 추천 (언파)",
+              "url": "https://unpa.me/community/unniepick/122908616",
+              "description": "\"트러블 올라올 기미 보이면 바로 잠재워줍니다\" 다이소 진정 세럼 인용 출처",
+              "report_date": "2026-04-30",
+              "life_context": true
             }
           ]
         },
@@ -806,10 +1030,14 @@
             {
               "title": "세럼 = 화장 전 속건조 잡아주는 도구라는 새로운 기대",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "수분 세럼 = 가장 안전한 선택이지만, 그것만으론 부족하다",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -824,6 +1052,31 @@
             {
               "text": "여름되면 무거울까봐... 화장 전에 사용할만한 세럼?",
               "report_date": "2026-04-29",
+              "life_context": true
+            },
+            {
+              "text": "물처럼 산뜻한 워터리 에센스 타입",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "전혀 끈적임이 없었어요",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "속당김이 확연히 줄어드는 것을 느낄 수 있었답니다",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "트러블이나 흔적은 잘 진정되지 않는 것이 아쉬웠음",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "메이크업을 할 때도 확실히 들뜸이 줄어들었어요",
+              "report_date": "2026-04-30",
               "life_context": true
             }
           ],
@@ -847,6 +1100,20 @@
               "url": "https://theqoo.net/beauty/2940774739",
               "description": "\"비폴렌은 나랑 안맞아서 피부가 뒤집어짐\" 부적합 트라우마 출처",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "title": "토리든 다이브인 세럼 후기 (언파)",
+              "url": "https://unpa.me/community/essence/113532838",
+              "description": "\"물처럼 산뜻\", \"끈적임 없음\", \"속당김 줄어듦\" 직접 인용 출처",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "토리든 다이브인 세럼 사용 후기 (언파)",
+              "url": "https://unpa.me/community/essence/125685303",
+              "description": "\"화장이 밀리지 않음\", \"잔주름 부각도 덜해\" 화장 호환성 인용 출처",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ]
@@ -877,10 +1144,14 @@
             {
               "title": "\"약산성 폼클렌징이 모든 피부에 답이 아니다\" — 약산성 신화 깨지는 중",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "약산성 vs 약알칼리 — 양극화가 가속되면서 사용자가 혼란에 빠짐",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -940,6 +1211,21 @@
             {
               "text": "모든 화장품은 다 사바사 케바케임",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "text": "약산성이고 뭐고 내가 알아듣나.. 그냥 쓴거지",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "약산성 폼클에서 조금 더 저자극인 클렌징 젤로 바뀌고 있음",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "클오 써도 2차로 꼭 약알칼리로 마무리하기",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ],
@@ -1012,6 +1298,13 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1450005",
               "description": "약산성 vs 약알칼리 종합 비교 출처",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "title": "클렌징폼 GOAT (디시)",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1449561",
+              "description": "\"아침세안은 폼클에서 클렌징 젤로 바뀌는 중\" 시장 이동 출처",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ]
@@ -1181,10 +1474,14 @@
             {
               "title": "아침 세안 트렌드 변화: 폼클 → 클렌징 젤로 이동 중",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "클렌징이 피부를 바꾼다는 확신 — 한번 잘 만나면 충성도 폭발",
+              "report_date": "2026-04-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-04-30",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -1215,6 +1512,21 @@
               "text": "약산성 폼클에서 조금 더 저자극인 클렌징 젤",
               "report_date": "2026-04-29",
               "life_context": false
+            },
+            {
+              "text": "거울볼 때 감탄함",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "생리때문에 피부 개난리나는 기간인데도 지금 피부컨디션 좋은 게 보여",
+              "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "원래 얼굴에 여드름 비롯해서 온갖 민감 트러블 + 하얗게 뜨는 각질로 씹건조 푸석푸석 피부",
+              "report_date": "2026-04-30",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1244,6 +1556,13 @@
               "url": "https://theqoo.net/beauty/3615204834",
               "description": "\"클오 써도 2차로 약알칼리로 마무리\" 다단계 세안 인용 출처",
               "report_date": "2026-04-29",
+              "life_context": false
+            },
+            {
+              "title": "피부 관리 루틴 효과 (디시)",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1487725",
+              "description": "\"온갖 민감 트러블 + 씹건조 피부\" 클렌저 교체 효과 출처",
+              "report_date": "2026-04-30",
               "life_context": false
             }
           ]
