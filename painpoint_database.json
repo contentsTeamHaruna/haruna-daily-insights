@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-04-30",
-  "totalQuotes": 117,
-  "totalSources": 83,
-  "totalLifeContext": 44,
+  "lastUpdated": "2026-05-05",
+  "totalQuotes": 126,
+  "totalSources": 92,
+  "totalLifeContext": 51,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -408,10 +408,22 @@
             {
               "title": "바디로션 안 바르는 30대 — 나이 들면서 필수가 되지만 귀찮음은 여전",
               "report_date": "2026-04-30"
+            },
+            {
+              "title": "어린이날 나들이인데 자외선은 강하고, 팔·다리 바디케어 어떻게 해야 하지",
+              "report_date": "2026-05-05"
+            },
+            {
+              "title": "습도 37%인데 크림은 무겁고, 로션은 보습이 부족해 — 초여름 텍스처 딜레마",
+              "report_date": "2026-05-05"
+            },
+            {
+              "title": "더마 바디로션은 효과적이지만 발르는 즐거움이 없어 — 보습 vs 감성 양극화",
+              "report_date": "2026-05-05"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-04-30",
+          "last_seen": "2026-05-05",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -502,6 +514,51 @@
               "text": "모공각화증있어서 고보습 바디로션 필요한데 많이 안 끈적이는 거 없을까??",
               "report_date": "2026-04-30",
               "life_context": false
+            },
+            {
+              "text": "얼굴 선크림은 바르는데 팔다리는 그냥 나가요, 저녁에 뭐 발라야 하나",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "나들이 다녀와서 피부가 따가운데 바디크림 발라도 되는 건지",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "5월 자외선이 한여름 수준이라는데 바디에도 진정 케어가 필요할 것 같아",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "text": "5월인데 아직 바디크림 쓰는 거 맞나? 로션으로 바꿔야 하나",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "끈적이지 않으면서 보습력 있는 바디크림 정말 없나",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "에멀전 타입이 여름엔 나은데 보습이 아쉬워",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "text": "일리윤 세라마이드 보습은 좋은데 향이 없으니까 바르기 싫어질 때 있음",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "보습력+좋은 향 둘 다 있는 바디크림 추천해줘, 더마는 무향이고 퍼퓸은 보습 약하고",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "text": "향수 따로 뿌리기 귀찮은데 살냄새 나는 바디로션 없나",
+              "report_date": "2026-05-05",
+              "life_context": false
             }
           ],
           "sources": [
@@ -573,6 +630,69 @@
               "url": "https://theqoo.net/beauty/3657862073",
               "description": "\"모공각화증인데 안 끈적이는 거 없을까\" 닭살+비끈적 동시 니즈 출처",
               "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "에디터가 고른 여름 뷰티템 5",
+              "url": "https://www.harpersbazaar.co.kr/article/1899771",
+              "description": "하퍼스바자",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "title": "환절기 헤어&바디 6",
+              "url": "https://www.harpersbazaar.co.kr/article/1900628",
+              "description": "하퍼스바자",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "title": "Best Body Lotion for Summer 2026",
+              "url": "https://blog.myntra.com/best-body-lotion-for-summer/",
+              "description": "Myntra",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "title": "여름 바디로션 추천해줘",
+              "url": "https://theqoo.net/beauty/2867110000",
+              "description": "더쿠",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "title": "여름에 쓰기 좋은 바디로션",
+              "url": "https://theqoo.net/beauty/2852868355",
+              "description": "더쿠",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "title": "여름에 바를 산뜻한 바디로션",
+              "url": "https://theqoo.net/beauty/3259689473",
+              "description": "더쿠",
+              "report_date": "2026-05-05",
+              "life_context": true
+            },
+            {
+              "title": "화이트 머스크 향 바디로션 추천",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1520023",
+              "description": "디시인사이드",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "title": "스킨케어/바디로션 뭐쓰는지 공유",
+              "url": "https://gall.dcinside.com/mgallery/board/view/?id=hyang&no=145269",
+              "description": "디시인사이드",
+              "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "title": "멈칫 바디크림 도브향 후기",
+              "url": "https://theqoo.net/beauty/2157455227",
+              "description": "더쿠",
+              "report_date": "2026-05-05",
               "life_context": false
             }
           ]
