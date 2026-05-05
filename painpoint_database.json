@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-05",
-  "totalQuotes": 126,
-  "totalSources": 92,
-  "totalLifeContext": 51,
+  "lastUpdated": "2026-05-06",
+  "totalQuotes": 135,
+  "totalSources": 100,
+  "totalLifeContext": 54,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -336,10 +336,14 @@
             {
               "title": "\"향\"이 호불호의 핵심 변수 — 너무 강하면 멀미, 너무 약하면 매력 없음",
               "report_date": "2026-04-27"
+            },
+            {
+              "title": "향수 대신 쓸 수 있는 바디로션이 없다 — 보습력은 있으면서 향이 지속되는 제품의 부재",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "멀미 나지 않고 지금 계절에 잘 어울리는 좀 따뜻한 향",
@@ -350,6 +354,21 @@
               "text": "여름엔 좀 덥다고 느끼는 사람이 있을거 같",
               "report_date": "2026-04-27",
               "life_context": true
+            },
+            {
+              "text": "화이트 머스크 향 바디로션 추천해줘, 향수 안 뿌려도 하루 종일 은은하게 나는 거",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "바디로션인데 뿌리면 향수처럼 잔향이 남는 거 진짜 없나",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "더마 바디로션 보습은 인정하는데 무향이라 루틴이 지겨워",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -372,6 +391,27 @@
               "url": "https://theqoo.net/square/356744835",
               "description": "프리미엄 향 바디크림 게시글",
               "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "화이트 머스크 향 바디로션 추천",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1520023",
+              "description": "디시인사이드 화장품갤러리",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "향붕이들 스킨케어/바디로션 뭐쓰는지 적고가라",
+              "url": "https://gall.dcinside.com/mgallery/board/view/?id=hyang&no=145269",
+              "description": "디시인사이드 향수갤러리",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "내가 쓰는 바디로션 자랑할게 향 좋은 바디제품 공유하자",
+              "url": "https://theqoo.net/beauty/2787180111",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
               "life_context": false
             }
           ]
@@ -420,10 +460,18 @@
             {
               "title": "더마 바디로션은 효과적이지만 발르는 즐거움이 없어 — 보습 vs 감성 양극화",
               "report_date": "2026-05-05"
+            },
+            {
+              "title": "여름 다가오는데 겨울 바디크림은 무겁고, 갈아탈 제품을 모르겠다",
+              "report_date": "2026-05-06"
+            },
+            {
+              "title": "바디케어도 성분 확인하고 싶은데, 바디 제품은 성분 정보가 부족하다",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-05",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -559,6 +607,36 @@
               "text": "향수 따로 뿌리기 귀찮은데 살냄새 나는 바디로션 없나",
               "report_date": "2026-05-05",
               "life_context": false
+            },
+            {
+              "text": "다들 머발라? 안바르면 건조하고 겨울에쓰던거 바르기엔 너무 무거워!",
+              "report_date": "2026-05-06",
+              "life_context": true
+            },
+            {
+              "text": "끈적이지 않으면서도 보습력 있는 바디크림 정말 없을까",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "여름인데 바디로션 안 바르면 종아리가 갈라지는데 끈적이는 건 싫어",
+              "report_date": "2026-05-06",
+              "life_context": true
+            },
+            {
+              "text": "얼굴에는 성분 하나하나 따지면서 바디크림은 왜 대충 사는 걸까",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "바디크림에 PDRN 들어간 거 있어? 얼굴에만 바르기 아깝다",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "비건 바디크림인데 성분이 진짜 좋은 거 찾고 있어",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -693,6 +771,41 @@
               "url": "https://theqoo.net/beauty/2157455227",
               "description": "더쿠",
               "report_date": "2026-05-05",
+              "life_context": false
+            },
+            {
+              "title": "여름에도 바디로션(크림) 꼭 쓰는 덬들 뭐 써?",
+              "url": "https://theqoo.net/theqdeal/3745534027",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": true
+            },
+            {
+              "title": "안끈적이고 안번들거리고 가벼운 바디로션 없을까?",
+              "url": "https://theqoo.net/beauty/2432052135",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "화해 2026 뷰티 트렌드 F.I.N.D",
+              "url": "https://www.tech42.co.kr/%ED%99%94%ED%95%B4-1250%EB%A7%8C-%EC%82%AC%EC%9A%A9%EC%9E%90-%ED%96%89%EB%8F%99-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-2026-%EB%B7%B0%ED%8B%B0-%ED%8A%B8%EB%A0%8C%EB%93%9C-f-i-n-d/",
+              "description": "테크42",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "2026년 바디케어 트렌드 — 기능과 향이 진화 이끈다",
+              "url": "https://www.cosinkorea.com/news/article.html?no=56727",
+              "description": "코스인코리아",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "2026년 시장을 선도할 지속가능한 성분 5가지",
+              "url": "https://business.hwahae.co.kr/insight/beauty-trend-2026-sustainable-ingredients/",
+              "description": "화해비즈니스",
+              "report_date": "2026-05-06",
               "life_context": false
             }
           ]
