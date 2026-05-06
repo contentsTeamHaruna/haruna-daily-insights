@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-06",
-  "totalQuotes": 153,
-  "totalSources": 114,
-  "totalLifeContext": 57,
+  "lastUpdated": "2026-05-07",
+  "totalQuotes": 176,
+  "totalSources": 134,
+  "totalLifeContext": 60,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -468,10 +468,22 @@
             {
               "title": "바디케어도 성분 확인하고 싶은데, 바디 제품은 성분 정보가 부족하다",
               "report_date": "2026-05-06"
+            },
+            {
+              "title": "비 오는 날·습한 날에도 바디크림이 필요한지 모르겠다 — 습도와 보습의 관계에 대한 소비자 혼란",
+              "report_date": "2026-05-07"
+            },
+            {
+              "title": "바디케어 '풀 루틴'은 좋은데, 현실적으로 3단계까지 못 하겠다 — 루틴 간소화 vs 효능 밀도의 딜레마",
+              "report_date": "2026-05-07"
+            },
+            {
+              "title": "더마 바디크림은 믿음직한데 '쓰는 즐거움'이 없다 — 기능성과 감성 경험의 괴리",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -636,6 +648,51 @@
             {
               "text": "비건 바디크림인데 성분이 진짜 좋은 거 찾고 있어",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "비 오는 날은 축축해서 바디로션 패스하는데, 저녁에 종아리 당기더라",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "제습기 틀면 습도 40%까지 떨어지는데 바디크림 안 바르면 팔이 갈라져",
+              "report_date": "2026-05-07",
+              "life_context": true
+            },
+            {
+              "text": "습한 날에도 바디크림 바르나? 끈적여서 싫은데 안 바르면 건조하고",
+              "report_date": "2026-05-07",
+              "life_context": true
+            },
+            {
+              "text": "바디미스트→바디로션→핸드크림이라는데 솔직히 로션 하나만 대충 바르거든",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "바디케어 풀 루틴이 트렌드라는데 나는 바디로션도 귀찮아서 3일에 한번 바름",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "하나만 발라도 보습+향+진정 다 되는 바디크림 없나",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "아토팜 좋은 건 아는데 향도 없고 디자인도 약국 느낌이라 기분이 안 남",
+              "report_date": "2026-05-07",
+              "life_context": true
+            },
+            {
+              "text": "더마 바디로션은 효과는 인정하는데 바르는 행위 자체가 즐겁지 않아",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "바디크림 바를 때 좋은 향 맡으면서 힐링하고 싶은데 더마 제품은 무향이 대부분",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ],
@@ -807,6 +864,62 @@
               "description": "화해비즈니스",
               "report_date": "2026-05-06",
               "life_context": false
+            },
+            {
+              "title": "끈적임 없는 고보습 바디로션 추천해주세요",
+              "url": "https://unpa.me/community/lotion/111901138",
+              "description": "언니의파우치",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "보습력 좋은 바디로션 추천해주세요",
+              "url": "https://unpa.me/community/question/125489351",
+              "description": "언니의파우치",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "아니 얘들아 진짜 바디로션 챙겨발라",
+              "url": "https://theqoo.net/square/3103081240",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "보습력 개쩌는 바디로션 추천해줄수 있니",
+              "url": "https://theqoo.net/beauty/3992717824",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "이런 조건에 맞는 바디로션 추천 받을 수 있을까",
+              "url": "https://theqoo.net/beauty/2968198810",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "내가 쓰는 바디로션 자랑할게 향 좋은 바디제품 공유하자",
+              "url": "https://theqoo.net/beauty/2787180111",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "향 짱 오래가는 바디로션 추천햐주라",
+              "url": "https://theqoo.net/beauty/3429962042",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "향좋은 바디로션 추천 속보습 잔향 지속력까지",
+              "url": "https://view.nate.com/beauty/view/84130/",
+              "description": "네이트뷰",
+              "report_date": "2026-05-07",
+              "life_context": false
             }
           ]
         }
@@ -836,10 +949,14 @@
             {
               "title": "\"화장 전에 발라도 안 밀리는 흡수력\"이 합격선 — 출근길 시간 압박 속 세럼 선택의 절대 기준",
               "report_date": "2026-05-06"
+            },
+            {
+              "title": "워터리 세럼은 흡수 빠르지만 보습 지속력이 약하다 — 출근 전 흡수 속도 vs 종일 보습의 딜레마",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
@@ -895,6 +1012,11 @@
               "text": "수분 세럼 좋은데 메이크업 들뜨는 거 진짜 스트레스",
               "report_date": "2026-05-06",
               "life_context": true
+            },
+            {
+              "text": "워터리 세럼 좋은데 점심 지나면 피부가 당겨, 크림 세럼은 밀리고",
+              "report_date": "2026-05-07",
+              "life_context": false
             }
           ],
           "sources": [
@@ -960,6 +1082,13 @@
               "description": "더쿠",
               "report_date": "2026-05-06",
               "life_context": false
+            },
+            {
+              "title": "이달의 뷰티 신상은 이걸로 종결합니다",
+              "url": "https://www.allurekorea.com/2026/05/04/part-2-%EC%9D%B4%EB%8B%AC%EC%9D%98-%EB%B7%B0%ED%8B%B0-%EC%8B%A0%EC%83%81%EC%9D%80-%EC%9D%B4%EA%B1%B8%EB%A1%9C-%EC%A2%85%EA%B2%B0%ED%95%A9%EB%8B%88%EB%8B%A4",
+              "description": "얼루어코리아",
+              "report_date": "2026-05-07",
+              "life_context": false
             }
           ]
         },
@@ -984,10 +1113,14 @@
             {
               "title": "\"무난함=재구매 죽음\" — 효과가 명확하지 않으면 갈아탐",
               "report_date": "2026-05-06"
+            },
+            {
+              "title": "비타민C 세럼, \"따가워야 효과 있다\"는 속설 때문에 민감성 피부가 기피",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -1057,6 +1190,21 @@
             {
               "text": "PDRN 발라봤는데 솔직히 뭐가 달라졌는지 모르겠어",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "비타민C 세럼 바르면 얼굴이 따끔거리는데 이게 정상인 거야?",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "민감성인데 비타민C 효과는 보고 싶어, 자극 없는 비타민C 세럼 있나",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "비타민C 농도 높을수록 좋다는데 피부가 빨개져서 못 쓰겠어",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ],
@@ -1129,6 +1277,27 @@
               "url": "https://theqoo.net/beauty/4166572126",
               "description": "더쿠",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "비타민 화장품은 따가워야 효과 있다는 말, 사실일까?",
+              "url": "https://www.wkorea.com/2025/03/08/%EB%B9%84%ED%83%80%EB%AF%BC-%ED%99%94%EC%9E%A5%ED%92%88%EC%9D%80-%EB%94%B0%EA%B0%80%EC%9B%8C%EC%95%BC-%ED%9A%A8%EA%B3%BC-%EC%9E%88%EB%8B%A4%EB%8A%94-%EB%A7%90-%EC%82%AC%EC%8B%A4%EC%9D%BC%EA%B9%8C/",
+              "description": "더블유코리아",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "비타민C 앰플 추천좀 해주겠니",
+              "url": "https://theqoo.net/beauty/3712778476",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "효과 빡하고 나타나는 비타민C 제품 모음",
+              "url": "https://theqoo.net/beauty/1699917097",
+              "description": "더쿠",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ]
@@ -1373,10 +1542,14 @@
             {
               "title": "수분 세럼 = 가장 안전한 선택이지만, 그것만으론 부족하다",
               "report_date": "2026-04-30"
+            },
+            {
+              "title": "PDRN 세럼 시장 포화 — '비건 PDRN vs 연어 PDRN' 세부 변별 요구 급증",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-04-30",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -1417,6 +1590,21 @@
               "text": "메이크업을 할 때도 확실히 들뜸이 줄어들었어요",
               "report_date": "2026-04-30",
               "life_context": true
+            },
+            {
+              "text": "PDRN 세럼이 다이소에도 나왔는데 비싼 거랑 뭐가 다른 거야",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "비건 PDRN이라는데 연어에서 뽑는 거 아니었나? 식물성이면 효과가 같나",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "메디큐브 PDRN, 아누아 PDRN, 리쥬란 — 결국 같은 성분인데 3배 가격 차이 납득이 안 됨",
+              "report_date": "2026-05-07",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1453,6 +1641,27 @@
               "url": "https://unpa.me/community/essence/125685303",
               "description": "\"화장이 밀리지 않음\", \"잔주름 부각도 덜해\" 화장 호환성 인용 출처",
               "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "title": "다이소부터 백화점까지 점령, K뷰티 대세 PDRN 뭐길래",
+              "url": "https://v.daum.net/v/20260321110125039?f=p",
+              "description": "다음 뉴스",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "PDRN부터 엑소좀까지 주목 세럼 TOP 7",
+              "url": "https://www.harpersbazaar.co.kr/article/1896283",
+              "description": "하퍼스바자",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 세럼, 잘 고르면 시술 효과를 낸다고?",
+              "url": "https://www.allurekorea.com/2025/02/16/pdrn/",
+              "description": "얼루어코리아",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ]
@@ -1495,10 +1704,14 @@
             {
               "title": "세정력 좋은 게 답이 아니다 — 과세정 자각 시작",
               "report_date": "2026-05-06"
+            },
+            {
+              "title": "약산성이 만능은 아니었다 — 산도 선택 혼란의 2라운드 시작",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -1603,6 +1816,16 @@
             {
               "text": "덜 씻기는 거보다 과하게 씻는 게 더 독이 된다 — 인플루언서가 그러더라",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "지성이라 결국 약산성만으로 안 되고 아침엔 다른 걸 써야 함",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "약산성이면 다 순한 줄 알았는데 계면활성제 종류에 따라 자극이 다르더라",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ],
@@ -1711,6 +1934,13 @@
               "description": "Threads",
               "report_date": "2026-05-06",
               "life_context": false
+            },
+            {
+              "title": "약산성 클렌징폼 왜 좋을까? 피부 타입별 추천 TOP5",
+              "url": "https://unpa.me/community/cleansingfoam/107546510",
+              "description": "언니의파우치",
+              "report_date": "2026-05-07",
+              "life_context": false
             }
           ]
         },
@@ -1727,10 +1957,14 @@
             {
               "title": "식자재 클렌저(쌀·녹두) 정착 — 차세대 식자재 신성분 갈증",
               "report_date": "2026-05-06"
+            },
+            {
+              "title": "식자재 클렌저 카테고리 자리잡았지만 '쌀·녹두' 이후 신규 식자재가 없다",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-06",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -1760,6 +1994,16 @@
             {
               "text": "버섯 클렌저는 없나? 보습 좋다고 하던데",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "녹두 클렌징폼 3통째 쓰고 있는데 이제 다른 식자재 클렌저도 써보고 싶다",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "쌀 클렌저, 녹두 클렌저 다 써봤는데 — 버섯이나 콩 클렌저는 안 나오나?",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ],
@@ -1804,6 +2048,13 @@
               "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4201",
               "description": "화해",
               "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "쌀·깨·녹두·오트밀·콩으로 예뻐진다! 피부가 건강해지는 곡물 이야기",
+              "url": "https://lady.khan.co.kr/beauty/article/8628",
+              "description": "레이디경향",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ]
@@ -1871,14 +2122,33 @@
             {
               "title": "클렌징은 단계가 아니라 컨디션",
               "report_date": "2026-04-27"
+            },
+            {
+              "title": "클렌징 단계에서도 '성분 체크' 시작 — 계면활성제 종류를 따지는 소비자 등장",
+              "report_date": "2026-05-07"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-27",
+          "last_seen": "2026-05-07",
           "quotes": [
             {
               "text": "그날 컨디션에 따라 오마카세처럼 써야하기 때문",
               "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "text": "SLS 들어간 폼클렌징은 피하라고 하던데, 내가 쓰는 거 성분표 봐야겠다",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "아미노산 계면활성제가 순하다는데 어떤 폼클렌징에 들어가 있어?",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "text": "민감 피부를 위한 클렌징 선택의 기준이 pH만이 아니라 계면활성제 종류라더라",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ],
@@ -1902,6 +2172,27 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1470438",
               "description": "세안 단계별 분리 사용 흐름 확인",
               "report_date": "2026-04-27",
+              "life_context": false
+            },
+            {
+              "title": "민감 피부를 위한 클렌징 선택의 기준",
+              "url": "https://www.elle.co.kr/article/45940",
+              "description": "엘르",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "건성? 지성? 내 피부에 딱 맞는 클렌징, 어떻게 골라야 할까?",
+              "url": "https://www.k-health.com/news/articleView.html?idxno=43031",
+              "description": "헬스경향",
+              "report_date": "2026-05-07",
+              "life_context": false
+            },
+            {
+              "title": "순한 클렌징폼 추천 건성·지성·민감성 피부타입별 맞춤 가이드",
+              "url": "https://bongzia.com/blog/gentle-cleansing-foam-by-skin-type-recommendations-2026",
+              "description": "봉지아",
+              "report_date": "2026-05-07",
               "life_context": false
             }
           ]
