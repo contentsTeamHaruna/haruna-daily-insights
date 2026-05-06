@@ -27,6 +27,22 @@
     {
       "username": "davidperlmutter",
       "category": "뇌건강"
+    },
+    {
+      "username": "shawnmodel",
+      "category": "수면건강"
+    },
+    {
+      "username": "lewishowes",
+      "category": "자기계발"
+    },
+    {
+      "username": "thereadystate",
+      "category": "모빌리티"
+    },
+    {
+      "username": "lukestorey",
+      "category": "바이오해킹"
     }
   ],
   "pending_removals": [
@@ -55,7 +71,20 @@
     "realfoodology",
     "drgersh",
     "dr.rhondapatrick",
-    "dr.mindypelz"
+    "dr.mindypelz",
+    "petermattiamd",
+    "wellnessmama",
+    "glennondoyle",
+    "maxlugavere",
+    "kalejunkie",
+    "glucosegoddess",
+    "dr.william_li",
+    "kellyleveque",
+    "gabbybernstein",
+    "melissawoodhealth",
+    "theguthealthdoctor",
+    "drweil",
+    "docamen"
   ],
   "updated": "2026-05-06"
 }
