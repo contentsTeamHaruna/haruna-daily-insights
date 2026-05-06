@@ -1,9 +1,9 @@
 {
   "version": 2,
   "lastUpdated": "2026-05-06",
-  "totalQuotes": 135,
-  "totalSources": 100,
-  "totalLifeContext": 54,
+  "totalQuotes": 153,
+  "totalSources": 114,
+  "totalLifeContext": 57,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -832,10 +832,14 @@
             {
               "title": "고농도 비타민C 세럼의 아침 사용 불가능 문제 — 주황 자국 + 화장 밀림",
               "report_date": "2026-04-29"
+            },
+            {
+              "title": "\"화장 전에 발라도 안 밀리는 흡수력\"이 합격선 — 출근길 시간 압박 속 세럼 선택의 절대 기준",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-29",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
@@ -876,6 +880,21 @@
               "text": "바르는 순간 살짝 따가운 자극감",
               "report_date": "2026-04-29",
               "life_context": false
+            },
+            {
+              "text": "아침에 화장 밀려서 세럼 못 쓰겠어, 흡수 빠른 거 추천",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "한율 보들은행잎 모공핏 세럼 — 워터리해서 빨리 스며들어, 출근 전용으로 좋음",
+              "report_date": "2026-05-06",
+              "life_context": true
+            },
+            {
+              "text": "수분 세럼 좋은데 메이크업 들뜨는 거 진짜 스트레스",
+              "report_date": "2026-05-06",
+              "life_context": true
             }
           ],
           "sources": [
@@ -934,6 +953,13 @@
               "description": "\"바르는 순간 살짝 따가운 자극감\" 사용 적응 인용 출처",
               "report_date": "2026-04-29",
               "life_context": false
+            },
+            {
+              "title": "한율 보들은행잎 모공핏 세럼 후기",
+              "url": "https://theqoo.net/beauty/3301104078",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ]
         },
@@ -950,10 +976,18 @@
             {
               "title": "6,000원 세럼 vs 2만원 세럼 — 초가성비 전쟁에서 '효과 진짜 있어?'라는 의심",
               "report_date": "2026-04-30"
+            },
+            {
+              "title": "PDRN 세럼이 너무 많아 — 어떤 게 진짜 효과 있는지 모르겠어",
+              "report_date": "2026-05-06"
+            },
+            {
+              "title": "\"무난함=재구매 죽음\" — 효과가 명확하지 않으면 갈아탐",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-30",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -994,6 +1028,36 @@
               "text": "예전에 일리윤꺼 썼었는데 요샌 그닥 가성비 느낌이 아닌듯",
               "report_date": "2026-04-30",
               "life_context": true
+            },
+            {
+              "text": "PDRN 세럼이 너무 많아져서 뭐가 진짜인지 모르겠음",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "비건 PDRN하고 일반 PDRN 차이가 뭐야? 효과 차이 있나",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "메디큐브 PDRN vs 아누아 PDRN — 결국 같은 성분인데 가격 차이가 왜 이래",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "세럼 발라도 차이를 모르겠어서 그냥 화장수만 쓰게 됨",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "같은 가격이면 효과 확실한 거 사고 싶은데, 후기가 다 비슷해서 못 고르겠어",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 발라봤는데 솔직히 뭐가 달라졌는지 모르겠어",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1024,6 +1088,48 @@
               "description": "\"일리윤 가성비 느낌 아닌듯\" 가격 기준 상향 출처",
               "report_date": "2026-04-30",
               "life_context": true
+            },
+            {
+              "title": "PDRN부터 엑소좀까지 주목 세럼 TOP 7 — 하퍼스바자",
+              "url": "https://www.harpersbazaar.co.kr/article/1896283",
+              "description": "하퍼스바자",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "화해 모공 세럼 BEST",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4178",
+              "description": "화해",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 캡슐 100 세럼",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174",
+              "description": "화해",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "여드름·트러블·민감성 유튜버 추천 찐템",
+              "url": "https://theqoo.net/square/3442645869",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "공병 후기 — 스킨케어편",
+              "url": "https://theqoo.net/beauty/2590622139",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "구달 청귤 비타C E TXA 세럼 체험단 후기",
+              "url": "https://theqoo.net/beauty/4166572126",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ]
         },
@@ -1381,10 +1487,18 @@
             {
               "title": "약산성 vs 약알칼리 — 양극화가 가속되면서 사용자가 혼란에 빠짐",
               "report_date": "2026-04-30"
+            },
+            {
+              "title": "약산성 vs 약알칼리 — 어느 쪽이 정답인지 소비자도 혼란",
+              "report_date": "2026-05-06"
+            },
+            {
+              "title": "세정력 좋은 게 답이 아니다 — 과세정 자각 시작",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-04-30",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -1459,6 +1573,36 @@
             {
               "text": "클오 써도 2차로 꼭 약알칼리로 마무리하기",
               "report_date": "2026-04-30",
+              "life_context": false
+            },
+            {
+              "text": "약산성 클렌징폼 좋다길래 썼는데 오히려 가렵고 오돌토돌 올라옴",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "지성이라 결국 약산성만으로 안 되고 다음날 아침엔 알칼리 써야 함",
+              "report_date": "2026-05-06",
+              "life_context": true
+            },
+            {
+              "text": "듀이트리 하이 아미노 — 약산성과 알칼리 중간이라 자극 없고 좋아",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "세정력 좋다는 게 좋은 거 같은데 오히려 피부장벽 망가뜨릴 수 있다고 하더라",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "강세정 폼클렌징 며칠 써봤는데 피부가 푸석해짐, 다시 순한 걸로 돌아옴",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "덜 씻기는 거보다 과하게 씻는 게 더 독이 된다 — 인플루언서가 그러더라",
+              "report_date": "2026-05-06",
               "life_context": false
             }
           ],
@@ -1539,6 +1683,34 @@
               "description": "\"아침세안은 폼클에서 클렌징 젤로 바뀌는 중\" 시장 이동 출처",
               "report_date": "2026-04-30",
               "life_context": false
+            },
+            {
+              "title": "건성 민감성 폼클렌징 추천좀 해주라",
+              "url": "https://theqoo.net/beauty/2981489732",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "약산성 클렌징폼 요즘 뭐가 제일좋아",
+              "url": "https://theqoo.net/beauty/3428462757",
+              "description": "더쿠",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "인기 폼클렌저 10개 세정력 가성비 비교 — 경향신문",
+              "url": "https://www.khan.co.kr/article/202411191519001",
+              "description": "경향신문",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "폼클렌저 세정력 테스트 인스타 — Threads",
+              "url": "https://www.threads.com/@sangroksuu/post/DOQ0Zl3ibWN/",
+              "description": "Threads",
+              "report_date": "2026-05-06",
+              "life_context": false
             }
           ]
         },
@@ -1551,10 +1723,14 @@
             {
               "title": "식자재 기반 클렌저에 대한 신뢰와 한계가 공존",
               "report_date": "2026-04-28"
+            },
+            {
+              "title": "식자재 클렌저(쌀·녹두) 정착 — 차세대 식자재 신성분 갈증",
+              "report_date": "2026-05-06"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
+          "last_seen": "2026-05-06",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -1569,6 +1745,21 @@
             {
               "text": "스크럽이 따로 필요없는 촉촉한 보습 클렌징폼",
               "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "비플레인 녹두는 검증된 베이직, 에스네이처 쌀도 자리잡았고 — 다음 식자재는 뭐가 나올까",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "식자재 클렌저가 트렌드라는데 종류가 한정적이지 않나",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "text": "버섯 클렌저는 없나? 보습 좋다고 하던데",
+              "report_date": "2026-05-06",
               "life_context": false
             }
           ],
@@ -1592,6 +1783,27 @@
               "url": "https://unpa.me/reviews/168845",
               "description": "\"촉촉한 보습 클렌징\" 식자재 기반 성공 사례",
               "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "title": "화해 클렌징폼 BEST",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200",
+              "description": "화해",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "화해 모공 클렌징폼 BEST",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4204",
+              "description": "화해",
+              "report_date": "2026-05-06",
+              "life_context": false
+            },
+            {
+              "title": "수분 클렌징 폼 BEST",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4201",
+              "description": "화해",
+              "report_date": "2026-05-06",
               "life_context": false
             }
           ]
