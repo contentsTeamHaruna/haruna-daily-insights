@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 데일리 인사이트 — 2026.05.08</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f8f6f3;
+    color: #2d2a26;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e8e4df;
+    margin-bottom: 40px;
+  }
+  .header-emoji { font-size: 48px; margin-bottom: 12px; }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    color: #8a8580;
+    font-weight: 400;
+  }
+  .header .brand {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    background: #f0ebe4;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6b6560;
+    font-weight: 500;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+    letter-spacing: -0.3px;
+  }
+
+  .weather-card {
+    background: linear-gradient(135deg, #fdf3e5 0%, #f8d5a8 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .weather-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7a5a2a;
+    margin-bottom: 16px;
+  }
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .weather-item {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
+  .weather-item .label {
+    font-size: 11px;
+    color: #9a7a4a;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .weather-item .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a4020;
+    margin-top: 4px;
+  }
+  .weather-keywords {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .weather-keywords .label {
+    font-size: 11px;
+    color: #9a7a4a;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .keyword-tag {
+    display: inline-block;
+    background: #7a5a2a;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 3px 4px 3px 0;
+    font-weight: 400;
+  }
+  .sogu-point {
+    background: rgba(255,255,255,0.9);
+    border-left: 3px solid #d4a050;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a4020;
+    line-height: 1.6;
+  }
+
+  .insight-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .insight-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid;
+  }
+  .insight-card:nth-child(1) { border-left-color: #e8a87c; }
+  .insight-card:nth-child(2) { border-left-color: #85cdca; }
+  .insight-card:nth-child(3) { border-left-color: #d4a5d0; }
+  .insight-card .number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .insight-card .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .insight-card .desc {
+    font-size: 14px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .source-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .source-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .source-card h3 .num {
+    background: #2d2a26;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .source-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .source-card ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .source-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+  .haruna-point {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #8a6d3b;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .haruna-point::before {
+    content: '\D558\B8E8\B098 \C801\C6A9';
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .note {
+    background: #fafaf8;
+    border-left: 3px solid #d4cfc8;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.6;
+  }
+
+  .quote {
+    font-style: italic;
+    color: #6b5540;
+    background: #fdf8f0;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .context-box {
+    background: #f0faf8;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #2d6b5e;
+    line-height: 1.6;
+  }
+
+  .review-links {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: #fafaf8;
+    border-radius: 8px;
+  }
+  .review-links .link-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .review-links a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+  }
+  .review-links a:hover { text-decoration: underline; }
+
+  .category-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 28px 0 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e4df;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+  .badge-persist { background: #f0ebe4; color: #8a6d3b; }
+  .badge-new { background: #e74c3c; color: #fff; }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 13px;
+  }
+  th {
+    background: #2d2a26;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.6;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fdfcfa; }
+
+  .needs-list {
+    list-style: none;
+    padding: 0;
+  }
+  .needs-list li {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .needs-list li strong {
+    display: block;
+    font-size: 15px;
+    color: #1a1815;
+    margin-bottom: 4px;
+  }
+  .needs-list li span {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.6;
+  }
+
+  .idea-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .idea-card .category {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .idea-card .category.weather { background: #e8a040; }
+  .idea-card .category.season { background: #85cdca; }
+  .idea-card .category.ingredient { background: #d4a5d0; }
+  .idea-card .category.trend { background: #e8a87c; }
+  .idea-card .category.community { background: #f39c12; }
+
+  .idea-card .idea-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .idea-card .idea-desc {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .hashtag-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+  }
+  .hashtag-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .hashtag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px 4px 4px 0;
+    font-weight: 500;
+  }
+  .hashtag.trending {
+    background: #f0ebe4;
+    color: #6b5540;
+  }
+  .hashtag.haruna {
+    background: #e8a87c;
+    color: #fff;
+  }
+
+  .tomorrow-card {
+    background: linear-gradient(135deg, #fdf8f0 0%, #f8f0e5 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .tomorrow-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b5540;
+    margin-bottom: 16px;
+  }
+  .tomorrow-item {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .tomorrow-item:last-child { margin-bottom: 0; }
+  .tomorrow-item strong {
+    display: block;
+    font-size: 14px;
+    color: #1a1815;
+    margin-bottom: 6px;
+  }
+  .tomorrow-item p {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.7;
+  }
+
+  .sources {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sources h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .sources a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    word-break: break-all;
+  }
+  .sources a:hover { text-decoration: underline; }
+
+  .footer {
+    text-align: center;
+    padding-top: 40px;
+    color: #bab5b0;
+    font-size: 12px;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background: #e8e4df;
+    margin: 32px 0;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 60px; }
+    .header h1 { font-size: 22px; }
+    .weather-grid { grid-template-columns: 1fr; }
+    table { font-size: 12px; }
+    th, td { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-emoji">&#9728;&#65039;</div>
+    <h1>하루나 데일리 인사이트</h1>
+    <div class="date">2026년 5월 8일 (목)</div>
+    <div class="brand">@haruna_kr | 실키 머쉬룸 바디크림</div>
+  </div>
+
+  <!-- Weather Context -->
+  <div class="weather-card">
+    <h2>&#9728;&#65039; 오늘의 날씨 컨텍스트</h2>
+    <div class="weather-grid">
+      <div class="weather-item">
+        <div class="label">서울 기온</div>
+        <div class="value">최저 7℃ / 최고 22℃ (일교차 15℃)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">습도</div>
+        <div class="value">아침 높음(비 갠 직후) → 오후 50~60%</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">날씨</div>
+        <div class="value">맑음 (어제 비 이후 쾌청) / 남서풍 약함</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">미세먼지</div>
+        <div class="value">좋음~보통 (비 세척 효과)</div>
+      </div>
+    </div>
+    <div class="weather-keywords">
+      <div class="label">핵심 키워드</div>
+      <span class="keyword-tag">비 갠 뒤 맑은 초여름</span>
+      <span class="keyword-tag">자외선 복귀</span>
+      <span class="keyword-tag">일교차 15℃ 건조</span>
+      <span class="keyword-tag">냉방 시작</span>
+      <span class="keyword-tag">보습 리커버리</span>
+      <span class="keyword-tag">UV+보습 듀얼 루틴</span>
+    </div>
+    <div class="sogu-point">
+      &#128161; "어제 비에 씻겨간 피부 수분을 되찾는 목요일 — <strong>맑은 하늘 아래 자외선은 돌아왔고 실내 냉방은 가동 중</strong>, 비 갠 뒤 벌어진 피부 결 사이로 수분이 빠져나가기 전에 <strong>보습막을 다시 채워야 하는 날</strong>"
+    </div>
+  </div>
+
+  <!-- TOP 3 Insights -->
+  <div class="section">
+    <div class="section-title">&#127919; 오늘의 핵심 인사이트 (TOP 3)</div>
+    <div class="insight-cards">
+      <div class="insight-card">
+        <div class="number">INSIGHT 01</div>
+        <div class="title">비 갠 뒤 맑은 5월 목요일 — 일교차 15℃·자외선 복귀에서 '보습 리커버리'가 바디케어의 핵심 과제로 부상</div>
+        <div class="desc">어제 비 이후 오늘 쾌청한 날씨에 자외선이 복귀하면서, "비 온 다음 날 피부가 더 건조하다"는 경험이 더쿠·네이버에서 반복. 비로 인해 피부 장벽이 약해진 상태에서 자외선+냉방 건조가 동시에 작용하는 '이중 건조 트리거'. 하루나의 보습막 형성 기능을 "비 갠 뒤 피부 리커버리" 맥락에서 소구할 최적 타이밍.</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">INSIGHT 02</div>
+        <div class="title">화해 바디크림 TOP 10 — 알로에 젤 타입의 여름 전환기 상승세가 더마 크림과 공존하는 '듀얼 텍스처 시대' 진입</div>
+        <div class="desc">상위 5위까지 더마 크림이 고정된 가운데, 6위·9위에 알로에 젤 타입이 동시 진입하며 "크림은 무겁고, 젤은 가볍다"는 텍스처 양극화가 가시화. 닥터지 더모이스처 배리어.D 인텐스 크림이 10위 신규 진입하며 더마 브랜드 다양화도 동시 진행. 하루나 실키 머쉬룸의 "크림인데 가벼운" 중간 포지션이 두 극단 사이의 빈틈을 공략할 기회.</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">INSIGHT 03</div>
+        <div class="title">오프온 바디로션 더쿠 리뷰 — 모공각화증 5일 개선 후기가 기능성 바디크림의 '실사용 증거' 마케팅 새 기준 제시</div>
+        <div class="desc">더쿠 뷰티방에서 오프온 바디로션의 모공각화증(팔 오돌토돌) 5일 사용 개선 후기가 화제. "오돌토돌한 느낌이 많이 줄어들었어"라는 구체적 변화 기록이 커뮤니티 신뢰를 형성. 더마 바디크림이 "성분표"로만 소구하던 시대에서 "실사용 비포&애프터"로 소구하는 시대로 전환. 하루나도 PDRN·흰목이버섯 다당체의 실사용 변화 기록 콘텐츠 기회.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Part 1: Voice of Customer -->
+  <div class="section">
+    <div class="section-title">&#128483;&#65039; Part 1: Voice of Customer — 소비자 페인포인트 심층 분석</div>
+
+    <!-- 바디크림 -->
+    <div class="category-header">&#129524; 바디크림/바디로션 — Top 3 페인포인트</div>
+
+    <div class="source-card">
+      <h3>페인포인트 #1 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">비 갠 뒤 맑은 날 — 자외선 복귀와 냉방 건조가 동시에 작용하는 '이중 건조 트리거'에서 보습 루틴이 흔들린다</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">어제 비가 온 뒤 오늘처럼 맑은 날, 자외선이 돌아오면서 실외에서는 UV 손상이, 실내에서는 냉방·제습기 가동으로 건조가 동시에 작용. 더쿠·네이버에서 "비 온 다음 날 피부가 유독 건조하다"는 경험담이 반복되지만, 비 갠 뒤 구체적인 보습 리커버리 루틴에 대한 정보는 부재. "맑은 날이니까 선크림만 바르면 되지"라는 인식이 바디 보습 이탈을 가속.</p>
+      <div class="note">
+        <span class="quote">"비 온 다음 날 맑으면 피부가 더 당기는 느낌인데 왜 그런 거야"</span><br>
+        <span class="quote">"어제 비 맞고 오늘 냉방 틀었더니 팔이 허옇게 일어나"</span><br>
+        <span class="quote">"맑은 날은 선크림만 생각하고 바디로션은 스킵하게 됨"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/theqdeal/3745534027" target="_blank">여름에도 바디로션(크림) 꼭 쓰는 덬들 뭐 써? — 더쿠</a>
+        <a href="https://theqoo.net/beauty/3259689473" target="_blank">여름에 바를 산뜻한 바디로션 머없을까? — 더쿠</a>
+        <a href="https://www.womansense.co.kr/news/articleView.html?idxno=46537" target="_blank">건조한 계절, 끈적임 없이 스며드는 보디 로션&밤 — 우먼센스</a>
+      </div>
+      <div class="haruna-point">"비 갠 뒤 맑은 날이 피부에 가장 가혹한 날입니다"라는 역설적 메시지. 비로 약해진 피부 장벽 + 자외선 복귀 + 냉방 건조의 3중 트리거를 설명하고, 실키 머쉬룸의 흰목이버섯 다당체가 "비 갠 뒤 벌어진 피부 결을 채우는 보습 리커버리"로 작동하는 앵글. 날씨 연동 콘텐츠로 오늘 바로 활용 가능.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #2 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">모공각화증(팔 오돌토돌) — 바디크림으로 해결하고 싶은데 어떤 성분·제품이 실제로 효과 있는지 정보가 없다</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">더쿠 뷰티방에서 오프온 바디로션으로 모공각화증이 5일 만에 개선되었다는 후기가 화제를 모으며, "나도 팔 오돌토돌한데 뭐 발라야 하지"라는 연쇄 질문이 활성화. 모공각화증은 한국 여성의 절반 이상이 경험하는 흔한 피부 고민이지만, 바디크림 카테고리에서 이를 정면으로 다루는 제품·콘텐츠가 극히 부족.</p>
+      <div class="note">
+        <span class="quote">"오돌토돌한 느낌이 많이 줄어들었어 — 오프온 5일 사용 후기"</span><br>
+        <span class="quote">"팔 닭살 때문에 민소매 못 입는데 바디크림으로 진짜 나아지나?"</span><br>
+        <span class="quote">"모공각화증에는 요소(우레아) 크림이 좋다는데 바디크림 중에 우레아 함유 제품이 잘 안 보여"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/4099764448" target="_blank">[오프온] 바디로션 후기 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/1404763709" target="_blank">바디로션 덕후 15년인 덬이 몸피부 아기처럼 유지하는 방법 공유해 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/2968198810" target="_blank">이런 조건에 맞는 바디로션 추천 받을 수 있을까 — 더쿠</a>
+      </div>
+      <div class="haruna-point">모공각화증 소구를 직접 제품 USP로 내세우기보다, "팔 오돌토돌 고민, 바디크림만 바꿔도 달라집니다"라는 실사용 변화 콘텐츠로 접근. 흰목이버섯 다당체의 보습+각질 연화 기능을 모공각화증 맥락에서 교육. 실사용 비포&애프터 챌린지를 커뮤니티 기반으로 기획.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #3 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">향 좋은 바디로션 vs 성분 좋은 바디로션 — 둘 다 원하지만 양립하는 제품을 못 찾는 딜레마가 연중 지속</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">디시인사이드 향수·화장품 갤러리에서 "화이트 머스크 향 바디로션 추천"(2026.02), 더쿠에서 "향/지속력 좋은 바디로션 추천" 요청이 연중 반복. 동시에 화해·글로우픽 상위권은 더마·약국 브랜드(무향·미향)가 장악. 소비자가 원하는 "향도 좋고 성분도 좋은" 교차점에 위치한 제품이 시장에서 극히 적은 구조.</p>
+      <div class="note">
+        <span class="quote">"향 좋은 바디로션 사면 성분이 별로고, 성분 좋은 거 사면 향이 없어"</span><br>
+        <span class="quote">"화이트 머스크 향 바디로션 좋은 거 없나, 로라메르시에는 비싸고"</span><br>
+        <span class="quote">"살냄새 나는 바디크림 찾는데 더마 제품은 다 무향이라 선택지가 없음"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1520023" target="_blank">화이트 머스크 향 좋아하는데 바디로션 추천 좀요 — 디시인사이드</a>
+        <a href="https://theqoo.net/beauty/2787180111" target="_blank">내가 쓰는 바디로션 자랑할게 향 좋은 바디제품 공유하자 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/3957680448?page=3" target="_blank">보습 좋으면서 향도 좋은 바디로션 추천해줘 — 더쿠</a>
+      </div>
+      <div class="haruna-point">화해·글로우픽 더마 상위권(무향)과 디시·더쿠 향기 바디로션 수요 사이의 정확한 교차점. "더마급 성분(PDRN·흰목이버섯)인데 식자재 자연향이 살아 있는" 하루나의 포지션이 이 딜레마의 유일한 해결책. 성분표와 향 프로파일을 동시에 공개하는 투명성 콘텐츠.</div>
+    </div>
+
+    <!-- 세럼 -->
+    <div class="category-header">&#129514; 세럼 — Top 3 페인포인트</div>
+
+    <div class="source-card">
+      <h3>페인포인트 #1 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">PDRN 세럼 시장 초포화 — 센텔리안24 마데카 PDRN 크림까지 등장하며 'PDRN의 크림화'로 차별화가 더 어려워졌다</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">더쿠 뷰티방에서 센텔리안24 마데카 PDRN 크림 체험 후기가 2026년 2~3월에 다수 올라오며, PDRN이 세럼을 넘어 크림·에센스 등 전 제형으로 확산. 화해 세럼 TOP 10에 토리든(1위), 아누아(2위), 메디힐(10위)까지 PDRN 관련 제품이 포진한 상황에서, 소비자는 "어차피 다 PDRN인데 뭘 골라야 하지"라는 극단적 선택 피로를 호소.</p>
+      <div class="note">
+        <span class="quote">"센텔리안 PDRN 크림, 아누아 PDRN 세럼, 메디큐브 PDRN — 다 좋다는데 결국 뭐가 다른 건지"</span><br>
+        <span class="quote">"PDRN이 크림으로도 나오기 시작했는데, 세럼이랑 크림이랑 효과 차이가 있나?"</span><br>
+        <span class="quote">"VT 리들샷 PDRN 에센스 100 써봤는데 아누아랑 체감 차이를 모르겠어"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/4094261850?order_type=desc&sort_index=voted_count&category=1608942207" target="_blank">센텔리안24 마데카 PDRN 크림 후기 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/3677598677" target="_blank">VT 리들샷 100 + PDRN 에센스 100 후기 — 더쿠</a>
+        <a href="https://v.daum.net/v/20260321110125039?f=p" target="_blank">다이소부터 백화점까지 점령, K뷰티 대세 PDRN 뭐길래 — 다음 뉴스</a>
+      </div>
+      <div class="haruna-point">PDRN 초포화 시점에서 "출처"와 "제형 설계"로 차별화. 하루나 비건 PDRN의 식물 유래 출처를 투명하게 공개하고, "세럼에서 크림까지 PDRN이 넘쳐나는 시대, 원료의 출처가 제품의 차이를 만듭니다" 교육 콘텐츠. PDRN 피로감을 "출처 변별 가이드"로 전환하는 전략.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #2 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">비타민C 세럼 자극 공포 — "따가워야 효과 있다"는 속설이 민감성 피부의 세럼 시장 진입을 차단</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">더쿠 뷰티방에서 비타민C 세럼 추천 요청 시 "자극 없는 거 있나"가 거의 필수 조건으로 동반. 퓨라도르 비타민 세럼 후기에서도 "진짜 세다", "따끔거린다"는 반응과 함께 "그래서 효과가 좋다"는 양면적 평가. 민감성 피부 소비자는 비타민C의 효과를 원하지만 자극 공포로 세럼 카테고리 자체를 회피.</p>
+      <div class="note">
+        <span class="quote">"퓨라도르 비타민 세럼 진짜 쎄... 따끔거리는데 이게 효과 있다는 뜻인 거야?"</span><br>
+        <span class="quote">"비타민C 앰플 추천해줘, 근데 예민한 피부라 순한 거여야 함"</span><br>
+        <span class="quote">"비타민C 15% 쓰고 싶은데 얼굴 빨개질까봐 망설여짐"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/3125528813?page=7" target="_blank">퓨라도르 비타민 세럼 쓰는덬들아 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/3039400159" target="_blank">비타민C 앰플이나 세럼 추천해주라 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/1699917097" target="_blank">효과 빡하고 나타나는 비타민C 제품 모음 — 더쿠</a>
+      </div>
+      <div class="haruna-point">하루나 세럼 개발 시 "따갑지 않은 비타민C"를 핵심 USP로 설정. 식자재 유래 자연 항산화 성분(키위·케일)을 비타민C 유도체와 결합한 저자극 포뮬러로, "효과를 위해 자극을 감수할 필요가 없습니다" 메시지. 민감성 피부 커뮤니티 타깃 교육 콘텐츠.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #3 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">레티놀→비타민C→PDRN→엑소좀 — 성분 트렌드 주기가 빨라져 소비자가 '지금 뭘 써야 하는지' 판단 불가</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">화해 2026 트렌드에서 엑소좀이 차세대 핵심 성분으로 제시되는 동시에, 화해 세럼 TOP 10에는 히알루론산(1위·3위), PDRN(2위·10위), 레티놀(4위), 스쿠알란(5위), 마이크로바이옴(6위), 펩타이드(7위), 세라마이드(8위), 시카(9위)까지 10가지 서로 다른 핵심 성분이 혼재. 소비자는 "어떤 성분이 나한테 맞는지" 이전에 "어떤 성분이 진짜 효과 있는지" 단계에서 정체.</p>
+      <div class="note">
+        <span class="quote">"PDRN 다음은 엑소좀이라는데, 결국 또 바뀔 거 아니야?"</span><br>
+        <span class="quote">"세럼 하나 사려는데 히알루론산이 좋다, 펩타이드가 좋다, PDRN이 좋다 — 뭘 믿어야 함?"</span><br>
+        <span class="quote">"성분 공부를 아무리 해도 제품이 너무 많아서 결국 리뷰 보고 그냥 삼"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 에센스/앰플/세럼 BEST — 화해</a>
+        <a href="https://www.harpersbazaar.co.kr/article/1896283" target="_blank">PDRN부터 엑소좀까지 주목 세럼 TOP 7 — 하퍼스바자</a>
+        <a href="https://business.hwahae.co.kr/insight/beauty-trend-2026-sustainable-ingredients/" target="_blank">2026년 시장을 선도할 지속가능한 성분 5가지 — 화해비즈니스</a>
+      </div>
+      <div class="haruna-point">성분 트렌드 과잉 시대에 하루나 세럼을 "성분이 아니라 원료의 시너지"로 포지셔닝. 개별 성분의 유행을 좇는 대신, 흰목이버섯 다당체·비건 PDRN·식자재 항산화 성분의 조합이 만드는 복합 효과를 설명하는 "원료 시너지 맵" 콘텐츠.</div>
+    </div>
+
+    <!-- 폼클렌징 -->
+    <div class="category-header">&#129532; 폼클렌징 — Top 3 페인포인트</div>
+
+    <div class="source-card">
+      <h3>페인포인트 #1 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">약산성 폼클렌징 vs 알칼리 폼클렌징 — 2026년에도 끝나지 않는 pH 논쟁, 소비자 혼란 심화</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">더쿠 뷰티방에서 "약산성 폼클렌징 안 맞는 덬들을 위해 추천하는 가성비 알칼리성 폼클 모음"이 누적 조회 높은 인기 게시물로 유지. 약산성이 만능이라는 1차 인식과 "나한테는 오히려 약산성이 안 맞더라"는 2차 자각이 공존하면서, 화해 클렌징폼 TOP 10에서 약산성(비플레인 1위, 에스네이처 4위)과 비약산성(션리 다시마 2위, 토리든 3위)이 혼재.</p>
+      <div class="note">
+        <span class="quote">"약산성 클렌징폼 좋다길래 3개 써봤는데 다 안 맞아, 화이트헤드 생김"</span><br>
+        <span class="quote">"내 경험상 화이트헤드 때문에 고민인 사람들 다 약산성 폼클 썼음"</span><br>
+        <span class="quote">"아침에는 약산성, 저녁에는 살리실산 클렌저 — 이렇게 나눠 써야 하나?"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/square/2105710303" target="_blank">약산성 폼클렌징 안맞는 덬들을 위해 추천하는 알칼리성 폼클 모음 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/2245531678" target="_blank">내 경험상 화이트헤드때매 고민인 애들 다 약산성 폼클 썼음 — 더쿠</a>
+        <a href="https://theqoo.net/beauty/3428462757" target="_blank">약산성 클렌징폼 요즘 뭐가 제일좋아? — 더쿠</a>
+      </div>
+      <div class="haruna-point">pH 논쟁을 넘어 "계면활성제가 핵심"이라는 교육 콘텐츠. 하루나 폼클렌징이 코코넛 유래 순한 계면활성제를 사용한다면, "pH가 아니라 세정 성분이 피부 반응을 결정합니다 — 하루나 클렌저의 계면활성제 공개" 앵글. 약산성 vs 알칼리 이분법을 3차원으로 확장.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #2 <span class="badge badge-persist">&#128204; 지속</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">식자재 클렌저 쌀·녹두 다음 — '버섯'이라는 신규 식자재에 대한 소비자 호기심은 있지만 시장에 제품이 없다</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">화해 클렌징폼 TOP 10에 비플레인 녹두(1위), 에스네이처 쌀(4위), 수이스킨 어린새싹(5위), 프리메이 햇쌀(8위)까지 식자재 클렌저가 4개 포진. 더쿠에서 "쌀 클렌저 3통째 — 다른 식자재 클렌저도 써보고 싶다"는 피로감이 표출. 한편 라운드랩 1025 독도 클렌저가 10위에 올라 해양 원료 클렌저도 상위권 진입.</p>
+      <div class="note">
+        <span class="quote">"비플레인 녹두 3통 다 쓰고 이제 다른 식자재 클렌저 도전하고 싶은데 선택지가 없음"</span><br>
+        <span class="quote">"쌀, 녹두, 새싹... 클렌저 식자재가 다 곡물이야, 버섯이나 과일은 안 나오나?"</span><br>
+        <span class="quote">"라운드랩 독도 클렌저가 10위 올라왔는데 해조류도 식자재 클렌저인 건가"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징폼 BEST — 화해</a>
+        <a href="https://lady.khan.co.kr/beauty/view/8628" target="_blank">쌀·깨·녹두·오트밀·콩으로 예뻐진다! 피부가 건강해지는 곡물 이야기 — 레이디경향</a>
+        <a href="https://theqoo.net/beauty/3057005291" target="_blank">약산성 클렌징폼 좋은거있어? — 더쿠</a>
+      </div>
+      <div class="haruna-point">식자재 클렌저 카테고리의 '버섯' 최초 진입자 포지션. 쌀(각질)·녹두(피지)·새싹(진정)이 차지하지 못한 '고보습형 세정'을 버섯 다당체로 채우는 전략. "곡물 다음은 버섯입니다 — 씻어도 당기지 않는 식자재 클렌저의 새 장" 메시지.</div>
+    </div>
+
+    <div class="source-card">
+      <h3>페인포인트 #3 <span class="badge badge-new">&#127381; 신규</span></h3>
+      <p style="font-weight:700; font-size:15px; margin-bottom:12px;">살리실산(BHA) 클렌저의 상위권 진입 — 세정+기능성의 경계가 무너지면서 "클렌저도 성분을 따져야 하나" 혼란</p>
+      <p style="font-size:14px; color:#5a5550; margin-bottom:14px;">화해 클렌징폼 9위에 주미소 포어 퓨리파잉 살리실산 포밍 클렌저가 신규 진입. 올리브영 FULLMOON 트렌드의 '기능성 바디워시' 흐름이 클렌징폼으로도 확산 중. 더쿠에서 "폼클렌징 영향이 이렇게 크나?"라는 게시물이 인기를 끌며, 클렌저 선택이 피부 상태에 미치는 영향에 대한 인식이 높아지는 중.</p>
+      <div class="note">
+        <span class="quote">"주미소 살리실산 클렌저 써봤는데 모공이 좀 줄었어, 근데 매일 써도 되나?"</span><br>
+        <span class="quote">"폼클렌징이 피부에 이렇게 영향이 큰 줄 몰랐어 — 아무거나 쓰면 안 되는 거였음"</span><br>
+        <span class="quote">"아침은 순한 약산성, 저녁은 살리실산 — 이중 클렌징 루틴이 맞는 건가?"</span>
+      </div>
+      <div class="review-links">
+        <div class="link-label">&#128205; 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/1930244501" target="_blank">폼클렌징 영향이 이렇게 크나? — 더쿠</a>
+        <a href="https://theqoo.net/beauty/2981489732" target="_blank">건성 민감성 폼클렌징 추천좀 해주라 — 더쿠</a>
+        <a href="https://www.elle.co.kr/article/45940" target="_blank">민감 피부를 위한 클렌징 선택의 기준 — 엘르</a>
+      </div>
+      <div class="haruna-point">살리실산 클렌저의 "매일 사용 가능 여부" 논란에 대해, 하루나 폼클렌징의 순한 계면활성제 + 흰목이버섯 다당체 보습 세정이 "매일 써도 자극 없는 기능성 클렌저"로 포지셔닝. "성분 체크가 필요한 클렌저 시대 — 하루나는 세정과 보습을 한번에" 메시지.</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Part 2: Source-by-Source Findings -->
+  <div class="section">
+    <div class="section-title">&#128269; Part 2: 소스별 주요 발견</div>
+
+    <div class="source-card">
+      <h3><span class="num">1</span> 인스타그램</h3>
+      <ul>
+        <li>#바디크림추천, #바디케어 해시태그에서 비 갠 뒤 맑은 날 '보습 리커버리' 콘텐츠가 미약하게 등장 — 시장 선점 가능</li>
+        <li>유씨엘 2026 바디케어 트렌드 '센티드 테라피' 관련 콘텐츠가 뷰티 인플루언서 계정에서 지속 확산</li>
+        <li>#클린뷰티, #비건바디크림 태그 사용 빈도 꾸준한 상승세 유지</li>
+        <li>K-뷰티 글로벌 계정에서 '스키니피케이션'(Face to Body) 콘텐츠 시리즈 제작 증가</li>
+        <li>바디케어 '비포&애프터' 리얼 후기 콘텐츠가 커뮤니티 기반 신뢰 형성에 효과적으로 작동</li>
+        <li>#바디레티놀, #바디세럼 신규 해시태그 등장 — 얼굴 스킨케어 성분의 바디 확장 트렌드</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">2</span> 네이버 블로그/카페</h3>
+      <ul>
+        <li>"비 갠 뒤 피부 관리" 키워드가 5월 블로그 콘텐츠에서 신규 등장</li>
+        <li>일리윤 세라마이드 아토 로션 — 뷰티어워드 19관왕 수상 후 "국민 바디로션" 포지션 강화</li>
+        <li>더마비 데일리 모이스처 바디로션 — 우디+파우더향 조합으로 여름 제품으로 꾸준한 추천</li>
+        <li>한국소비자원 바디로션 10종 비교 결과가 블로그에서 재인용 — 보습력·끈적임 기준 데이터 기반 추천</li>
+        <li>"바디크림 성분 비교"라는 키워드가 블로그 콘텐츠 신규 카테고리로 형성 중</li>
+        <li>피지오겔 DMT 바디로션 — 습한 여름에도 비끈적 제품으로 반복 언급</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">3</span> 올리브영</h3>
+      <ul>
+        <li>5월 2주차 시즌 키워드: <strong>선크림</strong> — 비 갠 뒤 자외선 복귀로 UV 케어 수요 급상승</li>
+        <li>2026 FULLMOON 트렌드: '기능성 바디워시'와 '센티드 테라피'가 바디케어 양대 축</li>
+        <li>히든 퍼퓸 스프레이 바디로션 — 5초 스프레이 신규 제형, 향기 바디로션의 편의성 혁신</li>
+        <li><strong>바디케어 부위별 세분화</strong> 가속: 풋케어·핸드케어·바디스크럽·바디미스트가 독립 서브카테고리</li>
+        <li>포켓몬 에디션 기획 상품 — 바디케어 진입장벽을 낮추는 콜라보 마케팅 활발</li>
+        <li>바디 톤업 제품 검색량 증가 — 여름 노출 시즌 대비 톤업 바디케어 수요</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">4</span> 화해</h3>
+      <ul>
+        <li><strong>바디크림/젤 TOP 5 안정</strong>: 아토팜 판테놀(1위), 시카플라스트 밤 B5+(2위), 아토팜 MLE(3위), 그린핑거 판테딘(4위), 바이오더마 아토덤(5위) — 상위 5위 변동 없음</li>
+        <li><strong>알로에 젤 타입 상승</strong>: 아로마티카 수딩 알로에 베라 젤(6위&#8593;1), 브링그린 알로에 수딩젤(9위) — 여름 전환기 쿨링 수요 반영</li>
+        <li><strong>더마 신규 진입</strong>: 닥터지 더모이스처 배리어.D 인텐스 크림(10위 NEW)</li>
+        <li>세럼 TOP 3 고정: 토리든 다이브인(1위), 아누아 PDRN(2위), 웰라쥬 히알루론산(3위)</li>
+        <li>세럼 중위권 다양화: 이니스프리 레티놀 시카(4위), 에스네이처 스쿠알란(5위), 라보레브 마이크로바이옴(6위)</li>
+        <li>클렌징폼 TOP 3 고정: 비플레인 녹두(1위), 션리 다시마(2위), 토리든 다이브인(3위)</li>
+        <li>클렌징폼 BHA 진입: 주미소 살리실산 포밍 클렌저(9위 NEW), 라운드랩 독도 클렌저(10위 NEW)</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">5</span> 더쿠</h3>
+      <ul>
+        <li><strong>오프온 바디로션 모공각화증 후기</strong> — 5일 사용 개선기가 뷰티방 화제, "오돌토돌 줄어들었어" 구체 표현</li>
+        <li>"보습 좋으면서 향도 좋은 바디로션 추천해줘" — 양립 니즈 지속</li>
+        <li>"바디로션 한통을 2주면 쓰는 유튜버 회사원" — 바디로션 대용량·가성비 관심</li>
+        <li>비타민C 세럼 추천 시 "자극 없는 거" 조건 필수화</li>
+        <li>PDRN 크림 체험 후기 다수 — 센텔리안24 마데카 PDRN 크림이 신규 관심 카테고리</li>
+        <li>"약산성 폼클렌징 요즘 뭐가 제일좋아" — 2026년에도 약산성 폼클렌징 추천 요청 활발</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">6</span> 글로우픽</h3>
+      <ul>
+        <li><strong>바디로션/크림 TOP 3 안정</strong>: 일리윤 세라마이드 아토 로션(1위), 에스트라 아토베리어365(2위), 비판톨 더마(3위)</li>
+        <li>셀라피 에이리페어 바디로션(8위 NEW) — 신흥 더마 브랜드 상위 진입</li>
+        <li>아비노 스킨 릴리프(10위 NEW) — 오트밀 기반 해외 더마 브랜드 재부상</li>
+        <li>니베아 SOS 리페어(6위&#8593;) — "SOS" 네이밍의 긴급 보습 포지셔닝이 비 갠 뒤 건조 시즌에 유리</li>
+        <li>쿤달 허니 앤 마카다미아(베이비파우더향)(9위 안정) — 향기 바디로션 대표 포지션 유지</li>
+        <li>더마·약국 브랜드 중심의 상위 랭킹이 5월에도 변함없이 유지</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">7</span> 디시인사이드</h3>
+      <ul>
+        <li>향수·화장품 갤러리에서 "화이트 머스크 향 바디로션 추천" 요청 (2026.02)</li>
+        <li>"손도 몸인데 바디로션으로 핸드크림 대체해도 되나" — 멀티유즈 니즈 지속</li>
+        <li>"건성피부 바디로션 추천좀" — 건성 피부 전용 고보습 바디로션 수요</li>
+        <li>"바디로션 ㄹㅇ 안끈적거리는거 추천함" — 비끈적 텍스처 핵심 요구</li>
+        <li>"바디로션 향 좋은거 살꺼면 쿤달 베이비파우더향" — 쿤달이 디시에서도 향기 바디로션 대표</li>
+        <li>"가성비 좋고 보습력 좋은 바디로션" — 대용량+가성비 키워드 반복</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">8</span> 레딧 r/SkincareAddiction</h3>
+      <ul>
+        <li>2026 여름 바디로션 핵심 키워드: <strong>lightweight, non-greasy, hydrating</strong> — 동일 패턴 유지</li>
+        <li>CeraVe Moisturizing Lotion — "best body moisturizer on the market" 반복 추천, 무향·비코메도제닉</li>
+        <li>Aveeno Daily Moisturizing — 콜로이달 오트밀 기반 경량 로션으로 민감 피부 추천</li>
+        <li>Nivea Creme — 2026년 재바이럴 중, "클래식이 다시 뜬다" 흐름</li>
+        <li>오일 → 로션 레이어링 — 종일 글로우 효과 팁이 미디어에서 레딧 인용</li>
+        <li>Eco-friendly 바디로션 가이드 — 식물 기반·비건 포뮬러 관심 꾸준</li>
+        <li>"샤워 후 3분 이내 바르기" — 최적 흡수 타이밍 팁 지속 바이럴</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Trend Ingredients -->
+  <div class="section">
+    <div class="section-title">&#129516; 트렌드 성분/원료</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>성분</th><th>트렌드 맥락</th><th>하루나 연관성</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>판테놀</strong></td><td>화해 바디크림 1위(아토팜) + 센텔리안24 크림까지 확산, 장벽 회복 대표 성분</td><td>보습+진정 듀얼 메시지로 연결 가능</td></tr>
+          <tr><td><strong>PDRN</strong></td><td>세럼 넘어 크림까지 전 제형 확산, 시장 초포화 진입</td><td>비건 PDRN 출처 투명성으로 차별화</td></tr>
+          <tr><td><strong>히알루론산(저분자)</strong></td><td>화해 세럼 1·3위 핵심 성분, 즉각 수분 공급 대표</td><td>흰목이버섯 다당체와의 보습 시너지</td></tr>
+          <tr><td><strong>알로에베라</strong></td><td>화해 6·9위 동시 진입, 여름 쿨링+진정 대표</td><td>식자재 기반 진정 성분 스토리텔링</td></tr>
+          <tr><td><strong>살리실산(BHA)</strong></td><td>화해 클렌징 9위 신규 진입, 기능성 클렌저 트렌드</td><td>하루나 폼클렌징의 '순한 기능성' 대비 포지셔닝</td></tr>
+          <tr><td><strong>레티놀</strong></td><td>화해 세럼 4위(이니스프리), 바디용 레티놀 카테고리 형성 중</td><td>바디케어 스키니피케이션 트렌드 근거</td></tr>
+          <tr><td><strong>세라마이드</strong></td><td>글로우픽 바디 1위(일리윤), 앰플엔 세럼 8위까지 전 카테고리 확산</td><td>피부 장벽 복원 메시지로 연결</td></tr>
+          <tr><td><strong>엑소좀</strong></td><td>화해 2026 차세대 핵심 성분 지정, 제품 출시 5.8배 급증</td><td>하루나 향후 라인 확장 시 검토 소재</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Consumer Needs -->
+  <div class="section">
+    <div class="section-title">&#128172; 소비자 고민/니즈</div>
+    <ul class="needs-list">
+      <li><strong>비 갠 뒤 이중 건조</strong><span>자외선 복귀 + 냉방 건조가 동시 작용 — 보습 리커버리 루틴 정보 부재</span></li>
+      <li><strong>모공각화증 솔루션</strong><span>팔 오돌토돌 개선을 바디크림으로 해결하고 싶지만, 실사용 증거가 있는 제품이 극히 적음</span></li>
+      <li><strong>향+성분 양립</strong><span>향 좋은 바디로션과 성분 좋은 바디로션이 겹치지 않는 시장 구조</span></li>
+      <li><strong>PDRN 초포화 피로</strong><span>세럼→크림까지 전 제형 PDRN이 넘쳐나며 선택 피로 극대화</span></li>
+      <li><strong>비타민C 자극 공포</strong><span>효과는 원하지만 자극이 두려운 민감성 피부의 세럼 시장 이탈</span></li>
+      <li><strong>pH 논쟁 2.0</strong><span>약산성이 만능이 아니라는 2차 자각 → 계면활성제 종류까지 따지는 소비자 등장</span></li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Competitive Landscape -->
+  <div class="section">
+    <div class="section-title">&#127991;&#65039; 경쟁 제품 동향</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>제품</th><th>포지셔닝</th><th>하루나 대비</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>아토팜 판테놀 크림</strong></td><td>화해 1위 고정, 판테놀 기반 장벽 회복</td><td>더마 신뢰도 최강 / 향·감성 부재</td></tr>
+          <tr><td><strong>시카플라스트 밤 B5+</strong></td><td>화해 2위 안정, 진정·재생 특화</td><td>의약품급 신뢰 / 바디 전용 아닌 범용</td></tr>
+          <tr><td><strong>일리윤 세라마이드 아토 로션</strong></td><td>글로우픽 1위, 뷰티어워드 19관왕, 국민 바디로션</td><td>대용량 가성비 / 성분 차별화 약함</td></tr>
+          <tr><td><strong>아로마티카 수딩 알로에 베라 젤</strong></td><td>화해 6위&#8593;, 여름 쿨링 수요로 상승세</td><td>시즌 특화 / 보습 지속력 약함</td></tr>
+          <tr><td><strong>오프온 킵 캄 바디로션</strong></td><td>글로우픽 5위, 모공각화증 개선 후기 화제</td><td>실사용 증거 마케팅 / 브랜드 인지도 약함</td></tr>
+          <tr><td><strong>닥터지 배리어.D 인텐스 크림</strong></td><td>화해 10위 NEW, 더마 브랜드 다양화</td><td>더마 장벽 포지셔닝 / 신규 진입</td></tr>
+          <tr><td><strong>니베아 SOS 리페어</strong></td><td>글로우픽 6위&#8593;, 긴급 보습 포지셔닝</td><td>SOS 네이밍 강점 / 성분 스토리 약함</td></tr>
+          <tr><td><strong>셀라피 에이리페어 바디로션</strong></td><td>글로우픽 8위 NEW, 신흥 더마 브랜드</td><td>더마 전문성 / 소비자 인지도 낮음</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Content Ideas -->
+  <div class="section">
+    <div class="section-title">&#128161; 콘텐츠 아이디어 제안</div>
+
+    <div class="idea-card">
+      <span class="category weather">&#9728;&#65039; 날씨 연계</span>
+      <div class="idea-title">"비 갠 뒤 맑은 날이 피부에 가장 가혹한 날 — 자외선 복귀와 냉방 건조의 이중 공격에서 보습막을 지키는 법"</div>
+      <div class="idea-desc">
+        <strong>포맷:</strong> 인스타 카드뉴스 (3~4장)<br>
+        <strong>앵글:</strong> 어제 비 이후 오늘 맑은 날씨에 "비 갠 뒤라 좋겠다"가 아니라 "피부에는 가혹한 날"이라는 역설. 비로 약해진 피부 장벽 + 자외선 복귀 + 냉방 건조의 3중 트리거 설명 → 실키 머쉬룸의 보습 리커버리 기능 소구<br>
+        <strong>핵심 메시지:</strong> "비 갠 뒤 맑은 날, 선크림만 챙기면 끝? 바디크림이 더 필요한 이유"<br>
+        <strong>타이밍:</strong> 오늘(5/8) 맑은 날씨에 맞춘 리얼타임 콘텐츠
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category community">&#128170; 커뮤니티</span>
+      <div class="idea-title">"팔 오돌토돌 고민, 바디크림만 바꿔도 달라집니다 — 5일 실사용 변화 기록"</div>
+      <div class="idea-desc">
+        <strong>포맷:</strong> 인스타 릴스 (30초) 또는 카드뉴스 (4장)<br>
+        <strong>앵글:</strong> 더쿠 오프온 모공각화증 후기 트렌드에 올라타, 하루나 실키 머쉬룸의 실사용 비포&애프터 챌린지. 흰목이버섯 다당체의 보습+각질 연화 기능을 모공각화증 맥락에서 교육<br>
+        <strong>핵심 메시지:</strong> "모공각화증에 바디크림이 답이 될 수 있습니다 — 실키 머쉬룸 5일 챌린지"
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category trend">&#127917; 트렌드</span>
+      <div class="idea-title">"더마의 성분 + 향수의 즐거움 — 양쪽을 다 포기하지 않는 바디크림이 존재합니다"</div>
+      <div class="idea-desc">
+        <strong>포맷:</strong> 인스타 카드뉴스 (5~6장)<br>
+        <strong>앵글:</strong> 디시 향수 갤러리의 "향 좋은 바디로션 추천"과 화해 더마 랭킹의 "무향 바디크림 강세"를 대비시키며, 하루나가 이 교차점에 위치한다는 메시지. 성분표+향 프로파일 동시 공개<br>
+        <strong>핵심 메시지:</strong> "성분 좋으면 향이 없고, 향 좋으면 성분이 별로 — 그 틈을 채우는 바디크림"
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category ingredient">&#129514; 성분</span>
+      <div class="idea-title">"PDRN이 넘쳐나는 시대 — 원료의 출처가 제품의 차이를 만듭니다"</div>
+      <div class="idea-desc">
+        <strong>포맷:</strong> 인스타 카드뉴스 (4~5장)<br>
+        <strong>앵글:</strong> PDRN 초포화 시장에서 "어차피 다 PDRN"이라는 피로감에 대응. 비건 PDRN vs 연어 PDRN의 출처 차이, 분자량, 효능 차이를 투명하게 설명하는 교육 콘텐츠<br>
+        <strong>핵심 메시지:</strong> "다 같은 PDRN이 아닙니다 — 하루나의 비건 PDRN은 여기서 왔습니다"
+      </div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category season">&#127812; 식자재</span>
+      <div class="idea-title">"쌀·녹두·새싹 다음 — 식자재 클렌저의 다음 장, 버섯 다당체의 보습 세정"</div>
+      <div class="idea-desc">
+        <strong>포맷:</strong> 인스타 카드뉴스 (4장)<br>
+        <strong>앵글:</strong> 화해 클렌징폼 TOP 10의 식자재 점유율 50%에서 "다음 식자재는?"에 답하는 콘텐츠. 곡물 클렌저(쌀=각질, 녹두=피지)가 못 채운 '보습 세정' 포지션을 버섯 다당체로 채우는 전략<br>
+        <strong>핵심 메시지:</strong> "곡물 다음은 버섯입니다 — 씻어도 당기지 않는 새로운 식자재 클렌저"
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Hashtags -->
+  <div class="section">
+    <div class="section-title">&#127991;&#65039; 해시태그/키워드 트렌드</div>
+    <div class="hashtag-section">
+      <h4>&#128293; 상승 중인 키워드</h4>
+      <span class="hashtag trending">#보습리커버리</span>
+      <span class="hashtag trending">#모공각화증바디크림</span>
+      <span class="hashtag trending">#바디레티놀</span>
+      <span class="hashtag trending">#살리실산클렌저</span>
+      <span class="hashtag trending">#엑소좀</span>
+    </div>
+    <div class="hashtag-section">
+      <h4>&#128204; 꾸준한 인기</h4>
+      <span class="hashtag haruna">#바디크림추천</span>
+      <span class="hashtag haruna">#끈적임없는바디로션</span>
+      <span class="hashtag haruna">#향좋은바디로션</span>
+      <span class="hashtag haruna">#비건바디크림</span>
+      <span class="hashtag haruna">#더마바디크림</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Hashtag Detail Tables -->
+  <div class="section">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>키워드</th><th>맥락</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>#보습리커버리</strong></td><td>비 갠 뒤 맑은 날 보습 회복 니즈, 신규 앵글</td></tr>
+          <tr><td><strong>#모공각화증바디크림</strong></td><td>오프온 후기 화제 → 기능성 바디크림 실사용 증거 트렌드</td></tr>
+          <tr><td><strong>#바디레티놀</strong></td><td>바디용 레티놀 카테고리 형성, 스키니피케이션 가속</td></tr>
+          <tr><td><strong>#살리실산클렌저</strong></td><td>화해 9위 신규 진입, 기능성 클렌저 트렌드</td></tr>
+          <tr><td><strong>#엑소좀</strong></td><td>화해 차세대 성분, 제품 출시 5.8배 급증</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap" style="margin-top:16px;">
+      <table>
+        <thead>
+          <tr><th>키워드</th><th>맥락</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>#바디크림추천</strong></td><td>5월 계절 전환기 검색량 안정적</td></tr>
+          <tr><td><strong>#끈적임없는바디로션</strong></td><td>매년 5~6월 피크, 올해도 동일 패턴</td></tr>
+          <tr><td><strong>#향좋은바디로션</strong></td><td>디시·더쿠·네이버 3대 플랫폼에서 연중 검색 상위</td></tr>
+          <tr><td><strong>#비건바디크림</strong></td><td>클린뷰티 트렌드와 맞물려 꾸준한 상승</td></tr>
+          <tr><td><strong>#더마바디크림</strong></td><td>화해·글로우픽 양대 플랫폼 상위권 독점</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Tomorrow Forecast -->
+  <div class="tomorrow-card">
+    <h2>&#128197; 내일 예보 기반 콘텐츠 준비 제안</h2>
+    <div class="tomorrow-item">
+      <strong>내일(5/9, 금) — 맑음, 21~24℃</strong>
+      <p>"이틀 연속 맑은 날 — 자외선 누적 노출에서 바디 보습+UV 방어의 듀얼 루틴" — 비 갠 뒤 2일째 맑은 날이라 자외선 누적 노출에 대한 경각심 소구. 하루나 실키 머쉬룸의 보습막이 UV 방어의 첫 번째 방어선 역할을 하는 앵글.</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong>이번 주말(5/10, 토) — 맑음 + 기온 26℃ 상승</strong>
+      <p>"주말 26℃ 초여름 — 크림에서 로션으로? 아니, '크림인데 가벼운' 텍스처가 정답" — 기온 26℃ 상승으로 크림→로션 텍스처 전환 욕구 자극. 알로에 젤(아로마티카·브링그린)의 여름 상승세에 대응, "크림의 보습+젤의 가벼움" 소구.</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong>일요일(5/11) — 흐리고 오후 뇌우 5~12mm</strong>
+      <p>"다시 비 온다 — 맑음→비→맑음 롤러코스터에서 바디크림을 바꾸지 않는 전략" — 맑음→비→맑음 반복에서 바디크림을 계절마다 바꾸는 피로감 자극. "올시즌 하나의 바디크림"으로 실키 머쉬룸의 올시즌 텍스처 소구.</p>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources">
+    <h3>Sources</h3>
+    <a href="https://www.weather.go.kr/w/forecast/overall/short-term.do" target="_blank">기상청 날씨누리 단기예보</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4411" target="_blank">화해 바디크림/젤 TOP 100</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 에센스/앰플/세럼 BEST</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징폼 BEST</a>
+    <a href="https://glowpick.co.kr/ranking/category/2/49" target="_blank">글로우픽 바디로션/크림 카테고리 랭킹</a>
+    <a href="https://www.cosinkorea.com/news/article.html?no=56727" target="_blank">유씨엘 2026 바디케어 트렌드 — 코스인코리아</a>
+    <a href="https://business.hwahae.co.kr/insight/trendreport-2026-summary/" target="_blank">화해 2026 뷰티 트렌드 총정리</a>
+    <a href="https://business.hwahae.co.kr/insight/trendreport-2026-the-new-edition/" target="_blank">화해 2026 트렌드 리포트 The New Edition</a>
+    <a href="https://www.cosmorning.com/news/article.html?no=51865" target="_blank">올리브영 2026 FULLMOON 트렌드 — 코스모닝</a>
+    <a href="https://corp.oliveyoung.com/ko/trend/insight-studio/8" target="_blank">올리브영 2026 트렌드 인사이트</a>
+    <a href="https://www.allurekorea.com/2025/12/27/2026%EB%85%84-%EB%B7%B0%ED%8B%B0-%ED%8A%B8%EB%A0%8C%EB%93%9C%EB%A5%BC-%EB%92%A4%ED%9D%94%EB%93%A4-%ED%82%A4%EC%9B%8C%EB%93%9C-6%EA%B0%80%EC%A7%80%EB%8A%94-%EB%B0%94%EB%A1%9C-%EC%9D%B4%EA%B2%83/" target="_blank">2026 뷰티 트렌드 키워드 6가지 — 얼루어코리아</a>
+    <a href="https://www.harpersbazaar.co.kr/article/1895118" target="_blank">2026 웰니스&뷰티 키워드 8 — 하퍼스바자</a>
+    <a href="https://business.hwahae.co.kr/insight/beauty-trend-2026-sustainable-ingredients/" target="_blank">2026 시장을 선도할 지속가능한 성분 5가지 — 화해비즈니스</a>
+    <a href="https://www.kca.go.kr/webzine/board/view?menuId=MENU00307&linkId=646&div=kca_2402" target="_blank">한국소비자원 바디로션 10종 비교</a>
+    <a href="https://www.ad-hoc-news.de/boerse/news/ueberblick/nivea-creme-is-quietly-going-viral-again-is-it-worth-it-in-2026/68619935" target="_blank">Nivea Creme Going Viral Again 2026</a>
+    <a href="https://theqoo.net/beauty/4099764448" target="_blank">더쿠 오프온 바디로션 후기</a>
+    <a href="https://theqoo.net/beauty/3259689473" target="_blank">더쿠 여름 바디로션 추천</a>
+    <a href="https://theqoo.net/beauty/3957680448?page=3" target="_blank">더쿠 향좋은 바디로션 추천</a>
+    <a href="https://theqoo.net/square/2105710303" target="_blank">더쿠 약산성 폼클렌징 안맞는 덬들 알칼리 폼클 추천</a>
+    <a href="https://theqoo.net/beauty/4094261850" target="_blank">더쿠 센텔리안24 PDRN 크림 후기</a>
+    <a href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1520023" target="_blank">디시인사이드 화이트머스크 바디로션</a>
+    <a href="https://m.dcinside.com/board/cosmetic/1516401" target="_blank">디시인사이드 건성피부 바디로션 추천</a>
+    <a href="https://www.elle.co.kr/article/45940" target="_blank">민감 피부 클렌징 기준 — 엘르</a>
+    <a href="https://lady.khan.co.kr/beauty/view/8628" target="_blank">쌀·녹두 곡물 뷰티 — 레이디경향</a>
+  </div>
+
+  <div class="footer">
+    <p>하루나 데일리 인사이트 리포트 | 2026.05.08</p>
+    <p>Powered by AI-driven beauty market analysis</p>
+  </div>
+
+</div>
+
+</body>
+</html>
