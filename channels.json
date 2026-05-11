@@ -1,6 +1,6 @@
 {
   "description": "everypace 매거진 채널 크롤링 대상 인스타그램 채널 목록",
-  "updated": "2026-04-15",
+  "updated": "2026-05-11",
   "channels": [
     {
       "username": "bq.mag",
@@ -178,6 +178,65 @@
     {
       "username": "hubermanlab",
       "category": "웰니스",
+      "active": true
+    },
+    {
+      "username": "jayshetty",
+      "category": "자기계발",
+      "active": true
+    },
+    {
+      "username": "thesleepdoctor",
+      "category": "수면건강",
+      "active": true
+    },
+    {
+      "username": "drwillcole",
+      "category": "기능의학",
+      "active": true
+    },
+    {
+      "username": "nutritionstripped",
+      "category": "영양",
+      "active": true
+    },
+    {
+      "username": "davidperlmutter",
+      "category": "뇌건강",
+      "active": true
+    },
+    {
+      "username": "shawnmodel",
+      "category": "수면건강",
+      "active": true
+    },
+    {
+      "username": "lewishowes",
+      "category": "자기계발",
+      "active": true
+    },
+    {
+      "username": "thereadystate",
+      "category": "모빌리티",
+      "active": true
+    },
+    {
+      "username": "lukestorey",
+      "category": "바이오해킹",
+      "active": true
+    },
+    {
+      "username": "thecelebritymag",
+      "category": "runpeople",
+      "note": "더 셀러브리티 — 셀럽 라이프 큐레이션 매거진 (7K)",
+      "added": "2026-05-11",
+      "active": true
+    },
+    {
+      "username": "ksociety_mag",
+      "category": "runpeople",
+      "note": "KSOCIETY — K-드라마·셀럽 라이프 매거진 (12K)",
+      "added": "2026-05-11",
       "active": true
     }
   ]
