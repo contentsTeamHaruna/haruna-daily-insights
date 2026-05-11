@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-11",
-  "totalQuotes": 258,
-  "totalSources": 195,
-  "totalLifeContext": 80,
+  "lastUpdated": "2026-05-12",
+  "totalQuotes": 278,
+  "totalSources": 211,
+  "totalLifeContext": 88,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -41,10 +41,14 @@
             {
               "title": "바디크림 바르고 옷 입으면 끈적 — 비 오는 날 습도까지 높으니 끈적임 혐오가 최고조",
               "report_date": "2026-05-11"
+            },
+            {
+              "title": "바디크림 바르고 옷 입으면 달라붙어 — 고습+출근 시나리오에서 끈적임 혐오가 극대화",
+              "report_date": "2026-05-12"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-11",
+          "last_seen": "2026-05-12",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -160,6 +164,21 @@
               "text": "바디로션 바르고 5분은 기다려야 옷 입을 수 있어, 비 오는 날엔 더 오래 걸리는 느낌",
               "report_date": "2026-05-11",
               "life_context": true
+            },
+            {
+              "text": "끈적임 없는 바디로션 찾는 게 힘들다, 아비노도 더마비도 끈적거려",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "바디로션 바르고 5분은 기다려야 옷 입을 수 있어, 출근 전엔 시간이 없어서 결국 안 바름",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "text": "과도한 유분감의 고보습 바디로션을 바르면 끈적임과 텁텁함 때문에 챙겨바르기가 쉽지 않다",
+              "report_date": "2026-05-12",
+              "life_context": false
             }
           ],
           "sources": [
@@ -281,6 +300,27 @@
               "description": "디시인사이드",
               "report_date": "2026-05-11",
               "life_context": false
+            },
+            {
+              "title": "끈적임 없는 바디로션 찾는게 힘들다",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1361518",
+              "description": "디시인사이드",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "바디로션 브랜드 10종 비교, 발림성 흡수력 차이 있어",
+              "url": "https://www.kca.go.kr/webzine/board/view?menuId=MENU00307&linkId=646&div=kca_2402",
+              "description": "한국소비자원",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "여름에도 바디로션 바르냐",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1463168",
+              "description": "디시인사이드",
+              "report_date": "2026-05-12",
+              "life_context": true
             }
           ]
         },
@@ -656,10 +696,18 @@
             {
               "title": "봄→여름 텍스처 전환 실패 — 비 오는 날은 크림이 무겁고, 맑은 날은 젤이 건조하고",
               "report_date": "2026-05-11"
+            },
+            {
+              "title": "비 오는 날 습도 높으면 바디크림 안 발라도 되지? — 고습환경이 만드는 '보습 스킵' 함정이 지속",
+              "report_date": "2026-05-12"
+            },
+            {
+              "title": "봄→여름 텍스처 전환기 혼란 — 비 오는 날은 크림이 무겁고, 내일 25℃엔 젤이 필요한데 매일 바꿔야 하나",
+              "report_date": "2026-05-12"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-11",
+          "last_seen": "2026-05-12",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -960,6 +1008,21 @@
               "text": "바디로션이랑 바디크림 차이가 뭐야, 날씨마다 바꿔야 하나",
               "report_date": "2026-05-11",
               "life_context": false
+            },
+            {
+              "text": "안바르면 건조하고 겨울에 쓰던 거 바르기엔 너무 무거워",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "text": "피부가 건조한 편이지만 바디로션을 바르면 답답해서 잘 바르지 않는 편",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "에스트라 바디로션이 봄여름가을에 써주기 좋다는데 진짜 올시즌 되는 건지 궁금",
+              "report_date": "2026-05-12",
+              "life_context": true
             }
           ],
           "sources": [
@@ -1234,6 +1297,27 @@
               "url": "https://m.dcinside.com/board/cosmetic/1516401",
               "description": "디시인사이드",
               "report_date": "2026-05-11",
+              "life_context": false
+            },
+            {
+              "title": "덬들은 바디로션 여름에도 발라?",
+              "url": "https://theqoo.net/beauty/412615989",
+              "description": "더쿠",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "title": "애들아 여름 바디로션 뭐써??",
+              "url": "https://m.dcinside.com/board/cosmetic/1375507",
+              "description": "디시인사이드",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "title": "바디로션/크림 추천 제품 TOP20",
+              "url": "https://www.glowpick.com/categories/93?ids=279",
+              "description": "글로우픽",
+              "report_date": "2026-05-12",
               "life_context": false
             }
           ]
@@ -1705,10 +1789,14 @@
             {
               "title": "비타민C 세럼 자극 공포 — \"따가워야 효과 있다\"는 속설이 민감성 피부의 세럼 시장 진입을 차단",
               "report_date": "2026-05-08"
+            },
+            {
+              "title": "PDRN 세럼 자극·부작용 우려 — 민감성 피부에 안전한가",
+              "report_date": "2026-05-12"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-08",
+          "last_seen": "2026-05-12",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
@@ -1789,6 +1877,21 @@
               "text": "비타민C 15% 쓰고 싶은데 얼굴 빨개질까봐 망설여짐",
               "report_date": "2026-05-08",
               "life_context": false
+            },
+            {
+              "text": "민감성 피부인데 PDRN 써도 되나, 트러블 올까 봐 걱정",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "리들샷 위에 PDRN 바르니까 따갑고 빨개졌어, 순서가 잘못된 건가",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "PDRN이 좋다길래 샀는데 AHA 토너 위에 바르면 안 된다더라, 진작 알았으면",
+              "report_date": "2026-05-12",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1867,6 +1970,27 @@
               "url": "https://theqoo.net/beauty/1699917097",
               "description": "더쿠",
               "report_date": "2026-05-08",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 화장품 이것과 함께 쓰면 부작용 생길 수도",
+              "url": "https://kormedi.com/2717823/",
+              "description": "코메디닷컴",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "K-뷰티가 띄운 PDRN 성분, 효과 있을까?",
+              "url": "https://lady.khan.co.kr/beauty/article/202603261420001/",
+              "description": "레이디경향",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "VT 리들샷 & PDRN 에센스 후기",
+              "url": "https://theqoo.net/beauty/3682864284",
+              "description": "더쿠",
+              "report_date": "2026-05-12",
               "life_context": false
             }
           ]
@@ -2039,10 +2163,18 @@
             {
               "title": "성분 트렌드 가속 — PDRN·펩타이드·뉴로마이드·엑소좀, 선택지가 너무 많아 포기하는 소비자",
               "report_date": "2026-05-11"
+            },
+            {
+              "title": "PDRN 세럼 가격 천차만별 — 다이소 3천원 vs 올리브영 2만원 vs 백화점 5만원, 뭐가 다른 건지 모르겠다",
+              "report_date": "2026-05-12"
+            },
+            {
+              "title": "PDRN·엑소좀·펩타이드·뉴로마이드 — 핫한 성분이 너무 많아서 뭘 골라야 할지 모르겠다",
+              "report_date": "2026-05-12"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-11",
+          "last_seen": "2026-05-12",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -2182,6 +2314,16 @@
             {
               "text": "PDRN 다음은 펩타이드래, 그다음은 뉴로마이드래 — 또 바꿔야 하나",
               "report_date": "2026-05-11",
+              "life_context": false
+            },
+            {
+              "text": "PDRN이 좋다고 해서 샀는데 어떤 건 끈적이고 어떤 건 물처럼 흘러",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "비싼 PDRN이랑 싼 PDRN이랑 진짜 차이가 있는 건지 아무도 설명을 안 해줘",
+              "report_date": "2026-05-12",
               "life_context": false
             }
           ],
@@ -2353,6 +2495,20 @@
               "description": "화해 글로벌 블로그",
               "report_date": "2026-05-11",
               "life_context": false
+            },
+            {
+              "title": "더마팩토리 PDRN 앰플 어때?",
+              "url": "https://theqoo.net/beauty/3773629867",
+              "description": "더쿠",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 화장품 효과 총정리 2025",
+              "url": "https://unpa.me/community/essence/116021097",
+              "description": "언니의파우치",
+              "report_date": "2026-05-12",
+              "life_context": false
             }
           ]
         }
@@ -2434,10 +2590,22 @@
             {
               "title": "세안 후 당김·건조 — 비 오는 날 높은 습도에서도 세안 후 당기는 건 여전",
               "report_date": "2026-05-11"
+            },
+            {
+              "title": "약산성이 무조건 좋다고 했는데 — 약알칼리로 바꿨더니 오히려 피부가 좋아졌다",
+              "report_date": "2026-05-12"
+            },
+            {
+              "title": "폼클렌징 세정력이 자외선 차단제를 못 지운다 — 이중세안 귀찮지만 어쩔 수 없다",
+              "report_date": "2026-05-12"
+            },
+            {
+              "title": "세안 후 당김 vs 미끈거림 — 어떤 클렌징폼을 써도 만족스러운 '세안 후 느낌'을 못 찾겠다",
+              "report_date": "2026-05-12"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-11",
+          "last_seen": "2026-05-12",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -2627,6 +2795,51 @@
             {
               "text": "비 오는 날인데도 세안하면 얼굴이 당김, 습도가 높아도 소용없어",
               "report_date": "2026-05-11",
+              "life_context": false
+            },
+            {
+              "text": "약산성 써봤는데 여드름 안 나아져, 약알칼리로 바꿨더니 싹 들어갔다",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "약산성이라 클렌징 사용 후 미끈거리는 잔여감이 남는다",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "지성인데 약산성 쓰면 세정이 안 되는 느낌, 약알칼리가 개운해",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "text": "폼클렌징만으로 선크림이 안 지워지는 느낌, 결국 이중세안 해야 하나",
+              "report_date": "2026-05-12",
+              "life_context": true
+            },
+            {
+              "text": "세정력 좋은 건 땅기고, 순한 건 세정이 안 되고 — 딱 중간이 없어",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "폼클렌징 30개 써봤는데 세정력이랑 보습 둘 다 잡는 건 못 찾았음",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "세수하면 바로 얼굴이 땡기고 건조해지는 게 불만",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "약산성은 미끈거리고, 약알칼리는 땡기고 — 딱 중간은 없나",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "text": "촉촉하고 순한데 세정력도 좋은 폼클렌징이 있긴 한 건지",
+              "report_date": "2026-05-12",
               "life_context": false
             }
           ],
@@ -2818,6 +3031,41 @@
               "url": "https://unpa.me/community/cleansingfoam/124612333",
               "description": "언니의파우치",
               "report_date": "2026-05-11",
+              "life_context": false
+            },
+            {
+              "title": "약산성 클렌저로 헛짓하다가 약알칼리 쓰니까 여드름 싹 들어가네",
+              "url": "https://theqoo.net/index.php?document_srl=2589737459&mid=beauty",
+              "description": "더쿠",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "지성 피부에게 빛 그 자체라는 약알칼리성 클렌저",
+              "url": "https://theqoo.net/square/3194097117",
+              "description": "더쿠",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "올영 폼클렌징 추천 좀 해줄 수 있어?",
+              "url": "https://m.dcinside.com/board/cosmetic/1499643",
+              "description": "디시인사이드",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "인생 폼클렌징 하나씩 적어주고 가셈",
+              "url": "https://m.dcinside.com/board/cosmetic/1400806",
+              "description": "디시인사이드",
+              "report_date": "2026-05-12",
+              "life_context": false
+            },
+            {
+              "title": "TOP 7 피부 타입별 클렌징폼 추천 2026 순위",
+              "url": "https://reviewpro.co.kr/best-cleansing/",
+              "description": "리뷰프로",
+              "report_date": "2026-05-12",
               "life_context": false
             }
           ]
