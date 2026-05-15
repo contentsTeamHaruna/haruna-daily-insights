@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-15",
-  "totalQuotes": 348,
-  "totalSources": 264,
+  "lastUpdated": "2026-05-16",
+  "totalQuotes": 358,
+  "totalSources": 274,
   "totalLifeContext": 109,
   "categories": {
     "bodycream": {
@@ -57,10 +57,14 @@
             {
               "title": "28℃인데 바디로션 바르면 끈적이고, 주말엔 미세먼지 나쁨이래 — 끈적이지 않으면서 피부 장벽까지 지켜주는 바디크림이 없다",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "30℃인데 바디로션 바르면 땀이랑 섞여서 끈적이고, 안 바르면 에어컨 때문에 건조해 — 30도 시대의 바디크림이 없다",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -231,6 +235,16 @@
               "text": "안바르면 건조하고 겨울에쓰던거 바르기엔 너무 무거워, 여름에도 바디로션 바르냐",
               "report_date": "2026-05-15",
               "life_context": true
+            },
+            {
+              "text": "끈적임 없고, 유분기 없는 로션 추천 부탁드릴 수 있을까요? 한번 바르면 얼굴과 손에 기름기가 빠지지를 않는",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "에스트라 로션 개묵직하네;; 독도로션은 유분기있어도 손에 묻어나는게없었는데 이건 개묻어나네 지성이 못쓰겠는데",
+              "report_date": "2026-05-16",
+              "life_context": false
             }
           ],
           "sources": [
@@ -394,6 +408,13 @@
               "description": "디시인사이드",
               "report_date": "2026-05-14",
               "life_context": true
+            },
+            {
+              "title": "에스트라 로션 개묵직하네;;",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1522914",
+              "description": "디시인사이드",
+              "report_date": "2026-05-16",
+              "life_context": false
             }
           ]
         },
@@ -830,10 +851,18 @@
             {
               "title": "바디케어도 스키니피케이션이라는데 — 레티놀 바디로션, 나이아신아마이드 바디로션이 있다면서? 뭘 골라야 하는지 모르겠다",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "바디케어도 스키니피케이션이라는데 — 레티놀 바디, 나이아신아마이드 바디가 나왔다는데 뭘 골라야 하는지 모르겠다",
+              "report_date": "2026-05-16"
+            },
+            {
+              "title": "부가기능 적고 그냥 순한 로션이 필요해 — 기능성 성분이 오히려 트러블을 만들었다",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -1209,6 +1238,26 @@
               "text": "더마팩토리 나이아신 바디로션 써본사람, 이거 괜찮음?",
               "report_date": "2026-05-15",
               "life_context": false
+            },
+            {
+              "text": "바하 들어간 바디로션 도대체 어디서 사야해..? BHA 2% 이상 아무리 찾아도 없어",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "부가기능(속수분, 장벽, 시카 등등)이 적어도 되니 그냥 순한 로션 추천",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "올리브영 입점 브랜드 앰플, 로션 사용 후 얼굴이 까끌해지고 홍조 증가, 수분 앰플로 목 피부 손상으로 피부과 방문",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "스테로이드 로션 일주일치 처방받고 나서야 만성 홍조도 개선되었다",
+              "report_date": "2026-05-16",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1574,6 +1623,34 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1523244",
               "description": "디시인사이드",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "title": "바하 들어간 바디로션 도대체 어디서 사야해",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1482422",
+              "description": "디시인사이드 (조회 1,658)",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "부가기능 적고 그냥 순한 로션 있을까요?",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1525237",
+              "description": "디시인사이드",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "화해 바디크림/젤 TOP 100",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4411",
+              "description": "화해",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "글로우픽 바디로션/크림 TOP 20",
+              "url": "https://glowpick.co.kr/ranking/category/10/49",
+              "description": "글로우픽",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ]
@@ -2365,10 +2442,14 @@
             {
               "title": "지성피부 봄~여름 세럼 — 기름짐 없이 속보습만 채우는 세럼이 존재하는가?",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "30℃ 여름 지성피부 — 세럼 하나만 바르고 싶은데 뭘 골라야 하나",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
@@ -2627,10 +2708,18 @@
             {
               "title": "엑소좀이 PDRN 다음이라는데 — 성분 트렌드가 너무 빨리 바뀌어서 뭘 써야 할지 피로감",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "PDRN 회의론이 주류 언론으로 완전 진입 — '후기는 많은데 내 피부엔?' 기사가 코메디닷컴·레이디경향까지 확산",
+              "report_date": "2026-05-16"
+            },
+            {
+              "title": "엑소좀이 K-beauty 3.0의 핵심 성분으로 급부상 — PDRN 다음 세대가 벌써 도착했다",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -2820,6 +2909,11 @@
             {
               "text": "성분 하나 유행하면 온 세상이 그것만 만들고, 1년 지나면 또 다른 게 나와",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "text": "다이소 PDRN 라인 꼭 써봐 미쳤음 — 5천원짜리가 이 정도면 비싼 PDRN은 뭐가 다른 거야",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ],
@@ -3054,6 +3148,27 @@
               "description": "아이보스",
               "report_date": "2026-05-15",
               "life_context": true
+            },
+            {
+              "title": "코스메틱저널코리아 5월호 — 스피큘과 엑소좀의 융합·진화",
+              "url": "https://www.cosinkorea.com/news/article.html?no=57424",
+              "description": "코신코리아",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "Exosome Skincare: K-Beauty 2026's Biggest Trend",
+              "url": "https://knokglobal.com/blog/exosome-skincare-k-beauty",
+              "description": "KNOK Global",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "2026 K-Beauty In-Depth Report — Spicules and Exosomes",
+              "url": "https://magazinekave.com/en-us/articles/130",
+              "description": "Magazine KAVE",
+              "report_date": "2026-05-16",
+              "life_context": false
             }
           ]
         }
@@ -3163,10 +3278,14 @@
             {
               "title": "약산성 vs 약알칼리 이중 사용 전략이 정답이라는데 — 그걸 매일 아침저녁 나눠 쓰는 게 현실적인가",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "약산성 vs 약알칼리 이중 사용 전략 — 알겠는데 매일 두 개 쓰는 게 현실적이냐",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -3755,10 +3874,14 @@
             {
               "title": "화해 클렌징폼 1위가 바뀌었다 — 토리든 히알루론산이 비플레인 녹두를 제쳤는데, 클렌징에도 히알루론산이 필요한 건가?",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "화해 1위가 매일 바뀐다 — 비플레인 녹두 vs 토리든 히알루론산, 소비자는 뭘 사야 하는지 더 혼란",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -3843,6 +3966,16 @@
             {
               "text": "클렌징도 이제 보습이 되어야 하는 시대인가, 히알루론산 폼클이 1위라니",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "text": "비플레인 녹두? 토리든 히알루론산? 썬크림만 바르는데 뭘 골라야 해?",
+              "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "리뷰 많은 게 좋은 거야 평점 높은 게 좋은 거야, 기준을 모르겠어",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ],
@@ -3943,6 +4076,13 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1498002",
               "description": "디시인사이드",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "title": "썬크림만 바르는데 토리든 히알루론산 vs 비플레인 녹두 클폼",
+              "url": "https://theqoo.net/beauty/2819625874",
+              "description": "더쿠",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ]
@@ -4122,10 +4262,14 @@
             {
               "title": "팩클렌저 1,700% 성장이 멈추지 않는다 — 더페이스샵 미감수 밀크앤젤리가 글로우픽 1위, 폼클렌저의 정체성이 흔들린다",
               "report_date": "2026-05-15"
+            },
+            {
+              "title": "더페이스샵 미감수가 글로우픽 1위 유지 + 팩클렌저 1,700% 성장 — 폼클렌저의 존재 이유를 증명해야 하는 시대",
+              "report_date": "2026-05-16"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-15",
+          "last_seen": "2026-05-16",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -4235,6 +4379,11 @@
             {
               "text": "더페이스샵 미감수 클렌징 오일이랑 폼 같이 쓰니까 진짜 좋더라",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "text": "1달간 클렌징부터 기초까지 다 바꾸고 괜찮은 피부로 만든 후기",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ],
@@ -4363,6 +4512,13 @@
               "url": "https://corp.oliveyoung.com/ko/news/88",
               "description": "올리브영",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "title": "1달간 클렌징부터 기초까지 다 바꾸고 괜찮은 피부로 만든 후기",
+              "url": "https://theqoo.net/beauty/3548432122",
+              "description": "더쿠",
+              "report_date": "2026-05-16",
               "life_context": false
             }
           ]
