@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-16",
-  "totalQuotes": 358,
-  "totalSources": 274,
-  "totalLifeContext": 109,
+  "lastUpdated": "2026-05-17",
+  "totalQuotes": 376,
+  "totalSources": 287,
+  "totalLifeContext": 115,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -540,10 +540,14 @@
             {
               "title": "모공각화증(닭살) 고민 — 바디로션만으로는 해결 안 됨",
               "report_date": "2026-04-28"
+            },
+            {
+              "title": "모공각화증 + 반팔 시즌 — 바디스크럽+바디로션 루틴이 번거로운데, 하나로 끝내는 제품이 없다",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
@@ -564,6 +568,21 @@
               "text": "오돌토돌한, 손톱으로 긁으면 뭐가 나오는 그 느낌이 많이 줄어들었어",
               "report_date": "2026-04-28",
               "life_context": true
+            },
+            {
+              "text": "모공각화증 바디로션 골라주라 — 일리윤 회색 울트라? 시드물 AHA 10%?",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "오프온 바디로션 5일 사용 후 오돌토돌한 느낌이 많이 줄어들었다",
+              "report_date": "2026-05-17",
+              "life_context": true
+            },
+            {
+              "text": "바디스크럽 주기가 어떻게 돼? 매일 해도 돼? 번거롭다",
+              "report_date": "2026-05-17",
+              "life_context": true
             }
           ],
           "sources": [
@@ -579,6 +598,27 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1501274",
               "description": "우레아 크림+바디로션 조합으로 개선 성공 사례",
               "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "title": "모공각화증 바디로션 골라주라",
+              "url": "https://theqoo.net/beauty/4084777312",
+              "description": "더쿠",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "오프온 바디로션 후기",
+              "url": "https://theqoo.net/beauty/4099764448",
+              "description": "더쿠",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "모공각화증 아직도 못해결한 덬들 꼭 읽어바",
+              "url": "https://theqoo.net/beauty/3218134982",
+              "description": "더쿠",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ]
@@ -859,10 +899,18 @@
             {
               "title": "부가기능 적고 그냥 순한 로션이 필요해 — 기능성 성분이 오히려 트러블을 만들었다",
               "report_date": "2026-05-16"
+            },
+            {
+              "title": "30℃ 연속인데 일요일 나들이 — 바르면 땀에 녹고, 안 바르면 실내 에어컨에 갈라진다. '외출 전용 초경량 바디크림'이 왜 없냐",
+              "report_date": "2026-05-17"
+            },
+            {
+              "title": "갈락토미세스 바디로션이 화해 4위? — 스키니피케이션이 '성분명'에서 '실제 제품'으로 넘어오기 시작했다",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-16",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -1258,6 +1306,26 @@
               "text": "스테로이드 로션 일주일치 처방받고 나서야 만성 홍조도 개선되었다",
               "report_date": "2026-05-16",
               "life_context": false
+            },
+            {
+              "text": "여름에도 바디로션 바르냐 — 바르면 끈적이고 안 바르면 에어컨에 건조해",
+              "report_date": "2026-05-17",
+              "life_context": true
+            },
+            {
+              "text": "끈적임 없고, 유분기 없는 로션 추천 부탁드릴 수 있을까요? 한번 바르면 손에 기름기가 빠지지를 않는",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "아토팜 수딩 젤 로션이 여름에 좋다는데, 크림보다 젤이 정답인 거 아님?",
+              "report_date": "2026-05-17",
+              "life_context": true
+            },
+            {
+              "text": "갈락토미세스가 바디로션에? SK-II 느낌을 바디에도 쓸 수 있는 거야?",
+              "report_date": "2026-05-17",
+              "life_context": true
             }
           ],
           "sources": [
@@ -1651,6 +1719,20 @@
               "url": "https://glowpick.co.kr/ranking/category/10/49",
               "description": "글로우픽",
               "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "끈적임 없고, 유분기 없는 로션 추천 부탁",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1495969",
+              "description": "디시인사이드 (조회 4,059)",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "화해 바디로션 TOP 100",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4410",
+              "description": "화해",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ]
@@ -2446,10 +2528,14 @@
             {
               "title": "30℃ 여름 지성피부 — 세럼 하나만 바르고 싶은데 뭘 골라야 하나",
               "report_date": "2026-05-16"
+            },
+            {
+              "title": "30℃ 일요일에 세럼을 몇 개나 바르라고? — 토너+세럼 하나면 끝인 미니멀 루틴이 지성의 여름 생존법",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-16",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
@@ -2479,6 +2565,11 @@
             {
               "text": "모낭염 지성인데 토너에 얹을거 딱 하나만 추천해주삼, 기름 올라와서 장벽 무너졌는지 세안 후 얼굴 붉어짐",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "text": "30℃에 세럼 여러 개 바르면 기름 떡지 — 하나만 바르자",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ],
@@ -2523,6 +2614,20 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1521713",
               "description": "디시인사이드",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "title": "지성여드름 클렌징, 세럼, 크림 종결",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1509915",
+              "description": "디시인사이드 (조회 3,145)",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "화해 에센스/세럼 TOP 100",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174",
+              "description": "화해",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ]
@@ -2716,10 +2821,18 @@
             {
               "title": "엑소좀이 K-beauty 3.0의 핵심 성분으로 급부상 — PDRN 다음 세대가 벌써 도착했다",
               "report_date": "2026-05-16"
+            },
+            {
+              "title": "PDRN 회의론 2주차 — 고가 PDRN은 의심, 저가 PDRN은 탐색. '가성비 PDRN 비교'가 더쿠의 가장 뜨거운 토론",
+              "report_date": "2026-05-17"
+            },
+            {
+              "title": "엑소좀+PDRN 융합 세럼이 글로벌 표준으로 — 메디큐브 핑크 펩타이드 엑소좀 세럼이 아마존 주목, 한국은 아직 '성분 분리' 단계",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-16",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -2914,6 +3027,26 @@
             {
               "text": "다이소 PDRN 라인 꼭 써봐 미쳤음 — 5천원짜리가 이 정도면 비싼 PDRN은 뭐가 다른 거야",
               "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "text": "더마팩토리 PDRN 써본 덬 있어? 이거 괜찮음?",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 하나 사보고싶은데 더마팩토리 아님 바이옴액티브 — 어떤 거 살까",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "다이소 PDRN 5천원짜리가 이 정도면, 비싼 PDRN은 뭐가 다른 거야",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "메디큐브 PDRN 엑소좀 세럼이 아마존에서 난리라는데, 한국에서 살 수 있어?",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ],
@@ -3169,6 +3302,34 @@
               "description": "Magazine KAVE",
               "report_date": "2026-05-16",
               "life_context": false
+            },
+            {
+              "title": "더마팩토리 PDRN 써본 덬 있어?",
+              "url": "https://theqoo.net/beauty/3620947871",
+              "description": "더쿠",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 하나 사보고싶은데 더마팩토리 아님 바이옴액티브",
+              "url": "https://theqoo.net/beauty/3608253347",
+              "description": "더쿠",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "What Are Exosomes? The Viral Beauty Trend",
+              "url": "https://www.nbcnews.com/select/shopping/exosomes-skin-care-rcna206299",
+              "description": "NBC News",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "K-Beauty Trends 2026: Exosome, PDRN, and Bakuchiol",
+              "url": "https://seoul4pm.shop/articles/290/K-Beauty-Trends-2026--Why-Exosome--PDRN--and-Bakuchiol-Lead-the-Market",
+              "description": "Seoul4PM",
+              "report_date": "2026-05-17",
+              "life_context": false
             }
           ]
         }
@@ -3282,10 +3443,14 @@
             {
               "title": "약산성 vs 약알칼리 이중 사용 전략 — 알겠는데 매일 두 개 쓰는 게 현실적이냐",
               "report_date": "2026-05-16"
+            },
+            {
+              "title": "약산성 약알칼리 종결글이 조회 4.4만인데 — 결론을 알아도 실천이 안 된다. 2종 루틴이 현실적 한계",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-16",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -3580,6 +3745,11 @@
             {
               "text": "향붕이들 폼클렌징 약산성 vs 약알칼리성 뭐씀?",
               "report_date": "2026-05-15",
+              "life_context": false
+            },
+            {
+              "text": "일요일 나들이 후 지쳐서 돌아왔는데 2종 클렌저 루틴? 하나로 끝내고 싶어",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ],
@@ -4266,10 +4436,18 @@
             {
               "title": "더페이스샵 미감수가 글로우픽 1위 유지 + 팩클렌저 1,700% 성장 — 폼클렌저의 존재 이유를 증명해야 하는 시대",
               "report_date": "2026-05-16"
+            },
+            {
+              "title": "YBK(와이비케이) 릴리프 하이드레이션이 글로우픽 3위+화해 7위 — 신진 브랜드가 양대 플랫폼 동시 상위권, 비플레인·토리든 양강 구도에 균열",
+              "report_date": "2026-05-17"
+            },
+            {
+              "title": "30℃ 자외선+미세먼지 후 세정 — 폼클렌징만으로 선크림이 지워지는 건지 의문. 더블 클렌징 vs 싱글 클렌징 논쟁 재점화",
+              "report_date": "2026-05-17"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-16",
+          "last_seen": "2026-05-17",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -4385,6 +4563,31 @@
               "text": "1달간 클렌징부터 기초까지 다 바꾸고 괜찮은 피부로 만든 후기",
               "report_date": "2026-05-16",
               "life_context": false
+            },
+            {
+              "text": "비플레인은 세정력, 토리든은 보습 — 둘 다 충족하는 건 없나?",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "YBK 릴리프 하이드레이션 써본 사람? 보습형인데 세정력도 괜찮대",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "글로우픽이랑 화해 둘 다 상위권이면 진짜 좋은 거 아님?",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "선크림 바르고 나들이 다녀왔는데 폼클렌징만으로 지워지는 거야?",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 세정력 좀 있는 폼이 필요한데, 피부 당기면 안 되고",
+              "report_date": "2026-05-17",
+              "life_context": true
             }
           ],
           "sources": [
@@ -4519,6 +4722,20 @@
               "url": "https://theqoo.net/beauty/3548432122",
               "description": "더쿠",
               "report_date": "2026-05-16",
+              "life_context": false
+            },
+            {
+              "title": "화해 클렌징폼 TOP 100",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200",
+              "description": "화해",
+              "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "대체 맞는 클렌징 폼 어떻게 찾아야 하냐",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1498002",
+              "description": "디시인사이드",
+              "report_date": "2026-05-17",
               "life_context": false
             }
           ]
