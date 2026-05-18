@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-18",
-  "totalQuotes": 403,
-  "totalSources": 308,
-  "totalLifeContext": 124,
+  "lastUpdated": "2026-05-19",
+  "totalQuotes": 410,
+  "totalSources": 321,
+  "totalLifeContext": 126,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -548,10 +548,14 @@
             {
               "title": "팔뚝 닭살(모공각화증) 여름이라 더 신경 쓰여",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "팔뚝 닭살(모공각화증) 여름이라 더 신경 쓰여",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
@@ -660,6 +664,20 @@
               "description": "올리브영",
               "report_date": "2026-05-18",
               "life_context": false
+            },
+            {
+              "title": "\"닭살 때문에 반바지 못 입어요\"...모공각화증이란?",
+              "url": "https://news.hidoc.co.kr/news/articleView.html?idxno=27601",
+              "description": "하이닥",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "반팔 입을 때 거슬리는 닭살·뱀살, 여름 오기 전에 없애려면?",
+              "url": "https://v.daum.net/v/8B3fWodzQU?f=p",
+              "description": "다음",
+              "report_date": "2026-05-19",
+              "life_context": true
             }
           ]
         },
@@ -955,10 +973,18 @@
             {
               "title": "바디케어도 '투 스텝'으로 역할 분담해야 한다는데, 뭘 써야 하지?",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "팔꿈치·겨드랑이 착색이 너무 신경 쓰여, 바디 미백이 되는 로션 없나",
+              "report_date": "2026-05-19"
+            },
+            {
+              "title": "초여름에 바디크림 바르면 옷에 다 묻어, 흡수가 안 돼",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -1404,6 +1430,21 @@
               "text": "바디세럼이라는 것도 나오던데 로션이랑 뭐가 다른 건지 개념이 안 잡혀",
               "report_date": "2026-05-18",
               "life_context": false
+            },
+            {
+              "text": "팔꿈치가 까맣게 착색돼서 반팔 입기 부끄러운데, 바디 미백 로션이 효과 있을까?",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "text": "겨드랑이 착색 때문에 민소매 절대 못 입어, 톤업 크림 바르면 옷에 묻지 않나?",
+              "report_date": "2026-05-19",
+              "life_context": true
+            },
+            {
+              "text": "착색 미백이라는데 진짜 미백이 되는 건지, 그냥 톤업 화장처럼 씻으면 없어지는 건지 헷갈려",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1840,6 +1881,34 @@
               "description": "더쿠",
               "report_date": "2026-05-18",
               "life_context": true
+            },
+            {
+              "title": "올리브영 전체 랭킹 1위, 바디 착색 미백 로션 비욘드",
+              "url": "https://www.instagram.com/p/DKeu4_OpCSh/",
+              "description": "인스타그램",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "바디언스 퍼펙트커버 착색 미백 카밍 톤업 크림",
+              "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000207186",
+              "description": "올리브영",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "아윌미백, 올리브영 세일 전 제품 완판...바디 미백 시장 흔들다",
+              "url": "https://www.joongangenews.com/news/articleView.html?idxno=425699",
+              "description": "중앙이코노미뉴스",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "바디로션은 항상 끈적이고 답답해서 잘 못 바르던 저",
+              "url": "https://www.instagram.com/p/DNh-F-Nygv9/",
+              "description": "인스타그램",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ]
         }
@@ -1881,10 +1950,14 @@
             {
               "title": "세럼 바르면 끈적이고 다음 단계 밀림 현상 심해",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "세럼 바르면 끈적이고 다음 단계 밀림 현상 심해",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
@@ -2089,6 +2162,27 @@
               "description": "더쿠",
               "report_date": "2026-05-18",
               "life_context": false
+            },
+            {
+              "title": "아침에 바를만한 세럼 추천 좀",
+              "url": "https://m.dcinside.com/board/cosmetic/1511396",
+              "description": "디시인사이드",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "세럼 추천좀 해줘",
+              "url": "https://m.dcinside.com/board/cosmetic/1486602",
+              "description": "디시인사이드",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 앰플 추천 TOP3 효능부터 브랜드별 솔직 비교",
+              "url": "https://unpa.me/community/essence/129908595",
+              "description": "언니의파우치",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ]
         },
@@ -2129,10 +2223,14 @@
             {
               "title": "비싼 세럼 효과 체감 어려워, 가성비 PDRN 찾는 중",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "비싼 세럼 효과 체감 어려워, 가성비 PDRN 찾는 중",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -3019,10 +3117,14 @@
             {
               "title": "PDRN 세럼 후기는 넘쳐나는데 내 피부에 맞을지 불안해",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "PDRN이랑 레티놀 같이 썼다가 피부 빨개졌어 — 성분 궁합 주의보",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -3542,6 +3644,13 @@
               "description": "코메디닷컴",
               "report_date": "2026-05-18",
               "life_context": false
+            },
+            {
+              "title": "\"후기는 많은데 내 피부엔?\"…요즘 난리 난 'PDRN 화장품'",
+              "url": "https://kormedi.com/2815102/",
+              "description": "코메디닷컴",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ]
         }
@@ -3671,10 +3780,18 @@
             {
               "title": "여름에 선크림 쓰는데 1차 클렌징으로 폼이 부족해, 이중세안 귀찮아",
               "report_date": "2026-05-18"
+            },
+            {
+              "title": "세안 후 당김이 심해서 바로 스킨케어 안 하면 얼굴이 갈라질 것 같아",
+              "report_date": "2026-05-19"
+            },
+            {
+              "title": "약산성이라고 다 순한 건 아니더라, pH만 낮추고 자극 성분 그대로",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-18",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -4020,6 +4137,11 @@
               "text": "선크림까지 한 번에 깔끔히 지워지면서 순한 클렌저 있으면 좋겠다",
               "report_date": "2026-05-18",
               "life_context": false
+            },
+            {
+              "text": "비플레인 녹두는 마무리감 좋은데 다른 약산성 제품은 오히려 더 당겨",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ],
           "sources": [
@@ -4329,6 +4451,13 @@
               "url": "https://theqoo.net/beauty/3899848591",
               "description": "더쿠",
               "report_date": "2026-05-18",
+              "life_context": false
+            },
+            {
+              "title": "올리브영 약산성 클렌징폼 추천 BEST 4 \"세안만 바꿨는데 트러블 줄었다\"",
+              "url": "https://www.scanvas.co.kr/articles/959159174121/",
+              "description": "스캔버스",
+              "report_date": "2026-05-19",
               "life_context": false
             }
           ]
@@ -4762,10 +4891,14 @@
             {
               "title": "30℃ 자외선+미세먼지 후 세정 — 폼클렌징만으로 선크림이 지워지는 건지 의문. 더블 클렌징 vs 싱글 클렌징 논쟁 재점화",
               "report_date": "2026-05-17"
+            },
+            {
+              "title": "팩클렌저가 뜨는데 폼클렌징이랑 뭐가 다른 건지, 뭘 써야 하지?",
+              "report_date": "2026-05-19"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-17",
+          "last_seen": "2026-05-19",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -4906,6 +5039,21 @@
               "text": "여름엔 세정력 좀 있는 폼이 필요한데, 피부 당기면 안 되고",
               "report_date": "2026-05-17",
               "life_context": true
+            },
+            {
+              "text": "팩클렌저가 세정+스킨케어 동시에 된다는데 폼클렌징이랑 뭐가 다른 거야?",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "text": "팩클렌저 써봤는데 세정력이 폼보다 약한 것 같아, 선크림은 지워지는 건가?",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "text": "클렌징 종류가 너무 많아져서 폼·젤·오일·밤·팩 중에 뭘 고를지 모르겠음",
+              "report_date": "2026-05-19",
+              "life_context": false
             }
           ],
           "sources": [
@@ -5054,6 +5202,20 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1498002",
               "description": "디시인사이드",
               "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "내년엔 뭐가 뜰까? 올리브영이 알려주는 2026년 트렌드스포",
+              "url": "https://corp.oliveyoung.com/ko/trend/insight-studio/8",
+              "description": "올리브영 인사이트 스튜디오",
+              "report_date": "2026-05-19",
+              "life_context": false
+            },
+            {
+              "title": "'온전한 나'를 향한 소비 트렌드 부상…CJ올리브영 2026 트렌드",
+              "url": "https://cjnews.cj.net/%EC%98%A8%EC%A0%84%ED%95%9C-%EB%82%98%EB%A5%BC-%ED%96%A5%ED%95%9C-%EC%86%8C%EB%B9%84-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EB%B6%80%EC%83%81cj%EC%98%AC%EB%A6%AC%EB%B8%8C%EC%98%81-039/",
+              "description": "CJ뉴스",
+              "report_date": "2026-05-19",
               "life_context": false
             }
           ]
