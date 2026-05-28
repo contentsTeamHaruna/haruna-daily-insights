@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-28",
-  "totalQuotes": 553,
-  "totalSources": 394,
-  "totalLifeContext": 166,
+  "lastUpdated": "2026-05-29",
+  "totalQuotes": 570,
+  "totalSources": 403,
+  "totalLifeContext": 169,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -85,10 +85,18 @@
             {
               "title": "가벼운 바디로션은 보습이 2시간도 안 가, 고보습은 끈적이고 — 둘 다 만족시키는 제품이 없다",
               "report_date": "2026-05-28"
+            },
+            {
+              "title": "선크림 바르고 바디로션까지 바르면 끈적거려서 못 참겠어, 여름엔 둘 중 하나 포기해야 하나",
+              "report_date": "2026-05-29"
+            },
+            {
+              "title": "향 좋은 바디로션은 끈적이고, 가벼운 건 향이 안 남아 — 향과 텍스처 둘 다 잡는 제품이 없다",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-28",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -349,6 +357,31 @@
               "text": "비클리닉스 나이아신아마이드 바디로션 워터리하고 가벼운데, 보습 지속력은 기대 이하",
               "report_date": "2026-05-28",
               "life_context": false
+            },
+            {
+              "text": "선크림 바르고 바디로션까지 바르면 겉돌면서 끈적거려, 여름엔 선크림만 바르고 바디는 스킵해",
+              "report_date": "2026-05-29",
+              "life_context": true
+            },
+            {
+              "text": "바디로션 바르다 다시 땀남 ㅋㅋㅋ 선크림이랑 섞이면 진짜 최악",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "향 좋고 발림성 안 무거운 바디로션 찾는데, 둘 다 만족시키는 제품이 없어",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "블리스 레몬세이지 향이 5분 후면 날아감, 지속력이 너무 아쉬워",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "산타마리아 노벨라 향은 좋은데 펌프가 안맞아서 제품이 제대로 안 나와",
+              "report_date": "2026-05-29",
+              "life_context": false
             }
           ],
           "sources": [
@@ -568,6 +601,20 @@
               "description": "더쿠",
               "report_date": "2026-05-28",
               "life_context": false
+            },
+            {
+              "title": "향 좋은 바디로션 추천해주세요",
+              "url": "https://unpa.me/community/lotion/120078390",
+              "description": "언니의파우치",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "여름 바디 관리법 — 하퍼스 바자",
+              "url": "https://www.harpersbazaar.co.kr/article/68430",
+              "description": "하퍼스 바자 코리아",
+              "report_date": "2026-05-29",
+              "life_context": true
             }
           ]
         },
@@ -1262,10 +1309,14 @@
             {
               "title": "바디케어도 기능성 시대인데, 톤업·착색 말고 진짜 피부 개선 성분이 들어간 바디크림은 없나",
               "report_date": "2026-05-28"
+            },
+            {
+              "title": "페이셜엔 세럼급 성분 바르면서 바디는 아직 보습만? 바디케어도 기능성 시대인데 선택지가 없다",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-28",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -1825,6 +1876,11 @@
             {
               "text": "올리브영에서 성분 검색하는 사람이 150% 늘었다는데, 바디케어도 성분으로 골라야 하는 시대",
               "report_date": "2026-05-28",
+              "life_context": false
+            },
+            {
+              "text": "얼굴에는 PDRN·펩타이드 바르면서 몸에는 그냥 로션이라니, 바디케어도 업그레이드 필요",
+              "report_date": "2026-05-29",
               "life_context": false
             }
           ],
@@ -2759,10 +2815,14 @@
             {
               "title": "PDRN 화장품이 시술만큼 효과 있을까? 피부과에서 직접 주입하는 것과는 다르잖아",
               "report_date": "2026-05-28"
+            },
+            {
+              "title": "엑소좀 화장품이 쏟아지는데 효과 검증은 걸음마 — 신성분에 대한 불안과 호기심이 공존",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-28",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -2942,6 +3002,21 @@
             {
               "text": "비건 PDRN은 임상 근거가 매우 부족하다는데, 비건이라고 무조건 좋은 건 아니네",
               "report_date": "2026-05-28",
+              "life_context": false
+            },
+            {
+              "text": "엑소좀이 PDRN 다음 타자라는데, 또 잠깐 유행하고 사라지는 거 아닌지 모르겠어",
+              "report_date": "2026-05-29",
+              "life_context": true
+            },
+            {
+              "text": "엑소좀 앰플 사볼까 하는데 임상 근거가 부족하다고 하니 관망 중",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "성분 안전성이 가장 중요한데, 새 성분이 나올 때마다 검증이 안 돼 있어서 불안해",
+              "report_date": "2026-05-29",
               "life_context": false
             }
           ],
@@ -3154,6 +3229,27 @@
               "url": "https://v.daum.net/v/20260513070753595",
               "description": "다음/코르메디",
               "report_date": "2026-05-28",
+              "life_context": false
+            },
+            {
+              "title": "엑소좀 성분 사전 — 화해 비즈니스",
+              "url": "https://business.hwahae.co.kr/insight/ingredient-exosome/",
+              "description": "화해",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "현시점 가장 뜨거운 엑소좀 뷰티에 대한 진실",
+              "url": "https://www.allurekorea.com/2026/03/01/%ED%98%84%EC%8B%9C%EC%A0%90-%EA%B0%80%EC%9E%A5-%EB%9C%A8%EA%B1%B0%EC%9A%B4-%EC%97%91%EC%86%8C%EC%A2%80-%EB%B7%B0%ED%8B%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A7%84%EC%8B%A4/",
+              "description": "얼루어 코리아",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "엑소좀 산업 대해부",
+              "url": "https://pharm.edaily.co.kr/news/read?newsId=01312006632462416",
+              "description": "팜이데일리",
+              "report_date": "2026-05-29",
               "life_context": false
             }
           ]
@@ -3588,10 +3684,14 @@
             {
               "title": "PDRN 세럼만 5개 브랜드에서 나오는데 뭐가 다른 건지 모르겠어, 결국 마케팅 아닌가",
               "report_date": "2026-05-26"
+            },
+            {
+              "title": "바르는 PDRN은 보습·피부결 정돈 수준, 시술급 재생은 기대 어렵다 — 효능 과장 피로",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-05-13",
-          "last_seen": "2026-05-26",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "PDRN 다음은 하이퍼-PDRN이래, 그다음은 엑소좀이래 — 매달 새 성분이 나와서 따라갈 수가 없어",
@@ -3636,6 +3736,21 @@
             {
               "text": "비건 PDRN이 연어 PDRN이랑 99.9% 같다는데, 그러면 싼 거 사면 되는 거 아닌가",
               "report_date": "2026-05-26",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 화장품이랑 피부과 연어주사가 성분은 같다는데, 흡수 깊이가 다르니 효과도 다르지 않나",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "4~8주 써야 효과 보인다는데, 그동안 뭘 기준으로 효과를 판단해야 할지 모르겠어",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "비건 PDRN은 임상 근거가 매우 부족하다는데, 비건이라고 무조건 좋은 건 아니네",
+              "report_date": "2026-05-29",
               "life_context": false
             }
           ],
@@ -3694,6 +3809,27 @@
               "url": "https://unpa.me/community/essence/123289044",
               "description": "언니의파우치",
               "report_date": "2026-05-26",
+              "life_context": false
+            },
+            {
+              "title": "바르는 PDRN 효과 진짜일까",
+              "url": "https://www.viva100.com/article/20260514500783",
+              "description": "브릿지경제",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "PDRN is the latest K-beauty craze — but does the hype stack up?",
+              "url": "https://www.getthegloss.com/beauty/skincare/pdrn-skincare/",
+              "description": "Get the Gloss",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "\"후기는 많은데 내 피부엔?\" PDRN 화장품",
+              "url": "https://kormedi.com/2815102/",
+              "description": "코르메디",
+              "report_date": "2026-05-29",
               "life_context": false
             }
           ]
@@ -3889,10 +4025,14 @@
             {
               "title": "세럼 종류가 너무 많아서 뭘 골라야 할지 모르겠다 — 내 피부 타입에 맞는 걸 찾기가 힘들다",
               "report_date": "2026-05-28"
+            },
+            {
+              "title": "PDRN 넘어 포도당·펩타이드·엑소좀까지 — 성분이 너무 많아서 뭘 먼저 써야 할지 모르겠다",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-28",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -4268,6 +4408,21 @@
               "text": "더마팩토리 PDRN 앰플 어때? 가성비로 일단 써볼까 하는데 리뷰가 갈린다",
               "report_date": "2026-05-28",
               "life_context": false
+            },
+            {
+              "text": "히알루론산, PDRN, 엑소좀, 펩타이드, 포도당 — 성분이 너무 많아서 뭘 먼저 써야 할지 모르겠어",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "화해 1위랑 글로우픽 1위가 다른데, 어디를 믿어야 해?",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "처음 써보는거라 고함량보단 10%대 순수비타민 가성비 있을까? 2만원 이하로",
+              "report_date": "2026-05-29",
+              "life_context": false
             }
           ],
           "sources": [
@@ -4627,6 +4782,13 @@
               "description": "더쿠",
               "report_date": "2026-05-28",
               "life_context": false
+            },
+            {
+              "title": "파티온 포도당 하이드로 액티브 세럼 출시",
+              "url": "https://www.edaily.co.kr/News/Read?newsId=05815446645451216&mediaCodeNo=257",
+              "description": "이데일리",
+              "report_date": "2026-05-29",
+              "life_context": false
             }
           ]
         }
@@ -4804,10 +4966,22 @@
             {
               "title": "여름이라 선크림 매일 바르는데, 이중세안 해도 잔여감이 남는다",
               "report_date": "2026-05-28"
+            },
+            {
+              "title": "UV 9 매우 높은 날 선크림 필수인데, 폼클렌징만으로 안 지워져 — 이중세안이 매일 필수인 여름이 피곤하다",
+              "report_date": "2026-05-29"
+            },
+            {
+              "title": "약산성 폼클렌징이 안 맞아서 오돌토돌 올라왔다 — 약산성 만능론에 균열, 나한테 맞는 pH를 모르겠다",
+              "report_date": "2026-05-29"
+            },
+            {
+              "title": "폼클렌징 후 세안 당김이 심해, 볼 쪽 각질 일어나고 기초 흡수도 안 된다",
+              "report_date": "2026-05-29"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-28",
+          "last_seen": "2026-05-29",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -5278,6 +5452,16 @@
               "text": "여름에는 세정력 강한 폼클렌징으로 바꿔야 하나? 근데 그러면 피부 건조해지고",
               "report_date": "2026-05-28",
               "life_context": true
+            },
+            {
+              "text": "약산성이 좋다 해서 바꿨는데 며칠 내로 피부가 가렵고 오돌토돌한 무언가가 올라왔어",
+              "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "약산성이 대세라는데 왜 내 피부에만 안 맞는 건지, 사바사인 건 알겠는데 기준이 없어",
+              "report_date": "2026-05-29",
+              "life_context": false
             }
           ],
           "sources": [
