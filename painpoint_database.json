@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-29",
-  "totalQuotes": 570,
-  "totalSources": 403,
-  "totalLifeContext": 169,
+  "lastUpdated": "2026-05-30",
+  "totalQuotes": 585,
+  "totalSources": 414,
+  "totalLifeContext": 172,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -93,10 +93,18 @@
             {
               "title": "향 좋은 바디로션은 끈적이고, 가벼운 건 향이 안 남아 — 향과 텍스처 둘 다 잡는 제품이 없다",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "올영 빅세일에서 바디크림 뭘 사야 할지 모르겠어, 여름용은 다 끈적이거나 보습이 약하거나",
+              "report_date": "2026-05-30"
+            },
+            {
+              "title": "주말 나들이 가는데 선크림 바르고 바디로션까지 바르면 끈적, UV 9인데 바디케어를 포기해야 하나",
+              "report_date": "2026-05-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-05-30",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -382,6 +390,16 @@
               "text": "산타마리아 노벨라 향은 좋은데 펌프가 안맞아서 제품이 제대로 안 나와",
               "report_date": "2026-05-29",
               "life_context": false
+            },
+            {
+              "text": "올영 세일인데 바디로션 뭘 사야 할지 모르겠어, 여름용이랑 겨울용이 완전 다르잖아",
+              "report_date": "2026-05-30",
+              "life_context": true
+            },
+            {
+              "text": "주말에 나들이 가는데 자외선 너무 강해, 근데 바디크림 바르면 선크림이랑 섞여서 답답해",
+              "report_date": "2026-05-30",
+              "life_context": false
             }
           ],
           "sources": [
@@ -615,6 +633,20 @@
               "description": "하퍼스 바자 코리아",
               "report_date": "2026-05-29",
               "life_context": true
+            },
+            {
+              "title": "올영세일 2026 6월 빅세일 기간·추천템 총정리",
+              "url": "https://unpa.me/community/beautytip/130591623",
+              "description": "언니의파우치",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "하나도 안끈적거리는 선크림 잇을까 몸에 바를 용도로!",
+              "url": "https://theqoo.net/beauty/4081095807",
+              "description": "더쿠",
+              "report_date": "2026-05-30",
+              "life_context": false
             }
           ]
         },
@@ -1313,10 +1345,14 @@
             {
               "title": "페이셜엔 세럼급 성분 바르면서 바디는 아직 보습만? 바디케어도 기능성 시대인데 선택지가 없다",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "바디케어도 기능성 시대인데 올영 세일 할인 제품은 다 단순 보습뿐",
+              "report_date": "2026-05-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-05-30",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -4029,10 +4065,22 @@
             {
               "title": "PDRN 넘어 포도당·펩타이드·엑소좀까지 — 성분이 너무 많아서 뭘 먼저 써야 할지 모르겠다",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "올영 빅세일에 세럼 뭘 사야 해? 화해 1위랑 올영 1위랑 글로우픽 1위가 다 달라",
+              "report_date": "2026-05-30"
+            },
+            {
+              "title": "레이어랩 판테놀·에스네이처 스쿠알란이 화해 순위 올랐는데, PDRN 아닌 성분도 괜찮은 건가",
+              "report_date": "2026-05-30"
+            },
+            {
+              "title": "COSRX 5 PDRN 라인 출시+제노헬릭스 miPDRN 기술 공개 — PDRN 고도화 경쟁에 소비자 피로 가중",
+              "report_date": "2026-05-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-05-30",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -4423,6 +4471,51 @@
               "text": "처음 써보는거라 고함량보단 10%대 순수비타민 가성비 있을까? 2만원 이하로",
               "report_date": "2026-05-29",
               "life_context": false
+            },
+            {
+              "text": "올영 세일인데 세럼 뭘 사야 할지 모르겠어, 화해 1위랑 글로우픽 1위가 다른데 어디를 믿어?",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "히알루론산, PDRN, 펩타이드, 포도당, 판테놀 — 성분이 너무 많아서 뭘 먼저 써야 할지 모르겠어",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "빅세일 때 충동구매하면 안 되는데, 기준이 없으니까 결국 1+1 되는 걸로 사게 돼",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 아닌 세럼을 쓰면 뒤처지는 느낌이 드는데, 판테놀이나 스쿠알란도 충분한 건가?",
+              "report_date": "2026-05-30",
+              "life_context": true
+            },
+            {
+              "text": "4~8주 써야 효과 보인다는데, 그동안 뭘 기준으로 효과를 판단해야 할지 모르겠어",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "비건 PDRN은 임상 근거가 부족하다는데, 오히려 검증된 판테놀이 나을 수도",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "COSRX까지 PDRN 나왔는데, 이제 PDRN 안 넣은 세럼 찾기가 더 어려워",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 화장품이랑 피부과 연어주사가 성분은 같다는데, 흡수 깊이가 다르니 효과도 다르지 않나",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "1천원짜리 PDRN이랑 5만원짜리 PDRN이 뭐가 다른지 솔직히 모르겠어",
+              "report_date": "2026-05-30",
+              "life_context": false
             }
           ],
           "sources": [
@@ -4789,6 +4882,48 @@
               "description": "이데일리",
               "report_date": "2026-05-29",
               "life_context": false
+            },
+            {
+              "title": "올영세일 세럼 추천 2026 — 피부별 완벽 정리",
+              "url": "https://unpa.me/community/beautytip/130770963",
+              "description": "언니의파우치",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "바르는 PDRN 효과 진짜일까",
+              "url": "https://www.viva100.com/article/20260514500783",
+              "description": "브릿지경제",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "2026 상반기 스킨케어 속속 등판",
+              "url": "https://www.meconomynews.com/news/articleView.html?idxno=126098",
+              "description": "시장경제",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "PDRN is the latest K-beauty craze — but does the hype stack up?",
+              "url": "https://www.getthegloss.com/beauty/skincare/pdrn-skincare/",
+              "description": "Get the Gloss",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "코스알엑스 5 PDRN 스킨케어 라인 출시",
+              "url": "https://www.biotimes.co.kr/news/articleView.html?idxno=25601",
+              "description": "바이오타임즈",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "제노헬릭스 초저분자 miPDRN 기술 공개",
+              "url": "https://www.cosinkorea.com/news/article.html?no=57147",
+              "description": "코스인코리아",
+              "report_date": "2026-05-30",
+              "life_context": false
             }
           ]
         }
@@ -4978,10 +5113,18 @@
             {
               "title": "폼클렌징 후 세안 당김이 심해, 볼 쪽 각질 일어나고 기초 흡수도 안 된다",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "주미소 살리실산 글로우픽 5위 진입 — BHA 클렌저 부상하는데, 약산성 폼클렌징이 피부에 안 맞는 사람은 뭘 써야 하나",
+              "report_date": "2026-05-30"
+            },
+            {
+              "title": "세안 후 당김이 심해 기초가 안 먹어, 올영 세일에 클렌저 바꿀까 하는데 순한 건 세정력이 약하고",
+              "report_date": "2026-05-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-05-30",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -5461,6 +5604,11 @@
             {
               "text": "약산성이 대세라는데 왜 내 피부에만 안 맞는 건지, 사바사인 건 알겠는데 기준이 없어",
               "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "주미소 살리실산 클렌저 BHA 성분이라 모공에 좋다는데, 약산성이랑 뭐가 다른 거야?",
+              "report_date": "2026-05-30",
               "life_context": false
             }
           ],
@@ -6188,10 +6336,14 @@
             {
               "title": "세안 후 얼굴이 바로 당기고 건조해, 보습 단계까지 시간 싸움",
               "report_date": "2026-05-27"
+            },
+            {
+              "title": "주말 나들이 UV 9에 선크림 꼭 바르는데, 저녁에 폼클렌징만으로 안 지워져 — 주말 밤 딥클렌징이 필수",
+              "report_date": "2026-05-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-27",
+          "last_seen": "2026-05-30",
           "quotes": [
             {
               "text": "그날 컨디션에 따라 오마카세처럼 써야하기 때문",
@@ -6241,6 +6393,21 @@
             {
               "text": "젤 타입으로 바꿨더니 처음엔 찝찝했는데 며칠 지나니 건조함이 확 줄었어",
               "report_date": "2026-05-27",
+              "life_context": false
+            },
+            {
+              "text": "워터프루프 선크림 바르면 폼클렌징만으로 안 지워져, 클렌징오일 + 폼클 이중세안 필수",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "text": "주말에 야외에서 놀고 오면 선크림 잔여감이 더 심해, 평소보다 더 꼼꼼하게 세안해야 해",
+              "report_date": "2026-05-30",
+              "life_context": true
+            },
+            {
+              "text": "이중세안 귀찮은데 선크림 잔여감 때문에 트러블 나는 것 같아",
+              "report_date": "2026-05-30",
               "life_context": false
             }
           ],
@@ -6327,6 +6494,27 @@
               "url": "https://www.wkorea.com/2026/02/07/%EC%95%84%EC%B9%A8-%EC%84%B8%EC%95%88%EB%A7%8C-%EB%B0%94%EA%BF%A8%EC%9D%84-%EB%BF%90%EC%9D%B8%EB%8D%B0-%ED%94%BC%EB%B6%80-%EC%BB%A8%EB%94%94%EC%85%98%EC%9D%B4-%EC%9D%B4%EB%A7%8C%ED%81%BC-%EC%A2%8B",
               "description": "W Korea",
               "report_date": "2026-05-27",
+              "life_context": false
+            },
+            {
+              "title": "폼클렌저 10개 제품 평가 — 자외선차단제 세정력 제품별 큰 차이",
+              "url": "https://www.cosinkorea.com/news/article.html?no=53441",
+              "description": "코스인코리아",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "클렌징, 보습, 선크림 총정리",
+              "url": "https://m.dcinside.com/board/cosmetic/1521051",
+              "description": "디시인사이드",
+              "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "뽀득하게 씻기는 거 좋아하는 덬들 폼클렌징 공유하자",
+              "url": "https://theqoo.net/beauty/1878058666",
+              "description": "더쿠",
+              "report_date": "2026-05-30",
               "life_context": false
             }
           ]
