@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-05-30",
-  "totalQuotes": 585,
-  "totalSources": 414,
-  "totalLifeContext": 172,
+  "lastUpdated": "2026-05-31",
+  "totalQuotes": 592,
+  "totalSources": 420,
+  "totalLifeContext": 174,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -101,10 +101,18 @@
             {
               "title": "주말 나들이 가는데 선크림 바르고 바디로션까지 바르면 끈적, UV 9인데 바디케어를 포기해야 하나",
               "report_date": "2026-05-30"
+            },
+            {
+              "title": "31℃ 초여름 최고기온에 바디로션 바르면 바로 땀나고 끈적, 올영 세일 2일차인데 여름용 뭘 사야 할지 모르겠어",
+              "report_date": "2026-05-31"
+            },
+            {
+              "title": "일요일 마지막 나들이 UV 9, 선크림 위에 바디크림 바르면 겉돌고 끈적 — 바디케어를 아예 포기하게 돼",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-30",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -400,6 +408,11 @@
               "text": "주말에 나들이 가는데 자외선 너무 강해, 근데 바디크림 바르면 선크림이랑 섞여서 답답해",
               "report_date": "2026-05-30",
               "life_context": false
+            },
+            {
+              "text": "일리윤 여름엔 무거워서 대체 제품 찾는 중, 가벼운 겔타입이 필요해",
+              "report_date": "2026-05-31",
+              "life_context": true
             }
           ],
           "sources": [
@@ -646,6 +659,13 @@
               "url": "https://theqoo.net/beauty/4081095807",
               "description": "더쿠",
               "report_date": "2026-05-30",
+              "life_context": false
+            },
+            {
+              "title": "끈적임 없는 바디로션 추천해주라!",
+              "url": "https://theqoo.net/beauty/1879403260",
+              "description": "더쿠",
+              "report_date": "2026-05-31",
               "life_context": false
             }
           ]
@@ -1349,10 +1369,14 @@
             {
               "title": "바디케어도 기능성 시대인데 올영 세일 할인 제품은 다 단순 보습뿐",
               "report_date": "2026-05-30"
+            },
+            {
+              "title": "바디케어도 기능성 시대인데 올영 세일 라인업은 보습·착색미백뿐 — Face-to-Body 갈증과 현실의 괴리",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-30",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -2855,10 +2879,14 @@
             {
               "title": "엑소좀 화장품이 쏟아지는데 효과 검증은 걸음마 — 신성분에 대한 불안과 호기심이 공존",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "글로우픽 세럼 랭킹 격변 — 스킨1004 센텔라 프로바이오시카 1위 등극, PDRN 외 대안 성분 다변화 가속",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -3053,6 +3081,21 @@
             {
               "text": "성분 안전성이 가장 중요한데, 새 성분이 나올 때마다 검증이 안 돼 있어서 불안해",
               "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 아닌 세럼을 쓰면 뒤처지는 느낌이 드는데, 판테놀이나 시카도 충분한 건가?",
+              "report_date": "2026-05-31",
+              "life_context": true
+            },
+            {
+              "text": "비건 PDRN은 임상 근거가 부족하다는데, 오히려 검증된 시카·판테놀이 나을 수도",
+              "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "text": "센텔라·나이아신아마이드가 다시 주목받는 건, 트렌드 피로 후 검증된 성분 회귀 아닐까",
+              "report_date": "2026-05-31",
               "life_context": false
             }
           ],
@@ -3286,6 +3329,20 @@
               "url": "https://pharm.edaily.co.kr/news/read?newsId=01312006632462416",
               "description": "팜이데일리",
               "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "바르는 PDRN 효과 진짜일까",
+              "url": "https://www.viva100.com/article/20260514500783",
+              "description": "브릿지경제",
+              "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "title": "2026 상반기 스킨케어 트렌드",
+              "url": "https://www.meconomynews.com/news/articleView.html?idxno=126098",
+              "description": "시장경제",
+              "report_date": "2026-05-31",
               "life_context": false
             }
           ]
@@ -4077,10 +4134,18 @@
             {
               "title": "COSRX 5 PDRN 라인 출시+제노헬릭스 miPDRN 기술 공개 — PDRN 고도화 경쟁에 소비자 피로 가중",
               "report_date": "2026-05-30"
+            },
+            {
+              "title": "올영 빅세일 2일차, 세럼 뭘 사야 하나 — 화해·올영·글로우픽 1위가 전부 달라서 기준이 없어",
+              "report_date": "2026-05-31"
+            },
+            {
+              "title": "PDRN 브랜드 난립 — 다이소 1천원부터 더후 12만원까지, 100배 가격차에 품질 판별 불가",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-30",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -5121,10 +5186,14 @@
             {
               "title": "세안 후 당김이 심해 기초가 안 먹어, 올영 세일에 클렌저 바꿀까 하는데 순한 건 세정력이 약하고",
               "report_date": "2026-05-30"
+            },
+            {
+              "title": "약산성·약알칼리·BHA 3파전 속 내 피부에 맞는 클렌저 기준이 없어 — 올영 세일에 뭘 사야 하나",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-30",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -6340,10 +6409,14 @@
             {
               "title": "주말 나들이 UV 9에 선크림 꼭 바르는데, 저녁에 폼클렌징만으로 안 지워져 — 주말 밤 딥클렌징이 필수",
               "report_date": "2026-05-30"
+            },
+            {
+              "title": "일요일 저녁 주말 나들이 마무리 — UV 9에 선크림 두텁게 발랐는데 폼클렌저만으로 안 지워져",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-30",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "그날 컨디션에 따라 오마카세처럼 써야하기 때문",
@@ -6516,6 +6589,20 @@
               "description": "더쿠",
               "report_date": "2026-05-30",
               "life_context": false
+            },
+            {
+              "title": "그동안 쓰던 폼클렌저, 선크림 잘 못 닦았다",
+              "url": "https://theqoo.net/hot/3493073040",
+              "description": "더쿠",
+              "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "title": "선크림 바르는 덬들 세수방법",
+              "url": "https://theqoo.net/review/2887972011",
+              "description": "더쿠",
+              "report_date": "2026-05-31",
+              "life_context": false
             }
           ]
         },
@@ -6592,10 +6679,14 @@
             {
               "title": "클렌징폼 pH가 중요하다는데, 내 피부에 맞는 pH를 어떻게 알아?",
               "report_date": "2026-05-27"
+            },
+            {
+              "title": "글로우픽 클렌징 1위 교체 — YBK 릴리프 하이드레이션 라이트 등극, '보습 세정'이 새로운 선택 기준으로 부상",
+              "report_date": "2026-05-31"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-05-27",
+          "last_seen": "2026-05-31",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -6826,6 +6917,21 @@
               "text": "pH 5.5가 좋다고 하는데 내 피부가 pH 5.5인지 아닌지도 모르겠어",
               "report_date": "2026-05-27",
               "life_context": false
+            },
+            {
+              "text": "건성인데 클렌징폼 쓰면 세안 후 너무 건조해요, 볼 쪽 각질이 일어나요",
+              "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "text": "순하면서 세정력 좋은 폼클렌징이 정말 있는 건가? 세정력이랑 순함 둘 다 잡기 어렵다",
+              "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "text": "YBK 릴리프 써본 사람? 보습감이 있으면서 선크림도 잘 지워지는지 궁금해",
+              "report_date": "2026-05-31",
+              "life_context": false
             }
           ],
           "sources": [
@@ -7030,6 +7136,13 @@
               "url": "https://unpa.me/community/cleansingfoam/107546510",
               "description": "언니의파우치",
               "report_date": "2026-05-27",
+              "life_context": false
+            },
+            {
+              "title": "순하면서 세정력 좋은 폼클렌징 추천",
+              "url": "https://unpa.me/community/cleansingfoam/128382961",
+              "description": "언니의파우치",
+              "report_date": "2026-05-31",
               "life_context": false
             }
           ]
