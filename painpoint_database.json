@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-01",
-  "totalQuotes": 613,
-  "totalSources": 429,
-  "totalLifeContext": 181,
+  "lastUpdated": "2026-06-02",
+  "totalQuotes": 639,
+  "totalSources": 438,
+  "totalLifeContext": 190,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -1395,10 +1395,22 @@
             {
               "title": "화해 바디크림 TOP 5 전부 더마·민감성 브랜드 — 건강한 피부인데 바디케어 선택지가 없어",
               "report_date": "2026-06-01"
+            },
+            {
+              "title": "미세먼지 나쁨 + 에어컨 건조 — 밖에서는 피부에 먼지가 달라붙고, 실내에서는 에어컨이 수분을 뺏어가는 이중고",
+              "report_date": "2026-06-02"
+            },
+            {
+              "title": "올영 빅세일 4일차 — 바디 카테고리는 여전히 겨울·더마 제품 위주, 여름용 경량 바디크림 세일템이 없다",
+              "report_date": "2026-06-02"
+            },
+            {
+              "title": "자외선 강한 6월 — 선크림 바르고 바디크림 바르면 층이 뜨고, 순서를 바꾸면 선크림 효과 떨어지는 레이어링 딜레마",
+              "report_date": "2026-06-02"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-01",
+          "last_seen": "2026-06-02",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -1989,6 +2001,51 @@
               "text": "향 좋고 발림성 안 무거운 바디로션 찾는데, 더마 브랜드 말고 선택지가 너무 적어",
               "report_date": "2026-06-01",
               "life_context": false
+            },
+            {
+              "text": "여름에도 바디로션 안 바르면 에어컨 바람 때문에 종아리가 허옇게 각질 일어나",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "미세먼지 나쁜 날은 바디워시부터 제대로 해야 되는데, 그 다음에 바를 가벼운 로션이 없어",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "비클리닉스 나이아신아마이드 바디로션 워터리하고 엄청 가벼워, 시트러스 향이라 여름에 딱",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "올영 세일 4일째인데 바디로션은 뭘 사야 하지, 일리윤은 겨울용 아니야?",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "빅세일에서 비오레 바디 미스트 할인하는데, 바디크림은 없어서 아쉬워",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "아토팜·라로슈포제는 민감성용이라 나한테 오버스펙인데, 일반 피부용 바디크림 선택지가 너무 적어",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "바디로션 바르고 선크림 바르면 너무 끈적거려서 포기하고 선크림만 바르는데, 그러면 건조해",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "하나도 안끈적거리는 선크림 있을까? 몸에 바를 용도로!",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "목에 바를 안끈적이는 선크림 없을까, 바디로션이랑 겹치면 답이 없어",
+              "report_date": "2026-06-02",
+              "life_context": false
             }
           ],
           "sources": [
@@ -2572,6 +2629,48 @@
               "description": "디시인사이드",
               "report_date": "2026-06-01",
               "life_context": false
+            },
+            {
+              "title": "덬들 여름에 바디로션 뭐 발라??",
+              "url": "https://theqoo.net/beauty/519390936",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "title": "비오레 올리브영 6월 올영픽 선정…여름 시즌 프로모션",
+              "url": "https://www.hankyung.com/article/202605284364O",
+              "description": "한국경제",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "title": "바디로션 100개 써보고 결국 정착한 TOP4",
+              "url": "https://www.instagram.com/reel/DSW_B1Uglsz/",
+              "description": "인스타그램",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "title": "하나도 안끈적거리는 선크림 잇을까 몸에 바를 용도로!",
+              "url": "https://theqoo.net/beauty/4081095807",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "title": "목에 바를 안끈적이는 선크림 있을까?",
+              "url": "https://theqoo.net/beauty/4164614777",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "title": "여름에 쓰기 좋은 선크림들만 모아봤어요",
+              "url": "https://www.instagram.com/p/DX9NtrwoZsR/",
+              "description": "인스타그램",
+              "report_date": "2026-06-02",
+              "life_context": true
             }
           ]
         }
@@ -2951,10 +3050,14 @@
             {
               "title": "글로우픽 세럼 랭킹 격변 — 스킨1004 센텔라 프로바이오시카 1위 등극, PDRN 외 대안 성분 다변화 가속",
               "report_date": "2026-05-31"
+            },
+            {
+              "title": "PDRN 효과 진짜일까? — 언론·전문가 잇따라 의문 제기, '바르면 재생'은 과대광고 아닌가",
+              "report_date": "2026-06-02"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-31",
+          "last_seen": "2026-06-02",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -3164,6 +3267,21 @@
             {
               "text": "센텔라·나이아신아마이드가 다시 주목받는 건, 트렌드 피로 후 검증된 성분 회귀 아닐까",
               "report_date": "2026-05-31",
+              "life_context": false
+            },
+            {
+              "text": "후기는 많은데 내 피부엔 별 차이를 모르겠어, PDRN이 진짜 효과 있는 건가?",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "바르면 피부 재생이라는데, 화장품으로 재생이 되면 시술은 왜 하겠어",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 앰플 3개째 쓰는데 속당김은 좀 나아졌지만, 광고처럼 탄력이 올라오진 않아",
+              "report_date": "2026-06-02",
               "life_context": false
             }
           ],
@@ -4222,10 +4340,18 @@
             {
               "title": "PDRN 브랜드 난립 지속 — 다이소 1천원부터 더후 12만원까지, 비건 펩타이드까지 가세하니 성분 미로가 더 복잡해져",
               "report_date": "2026-06-01"
+            },
+            {
+              "title": "세럼 성분 대전환 가속 — PDRN·시카·비건 펩타이드·레티놀 난립, 뭘 골라야 하는지 더 모르겠다",
+              "report_date": "2026-06-02"
+            },
+            {
+              "title": "다이소 PDRN 앰플 품절 대란 — 가격 거품 논란 속 1,000~3,000원대 PDRN이 뜨며 기존 고가 제품 가성비 의문",
+              "report_date": "2026-06-02"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-01",
+          "last_seen": "2026-06-02",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -4691,6 +4817,31 @@
               "text": "비건 펩타이드, 뉴로마이드, 프로바이오시카 — 신성분이 너무 많아 공부가 안 돼",
               "report_date": "2026-06-01",
               "life_context": false
+            },
+            {
+              "text": "세럼이 너무 많아서 뭘 골라야 할지 모르겠어, PDRN이 좋다 했다가 비건 펩타이드가 뜨고",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "나이아신아마이드 vs PDRN vs 시카 — 결국 뭐가 제일 효과 있는 건지",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "다이소 PDRN 앰플 새로 나온 거 건져왔다, 이 가격에 이 성분이면 대박 아니야?",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "다이소 큐어소나 PDRN 신상 나왔는데, 메디큐브 3만원짜리랑 뭐가 다른 건지",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "더마팩토리 PDRN 앰플 쓰는 덬들? 가성비 괜찮은지 궁금",
+              "report_date": "2026-06-02",
+              "life_context": false
             }
           ],
           "sources": [
@@ -5113,6 +5264,27 @@
               "description": "라이센스뉴스",
               "report_date": "2026-06-01",
               "life_context": false
+            },
+            {
+              "title": "흔적옅어지기엔 나이아신아마이드 vs 시드물 엑소좀 앰플 중 뭐가 나을까?",
+              "url": "https://theqoo.net/beauty/3020016677",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "title": "다이소 큐어소나 PDRN 신상 나온 거 샀다",
+              "url": "https://theqoo.net/beauty/3684820299",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "title": "더마팩토리 PDRN 앰플 쓰는 덬들?",
+              "url": "https://theqoo.net/beauty/3450795024",
+              "description": "더쿠",
+              "report_date": "2026-06-02",
+              "life_context": false
             }
           ]
         }
@@ -5322,10 +5494,22 @@
             {
               "title": "여름 선크림 시즌 본격화 — 매일 선크림 바르는데 폼클렌저로 안 지워져, 이중세안 귀찮아",
               "report_date": "2026-06-01"
+            },
+            {
+              "title": "자외선차단제 세정력 반타작 — 한국소비자원 시험 결과 10개 중 5개만 양호, 선크림 꼼꼼히 바르는 6월에 클렌징 불안 확대",
+              "report_date": "2026-06-02"
+            },
+            {
+              "title": "약산성 vs 약알칼리 논쟁 종결 안 됨 — 약산성 안 맞는 피부도 있는데, 업계는 약산성 일색",
+              "report_date": "2026-06-02"
+            },
+            {
+              "title": "세안 후 속당김·건조 — 폼클렌징이 너무 세거나 너무 약하거나, 딱 맞는 세정력 찾기가 어렵다",
+              "report_date": "2026-06-02"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-01",
+          "last_seen": "2026-06-02",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -5835,6 +6019,51 @@
             {
               "text": "이중세안 귀찮은데 선크림 잔여감 때문에 트러블 나는 것 같아",
               "report_date": "2026-06-01",
+              "life_context": false
+            },
+            {
+              "text": "폼클렌징만으로 선크림이 진짜 다 지워지는 건가? 더블클렌징 해야 하는 거 아냐?",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "자외선차단제 세정력이 보통이라니, 그동안 선크림 잔여물 다 남아있었던 건가",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "여름에 바디에 선크림 바르는데, 바디워시로 충분히 지워지는지 걱정돼",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "약산성 클렌징폼 안맞는 사람도 있거든? 세정력이 약해서 기름기가 올라와",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "약산성 특유의 미끄덩거리는 느낌이 싫은데, 약알칼리로 바꿔도 되는 건가",
+              "report_date": "2026-06-02",
+              "life_context": true
+            },
+            {
+              "text": "내 멀쩡했던 피부 망친 주범을 찾아냈어 — 약산성 클렌저 때문이었음",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "폼클렌징 쓰면 세안 직후 심하게 당기고, 볼 쪽 각질이 들떠",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "건성인데 약산성 써도 당기고, 약알칼리 쓰면 더 당기고, 뭘 써야 하는 건지",
+              "report_date": "2026-06-02",
+              "life_context": false
+            },
+            {
+              "text": "씻은 다음에 기초 바를 때까지만이라도 당기지 않는 폼클렌징 없을까",
+              "report_date": "2026-06-02",
               "life_context": false
             }
           ],
