@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-04",
-  "totalQuotes": 684,
-  "totalSources": 465,
-  "totalLifeContext": 209,
+  "lastUpdated": "2026-06-10",
+  "totalQuotes": 708,
+  "totalSources": 474,
+  "totalLifeContext": 217,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -117,10 +117,14 @@
             {
               "title": "31℃ 무더위에 바디크림 바르면 끈적여서 옷에 묻고, 안 바르면 에어컨 실내에서 종아리 각질",
               "report_date": "2026-06-03"
+            },
+            {
+              "title": "끈적임이 바디크림 사용 자체를 포기하게 만든다 — 습한 여름에 바디로션 바르면 옷에 달라붙어서 결국 안 바르게 되는 악순환",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-03",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -441,6 +445,21 @@
               "text": "비클리닉스 나이아신아마이드 바디로션 워터리하고 엄청 가벼운 제형인데, 보습은 좀 약한 것 같아",
               "report_date": "2026-06-03",
               "life_context": false
+            },
+            {
+              "text": "습한 여름에 바디로션 바르면 옷에 달라붙어서 안 바르게 돼",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "text": "안끈적거리는 바디로션 있을까?? 여름에 쓸 만한 걸 못 찾겠어",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "text": "QV 크림이 두꺼운 건데 의외로 끈적이지 않아서 여름에도 가능하대",
+              "report_date": "2026-06-10",
+              "life_context": true
             }
           ],
           "sources": [
@@ -702,6 +721,20 @@
               "description": "더쿠",
               "report_date": "2026-06-03",
               "life_context": false
+            },
+            {
+              "title": "안끈적거리는 바디로션 추천해주실수",
+              "url": "https://theqoo.net/index.php?document_srl=2158927281&filter_mode=normal&mid=beauty",
+              "description": "더쿠",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "title": "혹시 안끈적거리는 바디로션 있을까???",
+              "url": "https://theqoo.net/beauty/2834968717",
+              "description": "더쿠",
+              "report_date": "2026-06-10",
+              "life_context": false
             }
           ]
         },
@@ -851,10 +884,14 @@
             {
               "title": "팔뚝 닭살(모공각화증) 때문에 반팔 못 입겠어, 바디로션으로 진짜 좋아지는 거 맞아?",
               "report_date": "2026-05-26"
+            },
+            {
+              "title": "장마 시즌 바디크림 '건너뛰기' 현상 심화 — 비 오고 습한 날 바디크림 자체를 스킵, 에어컨 실내 건조 방치로 각질·당김 악순환",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-26",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
@@ -929,6 +966,21 @@
             {
               "text": "모공각화증은 바디로션만으로 되는 게 아니라 각질 관리도 같이 해야 한다더라",
               "report_date": "2026-05-26",
+              "life_context": false
+            },
+            {
+              "text": "장마철엔 바디크림 안 발라도 되지 않나? 습해서 보습 필요 없을 것 같은데",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "여름에 바디로션 뭐써?? — 안 바르는 사람도 많던데",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "text": "에어컨 바람 때문에 종아리가 허옇게 각질 일어나는데 그래도 바디로션 바르기 싫어",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ],
@@ -1022,6 +1074,27 @@
               "url": "https://theqoo.net/beauty/3064757059",
               "description": "더쿠",
               "report_date": "2026-05-26",
+              "life_context": false
+            },
+            {
+              "title": "여름 바디로션 추천좀요",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1528217",
+              "description": "디시인사이드",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "title": "여름 바디로션 뭐써?",
+              "url": "https://theqoo.net/index.php?document_srl=1128521850&mid=beauty",
+              "description": "더쿠",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "title": "안끈적거리는 바디로션 있을까??",
+              "url": "https://theqoo.net/beauty/3301837581",
+              "description": "더쿠",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ]
@@ -1484,10 +1557,14 @@
             {
               "title": "장마철 바디크림 '건너뛰기' 현상 — 비 오고 습한 날 바디크림 자체를 스킵하는 소비자 증가, 보습 공백 발생",
               "report_date": "2026-06-04"
+            },
+            {
+              "title": "바디크림 랭킹이 더마·아토피 브랜드 100% 독점 — 건강한 일반 피부를 위한 여름 바디크림 선택지 부재",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-04",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -2173,6 +2250,16 @@
               "text": "장마철엔 바디크림 안 발라도 되지 않나? 습해서 보습 필요 없을 것 같은데",
               "report_date": "2026-06-04",
               "life_context": false
+            },
+            {
+              "text": "올영에서 여름 바디크림 찾는데 전부 겨울용 고보습이거나 아토피 전용이야",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "text": "화해 랭킹 보면 더마 브랜드만 가득, 일반 피부인 나는 뭘 써야 하지",
+              "report_date": "2026-06-10",
+              "life_context": false
             }
           ],
           "sources": [
@@ -2833,6 +2920,13 @@
               "description": "더쿠",
               "report_date": "2026-06-04",
               "life_context": false
+            },
+            {
+              "title": "바디로션 추천 제품 TOP20",
+              "url": "https://www.glowpick.com/categories/49?ids=153",
+              "description": "글로우픽",
+              "report_date": "2026-06-10",
+              "life_context": false
             }
           ]
         }
@@ -3264,10 +3358,14 @@
             {
               "title": "PDRN 과대광고 논란 속 '식물 유래 PDRN' 신뢰 검증 과제 — 비동물성 PDRN이 연어 유래와 동등한 효과인지 소비자 불확실",
               "report_date": "2026-06-04"
+            },
+            {
+              "title": "'바르는 PDRN'의 실효성 논란 본격화 — 후기는 넘치는데 내 피부에서는 체감 효과가 없다, PDRN 과대광고 피로감 확산",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-04",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -3517,6 +3615,11 @@
             {
               "text": "비동물성 PDRN이 뜨고 있다는데, 식물에서 뽑은 PDRN이 연어 유래와 효과가 같을까?",
               "report_date": "2026-06-04",
+              "life_context": false
+            },
+            {
+              "text": "처음엔 좋았는데 4주 넘으니까 딱히 달라진 게 없어, 플라시보였나 싶다",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ],
@@ -3840,10 +3943,14 @@
             {
               "title": "리들샷+PDRN+레티놀 — 활성 성분끼리 충돌하면 자극 사고, 레이어링 순서가 혼란",
               "report_date": "2026-05-14"
+            },
+            {
+              "title": "PDRN 사용 시 피부 자극·민감 반응 보고 증가 — '저자극이라더니 나한테는 트러블' 호소, 성분 조합 부작용 인지 부족",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-05-14",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
@@ -3963,6 +4070,21 @@
             {
               "text": "건조함 뭘 발라도 그때뿐이고 칙칙해짐 — 기미와 잡티 부각",
               "report_date": "2026-05-14",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 세럼 바르고 뾰루지가 올라왔는데, PDRN이 안 맞는 건가 향료 때문인가",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "리들샷이랑 PDRN 같이 바르면 자극 있어? 어떤 순서로 발라야 해?",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "민감성인데 PDRN 세럼 처음 써보려고요, 턱선에 먼저 테스트해야 한다는데",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ],
@@ -4091,6 +4213,20 @@
               "url": "https://theqoo.net/beauty/4174101607",
               "description": "더쿠",
               "report_date": "2026-05-14",
+              "life_context": false
+            },
+            {
+              "title": "\"후기는 많은데 내 피부엔?\" PDRN 화장품 주의사항",
+              "url": "https://kormedi.com/2815102/",
+              "description": "코르메디",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 가이드 — 성분, 효능, 선택법 정리",
+              "url": "https://pyderin.com/pdrn-guide?lang=en",
+              "description": "피더린",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ]
@@ -4396,10 +4532,14 @@
             {
               "title": "세럼 성분 다극화 — 히알루론산·PDRN·시카·나이아신아마이드·레티놀 난립, 뭘 골라야 하는지 선택 피로",
               "report_date": "2026-06-03"
+            },
+            {
+              "title": "세럼 성분 난립으로 선택 피로 극심 — 히알루론산·PDRN·시카·펩타이드·나이아신아마이드, 플랫폼마다 1위가 다른 혼란",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-05-08",
-          "last_seen": "2026-06-03",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "PDRN 다음은 엑소좀이라는데, 결국 또 바뀔 거 아니야?",
@@ -4429,6 +4569,21 @@
             {
               "text": "나이아신아마이드 vs PDRN vs 시카 — 결국 뭐가 제일 효과 있는 건지 아무도 안 알려줘",
               "report_date": "2026-06-03",
+              "life_context": false
+            },
+            {
+              "text": "세럼이 너무 많아서 뭘 골라야 할지 모르겠어, 화해 1위랑 글로우픽 1위가 다르잖아",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "나이아신아마이드 vs PDRN vs 시카 — 결국 뭐가 내 피부에 맞는 건지 아무도 안 알려줘",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "올영세일에서 세럼 사려는데 건성·지성·민감성 추천이 다 달라서 더 헷갈려",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ],
@@ -5881,10 +6036,18 @@
             {
               "title": "클렌징폼 세안 후 당김·건조감 — 세정력 좋으면 씻고 나서 뻣뻣, 순하면 개운하지 않은 양극단",
               "report_date": "2026-06-04"
+            },
+            {
+              "title": "약산성 클렌징폼이 나한테 안 맞는다 — 오히려 약산성 후 가려움·트러블·기름기, 약산성 만능주의에 대한 반동",
+              "report_date": "2026-06-10"
+            },
+            {
+              "title": "세정력과 보습 양립의 딜레마 — 순하면 덜 씻기고, 잘 씻기면 당기는 이중 불만",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-04",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -6489,6 +6652,36 @@
             {
               "text": "아침세안용 약산성 폼 찾는데, 씻고 나서 당김 없으면서 개운한 게 필요해",
               "report_date": "2026-06-04",
+              "life_context": false
+            },
+            {
+              "text": "약산성 클렌징 쓰면 오히려 가렵고 텍스처도 안 좋고 기름기가 그대로야",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "지성인데 약산성 썼더니 세정력이 부족해서 여드름이 더 났어",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "약산성이 피부에 좋다고 해서 3개나 바꿔봤는데 다 안 맞아, 그냥 약알칼리 쓸래",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "순한 폼클렌징 찾는데, 순하면 선크림이 안 지워져서 결국 이중세안해야 해",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "세안 후 당김이 없으면서 모공 세정도 되는 게 있나? 다 하나씩 빠지네",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "건성인데 폼클렌징 하면 피부가 너무 건조해져요… 뭐가 좋을까요",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ],
@@ -7580,10 +7773,14 @@
             {
               "title": "장마철 선크림·빗물·피지 복합 세정 불안 — 폼클렌징 하나로 여름 노폐물이 깨끗이 지워지는지 확신 부재",
               "report_date": "2026-06-04"
+            },
+            {
+              "title": "폼클렌징 제형 다양화 니즈 — 전통적 폼 제형 외에 밀크·젤·오일폼 등 새로운 텍스처 탐색, 그러나 '뭐가 뭔지 모름' 혼란",
+              "report_date": "2026-06-10"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-04",
+          "last_seen": "2026-06-10",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -7844,6 +8041,21 @@
               "text": "여름에 이중세안 귀찮은데, 폼클렌징 하나로 선크림까지 깔끔히 씻을 수 없을까",
               "report_date": "2026-06-04",
               "life_context": true
+            },
+            {
+              "text": "클렌징 밀크랑 폼이랑 뭐가 달라? 여름엔 어떤 게 더 좋아?",
+              "report_date": "2026-06-10",
+              "life_context": true
+            },
+            {
+              "text": "폼클렌징 바꿨더니 피부가 완전 달라졌어, 제형 영향이 이렇게 큰 줄 몰랐다",
+              "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "참마 비건 밀크 클렌저가 뜨고 있다는데 폼이랑 뭐가 다른 건지",
+              "report_date": "2026-06-10",
+              "life_context": false
             }
           ],
           "sources": [
@@ -8062,6 +8274,13 @@
               "url": "https://m.dcinside.com/board/cosmetic/1450005",
               "description": "디시인사이드",
               "report_date": "2026-06-04",
+              "life_context": false
+            },
+            {
+              "title": "올리브영 클렌징 카테고리",
+              "url": "https://www.oliveyoung.co.kr/store/display/getCategoryShop.do?dispCatNo=10000010010&gateCd=Drawer",
+              "description": "올리브영",
+              "report_date": "2026-06-10",
               "life_context": false
             }
           ]
