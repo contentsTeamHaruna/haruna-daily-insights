@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-10",
-  "totalQuotes": 708,
-  "totalSources": 474,
-  "totalLifeContext": 217,
+  "lastUpdated": "2026-06-11",
+  "totalQuotes": 727,
+  "totalSources": 488,
+  "totalLifeContext": 226,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -121,10 +121,14 @@
             {
               "title": "끈적임이 바디크림 사용 자체를 포기하게 만든다 — 습한 여름에 바디로션 바르면 옷에 달라붙어서 결국 안 바르게 되는 악순환",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "끈적임이 바디크림 사용 자체를 포기하게 만든다 — 습한 여름에 바르면 옷에 달라붙고 불쾌해서 아예 안 바르는 악순환",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -460,6 +464,21 @@
               "text": "QV 크림이 두꺼운 건데 의외로 끈적이지 않아서 여름에도 가능하대",
               "report_date": "2026-06-10",
               "life_context": true
+            },
+            {
+              "text": "습한 여름에 바디로션 바르면 옷에 달라붙어서 결국 안 바르게 돼",
+              "report_date": "2026-06-11",
+              "life_context": true
+            },
+            {
+              "text": "안끈적거리는 바디로션 있을까?? 아이도 바르기 싫어할 정도로 끈적이면 곤란해",
+              "report_date": "2026-06-11",
+              "life_context": true
+            },
+            {
+              "text": "바디크림 바르고 바로 옷 입으면 옷에 하얗게 묻어나서 진짜 짜증",
+              "report_date": "2026-06-11",
+              "life_context": true
             }
           ],
           "sources": [
@@ -735,6 +754,13 @@
               "description": "더쿠",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "title": "형님들 안 끈적거리는 무향 바디로션 추천해주십쇼",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1494156",
+              "description": "디시인사이드",
+              "report_date": "2026-06-11",
+              "life_context": false
             }
           ]
         },
@@ -888,10 +914,14 @@
             {
               "title": "장마 시즌 바디크림 '건너뛰기' 현상 심화 — 비 오고 습한 날 바디크림 자체를 스킵, 에어컨 실내 건조 방치로 각질·당김 악순환",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "장마 시즌 바디크림 '건너뛰기' 현상 — 바깥 습도가 높으니 보습 불필요 착각, 에어컨 실내 건조로 각질·당김 악순환",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
@@ -1096,6 +1126,13 @@
               "description": "더쿠",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "title": "옷에 각질 묻어나면 수분 필요한 때 — 고보습 바디크림 추천",
+              "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=15789",
+              "description": "포인트데일리",
+              "report_date": "2026-06-11",
+              "life_context": true
             }
           ]
         },
@@ -1561,10 +1598,14 @@
             {
               "title": "바디크림 랭킹이 더마·아토피 브랜드 100% 독점 — 건강한 일반 피부를 위한 여름 바디크림 선택지 부재",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "바디크림 시장이 더마·아토피 브랜드에 100% 점령 — 건강한 일반 피부를 위한 여름 바디크림 선택지가 없다",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -2260,6 +2301,11 @@
               "text": "화해 랭킹 보면 더마 브랜드만 가득, 일반 피부인 나는 뭘 써야 하지",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "text": "화해 랭킹 보면 더마 브랜드만 가득해서 건강한 피부인 나는 뭘 써야 할지 모르겠다",
+              "report_date": "2026-06-11",
+              "life_context": false
             }
           ],
           "sources": [
@@ -2927,6 +2973,13 @@
               "description": "글로우픽",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "title": "2026 올리브영 여름 추천 스킨케어",
+              "url": "https://finpick.compounding.co.kr/blog/1205",
+              "description": "핀픽",
+              "report_date": "2026-06-11",
+              "life_context": true
             }
           ]
         }
@@ -3362,10 +3415,14 @@
             {
               "title": "'바르는 PDRN'의 실효성 논란 본격화 — 후기는 넘치는데 내 피부에서는 체감 효과가 없다, PDRN 과대광고 피로감 확산",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "피부과 의사들이 '바르는 PDRN'의 과학적 한계를 공개 지적 — 분자량·전하·구조적 이유로 진피 침투 불가, 시술과 화장품의 효과 차이 인식 확산",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -3620,6 +3677,16 @@
             {
               "text": "처음엔 좋았는데 4주 넘으니까 딱히 달라진 게 없어, 플라시보였나 싶다",
               "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "PDRN은 분자량이 너무 커서 그냥 바른다고 피부 안쪽으로 들어갈 수가 없어",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 화장품 자체에 대해 의사들은 좀 부정적입니다, 흡수가 안 되니까요",
+              "report_date": "2026-06-11",
               "life_context": false
             }
           ],
@@ -3903,6 +3970,20 @@
               "description": "코스인코리아",
               "report_date": "2026-06-04",
               "life_context": false
+            },
+            {
+              "title": "바르는 PDRN이 진피까지 흡수되기 어려운 이유 3가지",
+              "url": "https://www.threads.com/@skindr.lee/post/DJgyaKHSke3/",
+              "description": "Threads @skindr.lee",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "PDRN 화장품에 대해 의사들은 부정적",
+              "url": "https://www.threads.com/@dr_reviv/post/DTUjHR1CfIW/",
+              "description": "Threads @dr_reviv",
+              "report_date": "2026-06-11",
+              "life_context": false
             }
           ]
         },
@@ -3947,10 +4028,14 @@
             {
               "title": "PDRN 사용 시 피부 자극·민감 반응 보고 증가 — '저자극이라더니 나한테는 트러블' 호소, 성분 조합 부작용 인지 부족",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "PDRN 세럼 사용 시 피부 자극·민감 반응 호소 증가 — '저자극이라더니 나한테는 트러블', 복합 성분 조합 부작용 인지 부족",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
@@ -4085,6 +4170,16 @@
             {
               "text": "민감성인데 PDRN 세럼 처음 써보려고요, 턱선에 먼저 테스트해야 한다는데",
               "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "text": "리들샷이랑 PDRN 같이 바르면 자극 있어? 순서를 어떻게 해야 하는 거야",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "악건성인데 PDRN 처음 써보려고요, 턱선에 먼저 테스트해야 한다는데 왜?",
+              "report_date": "2026-06-11",
               "life_context": false
             }
           ],
@@ -4373,10 +4468,14 @@
             {
               "title": "바르는 PDRN은 보습·피부결 정돈 수준, 시술급 재생은 기대 어렵다 — 효능 과장 피로",
               "report_date": "2026-05-29"
+            },
+            {
+              "title": "세럼 성분 과잉으로 선택 마비 — 히알루론산·PDRN·시카·엑소좀·펩타이드·NAD+, 플랫폼마다 1위가 달라 '결국 뭘 사야 하나'",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-05-13",
-          "last_seen": "2026-05-29",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "PDRN 다음은 하이퍼-PDRN이래, 그다음은 엑소좀이래 — 매달 새 성분이 나와서 따라갈 수가 없어",
@@ -4436,6 +4535,21 @@
             {
               "text": "비건 PDRN은 임상 근거가 매우 부족하다는데, 비건이라고 무조건 좋은 건 아니네",
               "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "text": "세럼이 너무 많아서 뭘 골라야 할지 모르겠어, 화해 1위랑 글로우픽 1위가 다르잖아",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "PDRN이 좋다고 하다가 엑소좀이 좋다고 하다가 이번엔 NAD+라고? 뭘 믿어야 해",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "올영세일에서 세럼 사려는데 건성·지성·민감성 추천이 다 달라서 더 헷갈려",
+              "report_date": "2026-06-11",
               "life_context": false
             }
           ],
@@ -4515,6 +4629,27 @@
               "url": "https://kormedi.com/2815102/",
               "description": "코르메디",
               "report_date": "2026-05-29",
+              "life_context": false
+            },
+            {
+              "title": "PDRN부터 엑소좀까지 주목받는 세럼 TOP 7",
+              "url": "https://www.harpersbazaar.co.kr/article/1896283",
+              "description": "하퍼스 바자",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "2026 상반기 스킨케어 트렌드",
+              "url": "https://www.elle.co.kr/article/1899523",
+              "description": "엘르",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "올영세일 세럼 추천 2026 피부별 정리",
+              "url": "https://unpa.me/community/beautytip/130770963",
+              "description": "언니의파우치",
+              "report_date": "2026-06-11",
               "life_context": false
             }
           ]
@@ -6044,10 +6179,22 @@
             {
               "title": "세정력과 보습 양립의 딜레마 — 순하면 덜 씻기고, 잘 씻기면 당기는 이중 불만",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "약산성 클렌징폼이 나한테 안 맞는다 — 오히려 약산성 후 가려움·기름기·트러블, 약산성 만능주의에 대한 반동이 본격화",
+              "report_date": "2026-06-11"
+            },
+            {
+              "title": "세안 후 당김·건조의 진짜 원인을 모른다 — 설페이트(SLS) 계면활성제가 피부 지질을 벗기는 메커니즘, 소비자 인지율 저조",
+              "report_date": "2026-06-11"
+            },
+            {
+              "title": "여름 선크림 두껍게 바르면서 폼클렌징 하나로 안 지워지는 좌절 — 이중세안 필요한데 두 번 씻으면 더 건조, 딜레마 심화",
+              "report_date": "2026-06-11"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-11",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -6683,6 +6830,46 @@
               "text": "건성인데 폼클렌징 하면 피부가 너무 건조해져요… 뭐가 좋을까요",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "text": "약산성 클렌징 쓰면 오히려 가렵고 기름기가 그대로야, 세정이 안 된 느낌",
+              "report_date": "2026-06-11",
+              "life_context": true
+            },
+            {
+              "text": "지성인데 약산성 3개나 바꿔봤는데 다 안 맞아, 약알칼리로 돌아갈래",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "약산성이 피부에 좋다길래 억지로 쓰다가 여드름이 더 났어",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "폼클렌징의 최대 단점이 대부분 세안 후 심하게 건조해지는 것이라고 생각해요",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "세안하고 바로 뭐 안 바르면 10분 안에 얼굴이 쫙 당겨서 갈라질 것 같아",
+              "report_date": "2026-06-11",
+              "life_context": true
+            },
+            {
+              "text": "선크림 SPF50 바르면 폼클렌징 한 번으로 안 지워져서 결국 이중세안",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "이중세안 하면 깨끗한데 피부가 뻣뻣하게 당겨, 한 번에 다 지우는 건 없나",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "text": "여름에 선크림 쓰면서 순한 클렌징 쓰니까 잔여물 남아서 트러블 났어",
+              "report_date": "2026-06-11",
+              "life_context": true
             }
           ],
           "sources": [
@@ -7104,6 +7291,48 @@
               "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4201",
               "description": "화해",
               "report_date": "2026-06-04",
+              "life_context": false
+            },
+            {
+              "title": "폼클렌징의 최대단점이 세안 후 심하게 건조해지는 것",
+              "url": "https://blancdoux.com/article/review/4/13744/",
+              "description": "블랑두",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "클렌징 이후 얼굴 당기는 이유는?",
+              "url": "https://www.jayupress.com/news/articleView.html?idxno=32180",
+              "description": "자유프레스",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "비누로 씻을까, 폼클렌저로 씻을까?",
+              "url": "https://www.k-health.com/news/articleView.html?idxno=9365",
+              "description": "헬스경향",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "지성인데 클렌징밀크+폼클렌징 이중세안 넘 좋다",
+              "url": "https://theqoo.net/beauty/3367335651",
+              "description": "더쿠",
+              "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "여름철 피부 안 무너지려고 쓰는 추천템 정리",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1529269",
+              "description": "디시인사이드",
+              "report_date": "2026-06-11",
+              "life_context": true
+            },
+            {
+              "title": "클렌징폼 하나로 모공·트러블 다 잡을 수 있을까?",
+              "url": "https://www.pickdailynews.com/news/articleView.html?idxno=3895",
+              "description": "픽데일리",
+              "report_date": "2026-06-11",
               "life_context": false
             }
           ]
