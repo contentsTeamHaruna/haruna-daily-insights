@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-12",
-  "totalQuotes": 750,
-  "totalSources": 497,
-  "totalLifeContext": 238,
+  "lastUpdated": "2026-06-13",
+  "totalQuotes": 774,
+  "totalSources": 505,
+  "totalLifeContext": 243,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -125,10 +125,18 @@
             {
               "title": "끈적임이 바디크림 사용 자체를 포기하게 만든다 — 습한 여름에 바르면 옷에 달라붙고 불쾌해서 아예 안 바르는 악순환",
               "report_date": "2026-06-11"
+            },
+            {
+              "title": "장마 직전 습도 상승기 — '끈적여서 바디크림 포기' 악순환이 습도 60~70%에서 가속, 고습도에서도 산뜻한 겔 텍스처 수요가 여름 바디크림 시장의 핵심 미충족 니즈",
+              "report_date": "2026-06-13"
+            },
+            {
+              "title": "스키니피케이션 트렌드와 여름 현실의 괴리 — 레티놀·펩타이드·AHA 바디 제품 쏟아지지만, 끈적이면 결국 안 바르는 '성분은 좋은데 사용감은 싫은' 딜레마",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-11",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -479,6 +487,36 @@
               "text": "바디크림 바르고 바로 옷 입으면 옷에 하얗게 묻어나서 진짜 짜증",
               "report_date": "2026-06-11",
               "life_context": true
+            },
+            {
+              "text": "수분감 좋으면서 끈적이지 않는 바디로션 없을까요",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 좀 답답함이 느껴지고 끈적이는 것처럼 느껴지더라구요",
+              "report_date": "2026-06-13",
+              "life_context": true
+            },
+            {
+              "text": "여름에 바디크림 바르면 끈적여서 더 더워 보이니까 결국 안 바르게 돼",
+              "report_date": "2026-06-13",
+              "life_context": true
+            },
+            {
+              "text": "고기능 바디로션 사봤는데 끈적여서 결국 서랍에 넣어둠",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "AHA 바디로션 좋다는데 여름에 바르면 온몸이 들러붙는 느낌",
+              "report_date": "2026-06-13",
+              "life_context": true
+            },
+            {
+              "text": "바디에도 세럼처럼 가벼운 제형이 있으면 좋겠어",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ],
           "sources": [
@@ -760,6 +798,13 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1494156",
               "description": "디시인사이드",
               "report_date": "2026-06-11",
+              "life_context": false
+            },
+            {
+              "title": "유씨엘, 2026년 바디케어 트렌드 제시",
+              "url": "https://www.cosinkorea.com/news/article.html?no=56727",
+              "description": "코신코리아",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ]
@@ -1643,10 +1688,14 @@
             {
               "title": "바디크림 시장의 더마·아토피 브랜드 독점 심화 — 화해 TOP 10 중 8개가 더마·아토피 전문 브랜드, 건강한 일반 피부 소비자의 선택지 부재 고착",
               "report_date": "2026-06-12"
+            },
+            {
+              "title": "화해 바디크림 TOP 10 더마·아토피 독점 지속 — 10개 중 8개가 더마/아토피 전문 브랜드, 건강한 일반 피부를 위한 여름 바디크림 선택지 부재가 고착화",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-12",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -4446,10 +4495,14 @@
             {
               "title": "30℃ 일요일에 세럼을 몇 개나 바르라고? — 토너+세럼 하나면 끝인 미니멀 루틴이 지성의 여름 생존법",
               "report_date": "2026-05-17"
+            },
+            {
+              "title": "세럼 플랫폼별 랭킹 완전 불일치 지속 — 화해 1위 히알루론산(토리든), 글로우픽 1위 센텔라 징크(더마펌), 올리브영 추천은 트러블 세럼(파티온·메디힐), 소비자 선택 피로 고착",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-17",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "좋게 말하면 산뜻하고 나쁘게 말하면 건조할 수도",
@@ -4484,6 +4537,21 @@
             {
               "text": "30℃에 세럼 여러 개 바르면 기름 떡지 — 하나만 바르자",
               "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "text": "화해에선 토리든, 글로우픽에선 더마펌, 올영에선 메디힐이 1위인데 뭘 믿어야 해?",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "세럼 하나 사려고 4개 플랫폼 비교했는데 겹치는 제품이 하나도 없어",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "6월 세일에서 세럼 고르려는데 건성·지성·민감성 추천이 다 달라서 더 헷갈려",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ],
@@ -4542,6 +4610,20 @@
               "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174",
               "description": "화해",
               "report_date": "2026-05-17",
+              "life_context": false
+            },
+            {
+              "title": "에센스/세럼 카테고리 TOP20 — 글로우픽",
+              "url": "https://glowpick.co.kr/ranking/category/2/3",
+              "description": "글로우픽",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "title": "올영세일 세럼 추천 2026 피부별 정리",
+              "url": "https://unpa.me/community/beautytip/130770963",
+              "description": "언니의파우치",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ]
@@ -5077,10 +5159,18 @@
             {
               "title": "초저가 PDRN 대중화로 프리미엄 PDRN의 가격 정당성 위기 — 다이소 5,000원 vs 메디큐브 50,000원, 100배 가격차의 근거를 소비자가 이해 불가",
               "report_date": "2026-06-12"
+            },
+            {
+              "title": "엑소좀 과대광고 논란 본격화 — 얼루어 코리아 특집에서 전문의 '바르는 것만으로 피부 깊이 침투 어렵다' 경고, 제품 출시 속도가 과학을 앞서는 '신뢰 적자' 상태",
+              "report_date": "2026-06-13"
+            },
+            {
+              "title": "PDRN 시장 3단 분화 심화 — 화해 2위 아누아 PDRN(24,500원), 글로우픽 3위 더페이스샵 PDRN(중간가), 다이소 PDRN(1,000~5,000원), 가격 스펙트럼 100배 차이에 소비자 혼란 가중",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-12",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -5631,6 +5721,36 @@
               "text": "PDRN 세럼 비싼 거 쓸 이유가 있나? 다이소 써보니까 충분하던데",
               "report_date": "2026-06-12",
               "life_context": false
+            },
+            {
+              "text": "엑소좀이 바르기만 해도 재생된다는데, 진짜 과학적 근거가 있는 거야?",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "엑소좀 세럼 3만원짜리 샀는데 아무 변화를 못 느끼겠어",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "마케팅은 온통 엑소좀인데 피부과 선생님은 아직 모르는 게 더 많다고 하셨어",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "아누아 PDRN이랑 다이소 PDRN이랑 성분은 같은 건가? 100배 가격차가 뭐야?",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "PDRN이 어류에서 뽑는 건데, 싼 거 쓰면 불순물은 괜찮은 건가?",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "글로우픽에도 화해에도 PDRN이 TOP 3인데, 어떤 가격대를 사야 안전한 거지?",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ],
           "sources": [
@@ -6081,6 +6201,20 @@
               "description": "하퍼스 바자",
               "report_date": "2026-06-03",
               "life_context": false
+            },
+            {
+              "title": "현시점 가장 뜨거운 엑소좀 뷰티에 대한 진실",
+              "url": "https://www.allurekorea.com/2026/03/01/%ED%98%84%EC%8B%9C%EC%A0%90-%EA%B0%80%EC%9E%A5-%EB%9C%A8%EA%B1%B0%EC%9A%B4-%EC%97%91%EC%86%8C%EC%A2%80-%EB%B7%B0%ED%8B%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A7%84%EC%8B%A4/",
+              "description": "얼루어 코리아",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "title": "화장품 성분 사전: 엑소좀",
+              "url": "https://business.hwahae.co.kr/insight/ingredient-exosome/",
+              "description": "화해 비즈니스",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ]
         }
@@ -6350,10 +6484,14 @@
             {
               "title": "여름 선크림 세정 딜레마 격화 — SPF50 선크림이 폼클렌징 한 번에 안 지워져서 이중세안, 그러면 더 건조하고 당기는 악순환",
               "report_date": "2026-06-12"
+            },
+            {
+              "title": "장마 시즌 앞두고 약산성 vs 약알칼리 pH 논쟁 재점화 — 닥터릴리프 '약알칼리성 카렌듈라'가 글로우픽 4위, 약산성 일색의 시장에서 약알칼리 세정력을 선호하는 소비자층 존재 확인",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-12",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -7044,6 +7182,21 @@
               "text": "순한 클렌징 쓰니까 선크림 잔여물 남아서 트러블 났어",
               "report_date": "2026-06-12",
               "life_context": false
+            },
+            {
+              "text": "약산성인데 세정력이 약해서 여름에 이마에 좁쌀이 올라왔어",
+              "report_date": "2026-06-13",
+              "life_context": true
+            },
+            {
+              "text": "닥터릴리프 약알칼리 클렌징폼이 확실히 개운하게 씻겨서 여름에 좋더라",
+              "report_date": "2026-06-13",
+              "life_context": true
+            },
+            {
+              "text": "약산성 vs 약알칼리 뭐가 맞는 건지 모르겠어, pH가 그렇게 중요한가?",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ],
           "sources": [
@@ -7522,6 +7675,13 @@
               "description": "언니의파우치",
               "report_date": "2026-06-12",
               "life_context": false
+            },
+            {
+              "title": "극지성 약산성 클렌징폼 추천 부탁",
+              "url": "https://www.glowpick.com/qna/1770",
+              "description": "글로우픽 Q&A",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ]
         },
@@ -7566,10 +7726,14 @@
             {
               "title": "글로우픽·화해 양대 플랫폼에서 식자재 원료 클렌징이 TOP 5 석권 — 쌀·녹두·다시마·카렌듈라가 주류, '식자재 = 순함+세정력' 공식 확립",
               "report_date": "2026-06-12"
+            },
+            {
+              "title": "양대 플랫폼 식자재 클렌징 석권 재확인 — 화해 1위 녹두·2위 다시마·4위 쌀, 글로우픽 1위 쌀·4위 카렌듈라·7위 다시마, 식자재 = 순함+세정력 공식 완전 확립",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-12",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -7694,6 +7858,21 @@
             {
               "text": "다시마 클렌징폼이 예상 밖으로 좋아, 바다 식자재의 힘인가",
               "report_date": "2026-06-12",
+              "life_context": false
+            },
+            {
+              "text": "녹두 클렌징폼이 약산성인데도 세정력이 진짜 좋아서 꾸준히 재구매",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "다시마 클렌징폼 써봤는데 거품이 촘촘하고 세안 후 당기지 않아",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "쌀 클렌징폼이 화해·글로우픽 양쪽 다 상위인 건 진짜 검증된 거 아닌가",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ],
@@ -7822,6 +8001,13 @@
               "url": "https://glowpick.co.kr/ranking/category/3/112",
               "description": "글로우픽",
               "report_date": "2026-06-12",
+              "life_context": false
+            },
+            {
+              "title": "폼클렌징 추천 TOP5 — 약산성 저자극",
+              "url": "https://unpa.me/community/cleansingfoam/107546510",
+              "description": "언니의파우치",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ]
@@ -8220,10 +8406,14 @@
             {
               "title": "폼클렌징 제형 다양화 니즈 — 전통적 폼 제형 외에 밀크·젤·오일폼 등 새로운 텍스처 탐색, 그러나 '뭐가 뭔지 모름' 혼란",
               "report_date": "2026-06-10"
+            },
+            {
+              "title": "클렌징+기능성 융합 가속 — 글로우픽 상위에 살리실산(주미소 5위)·나이아신아마이드(원씽 계열) 클렌징폼 진입, 단순 세정을 넘어 '씻으면서 케어'하는 하이브리드 수요 급증",
+              "report_date": "2026-06-13"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-10",
+          "last_seen": "2026-06-13",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -8499,6 +8689,21 @@
               "text": "참마 비건 밀크 클렌저가 뜨고 있다는데 폼이랑 뭐가 다른 건지",
               "report_date": "2026-06-10",
               "life_context": false
+            },
+            {
+              "text": "세안만 바꿨는데 트러블이 줄었다 — 클렌징이 이렇게 중요한 줄 몰랐음",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "살리실산 클렌징폼 쓰고 나서 코 주변 블랙헤드가 확 줄었어",
+              "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "text": "클렌징에 AHA·BHA가 들어가면 세안+케어가 동시에 되니까 단계를 줄일 수 있어",
+              "report_date": "2026-06-13",
+              "life_context": false
             }
           ],
           "sources": [
@@ -8724,6 +8929,13 @@
               "url": "https://www.oliveyoung.co.kr/store/display/getCategoryShop.do?dispCatNo=10000010010&gateCd=Drawer",
               "description": "올리브영",
               "report_date": "2026-06-10",
+              "life_context": false
+            },
+            {
+              "title": "올리브영 약산성 클렌징폼 추천 — \"세안만 바꿨는데 트러블 줄었다\"",
+              "url": "https://www.scanvas.co.kr/articles/959159174121/",
+              "description": "스캔바스",
+              "report_date": "2026-06-13",
               "life_context": false
             }
           ]
