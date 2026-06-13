@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-13",
-  "totalQuotes": 774,
-  "totalSources": 505,
-  "totalLifeContext": 243,
+  "lastUpdated": "2026-06-14",
+  "totalQuotes": 794,
+  "totalSources": 513,
+  "totalLifeContext": 249,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -133,10 +133,14 @@
             {
               "title": "스키니피케이션 트렌드와 여름 현실의 괴리 — 레티놀·펩타이드·AHA 바디 제품 쏟아지지만, 끈적이면 결국 안 바르는 '성분은 좋은데 사용감은 싫은' 딜레마",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "아침 습도 86% — '바디크림 바르면 더 끈적인다' 체감 단계 진입, 오프온 3초흡수 올영픽 선정이 '빠른 흡수 = 구매 기준 1위' 시장 공식화",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -517,6 +521,16 @@
               "text": "바디에도 세럼처럼 가벼운 제형이 있으면 좋겠어",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "text": "습도 높은 아침에 바디크림 바르면 온몸이 들러붙어서 결국 안 바르게 돼",
+              "report_date": "2026-06-14",
+              "life_context": true
+            },
+            {
+              "text": "3초 흡수라길래 반신반의했는데 진짜 바르자마자 흡수돼서 옷에 안 묻힌다",
+              "report_date": "2026-06-14",
+              "life_context": true
             }
           ],
           "sources": [
@@ -806,6 +820,13 @@
               "description": "코신코리아",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "title": "오프온, 바디트러블 케어로 8월 '올영픽' 선정",
+              "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202508041500515370315",
+              "description": "대한경제",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ]
         },
@@ -967,10 +988,14 @@
             {
               "title": "여름 모공각화증(닭살) 노출 시즌 — 반팔 입으면 팔뚝 닭살이 드러나서 여름이 두렵다, 바디크림 발라야 하는데 끈적여서 결국 안 바르는 악순환",
               "report_date": "2026-06-12"
+            },
+            {
+              "title": "모공각화증(닭살) 반팔 시즌 본격 진입 — '보습 꾸준히 하라는데 끈적여서 안 바름' 악순환이 29℃ 노출 시즌에 극대화, 보습+각질 케어 동시 해결 바디크림 공백",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-12",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "울글불긋 우둘투둘... 정말 스트레스",
@@ -1075,6 +1100,21 @@
             {
               "text": "모공각화증에 AHA 바디로션 좋다는데, 끈적이면 바르다가 포기하게 됨",
               "report_date": "2026-06-12",
+              "life_context": true
+            },
+            {
+              "text": "닭살 때문에 반팔 못 입겠는데, 바디크림은 끈적여서 또 안 바르게 돼",
+              "report_date": "2026-06-14",
+              "life_context": true
+            },
+            {
+              "text": "피부과에서 보습 꾸준히 하라는데 여름에 끈적한 크림 바르면 더 답답해",
+              "report_date": "2026-06-14",
+              "life_context": true
+            },
+            {
+              "text": "모공각화증에 좋다는 바디로션 발랐는데 흡수 안 되고 옷에 다 묻어",
+              "report_date": "2026-06-14",
               "life_context": true
             }
           ],
@@ -1210,6 +1250,13 @@
               "url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=32154",
               "description": "서울아산병원",
               "report_date": "2026-06-12",
+              "life_context": false
+            },
+            {
+              "title": "모공각화증(닭살) 관리와 치료",
+              "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=182520",
+              "description": "약사공론",
+              "report_date": "2026-06-14",
               "life_context": false
             }
           ]
@@ -1692,10 +1739,14 @@
             {
               "title": "화해 바디크림 TOP 10 더마·아토피 독점 지속 — 10개 중 8개가 더마/아토피 전문 브랜드, 건강한 일반 피부를 위한 여름 바디크림 선택지 부재가 고착화",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "29℃·불쾌지수 높음 — 에어컨 실내건조 vs 실외 고온고습, 하루에 두 번 다른 피부 환경을 겪으면서 바디크림 선택이 불가능해지는 이중고",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -2426,6 +2477,21 @@
               "text": "일반 피부인데 여름 바디크림 추천이 항상 아토팜·일리윤뿐이라 선택지가 없다",
               "report_date": "2026-06-12",
               "life_context": true
+            },
+            {
+              "text": "에어컨 켜면 피부가 쩍쩍 갈라지는데 밖에 나가면 끈적여서 미치겠어",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "수분감 좋으면서 끈적이지 않는 바디로션 없을까요",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "아침엔 습한데 회사에서는 건조하고, 바디크림을 두 개 써야 하나",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ],
           "sources": [
@@ -5167,10 +5233,22 @@
             {
               "title": "PDRN 시장 3단 분화 심화 — 화해 2위 아누아 PDRN(24,500원), 글로우픽 3위 더페이스샵 PDRN(중간가), 다이소 PDRN(1,000~5,000원), 가격 스펙트럼 100배 차이에 소비자 혼란 가중",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "화해 '고기능 미니멀리즘' 공식 트렌드 vs 엑소좀 '기술보다 신뢰가 먼저' — 올인원 고기능을 원하지만 핵심 성분의 과학적 검증이 따라오지 못하는 구조적 모순",
+              "report_date": "2026-06-14"
+            },
+            {
+              "title": "PDRN 올리브영 가격대 65%가 25,000~35,000원 집중 — '적정가'는 형성됐지만 다이소 5,000원 vs 프리미엄 5만원+의 100배 격차에 '내가 산 건 진짜인가' 불안 지속",
+              "report_date": "2026-06-14"
+            },
+            {
+              "title": "화해 vs 글로우픽 세럼 1위 불일치 6월에도 지속 — 히알루론산(토리든) vs 센텔라 징크(더마펌), 플랫폼마다 다른 답에 소비자 선택 피로 만성화",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -5751,6 +5829,46 @@
               "text": "글로우픽에도 화해에도 PDRN이 TOP 3인데, 어떤 가격대를 사야 안전한 거지?",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "text": "엑소좀 세럼 하나로 끝낸다길래 샀는데, 진짜 이것만으로 되는 건지 불안해",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "고기능 미니멀리즘이라는데 핵심 성분이 아직 논란이면 미니멀이 아니라 도박 아닌가",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "올리브영 PDRN 3만원짜리랑 다이소 3천원짜리가 같은 성분이라니, 뭘 믿어야 해",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "PDRN이 어류에서 뽑는 건데, 싼 거 쓰면 불순물은 괜찮은 건가",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "아누아 PDRN이랑 다이소 PDRN이랑 성분은 같은 건가? 100배 가격차가 뭐야",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "화해에선 토리든, 글로우픽에선 더마펌, 올영에선 아누아가 추천인데 뭘 믿어야 해",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "세럼 하나 사려고 4개 플랫폼 비교했는데 겹치는 제품이 하나도 없어",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "6월 세일에서 세럼 고르려는데 히알루론산·센텔라·PDRN 중 뭐가 맞는 건지 모르겠다",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ],
           "sources": [
@@ -6215,6 +6333,41 @@
               "description": "화해 비즈니스",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "title": "2026 뷰티 트렌드 총정리: 고기능 미니멀리즘",
+              "url": "https://business.hwahae.co.kr/insight/trendreport-2026-summary/",
+              "description": "화해 비즈니스",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "title": "엑소좀 시대, 기술보다 신뢰가 먼저",
+              "url": "https://www.geconomy.co.kr/news/article.html?no=320557",
+              "description": "지이코노미",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "title": "다이소에도 있는 PDRN 세럼…K뷰티 필수 성분된 'PDRN'",
+              "url": "https://www.newsis.com/view/NISX20250417_0003143391",
+              "description": "뉴시스",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "title": "올리브영 PDRN 스킨케어 제품 분석",
+              "url": "https://beauticslab.com/blog/pdrn-skincare-olive-young-ranking-analysis",
+              "description": "뷰틱스랩",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "title": "올영세일 2026 6월 추천템 총정리",
+              "url": "https://unpa.me/community/beautytip/130591623",
+              "description": "언니의파우치",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ]
         }
@@ -6488,10 +6641,14 @@
             {
               "title": "장마 시즌 앞두고 약산성 vs 약알칼리 pH 논쟁 재점화 — 닥터릴리프 '약알칼리성 카렌듈라'가 글로우픽 4위, 약산성 일색의 시장에서 약알칼리 세정력을 선호하는 소비자층 존재 확인",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "장마 D-11, 습도 86% — '약산성이면 세정력이 부족하지 않을까' 불안 부상, 닥터릴리프 약알칼리 카렌듈라가 '세정력 확실'로 글로우픽 4위 선전",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -7197,6 +7354,11 @@
               "text": "약산성 vs 약알칼리 뭐가 맞는 건지 모르겠어, pH가 그렇게 중요한가?",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "text": "장마 오면 피지 분비 늘어나는데 약산성으로 충분한 거 맞아?",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ],
           "sources": [
@@ -7730,10 +7892,14 @@
             {
               "title": "양대 플랫폼 식자재 클렌징 석권 재확인 — 화해 1위 녹두·2위 다시마·4위 쌀, 글로우픽 1위 쌀·4위 카렌듈라·7위 다시마, 식자재 = 순함+세정력 공식 완전 확립",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "식자재 클렌징 라인업 확장 가속 — 식물나라 '검은쌀 쫀득 클렌징폼' 올리브영 신규 출시, 화해 TOP 10에 쌀 클렌징만 2개(에스네이처 4위·프리메이 8위), 쌀 원료 경쟁이 본격화",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -7874,6 +8040,16 @@
               "text": "쌀 클렌징폼이 화해·글로우픽 양쪽 다 상위인 건 진짜 검증된 거 아닌가",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "text": "녹두 다 써봤고 다시마도 써봤는데 이번엔 쌀 클렌징폼 도전해볼까",
+              "report_date": "2026-06-14",
+              "life_context": false
+            },
+            {
+              "text": "식물나라 뽀얀쌀 맑은 클렌징폼이 피부톤 밝아진다길래 기대 중",
+              "report_date": "2026-06-14",
+              "life_context": false
             }
           ],
           "sources": [
@@ -8008,6 +8184,13 @@
               "url": "https://unpa.me/community/cleansingfoam/107546510",
               "description": "언니의파우치",
               "report_date": "2026-06-13",
+              "life_context": false
+            },
+            {
+              "title": "식물나라 검은쌀 쫀득 클렌징폼 — 올리브영",
+              "url": "https://m.oliveyoung.co.kr/m/G.do?goodsNo=A000000252274",
+              "description": "올리브영",
+              "report_date": "2026-06-14",
               "life_context": false
             }
           ]
@@ -8410,10 +8593,14 @@
             {
               "title": "클렌징+기능성 융합 가속 — 글로우픽 상위에 살리실산(주미소 5위)·나이아신아마이드(원씽 계열) 클렌징폼 진입, 단순 세정을 넘어 '씻으면서 케어'하는 하이브리드 수요 급증",
               "report_date": "2026-06-13"
+            },
+            {
+              "title": "살리실산 클렌징폼(주미소) 양대 플랫폼 동반 상위 — 화해 9위·글로우픽 5위, '씻으면서 모공 케어' 기능성 클렌징이 여름 시즌 트러블 예방 수요와 맞물려 가속",
+              "report_date": "2026-06-14"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-13",
+          "last_seen": "2026-06-14",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -8704,6 +8891,11 @@
               "text": "클렌징에 AHA·BHA가 들어가면 세안+케어가 동시에 되니까 단계를 줄일 수 있어",
               "report_date": "2026-06-13",
               "life_context": false
+            },
+            {
+              "text": "장마 전에 세안 루틴 점검해야 해 — 여름엔 모공 관리가 먼저",
+              "report_date": "2026-06-14",
+              "life_context": true
             }
           ],
           "sources": [
