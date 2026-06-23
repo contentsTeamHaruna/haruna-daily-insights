@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-23",
-  "totalQuotes": 1051,
-  "totalSources": 615,
-  "totalLifeContext": 367,
+  "lastUpdated": "2026-06-24",
+  "totalQuotes": 1071,
+  "totalSources": 624,
+  "totalLifeContext": 380,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -1189,10 +1189,14 @@
             {
               "title": "모공각화증(팔 오돌토돌) — 바디크림으로 해결하고 싶은데 어떤 성분·제품이 실제로 효과 있는지 정보가 없다",
               "report_date": "2026-05-08"
+            },
+            {
+              "title": "글로우픽 6위 일리윤 레드이치 케어크림 신규 진입 — '가려움 전문 바디크림' 부상, 바디크림 기능화는 아직 가려움 단계",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-05-08",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "오돌토돌한, 손톱으로 긁으면 뭐가 나오는 그 느낌이 많이 줄어들었어",
@@ -1238,6 +1242,21 @@
               "text": "모공각화증에는 요소(우레아) 크림이 좋다는데 바디크림 중에 우레아 함유 제품이 잘 안 보여",
               "report_date": "2026-05-08",
               "life_context": false
+            },
+            {
+              "text": "몸 건조하고 간지러운데 바디로션이 보습만 하고 가려움은 따로 관리해야 하네",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "일리윤 레드이치 써봤는데 가려운 부위에 집중적으로 바르면 진정되는 느낌",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "바디워시는 등드름·기능성인데 바디크림은 아직 보습 아니면 가려움 정도",
+              "report_date": "2026-06-24",
+              "life_context": false
             }
           ],
           "sources": [
@@ -1281,6 +1300,27 @@
               "url": "https://theqoo.net/beauty/2968198810",
               "description": "더쿠",
               "report_date": "2026-05-08",
+              "life_context": false
+            },
+            {
+              "title": "글로우픽 바디로션/크림 랭킹",
+              "url": "https://glowpick.co.kr/ranking/category/2/49",
+              "description": "글로우픽",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "title": "여름에 바디 피부 관리 어떻게 하세요?",
+              "url": "https://www.harpersbazaar.co.kr/article/68430",
+              "description": "하퍼스 바자",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "title": "에스트라 아토베리어365 바디로션",
+              "url": "https://www.aestura.com/m/product/view.do?prdSeq=1086",
+              "description": "에스트라",
+              "report_date": "2026-06-24",
               "life_context": false
             }
           ]
@@ -2235,10 +2275,18 @@
             {
               "title": "바디케어도 멀티스텝인데 바디크림만 단순 보습이라니",
               "report_date": "2026-06-23"
+            },
+            {
+              "title": "장마 D-1인데 바디로션 바르면 내일부터 습도 80%에 다 지워질 것 같아",
+              "report_date": "2026-06-24"
+            },
+            {
+              "title": "화해 바디로션 TOP 10, 러베까지 7위 안착으로 세라마이드 10개 독점 59일째 — 여름 겔 바디크림 시장 공백 더 깊어져",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-23",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -3169,6 +3217,21 @@
               "text": "오프온 등드름 바디워시는 기능성인데 바디로션은 기능성이 없네",
               "report_date": "2026-06-23",
               "life_context": false
+            },
+            {
+              "text": "안바르면 건조하고 겨울에쓰던거 바르기엔 너무 무거워!",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "뽀송뽀송하고 향 좋은 바디로션 찾는데 여름에 맞는 게 없어",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "일리윤 세라마이드 순하고 성분 좋은데 끈적임 없다는 평가도 있지만 여름엔 역시 무거워",
+              "report_date": "2026-06-24",
+              "life_context": true
             }
           ],
           "sources": [
@@ -3962,6 +4025,13 @@
               "description": "올리브영",
               "report_date": "2026-06-23",
               "life_context": false
+            },
+            {
+              "title": "바디로션 추천 좀",
+              "url": "https://theqoo.net/beauty/3347632673",
+              "description": "더쿠",
+              "report_date": "2026-06-24",
+              "life_context": false
             }
           ]
         }
@@ -4039,10 +4109,14 @@
             {
               "title": "여름 세럼 끈적이면 레이어링 포기 — 가벼운 워터리 세럼만 살아남는 시장",
               "report_date": "2026-06-22"
+            },
+            {
+              "title": "토리든 다이브인 세럼 18.3만 리뷰 1위 사수 + 6월 급상승 2위 — '워터리 텍스처의 제왕' 독주, 비타민 세럼은 입문용 수준",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-22",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
@@ -4222,6 +4296,21 @@
             {
               "text": "PDRN 에센스는 쫀쫀한 느낌으로 며칠 아침저녁으로 발랐더니 피부가 매끄러워지고 속보습까지 되는 느낌",
               "report_date": "2026-06-22",
+              "life_context": true
+            },
+            {
+              "text": "토리든 다이브인 물처럼 가볍게 흡수되는데 속수분 채워주는 느낌",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "구달 청귤 비타C 세럼은 비타민 세럼 입문용으로 추천",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "수분 부족형 지성한테 토리든 다이브인 세럼이 무난 — 여름 필수템",
+              "report_date": "2026-06-24",
               "life_context": true
             }
           ],
@@ -4455,6 +4544,13 @@
               "url": "https://theqoo.net/beauty/3284802145",
               "description": "더쿠",
               "report_date": "2026-06-22",
+              "life_context": true
+            },
+            {
+              "title": "봄~여름 지성 추천 LIST",
+              "url": "https://m.dcinside.com/board/cosmetic/1526103?recommend=1",
+              "description": "디시인사이드",
+              "report_date": "2026-06-24",
               "life_context": true
             }
           ]
@@ -6583,10 +6679,18 @@
             {
               "title": "PDRN, 엑소좀, 이번엔 니오좀 — 전달체 기술 3파전에 소비자 혼란 극대화",
               "report_date": "2026-06-23"
+            },
+            {
+              "title": "에스네이처 아쿠아 스쿠알란 세럼 화해 6위(4.7점 최고 평점) — 스쿠알란+히알루론산 '하이브리드 보습'이 여름 속건조의 새 답안",
+              "report_date": "2026-06-24"
+            },
+            {
+              "title": "이니스프리 레티놀 시카 흔적 앰플 화해 7위 신규 — PDRN·니오좀·펩타이드에 레티놀까지, 기능성 세럼 4파전으로 선택 혼란 극대화",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-23",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -7407,6 +7511,36 @@
               "text": "레이어랩 니오좀 판테놀 써봤는데 판테놀이 더 잘 들어가는 느낌인지는 모르겠어",
               "report_date": "2026-06-23",
               "life_context": true
+            },
+            {
+              "text": "물처럼 가볍게 흡수되는데 속수분 채워주는 느낌",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "세정 + 수분 + 선크림 이 세 개만 잘 챙겨도 피부 컨디션 유지되는 듯",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "스쿠알란이 유분감 없이 기름막 형성해준다는데 여름에 딱인 듯",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "PDRN 효과 없다더니 이번엔 레티놀이래 도대체 뭘 발라야 하는 건지",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "레티놀이 흔적에 효과 있다길래 이니스프리 써보는 중인데 시카 들어있어서 자극 걱정은 적어",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "전달체 기술(니오좀·PDRN)이냐 활성성분(레티놀·펩타이드)이냐 기준부터 모르겠다",
+              "report_date": "2026-06-24",
+              "life_context": false
             }
           ],
           "sources": [
@@ -8031,6 +8165,20 @@
               "url": "https://www.allurekorea.com/2026/03/01/exosome/",
               "description": "얼루어 코리아",
               "report_date": "2026-06-22",
+              "life_context": false
+            },
+            {
+              "title": "봄~여름 지성 추천 LIST",
+              "url": "https://m.dcinside.com/board/cosmetic/1526103?recommend=1",
+              "description": "디시인사이드",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "title": "스킨케어템 정리 — 아침/저녁 스킨케어 루틴",
+              "url": "https://unpa.me/community/unniepick/123841909",
+              "description": "언니의파우치",
+              "report_date": "2026-06-24",
               "life_context": false
             }
           ]
@@ -9948,10 +10096,18 @@
             {
               "title": "화해 폼클렌징 TOP 5 전부 식자재인데 프리메이 '햇쌀'까지 8위 — 식자재 클렌저 과잉에 선택 마비",
               "report_date": "2026-06-23"
+            },
+            {
+              "title": "화해 클렌징폼 TOP 10에 식자재 클렌저 5개 유지 + 주미소 살리실산 9위 안착 — '산(Acid) 세정' 카테고리가 식자재 포화에 도전장",
+              "report_date": "2026-06-24"
+            },
+            {
+              "title": "SRB 쌀뜨물 효소 세안제 화해 급상승 5위 유지 — 장마 D-1, '효소 세정'이 내일부터의 복합 세정(비+땀+선크림) 답안으로 각광",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-23",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -10187,6 +10343,16 @@
               "text": "에스네이처 아쿠아 라이스 약산성이라 순한데 세정력은 좀 아쉽다",
               "report_date": "2026-06-23",
               "life_context": false
+            },
+            {
+              "text": "주미소 살리실산 폼클렌저 모공에 좋다길래 써봤는데 당기지 않고 깔끔",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "약산성 폼클렌징 세정력 부족하다고 느꼈는데 살리실산이 다르더라",
+              "report_date": "2026-06-24",
+              "life_context": false
             }
           ],
           "sources": [
@@ -10377,6 +10543,13 @@
               "url": "https://unpa.me/community/cleansingfoam/128382961",
               "description": "언니의파우치",
               "report_date": "2026-06-23",
+              "life_context": false
+            },
+            {
+              "title": "글로우픽 올리브영 클렌징폼",
+              "url": "https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112",
+              "description": "글로우픽",
+              "report_date": "2026-06-24",
               "life_context": false
             }
           ]
@@ -10815,10 +10988,14 @@
             {
               "title": "아침 세안 전용 클렌저가 필요한데 너무 센 것도 약한 것도 싫어",
               "report_date": "2026-06-22"
+            },
+            {
+              "title": "올영픽 NEW 토리든 다이브인 클렌징폼 + 화해 3위 리뷰 21.4만 — 히알루론산 클렌징이 장마 D-1 세정 수요를 독점",
+              "report_date": "2026-06-24"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-22",
+          "last_seen": "2026-06-24",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -11214,6 +11391,21 @@
               "text": "토리든 아침 클렌징으로 괜찮다",
               "report_date": "2026-06-22",
               "life_context": false
+            },
+            {
+              "text": "토리든 다이브인 클렌징폼 세정력 괜찮으면서 안당겨서 여름에 딱",
+              "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "장마 시작되면 선크림 세정력 더 중요해지는데 히알루론산이 속당김 없이 씻겨줘",
+              "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 세정 + 수분 + 선크림 세 개만 잘 챙기면 OK",
+              "report_date": "2026-06-24",
+              "life_context": true
             }
           ],
           "sources": [
@@ -11523,6 +11715,13 @@
               "url": "https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112",
               "description": "글로우픽",
               "report_date": "2026-06-22",
+              "life_context": false
+            },
+            {
+              "title": "올리브영 랭킹",
+              "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+              "description": "올리브영",
+              "report_date": "2026-06-24",
               "life_context": false
             }
           ]
