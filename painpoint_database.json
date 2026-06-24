@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-24",
-  "totalQuotes": 1071,
-  "totalSources": 624,
-  "totalLifeContext": 380,
+  "lastUpdated": "2026-06-25",
+  "totalQuotes": 1089,
+  "totalSources": 634,
+  "totalLifeContext": 388,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -197,10 +197,14 @@
             {
               "title": "장마 코앞인데 바디로션 바르면 습해서 끈적여 죽겠어",
               "report_date": "2026-06-22"
+            },
+            {
+              "title": "오프온 바디로션 '끈적함 없이 흡수 빠르고 옷에 안 달라붙음' — 겔형은 아니지만 장마 대비 바디로션의 유일한 대안으로 부상",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-22",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -796,6 +800,21 @@
               "text": "흡수력이 빠르고 촉촉해서 좋았어 몇번 안문질러도 되더라",
               "report_date": "2026-06-22",
               "life_context": false
+            },
+            {
+              "text": "기름지지 않으면서도 흡수가 빨리 되고 끈적함이 없어서 바로 옷 입어도 옷 달라붙는 느낌이 없어",
+              "report_date": "2026-06-25",
+              "life_context": true
+            },
+            {
+              "text": "5일 사용 후 다음날 몸 긁는 증상 해소, 팔의 오돌토돌한 느낌 감소",
+              "report_date": "2026-06-25",
+              "life_context": true
+            },
+            {
+              "text": "향 좋고 발림성 안 무거운 바디로션 찾는데 여름에 맞는 게 없어",
+              "report_date": "2026-06-25",
+              "life_context": true
             }
           ],
           "sources": [
@@ -1168,6 +1187,13 @@
               "url": "https://theqoo.net/beauty/4103527299",
               "description": "더쿠",
               "report_date": "2026-06-22",
+              "life_context": false
+            },
+            {
+              "title": "글로우픽 바디로션/크림 랭킹",
+              "url": "https://www.glowpick.com/categories/49?monthTerm=24",
+              "description": "글로우픽",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
@@ -2283,10 +2309,18 @@
             {
               "title": "화해 바디로션 TOP 10, 러베까지 7위 안착으로 세라마이드 10개 독점 59일째 — 여름 겔 바디크림 시장 공백 더 깊어져",
               "report_date": "2026-06-24"
+            },
+            {
+              "title": "장마 시작인데 겨울에 쓰던 바디로션 바르다가 땀남 — 바디로션 바르는 것 자체가 고문",
+              "report_date": "2026-06-25"
+            },
+            {
+              "title": "화해 바디로션 TOP 10 세라마이드 독점 60일째, 겔 바디크림 0개 — 장마 시작해도 시장에 답이 없다",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-24",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -3231,6 +3265,11 @@
             {
               "text": "일리윤 세라마이드 순하고 성분 좋은데 끈적임 없다는 평가도 있지만 여름엔 역시 무거워",
               "report_date": "2026-06-24",
+              "life_context": true
+            },
+            {
+              "text": "겨울에 쓰다 남은거 쓰려니 흡수가 너무 느려서 바디로션 바르다 다시 땀남",
+              "report_date": "2026-06-25",
               "life_context": true
             }
           ],
@@ -5393,10 +5432,14 @@
             {
               "title": "민감 피부에 PDRN 세럼 트러블 보고 증가 — 향료·보존제 조합에 따른 피부 자극, '모든 피부에 무조건 맞는 건 아니다'는 인식 확산",
               "report_date": "2026-06-19"
+            },
+            {
+              "title": "라보레브 피치마이크로바이옴 9위·앰플엔 세라마이드샷 10위 신규 진입 — 마이크로바이옴+세라마이드 세럼이 장마 민감 피부의 새 수요로 부상",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-19",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "화끈거림 & 따가움이 일시적이지만, 누군가에겐 정말 자극 요소",
@@ -5557,6 +5600,21 @@
               "text": "리들샷이랑 PDRN 바르면 어느 타이밍에 뭘 먼저 발라야 하는 건지 너무 복잡",
               "report_date": "2026-06-19",
               "life_context": false
+            },
+            {
+              "text": "PDRN 효과 없다더니 이번엔 레티놀이래 도대체 뭘 발라야 하는 건지",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "전달체 기술(니오좀·PDRN)이냐 활성성분(레티놀·펩타이드)이냐 기준부터 모르겠다",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "장벽 강화 세럼이 장마철에는 수분 세럼보다 더 중요한 것 같아",
+              "report_date": "2026-06-25",
+              "life_context": false
             }
           ],
           "sources": [
@@ -5712,6 +5770,20 @@
               "url": "https://www.allurekorea.com/2025/02/16/pdrn/",
               "description": "얼루어 코리아",
               "report_date": "2026-06-19",
+              "life_context": false
+            },
+            {
+              "title": "화해 에센스/세럼/앰플 랭킹",
+              "url": "https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174",
+              "description": "화해",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "title": "PDRN부터 엑소좀까지 세럼 TOP 7",
+              "url": "https://www.harpersbazaar.co.kr/article/1896283",
+              "description": "하퍼스 바자",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
@@ -5973,10 +6045,14 @@
             {
               "title": "메디큐브 펩타이드 세럼 리뷰 794개로 8위 진입 — 펩타이드+모공 소구가 '세럼 뉴웨이브'",
               "report_date": "2026-06-23"
+            },
+            {
+              "title": "에스네이처 스쿠알란 세럼 화해 6위(4.7 최고 평점) 유지 + 에스네이처 스쿠알란 수분크림 올영픽 1등 모공 수분크림 — 스쿠알란 생태계 확장 중",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-05-13",
-          "last_seen": "2026-06-23",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "PDRN 다음은 하이퍼-PDRN이래, 그다음은 엑소좀이래 — 매달 새 성분이 나와서 따라갈 수가 없어",
@@ -6091,6 +6167,16 @@
             {
               "text": "히알루론산은 수분만이잖아 펩타이드는 탄력까지 해주니까",
               "report_date": "2026-06-23",
+              "life_context": false
+            },
+            {
+              "text": "스쿠알란이 유분감 없이 기름막 형성해준다는데 여름에 딱인 듯",
+              "report_date": "2026-06-25",
+              "life_context": true
+            },
+            {
+              "text": "에스네이처 스쿠알란 크림까지 올영픽이면 스쿠알란이 진짜 대세",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ],
@@ -6219,6 +6305,20 @@
               "url": "https://eccentric21.com/entry/PDRN-%ED%9A%A8%EA%B3%BC-%ED%95%A8%EB%9F%89%EB%B3%84-%EC%B0%A8%EC%9D%B4-%EC%A1%B0%ED%95%A9-%EA%B8%88%EC%A7%80-%EC%84%B1%EB%B6%84-%ED%94%BC%EB%B6%80%ED%83%80%EC%9E%85-%EC%B6%94%EC%B2%9C",
               "description": "뷰티 블로그",
               "report_date": "2026-06-23",
+              "life_context": false
+            },
+            {
+              "title": "봄~여름 지성 추천 LIST",
+              "url": "https://m.dcinside.com/board/cosmetic/1526103?recommend=1",
+              "description": "디시인사이드",
+              "report_date": "2026-06-25",
+              "life_context": true
+            },
+            {
+              "title": "올리브영 랭킹",
+              "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+              "description": "올리브영",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
@@ -6687,10 +6787,14 @@
             {
               "title": "이니스프리 레티놀 시카 흔적 앰플 화해 7위 신규 — PDRN·니오좀·펩타이드에 레티놀까지, 기능성 세럼 4파전으로 선택 혼란 극대화",
               "report_date": "2026-06-24"
+            },
+            {
+              "title": "화해 세럼 TOP 5에 히알루론산 3개 석권 — 장마 시작과 함께 '가볍게 채우는 수분' 세럼 독주 완성, 기능성 세럼은 뒷전",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-24",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -7541,6 +7645,16 @@
               "text": "전달체 기술(니오좀·PDRN)이냐 활성성분(레티놀·펩타이드)이냐 기준부터 모르겠다",
               "report_date": "2026-06-24",
               "life_context": false
+            },
+            {
+              "text": "수분 부족형 지성한테 토리든 다이브인 세럼이 무난 — 여름 필수템",
+              "report_date": "2026-06-25",
+              "life_context": true
+            },
+            {
+              "text": "장마 시작되면 수분 세럼만 바르고 크림은 스킵하는 게 편해",
+              "report_date": "2026-06-25",
+              "life_context": false
             }
           ],
           "sources": [
@@ -8179,6 +8293,13 @@
               "url": "https://unpa.me/community/unniepick/123841909",
               "description": "언니의파우치",
               "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "title": "화해 6월 월간 랭킹",
+              "url": "https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/",
+              "description": "화해 비즈니스",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
@@ -10104,10 +10225,14 @@
             {
               "title": "SRB 쌀뜨물 효소 세안제 화해 급상승 5위 유지 — 장마 D-1, '효소 세정'이 내일부터의 복합 세정(비+땀+선크림) 답안으로 각광",
               "report_date": "2026-06-24"
+            },
+            {
+              "title": "장마 D-Day 세정 수요 본격화 — 화해 클렌징폼 TOP 10 전일 동일 유지, 비플레인 녹두·토리든 히알루론산·주미소 살리실산 '3강 체제' 안정",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-24",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -10353,6 +10478,11 @@
               "text": "약산성 폼클렌징 세정력 부족하다고 느꼈는데 살리실산이 다르더라",
               "report_date": "2026-06-24",
               "life_context": false
+            },
+            {
+              "text": "토리든 다이브인 클렌징폼 세정력 괜찮으면서 안당겨서 여름에 딱",
+              "report_date": "2026-06-25",
+              "life_context": true
             }
           ],
           "sources": [
@@ -10563,10 +10693,14 @@
             {
               "title": "거품의 질감이 사용 만족도의 핵심 변수",
               "report_date": "2026-04-28"
+            },
+            {
+              "title": "글로우픽 올리브영 VT 시카 마일드 폼 클렌저 2위 신규 — 장마 시작과 함께 '시카 진정 세정'이 센카 거품 세정에 도전장",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-04-28",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "거품도 쫀쫀하고 자극없어서 아침저녁 사용하기 좋음",
@@ -10581,6 +10715,21 @@
             {
               "text": "뽀드득하고 깔끔한 사용감",
               "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "text": "약산성 폼클렌징 세정력 부족하다고 느꼈는데 시카가 진정까지 해줘서 다르더라",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "장마 시작되면 피부가 예민해지는데 세정력만 쫓으면 더 뒤집어져",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "순하면서 세정력 좋은 폼클렌징 — 시카 성분이 진정도 해주면 좋겠어",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ],
@@ -10604,6 +10753,27 @@
               "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1450005",
               "description": "\"뽀드득 깔끔\" 비플레인 녹두 인용 출처",
               "report_date": "2026-04-28",
+              "life_context": false
+            },
+            {
+              "title": "글로우픽 올리브영 클렌징폼",
+              "url": "https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112",
+              "description": "글로우픽",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "title": "순하면서 세정력 좋은 폼클렌징 추천",
+              "url": "https://unpa.me/community/cleansingfoam/128382961",
+              "description": "언니의파우치",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "title": "PX 폼클렌징 추천 TOP3",
+              "url": "https://unpa.me/community/cleansingfoam/123588780",
+              "description": "언니의파우치",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
@@ -10992,10 +11162,14 @@
             {
               "title": "올영픽 NEW 토리든 다이브인 클렌징폼 + 화해 3위 리뷰 21.4만 — 히알루론산 클렌징이 장마 D-1 세정 수요를 독점",
               "report_date": "2026-06-24"
+            },
+            {
+              "title": "SRB 효소 세안제 화해 급상승 5위 유지 + 장마 첫날 '비+땀+선크림 삼중 세정' 본격 개시 — 효소 세정이 장마 세정의 핵심으로",
+              "report_date": "2026-06-25"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-24",
+          "last_seen": "2026-06-25",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -11406,6 +11580,21 @@
               "text": "여름엔 세정 + 수분 + 선크림 세 개만 잘 챙기면 OK",
               "report_date": "2026-06-24",
               "life_context": true
+            },
+            {
+              "text": "SRB 쌀뜨물 효소 세안제 써봤는데 각질이 알갱이처럼 밀려 나오는 게 신기",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "장마 시작되면 선크림 세정력 더 중요해지는데 효소가 답인 것 같아",
+              "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "text": "약산성 폼클렌징 세정력 부족하다고 느꼈는데 효소 세안제는 다르더라",
+              "report_date": "2026-06-25",
+              "life_context": false
             }
           ],
           "sources": [
@@ -11722,6 +11911,13 @@
               "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
               "description": "올리브영",
               "report_date": "2026-06-24",
+              "life_context": false
+            },
+            {
+              "title": "화해 6월 월간 랭킹",
+              "url": "https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/",
+              "description": "화해 비즈니스",
+              "report_date": "2026-06-25",
               "life_context": false
             }
           ]
