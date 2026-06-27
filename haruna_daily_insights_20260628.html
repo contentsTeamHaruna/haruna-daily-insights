@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하루나 바디크림 데일리 인사이트 — 2026.06.28</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f8f6f3;
+    color: #2d2a26;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e8e4df;
+    margin-bottom: 40px;
+  }
+  .header-emoji { font-size: 48px; margin-bottom: 12px; }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    color: #8a8580;
+    font-weight: 400;
+  }
+  .header .brand {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    background: #f0ebe4;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6b6560;
+    font-weight: 500;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+    letter-spacing: -0.3px;
+  }
+
+  .weather-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e5fc 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .weather-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-bottom: 16px;
+  }
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .weather-item {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
+  .weather-item .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .weather-item .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 4px;
+  }
+  .weather-keywords {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .weather-keywords .label {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .keyword-tag {
+    display: inline-block;
+    background: #1a3a5c;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 3px 4px 3px 0;
+    font-weight: 400;
+  }
+  .sogu-point {
+    background: rgba(255,255,255,0.9);
+    border-left: 3px solid #3a7bd5;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3a5c;
+    line-height: 1.6;
+  }
+
+  .insight-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .insight-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-left: 4px solid;
+  }
+  .insight-card:nth-child(1) { border-left-color: #e8a87c; }
+  .insight-card:nth-child(2) { border-left-color: #85cdca; }
+  .insight-card:nth-child(3) { border-left-color: #d4a5d0; }
+  .insight-card .number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .insight-card .category-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .insight-card .category-badge.bodycream { background: #e8a87c; }
+  .insight-card .category-badge.serum { background: #85cdca; }
+  .insight-card .category-badge.foam { background: #d4a5d0; }
+  .insight-card .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .insight-card .desc {
+    font-size: 14px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .painpoint-section { margin-bottom: 40px; }
+  .painpoint-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4cfc8;
+  }
+  .painpoint-category-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin: 28px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e4df;
+  }
+  .painpoint-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .painpoint-card .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .painpoint-card .badge.new { background: #e74c3c; }
+  .painpoint-card .badge.ongoing { background: #3498db; }
+  .painpoint-card .badge.change { background: #f39c12; }
+  .painpoint-card .painpoint-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .painpoint-card .painpoint-desc {
+    font-size: 14px;
+    color: #5a5550;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .painpoint-card .quote {
+    background: #fafaf8;
+    border-left: 3px solid #d4cfc8;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #6b6560;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .painpoint-card .review-links { margin: 16px 0; }
+  .painpoint-card .review-links .review-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 6px;
+  }
+  .painpoint-card .review-links a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    word-break: break-all;
+  }
+  .painpoint-card .review-links a:hover { text-decoration: underline; }
+  .haruna-opportunity {
+    background: #fdf8f0;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #8a6d3b;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .haruna-opportunity::before {
+    content: '하루나 기회';
+    display: inline-block;
+    background: #e8a87c;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .source-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .source-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .source-card h3 .num {
+    background: #2d2a26;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .source-card ul { list-style: none; padding: 0; }
+  .source-card ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.7;
+  }
+  .source-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #d4cfc8;
+    border-radius: 50%;
+  }
+
+  .table-wrap { overflow-x: auto; margin-bottom: 8px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 13px;
+  }
+  th {
+    background: #2d2a26;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0ebe4;
+    color: #4a4540;
+    line-height: 1.6;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fdfcfa; }
+  .star { color: #e8a87c; font-weight: 700; }
+
+  .needs-list { list-style: none; padding: 0; }
+  .needs-list li {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .needs-list li strong {
+    display: block;
+    font-size: 15px;
+    color: #1a1815;
+    margin-bottom: 4px;
+  }
+  .needs-list li span {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.6;
+  }
+
+  .idea-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .idea-card .category {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .idea-card .category.weather { background: #5b9bd5; }
+  .idea-card .category.ingredient { background: #d4a5d0; }
+  .idea-card .category.viral { background: #e8a87c; }
+  .idea-card .category.infographic { background: #7c8db5; }
+  .idea-card .idea-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1815;
+    margin-bottom: 8px;
+  }
+  .idea-card .idea-desc {
+    font-size: 13px;
+    color: #5a5550;
+    line-height: 1.7;
+  }
+
+  .hashtag-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+  }
+  .hashtag-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .hashtag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px 4px 4px 0;
+    font-weight: 500;
+  }
+  .hashtag.trending { background: #f0ebe4; color: #6b5540; }
+  .hashtag.stable { background: #e8e4df; color: #6b6560; }
+  .hashtag.new-tag { background: #e8a87c; color: #fff; }
+
+  .tomorrow-card {
+    background: linear-gradient(135deg, #fdf8f0 0%, #f8f0e5 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+  }
+  .tomorrow-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b5540;
+    margin-bottom: 16px;
+  }
+  .tomorrow-item {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .tomorrow-item:last-child { margin-bottom: 0; }
+  .tomorrow-item strong {
+    display: block;
+    font-size: 14px;
+    color: #1a1815;
+    margin-bottom: 6px;
+  }
+  .tomorrow-item p {
+    font-size: 13px;
+    color: #6b6560;
+    line-height: 1.7;
+  }
+
+  .sources {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sources h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8580;
+    margin-bottom: 12px;
+  }
+  .sources a {
+    display: block;
+    font-size: 12px;
+    color: #5a9bd5;
+    text-decoration: none;
+    padding: 3px 0;
+    word-break: break-all;
+  }
+  .sources a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-emoji">🧴</div>
+    <h1>하루나 바디크림 데일리 인사이트</h1>
+    <div class="date">2026.06.28 (일요일)</div>
+    <div class="brand">haruna beauty lab</div>
+  </div>
+
+  <!-- Weather -->
+  <div class="weather-card">
+    <h2>🌤️ 오늘의 날씨 컨텍스트</h2>
+    <div class="weather-grid">
+      <div class="weather-item">
+        <div class="label">서울 기온</div>
+        <div class="value">최저 18℃ / 최고 30~33℃</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">습도</div>
+        <div class="value">평균 88% (새벽 고습 → 오후 소나기 가능성과 맞물려 습도 급상승, 장마 재진입 조짐)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">날씨</div>
+        <div class="value">대체로 맑다가 낮부터 구름 많아짐, 오후~저녁 서울·인천·경기 곳에 따라 소나기(5~30mm)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">미세먼지</div>
+        <div class="value">보통 (AQI 78, PM2.5 보통)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">자외선</div>
+        <div class="value">매우 높음 (UV 8~9, 오전 맑은 시간대 UV 최고조 → 오후 구름·소나기에 하락)</div>
+      </div>
+      <div class="weather-item">
+        <div class="label">장마 상태</div>
+        <div class="value">장마 소강 4일차+오후 소나기 재개 조짐</div>
+      </div>
+    </div>
+    <div class="weather-keywords">
+      <div class="label">시즌 키워드</div>
+      <span class="keyword-tag">장마 소강 4일차+오후 소나기 재개 조짐</span>
+      <span class="keyword-tag">일요일 주말 마무리 케어</span>
+      <span class="keyword-tag">UV 8~9 오전 자외선 집중</span>
+      <span class="keyword-tag">30~33℃ 한여름 체감+습도 88% 무더위</span>
+      <span class="keyword-tag">화해 바디·세럼 TOP 10 역대 최장 4일 연속 동결</span>
+      <span class="keyword-tag">글로우픽 어성초 세정 2위 신규 진입</span>
+    </div>
+    <div class="sogu-point">
+      "습도 88%, 33℃ 일요일 — 실키 머쉬룸의 흰목이버섯 겔이 습기 속에서도 번들거리지 않고, 오후 소나기 후 촉촉한 속보습을 3초 만에 완성합니다"
+    </div>
+  </div>
+
+  <!-- TOP 3 -->
+  <div class="section">
+    <div class="section-title">오늘의 핵심 인사이트 (TOP 3)</div>
+    <div class="insight-cards">
+      <div class="insight-card">
+        <div class="number">INSIGHT #1</div>
+        <span class="category-badge bodycream">바디크림</span>
+        <div class="title">화해 바디로션 TOP 10 4일 연속 완전 동결·세라마이드 독점 63일째 — 세타필 9위 연속 안정으로 CeraVe 교체전 종료, 그러나 겔 바디크림은 여전히 0개</div>
+        <div class="desc">화해 바디로션 TOP 10이 4일 연속 순위·구성 완전 동결. 세타필 모이스춰라이징 로션(9위, 4.50, 1,766리뷰)이 이틀 연속 안정 유지하며 CeraVe와의 일일 교체 현상이 사실상 종료. 그러나 핵심은 불변 — 10개 전부 세라마이드·고보습 크림형, 겔 바디크림은 63일째 0개. 습도 88% 일요일, 겔 제형의 수요가 극대화되는 날에도 시장 답은 여전히 공백.</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">INSIGHT #2</div>
+        <span class="category-badge serum">세럼</span>
+        <div class="title">화해 세럼 TOP 10 4일 연속 완전 동결 — 역대 최장 동결 기록, 히알루론산(1·3·5위) 장악 4일째, 시장 고착화가 '법칙'이 되다</div>
+        <div class="desc">화해 세럼 TOP 10이 4일 연속 완전히 동일한 구성·순위를 유지하며 역대 최장 동결 기록 달성. 토리든(1위, 4.6, 183,226리뷰)·웰라쥬(3위, 4.6)·아비브(5위, 4.5) 히알루론산 3파전이 4일째 요지부동. 에스네이처 스쿠알란(6위, 4.7 최고 평점) 4일 연속 유지. 시장이 '고착화'를 넘어 '법칙화' — 신규 진입이 구조적으로 불가능한 수준.</div>
+      </div>
+      <div class="insight-card">
+        <div class="number">INSIGHT #3</div>
+        <span class="category-badge foam">폼클렌징</span>
+        <div class="title">글로우픽 올영 아비브 아크네 어성초 폼 2위 신규 진입·VT 시카 5위 하락 — 여름 트러블 세정에서 어성초가 시카를 밀어냈다</div>
+        <div class="desc">글로우픽 올리브영 클렌징폼 랭킹에서 아비브 아크네 폼 클렌저 어성초(4.26, 317리뷰)가 2위로 신규 진입하며 VT 시카 마일드 폼(4.19)이 2위에서 5위로 하락. 여름 트러블·아크네 세정 수요가 급증하는 시점에서 '시카 진정' → '어성초 아크네 집중 세정'으로 소비자 선택이 이동. 오후 소나기+습도 88% 환경에서 모공·트러블 세정 니즈의 방향 전환 신호.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part 1: Voice of Customer -->
+  <div class="painpoint-section">
+    <div class="painpoint-section-title">🗣️ Part 1: Voice of Customer — 소비자 페인포인트 심층 분석</div>
+
+    <!-- 바디크림 -->
+    <div class="painpoint-category-title">🧴 바디크림/바디로션 — Top 3 페인포인트</div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "습도 88%+33℃ 무더위, 바디로션 바르면 습기에 겹쳐서 온몸이 끈적 — 겔 바디크림은 여전히 시장에 0개"</div>
+      <div class="painpoint-desc">장마 소강 4일차이지만 습도가 88%까지 치솟으며 실질적 무더위 체감. 바디로션을 바르면 습기와 겹쳐서 끈적임이 극대화되고, 안 바르면 에어컨 건조에 각질이 일어남. 언니의파우치·더쿠에서 "끈적임 없고 피부에 잘 스며드는 바디로션" 요구가 일요일 주말 마무리에도 지속.</div>
+      <div class="quote">"찝찝한 끈적임이 없고 피부에 잘 스며드는게 느껴지면 기분도 좋아"</div>
+      <div class="quote">"습한 날에 바디로션 바르면 그냥 온몸이 번들번들해 여름엔 진짜 가볍게 발라야 돼"</div>
+      <div class="quote">"끈적임도 없고 수분감 대박이고 보습력도 좋아"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://unpa.me/community/lotion/112241471" target="_blank">여름에 끈적임 없는 지성 바디로션 추천 — 언니의파우치</a>
+        <a href="https://unpa.me/community/question/112095286" target="_blank">여름 바디로션 추천해주세요 — 언니의파우치</a>
+        <a href="https://theqoo.net/beauty/2852868355" target="_blank">여름에 쓰기 좋은 바디로션 — 더쿠</a>
+      </div>
+      <div class="haruna-opportunity">습도 88% 일요일, 크림형 바디로션의 끈적임이 최악인 날. "실키 머쉬룸 — 흰목이버섯 겔이 습기 속에서도 번들거리지 않는 유일한 바디크림. 습도가 높을수록 겔의 3초 흡수가 빛납니다".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "화해 바디로션 TOP 10 4일 연속 완전 동결·세라마이드 독점 63일째 — 세타필 9위 안정, CeraVe 교체전 종료됐지만 겔 바디크림 공백은 불변"</div>
+      <div class="painpoint-desc">화해 바디로션 TOP 10 분석: 일리윤 세라마이드(1위, 4.79)·아토팜 수딩 젤(2위, 4.76)·아토팜 MLE(3위, 4.74)·더마비(4위, 4.56)·레스케미 갈락토미세스(5위, 4.69)·에스트라 아토베리어(6위, 4.67)·러베 5중 세라마이드(7위, 4.72)·일리윤 울트라 리페어(8위, 4.45)·세타필 모이스춰라이징(9위, 4.50)·더마비 세라엠디(10위, 4.62). 4일 연속 완전 동결. 세타필이 9위에 안정적으로 정착하며 CeraVe와의 일일 교체 현상이 종료. 하지만 근본 문제는 그대로 — 10개 전부 세라마이드 고보습, 겔 바디크림 63일째 0개.</div>
+      <div class="quote">"세타필이 결국 9위를 굳혔네 CeraVe는 이제 안 올라오나 봐"</div>
+      <div class="quote">"보습력 좋고 안끈적이는 바디로션 뭐있어..? 둘 다 만족하는 게 없어"</div>
+      <div class="quote">"일리윤 세라마이드 로션 끈적임 없고 피부에 잔여감 남는거 없이 쏙 흡수"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4410" target="_blank">화해 바디로션 TOP 100 — 화해</a>
+        <a href="https://www.glowpick.com/categories/49?monthTerm=24" target="_blank">글로우픽 바디로션/크림 랭킹 — 글로우픽</a>
+        <a href="https://unpa.me/community/question/112022580" target="_blank">여름 바디로션 뭐쓰세요? — 언니의파우치</a>
+      </div>
+      <div class="haruna-opportunity">TOP 10이 4일째 동결되며 시장이 완전히 굳어진 순간. "63일간 아무도 채우지 못한 겔 바디크림 공백 — 실키 머쉬룸이 세라마이드 일색의 시장에 여름 유일의 답안을 제시합니다".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge change">변동</span>
+      <div class="painpoint-title">📌 "글로우픽 레이비 산양유 1위 상승·바이오더마 3위 하락, 오프온 킵 캄 10위(4.70) 유지 — '빠른 흡수' 기준이 여름 바디 랭킹을 재편하고 있다"</div>
+      <div class="painpoint-desc">글로우픽 바디로션 랭킹에서 레이비 산양유(4.48)가 1위로 상승하고 바이오더마 아토덤(4.62)이 3위로 하락. 에스트라 아토베리어365(2위, 4.69)가 안정적. 오프온 킵 캄 앤드 모이스처(10위, 4.70)는 4일 연속 유지. 더쿠에서 오프온의 "기름지지 않으면서도 흡수가 빨리 되고 끈적함이 없어서 바로 옷 입어도 달라붙지 않아" 후기가 모공각화증 케어 효과까지 더해져 재확산 중.</div>
+      <div class="quote">"기름지지 않으면서도 흡수가 빨리 되고 끈적함이 없어서 바로 옷 입어도 옷 달라붙는 느낌이 없어"</div>
+      <div class="quote">"다 쓰면 내돈내산으로 재구매 의사 있다 모공각화증 부위에서 오돌토돌한 느낌이 많이 줄어들었다"</div>
+      <div class="quote">"주말 나갈 때 선크림 전에 바디로션 바르는데 바로 흡수돼야 옷 입을 수 있잖아"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://theqoo.net/beauty/4099764448" target="_blank">[오프온] 바디로션 후기 — 더쿠</a>
+        <a href="https://www.glowpick.com/categories/49?monthTerm=24" target="_blank">글로우픽 바디로션/크림 랭킹 — 글로우픽</a>
+        <a href="https://unpa.me/community/lotion/111867506" target="_blank">여름에 끈적이지 않는 바디로션 추천 — 언니의파우치</a>
+      </div>
+      <div class="haruna-opportunity">'빠른 흡수+끈적임 없음+모공각화증 케어'가 여름 바디로션의 공식 기준으로 완전 정착. 실키 머쉬룸은 "오프온의 흡수력에 겔 제형의 산뜻함까지 — 흰목이버섯 겔이 3초 흡수로 '바르자마자 옷 입기'의 최종 답안을 제시합니다".</div>
+    </div>
+
+    <!-- 세럼 -->
+    <div class="painpoint-category-title">🧪 세럼 — Top 3 페인포인트</div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "화해 세럼 TOP 10 역대 최장 4일 연속 완전 동결 — 히알루론산 3개(1·3·5위) 석권 고착, '다 비슷해 보이는데 뭘 골라' 선택 피로 폭발 직전"</div>
+      <div class="painpoint-desc">화해 세럼 TOP 5: 토리든 다이브인(1위, 4.6, 183,226리뷰)·아누아 PDRN(2위, 4.6, 112,058리뷰)·웰라쥬 블루100(3위, 4.6, 633,046리뷰)·레이어랩 니오좀(4위, 4.6, 41,100리뷰)·아비브 히알루로닉 붐(5위, 4.5, 61,055리뷰). 4일 연속 완전 동결로 역대 최장 기록 달성. 히알루론산 세럼이 TOP 5 중 3개를 석권한 구도가 이제 "불변의 법칙"으로 굳어짐. 소비자 선택 피로가 폭발 직전 — "토리든이랑 웰라쥬랑 아비브 셋 다 히알루론산인데 대체 뭐가 다른 거냐".</div>
+      <div class="quote">"토리든이랑 웰라쥬랑 아비브 세 개 다 히알루론산인데 뭐가 다른 건지 모르겠어"</div>
+      <div class="quote">"세럼 3개가 다 4.5-4.6에 히알루론산이면 가격 차이밖에 없는 거 아냐"</div>
+      <div class="quote">"물처럼 가볍게 흡수되는데 속수분 채워주는 느낌"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 에센스/세럼/앰플 랭킹 — 화해</a>
+        <a href="https://unpa.me/community/beautytip/130770963" target="_blank">올영세일 세럼 추천 2026 — 언니의파우치</a>
+        <a href="https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/" target="_blank">화해 6월 월간 랭킹 — 화해 비즈니스</a>
+      </div>
+      <div class="haruna-opportunity">히알루론산 3개가 TOP 5에서 구분 불가능한 시장, 4일 동결로 역대 최장. ABC 세럼의 차별화: "히알루론산이 수분을 채운다면, 식자재 비타민은 수분 위에 영양까지. 키위·케일·바나나로 4일째 동결된 시장에 새 차원을 엽니다".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "에스네이처 스쿠알란 세럼 화해 6위(4.7 최고 평점) 4일 연속 유지 — 세럼→크림 생태계 완성, 습도 88% 일요일에 '유분+수분 하이브리드 보습'이 정석 루틴으로 확정"</div>
+      <div class="painpoint-desc">에스네이처 아쿠아 스쿠알란 세럼이 화해 6위(4.7, TOP 10 최고 평점, 111,318리뷰)를 4일 연속 유지. 에스네이처 스쿠알란 수분크림이 올영픽 1등 모공 수분크림으로 선정된 이후 스쿠알란 세럼→크림 생태계가 완전히 자리잡음. 습도 88% 일요일, 습한 환경에서도 기름막 없이 수분을 잡아주는 스쿠알란의 '유분+수분 동시 충전' 하이브리드 보습이 정석 루틴으로 확정.</div>
+      <div class="quote">"스쿠알란이 유분감 없이 기름막 형성해준다는데 여름에 딱인 듯"</div>
+      <div class="quote">"에스네이처 세럼이랑 크림 둘 다 올영픽이면 스쿠알란이 진짜 대세"</div>
+      <div class="quote">"습한 날에도 스쿠알란 세럼 바르면 번들거리지 않고 속촉촉"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 에센스/세럼/앰플 랭킹 — 화해</a>
+        <a href="https://www.oliveyoung.co.kr/store/main/getBestList.do" target="_blank">올리브영 랭킹 — 올리브영</a>
+        <a href="https://m.dcinside.com/board/cosmetic/1526103?recommend=1" target="_blank">봄~여름 지성 추천 LIST — 디시인사이드</a>
+      </div>
+      <div class="haruna-opportunity">스쿠알란이 세럼→크림 생태계를 완성한 시장. ABC 세럼 개발 시 "식물성 오일 기반 가벼운 유분막" 참조: "키위·케일·바나나의 천연 오일 — 스쿠알란처럼 가볍되, 식자재 투명성과 비타민까지".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "라보레브 9위·앰플엔 10위 4일 연속 유지 — 마이크로바이옴+세라마이드 세럼이 장마 피부 장벽 강화의 확고한 축으로 완전 고정"</div>
+      <div class="painpoint-desc">화해 세럼 9위 라보레브 피치마이크로바이옴 84 이지에프 세럼(4.4, 92,534리뷰), 10위 앰플엔 세라마이드샷 앰플(4.5, 39,695리뷰)이 4일 연속 유지하며 완전 고정 확인. 히알루론산 수분 세럼 독주 속에서 '피부 장벽 강화(세라마이드)'와 '피부 미생물 균형(마이크로바이옴)' 세럼이 습도 88% 환경에서 민감 피부의 확고한 제2축으로 자리잡음.</div>
+      <div class="quote">"마이크로바이옴 세럼 써봤는데 습한 날 피부 예민해지는 거 확실히 줄었어"</div>
+      <div class="quote">"장벽 강화 세럼이 여름엔 수분 세럼보다 더 중요한 것 같아"</div>
+      <div class="quote">"세라마이드 세럼이랑 히알루론산 세럼 같이 쓰는 게 여름 답이더라"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 에센스/세럼/앰플 랭킹 — 화해</a>
+        <a href="https://www.harpersbazaar.co.kr/article/1896283" target="_blank">PDRN부터 엑소좀까지 세럼 TOP 7 — 하퍼스 바자</a>
+        <a href="https://kormedi.com/2815102/" target="_blank">"후기는 많은데 내 피부엔?"…PDRN 화장품 — 코르메디</a>
+      </div>
+      <div class="haruna-opportunity">마이크로바이옴·세라마이드가 피부 장벽 강화의 확고한 축으로 완전 고정. ABC 세럼 개발 시 "식자재 원료의 피부 장벽 강화" 어필: "키위의 비타민C + 케일의 항산화 — 합성 세라마이드 없이 식자재가 만드는 자연 장벽".</div>
+    </div>
+
+    <!-- 폼클렌징 -->
+    <div class="painpoint-category-title">🧼 폼클렌징 — Top 3 페인포인트</div>
+
+    <div class="painpoint-card">
+      <span class="badge new">신규</span>
+      <div class="painpoint-title">📌 "글로우픽 올영 아비브 아크네 어성초 폼 2위 신규 진입·VT 시카 5위 하락 — 여름 트러블 세정에서 '시카 진정'을 밀어낸 '어성초 아크네 집중 세정'의 부상"</div>
+      <div class="painpoint-desc">글로우픽 올리브영 클렌징폼 랭킹에서 아비브 아크네 폼 클렌저 어성초(2위, 4.26, 317리뷰)가 신규 진입하며 VT 시카 마일드 폼 클렌저(5위, 4.19)가 2위→5위로 하락. 습도 88%+33℃ 환경에서 트러블·아크네 세정 니즈가 '진정(시카)' → '적극 세정(어성초)'으로 전환. 스트라이덱스 폼 클렌저(4위, 4.34)도 상위권 안착 — 여름 아크네 전문 세정 수요가 급증하는 신호.</div>
+      <div class="quote">"어성초가 트러블에 좋다길래 써봤는데 시카보다 세정력이 확실해"</div>
+      <div class="quote">"습한 날 모공 트러블 올라오면 진정보다 확실한 세정이 먼저야"</div>
+      <div class="quote">"아비브 어성초 폼 산뜻하고 트러블 자리 깨끗하게 닦이는 느낌"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112" target="_blank">글로우픽 올리브영 클렌징폼 — 글로우픽</a>
+        <a href="https://unpa.me/community/cleansingfoam/128382961" target="_blank">순하면서 세정력 좋은 폼클렌징 추천 — 언니의파우치</a>
+        <a href="https://unpa.me/community/cleansingfoam/107546510" target="_blank">폼클렌징 추천 TOP5 약산성 — 언니의파우치</a>
+      </div>
+      <div class="haruna-opportunity">어성초가 시카를 밀어내며 여름 트러블 세정의 새 답안으로 부상. "하루나 폼클렌징의 식자재 효소 세정 — 어성초의 아크네 타깃 세정에 효소의 모공 분해력을 더합니다. 습도 88% 무더위, 트러블 세정의 새 문법".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "노마디아 마이크로 버블 클렌저 화해 6위 3일 연속 유지, 리뷰 급증 — 마이크로 버블이 장마 세정의 확고한 제4세력으로 완전 안착"</div>
+      <div class="painpoint-desc">노마디아 황금 호호바 10% 듀얼 마이크로 버블 클렌저가 화해 6위를 3일 연속 유지하며 완전 안착 확정. 리뷰도 꾸준히 증가. 습도 88%+33℃ 일요일, 선크림+땀+피지 복합 세정 수요가 극대화되며 마이크로 버블의 모공 깊숙이 들어가는 물리적 세정력이 핵심 소구.</div>
+      <div class="quote">"마이크로 버블이 모공 속까지 세정해주는 느낌이 달라"</div>
+      <div class="quote">"호호바 오일이라 세정 후에도 당기지 않고 촉촉해"</div>
+      <div class="quote">"습한 날 선크림 두껍게 바르니까 저녁에 확실하게 씻어주는 게 중요해"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징 폼 BEST — 화해</a>
+        <a href="https://unpa.me/community/cleansingfoam/128382961" target="_blank">순하면서 세정력 좋은 폼클렌징 추천 — 언니의파우치</a>
+        <a href="https://unpa.me/community/cleansingfoam/107546510" target="_blank">폼클렌징 추천 TOP5 약산성 — 언니의파우치</a>
+      </div>
+      <div class="haruna-opportunity">마이크로 버블이 장마 세정의 확고한 제4세력으로 완전 안착. "하루나 폼클렌징의 식자재 효소 세정 — 마이크로 버블의 물리적 세정력에 효소의 화학적 분해력을 더합니다. 습도 88% 일요일, 선크림+땀+피지 삼중 세정의 최적 조합".</div>
+    </div>
+
+    <div class="painpoint-card">
+      <span class="badge ongoing">지속</span>
+      <div class="painpoint-title">📌 "SRB 효소 세안제 화해 급상승 5위 유지 + 비플레인 녹두(1위)·토리든(3위)·주미소(10위) 3강 안정 — 효소+식자재+약산성+산(Acid) 4축 체제가 일요일에도 견고"</div>
+      <div class="painpoint-desc">화해 클렌징폼 TOP 10에서 비플레인 녹두(1위, 4.6, 49,234리뷰)·토리든 히알루론산(3위, 4.7, 214,698리뷰)·주미소 살리실산(10위, 4.7, 11,837리뷰)의 3강 체제가 일요일에도 안정. 화해 6월 급상승 5위에 SRB 쌀뜨물 미강 효소 세안제가 지속 유지. 약산성(비플레인)·수분(토리든)·산(주미소)·효소(SRB)·마이크로버블(노마디아) 5세력 체제가 완전히 확립.</div>
+      <div class="quote">"SRB 쌀뜨물 효소 세안제 써봤는데 각질이 알갱이처럼 밀려 나오는 게 신기"</div>
+      <div class="quote">"비플레인 녹두 폼 약산성이라 매일 써도 당기지 않아 여름에 특히 좋아"</div>
+      <div class="quote">"토리든 다이브인 클렌징폼 세정력 괜찮으면서 안당겨서 습한 날에 딱"</div>
+      <div class="review-links">
+        <div class="review-label">📍 직접 확인 가능 리뷰</div>
+        <a href="https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/" target="_blank">화해 6월 월간 랭킹 — 화해 비즈니스</a>
+        <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징 폼 BEST — 화해</a>
+        <a href="https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112" target="_blank">글로우픽 올리브영 클렌징폼 — 글로우픽</a>
+      </div>
+      <div class="haruna-opportunity">5세력 체제가 확립된 클렌징 시장에서 효소 세정은 '식자재 효소'라는 차별화 무기를 가짐. "비·땀·선크림 삼중 세정 — 식자재 효소가 거품 없이 녹여내는 클린 세정. 습도 88% 일요일의 모든 피부 부담을 하루나 폼클렌징이 해결합니다".</div>
+    </div>
+  </div>
+
+  <!-- Part 2: 소스별 주요 발견 -->
+  <div class="section">
+    <div class="section-title">🔍 Part 2: 소스별 주요 발견</div>
+
+    <div class="source-card">
+      <h3><span class="num">1</span> 인스타그램</h3>
+      <ul>
+        <li><strong>바디크림:</strong> 비욘드 바디타민 판테놀 3% 바디로션 올리브영 전체 랭킹 상위 유지. 일요일 "주말 마무리 바디케어 루틴" 릴스 콘텐츠 소비 피크.</li>
+        <li><strong>세럼:</strong> 토리든 다이브인 세럼·아누아 PDRN 세럼 여름 루틴 콘텐츠 지속. 지성 피부 여름 루틴 추천 콘텐츠 활발.</li>
+        <li><strong>폼클렌징:</strong> 아비브 아크네 어성초 폼 클렌저 초기 바이럴 시작. 노마디아 마이크로 버블 클렌저 일주일 사용기 콘텐츠 등장.</li>
+        <li><strong>주요 URL:</strong> <a href="https://www.instagram.com/p/DMO073MSIMb/" target="_blank">지성 피부 여름 루틴 추천</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">2</span> 네이버 블로그/카페</h3>
+      <ul>
+        <li><strong>바디크림:</strong> "여름 바디로션 추천" 일요일 주말 마무리 검색량 유지. 일리윤 세라마이드·세타필 추천 빈번. 세타필 9위 안정화 이후 "세타필 여름에 괜찮나?" 포스트 등장.</li>
+        <li><strong>세럼:</strong> 피부타입별 추천 지속: 건성→토리든, 지성→파티온, 잡티→구달, 수분+탄력→아누아 PDRN. 에스네이처 스쿠알란 세럼+크림 세트 루틴 추천 지속.</li>
+        <li><strong>폼클렌징:</strong> 비플레인 녹두 화해 전체 화장품 TOP 3 진입 지속. 어성초 클렌징 관련 포스트 소폭 증가.</li>
+        <li><strong>주요 URL:</strong> <a href="https://www.harpersbazaar.co.kr/article/1896283" target="_blank">PDRN부터 엑소좀까지 세럼 TOP 7</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">3</span> 올리브영</h3>
+      <ul>
+        <li><strong>6월 올영픽:</strong> 토리든 다이브인 클렌징폼(NEW), 오프온 등드름 바디워시, 바닐라코 클린잇제로 클렌징밤(1등 클렌징밤), 에스네이처 아쿠아 스쿠알란 수분크림(1등 모공 수분크림).</li>
+        <li><strong>6월 올영세일:</strong> 아누아 PDRN 세럼 더블세트+마스크, 토리든 다이브인 세럼 50ml, 메디큐브 PDRN 핑크 펩타이드 앰플 — 세럼 기획세트 대거 출시.</li>
+        <li><strong>트렌드:</strong> 슬로우에이징 핵심 — 모공·기미·잡티·흔적별 맞춤 세럼+크림 조합. 선세럼 급부상(셀퓨전씨 2위 진입). 선파우더·선패치 편의성 제품 경쟁력 확보.</li>
+        <li><strong>주요 URL:</strong> <a href="https://www.oliveyoung.co.kr/store/main/getBestList.do" target="_blank">올리브영 랭킹</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">4</span> 화해</h3>
+      <ul>
+        <li><strong>6월 트렌드:</strong> "식히고, 비우고, 가볍게 채우기" 4대 키워드 유지. 선세럼 급부상 — "선크림은 답답하다는 편견을 선세럼이 정면 반박". 빌리프 아쿠아 밤 프로즌 크림 열감 식히기 수요 시작 신호.</li>
+        <li><strong>세럼:</strong> TOP 10 역대 최장 4일 연속 완전 동결. 토리든(1위, 18.3만) vs 아누아 PDRN(2위, 11.2만) 동률 4.6 유지. 에스네이처 스쿠알란 6위(4.7 최고 평점) 4일 유지.</li>
+        <li><strong>바디로션:</strong> 세라마이드 독점 63일째. TOP 10 4일 연속 완전 동결. 세타필 9위 안정, CeraVe 교체 현상 종료.</li>
+        <li><strong>클렌징:</strong> 비플레인 녹두(1위) 독주. 노마디아(6위) 3일 연속 안착. 에스네이처 아쿠아 라이스(4위, 4.7) 안정.</li>
+        <li><strong>급상승 5위:</strong> SRB 쌀뜨물 미강 효소 세안제 지속 유지.</li>
+        <li><strong>주요 URL:</strong> <a href="https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/" target="_blank">화해 6월 월간 랭킹</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">5</span> 더쿠</h3>
+      <ul>
+        <li><strong>바디크림:</strong> 주말 마무리 "여름에 바를 산뜻한 바디로션" 요구 지속. 오프온 바디로션 "흡수 빠르고 끈적임 없고 옷에 안 달라붙음+모공각화증 개선" 후기 재확산.</li>
+        <li><strong>세럼:</strong> 구달 청귤 비타C 세럼 바이럴 지속. 토리든 다이브인 세럼 여름 필수템 인식 고정.</li>
+        <li><strong>폼클렌징:</strong> 습도 88% 일요일 트러블 세정 스레드 활발. 어성초 vs 시카 세정 비교 논의 새로 등장.</li>
+        <li><strong>주요 URL:</strong> <a href="https://theqoo.net/beauty/2852868355" target="_blank">여름에 쓰기 좋은 바디로션</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">6</span> 글로우픽</h3>
+      <ul>
+        <li><strong>바디크림 TOP 5:</strong> 레이비 산양유(1위, 4.48, 상승)·에스트라 아토베리어365(2위, 4.69)·바이오더마 아토덤(3위, 4.62, 하락)·더마비 데일리(4위, 4.46)·일리윤 울트라 리페어(5위, 4.43). 6위 일리윤 레드이치(4.52) 유지. 10위 오프온 킵 캄(4.70) 4일 연속 유지.</li>
+        <li><strong>클렌징폼 올리브영:</strong> 센카 퍼펙트 휩(1위, 4.06) 석권 지속. 아비브 아크네 어성초(2위, 4.26, 신규 진입). 스트라이덱스 폼(4위, 4.34) 상위권 안착. VT 시카 마일드(5위, 4.19, 2위→5위 하락).</li>
+        <li><strong>주요 URL:</strong> <a href="https://www.glowpick.com/categories/49?monthTerm=24" target="_blank">글로우픽 바디로션/크림 랭킹</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">7</span> 디시인사이드</h3>
+      <ul>
+        <li><strong>세럼:</strong> "아침에 바를만한 세럼 추천" 논의 활발 — 가볍고 빠른 흡수 요구. "여름철 피부 안 무너지려고 쓰는 추천템" 토리든 다이브인 세럼, 라운드랩 자작나무 수분크림 조합 추천 지속.</li>
+        <li><strong>바디크림:</strong> 주말 마무리 향 좋은 바디로션 논의 지속. 더마팩토리 나이아신 바디로션 "미백 효과 있나?" 질문 스레드 등장.</li>
+        <li><strong>폼클렌징:</strong> 이스엔트리 어니언 폼 클렌저, 에스트라 아토베리어365 폼 "약산성 GOAT" 평가 유지.</li>
+        <li><strong>주요 URL:</strong> <a href="https://m.dcinside.com/board/cosmetic/1528217" target="_blank">여름 바디로션 추천좀요</a></li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <h3><span class="num">8</span> 레딧</h3>
+      <ul>
+        <li><strong>바디크림:</strong> r/AsianBeauty에서 ILLIYOON Ceramide Ato Lotion "no fragrance, no parabens, works for sensitive skin" 추천 지속. Derma:B Fresh Moisture Body Lotion "lightweight gel lotion perfect for warm weather" 추천.</li>
+        <li><strong>세럼:</strong> 토리든 DIVE-IN 세럼 Reddit 지속 추천. 에스네이처 스쿠알란 세럼 "affordable squalane" 추천 지속.</li>
+        <li><strong>폼클렌징:</strong> pH 관련 클렌저 논의 활발. K-뷰티 약산성 클렌저에 대한 관심 증가 추세.</li>
+        <li><strong>주요 URL:</strong> <a href="https://www.mirai-skin.com/blogs/news/korean-skincare-routine-reddit" target="_blank">Korean Skincare Routine Reddit Guide</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 트렌드 성분/원료 -->
+  <div class="section">
+    <div class="section-title">트렌드 성분/원료</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>성분</th><th>트렌드 강도</th><th>하루나 연관성</th><th>비고</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>히알루론산 (저분자)</strong></td><td class="star">★★★★★</td><td>바디크림·세럼 보습 소구</td><td>토리든(18.3만)+웰라쥬+아비브 TOP 5 중 3개 석권, 역대 최장 4일 동결</td></tr>
+          <tr><td><strong>PDRN</strong></td><td class="star">★★★★★</td><td>ABC 세럼 핵심 성분</td><td>아누아 2위 유지, 올영세일 더블세트+마스크 기획</td></tr>
+          <tr><td><strong>스쿠알란</strong></td><td class="star">★★★★★</td><td>세럼·크림 하이브리드 보습</td><td>에스네이처 세럼 6위(4.7 최고)+수분크림 올영픽 1등, 생태계 완성 4일째</td></tr>
+          <tr><td><strong>세라마이드</strong></td><td class="star">★★★★★</td><td>바디크림·세럼 장벽 강화</td><td>화해 바디로션 TOP 10 독점 63일째 + 세타필 9위 안정 + 앰플엔 세럼 10위</td></tr>
+          <tr><td><strong>어성초</strong></td><td class="star">★★★★☆</td><td>트러블 세정 신규</td><td>아비브 어성초 폼 글로우픽 올영 2위 신규 진입, 시카를 밀어낸 아크네 세정 신세력</td></tr>
+          <tr><td><strong>마이크로바이옴</strong></td><td class="star">★★★★☆</td><td>피부 균형 소구</td><td>라보레브 피치마이크로바이옴 세럼 9위 4일 연속 안착</td></tr>
+          <tr><td><strong>호호바 오일</strong></td><td class="star">★★★★☆</td><td>세정 소구</td><td>노마디아 호호바 마이크로 버블 클렌저 6위 3일 연속 안착</td></tr>
+          <tr><td><strong>흰목이버섯 (Snow Mushroom)</strong></td><td class="star">★★★★☆</td><td>실키 머쉬룸 바디크림 핵심</td><td>글로벌 "비건 히알루론산 500배 수분 보유력"</td></tr>
+          <tr><td><strong>K-곡물 효소 (쌀뜨물·녹두)</strong></td><td class="star">★★★★☆</td><td>폼클렌징 기회</td><td>SRB 효소 급상승 5위 유지, 습도 88% 복합 세정 수요 극대화</td></tr>
+          <tr><td><strong>시카 (Cica)</strong></td><td class="star">★★★☆☆</td><td>진정 세정·세럼 소구</td><td>VT 시카 마일드 글로우픽 올영 5위로 하락 (2위→5위), 어성초에 밀림</td></tr>
+          <tr><td><strong>펩타이드</strong></td><td class="star">★★★☆☆</td><td>세럼 탄력+모공 소구</td><td>메디큐브 8위 유지, 모공 소구 지속</td></tr>
+          <tr><td><strong>레티놀+시카</strong></td><td class="star">★★★☆☆</td><td>기능성 세럼 흔적 케어</td><td>이니스프리 7위 유지, '안전한 레티놀' 컨셉</td></tr>
+          <tr><td><strong>살리실산</strong></td><td class="star">★★★☆☆</td><td>산 세정 모니터링</td><td>주미소 10위 유지, 스트라이덱스 글로우픽 4위 상승</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 소비자 고민/니즈 -->
+  <div class="section">
+    <div class="section-title">소비자 고민/니즈</div>
+    <ul class="needs-list">
+      <li><strong>1. 습도 88%+33℃ 무더위 끈적임 극대화</strong><span>크림형 바디로션+습기 겹층 → 겔 바디크림 수요 정점 (습도가 높아질수록 겔 필요성 극대화)</span></li>
+      <li><strong>2. 화해 바디·세럼 TOP 10 역대 최장 4일 동결</strong><span>시장이 '고착화'를 넘어 '법칙화' → 신규 진입 구조적 불가</span></li>
+      <li><strong>3. 어성초 세정 부상·시카 하락</strong><span>습한 여름 트러블에 '진정'보다 '적극 세정' 선호 → 아크네 전문 세정 수요 급증</span></li>
+      <li><strong>4. 노마디아 마이크로 버블 3일 연속 안착</strong><span>약산성·효소·산·마이크로버블·어성초 5세력 체제 확립</span></li>
+      <li><strong>5. 스쿠알란 생태계 완성 4일째</strong><span>세럼(화해 6위, 4.7)+크림(올영픽 1등), 습도 88%에서도 속보습의 정석</span></li>
+      <li><strong>6. 습도 88% 일요일 복합 세정 수요 극대화</strong><span>선크림+땀+피지+습기 → 효소·마이크로 버블·어성초 세정 동반 강세</span></li>
+    </ul>
+  </div>
+
+  <!-- 경쟁 제품 동향 -->
+  <div class="section">
+    <div class="section-title">경쟁 제품 동향</div>
+
+    <h4 style="font-size:14px;font-weight:600;color:#8a8580;margin-bottom:12px;">바디크림/바디로션</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>제품</th><th>포지셔닝</th><th>가격대</th><th>위협도</th></tr></thead>
+        <tbody>
+          <tr><td>일리윤 세라마이드 아토 로션</td><td>화해 1위·세라마이드·대용량</td><td>중저가</td><td class="star">★★★★★</td></tr>
+          <tr><td>아토팜 수딩 젤 로션</td><td>화해 2위·저자극·젤 타입</td><td>중가</td><td class="star">★★★★</td></tr>
+          <tr><td>아토팜 MLE 로션</td><td>화해 3위·장벽 강화</td><td>중가</td><td class="star">★★★★</td></tr>
+          <tr><td>세타필 모이스춰라이징 로션</td><td>화해 9위 안정·글로벌 더마</td><td>중가</td><td class="star">★★★★</td></tr>
+          <tr><td>레이비 산양유 바디로션</td><td>글로우픽 1위 상승·자연유래</td><td>중가</td><td class="star">★★★★</td></tr>
+          <tr><td>오프온 킵 캄 앤드 모이스처</td><td>글로우픽 10위·빠른 흡수+진정+모공각화증·4.70</td><td>중저가</td><td class="star">★★★★★</td></tr>
+          <tr><td>보로탈코 벨벳팅 크림</td><td>글로우픽 9위·여름 대안</td><td>중저가</td><td class="star">★★★</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="font-size:14px;font-weight:600;color:#8a8580;margin:20px 0 12px;">세럼</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>제품</th><th>포지셔닝</th><th>위협도</th></tr></thead>
+        <tbody>
+          <tr><td>토리든 다이브인 히알루론산 세럼</td><td>화해 1위·리뷰 18.3만·워터리 정석</td><td class="star">★★★★★</td></tr>
+          <tr><td>아누아 PDRN 히알루론산 캡슐 세럼</td><td>화해 2위·리뷰 11.2만·PDRN 대중화·올영세일 더블세트</td><td class="star">★★★★</td></tr>
+          <tr><td>아비브 히알루로닉 붐 세럼 워터 드롭</td><td>화해 5위·히알루론산 3번째 석권</td><td class="star">★★★★</td></tr>
+          <tr><td>에스네이처 아쿠아 스쿠알란 세럼</td><td>화해 6위·4.7 최고 평점·스쿠알란 생태계 완성 4일째</td><td class="star">★★★★★</td></tr>
+          <tr><td>라보레브 피치마이크로바이옴 EGF 세럼</td><td>화해 9위 안착·리뷰 9.3만·마이크로바이옴</td><td class="star">★★★</td></tr>
+          <tr><td>앰플엔 세라마이드샷 앰플</td><td>화해 10위 안착·리뷰 4.0만·세라마이드 세럼</td><td class="star">★★★</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="font-size:14px;font-weight:600;color:#8a8580;margin:20px 0 12px;">폼클렌징</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>제품</th><th>포지셔닝</th><th>위협도</th></tr></thead>
+        <tbody>
+          <tr><td>비플레인 녹두 약산성 클렌징폼</td><td>화해 1위·전체 TOP 3·식자재 대표</td><td class="star">★★★★★</td></tr>
+          <tr><td>토리든 다이브인 클렌징폼</td><td>화해 3위·올영픽 NEW·리뷰 21.5만</td><td class="star">★★★★★</td></tr>
+          <tr><td>노마디아 황금 호호바 듀얼 마이크로 버블 클렌저</td><td>화해 6위 3일 연속·마이크로 버블</td><td class="star">★★★★</td></tr>
+          <tr><td>아비브 아크네 폼 클렌저 어성초</td><td>글로우픽 올영 2위 신규·어성초·4.26</td><td class="star">★★★★★</td></tr>
+          <tr><td>주미소 살리실산 포밍 클렌저</td><td>화해 10위·산(Acid) 세정</td><td class="star">★★★★</td></tr>
+          <tr><td>SRB 쌀뜨물 미강 효소 세안제</td><td>6월 급상승 5위 유지·효소 세정</td><td class="star">★★★★</td></tr>
+          <tr><td>스트라이덱스 폼 클렌저</td><td>글로우픽 올영 4위·아크네 전문</td><td class="star">★★★★</td></tr>
+          <tr><td>센카 퍼펙트 휩</td><td>글로우픽 올영 1위·거품 세정력</td><td class="star">★★★</td></tr>
+          <tr><td>VT 시카 마일드 폼 클렌저</td><td>글로우픽 올영 5위(2위→5위 하락)·시카 진정</td><td class="star">★★★</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 콘텐츠 아이디어 -->
+  <div class="section">
+    <div class="section-title">콘텐츠 아이디어 제안</div>
+
+    <div class="idea-card">
+      <span class="category weather">날씨 연계</span>
+      <div class="idea-title">"습도 88% 일요일 — 겔 바디크림이 필요한 이유, 숫자로 증명합니다"</div>
+      <div class="idea-desc">습도 88%+33℃ 무더위에서 크림형 바디로션의 끈적임이 최악인 이유를 습도·기온 데이터로 설명. 릴스 15초 '습도가 높을수록 겔의 3초 흡수가 빛나는' 포맷.</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category infographic">데이터 기반</span>
+      <div class="idea-title">"화해 바디·세럼 TOP 10 역대 최장 4일 연속 동결 — 시장이 굳어진다는 건 무슨 의미?"</div>
+      <div class="idea-desc">바디로션·세럼 TOP 10이 4일째 완전 동결된 현상을 데이터로 분석. 신규 진입이 구조적으로 불가능해진 시장에서 겔 바디크림·식자재 세럼이 뚫을 수 있는 틈새를 짚는 카드뉴스.</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category viral">클렌징 특집</span>
+      <div class="idea-title">"어성초 vs 시카 — 여름 트러블 세정의 주인공이 바뀌고 있다"</div>
+      <div class="idea-desc">아비브 어성초 글로우픽 2위 진입·VT 시카 5위 하락 데이터를 분석하며, 여름 트러블 세정에서 '진정'에서 '적극 세정'으로 소비자 기준이 변하고 있음을 교육하는 콘텐츠.</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category viral">주말 마무리</span>
+      <div class="idea-title">"일요일 밤 집중 바디케어 — 습도 88% 무더위, 피부 리셋 루틴 완성하기"</div>
+      <div class="idea-desc">일요일 밤 집중 바디케어 루틴 제안. 효소 세안 → 수분 세럼 → 겔 바디크림 풀코스. 한 주 마무리 셀프케어 콘텐츠.</div>
+    </div>
+
+    <div class="idea-card">
+      <span class="category ingredient">성분 교육</span>
+      <div class="idea-title">"스쿠알란 생태계 4일째 — 세럼과 크림을 한 성분으로 통일하는 루틴의 시대"</div>
+      <div class="idea-desc">에스네이처 스쿠알란 세럼(화해 6위)+수분크림(올영픽 1등)의 생태계 완성을 분석하며, '한 성분으로 세럼→크림 통일 루틴'의 트렌드를 짚는 교육 콘텐츠.</div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="section">
+    <div class="section-title">해시태그/키워드 트렌드</div>
+
+    <div class="hashtag-section">
+      <h4>바디크림</h4>
+      <span class="hashtag trending">#바디크림추천</span>
+      <span class="hashtag trending">#여름바디로션</span>
+      <span class="hashtag trending">#끈적임없는바디크림</span>
+      <span class="hashtag new-tag">#겔바디크림</span>
+      <span class="hashtag stable">#빠른흡수</span>
+      <span class="hashtag new-tag">#습도88바디케어</span>
+      <span class="hashtag new-tag">#모공각화증바디로션</span>
+    </div>
+
+    <div class="hashtag-section">
+      <h4>세럼</h4>
+      <span class="hashtag trending">#세럼추천</span>
+      <span class="hashtag trending">#히알루론산세럼</span>
+      <span class="hashtag new-tag">#스쿠알란세럼</span>
+      <span class="hashtag trending">#수분세럼</span>
+      <span class="hashtag new-tag">#여름세럼루틴</span>
+      <span class="hashtag new-tag">#올영세일세럼</span>
+    </div>
+
+    <div class="hashtag-section">
+      <h4>폼클렌징</h4>
+      <span class="hashtag trending">#폼클렌징추천</span>
+      <span class="hashtag new-tag">#어성초클렌저</span>
+      <span class="hashtag new-tag">#마이크로버블클렌저</span>
+      <span class="hashtag new-tag">#효소세안제</span>
+      <span class="hashtag stable">#약산성클렌징</span>
+      <span class="hashtag new-tag">#트러블세정</span>
+    </div>
+
+    <div class="hashtag-section">
+      <h4>공통</h4>
+      <span class="hashtag stable">#클린뷰티</span>
+      <span class="hashtag stable">#비건바디크림</span>
+      <span class="hashtag trending">#식자재화장품</span>
+      <span class="hashtag stable">#스키니피케이션</span>
+      <span class="hashtag new-tag">#일요일셀프케어</span>
+      <span class="hashtag new-tag">#무더위스킨케어</span>
+    </div>
+  </div>
+
+  <!-- 내일 예보 -->
+  <div class="tomorrow-card">
+    <h2>📅 내일 예보 기반 콘텐츠 준비 제안</h2>
+    <p style="font-size:13px;color:#8a6d3b;margin-bottom:16px;"><strong>내일(6/29 월) 예보:</strong> 가끔 구름 많음, 오후~저녁 경기 북동부 곳에 따라 소나기(5~10mm), 19~29~33℃</p>
+    <div class="tomorrow-item">
+      <strong>1. 월요일 출근 루틴</strong>
+      <p>"월요일 아침 — 바디로션 3초 흡수→선크림→출근, 습한 아침 빠른 루틴의 핵심은 겔"</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong>2. 어성초 vs 시카 후속</strong>
+      <p>"아비브 어성초 글로우픽 2위 진입 후 일주일 — 시카를 밀어낸 어성초의 방향성"</p>
+    </div>
+    <div class="tomorrow-item">
+      <strong>3. 역대 최장 동결 시리즈</strong>
+      <p>"화해 TOP 10 5일 연속 동결 도전 — 내일은 바뀔까, 아니면 기록이 갱신될까?"</p>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources">
+    <h3>Sources</h3>
+    <a href="https://www.oliveyoung.co.kr/store/main/getBestList.do" target="_blank">올리브영 랭킹</a>
+    <a href="https://business.hwahae.co.kr/insight/monthly-ranking-2026-6/" target="_blank">화해 6월 월간 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4410" target="_blank">화해 바디로션 TOP 100</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4174" target="_blank">화해 세럼 랭킹</a>
+    <a href="https://www.hwahae.co.kr/rankings?english_name=category&theme_id=4200" target="_blank">화해 클렌징 폼 BEST</a>
+    <a href="https://www.glowpick.com/categories/49?monthTerm=24" target="_blank">글로우픽 바디로션/크림 랭킹</a>
+    <a href="https://www.glowpick.com/stores/21?cate1Id=7&cate2Id=32&cate3Ids=112" target="_blank">글로우픽 올리브영 클렌징폼</a>
+    <a href="https://unpa.me/community/beautytip/130770963" target="_blank">올영세일 세럼 추천 2026 — 언니의파우치</a>
+    <a href="https://unpa.me/community/question/112022580" target="_blank">여름 바디로션 뭐쓰세요? — 언니의파우치</a>
+    <a href="https://unpa.me/community/question/112095286" target="_blank">여름 바디로션 추천해주세요 — 언니의파우치</a>
+    <a href="https://unpa.me/community/lotion/111867506" target="_blank">여름에 끈적이지 않는 바디로션 추천 — 언니의파우치</a>
+    <a href="https://unpa.me/community/lotion/112241471" target="_blank">여름에 끈적임 없는 지성 바디로션 추천 — 언니의파우치</a>
+    <a href="https://unpa.me/community/cleansingfoam/107546510" target="_blank">폼클렌징 추천 TOP5 — 언니의파우치</a>
+    <a href="https://unpa.me/community/cleansingfoam/128382961" target="_blank">순하면서 세정력 좋은 폼클렌징 — 언니의파우치</a>
+    <a href="https://www.harpersbazaar.co.kr/article/1896283" target="_blank">PDRN부터 엑소좀까지 세럼 TOP 7 — 하퍼스 바자</a>
+    <a href="https://kormedi.com/2815102/" target="_blank">"후기는 많은데 내 피부엔?"…PDRN 화장품 — 코르메디</a>
+    <a href="https://theqoo.net/beauty/2852868355" target="_blank">더쿠 — 여름에 쓰기 좋은 바디로션</a>
+    <a href="https://theqoo.net/beauty/4099764448" target="_blank">더쿠 — 오프온 바디로션 후기</a>
+    <a href="https://m.dcinside.com/board/cosmetic/1526103?recommend=1" target="_blank">디시인사이드 — 봄~여름 지성 추천 LIST</a>
+    <a href="https://m.dcinside.com/board/cosmetic/1528217" target="_blank">디시인사이드 — 여름 바디로션 추천좀요</a>
+    <a href="https://aqicn.org/city/seoul/kr/" target="_blank">서울 대기질 AQI</a>
+    <a href="https://www.weather.go.kr/w/forecast/overall/short-term.do?stnId=109" target="_blank">기상청 날씨누리 예보</a>
+    <a href="https://www.mirai-skin.com/blogs/news/korean-skincare-routine-reddit" target="_blank">Korean Skincare Routine Reddit Guide</a>
+    <a href="https://www.instagram.com/p/DMO073MSIMb/" target="_blank">지성 피부 여름 루틴 추천 — 인스타</a>
+    <a href="https://business.hwahae.co.kr/insight/trendreport-2026-summary/" target="_blank">2026 뷰티 트렌드 전망 — 화해 비즈니스</a>
+  </div>
+
+</div>
+</body>
+</html>
