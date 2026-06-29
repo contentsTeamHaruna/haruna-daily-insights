@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-06-29",
-  "totalQuotes": 1157,
-  "totalSources": 641,
-  "totalLifeContext": 416,
+  "lastUpdated": "2026-06-30",
+  "totalQuotes": 1169,
+  "totalSources": 646,
+  "totalLifeContext": 423,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -221,10 +221,18 @@
             {
               "title": "미세먼지 매우나쁨 날, 바디로션 발라야 피부 보호인데 끈적임 때문에 안 바르면 미세먼지에 피부가 더 취약 — 보습 vs 끈적임 딜레마의 극단",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "33℃ 시즌 최고기온에 바디로션 바르면 온몸이 끈적끈적 — 안 바르면 에어컨 건조에 피부 당기고, 바르면 땀에 섞여 불쾌감 최대",
+              "report_date": "2026-06-30"
+            },
+            {
+              "title": "33℃에 '바디 토너'라는 새 카테고리 부상 — 로션조차 끈적하다고 느끼는 사람들이 바디 토너·바디 세럼으로 이탈, 바디크림 카테고리 자체 위기",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어",
@@ -875,6 +883,36 @@
               "text": "피부 보호하려고 바르는 건데 오히려 미세먼지 붙으면 의미가 없잖아",
               "report_date": "2026-06-29",
               "life_context": false
+            },
+            {
+              "text": "너무 끈적이면 지성피부인 경우에는 간지럽더라고요",
+              "report_date": "2026-06-30",
+              "life_context": false
+            },
+            {
+              "text": "안바르면 건조하고 겨울에쓰던거 바르기엔 너무 무거워",
+              "report_date": "2026-06-30",
+              "life_context": true
+            },
+            {
+              "text": "끈적임도 없고 수분감 대박이고 보습력도 좋은 건 진짜 못 찾겠어",
+              "report_date": "2026-06-30",
+              "life_context": false
+            },
+            {
+              "text": "바디로션도 끈적한데 바디 토너는 물처럼 가볍고 향도 오래가서 여름에 딱",
+              "report_date": "2026-06-30",
+              "life_context": true
+            },
+            {
+              "text": "바디 세럼이 산뜻하게 스며들어서 여름엔 크림 대신 이걸로 바꿨어",
+              "report_date": "2026-06-30",
+              "life_context": true
+            },
+            {
+              "text": "피지오겔 레드수딩 에멀전 제형이라 바르자마자 옷 입어도 묻어남 없어",
+              "report_date": "2026-06-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -1269,6 +1307,27 @@
               "description": "디시인사이드",
               "report_date": "2026-06-29",
               "life_context": true
+            },
+            {
+              "title": "2026년 무조건 뜬다! K-뷰티 브랜드들",
+              "url": "https://www.harpersbazaar.co.kr/article/1894073",
+              "description": "하퍼스 바자",
+              "report_date": "2026-06-30",
+              "life_context": false
+            },
+            {
+              "title": "불볕에 뜨거워진 피부, 시원하게 식혀볼까",
+              "url": "https://biz.newdaily.co.kr/site/data/html/2026/06/25/2026062500167.amp.html",
+              "description": "뉴데일리 경제",
+              "report_date": "2026-06-30",
+              "life_context": false
+            },
+            {
+              "title": "노출의 계절, 바디 케어 가이드",
+              "url": "https://www.harpersbazaar.co.kr/article/1900290",
+              "description": "하퍼스 바자",
+              "report_date": "2026-06-30",
+              "life_context": false
             }
           ]
         },
@@ -2419,10 +2478,14 @@
             {
               "title": "화해 바디로션 TOP 10 세라마이드 독점 64일째 — 여름에도 겨울 고보습만 추천, 여름 전용 가벼운 바디크림 카테고리 자체가 부재",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "화해 바디로션 TOP 10 세라마이드 독점 65일째 — 화해 스스로 '가볍게 채우는 여름 루틴' 선언했는데 바디는 여전히 고보습 일색, 플랫폼 트렌드와 랭킹의 괴리",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -3438,6 +3501,11 @@
               "text": "여름에는 가벼운 바디로션이 필요한데 추천은 전부 고보습 크림형이야",
               "report_date": "2026-06-29",
               "life_context": true
+            },
+            {
+              "text": "일리윤 세라마이드 로션 끈적임 없고 흡수 좋다는데 여름엔 그래도 무거워",
+              "report_date": "2026-06-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -4323,10 +4391,14 @@
             {
               "title": "여름에 세럼 끈적임 문제 — 31℃에 PDRN 세럼 바르면 흡수가 안 되고 피부 위에 올라앉는 느낌, 여름 제형 전환 수요 급증",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "33℃에 세럼 바르면 흡수가 안 되고 피부 위에 올라앉는 느낌 — 프리메라 '멘톨 없는 수분 쿨링' 세럼이 여름 제형의 새 기준 제시",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "여름되면 무거울까봐 기름지거나 끈적하지 않고 화장 전에 사용할만한 세럼?",
@@ -4537,6 +4609,11 @@
               "text": "여름에는 끈적임 적으면서 수분감 잘 채워주는 세럼이 중요해",
               "report_date": "2026-06-29",
               "life_context": true
+            },
+            {
+              "text": "33도에 세럼 바르면 끈적하고 땀이랑 섞여서 진짜 답답해",
+              "report_date": "2026-06-30",
+              "life_context": false
             }
           ],
           "sources": [
@@ -4777,6 +4854,13 @@
               "description": "디시인사이드",
               "report_date": "2026-06-24",
               "life_context": true
+            },
+            {
+              "title": "불볕에 뜨거워진 피부, 시원하게 식혀볼까",
+              "url": "https://biz.newdaily.co.kr/site/data/html/2026/06/25/2026062500167.amp.html",
+              "description": "뉴데일리 경제",
+              "report_date": "2026-06-30",
+              "life_context": false
             }
           ]
         },
@@ -6251,10 +6335,14 @@
             {
               "title": "화해 세럼 TOP 5 히알루론산 3개 석권 5일 연속 동결 — 토리든·웰라쥬·아비브 셋 다 4.5~4.6점, 가격 차이밖에 없는 시장",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "화해 세럼 TOP 10 6일 연속 완전 동결, 역대 최장 — 토리든·아누아·웰라쥬 히알루론산 3강 구분 불가, 가격과 용량만 다른 시장",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-05-13",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "PDRN 다음은 하이퍼-PDRN이래, 그다음은 엑소좀이래 — 매달 새 성분이 나와서 따라갈 수가 없어",
@@ -6400,6 +6488,11 @@
               "text": "스쿠알란 세럼이 평점 4.7로 최고인데 왜 6위밖에 안 되지?",
               "report_date": "2026-06-29",
               "life_context": false
+            },
+            {
+              "text": "화해 랭킹이 6일째 안 바뀌는 건 처음이야 다들 같은 거 쓰는 거지",
+              "report_date": "2026-06-30",
+              "life_context": false
             }
           ],
           "sources": [
@@ -6541,6 +6634,13 @@
               "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
               "description": "올리브영",
               "report_date": "2026-06-25",
+              "life_context": false
+            },
+            {
+              "title": "2026년 상반기 스킨케어 속속 등판",
+              "url": "https://www.meconomynews.com/news/articleView.html?idxno=126098",
+              "description": "시장경제",
+              "report_date": "2026-06-30",
               "life_context": false
             }
           ]
@@ -7041,10 +7141,14 @@
             {
               "title": "PDRN 세럼 3종이 올영픽에 동시 선정됐는데 뭐가 다른 건지 모르겠다 — '후기는 많은데 내 피부엔?' PDRN 선택 피로 폭발",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "PDRN 세럼 올영픽 3종 동시 선정 이후 — 메디큐브·아누아·메디힐 삼파전 속 '피부 타입별 어떤 PDRN?' 세분화 수요 폭발",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -7974,6 +8078,11 @@
             {
               "text": "PDRN이 들어갔다고 다 같은 게 아니래 제형이랑 다른 성분 조합이 중요하다더라",
               "report_date": "2026-06-29",
+              "life_context": false
+            },
+            {
+              "text": "메디큐브는 잡티·탄력, 아누아는 보습, VT는 순한 재생이래 그래도 고르기 어려워",
+              "report_date": "2026-06-30",
               "life_context": false
             }
           ],
@@ -8981,10 +9090,14 @@
             {
               "title": "미세먼지 매우나쁨인데 약산성 폼클렌징으로 씻으면 세정이 덜 된 느낌 — 순함+세정력 양립이 여전히 미해결",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "미세먼지 보통으로 개선된 날에도 약산성 세정력 딜레마는 여전 — 33℃ 땀·피지·선크림 트리플 레이어를 약산성으로 깨끗이 씻을 수 있나?",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -9935,6 +10048,11 @@
               "text": "뽀득하게 씻기는 거 좋아하는데 약산성은 그 느낌이 안 나",
               "report_date": "2026-06-29",
               "life_context": true
+            },
+            {
+              "text": "거품이 부족하거나 세정이 덜 되는 느낌과 세안 후에 당김 사이에서 밸런스를 못 찾겠어",
+              "report_date": "2026-06-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -10598,10 +10716,14 @@
             {
               "title": "식자재 원료 클렌징이 TOP 랭킹 장악 — 녹두·쌀·카렌듈라가 상위권인데 차별점이 불명확, 식자재 클렌저 선택 과잉",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "화해 6월 급상승 5위 쌀뜨물 효소 세안제 — 식자재 클렌저가 '효소 가공' 단계로 진화, 녹두·쌀 단순 원료에서 발효·효소 세정으로 차별화 시작",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -10882,6 +11004,11 @@
               "text": "약산성 클렌징폼 좋은 거 있어? 하도 많아서 선택 장애 와",
               "report_date": "2026-06-29",
               "life_context": false
+            },
+            {
+              "text": "효소 세안제가 부드럽게 각질 녹여주면서 순한 느낌이라 여름에 딱이야",
+              "report_date": "2026-06-30",
+              "life_context": true
             }
           ],
           "sources": [
@@ -11644,10 +11771,14 @@
             {
               "title": "글로우픽 클렌징폼 TOP 5 재편 — 와이비케이 릴리프 1위 유지, 주미소 살리실산 3위 부상으로 BHA 세정이 여름 트러블 대안축 확정",
               "report_date": "2026-06-29"
+            },
+            {
+              "title": "글로우픽 클렌징폼 TOP 5 양축화 확정 — 와이비케이(보습 세정) vs 주미소 살리실산(BHA 세정), 중간 지대 '순하면서 확실한 세정' 여전히 공백",
+              "report_date": "2026-06-30"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-06-29",
+          "last_seen": "2026-06-30",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
