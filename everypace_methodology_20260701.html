@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>everypace 크롤링·재생산 방법론 — 2026.07.01 아침 보고</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Pretendard',-apple-system,sans-serif;background:#f7f7f7;color:#222;line-height:1.65;padding:24px 16px 80px;}
+.wrap{max-width:880px;margin:0 auto;}
+.header{background:linear-gradient(135deg,#4a9a6a,#3d8159);color:#fff;border-radius:16px;padding:32px 28px;margin-bottom:22px;box-shadow:0 4px 16px rgba(74,154,106,0.25);}
+.header h1{font-size:24px;font-weight:800;margin-bottom:8px;letter-spacing:-0.5px;}
+.header p{font-size:14px;opacity:0.93;}
+.section{background:#fff;border-radius:12px;padding:26px 24px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
+.section h2{font-size:19px;font-weight:800;margin-bottom:14px;color:#2e7d50;letter-spacing:-0.3px;}
+.section h3{font-size:15px;font-weight:700;margin:18px 0 8px;color:#3a7a5a;}
+p,li{font-size:14px;color:#333;}
+ul,ol{padding-left:20px;margin:8px 0;}
+li{margin-bottom:5px;}
+.tldr{background:#f0f7f3;border:1.5px solid #c8e8d4;border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.tldr b{color:#2e7d50;}
+.big{font-size:15px;font-weight:700;color:#1a6b44;}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+th,td{border:1px solid #e6ece9;padding:8px 10px;text-align:left;}
+th{background:#eaf4ee;color:#2e7d50;font-weight:700;}
+td.num{text-align:right;font-variant-numeric:tabular-nums;}
+.win{color:#2e7d50;font-weight:700;}
+.lose{color:#c0392b;font-weight:700;}
+.callout{background:#fff8e1;border:1.5px solid #ffe0a0;border-radius:10px;padding:12px 15px;margin:12px 0;font-size:13px;color:#8a6d00;}
+.box{background:#fafdfb;border:1px solid #e6ece9;border-left:3px solid #4a9a6a;border-radius:0 8px 8px 0;padding:12px 15px;margin:10px 0;font-size:13.5px;}
+.step{display:flex;gap:12px;margin-bottom:10px;}
+.step .n{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#4a9a6a;color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;}
+.formula{background:#1a1a1a;color:#7ec89a;font-family:'SF Mono',monospace;font-size:12.5px;padding:14px 16px;border-radius:8px;margin:10px 0;white-space:pre-wrap;line-height:1.7;}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:7px;margin-right:4px;}
+.t-now{background:#e8f5ee;color:#2e7d50;}
+.t-new{background:#fff3e0;color:#d07000;}
+.footer{text-align:center;font-size:12px;color:#aaa;margin-top:26px;}
+a{color:#4a9a6a;}
+.src{font-size:12px;color:#888;}
+.src a{color:#4a9a6a;text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+  <h1>📡 everypace 크롤링 · 재생산 방법론</h1>
+  <p>매일 트렌드를 놓치지 않고 · 에브리페이스 보이스로 재생산하기 위한 설계 — 2026.07.01 아침 보고</p>
+</div>
+
+<!-- 0. TLDR -->
+<div class="section">
+  <h2>한눈에 (TL;DR)</h2>
+  <div class="tldr">
+    <p class="big">결론 한 줄: <span style="color:#2e7d50;">"속도로 트렌드를 잡되, 속도로 이기려 하지 말고 해석으로 이긴다."</span></p>
+    <p style="margin-top:8px;">매일 <b>velocity(증가율) + 교차검증</b>으로 트렌드를 자동 포착 → <b>에브리페이스 적합 게이트</b>로 걸러 → <b>보이스 스펙</b>으로 재생산. 우리의 무기는 반응 속도가 아니라 <b>관점(태도)</b>이다.</p>
+  </div>
+  <p>① <b>실데이터로 본 우리 강점</b>: 사람·드라마·셀럽 루틴·공감형 음식 후크가 압도적으로 잘 됨. 건조한 과학 정보 카드뉴스는 최하위. → 트렌드도 "사람·태도로 풀 수 있는 것" 위주로 잡는다.<br>
+  ② <b>크롤링</b>: 기존 런갤+인스타에 <b>Threads·Reddit·네이버 데이터랩</b>을 더하고, 절대 수치가 아니라 <b>증가율(velocity)</b>로 본다.<br>
+  ③ <b>재생산</b>: 4단 적합 게이트 → 5단 "트렌드→태도" 변환 → 보이스 스펙 자가검수.</p>
+</div>
+
+<!-- 1. 성과 분석 -->
+<div class="section">
+  <h2>1. 실데이터: 에브리페이스에서 뭐가 잘 됐나</h2>
+  <p>@every_pace 최근 게시물 <b>60개</b>의 실제 좋아요·댓글을 수집해 분석. (좋아요 평균 249 · 중앙값 58 · 최고 3,801)</p>
+
+  <h3>테마별 평균 반응 (engagement = 좋아요 + 5×댓글, 비광고 콘텐츠)</h3>
+  <table>
+    <tr><th>테마</th><th>건수</th><th>평균 engagement</th><th></th></tr>
+    <tr><td>⭐ 셀럽·인플루언서 루틴</td><td class="num">9</td><td class="num">568</td><td class="win">최고</td></tr>
+    <tr><td>🏆 대회·뉴스·드라마틱 기록</td><td class="num">18</td><td class="num">374</td><td class="win">강함</td></tr>
+    <tr><td>🍽 식단·영양·체중(공감 후크)</td><td class="num">16</td><td class="num">238</td><td></td></tr>
+    <tr><td>✍️ 관계·태도·에세이</td><td class="num">19</td><td class="num">162</td><td></td></tr>
+    <tr><td>👟 장비·룩</td><td class="num">11</td><td class="num">143</td><td></td></tr>
+    <tr><td>🌿 회복·휴식·수면</td><td class="num">14</td><td class="num">138</td><td></td></tr>
+    <tr><td>💄 피부·뷰티</td><td class="num">11</td><td class="num">79</td><td></td></tr>
+    <tr><td>🔬 통념반박·과학 정보</td><td class="num">14</td><td class="num">35</td><td class="lose">최하위</td></tr>
+  </table>
+
+  <h3>잘 된 TOP (반응 순)</h3>
+  <ul>
+    <li><b>❤3,801</b> 코코도나 250마일, 여자가 남자 1위보다 1시간 빨랐다 <span class="src">(인간 드라마·역전)</span></li>
+    <li><b>❤3,676</b> 18살 다이빙 선수 최가온 "넘어질지언정" <span class="src">(인간 드라마·태도)</span></li>
+    <li><b>❤1,181</b> "두바이 쫀득쿠키는 혈당 스파이크가 없다?" <span class="src">(공감 음식 후크)</span></li>
+    <li><b>❤745</b> 전지현이 지켜온 운동·식사 루틴 <span class="src">(셀럽 루틴)</span></li>
+  </ul>
+  <h3>안 된 BOTTOM (전부 '건조한 정보' 카드뉴스)</h3>
+  <ul>
+    <li><b>❤3</b> 미세플라스틱이 피부 노화를… &nbsp; <b>❤5</b> 지중해식단 뇌졸중 25%↓ &nbsp; <b>❤7</b> 무향도 향료가…</li>
+    <li><b>❤14</b> 양반다리 연골 &nbsp; <b>❤16</b> 수면과 식욕 &nbsp; <b>❤18</b> 빛코팅 러닝화</li>
+  </ul>
+
+  <div class="callout">
+    ⚠️ <b>해석 주의 (정직하게):</b> ① 가장 최근(6월) 글은 아직 좋아요가 쌓이는 중일 수 있음. ② 영상(릴스)이 정적 카드뉴스보다 도달이 큼 — 상위권 다수가 영상 추정. <b>다만</b> 코코도나(5/10, 최근)가 ❤3,801인 걸 보면 "최근이라 낮은 것"만은 아니다. <b>'사람·드라마 vs 건조한 정보'의 격차는 실재하는 신호</b>로 본다.
+  </div>
+
+  <div class="box">
+    <b>→ 시사점:</b> 우리가 매일 최적화하던 "통념반박·과학 정보"가 정작 반응은 꼴찌다. 하지만 이건 "과학을 버려라"가 아니라 — <b>같은 과학도 사람·드라마·공감의 옷을 입혀야 산다</b>는 뜻. 코코도나·최가온·두바이쿠키가 증명. 이건 보이스 스펙의 "정보를 빌려 태도를 제안"과 정확히 같은 처방이다. <b>트렌드 소싱도 '사람·태도로 풀리는 소재'를 우선 잡아야 한다.</b>
+  </div>
+</div>
+
+<!-- 2. 크롤링 설계 -->
+<div class="section">
+  <h2>2. 매일 트렌드를 놓치지 않는 크롤링 설계</h2>
+  <p>핵심 원리: <b>절대 수치(좋아요 1만)가 아니라 증가율(velocity)</b>로 본다. 그리고 <b>한 플랫폼 스파이크는 믿지 않는다 — 2곳 이상에서 동시에 뜰 때만</b> 진짜 트렌드.</p>
+
+  <h3>소스 (early signal → confirmation)</h3>
+  <table>
+    <tr><th>소스</th><th>역할</th><th>상태</th><th>수집법</th></tr>
+    <tr><td>런갤(런닝갤러리)</td><td>국내 러너 정서·떡밥</td><td><span class="tag t-now">운영중</span></td><td>파이썬 크롤</td></tr>
+    <tr><td>인스타 39채널</td><td>웰니스 매거진·전문가</td><td><span class="tag t-now">운영중</span></td><td>Apify</td></tr>
+    <tr><td>Threads(스레드)</td><td>한국 웰니스·에세이·태도글 <b>최전선</b></td><td><span class="tag t-new">추가</span></td><td>Apify Threads(키워드+계정)</td></tr>
+    <tr><td>Reddit</td><td>글로벌 자기성찰·습관 원천(영→한 브리핑)</td><td><span class="tag t-new">추가</span></td><td>Apify Reddit(Rising)</td></tr>
+    <tr><td>네이버 데이터랩</td><td>국내 검색 의도(확증 신호)</td><td><span class="tag t-new">추가</span></td><td>Open API(무료)</td></tr>
+    <tr><td>Google Trends</td><td>글로벌 조기 신호</td><td><span class="tag t-new">추가</span></td><td>무료</td></tr>
+  </table>
+  <p class="src">Threads는 @kodeok.kr 등이 '2026 웰니스 트렌드'를 실제로 가장 먼저 푸는 곳 — 한국 웰니스 태도 콘텐츠의 선행지표. Reddit r/getdisciplined·r/decidingtobebetter·r/Mindfulness는 태도·습관 에세이의 글로벌 금광.</p>
+
+  <h3>트렌드 점수 공식</h3>
+  <div class="formula">TrendScore = 0.35×Velocity + 0.25×Corroboration + 0.25×RelevanceFit + 0.15×Freshness
+
+Velocity     = 최근24h 활동 ÷ 그 주제의 7~14일 평균 (3배↑ = 만점)
+Corroboration= 등장 플랫폼 수 ÷ 4  (2곳=0.5, 3곳=0.75…) ← 노이즈 킬러
+RelevanceFit = 웰니스-태도 + '사람/드라마로 풀리는가' 적합도 (0~1)
+Freshness    = 처음 포착 후 시간 감쇠 (반감기 ~33h)
+
+→ 0.65↑ 후보, 0.80↑ + 오늘 급등 = 당일 우선</div>
+  <p class="box"><b>everypace 맞춤 한 가지:</b> RelevanceFit에 <b>"이 트렌드를 사람·드라마·태도로 풀 수 있는가"</b>를 반드시 넣는다. 1번 데이터가 말하듯, 그게 안 되는 건조한 정보 트렌드는 점수를 깎는다.</p>
+
+  <h3>매일 워크플로우</h3>
+  <div class="step"><div class="n">1</div><div><b>수확</b>(자동 ~15분): 전 소스 수집 + 네이버 데이터랩/구글 트렌드 시드 키워드.</div></div>
+  <div class="step"><div class="n">2</div><div><b>velocity 계산</b>(자동): 각 주제를 자기 7~14일 평균과 비교, 1.5배↑만 통과.</div></div>
+  <div class="step"><div class="n">3</div><div><b>교차검증</b>(자동): 2개 플랫폼 이상 OR 1곳+검색급등만 남김.</div></div>
+  <div class="step"><div class="n">4</div><div><b>점수·랭킹</b>(자동): 위 공식으로 TOP 5~8 보드 생성.</div></div>
+  <div class="step"><div class="n">5</div><div><b>사람 큐레이션</b>(~15분): 태도 적합 + '사람/드라마로 풀리나' 최종 1~3건 선정. (소재 선정 루브릭 적용)</div></div>
+  <p class="src">노이즈 필터: 단일 플랫폼 스파이크 단독 금지 · 최소 2회 스캔 지속 · 좋아요만 급등(조작 의심)은 가중치↓ · 자기 베이스라인 대비로만 판단.</p>
+</div>
+
+<!-- 3. 재생산 -->
+<div class="section">
+  <h2>3. 에브리페이스 보이스로 재생산하는 법</h2>
+  <p class="big">전략: 트렌드를 적게 타되, 더 깊게 변형한다. 우리의 차별점은 반응 속도가 아니라 해석이다.</p>
+
+  <h3>① 적합 게이트 — 기획 전에 먼저 (하나라도 ❌면 버림)</h3>
+  <ol>
+    <li><b>태도 게이트:</b> 이걸 '삶을 대하는 태도'로 바꿀 수 있나? (팁·how-to·뉴스로만 끝나면 탈락)</li>
+    <li><b>가치 게이트:</b> 웰니스=태도 안에 드나? (기술·장비·가십이면 탈락)</li>
+    <li><b>진정성 게이트:</b> 우리가 진짜 할 말이 있나? (편승만이면 신뢰 훼손)</li>
+    <li><b>덧셈 게이트:</b> 다른 계정과 똑같지 않은 우리만의 각이 있나?</li>
+  </ol>
+
+  <h3>② "트렌드 → 태도" 5단 변환 (반복 가능한 틀)</h3>
+  <ol>
+    <li><b>사실 한 줄:</b> 트렌드를 중립적으로 진술.</li>
+    <li><b>리프레임:</b> "모두가 이걸 [표면]으로 보지만, 사실은 [태도]에 관한 얘기다." ← 에세이의 엔진</li>
+    <li><b>관점(POV) 고정:</b> 가르치는 2인칭("~하세요") 말고, 곁에서 같이 보는 "우리는 왜…/당신이 놓친 건…".</li>
+    <li><b>후크 패턴:</b> 패턴 끊기 / 리프레임 / 조용한 진실 (낚시성 금지).</li>
+    <li><b>태도로 착지:</b> 정보 요약이 아니라 "그래서 우리는 삶을 어떻게 대할까"로 끝냄.</li>
+  </ol>
+  <div class="box">이 변환은 이미 만든 <b>보이스 기준서</b>(cardnews-plan STEP 0)와 한 몸이다. 추가로, 1번 데이터의 처방을 반영해 <b>2단계에서 가능하면 '사람·드라마·공감'의 입구</b>를 먼저 연다 (코코도나·전지현·두바이쿠키처럼).</div>
+
+  <h3>③ 보이스 일관성 — AI 자가검수</h3>
+  <p>초안 생성 후 <b>"everypace 편집장으로서 보이스 스펙 6항목에 어긋난 곳을 지적하라"</b>는 자가검수 1패스를 돌린다. (연구상 톤 오류 60~70% 감소) 이게 4번에서 제안했던 '자동 에디토리얼 심사 루프'다.</p>
+  <div class="callout">❌ 피해야 할 것: 형식만 베끼기 / 편승만(woke-washing) / 가짜 즉흥성 / 팁계정으로 회귀 / 속도 위해 영혼 없는 글. 웰니스 독자는 이걸 가장 빨리 알아챈다.</div>
+</div>
+
+<!-- 4. 통합 -->
+<div class="section">
+  <h2>4. 기존 시스템에 어떻게 붙나 (통합도)</h2>
+  <div class="formula">[수집] 런갤 + 인스타 + Threads + Reddit + 네이버데이터랩/구글트렌드
+   ↓ (velocity·교차검증·점수)
+[트렌드 보드 TOP 5~8]
+   ↓ (소재 선정 루브릭 = 승격 게이트 + '사람/드라마로 풀리나')
+[오늘의 소재 1~3]
+   ↓ (적합 게이트 4 → 트렌드→태도 변환 5단)
+[cardnews-plan] STEP0 보이스 스펙 로드 → 초안
+   ↓ (AI 자가검수: 보이스 6항목)
+[cardnews-build] 이미지 캐스케이드(실사→핀터→AI) → [qa] → [export]</div>
+  <p>이미 만든 자산 3개(<b>보이스 기준서 · 소재 선정 루브릭 · 이미지 캐스케이드</b>)가 그대로 이 파이프라인의 중추가 된다. 신규는 <b>수집 소스 3개 + velocity 점수기 + 자가검수 루프</b>뿐.</p>
+
+  <h3>비용 (Apify, 대략)</h3>
+  <ul>
+    <li>Threads: 20포스트/쿼리 ≈ $0.075 — 키워드 5개 + 계정 10개면 하루 $1 안팎</li>
+    <li>Reddit: 1,000포스트 ≈ $1.15(무료티어)~$0.28(상위) + 댓글 1,000 ≈ $0.58</li>
+    <li>네이버 데이터랩·구글트렌드·Reddit Rising JSON·YouTube API = <b>무료</b></li>
+    <li>→ 비용 억제안: Threads·Reddit는 <b>매일 핵심 키워드만 얕게</b>, 전체 심화는 격일. lookback 2일.</li>
+  </ul>
+</div>
+
+<!-- 5. 로드맵 -->
+<div class="section">
+  <h2>5. 실행 로드맵 (제안)</h2>
+  <div class="step"><div class="n">1</div><div><b>1주차 — velocity 점수기 + Threads 추가.</b> 가장 ROI 큰 한 수. 네이버 데이터랩(무료)·Threads(저비용) 먼저. 샘플 1회로 재료 질·비용 확인.</div></div>
+  <div class="step"><div class="n">2</div><div><b>2주차 — Reddit + 교차검증 로직.</b> 영어 태도 소재를 한글 브리핑으로. 2-플랫폼 룰 자동화.</div></div>
+  <div class="step"><div class="n">3</div><div><b>3주차 — AI 자가검수 루프.</b> 초안을 보이스 스펙 6항목으로 자동 채점·재작성. (insane-research의 루브릭 채점 패턴 이식)</div></div>
+  <div class="step"><div class="n">4</div><div><b>상시 — 측정 루프.</b> 매주 @every_pace 자체 반응을 다시 수집해 "뭐가 먹혔나"를 점수기 RelevanceFit에 피드백. (오늘 이 데이터가 그 출발점)</div></div>
+  <div class="callout">💡 가장 큰 발견은 <b>측정 루프의 부재</b>였다. 우리는 "뭐가 반응 좋았는지"를 한 번도 데이터로 안 봤다. 이걸 매주 도는 것만으로 소재 선택이 근거를 갖게 된다.</div>
+</div>
+
+<!-- 출처 -->
+<div class="section">
+  <h2>출처</h2>
+  <p class="src">
+  • <a href="https://www.talkwalker.com/blog/track-social-media-trends" target="_blank">Talkwalker — 트렌드 추적·예측 2026</a><br>
+  • <a href="https://www.digiflute.com/ai-social-listening-predict-viral-trends-business-guide/" target="_blank">Digiflute — 교차플랫폼 수렴·48–72h·니치 기원</a><br>
+  • <a href="https://www.socialync.io/blog/instagram-shares-algorithm-complete-guide-2026" target="_blank">Socialync — 인스타 공유(sends)가 최강 신호</a><br>
+  • <a href="https://upvote.net/blog/reddit-algorithm" target="_blank">Reddit 알고리즘 — upvote velocity·시간감쇠</a><br>
+  • <a href="https://www.ascentkorea.com/naver-datalab-guide/" target="_blank">네이버 데이터랩 활용 가이드</a><br>
+  • <a href="https://apify.com/automation-lab/threads-scraper" target="_blank">Apify Threads Scraper</a> · <a href="https://apify.com/trudax/reddit-scraper" target="_blank">Apify Reddit Scraper</a><br>
+  • <a href="https://sproutsocial.com/insights/trendjacking/" target="_blank">Sprout — 트렌드재킹 잘하는 법(덜 하고 깊게)</a><br>
+  • <a href="https://blog.oxfordcollegeofmarketing.com/2025/08/04/ai-brand-voice-guidelines-keep-your-content-on-brand-at-scale/" target="_blank">AI 브랜드 보이스 가이드 — 스펙+자가검수</a><br>
+  • <a href="https://www.threads.com/@kodeok.kr" target="_blank">@kodeok.kr (Threads 웰니스 트렌드 선행 사례)</a> · <a href="https://stonebc.com/archives/46982" target="_blank">2026 웰니스 트렌드 Top8</a>
+  </p>
+</div>
+
+<div class="footer">분석 기반: @every_pace 실제 게시물 60건 · 멀티에이전트 리서치 3건 · 웹 리서치 · 2026-06-30 작성 · everypace automation</div>
+</div>
+</body>
+</html>
