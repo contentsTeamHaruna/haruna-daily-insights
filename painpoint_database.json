@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-07-03",
-  "totalQuotes": 1245,
-  "totalSources": 684,
-  "totalLifeContext": 467,
+  "lastUpdated": "2026-07-04",
+  "totalQuotes": 1268,
+  "totalSources": 692,
+  "totalLifeContext": 479,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -2629,10 +2629,22 @@
             {
               "title": "바디로션 바르고 옷 입으면 묻어나 — 30℃에 반팔 입을 때 팔꿈치·무릎 바르면 옷에 하얗게 묻어남",
               "report_date": "2026-07-02"
+            },
+            {
+              "title": "최저 23℃ 열대야 경계 돌입 — 밤에 바디로션 바르면 이불에 다 묻고, 안 바르면 에어컨에 피부 갈라져. 여름밤 바디로션은 존재 자체가 딜레마",
+              "report_date": "2026-07-04"
+            },
+            {
+              "title": "얼루어코리아 '애프터 선 케어 수칙' 신규 발행 — 휴가 후 바디밤·바디세럼까지 추천하는데, 바디케어에 7만원대 제품이 필요한 건지 혼란",
+              "report_date": "2026-07-04"
+            },
+            {
+              "title": "화해 바디크림 TOP 10에 알로에 젤 2개(아로마티카 4위+브링그린 7위) 동시 진입 — 여름엔 크림이 아니라 젤이 답이라는데, 젤만으로 보습이 충분한지 불안",
+              "report_date": "2026-07-04"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-07-02",
+          "last_seen": "2026-07-04",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -3728,6 +3740,41 @@
               "text": "흡수 빠르고 뽀송한 마무리감 있는 바디로션 — 여름엔 이게 1순위 기준",
               "report_date": "2026-07-02",
               "life_context": true
+            },
+            {
+              "text": "겨울에 쓰다 남은거 쓰려니 흡수가 너무 느려서 여름에 쓸 수가 없어",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "바디로션 바르다 다시 땀남 — 바르는 의미가 있나 싶어",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "아침저녁으로 귀찮아죽겠는데 안 바르면 피부가 허옇게 일어나",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "바디에도 세럼을 쓰는 시대인 건가 — 가격이 7만원대라니",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "알로에 젤 바르면 시원하긴 한데 금방 건조해져서 결국 다시 뭔가 발라야 해",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "휴가 후 등이 벌겋게 탔는데 바디크림 바르면 따가워서 뭘 써야 할지 모르겠어",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 크림이 너무 무거워서 젤로 바꿨는데 보습이 부족한 느낌",
+              "report_date": "2026-07-04",
+              "life_context": true
             }
           ],
           "sources": [
@@ -4562,6 +4609,34 @@
               "url": "https://www.allurekorea.com/2026/07/01/part-1-%EB%B6%88%EB%82%98%EB%8A%94-%ED%94%BC%EB%B6%80%EB%A5%BC-%EB%8B%A4%EC%8A%A4%EB%A6%AC%EB%8A%94-%EC%BF%A8-%EB%8B%A4%EC%9A%B4-%EC%95%84%EC%9D%B4%ED%85%9C",
               "description": "얼루어 코리아",
               "report_date": "2026-07-02",
+              "life_context": true
+            },
+            {
+              "title": "열 오른 피부가 뒤집어지기 전에, 쿨링 뷰티템 4",
+              "url": "https://www.harpersbazaar.co.kr/article/1904367",
+              "description": "하퍼스 바자",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "title": "Part 1. 휴가 뒤 꼭 알아둬야 할 애프터 선 케어 수칙",
+              "url": "https://www.allurekorea.com/2026/07/03/part-1-%ED%9C%B4%EA%B0%80-%EB%92%A4-%EA%BC%AD-%EC%95%8C%EC%95%84%EB%91%AC%EC%95%BC-%ED%95%A0-%EC%95%A0%ED%94%84%ED%84%B0-%EC%84%A0-%EC%BC%80%EC%96%B4-%EC%88%98%EC%B9%99",
+              "description": "얼루어 코리아",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "title": "바디크림 바디로션 추천받아",
+              "url": "https://theqoo.net/beauty/2016760920",
+              "description": "더쿠",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "title": "Part 2. 불나는 피부를 다스리는 쿨 다운 아이템",
+              "url": "https://www.allurekorea.com/2026/07/02/part-2-%EB%B6%88%EB%82%98%EB%8A%94-%ED%94%BC%EB%B6%80%EB%A5%BC-%EB%8B%A4%EC%8A%A4%EB%A6%AC%EB%8A%94-%EC%BF%A8-%EB%8B%A4%EC%9A%B4-%EC%95%84%EC%9D%B4%ED%85%9C",
+              "description": "얼루어 코리아",
+              "report_date": "2026-07-04",
               "life_context": true
             }
           ]
@@ -7048,10 +7123,14 @@
             {
               "title": "비타민C 세럼 여름에 산화 변색 빨라 — 냉장 보관해도 개봉 3개월이면 노란색으로 변해, 버리기엔 아깝고 쓰기엔 불안",
               "report_date": "2026-07-03"
+            },
+            {
+              "title": "비타민C 세럼 여름 산화 가속 + 얼루어코리아 '휴가 후 나이아신아마이드 2~3주 후 사용' 권고 — 여름 활성 성분 타이밍까지 신경 써야 한다니 피곤",
+              "report_date": "2026-07-04"
             }
           ],
           "first_seen": "2026-05-08",
-          "last_seen": "2026-07-03",
+          "last_seen": "2026-07-04",
           "quotes": [
             {
               "text": "PDRN 다음은 엑소좀이라는데, 결국 또 바뀔 거 아니야?",
@@ -7157,6 +7236,21 @@
               "text": "비타민C 효과는 확실한데 여름에 관리가 너무 까다로워서 다른 성분으로 갈아탈까",
               "report_date": "2026-07-03",
               "life_context": true
+            },
+            {
+              "text": "비타민C 세럼 3주 만에 노래졌는데 이거 써도 되나 — 여름엔 산화가 너무 빨라",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "휴가 후 나이아신아마이드도 바로 못 쓴다니 — 세럼 성분 타이밍까지 공부해야 해?",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "스쿠알란이 좋다는데 유분인 거잖아 여름에 써도 되는 건지 긴가민가",
+              "report_date": "2026-07-04",
+              "life_context": true
             }
           ],
           "sources": [
@@ -7249,6 +7343,13 @@
               "url": "https://www.wkorea.com/2025/03/08/%EB%B9%84%ED%83%80%EB%AF%BC-%ED%99%94%EC%9E%A5%ED%92%88%EC%9D%80-%EB%94%B0%EA%B0%80%EC%9B%8C%EC%95%BC-%ED%9A%A8%EA%B3%BC-%EC%9E%88%EB%8B%A4%EB%8A%94-%EB%A7%90-%EC%82%AC%EC%8B%A4%EC%9D%BC%EA%B9%8C/",
               "description": "W코리아",
               "report_date": "2026-07-03",
+              "life_context": false
+            },
+            {
+              "title": "Part 1. 휴가 뒤 꼭 알아둬야 할 애프터 선 케어 수칙",
+              "url": "https://www.allurekorea.com/2026/07/03/part-1-%ED%9C%B4%EA%B0%80-%EB%92%A4-%EA%BC%AD-%EC%95%8C%EC%95%84%EB%91%AC%EC%95%BC-%ED%95%A0-%EC%95%A0%ED%94%84%ED%84%B0-%EC%84%A0-%EC%BC%80%EC%96%B4-%EC%88%98%EC%B9%99",
+              "description": "얼루어 코리아",
+              "report_date": "2026-07-04",
               "life_context": false
             }
           ]
@@ -7590,10 +7691,18 @@
             {
               "title": "여름엔 묽은 세럼만 찾게 되는데 보습이 부족 — 레이어랩 블루 엑토인 크림처럼 열감 잡아주는 수분크림도 답인지 모르겠어",
               "report_date": "2026-07-03"
+            },
+            {
+              "title": "글로우픽 스킨1004 센텔라 앰플 17단계 급상승 — 여름 '진정 세럼'이 갑자기 대세인데, 기존 히알루론산 세럼이랑 같이 쓰면 되는 건지 따로 써야 하는 건지",
+              "report_date": "2026-07-04"
+            },
+            {
+              "title": "레이어랩 판테놀 세럼 리뷰 51K 돌파+블루 엑토인 크림 여름 루틴 세트 출시 — 여름엔 세럼만으로 충분한지, 수분크림까지 써야 하는지 스텝 논쟁 격화",
+              "report_date": "2026-07-04"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-07-03",
+          "last_seen": "2026-07-04",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -8583,6 +8692,26 @@
             {
               "text": "지성인데 여름 수분크림 바르면 좁쌀 올라올까봐 무서워서 세럼만 겨우 바름",
               "report_date": "2026-07-03",
+              "life_context": true
+            },
+            {
+              "text": "화해는 히알루론산 세럼 쓰라 하고 글로우픽은 센텔라 쓰라 하고 — 둘 다 쓰면 되나",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "여름이라 진정 세럼이 필요한 건 알겠는데 기존 수분 세럼을 빼야 하는지 모르겠어",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "피부과 선생님이 추천한 세럼이 4개인데 다 바를 수도 없고 하나만 고르라면 뭘 골라",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "레이어랩 4종 세트를 다 바르면 여름엔 너무 많은 것 같은데 — 뭘 빼야 하나",
+              "report_date": "2026-07-04",
               "life_context": true
             }
           ],
@@ -9653,10 +9782,18 @@
             {
               "title": "약산성 폼클렌징 안 맞는 사람도 있다 — 알칼리성 폼클 추천 모음까지 더쿠에서 화제, 약산성 맹신에 대한 반론 커뮤니티에서 정기적 등장",
               "report_date": "2026-07-03"
+            },
+            {
+              "title": "주미소 살리실산 클렌징폼 리뷰 6배 급증(11,842건)+글로우픽 4.59점 최고 — 여름 BHA 폼클렌징이 대세인데, 매일 써도 자극 없는 건지 불안",
+              "report_date": "2026-07-04"
+            },
+            {
+              "title": "선크림 15.6% 잔류+주말 야외 활동 증가 — 이중세안 귀찮지만 안 하면 불안, 화해 5위 노마디아 '듀얼 버블 클렌저'가 답인지 궁금",
+              "report_date": "2026-07-04"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-07-03",
+          "last_seen": "2026-07-04",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -10687,6 +10824,36 @@
               "text": "다이소 약산성 폼이 많은데 솔직히 뭐가 다른지 모르겠어 그냥 싼 거 써도 될까",
               "report_date": "2026-07-03",
               "life_context": false
+            },
+            {
+              "text": "살리실산 폼 진짜 모공에 좋긴 한데 매일 쓰면 피부가 건조해지는 거 아닌지 걱정",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "BHA 폼클렌징이랑 BHA 토너를 같이 쓰면 과자극이려나 — 어디까지가 적당한 건지",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "여름에 피지가 너무 많아서 살리실산 폼 쓰고 싶은데 민감성이라 겁나",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "주말에 나들이 가면 선크림 두 번 덧바르는데 이중세안 해야 하나? 너무 귀찮아",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "노마디아 듀얼 버블이 이중세안 없이 선크림 지운다는데 진짜인지 궁금",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "미감수 더블 폼이랑 노마디아 듀얼 버블이랑 뭐가 다른 건지 — 둘 다 이중세안용 아닌가",
+              "report_date": "2026-07-04",
+              "life_context": false
             }
           ],
           "sources": [
@@ -11270,6 +11437,13 @@
               "description": "더쿠",
               "report_date": "2026-07-03",
               "life_context": false
+            },
+            {
+              "title": "수부지덬의 여름철 기름잡는 기초 추천",
+              "url": "https://theqoo.net/beauty/2842849148",
+              "description": "더쿠",
+              "report_date": "2026-07-04",
+              "life_context": true
             }
           ]
         },
@@ -11390,10 +11564,14 @@
             {
               "title": "글로우픽 클렌징폼 TOP 10 신제품 러시 — NDP 쌀스크럽·주미소 살리실산·토르홉 소금거품 등 '기능성 세정' 트렌드 부상",
               "report_date": "2026-07-02"
+            },
+            {
+              "title": "화해 토리든 히알루론산 폼(3위, 4.7점, 214,744리뷰) 최다·최고인데 1위는 비플레인 녹두 — 플랫폼마다, 지표마다 1위가 달라서 선택 불가",
+              "report_date": "2026-07-04"
             }
           ],
           "first_seen": "2026-04-28",
-          "last_seen": "2026-07-02",
+          "last_seen": "2026-07-04",
           "quotes": [
             {
               "text": "쌀뜨물 성분이라 세정력이 나쁘지 않다",
@@ -11709,6 +11887,21 @@
               "text": "폼클렌징 영향이 이렇게 큰지 몰랐어 — 하나 잘 만나면 피부 완전 달라져",
               "report_date": "2026-07-02",
               "life_context": false
+            },
+            {
+              "text": "토리든 폼 보습감 좋은데 여름엔 세정력이 아쉬워서 결국 녹두폼으로 돌아감",
+              "report_date": "2026-07-04",
+              "life_context": true
+            },
+            {
+              "text": "화해 순위랑 글로우픽 순위가 다른데 어디 기준으로 사야 하나",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "text": "메디필 콜라겐 폼이 새로 나왔다는데 클렌징에 콜라겐이 의미가 있는 건지",
+              "report_date": "2026-07-04",
+              "life_context": false
             }
           ],
           "sources": [
@@ -11927,6 +12120,20 @@
               "url": "https://theqoo.net/beauty/1930244501",
               "description": "더쿠",
               "report_date": "2026-07-02",
+              "life_context": false
+            },
+            {
+              "title": "클렌징폼 추천 제품 TOP20",
+              "url": "https://www.glowpick.com/categories/32?ids=112",
+              "description": "글로우픽",
+              "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "title": "약산성 클렌징폼 추천해주라..!",
+              "url": "https://theqoo.net/index.php?document_srl=912828687&mid=beauty",
+              "description": "더쿠",
+              "report_date": "2026-07-04",
               "life_context": false
             }
           ]
