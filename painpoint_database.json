@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "lastUpdated": "2026-07-05",
-  "totalQuotes": 1294,
-  "totalSources": 700,
-  "totalLifeContext": 491,
+  "lastUpdated": "2026-07-06",
+  "totalQuotes": 1321,
+  "totalSources": 711,
+  "totalLifeContext": 495,
   "categories": {
     "bodycream": {
       "name": "🧴 바디크림/바디로션",
@@ -2704,10 +2704,22 @@
             {
               "title": "바디미스트·바디세럼 등 '크림 대체 제형' 부상 — 여름엔 바디크림이 아니라 바디미스트로 바꿔야 하나, 그런데 미스트만으로 보습이 되긴 하나",
               "report_date": "2026-07-05"
+            },
+            {
+              "title": "장마 주중 시작 — 출근길 비+사무실 에어컨으로 바디케어 스킵 충동 극대화. '바르는 게 귀찮아서' 안 바르는데 오후엔 피부가 갈라져",
+              "report_date": "2026-07-06"
+            },
+            {
+              "title": "여름 톤업 바디크림 추천 — 질문은 있는데 답이 없다. 여름용 바디크림 추천 콘텐츠 자체가 부재",
+              "report_date": "2026-07-06"
+            },
+            {
+              "title": "손도 몸인데 바디로션으로 때워도 될까 — 바디케어의 범위와 기준이 없다",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-07-05",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "귀찮아서 안 바름",
@@ -3853,6 +3865,51 @@
               "text": "크림·로션·젤·미스트·세럼 — 바디에 바르는 것만 5종류인데 뭘 골라야 해",
               "report_date": "2026-07-05",
               "life_context": false
+            },
+            {
+              "text": "밀크 제형 같이 막 그냥 바를 수 있는 제형이면 좋겠어 — 되직한건 막 펴바르기 불편해서",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "비 오는 월요일에 바디크림까지 바를 여유가 없어 — 근데 오후 되면 에어컨에 팔뚝이 허옇게 일어나",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "혼자 사는 덬들은 등 뒤까지 바디로션 어떻게 바르니??",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "여름철 끈끈하지 않은 톤업 바디크림 추천해주세요",
+              "report_date": "2026-07-06",
+              "life_context": true
+            },
+            {
+              "text": "글로우픽 바디로션 TOP 다 아토피 제품이네 — 일반 피부는 뭘 바르라는 거야",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "화해 바디크림 1위가 아토팜인데 아토피 아닌 사람도 써도 되는 건가",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "손도 몸인데 바디로션으로 때워도 되는 거 아닌가",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "바디로션이랑 바디크림이랑 핸드크림이랑 뭐가 다른 건지 모르겠다",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "여름엔 그냥 알로에 젤 하나로 얼굴 몸 다 바르면 안 되나",
+              "report_date": "2026-07-06",
+              "life_context": true
             }
           ],
           "sources": [
@@ -4723,6 +4780,13 @@
               "description": "무신사",
               "report_date": "2026-07-05",
               "life_context": true
+            },
+            {
+              "title": "여름 톤업 바디크림 추천",
+              "url": "https://unpa.me/community/lotion/114158769",
+              "description": "언니의파우치",
+              "report_date": "2026-07-06",
+              "life_context": true
             }
           ]
         }
@@ -5497,10 +5561,14 @@
             {
               "title": "PDRN이 기본 스펙으로 안착했는데 브랜드마다 '비건 PDRN' '식물성 PDRN' 등 종류가 너무 많아져서 뭐가 진짜 효과 있는 건지 구별 불가",
               "report_date": "2026-07-05"
+            },
+            {
+              "title": "아누아 PDRN 크림 별로라는 더쿠 후기 — PDRN이 기본 스펙이 됐는데 '효과 체감 없다' 회의론 확산, 비싼 PDRN vs 저렴한 PDRN 차이를 모르겠다",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-07-05",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "트러블 진정 효과는 잘 모르겠음",
@@ -5865,6 +5933,21 @@
             {
               "text": "PDRN이 좋다는 건 알겠는데 이미 히알루론산 세럼 쓰고 있는데 또 PDRN을 추가해야 하나",
               "report_date": "2026-07-05",
+              "life_context": false
+            },
+            {
+              "text": "아누아 PDRN 크림 별로인듯 — 기대가 커서 그런가 체감이 없어",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "PDRN 함량이 적은 제품은 의미 없다는데 함량 표시도 안 돼 있잖아",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "VT·메디큐브·아누아 다 PDRN인데 가격은 1만원대부터 5만원대까지 — 뭘 기준으로 골라",
+              "report_date": "2026-07-06",
               "life_context": false
             }
           ],
@@ -7264,10 +7347,14 @@
             {
               "title": "비타민C 세럼 여름 산화 가속 + 얼루어코리아 '휴가 후 나이아신아마이드 2~3주 후 사용' 권고 — 여름 활성 성분 타이밍까지 신경 써야 한다니 피곤",
               "report_date": "2026-07-04"
+            },
+            {
+              "title": "비타민C 세럼 비교 활발 — PDRN 피로감 반작용으로 '검증된 클래식 성분' 회귀 조짐, 그런데 비타민C도 종류가 너무 많다",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-05-08",
-          "last_seen": "2026-07-04",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "PDRN 다음은 엑소좀이라는데, 결국 또 바뀔 거 아니야?",
@@ -7388,6 +7475,21 @@
               "text": "스쿠알란이 좋다는데 유분인 거잖아 여름에 써도 되는 건지 긴가민가",
               "report_date": "2026-07-04",
               "life_context": true
+            },
+            {
+              "text": "PDRN에 지쳤다 — 결국 비타민C가 제일 확실한 성분 아니냐",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "더마팩토리 순수비타민C랑 스킨큐티컬스 CE 페룰릭이랑 가격 10배 차이인데 효과도 10배냐",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "비타민C 유도체가 뭔지 모르겠는데 순수비타민C가 자극 있다고 해서 뭘 사야 할지",
+              "report_date": "2026-07-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -7487,6 +7589,27 @@
               "url": "https://www.allurekorea.com/2026/07/03/part-1-%ED%9C%B4%EA%B0%80-%EB%92%A4-%EA%BC%AD-%EC%95%8C%EC%95%84%EB%91%AC%EC%95%BC-%ED%95%A0-%EC%95%A0%ED%94%84%ED%84%B0-%EC%84%A0-%EC%BC%80%EC%96%B4-%EC%88%98%EC%B9%99",
               "description": "얼루어 코리아",
               "report_date": "2026-07-04",
+              "life_context": false
+            },
+            {
+              "title": "비타민c 세럼 추천부탁드려요",
+              "url": "https://gall.dcinside.com/board/view/?id=cosmetic&no=1522158",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "더마팩토리 순수비타민c세럼 추천,후기",
+              "url": "https://gall.dcinside.com/mgallery/board/view/?id=skin&no=115443",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "덬들 인생 세럼 추천해주라!!!!!",
+              "url": "https://theqoo.net/beauty/3257919582",
+              "description": "더쿠",
+              "report_date": "2026-07-06",
               "life_context": false
             }
           ]
@@ -7840,10 +7963,14 @@
             {
               "title": "여름 세럼 제형이 '식히는·비우는·가볍게 채우는' 3축으로 재편 — 내 피부에 필요한 게 세 개 중 뭔지 모르겠고, 하나만 골라야 하는데 기준이 없다",
               "report_date": "2026-07-05"
+            },
+            {
+              "title": "화해 1위 토리든 vs 글로우픽 1위 에스트라 — 플랫폼마다 세럼 1위가 다른데 뭘 믿어야 하나",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-07-05",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "비폴렌은 나랑 안맞아서 피부가 뒤집어졌었어ㅠㅠ",
@@ -8869,6 +8996,21 @@
               "text": "세럼이 식히는·비우는·채우는 3가지라는데 나는 세 개 다 필요한 것 같아 — 다 바르면 과한 건가",
               "report_date": "2026-07-05",
               "life_context": false
+            },
+            {
+              "text": "화해 1위랑 글로우픽 1위가 다른데 뭘 믿어야 하는 건지",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "올영세일 때는 진짜 세럼 먼저 쟁이는 게 제일 이득",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "플랫폼마다 추천이 달라서 결국 유튜브 리뷰까지 봐야 해",
+              "report_date": "2026-07-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -9557,6 +9699,13 @@
               "description": "화해",
               "report_date": "2026-07-03",
               "life_context": false
+            },
+            {
+              "title": "에센스/세럼 TOP 20",
+              "url": "https://www.glowpick.com/categories/3",
+              "description": "글로우픽",
+              "report_date": "2026-07-06",
+              "life_context": false
             }
           ]
         }
@@ -9950,10 +10099,18 @@
             {
               "title": "약산성 폼클렌징 미끌거림 vs 약알칼리 세정력 — 디시인사이드·더쿠에서 '내 피부에 맞는 pH를 어떻게 아느냐' 논쟁 끝나지 않음",
               "report_date": "2026-07-05"
+            },
+            {
+              "title": "디시인사이드 '약산성 폼클렌징 희대의 쓰레기' 극단 비판 — 1년 약산성 쓰다 약알칼리 전환 후 1개월 만에 개선 체험기 바이럴",
+              "report_date": "2026-07-06"
+            },
+            {
+              "title": "약산성 vs 약알칼리 '종결' 정리글이 반복되지만 결론은 매번 '피부 타입에 따라 다르다' — 결국 자기 피부에 맞는 걸 어떻게 아느냐가 미해결",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-04-27",
-          "last_seen": "2026-07-05",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "약알칼리 해야되는거같고, 약알칼리로 한다음에 보습을 빡세게 하면 자극받거나 하지 않는듯",
@@ -11024,6 +11181,36 @@
               "text": "ㅈㄴ순한 약산성 클렌징폼 추천좀 — 순하면서 미끌거리지 않는 거 있나",
               "report_date": "2026-07-05",
               "life_context": false
+            },
+            {
+              "text": "약산성이니 뭐니해서 나온 것들? 걍 세정력 줄이고 돈은 더받는 개호구제품",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "존나 세수 해도 살짝 미끌거려 개같아 — 바이럴은 존나 하는데 찝찝함이 남는다",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "약알칼리 쓰니까 여드름 싹 들어가네 — 이때까지 약산성으로 헛짓했다",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "약산성 약알칼리 종결 정리글 10번째 보는데 매번 결론이 '피부 타입에 따라 다르다'야",
+              "report_date": "2026-07-06",
+              "life_context": true
+            },
+            {
+              "text": "지성피부는 무조건 알칼리 폼클렌징 써라 — 이거 맞는 건지 모르겠다",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "아침 약산성 저녁 약알칼리 병행하라는데 귀찮아서 못 해",
+              "report_date": "2026-07-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -11620,6 +11807,34 @@
               "url": "https://m.dcinside.com/board/cosmetic/1516258",
               "description": "디시인사이드",
               "report_date": "2026-07-05",
+              "life_context": false
+            },
+            {
+              "title": "약산성 폼클렌징 희대의 쓰레기",
+              "url": "https://m.dcinside.com/board/skin/73417",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "약산성 폼클렌징 누가쓰는거냐",
+              "url": "https://m.dcinside.com/board/cosmetic/1488793",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "지성피부는 무조건 알칼리 폼클렌징 써라",
+              "url": "https://m.dcinside.com/board/cosmetic/1483478",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "약산성vs알칼리성 폼클렌징 딱 정리해줌(장문)",
+              "url": "https://m.dcinside.com/board/pimple/129420",
+              "description": "디시인사이드",
+              "report_date": "2026-07-06",
               "life_context": false
             }
           ]
@@ -12936,10 +13151,14 @@
             {
               "title": "여름 피지 폭발에 BHA 폼클렌징 쓰고 싶은데 매일 쓰면 피부 장벽 무너질까봐 불안 — 살리실산 농도·사용 빈도 기준이 없다",
               "report_date": "2026-07-05"
+            },
+            {
+              "title": "글로우픽 클렌징폼 TOP 변동 — 설화수 순행(1위)·와이비케이(최고 평점 4.58)·토리든(2위) 공존, 가격대 3만원대~6천원대까지 양극화",
+              "report_date": "2026-07-06"
             }
           ],
           "first_seen": "2026-04-29",
-          "last_seen": "2026-07-05",
+          "last_seen": "2026-07-06",
           "quotes": [
             {
               "text": "피부좋다는 소리듣고 쓰면 쓸수록 거울볼 때 감탄함",
@@ -13435,6 +13654,21 @@
               "text": "BHA 폼클렌징이랑 BHA 토너를 같이 쓰면 과자극이려나 — 어디까지가 적당한 건지",
               "report_date": "2026-07-05",
               "life_context": false
+            },
+            {
+              "text": "설화수 폼이 3만원인데 토리든 만원짜리랑 뭐가 다른 건지",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "듀이트리 5천원짜리가 약알칼리인데 자극 없고 세정력 좋다 — 가성비 끝판왕",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "text": "폼클렌징에 2~3만원 쓰는 건 오버 아닌가 — 어차피 씻어내는 건데",
+              "report_date": "2026-07-06",
+              "life_context": false
             }
           ],
           "sources": [
@@ -13765,6 +13999,20 @@
               "url": "https://m.dcinside.com/board/pimple/274345?recommend=1",
               "description": "디시인사이드",
               "report_date": "2026-07-05",
+              "life_context": false
+            },
+            {
+              "title": "클렌징폼 카테고리 추천 제품 TOP20",
+              "url": "https://www.glowpick.com/categories/32?ids=112",
+              "description": "글로우픽",
+              "report_date": "2026-07-06",
+              "life_context": false
+            },
+            {
+              "title": "약산성 폼클렌징 안맞는 덬들을위해 추천하는 가성비 알칼리성 폼클 모음",
+              "url": "https://theqoo.net/square/2105710303",
+              "description": "더쿠",
+              "report_date": "2026-07-06",
               "life_context": false
             }
           ]
