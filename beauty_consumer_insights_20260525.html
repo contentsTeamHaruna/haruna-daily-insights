@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>뷰티 소비자 인사이트 리포트 — 2026년 5월 25일</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Noto Sans KR',-apple-system,sans-serif; background:#f4f6fa; color:#2d2a26; line-height:1.8; font-size:15px; }
+  .container { max-width:900px; margin:0 auto; padding:40px 24px 80px; }
+
+  .header { text-align:center; padding:40px 0 32px; border-bottom:2px solid #b05a8a; margin-bottom:32px; }
+  .header-emoji { font-size:48px; margin-bottom:8px; }
+  .header h1 { font-size:24px; font-weight:700; color:#1a1815; margin-bottom:4px; }
+  .header .date { font-size:14px; color:#8a8580; }
+  .header .subtitle { font-size:13px; color:#a09590; margin-top:6px; }
+  .back-link { display:inline-block; margin-bottom:20px; color:#b05a8a; text-decoration:none; font-size:14px; font-weight:500; }
+  .back-link:hover { text-decoration:underline; }
+
+  .toc { background:#fff; border-radius:12px; padding:20px 24px; margin-bottom:28px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+  .toc h3 { font-size:15px; font-weight:700; color:#b05a8a; margin-bottom:10px; }
+  .toc ul { list-style:none; margin:0; padding:0; }
+  .toc li { margin:4px 0; }
+  .toc a { color:#5a4a60; text-decoration:none; font-size:13px; font-weight:500; }
+  .toc a:hover { color:#b05a8a; text-decoration:underline; }
+
+  .platform-header { background:linear-gradient(135deg,#f0e0f0,#e8d0e8); padding:16px 20px; border-radius:10px; margin:36px 0 16px; }
+  .platform-header h2 { font-size:18px; font-weight:700; color:#6a3a6a; }
+  .platform-header .desc { font-size:12px; color:#8a6a8a; margin-top:4px; }
+
+  .category-label { display:inline-block; font-size:12px; font-weight:700; padding:3px 10px; border-radius:12px; margin:16px 0 10px; }
+  .cat-body { background:#fff3e6; color:#c06000; }
+  .cat-serum { background:#e6f3ff; color:#0060c0; }
+  .cat-cleansing { background:#e6ffe6; color:#006000; }
+
+  .card { background:#fff; border:1.5px solid #ebebeb; border-radius:10px; padding:16px 18px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+  .card-title { font-size:15px; font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+  .card-meta { font-size:12px; color:#999; margin-bottom:8px; }
+
+  blockquote { background:#faf5f8; border-left:3px solid #b05a8a; padding:10px 16px; margin:10px 0; border-radius:0 8px 8px 0; font-size:13px; color:#6a4a5a; font-style:italic; }
+
+  .product-tag { display:inline-block; background:#f5eef5; color:#7a4a7a; font-size:12px; font-weight:600; padding:2px 8px; border-radius:6px; margin:2px 4px 2px 0; }
+  .pain-tag { display:inline-block; background:#ffe8e8; color:#c04040; font-size:12px; font-weight:600; padding:2px 8px; border-radius:6px; margin:2px 4px 2px 0; }
+
+  .insight-box { background:linear-gradient(135deg,#f8f0f8,#f0e8f0); border:1.5px solid #d8c0d8; border-radius:10px; padding:16px 18px; margin:16px 0; }
+  .insight-box h4 { font-size:14px; font-weight:700; color:#6a3a6a; margin-bottom:8px; }
+  .insight-box p, .insight-box li { font-size:13px; color:#4a3a4a; }
+
+  .url-link { display:inline-block; font-size:12px; color:#b05a8a; text-decoration:none; font-weight:600; }
+  .url-link:hover { text-decoration:underline; }
+
+  ul { margin:8px 0 16px 20px; }
+  li { margin:4px 0; font-size:14px; }
+  li strong { color:#4a3a5a; }
+  p { margin:6px 0; font-size:14px; }
+  hr { border:none; border-top:1px solid #e8dce8; margin:32px 0; }
+
+  .summary-table { width:100%; border-collapse:collapse; font-size:13px; margin:12px 0 20px; }
+  .summary-table thead th { background:#f0e0f0; color:#6a3a6a; font-weight:600; padding:10px 12px; text-align:left; border-bottom:2px solid #d8c0d8; }
+  .summary-table tbody td { padding:8px 12px; border-bottom:1px solid #f0e8f0; }
+  .summary-table tbody tr:hover { background:#faf5fa; }
+
+  .section { background:#fff; border-radius:12px; padding:24px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+
+  .footer { text-align:center; padding-top:32px; border-top:1px solid #e8dce8; margin-top:40px; font-size:12px; color:#b0aaa4; }
+
+  @media (max-width:600px) {
+    .container { padding:20px 14px 60px; }
+    .summary-table { font-size:12px; }
+    .summary-table thead th, .summary-table tbody td { padding:6px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back-link" href="index.html">&larr; 전체 리포트 목록</a>
+  <div class="header">
+    <div class="header-emoji">&#x1F9F4;</div>
+    <h1>뷰티 소비자 인사이트 데일리 리포트</h1>
+    <div class="date">2026년 5월 25일 (일)</div>
+    <div class="subtitle">바디크림/로션 &middot; 세럼/에센스 &middot; 폼클렌징 | 4개 플랫폼 크롤링 기반</div>
+  </div>
+
+  <!-- 목차 -->
+  <div class="toc">
+    <h3>목차</h3>
+    <ul>
+      <li><a href="#summary">1. 오늘의 핵심 요약</a></li>
+      <li><a href="#theqoo">2. 더쿠 (TheQoo)</a></li>
+      <li><a href="#dcinside">3. 디시인사이드 화장품갤</a></li>
+      <li><a href="#unpa">4. 언니의파우치 (Unpa)</a></li>
+      <li><a href="#reddit">5. Reddit (r/AsianBeauty, r/SkincareAddiction)</a></li>
+      <li><a href="#cross">6. 크로스 플랫폼 인사이트</a></li>
+    </ul>
+  </div>
+
+  <!-- ================= 1. 핵심 요약 ================= -->
+  <div id="summary" class="section">
+    <div class="platform-header" style="background:linear-gradient(135deg,#ffe0f0,#f0d0e8); margin-top:0;">
+      <h2>1. 오늘의 핵심 요약</h2>
+      <div class="desc">3개 카테고리 x 4개 플랫폼 크로스 분석</div>
+    </div>
+
+    <div class="insight-box">
+      <h4>바디크림/바디로션 카테고리</h4>
+      <ul>
+        <li><strong>초여름 전환기 수요 급증:</strong> "끈적이지 않는 가벼운 바디로션" 요청이 플랫폼 공통 키워드. 겨울용 고보습 제품(세타필, 일리윤 아토)에서 산뜻한 제형으로 전환 니즈가 뚜렷함</li>
+        <li><strong>모공각화증 관리:</strong> 바세린 데일리 모이스처 로션, 오프온 바디로션 등이 모공각화증 개선 효과로 주목</li>
+        <li><strong>무향 vs 향 양극화:</strong> 디시에서는 무향+비끈적 요구가 강한 반면, 더쿠/언니의파우치에서는 "살냄새" "향수 대용" 향 좋은 제품 선호</li>
+        <li><strong>주목 제품:</strong> 일리윤 세라마이드 아토 로션, 니베아 리페어앤케어, 오프온 바디로션, 더마비, 노크 바디토너</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h4>세럼/에센스 카테고리</h4>
+      <ul>
+        <li><strong>비타C+트라넥산산 복합 세럼 부상:</strong> 구달 청귤 비타C E TXA 세럼이 더쿠에서 화제. 미백+보습 동시 해결</li>
+        <li><strong>나이아신아마이드 대중화:</strong> 더페이스샵 나이아신10, 디오디너리 나이아신10징크1이 디시 화장품갤 정석 추천템으로 자리잡음</li>
+        <li><strong>에스트라 앰플 신뢰:</strong> "앰플 중 최고" 평가가 반복. 가려움 진정 효과에 대한 소비자 신뢰가 높음</li>
+        <li><strong>PDRN 트렌드(글로벌):</strong> Medicube PDRN 핑크 펩타이드 세럼, Anua PDRN 히알루론산 크림이 해외 시장에서 관심 상승</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h4>폼클렌징 카테고리</h4>
+      <ul>
+        <li><strong>약산성 논쟁 지속:</strong> 약산성 vs 약알칼리 세안제 선택에 대한 소비자 혼란 여전. 디시 화장품갤에서 피부타입별 가이드 인기</li>
+        <li><strong>1티어 합의 제품:</strong> 마몽드 세라마이드 아미노폼(수부지), 비플레인 녹두(일반), 라로슈포제 에빠끌라(지성)가 반복 추천</li>
+        <li><strong>건성 피부 고민:</strong> 세안 후 당김+각질 들뜸 호소가 공통 pain point. 클렌징밀크/오일 클렌징 전환 권유 활발</li>
+        <li><strong>PX 군납 클렌징폼 화제:</strong> 언니의파우치에서 닥터지, 마녀공장, 뉴트로지나 PX 추천 TOP3 게시물 인기</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= 2. 더쿠 ================= -->
+  <div id="theqoo" class="section">
+    <div class="platform-header" style="margin-top:0;">
+      <h2>2. 더쿠 (TheQoo)</h2>
+      <div class="desc">theqoo.net &mdash; 뷰티 카테고리 소비자 토론 분석</div>
+    </div>
+
+    <!-- 바디크림 -->
+    <div class="category-label cat-body">바디크림 / 바디로션</div>
+
+    <div class="card">
+      <div class="card-title">[오프온] 바디로션 후기 - 모공각화증 5일만에 개선 체감</div>
+      <div class="card-meta">뷰티 카테고리 | 재구매 의사 표명</div>
+      <p><span class="product-tag">오프온 바디로션 500ml</span></p>
+      <blockquote>"흡수가 빨리 되기도 하고 끈적함이 없어서 바로 옷입어도 옷 달라붙는 느낌이 없어"</blockquote>
+      <blockquote>"다 쓰면 내돈내산으로 재구매 의사 있음"</blockquote>
+      <p style="font-size:13px; color:#666;"><strong>Pain Point:</strong> 기존 제품의 라이트한 보습력 부족 &rarr; 크림 제형 + 빠른 흡수로 해결</p>
+      <a class="url-link" href="https://theqoo.net/beauty/4099764448" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">여름에도 바디로션(크림) 꼭 쓰는 덬들 뭐 써?</div>
+      <div class="card-meta">댓글 20개 | 극건성 피부 사용자 질문</div>
+      <p><span class="product-tag">세타필</span> <span class="product-tag">일리윤</span></p>
+      <p><span class="pain-tag">여름 끈적임</span> <span class="pain-tag">극건성 보습 부족</span></p>
+      <blockquote>"습한 날씨로 인해 기존 제품이 너무 끈적거리고 불편함"</blockquote>
+      <a class="url-link" href="https://theqoo.net/theqdeal/3745534027" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">나연이 향수대신 사용하는 바디로션/크림/오일</div>
+      <div class="card-meta">인플루언서 사용템 공유 | 높은 조회수</div>
+      <p style="font-size:13px; color:#666;">셀럽 사용 제품에 대한 관심. 향이 좋은 프리미엄 바디 제품 수요 확인</p>
+      <a class="url-link" href="https://theqoo.net/square/1812237316" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 세럼 -->
+    <div class="category-label cat-serum">세럼 / 에센스</div>
+
+    <div class="card">
+      <div class="card-title">구달 청귤 비타C E TXA 세럼 체험단 후기</div>
+      <div class="card-meta">뷰티 카테고리 | 트라넥산산 6% 함유</div>
+      <p><span class="product-tag">구달 청귤 비타C E TXA 세럼</span></p>
+      <blockquote>"이 제품이 미백과 잡티에도 좋지만 피부가 촉촉해져서 특히 더 좋은 것 같아"</blockquote>
+      <p style="font-size:13px; color:#666;">8일 사용 후 눈밑 기미 옅어짐 확인. 컨실러 사용량 감소.</p>
+      <a class="url-link" href="https://theqoo.net/beauty/4174101607" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">디올 캡춰토탈 스킨 세럼 좋다</div>
+      <div class="card-meta">뷰티 카테고리 | 프리미엄 세럼</div>
+      <p><span class="product-tag">디올 캡춰 토탈 스킨 세럼</span></p>
+      <blockquote>"피부 대박 부들부들해짐"</blockquote>
+      <blockquote>"너무 비싸네" (가격 부담 언급)</blockquote>
+      <p style="font-size:13px; color:#666;">스킨과 함께 사용 시 만족도 급상승. 가성비 이슈.</p>
+      <a class="url-link" href="https://theqoo.net/beauty/2744197713" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">갈색병 대체할만한 저렴이 세럼 추천</div>
+      <div class="card-meta">뷰티 카테고리 | 가성비 세럼 탐색</div>
+      <p><span class="pain-tag">고가 제품 가격 부담</span></p>
+      <p style="font-size:13px; color:#666;">에스티로더 갈색병 대비 저렴한 대체 세럼 수요. "듀프(dupe)" 트렌드 확인</p>
+      <a class="url-link" href="https://theqoo.net/beauty/2810098645" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 클렌징폼 -->
+    <div class="category-label cat-cleansing">폼클렌징</div>
+
+    <div class="card">
+      <div class="card-title">뷰티방 선정 최고의 클렌징폼 투표 결과</div>
+      <div class="card-meta">투표 53명 참여 | 종합 TOP 선정</div>
+      <p><span class="product-tag">시세이도 퍼펙트 휩 (압도적 1위)</span> <span class="product-tag">설화수 순행 클렌징폼</span> <span class="product-tag">식물나라 더 풍성한 스노우폼</span></p>
+      <p style="font-size:13px; color:#666;">17개 제품이 각 1표씩 - 선호도가 매우 분산됨. 개인 피부타입별 차이가 크다는 방증</p>
+      <a class="url-link" href="https://theqoo.net/beauty/122999811" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">약산성 클렌징폼 요즘 뭐가 제일좋아?</div>
+      <div class="card-meta">뷰티 카테고리</div>
+      <p><span class="product-tag">토리든</span></p>
+      <blockquote>"토리든만 썻음. 난 아침세안만 약산성씀"</blockquote>
+      <a class="url-link" href="https://theqoo.net/beauty/3428462757" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">더페이스샵 미감수 클렌징오일/폼 후기</div>
+      <div class="card-meta">뷰티 카테고리 | 투스텝 클렌징 추천</div>
+      <p><span class="product-tag">더페이스샵 미감수 클렌징오일</span> <span class="product-tag">더페이스샵 미감수 클렌징폼</span></p>
+      <blockquote>"오일로만 클렌징하면 뭔가 기름기나 유분기가 좀 남아있는 느낌이라 클렌징폼으로 깔끔한 마무리 가능"</blockquote>
+      <blockquote>"더페이스샵의 주력 제품으로 선전해도 좋을 법 합니다"</blockquote>
+      <a class="url-link" href="https://theqoo.net/beauty/3145954991" target="_blank">&rarr; 원문 보기</a>
+    </div>
+  </div>
+
+  <!-- ================= 3. 디시인사이드 ================= -->
+  <div id="dcinside" class="section">
+    <div class="platform-header" style="margin-top:0;">
+      <h2>3. 디시인사이드 화장품갤</h2>
+      <div class="desc">gall.dcinside.com/cosmetic &mdash; 향수, 화장품 갤러리 분석</div>
+    </div>
+
+    <!-- 바디크림 -->
+    <div class="category-label cat-body">바디크림 / 바디로션</div>
+
+    <div class="card">
+      <div class="card-title">안 끈적거리는 무향 바디로션 추천</div>
+      <div class="card-meta">향수, 화장품 갤러리</div>
+      <p><span class="pain-tag">더바디샵: 냄새 좋으나 두통+물집</span> <span class="pain-tag">일리윤 아토: 유분 많고 흡수 안됨</span> <span class="pain-tag">비오레u: 냄새 안좋고 보습 최약</span></p>
+      <p style="font-size:13px; color:#666;">무향+비끈적 바디로션에 대한 남성 소비자 수요. 기존 제품 3가지 모두 불만족</p>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1494156" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">건성피부 바디로션 추천 - 겨울 가려움증 심각</div>
+      <div class="card-meta">2026.01 작성 | 조회 558</div>
+      <p><span class="product-tag">세타필 모이스챠라이징</span> <span class="product-tag">일리윤 (관심)</span></p>
+      <p><span class="pain-tag">밤중 가려움으로 수면 방해</span></p>
+      <p style="font-size:13px; color:#666;">습도 40% 환경에서 극건성 피부 고통 호소. 세타필로도 가려움 미해결</p>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1516401" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 세럼 -->
+    <div class="category-label cat-serum">세럼 / 에센스</div>
+
+    <div class="card">
+      <div class="card-title">지성/수부지 피부 완벽 솔루션 가이드 (올리브영 왠만한건 다 써봄)</div>
+      <div class="card-meta">향수, 화장품 갤러리 | 종합 추천</div>
+      <p><strong>추천 세럼:</strong></p>
+      <p><span class="product-tag">코스알엑스 더알파 알부틴세럼 (모공)</span> <span class="product-tag">디오디너리 나이아신10징크1</span> <span class="product-tag">더페이스샵 나이아신10</span></p>
+      <p><strong>추천 클렌징:</strong></p>
+      <p><span class="product-tag">몰바니 LHA 율피 젤클렌저</span> <span class="product-tag">주미소 약산성클렌징폼</span> <span class="product-tag">라운드랩 소나무 시카클렌저</span></p>
+      <blockquote>"올리브영 왠만한건 다 써봤다"</blockquote>
+      <blockquote>"주미소 약산성클렌징폼 - 1번 꼭 써봐라 개좋다"</blockquote>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1521123" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">써본템 한줄평가 - 에스트라 앰플 "앰플 중 최고"</div>
+      <div class="card-meta">향수, 화장품 갤러리 | 종합 리뷰</div>
+      <table class="summary-table">
+        <thead>
+          <tr><th>제품</th><th>평가</th><th>비고</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>에스트라 앰플</td><td style="color:#22a855; font-weight:600;">앰플 중 최고</td><td>간지러움 완화 효과</td></tr>
+          <tr><td>메이크프렘 밀크 클렌징</td><td style="color:#22a855; font-weight:600;">효과 우수</td><td>정착 중</td></tr>
+          <tr><td>파티온 노스카나 크림</td><td style="color:#22a855; font-weight:600;">진정 효과 좋음</td><td>-</td></tr>
+          <tr><td>브링그린 징크테카 세럼</td><td style="color:#c04040; font-weight:600;">기름짐</td><td>부정적</td></tr>
+          <tr><td>비플레인 녹두 클렌징</td><td style="color:#c04040; font-weight:600;">자극 있음</td><td>"쓰레기" 평가</td></tr>
+          <tr><td>센카 파란색</td><td style="color:#c04040; font-weight:600;">부정적</td><td>"쓰레기" 평가</td></tr>
+          <tr><td>코스알엑스 레티놀 0.1</td><td style="color:#888;">효과 없음</td><td>자극도 없음</td></tr>
+        </tbody>
+      </table>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1520661" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">여드름 지성피부 세럼/크림 고민</div>
+      <div class="card-meta">향수, 화장품 갤러리</div>
+      <p><span class="product-tag">더페이스샵 나이아신 세럼</span> <span class="product-tag">라로슈포제 시카 리페어 크림</span> <span class="product-tag">메디힐 마데카소사이드 마스크팩</span></p>
+      <p style="font-size:13px; color:#666;">레티놀+나이아신+판테놀 조합 가능성 논의. 피부과 약 없이 순수 화장품 관리 시도.</p>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1520197" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 클렌징폼 -->
+    <div class="category-label cat-cleansing">폼클렌징</div>
+
+    <div class="card">
+      <div class="card-title">세안제 추천 LIST - 피부타입별 완전 가이드</div>
+      <div class="card-meta">향수, 화장품 갤러리 | 정리글</div>
+      <p><strong>약산성 추천:</strong></p>
+      <ul>
+        <li><strong>마몽드 세라마이드 아미노폼</strong> - 수부지 피부. "세안 후 건조함 없이 촉촉한 상태 유지"</li>
+        <li><strong>비플레인 녹두</strong> - 세정력+비건조. 아침저녁 무난</li>
+        <li><strong>뉴트로지나 아크네 (BHA 살리실산)</strong> - 각질제거. "손바닥에 문질러보면 매우 쫀쫀해서 좋은 사용감"</li>
+      </ul>
+      <p><strong>약알칼리 추천:</strong></p>
+      <ul>
+        <li><strong>라로슈포제 에빠끌라</strong> - "세정력은 강력해도 쓰고 나서 얼굴이 더 편함"</li>
+        <li><strong>멜라노 CC 효소 세안제</strong> - 효소 성분 모공 딥클렌징. 쿠팡 로켓배송 가능</li>
+        <li><strong>이즈앤트리 어니언 폼</strong> - 상대적 가벼운 세정력</li>
+      </ul>
+      <a class="url-link" href="https://gall.dcinside.com/board/view/?id=cosmetic&no=1498997" target="_blank">&rarr; 원문 보기</a>
+    </div>
+  </div>
+
+  <!-- ================= 4. 언니의파우치 ================= -->
+  <div id="unpa" class="section">
+    <div class="platform-header" style="margin-top:0;">
+      <h2>4. 언니의파우치 (Unpa)</h2>
+      <div class="desc">unpa.me &mdash; 뷰티 커뮤니티 분석</div>
+    </div>
+
+    <!-- 바디크림 -->
+    <div class="category-label cat-body">바디크림 / 바디로션</div>
+
+    <div class="card">
+      <div class="card-title">보습력 좋은 바디로션 추천 (2026.02)</div>
+      <div class="card-meta">질문 게시판 | 다수 추천 댓글</div>
+      <table class="summary-table">
+        <thead>
+          <tr><th>제품</th><th>특징</th><th>소비자 코멘트</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>니베아 리페어앤케어</td><td>유분감 적음, 민감피부 적합</td><td>"N통째 비우고 있음"</td></tr>
+          <tr><td>뉴트로지나</td><td>겨울 가려움 진정</td><td>"가려움증 많이 진정된대요"</td></tr>
+          <tr><td>더마비 / 세라엠디</td><td>데일리용, 부담없음</td><td>촉촉한 라인</td></tr>
+          <tr><td>노크 바디토너</td><td>빠른 흡수, 유분감 적음</td><td>"토너같이 싹 스며드는 제형"</td></tr>
+          <tr><td>바세린 데일리 모이스처</td><td>모공각화증 개선</td><td>향이 약한 점은 단점</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px; color:#666;"><strong>성분 키워드:</strong> 세라마이드, 히알루론산 함유 제품 추천 트렌드</p>
+      <a class="url-link" href="https://unpa.me/community/question/125489351" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 세럼 -->
+    <div class="category-label cat-serum">세럼 / 에센스</div>
+
+    <div class="card">
+      <div class="card-title">겨울철 촉촉 피부! 추천 에센스/세럼/앰플</div>
+      <div class="card-meta">에센스 게시판 | 속건조+각질 관리 포커스</div>
+      <p><span class="product-tag">웰라쥬 수분 앰플</span> <span class="product-tag">마몽드 로즈 리퀴드 마스크</span> <span class="product-tag">토리든</span></p>
+      <blockquote>"수분 앰플 바른 후에 피지오겔이나 라로슈포제 시카밤 같은 크림을 듬뿍 바르고 자면 속건조와 각질을 잡으실 수 있을꺼에용"</blockquote>
+      <blockquote>"각질을 잠재우는데 정말 효과를 많이 봤어요. 건조하고 푸석했던 피부가 엄청 부드러워지더라구요" (마몽드 로즈 리퀴드 마스크)</blockquote>
+      <a class="url-link" href="https://unpa.me/community/essence/123539701" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">앰플, 세럼, 에센스 차이가 무엇인지 궁금해요 (2026.05)</div>
+      <div class="card-meta">에센스 게시판 | 초보자 교육 콘텐츠</div>
+      <p style="font-size:13px; color:#666;"><strong>핵심 정리:</strong> "에센스 &rarr; 세럼 &rarr; 앰플 순으로 더 진해진다"</p>
+      <p style="font-size:13px; color:#666;">피부 컨디션 괜찮으면 하나만 사용해도 OK. 개인 피부 고민 기준 선택 권장.</p>
+      <p><span class="pain-tag">제품 구분 혼란</span></p>
+      <a class="url-link" href="https://unpa.me/community/essence/127149587" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <!-- 클렌징폼 -->
+    <div class="category-label cat-cleansing">폼클렌징</div>
+
+    <div class="card">
+      <div class="card-title">PX 폼클렌징 추천 TOP3 (2026) - 피부타입별 성분 비교</div>
+      <div class="card-meta">클렌징폼 게시판 | 2026.01 | 인기 게시물</div>
+      <table class="summary-table">
+        <thead>
+          <tr><th>순위</th><th>제품</th><th>가격대</th><th>추천 피부</th><th>소비자 반응</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1위</td><td>닥터지 레드 블레미쉬</td><td>5,000~8,000원</td><td>건성/민감성</td><td>"거품 밀도에 놀랐어요"</td></tr>
+          <tr><td>2위</td><td>마녀공장 퓨리파잉 소다폼</td><td>4,000~7,000원</td><td>지성</td><td>"개운하고 깔끔하게 마무리"</td></tr>
+          <tr><td>3위</td><td>뉴트로지나 딥클린 아크네</td><td>6,000~10,000원</td><td>여드름/트러블</td><td>"피지 잡는 느낌이 확 달라요"</td></tr>
+        </tbody>
+      </table>
+      <a class="url-link" href="https://unpa.me/community/cleansingfoam/123588780" target="_blank">&rarr; 원문 보기</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">건성 클렌징폼 추천 - 세안 후 당김+각질 들뜸 (2026.02)</div>
+      <div class="card-meta">클렌징폼 게시판 | 다수 추천 댓글</div>
+      <p><span class="pain-tag">세안 후 얼굴 바로 땡김</span> <span class="pain-tag">볼 각질 들뜸</span> <span class="pain-tag">기초제품 흡수 안됨</span></p>
+      <blockquote>"세안하고 나면 얼굴이 바로 땡기고 하얗게 일어나는 느낌"</blockquote>
+      <p><strong>추천 제품:</strong></p>
+      <ul>
+        <li><strong>닥터지 클렌징폼</strong> - "약산성인데 세정력도 좋아요"</li>
+        <li><strong>리얼베리어 크림 클렌징폼</strong></li>
+        <li><strong>독도 제품</strong> - "순하고 세안후 피부 당김없어서 좋아요"</li>
+        <li><strong>이즈앤트리 참마 클렌징밀크</strong> - 당김감 없음</li>
+        <li><strong>레이어랩 약산성 클렌징폼</strong></li>
+      </ul>
+      <a class="url-link" href="https://unpa.me/community/cleansingfoam/125851844" target="_blank">&rarr; 원문 보기</a>
+    </div>
+  </div>
+
+  <!-- ================= 5. Reddit ================= -->
+  <div id="reddit" class="section">
+    <div class="platform-header" style="margin-top:0;">
+      <h2>5. Reddit (r/AsianBeauty &amp; r/SkincareAddiction)</h2>
+      <div class="desc">Global consumer sentiment analysis</div>
+    </div>
+
+    <p style="font-size:13px; color:#888; margin-bottom:16px;"><em>Note: Reddit direct crawl was blocked. Data sourced from indexed review sites and cross-referenced community analyses.</em></p>
+
+    <!-- Body Care -->
+    <div class="category-label cat-body">Body Cream / Body Lotion</div>
+
+    <div class="card">
+      <div class="card-title">Top Korean Body Lotions - Global Consumer Consensus (2025-2026)</div>
+      <div class="card-meta">Cross-referenced from beauty review aggregators &amp; r/AsianBeauty community analyses</div>
+      <table class="summary-table">
+        <thead>
+          <tr><th>Product</th><th>Best For</th><th>Key Ingredients</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>ILLIYOON Ceramide Ato Lotion</strong></td><td>Overall #1, Sensitive skin</td><td>Ceramides, Red ginseng</td><td>$24.99</td></tr>
+          <tr><td>Somang Milk Body Soothing Lotion</td><td>Extremely dry skin</td><td>Milk (natural AHAs)</td><td>Budget</td></tr>
+          <tr><td>Benton Shea Butter Coconut Body Lotion</td><td>Rough skin</td><td>Shea butter, Coconut oil, 5x HA</td><td>Mid</td></tr>
+          <tr><td>Klairs Supple Prep All Over Lotion</td><td>Normal skin</td><td>Natural oils, Ceramides</td><td>Mid</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px; color:#666;"><strong>2025-2026 Trend:</strong> Shift toward clean, vegan, and cruelty-free formulations. Multifunctional products combining whitening + hydration + anti-aging rising in popularity.</p>
+      <a class="url-link" href="https://beautibi.com/blogs/review/best-korean-body-lotion" target="_blank">&rarr; Source</a>
+    </div>
+
+    <!-- Serum -->
+    <div class="category-label cat-serum">Serum / Essence</div>
+
+    <div class="card">
+      <div class="card-title">PDRN Trend Watch - Top Products in Global K-Beauty (2025-2026)</div>
+      <div class="card-meta">Editor-tested picks from K-Beauty aggregators</div>
+      <table class="summary-table">
+        <thead>
+          <tr><th>Product</th><th>Positioning</th><th>Key Ingredient</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Medicube PDRN Pink Peptide Serum</strong></td><td>Best Overall</td><td>PDRN + Peptide</td></tr>
+          <tr><td>Anua PDRN Hyaluronic Acid 100 Cream</td><td>Best for Sensitive Skin</td><td>PDRN + HA</td></tr>
+          <tr><td>Rejuran Healer Turnover Ampoule</td><td>Best Post-Procedure</td><td>c-PDRN (proprietary)</td></tr>
+          <tr><td>VT Cosmetics PDRN Cream 100</td><td>Best Vegan-Leaning</td><td>PHYTO PDRN Panax (ginseng)</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px; color:#666;"><strong>Key Pairing:</strong> PDRN + Panthenol + Niacinamide + Ceramides for optimal barrier repair. Topical PDRN delivers incremental hydration, not procedure-level results.</p>
+      <a class="url-link" href="https://thekoreanstyle.com/blogs/k-glow-lab/best-pdrn-serum-and-cream-2025-editor-tested-picks" target="_blank">&rarr; Source</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/AsianBeauty Community Holy Grail Serums/Essences</div>
+      <div class="card-meta">Lab Muffin Beauty Science analysis of Reddit community data</div>
+      <ul>
+        <li><strong>Cosrx Advanced Snail 96 Mucin Power Essence</strong> - HOLY GRAIL. Popular across both r/AsianBeauty and r/SkincareAddiction</li>
+        <li><strong>Melano CC Essence</strong> - HOLY GRAIL. Japanese vitamin C in airtight dispenser</li>
+        <li><strong>The Ordinary Niacinamide 10% + Zinc 1%</strong> - Budget-friendly but polarizing: good for acne-prone, breaks some out</li>
+      </ul>
+      <a class="url-link" href="https://labmuffin.com/ranking-reddit-top-asian-skincare-products/" target="_blank">&rarr; Source</a>
+    </div>
+
+    <!-- Cleansing -->
+    <div class="category-label cat-cleansing">Foam Cleansing</div>
+
+    <div class="card">
+      <div class="card-title">r/AsianBeauty &amp; r/SkincareAddiction Top Cleansers</div>
+      <div class="card-meta">Community consensus rankings</div>
+      <ul>
+        <li><strong>Round Lab Dokdo Cleanser</strong> - HOLY GRAIL. Low-pH Korean foam cleanser with gentle surfactants</li>
+        <li><strong>Kose Softymo Speedy Cleansing Oil</strong> - HOLY GRAIL. Fragrance-free first-step cleanser</li>
+        <li><strong>CeraVe Foaming Facial Cleanser</strong> - SOLID CHOICE. Contains coco-betaine, ceramides, HA (r/SkincareAddiction favorite)</li>
+        <li><strong>La Roche-Posay Toleriane</strong> - Best for sensitive skin, zero irritation</li>
+      </ul>
+      <p style="font-size:13px; color:#666;"><strong>Community Insight:</strong> "Foaming cleansers strip skin" is debunked as a myth for modern formulations. Gentle surfactants in newer products maintain moisture barrier.</p>
+      <a class="url-link" href="https://labmuffin.com/ranking-reddits-top-skincare-products/" target="_blank">&rarr; Source</a>
+    </div>
+  </div>
+
+  <!-- ================= 6. 크로스 플랫폼 인사이트 ================= -->
+  <div id="cross" class="section">
+    <div class="platform-header" style="margin-top:0;">
+      <h2>6. 크로스 플랫폼 인사이트</h2>
+      <div class="desc">4개 플랫폼 종합 분석에서 도출된 액셔너블 인사이트</div>
+    </div>
+
+    <div class="insight-box">
+      <h4>소비자 Pain Point TOP 5</h4>
+      <ul>
+        <li><strong>1. 여름 전환기 끈적임:</strong> 겨울 보습 제품에서 여름 산뜻 제형으로 전환 시점. "끈적이지 않는 보습" 공통 키워드 (더쿠, 디시, 언니의파우치 공통)</li>
+        <li><strong>2. 세안 후 당김+건조:</strong> 건성/민감성 피부의 세안 후 즉각적 당김감과 각질 들뜸 (언니의파우치, 디시 공통)</li>
+        <li><strong>3. 약산성 vs 약알칼리 혼란:</strong> 세안제 pH 선택에 대한 소비자 지식 부족. 피부타입별 가이드 콘텐츠 수요 높음 (디시, 더쿠 공통)</li>
+        <li><strong>4. 고가 세럼 가격 부담:</strong> 디올, 에스티로더 등 프리미엄 세럼의 효과는 인정하나 가격 저항. 듀프 수요 (더쿠)</li>
+        <li><strong>5. 모공각화증 관리:</strong> 팔/다리 모공각화증에 대한 바디 제품 효과 문의 반복 (언니의파우치, 디시 공통)</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h4>플랫폼 간 반복 추천 제품 (Cross-Platform Consensus)</h4>
+      <table class="summary-table">
+        <thead>
+          <tr><th>카테고리</th><th>제품</th><th>언급 플랫폼</th><th>포지셔닝</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="3">바디크림</td><td><strong>일리윤 세라마이드 아토 로션</strong></td><td>더쿠, 디시, Reddit</td><td>건성/민감 국민템</td></tr>
+          <tr><td><strong>세타필 모이스챠라이징</strong></td><td>더쿠, 디시</td><td>극건성 기본 보습</td></tr>
+          <tr><td><strong>니베아 리페어앤케어</strong></td><td>언니의파우치</td><td>무향 반복구매</td></tr>
+          <tr><td rowspan="3">세럼</td><td><strong>코스알엑스 스네일 뮤신 에센스</strong></td><td>디시, Reddit</td><td>글로벌 Holy Grail</td></tr>
+          <tr><td><strong>에스트라 앰플</strong></td><td>디시</td><td>"앰플 중 최고"</td></tr>
+          <tr><td><strong>구달 청귤 비타C TXA</strong></td><td>더쿠</td><td>미백+보습 신흥</td></tr>
+          <tr><td rowspan="3">클렌징</td><td><strong>마몽드 세라마이드 아미노폼</strong></td><td>디시</td><td>수부지 정석</td></tr>
+          <tr><td><strong>닥터지 레드 블레미쉬</strong></td><td>언니의파우치</td><td>건성/민감 추천</td></tr>
+          <tr><td><strong>Round Lab 독도 클렌저</strong></td><td>Reddit</td><td>글로벌 Holy Grail</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight-box">
+      <h4>2026년 5월 시즌 트렌드 키워드</h4>
+      <ul>
+        <li><strong>#산뜻보습</strong> - 초여름 전환기 가벼운 텍스처 바디 제품 수요</li>
+        <li><strong>#비타C복합세럼</strong> - 비타C + 트라넥산산 + 나이아신아마이드 복합 처방 화제</li>
+        <li><strong>#약산성세안</strong> - pH 약산성 세안제 지속 트렌드, 피부타입별 교육 콘텐츠 수요</li>
+        <li><strong>#PDRN글로벌</strong> - 해외 시장에서 PDRN(연어 DNA) 성분 관심 급증</li>
+        <li><strong>#모공각화증관리</strong> - 바디 스킨케어의 기능성 확장, 단순 보습 넘어 피부결 개선</li>
+        <li><strong>#클린뷰티</strong> - 비건, 크루얼티프리 포뮬레이션 전환 가속 (글로벌)</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h4>콘텐츠/마케팅 기회</h4>
+      <ul>
+        <li><strong>카드뉴스 기획 1:</strong> "여름 바디로션 전환 가이드" - 겨울 세타필/일리윤에서 여름 노크 바디토너/니베아로 전환하는 실전 가이드</li>
+        <li><strong>카드뉴스 기획 2:</strong> "약산성 vs 약알칼리 세안제, 내 피부에 맞는 건?" - 디시 화장품갤 세안제 LIST 기반 교육형 콘텐츠</li>
+        <li><strong>카드뉴스 기획 3:</strong> "갈색병 대체 세럼 TOP5" - 듀프 트렌드 활용, 가성비 세럼 비교</li>
+        <li><strong>숏폼/릴스:</strong> 모공각화증 5일 변화 Before/After (오프온 바디로션 사례 레퍼런스)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Beauty Consumer Insights Daily Report &mdash; 2026.05.25</p>
+    <p>Crawled: TheQoo, DCInside, Unpa.me, Reddit/Lab Muffin | Generated by Claude</p>
+  </div>
+</div>
+</body>
+</html>
