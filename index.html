@@ -160,14 +160,6 @@
     </div>
   </div>
 
-  
-  <div id="toolLinks" style="text-align:center;margin:-8px 0 28px;">
-    <a href="./grid_mood_check.html" style="display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:#1a1815;color:#fff;border-radius:24px;text-decoration:none;font-size:14px;font-weight:600;box-shadow:0 4px 12px rgba(26,24,21,0.15);transition:transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 18px rgba(26,24,21,0.22)';" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 12px rgba(26,24,21,0.15)';">
-      🗂️ 인스타 그리드 무드 체크 열기
-      <span style="opacity:0.6;font-size:13px;">→</span>
-    </a>
-  </div>
-
   <div class="tabs" id="tabs"></div>
   <div class="stats-bar" id="statsBar"></div>
   <div id="panels"></div>
@@ -333,7 +325,35 @@
       emoji: '🏃',
       color: '#4a9a6a',
       reports: [
+        { date:'2026-08-14', file:'everypace_daily_20260814.html', highlights:['「러닝판은 왜 러닝 안 하는 사람과 비교해서 위로하는가」','「1년차에 10km 45분 못 하는 게 이상한가 — 갤러리가 만든 착시」','「11만원짜리 시계면 충분하다 — 그리고 댓글이 붙인 조건들」'] },
+        { date:'2026-08-07', file:'everypace_daily_20260807.html', highlights:['「그늘 지도를 켜고 뛴다」 — 앱이 1위가 됐지만, 러너들의 정정은 "낮엔 소용없고 새벽에 크다"였다','「여름에 마일리지가 반토막 났다」 — "버티면 이긴다" vs "그건 가스라이팅이다"가 남긴 판단 기준','「트레드밀이 지루한 게 아니라 보는 걸 잘못 골랐다」 — 1인칭 러닝 영상 미러링, 그리고 좋은 트레드밀 판별법'] },
+        { date:'2026-08-05', file:'everypace_daily_20260805.html', highlights:['「식염포도당, 먹어야 하나」 — 4개 스레드로 번진 찬반 논쟁이 도달한 판단 기준','「35도.. 초고온 10k 찍먹해보기」 — 폭염 러닝에 러너들이 준 답은 격려가 아니었다','「슈퍼블라스트3 500km 리뷰」 — 아웃솔이 갈리는 것과 쿠션이 죽는 것은 별개다'] },
+        { date:'2026-07-31', file:'everypace_daily_20260731.html', highlights:['「스트라바 우리나라 갑질로 사라졌다고 하던데... 정확히 뭔가요?」 — ’갑질’이 아니라 마이크 권한 동의였다 (★어제 댓글 2위)','「*경축* 코로스 MCP 공식 지원」 / 「지피티에 코로스 연동하니까 ㄹㅇ 지리는데?」 — 내 훈련 데이터를 AI에 직접 물어보는 경로가 열렸다','「한달에 300ㅡ400km 이상 뛰는 분들 질문」 — 그 숫자는 재능이 아니라 내준 것들의 합'] },
+        { date:'2026-07-30', file:'everypace_daily_20260730.html', highlights:['「러닝화 수명 다 상술 입니다」 — 결론은 "km 숫자가 아니라 내 조건" (★어제 채택분 조회 1위)','「와 양말이 존나게 중요한거였네」 — 여름 물집·축축함의 변수는 신발이 아니라 양말','「갤워치7 GPS 정확하다는 글 있길래 가민165랑 비교글」 — 워치 거리는 측정이 아니라 처리 방식의 차이 (★어제 채택분 댓글 1위)'] },
+        { date:'2026-07-29', file:'everypace_daily_20260729.html', highlights:['「이건 진짜 꿀팁인 듯!」 — 언 플라스크를 은박지로 감싸면 몇 시간 간다 (★어제 조회 1위 실전팁)','「LSD 할 때 편의점 보관 기능을 쓰셈」 — 1+1을 미리 사두고 달리다 찾아 마신다','「러닝벨트는 고트가 뭐임?」 — 결론은 "가격이 아니라 사이즈다" (★어제 댓글 1위 소재)'] },
+        { date:'2026-07-23', file:'everypace_daily_20260723.html', highlights:['「갤워치 생각보다 쓰레기 아님. 가민하고 별 차이도 안 남」 — 워치 두 개 동시에 차고 10K 실측한 비교','「진짜 슈퍼 땀쟁이라 신발 매일 빠는데」 — 여름 땀에 전 러닝화, 세탁기에 돌려도 되더라','「설탕 대신 인공 감미료 먹었는데… 저칼로리 식품 ’충격’ 결과」 — ’제로가 낫다’는 통념에 붙은 물음표 (단, 상관관계)'] },
+        { date:'2026-07-22', file:'everypace_daily_20260722.html', highlights:['「뛰면서 먹는 파워젤 대부분 효과 없는거 사실 아님?」 — 젤이 언제 쓸모없고 언제 쓸모 있는지 따져본 글','「안녕하신가. 장마와 러닝에 대해 알아보자」 — 우중런은 낭만인가, 그냥 객기인가','「심박 낮다고 잘뛰는게 아니구나」 — 저심박에 대한 부러움이 뒤집히는 순간'] },
+        { date:'2026-07-21', file:'everypace_daily_20260721.html', highlights:['「"골반 내밀어라" 라는 팁이 주는 효과의 시각화」 — 왜 그렇게 뛰라는지 처음으로 설명해준 글','「대회 전날 잠 안오는 사람들 꿀팁준다」 — 잠은 의지가 아니라 설계다','「드디어 개인적인 목표에 도달했어.」 — 커뮤니티가 준 벽을 하나씩 깨는 사람'] },
+        { date:'2026-07-20', file:'everypace_daily_20260720.html', highlights:['「엊그제 러닝하면서 눈물흘렸다..」 — 안 풀리는 인생의 대체 성취','「건강한 마음으로 한강보러 갔다가 죽어서 돌아오는 36km 롱런」 — 계획을 어긴 대가는 늘 사소하다','「연애하니까 훈련하기 힘드네」 — 도망칠 곳이 필요 없어졌을 때'] },
+        { date:'2026-07-18', file:'everypace_daily_20260718.html', highlights:['「길 묻는 어르신 만나 3km 걸어드림」 — 러닝을 멈추게 한 것','「97kg 돼지러너, 2달 만에 630 해냈습니다 진짜 눈물나옵니다」','「살 빠진다고 사실 바뀌는 건 많이 없음」 — 변신 서사에 대한 자백'] },
         // 에브리페이스 리포트는 여기에 추가
+        { date:'2026-08-13', file:'everypace_daily_20260813.html', highlights:['월 500km 러너의 쉬는 날은 안 뛰는 날이 아니다','워치에 뜬 기온·습도는 시계가 잰 게 아니다','휴가 효과는 복귀 첫 주면 사라진다'] },
+        { date:'2026-08-12', file:'everypace_daily_20260812.html', highlights:['선선해져 빨라진 건 실력이 아니라 날씨','50분 언더에 인터벌은 아직 필요 없다','옛날이 좋아서가 아니라 완성되는 게 좋아서'] },
+        { date:'2026-08-11', file:'everypace_daily_20260811.html', highlights:['네가 알던 존2는 저기서 존1이었다','느린 조깅만으론 10k 45~48분이 한계','줄이기가 끊기보다 어려울 수 있다'] },
+        { date:'2026-08-10', file:'everypace_daily_20260810.html', highlights:['습도가 빠지자 심박이 10 떨어졌다','GPS 말고 랩타임을 믿어라','블로그 캡처를 올리는 덤프 부계정'] },
+        { date:'2026-08-09', file:'everypace_daily_20260809.html', highlights:['싱글렛은 흡수용이 아니라 배출용이었다','사이즈 바꾸면 판매자가 바뀐다','새벽반은 기상이 아니라 취침의 문제'] },
+        { date:'2026-08-08', file:'everypace_daily_20260808.html', highlights:['입추, 몸이 달력보다 먼저 알았다','쩐내의 범인은 섬유유연제였다','홍대·성수 대신 창신동·동대문'] },
+        { date:'2026-08-06', file:'everypace_daily_20260806.html', highlights:['밤은 피난처가 아니었다·새벽 4~6시','치명도 땡볕>습도>기온','토마토 코어 터진 여름, 값은 반토막'] },
+        { date:'2026-08-04', file:'everypace_daily_20260804.html', highlights:['식염포도당 논쟁의 결말은 단위였다','카본화는 아끼면 닳기 전에 삭는다','왜 뛰나 110답, 이유는 뛰면서 바뀐다'] },
+        { date:'2026-08-03', file:'everypace_daily_20260803.html', highlights:['에너지젤은 이름 말고 한 포당 g수','습도가 기온보다 먼저 페이스를 깎는다','회복이 참는 일에서 가는 곳으로'] },
+        { date:'2026-08-02', file:'everypace_daily_20260802.html', highlights:['러닝 비용 논쟁, 결론은 통제권','폭염 속 겨울옷·염분 보급 타이밍','노바이 챌린지·어른들의 촉각 소비'] },
+        { date:'2026-08-01', file:'everypace_daily_20260801.html', highlights:['러닝붐 종료론, 붐 지표≠러너 수','워치 논쟁 종결·스트라바 공식 커넥터','밤 클럽 대신 아침 모닝레이브'] },
+        { date:'2026-07-28', file:'everypace_daily_20260728.html', highlights:['4년차가 천천히 뛰다 쓰러졌다','이지런 15km에 체중 2.3kg 증발','시험지 망토 모의고사 여왕 챌린지'] },
+        { date:'2026-07-27', file:'everypace_daily_20260727.html', highlights:['후반 안 퍼지는 팔치기 자세','더위 강함=열적응 아닌 노련함','국가·문화 분리 소비'] },
+        { date:'2026-07-26', file:'everypace_daily_20260726.html', highlights:['체력 총량 키우니 일이 덜 힘들다','한낮 직사광선 얕봤다→새벽으로','가짜 소비·도파민 리밸런싱'] },
+        { date:'2026-07-24', file:'everypace_daily_20260724.html', highlights:['러닝붐 식는다·포레스트런 미달','추억의 놀이 참참참 부활','장마철 젤리슈즈 꾸미기'] },
+        { date:'2026-07-19', file:'everypace_daily_20260719.html', highlights:['비러너의 왜 뛰냐 질문','취발러·발레 열풍','편캉스·NEAT 23시간'] },
+        { date:'2026-07-17', file:'everypace_daily_20260717.html', highlights:['장비가 나를 구해주지 않는다','15만원 싱글렛의 자존심','남의 페이스에 붙는 위험'] },
         { date:'2026-07-16', file:'everypace_daily_20260716.html', highlights:['마라톤 신청하고 서러움','휴가마저 커리어 골든타임','탄맥싱·무알코올 400만캔'] },
         { date:'2026-07-07', file:'everypace_daily_20260707.html', highlights:['서브2 마라톤 붕괴','슈퍼슈즈 논쟁','슬로우 조깅 확산'] },
         { date:'2026-07-06', file:'everypace_daily_20260706.html', highlights:['160kg 걷기 25일차','근력운동 2시간 벽','런갤 자기관용 공감'] },
