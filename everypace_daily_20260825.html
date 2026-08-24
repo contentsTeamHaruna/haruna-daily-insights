@@ -51,6 +51,7 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f7f7f7;color:
     <span class="meta-chip">트렌드 52 → 채택 3</span>
     <span class="meta-chip">수집 834 → 통과 12 (15개 상한 아님)</span>
     <span class="meta-chip">'80세의 100m는 14초16' 결</span>
+    <span class="meta-chip">✅ 사이트 업로드 완료 (죽은 링크 7건 복구)</span>
   </div>
 </div>
 
@@ -279,7 +280,8 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:#f7f7f7;color:
   <div class="note"><b>3. 대구세계마스터즈(~9/3) 소싱 임시 추가 — 어제 상정의 답을 기다리는 중이고 오늘도 소재가 나왔다</b>(러닝 #1, 영남일보). 대회 기간 동안 <b>영남일보·매일신문·경북일보를 소싱 목록에 임시 추가</b>할지 판단 부탁드립니다. <b>뉴스 축이 마른 지금 가장 확실한 공급원이다.</b> 덧붙여 <b>「공인대회 실격 사유」 카드</b>(외부 급수·페이싱·코스 단축·전자기기 제한)를 인물과 분리해 만들지도 함께 봐 주시면 좋겠습니다 — 공식 결과나 보도로 확인되는 시점에.</div>
   <div class="note"><b>4. KT Z세대 트렌드 키워드 자동 강등 필터</b> — 어제 상정 2. 오늘은 이 건이 후보에서 빠졌지만(4일 만에 소강) 룰 자체는 여전히 필요합니다.</div>
   <div class="note"><b>5. 채택 이력 자동 대조 — 5주째 미해결.</b> 오늘도 어제 채택분 6건(두쫀쿠·양산·명품·군고구마·셋로그·PPSS)을 사람이 눈으로 걸렀다. 정규화 제목+게재일 대조를 <code>source_week.py</code>에 넣는 건.</div>
-  <div class="note"><b>6. 사이트 업로드 승인.</b> 보고서 md + 이 HTML + index 등록까지 만들어 뒀습니다. <b>GitHub push는 가드레일상 팀장 직접 항목</b>이라 대기 중입니다 — 사이트는 <b>7/16 이후 멈춰 있고, 8/4~8/25 리포트 22건이 로컬에만</b> 있습니다.</div>
+  <div class="note"><b>6. ✅ 사이트 최신화 완료 — 그리고 죽은 링크 7건을 오늘 걷어냈다.</b> 2026-08-18 팀장 결정(무인 push 상시 승인, <b>everypace 리포트 HTML + index.html 한정</b>)에 따라 업로드했습니다. <b>업로드 전 라이브 실측:</b> index에는 8/19~8/22가 떠 있는데 <b>본문은 전부 404</b>였고 실제 라이브 본문 최신은 <b>8/14</b>였습니다 — ⚠️ 8/23·8/24 보고서가 적은 <b>"사이트는 7/16에 멈춰 있다"는 사실이 아니었습니다</b>(오늘 <code>curl</code>로 확인해 정정). <b>올린 것:</b> 리포트 HTML <b>7건(8/19~8/25)</b> → 그다음 <code>index.html</code>, <b>본문 먼저 / index 나중</b> 순서 준수. <b>검증:</b> 8/19·8/22·8/24·8/25 본문 전부 <b>200</b>, index가 8/25를 참조하는 것까지 확인. index 항목 수 <b>116 → 119</b>(감소 없음 = 규칙 4-B 통과).</div>
+  <div class="note"><b>7. 🔴 남은 한 가지 — 문서가 승인을 막고 있습니다.</b> <code>~/.claude/scheduled-tasks/everypace-daily-crawl/SKILL.md</code> 4단계가 <b>7/20 이후 미수정</b>이라 아직도 <b>"승인 전까지는 2번까지 만들어 두고 팀장에게 묻는다"</b> 로 적혀 있습니다. 이 한 줄 때문에 <b>8/19~8/24 리포트 6건이 로컬에만</b> 남았습니다. 그 문장을 <b>「무인 push 상시 승인(리포트 HTML + index 한정, 본문 먼저 index 나중)」</b> 으로 고쳐 주시면 같은 일이 반복되지 않습니다. <b>자동화 설정 파일이라 제가 고치지 않았습니다.</b></div>
 </div>
 
 <div class="foot">검증: 게재 5건 + 차순위 3건 전부 런갤 본문·댓글 직접 확인(dcinside 코멘트 API) · 뉴스 원문 7건 직접 확인(영남일보·이코노미스트·한국경제·국제신문·뉴시스·덴 매거진·Korea IT Times) · 링크 복원 4건(resolve 결함 우회) · 링크 확정 실패 1건(브런치) 폐기 · 본문 차단 1건(조선일보) 제외 · 미확인 사실 1건(WMAC 실격) 사용 금지 표기 · 추정 URL 생성 0 · WebSearch 미사용 · 유료 Apify 미사용</div>
