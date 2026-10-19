@@ -1998,6 +1998,11 @@
   let customStart = null;          // 'YYYY-MM-DD' (currentDays === 'custom' 시)
   let customEnd = null;            // 'YYYY-MM-DD' (currentDays === 'custom' 시)
 
+  // 로컬(KST) 날짜를 YYYY-MM-DD 로. toISOString 은 UTC 라 KST 자정이 전날로 밀린다
+  function ymdLocal(d) {
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+
   function getRange(days) {
     const useCustom = (days === 'custom') || (days == null && currentDays === 'custom');
     if (useCustom && customStart && customEnd) {
@@ -2009,7 +2014,7 @@
     const endD = new Date(end + "T00:00:00");
     const startD = new Date(endD);
     startD.setDate(startD.getDate() - (d - 1));
-    return [startD.toISOString().slice(0, 10), end];
+    return [ymdLocal(startD), end];
   }
   // 7/30/90 사전집계(cuByWin 등) 룩업용 — 'custom' 일 때 가장 가까운 프리셋 반환
   function nearestPresetDays() {
@@ -2546,7 +2551,7 @@
       const _recentDates = [];
       for (let i = 0; i < STALE_WINDOW_DAYS; i++) {
         const d = new Date(_today); d.setDate(d.getDate() - i);
-        _recentDates.push(d.toISOString().slice(0, 10));
+        _recentDates.push(ymdLocal(d));
       }
       enrichedAds = (adsBreakdown || []).map(a => {
         const real = adsRealMap[a.ad_id] || adsRealByName[a.ad_name];
@@ -4865,8 +4870,8 @@
     const endD = new Date(endStr + "T00:00:00");
     const min90 = new Date(endD); min90.setDate(min90.getDate() - 89);
     const init30 = new Date(endD); init30.setDate(init30.getDate() - 29);
-    const minStr = min90.toISOString().slice(0, 10);
-    const initStr = init30.toISOString().slice(0, 10);
+    const minStr = ymdLocal(min90);
+    const initStr = ymdLocal(init30);
     fromInput.value = initStr; fromInput.min = minStr; fromInput.max = endStr;
     toInput.value = endStr;    toInput.min = minStr;   toInput.max = endStr;
   }
